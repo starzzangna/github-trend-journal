@@ -14,4 +14,4 @@ if (result.changed) {
   await writeFile(`${file}.tmp`, `${JSON.stringify(result.state, null, 2)}\n`);
   await rename(`${file}.tmp`, file);
 }
-console.log(result.changed ? '새 기간의 보고서 및 중복 판정을 저장했습니다.' : '이미 처리한 기간입니다. 추가 발행하지 않았습니다.');
+console.log(result.changed ? '보고서·사용법 분석·중복 판정을 저장했습니다.' : '이미 처리한 기간입니다. 추가 발행하지 않았습니다.');

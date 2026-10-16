@@ -1,6 +1,6 @@
 # Git Trend Journal
 
-GitHub Trending의 Today / Week / Month 상위 10개 프로젝트를 한국어 보고서로 자동 생성하는 GitHub Pages 블로그입니다. 유료 API, 서버, 외부 DB, npm 의존성이 없습니다.
+GitHub Trending의 Today / Week / Month 상위 10개 프로젝트를 한국어 보고서로 자동 생성하는 GitHub Pages 블로그입니다. 프로젝트별 용도·활용 제안과 공식 README의 시작 절차를 함께 제공합니다. 유료 API, 서버, 외부 DB, npm 의존성이 없습니다.
 
 ## 실행
 
@@ -15,7 +15,22 @@ node scripts/serve.mjs
 
 미리보기: http://127.0.0.1:4173
 
-npm이 있으면 `npm run collect`, `npm run check`, `npm test`, `npm run build`, `npm run preview`도 사용할 수 있습니다. TypeScript를 사용하지 않으므로 별도 타입 검사나 ESLint는 없으며, Node 구문 검사와 동작 테스트로 검증합니다. 환경 변수·토큰 설정은 필요 없습니다.
+## 프로젝트 활용 분석
+
+`scripts/usage.mjs`가 GitHub REST API에서 공개 README를 읽어 다음 내용을 생성합니다.
+
+- **어디에 쓰나요:** 저장소 설명과 README 도입부의 키워드로 도구 유형을 분류합니다.
+- **이런 분이 살펴보세요 / 활용 예:** 분류에 따른 한국어 해석·제안입니다. 실제 사용자 사례나 지원 기능을 추가 검증한 결과와 구분해 표시합니다.
+- **시작 방법:** README의 Quick start / Getting started / Installation / Usage 절 제목, 하위 절 최대 3개, 짧은 원문 명령 블록 또는 문장 발췌를 제공합니다. 임의의 설치 명령을 생성하지 않습니다. 명령은 실행하지 않으며, 문서의 전체 절차 확인 링크를 제공합니다.
+- **미확인 처리:** 용도 분류가 불확실하면 미확정으로, 문서가 없거나 호출 제한·네트워크 오류가 있으면 확인 대기로 표시합니다. README 실패가 트렌드 보고서 전체 발행을 막지는 않습니다. 다음 예약 실행에서 실패한 항목만 재시도합니다.
+
+자동 생성은 규칙 기반이며 자유 형식 AI 분석이나 자동 번역이 아닙니다. 원문 발췌·절 제목·명령 예시는 원문 언어로 표시합니다. README에 실제로 사용한 사례가 있다고 주장하거나 해당 프로젝트가 동작한다고 보증하지 않습니다. 시작 절을 찾지 못하면 공식 README 링크를 제공합니다. 250KB 초과 문서는 자동 분석하지 않습니다.
+
+원본 README는 저장하지 않고 추출한 정보, 원문 SHA, 확인 시각만 **최신 게시물의 프로젝트 항목**에 포함합니다. 기간별 중복 저장소는 실행 중 메모리에서 한 번만 조회합니다. 기존 게시물도 발행 키·발행 시각·장부 개수를 유지한 채 사용법을 보완하며, 이미 확인된 사용법은 새 보고서를 생성할 때 갱신합니다.
+
+Actions에서는 기본 제공 `GITHUB_TOKEN`을 README 조회에만 추가로 사용하며, 별도 유료 키나 새 secret 등록은 필요 없습니다. 로컬에서는 토큰 없이 공개 README를 조회할 수 있고, 필요하면 기존 `GITHUB_TOKEN` 환경 변수를 사용할 수 있습니다. 인증값은 생성 JSON이나 로그에 저장하지 않습니다.
+
+npm이 있으면 `npm run collect`, `npm run check`, `npm test`, `npm run build`, `npm run preview`도 사용할 수 있습니다. TypeScript를 사용하지 않으므로 별도 타입 검사나 ESLint는 없으며, Node 구문 검사와 동작 테스트로 검증합니다. 수동 환경 변수·토큰 설정은 필수가 아닙니다.
 
 ## GitHub Pages 설정
 

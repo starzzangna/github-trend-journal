@@ -11,4 +11,4 @@ createServer(async (req, res) => {
     res.writeHead(200, { 'Content-Type': { '.html': 'text/html; charset=utf-8', '.css': 'text/css', '.js': 'text/javascript', '.json': 'application/json' }[extname(target)] || 'application/octet-stream' });
     res.end(body);
   } catch { res.writeHead(404); res.end('찾을 수 없습니다.'); }
-}).listen(4173, '127.0.0.1', () => console.log('Local: http://127.0.0.1:4173'));
+}).listen(Number(process.argv[2] || 4173), '127.0.0.1', function () { console.log(`Local: http://127.0.0.1:${this.address().port}`); });

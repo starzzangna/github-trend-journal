@@ -20,7 +20,29 @@
           "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
           "language": "TypeScript",
           "stars": 277116,
-          "periodStars": 32314
+          "periodStars": 32314,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/morluto/rea#readme",
+            "category": "역공학·프로그램 분석",
+            "purpose": "프로그램의 내부 구조와 실행 동작을 조사하는 도구 유형입니다.",
+            "audience": "프로그램 동작을 분석하거나 기존 구현을 이해하려는 개발자",
+            "scenario": "분석할 프로그램과 궁금한 기능을 정하고, 관련 코드나 실행 동작을 추적하는 작업에 활용할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick start",
+              "steps": [
+                "Set up your agent",
+                "Ask your agent",
+                "Use the terminal"
+              ],
+              "command": "npx rea-agents setup",
+              "excerpt": ""
+            },
+            "readmeSha": "89a53ff75546ede74869ea85faee0b769cb48ea2"
+          }
         },
         {
           "name": "anthropics/claude-plugins-official",
@@ -28,7 +50,25 @@
           "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
           "language": "Python",
           "stars": 39451,
-          "periodStars": 307
+          "periodStars": 307,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/anthropics/claude-plugins-official#readme",
+            "category": "플러그인 모음",
+            "purpose": "기존 도구에 추가할 플러그인을 찾아 설치하는 데 사용하는 프로젝트 유형입니다.",
+            "audience": "지원 도구의 기능을 확장하려는 사용자",
+            "scenario": "현재 사용하는 도구와 호환되는 플러그인 하나를 골라 설치하고 실제 작업에서 기능을 확인해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Installation",
+              "steps": [],
+              "command": "",
+              "excerpt": "Plugins can be installed directly from this marketplace via Claude Code's plugin system."
+            },
+            "readmeSha": "43104e240ff500c762adebb0c31dc4b7ff7b50dd"
+          }
         },
         {
           "name": "K-Dense-AI/scientific-agent-skills",
@@ -36,7 +76,29 @@
           "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
           "language": "Python",
           "stars": 50786,
-          "periodStars": 1091
+          "periodStars": 1091,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/K-Dense-AI/scientific-agent-skills#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "🎯 Getting Started",
+              "steps": [
+                "Option 1: npx (supported hosts)",
+                "Option 2: GitHub CLI (gh skill)",
+                "Version pinning"
+              ],
+              "command": "npx skills add K-Dense-AI/scientific-agent-skills",
+              "excerpt": ""
+            },
+            "readmeSha": "3fcebf5c0e49e39dc87e5b577d0368d313124862"
+          }
         },
         {
           "name": "JuliusBrussee/caveman",
@@ -44,7 +106,25 @@
           "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
           "language": "Go",
           "stars": 112778,
-          "periodStars": 433
+          "periodStars": 433,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:53:54.071Z",
+            "source": "https://github.com/JuliusBrussee/caveman#readme",
+            "category": "AI 토큰 사용 최적화",
+            "purpose": "AI 작업에서 주고받는 표현이나 입력 방식을 바꿔 토큰 사용량을 줄이는 도구 유형입니다.",
+            "audience": "AI 작업의 토큰 사용량과 응답 품질을 함께 관리하려는 사용자",
+            "scenario": "같은 작업에 적용 전후의 토큰 사용량과 결과 정확도를 기록해 절감 효과를 비교할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Install",
+              "steps": [],
+              "command": "npx @caveman-ai/cli@latest",
+              "excerpt": ""
+            },
+            "readmeSha": "12902ac5443fa6b951a46f119ce8808198b7db9f"
+          }
         },
         {
           "name": "debpalash/VoiceStudio",
@@ -52,7 +132,28 @@
           "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
           "language": "Python",
           "stars": 69602,
-          "periodStars": 3024
+          "periodStars": 3024,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/debpalash/VoiceStudio#readme",
+            "category": "음성 제작",
+            "purpose": "텍스트나 음성 자료를 음성 콘텐츠로 만드는 작업에 사용하는 도구 유형입니다.",
+            "audience": "음성 콘텐츠 제작자·오디오 기능 개발자",
+            "scenario": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Get started",
+              "steps": [
+                "One-command install (macOS / Linux)",
+                "Install with prompt"
+              ],
+              "command": "",
+              "excerpt": "On Windows, run irm https://voicestudio.sh/install | iex in PowerShell."
+            },
+            "readmeSha": "e7edb7c42592701b9aec4f350587fe81e352e7db"
+          }
         },
         {
           "name": "obra/superpowers",
@@ -60,7 +161,29 @@
           "description": "An agentic skills framework & software development methodology that works.",
           "language": "Shell",
           "stars": 300146,
-          "periodStars": 582
+          "periodStars": 582,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/obra/superpowers#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Installation",
+              "steps": [
+                "Claude Code",
+                "Official Marketplace",
+                "Superpowers Marketplace"
+              ],
+              "command": "/plugin install superpowers@claude-plugins-official",
+              "excerpt": ""
+            },
+            "readmeSha": "e40ddfa8f87a374e1b9a3663b80c1aa954cf8eec"
+          }
         },
         {
           "name": "ruvnet/ruflo",
@@ -68,7 +191,27 @@
           "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
           "language": "TypeScript",
           "stars": 75283,
-          "periodStars": 147
+          "periodStars": 147,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/ruvnet/ruflo#readme",
+            "category": "AI 에이전트 운영",
+            "purpose": "AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.",
+            "audience": "여러 AI 작업을 연결하거나 관리하는 개발자",
+            "scenario": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Get started with Ruflo",
+              "steps": [
+                "Optional: ruOS Desktop"
+              ],
+              "command": "",
+              "excerpt": "For clients that support local stdio MCP servers, configure command npx and arguments [\"-y\", \"ruflo@latest\", \"mcp\", \"start\"]. The equivalent server"
+            },
+            "readmeSha": "784c30fbfa25f2da53c4b64550a3c795bef27835"
+          }
         },
         {
           "name": "mksglu/context-mode",
@@ -76,7 +219,28 @@
           "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
           "language": "TypeScript",
           "stars": 29903,
-          "periodStars": 904
+          "periodStars": 904,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/mksglu/context-mode#readme",
+            "category": "AI 컨텍스트 관리",
+            "purpose": "AI 작업 중 전달하는 문맥의 크기와 유지 방식을 관리하는 도구 유형입니다.",
+            "audience": "긴 AI 코딩 세션이나 많은 도구 출력을 다루는 개발자",
+            "scenario": "같은 작업을 적용 전후로 수행해 문맥 사용량과 이전 정보 유지 여부를 비교해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Install",
+              "steps": [
+                "Option A — Marketplace plugin (recommended once published)",
+                "Option B — Manual install (existing path)"
+              ],
+              "command": "/plugin marketplace add mksglu/context-mode\n/plugin install context-mode@context-mode",
+              "excerpt": ""
+            },
+            "readmeSha": "b796169524473691594af24995d21ca94027f7c7"
+          }
         },
         {
           "name": "NationalSecurityAgency/ghidra",
@@ -84,7 +248,25 @@
           "description": "Ghidra is a software reverse engineering (SRE) framework",
           "language": "Java",
           "stars": 89036,
-          "periodStars": 1369
+          "periodStars": 1369,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/NationalSecurityAgency/ghidra#readme",
+            "category": "역공학·프로그램 분석",
+            "purpose": "프로그램의 내부 구조와 실행 동작을 조사하는 도구 유형입니다.",
+            "audience": "프로그램 동작을 분석하거나 기존 구현을 이해하려는 개발자",
+            "scenario": "분석할 프로그램과 궁금한 기능을 정하고, 관련 코드나 실행 동작을 추적하는 작업에 활용할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Install",
+              "steps": [],
+              "command": "",
+              "excerpt": "To install an official pre-built multi-platform Ghidra release:"
+            },
+            "readmeSha": "3f1eea7b35d8551f2433f3074f68ba736d72673f"
+          }
         },
         {
           "name": "affaan-m/ECC",
@@ -92,7 +274,25 @@
           "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "language": "JavaScript",
           "stars": 280630,
-          "periodStars": 1013
+          "periodStars": 1013,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/affaan-m/ECC#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Install with Claude Code",
+              "steps": [],
+              "command": "",
+              "excerpt": "Use the guided setup or native plugin commands. Both install the same ecc@ecc plugin. Choose one and do not stack"
+            },
+            "readmeSha": "6583ca8c1320e559aa5b2f86250f2f09c1d577e9"
+          }
         }
       ]
     },
@@ -115,7 +315,29 @@
           "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
           "language": "TypeScript",
           "stars": 277116,
-          "periodStars": 239477
+          "periodStars": 239477,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/morluto/rea#readme",
+            "category": "역공학·프로그램 분석",
+            "purpose": "프로그램의 내부 구조와 실행 동작을 조사하는 도구 유형입니다.",
+            "audience": "프로그램 동작을 분석하거나 기존 구현을 이해하려는 개발자",
+            "scenario": "분석할 프로그램과 궁금한 기능을 정하고, 관련 코드나 실행 동작을 추적하는 작업에 활용할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick start",
+              "steps": [
+                "Set up your agent",
+                "Ask your agent",
+                "Use the terminal"
+              ],
+              "command": "npx rea-agents setup",
+              "excerpt": ""
+            },
+            "readmeSha": "89a53ff75546ede74869ea85faee0b769cb48ea2"
+          }
         },
         {
           "name": "boykopovar/AnyPS5",
@@ -123,7 +345,20 @@
           "description": "Tool for automatic PS5 executables porting to Linux and Windows",
           "language": "C++",
           "stars": 38994,
-          "periodStars": 25174
+          "periodStars": 25174,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/boykopovar/AnyPS5#readme",
+            "category": "실행 파일 이식",
+            "purpose": "실행 파일을 다른 실행 환경으로 옮기는 작업을 다루는 도구 유형입니다.",
+            "audience": "플랫폼 호환성과 실행 환경을 연구하는 개발자",
+            "scenario": "지원하는 입력 형식과 대상 플랫폼을 먼저 확인한 뒤 작은 예제로 변환·실행 과정을 검토할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": null,
+            "readmeSha": "c63b83abe6709542896b81f44975d43da40f2ca2"
+          }
         },
         {
           "name": "mattpocock/skills",
@@ -131,7 +366,29 @@
           "description": "Skills for Real Engineers. Straight from my .agents directory.",
           "language": "Shell",
           "stars": 293182,
-          "periodStars": 12147
+          "periodStars": 12147,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/mattpocock/skills#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Installation (30-second setup)",
+              "steps": [
+                "1. Get the skills",
+                "2. Run /setup-matt-pocock-skills",
+                "3. Bam - you're ready to go."
+              ],
+              "command": "claude plugin install mattpocock-skills@claude-plugins-official",
+              "excerpt": ""
+            },
+            "readmeSha": "f7038f139299985eea6c3e18398dbafb379a0010"
+          }
         },
         {
           "name": "heygen-com/hyperframes",
@@ -139,7 +396,27 @@
           "description": "Write HTML. Render video. Built for agents.",
           "language": "TypeScript",
           "stars": 64767,
-          "periodStars": 5318
+          "periodStars": 5318,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/heygen-com/hyperframes#readme",
+            "category": "영상 제작",
+            "purpose": "영상 콘텐츠를 구성하거나 렌더링하는 작업에 사용하는 도구 유형입니다.",
+            "audience": "영상 제작 자동화를 구현하려는 개발자·제작자",
+            "scenario": "짧은 영상 한 편을 샘플로 구성한 뒤 렌더링 결과와 반복 제작 과정을 확인해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick Start",
+              "steps": [
+                "With an AI coding agent"
+              ],
+              "command": "claude plugin marketplace add heygen-com/hyperframes\nclaude plugin install hyperframes@hyperframes",
+              "excerpt": ""
+            },
+            "readmeSha": "4529ffdda7076e54a94d380009d3cd5be6cff30d"
+          }
         },
         {
           "name": "cathrynlavery/diagram-design",
@@ -147,7 +424,27 @@
           "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
           "language": "HTML",
           "stars": 56072,
-          "periodStars": 10237
+          "periodStars": 10237,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/cathrynlavery/diagram-design#readme",
+            "category": "다이어그램 제작",
+            "purpose": "정보의 관계나 구조를 다이어그램으로 표현하는 도구 유형입니다.",
+            "audience": "구조 설명 자료를 만드는 개발자·기획자",
+            "scenario": "시스템 구성이나 작업 흐름 하나를 골라 그림으로 표현하고 문서에 활용해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quickstart",
+              "steps": [
+                "Semantic patterns and optional motion"
+              ],
+              "command": "# From a cloned checkout, open the gallery to see every diagram\nopen skills/diagram-design/assets/index.html       # macOS\nxdg-open skills/diagram-design/assets/index.html  # Linux",
+              "excerpt": ""
+            },
+            "readmeSha": "974bba8513dba31a11581c6e111c7f7de26a3632"
+          }
         },
         {
           "name": "NationalSecurityAgency/ghidra",
@@ -155,7 +452,25 @@
           "description": "Ghidra is a software reverse engineering (SRE) framework",
           "language": "Java",
           "stars": 89036,
-          "periodStars": 6614
+          "periodStars": 6614,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/NationalSecurityAgency/ghidra#readme",
+            "category": "역공학·프로그램 분석",
+            "purpose": "프로그램의 내부 구조와 실행 동작을 조사하는 도구 유형입니다.",
+            "audience": "프로그램 동작을 분석하거나 기존 구현을 이해하려는 개발자",
+            "scenario": "분석할 프로그램과 궁금한 기능을 정하고, 관련 코드나 실행 동작을 추적하는 작업에 활용할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Install",
+              "steps": [],
+              "command": "",
+              "excerpt": "To install an official pre-built multi-platform Ghidra release:"
+            },
+            "readmeSha": "3f1eea7b35d8551f2433f3074f68ba736d72673f"
+          }
         },
         {
           "name": "ranxianglei/billion-context",
@@ -163,7 +478,29 @@
           "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
           "language": "TypeScript",
           "stars": 1429,
-          "periodStars": 659
+          "periodStars": 659,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/ranxianglei/billion-context#readme",
+            "category": "AI 컨텍스트 관리",
+            "purpose": "AI 작업 중 전달하는 문맥의 크기와 유지 방식을 관리하는 도구 유형입니다.",
+            "audience": "긴 AI 코딩 세션이나 많은 도구 출력을 다루는 개발자",
+            "scenario": "같은 작업을 적용 전후로 수행해 문맥 사용량과 이전 정보 유지 여부를 비교해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quickstart",
+              "steps": [
+                "Option 1 — Native plugin (bili plugin install pi / omp / opencode / dsh / kimi / hermes / zcode)",
+                "Option 2 — Launcher (bili pi / bili codex / bili claude / bili omp / bili opencode / bili hermes / bili dsh / bili codebuddy / bili qoder / bili trae / bili jcode / bili kimi / bili gemini / bili iflow / bili qwen / bili antigravity / bili mcode / bili aider / bili copilot / bili amp / bili goose)",
+                "Option 3 — URL change (/bili/ prefix)"
+              ],
+              "command": "",
+              "excerpt": "Three ways to use it — pick one:"
+            },
+            "readmeSha": "d0aef5889b9b0b626dc39b681fd00bfadb01cee4"
+          }
         },
         {
           "name": "earthtojake/text-to-cad",
@@ -171,7 +508,20 @@
           "description": "Give your agent CAD superpowers.",
           "language": "Python",
           "stars": 20782,
-          "periodStars": 2244
+          "periodStars": 2244,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/earthtojake/text-to-cad#readme",
+            "category": "CAD·설계",
+            "purpose": "설계 도면이나 CAD 모델을 만드는 작업을 돕는 도구 유형입니다.",
+            "audience": "설계 자동화와 모델 생성을 실험하는 개발자·설계자",
+            "scenario": "간단한 부품 요구사항을 입력으로 삼아 모델 생성 흐름을 확인하고, 결과의 치수와 형상을 검토해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": null,
+            "readmeSha": "2cd09ec3c928459c1072a001bd3d62cfec25b27c"
+          }
         },
         {
           "name": "twostraws/SwiftUI-Agent-Skill",
@@ -179,7 +529,20 @@
           "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
           "language": "미분류",
           "stars": 6127,
-          "periodStars": 900
+          "periodStars": 900,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/twostraws/SwiftUI-Agent-Skill#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": null,
+            "readmeSha": "12e282c9336a10d31c23d53a586d2049e2b77525"
+          }
         },
         {
           "name": "DuarteSantos8/openGym",
@@ -187,7 +550,25 @@
           "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
           "language": "JavaScript",
           "stars": 12507,
-          "periodStars": 4471
+          "periodStars": 4471,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/DuarteSantos8/openGym#readme",
+            "category": "운동 기록",
+            "purpose": "운동 계획과 수행 기록을 관리하는 애플리케이션 유형입니다.",
+            "audience": "운동 기록을 직접 관리하려는 사용자",
+            "scenario": "운동 루틴 하나와 수행 기록을 입력하고 기록 조회 흐름을 확인해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick start",
+              "steps": [],
+              "command": "",
+              "excerpt": "You need Docker with Compose."
+            },
+            "readmeSha": "87eeacfa4f97d40cf8f341548aba0e5fd0d42560"
+          }
         }
       ]
     },
@@ -210,7 +591,28 @@
           "description": "The open-source app everyone uses to manage agents at work",
           "language": "TypeScript",
           "stars": 102861,
-          "periodStars": 22181
+          "periodStars": 22181,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/paperclipai/paperclip#readme",
+            "category": "AI 에이전트 운영",
+            "purpose": "AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.",
+            "audience": "여러 AI 작업을 연결하거나 관리하는 개발자",
+            "scenario": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quickstart",
+              "steps": [
+                "Just ask your agent to install Paperclip",
+                "Or install it yourself"
+              ],
+              "command": "npx paperclipai@latest onboard --yes",
+              "excerpt": ""
+            },
+            "readmeSha": "e433acfdc1b337326497d58c2a31a917009eda29"
+          }
         },
         {
           "name": "anthropics/financial-services",
@@ -218,7 +620,29 @@
           "description": "",
           "language": "Python",
           "stars": 40028,
-          "periodStars": 5252
+          "periodStars": 5252,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/anthropics/financial-services#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Getting Started",
+              "steps": [
+                "Cowork",
+                "Claude Code",
+                "Claude Managed Agents"
+              ],
+              "command": "",
+              "excerpt": "In Cowork, open Settings → Plugins → Add plugin and either:"
+            },
+            "readmeSha": "5c203c0ea8f19361b447c7f9592f4658b33b5fae"
+          }
         },
         {
           "name": "vectorize-io/hindsight",
@@ -226,7 +650,29 @@
           "description": "Hindsight: Agent Memory That Learns",
           "language": "Python",
           "stars": 50167,
-          "periodStars": 26652
+          "periodStars": 26652,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:53:54.071Z",
+            "source": "https://github.com/vectorize-io/hindsight#readme",
+            "category": "AI 에이전트 메모리",
+            "purpose": "에이전트가 작업 중 얻은 정보를 저장하고 이후 작업에서 다시 활용하도록 돕는 도구 유형입니다.",
+            "audience": "세션을 넘겨 정보를 재사용하는 AI 서비스를 만드는 개발자",
+            "scenario": "샘플 정보를 저장한 뒤 새 작업에서 관련 정보를 찾아오는 과정을 확인하고 기억 품질을 비교할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick Start",
+              "steps": [
+                "1. Start a server",
+                "Docker (recommended)",
+                "Docker (external PostgreSQL)"
+              ],
+              "command": "",
+              "excerpt": ">API: http://localhost:8888"
+            },
+            "readmeSha": "250a2e8eca4fccae242a9b7c90ba5d17fe8f8919"
+          }
         },
         {
           "name": "debpalash/VoiceStudio",
@@ -234,7 +680,28 @@
           "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
           "language": "Python",
           "stars": 69602,
-          "periodStars": 38181
+          "periodStars": 38181,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/debpalash/VoiceStudio#readme",
+            "category": "음성 제작",
+            "purpose": "텍스트나 음성 자료를 음성 콘텐츠로 만드는 작업에 사용하는 도구 유형입니다.",
+            "audience": "음성 콘텐츠 제작자·오디오 기능 개발자",
+            "scenario": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Get started",
+              "steps": [
+                "One-command install (macOS / Linux)",
+                "Install with prompt"
+              ],
+              "command": "",
+              "excerpt": "On Windows, run irm https://voicestudio.sh/install | iex in PowerShell."
+            },
+            "readmeSha": "e7edb7c42592701b9aec4f350587fe81e352e7db"
+          }
         },
         {
           "name": "heygen-com/hyperframes",
@@ -242,7 +709,27 @@
           "description": "Write HTML. Render video. Built for agents.",
           "language": "TypeScript",
           "stars": 64767,
-          "periodStars": 14246
+          "periodStars": 14246,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/heygen-com/hyperframes#readme",
+            "category": "영상 제작",
+            "purpose": "영상 콘텐츠를 구성하거나 렌더링하는 작업에 사용하는 도구 유형입니다.",
+            "audience": "영상 제작 자동화를 구현하려는 개발자·제작자",
+            "scenario": "짧은 영상 한 편을 샘플로 구성한 뒤 렌더링 결과와 반복 제작 과정을 확인해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick Start",
+              "steps": [
+                "With an AI coding agent"
+              ],
+              "command": "claude plugin marketplace add heygen-com/hyperframes\nclaude plugin install hyperframes@hyperframes",
+              "excerpt": ""
+            },
+            "readmeSha": "4529ffdda7076e54a94d380009d3cd5be6cff30d"
+          }
         },
         {
           "name": "affaan-m/ECC",
@@ -250,7 +737,25 @@
           "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "language": "JavaScript",
           "stars": 280630,
-          "periodStars": 22953
+          "periodStars": 22953,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/affaan-m/ECC#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Install with Claude Code",
+              "steps": [],
+              "command": "",
+              "excerpt": "Use the guided setup or native plugin commands. Both install the same ecc@ecc plugin. Choose one and do not stack"
+            },
+            "readmeSha": "6583ca8c1320e559aa5b2f86250f2f09c1d577e9"
+          }
         },
         {
           "name": "anthropics/knowledge-work-plugins",
@@ -258,7 +763,28 @@
           "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
           "language": "Python",
           "stars": 29825,
-          "periodStars": 5835
+          "periodStars": 5835,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:52:18.713Z",
+            "source": "https://github.com/anthropics/knowledge-work-plugins#readme",
+            "category": "플러그인 모음",
+            "purpose": "기존 도구에 추가할 플러그인을 찾아 설치하는 데 사용하는 프로젝트 유형입니다.",
+            "audience": "지원 도구의 기능을 확장하려는 사용자",
+            "scenario": "현재 사용하는 도구와 호환되는 플러그인 하나를 골라 설치하고 실제 작업에서 기능을 확인해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Getting Started",
+              "steps": [
+                "Cowork",
+                "Claude Code"
+              ],
+              "command": "",
+              "excerpt": "Install plugins from claude.com/plugins."
+            },
+            "readmeSha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad"
+          }
         },
         {
           "name": "agent-substrate/substrate",
@@ -266,7 +792,29 @@
           "description": "Agent Substrate: the core system",
           "language": "Go",
           "stars": 5249,
-          "periodStars": 3368
+          "periodStars": 3368,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:53:54.071Z",
+            "source": "https://github.com/agent-substrate/substrate#readme",
+            "category": "AI 에이전트 실행 환경",
+            "purpose": "에이전트와 도구를 분리된 실행 환경에서 구동하는 데 사용하는 도구 유형입니다.",
+            "audience": "AI 도구 실행 환경과 인프라를 관리하는 개발자",
+            "scenario": "간단한 도구 작업을 격리된 환경에서 실행하고 파일·네트워크 접근 설정과 작업 종료 흐름을 확인해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quickstart (Development)",
+              "steps": [
+                "GKE Quickstart (Development)",
+                "Custom Setup and Deployment",
+                "Tearing down resources (GCP)"
+              ],
+              "command": "",
+              "excerpt": "To quickly set up the complete environment:"
+            },
+            "readmeSha": "ccf43e918da7144598d6100c780f6cca35bc778f"
+          }
         },
         {
           "name": "alibaba/open-code-review",
@@ -274,7 +822,25 @@
           "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
           "language": "Go",
           "stars": 47432,
-          "periodStars": 20351
+          "periodStars": 20351,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:53:54.071Z",
+            "source": "https://github.com/alibaba/open-code-review#readme",
+            "category": "코드 리뷰",
+            "purpose": "코드 변경에서 검토할 부분을 찾고 리뷰하는 작업을 돕는 도구 유형입니다.",
+            "audience": "변경 코드의 품질과 오류 가능성을 검토하는 개발자",
+            "scenario": "작은 변경분 하나를 대상으로 리뷰 결과를 받아 보고, 지적 위치와 수정 필요성을 직접 확인하는 흐름에 활용할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick Start",
+              "steps": [],
+              "command": "ocr config provider          # Select a built-in provider or add a custom one\nocr config model             # Pick a model for the active provider",
+              "excerpt": ""
+            },
+            "readmeSha": "96b4e231298af0882d800d213b5f5881f601fdd9"
+          }
         },
         {
           "name": "NVIDIA/OpenShell",
@@ -282,7 +848,25 @@
           "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
           "language": "Rust",
           "stars": 16371,
-          "periodStars": 7813
+          "periodStars": 7813,
+          "usage": {
+            "version": 1,
+            "status": "ready",
+            "checkedAt": "2026-10-16T06:53:54.071Z",
+            "source": "https://github.com/NVIDIA/OpenShell#readme",
+            "category": "AI 에이전트 실행 환경",
+            "purpose": "에이전트와 도구를 분리된 실행 환경에서 구동하는 데 사용하는 도구 유형입니다.",
+            "audience": "AI 도구 실행 환경과 인프라를 관리하는 개발자",
+            "scenario": "간단한 도구 작업을 격리된 환경에서 실행하고 파일·네트워크 접근 설정과 작업 종료 흐름을 확인해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quickstart",
+              "steps": [],
+              "command": "curl -LsSf https://raw.githubusercontent.com/NVIDIA/OpenShell/main/install.sh | sh\nopenshell sandbox create --name demo",
+              "excerpt": ""
+            },
+            "readmeSha": "e0aaa43641b41a8e7cd4a2f8ffcb345a356e754b"
+          }
         }
       ]
     }

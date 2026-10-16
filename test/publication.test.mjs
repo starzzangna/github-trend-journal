@@ -1,7 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseTrending, issueKey, fingerprint } from '../scripts/trends.mjs';
-import { collectPublication } from '../scripts/publication.mjs';
+import { collectPublication as collect } from '../scripts/publication.mjs';
+const collectPublication = (previous, options) => collect(previous, { analyzeProject: async () => ({ version: 1, status: 'ready' }), ...options });
 
 const fixture = (count = '123', name = 'sample/project') => `<article class="Box-row"><h2><a href="/${name}"> sample / project </a></h2><p>Build &amp; share</p><span itemprop="programmingLanguage">TypeScript</span><a href="/${name}/stargazers"><svg></svg>1,234</a><span>${count} stars today</span></article>`;
 const response = html => ({ ok: true, text: async () => html });

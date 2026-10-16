@@ -29,6 +29,8 @@ jobs:
         run: npm run check && npm test
       - name: 새 보고서 생성
         run: npm run collect
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: 사이트 빌드
         run: npm run build
       - name: Pages 설정

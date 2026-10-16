@@ -1,0 +1,13 @@
+{
+  "name": "github-trend-journal",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "check": "node --check scripts/collect.mjs && node --check scripts/build.mjs && node --check web/app.js",
+    "preview": "node scripts/serve.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

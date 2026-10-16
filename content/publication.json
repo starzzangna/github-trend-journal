@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "reports": {
+    "daily": {
+      "period": "daily",
+      "issue": "daily:2026-10-16",
+      "publishedAt": "2026-10-16T06:39:15.074Z",
+      "title": "Today · morluto/rea부터 살펴보는 오픈소스 트렌드",
+      "summary": "GitHub Trending 상위 10개 프로젝트를 살펴봤습니다. TypeScript 프로젝트가 3개 포함되어 있습니다.",
+      "analysis": [
+        "GitHub 표시 순위의 첫 번째 프로젝트는 morluto/rea입니다.",
+        "수집 목록에서 표시된 기간 스타 수가 가장 큰 프로젝트는 morluto/rea으로, 32,314개입니다.",
+        "이 글은 수집 시점의 목록을 요약한 자동 보고서입니다. 성장 원인이나 과거 대비 변화는 추정하지 않습니다."
+      ],
+      "source": "https://github.com/trending?since=daily",
+      "rows": [
+        {
+          "name": "morluto/rea",
+          "url": "https://github.com/morluto/rea",
+          "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+          "language": "TypeScript",
+          "stars": 277116,
+          "periodStars": 32314
+        },
+        {
+          "name": "anthropics/claude-plugins-official",
+          "url": "https://github.com/anthropics/claude-plugins-official",
+          "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+          "language": "Python",
+          "stars": 39451,
+          "periodStars": 307
+        },
+        {
+          "name": "K-Dense-AI/scientific-agent-skills",
+          "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+          "description": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+          "language": "Python",
+          "stars": 50786,
+          "periodStars": 1091
+        },
+        {
+          "name": "JuliusBrussee/caveman",
+          "url": "https://github.com/JuliusBrussee/caveman",
+          "description": "🪨 why use many token when few token do trick. Viral skill + proxy for coding agents that cuts 65% of tokens by talking like a caveman.",
+          "language": "Go",
+          "stars": 112778,
+          "periodStars": 433
+        },
+        {
+          "name": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio",
+          "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+          "language": "Python",
+          "stars": 69602,
+          "periodStars": 3024
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "language": "Shell",
+          "stars": 300146,
+          "periodStars": 582
+        },
+        {
+          "name": "ruvnet/ruflo",
+          "url": "https://github.com/ruvnet/ruflo",
+          "description": "🌊 The original agent harness. Deploy intelligent multi-player swarms, coordinate autonomous workflows, and build conversational AI systems. Features adaptive memory, self-learning intelligence, federation, vector RAG integration, and native Claude Code / Codex / Hermes and many more Integrated",
+          "language": "TypeScript",
+          "stars": 75283,
+          "periodStars": 147
+        },
+        {
+          "name": "mksglu/context-mode",
+          "url": "https://github.com/mksglu/context-mode",
+          "description": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+          "language": "TypeScript",
+          "stars": 29903,
+          "periodStars": 904
+        },
+        {
+          "name": "NationalSecurityAgency/ghidra",
+          "url": "https://github.com/NationalSecurityAgency/ghidra",
+          "description": "Ghidra is a software reverse engineering (SRE) framework",
+          "language": "Java",
+          "stars": 89036,
+          "periodStars": 1369
+        },
+        {
+          "name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "language": "JavaScript",
+          "stars": 280630,
+          "periodStars": 1013
+        }
+      ]
+    },
+    "weekly": {
+      "period": "weekly",
+      "issue": "weekly:2026-10-12",
+      "publishedAt": "2026-10-16T06:39:15.074Z",
+      "title": "Week · morluto/rea부터 살펴보는 오픈소스 트렌드",
+      "summary": "GitHub Trending 상위 10개 프로젝트를 살펴봤습니다. TypeScript 프로젝트가 3개 포함되어 있습니다.",
+      "analysis": [
+        "GitHub 표시 순위의 첫 번째 프로젝트는 morluto/rea입니다.",
+        "수집 목록에서 표시된 기간 스타 수가 가장 큰 프로젝트는 morluto/rea으로, 239,477개입니다.",
+        "이 글은 수집 시점의 목록을 요약한 자동 보고서입니다. 성장 원인이나 과거 대비 변화는 추정하지 않습니다."
+      ],
+      "source": "https://github.com/trending?since=weekly",
+      "rows": [
+        {
+          "name": "morluto/rea",
+          "url": "https://github.com/morluto/rea",
+          "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+          "language": "TypeScript",
+          "stars": 277116,
+          "periodStars": 239477
+        },
+        {
+          "name": "boykopovar/AnyPS5",
+          "url": "https://github.com/boykopovar/AnyPS5",
+          "description": "Tool for automatic PS5 executables porting to Linux and Windows",
+          "language": "C++",
+          "stars": 38994,
+          "periodStars": 25174
+        },
+        {
+          "name": "mattpocock/skills",
+          "url": "https://github.com/mattpocock/skills",
+          "description": "Skills for Real Engineers. Straight from my .agents directory.",
+          "language": "Shell",
+          "stars": 293182,
+          "periodStars": 12147
+        },
+        {
+          "name": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "description": "Write HTML. Render video. Built for agents.",
+          "language": "TypeScript",
+          "stars": 64767,
+          "periodStars": 5318
+        },
+        {
+          "name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, and Pi. 44 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+          "language": "HTML",
+          "stars": 56072,
+          "periodStars": 10237
+        },
+        {
+          "name": "NationalSecurityAgency/ghidra",
+          "url": "https://github.com/NationalSecurityAgency/ghidra",
+          "description": "Ghidra is a software reverse engineering (SRE) framework",
+          "language": "Java",
+          "stars": 89036,
+          "periodStars": 6614
+        },
+        {
+          "name": "ranxianglei/billion-context",
+          "url": "https://github.com/ranxianglei/billion-context",
+          "description": "A context-compression plugin for small context windows (a 100K context is enough), token savings (5x fewer tokens), and month-long single sessions (billions of tokens).上下文压缩插件，兼顾小窗口(100k上下文足矣)省token(省5倍token)和超长会话(数月级别几十亿token单会话)。billion-context is all you need",
+          "language": "TypeScript",
+          "stars": 1429,
+          "periodStars": 659
+        },
+        {
+          "name": "earthtojake/text-to-cad",
+          "url": "https://github.com/earthtojake/text-to-cad",
+          "description": "Give your agent CAD superpowers.",
+          "language": "Python",
+          "stars": 20782,
+          "periodStars": 2244
+        },
+        {
+          "name": "twostraws/SwiftUI-Agent-Skill",
+          "url": "https://github.com/twostraws/SwiftUI-Agent-Skill",
+          "description": "SwiftUI agent skill for Claude Code, Codex, and other AI tools.",
+          "language": "미분류",
+          "stars": 6127,
+          "periodStars": 900
+        },
+        {
+          "name": "DuarteSantos8/openGym",
+          "url": "https://github.com/DuarteSantos8/openGym",
+          "description": "Self-hosted gym & body-weight tracker — plan routines, log workouts (supersets, warm-ups, cardio), see which muscles are trained, fatigued or detrained, import from FitNotes/Strong/Hevy, passkey login. Your data, your server.",
+          "language": "JavaScript",
+          "stars": 12507,
+          "periodStars": 4471
+        }
+      ]
+    },
+    "monthly": {
+      "period": "monthly",
+      "issue": "monthly:2026-10",
+      "publishedAt": "2026-10-16T06:39:15.074Z",
+      "title": "Month · paperclipai/paperclip부터 살펴보는 오픈소스 트렌드",
+      "summary": "GitHub Trending 상위 10개 프로젝트를 살펴봤습니다. Python 프로젝트가 4개 포함되어 있습니다.",
+      "analysis": [
+        "GitHub 표시 순위의 첫 번째 프로젝트는 paperclipai/paperclip입니다.",
+        "수집 목록에서 표시된 기간 스타 수가 가장 큰 프로젝트는 debpalash/VoiceStudio으로, 38,181개입니다.",
+        "이 글은 수집 시점의 목록을 요약한 자동 보고서입니다. 성장 원인이나 과거 대비 변화는 추정하지 않습니다."
+      ],
+      "source": "https://github.com/trending?since=monthly",
+      "rows": [
+        {
+          "name": "paperclipai/paperclip",
+          "url": "https://github.com/paperclipai/paperclip",
+          "description": "The open-source app everyone uses to manage agents at work",
+          "language": "TypeScript",
+          "stars": 102861,
+          "periodStars": 22181
+        },
+        {
+          "name": "anthropics/financial-services",
+          "url": "https://github.com/anthropics/financial-services",
+          "description": "",
+          "language": "Python",
+          "stars": 40028,
+          "periodStars": 5252
+        },
+        {
+          "name": "vectorize-io/hindsight",
+          "url": "https://github.com/vectorize-io/hindsight",
+          "description": "Hindsight: Agent Memory That Learns",
+          "language": "Python",
+          "stars": 50167,
+          "periodStars": 26652
+        },
+        {
+          "name": "debpalash/VoiceStudio",
+          "url": "https://github.com/debpalash/VoiceStudio",
+          "description": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+          "language": "Python",
+          "stars": 69602,
+          "periodStars": 38181
+        },
+        {
+          "name": "heygen-com/hyperframes",
+          "url": "https://github.com/heygen-com/hyperframes",
+          "description": "Write HTML. Render video. Built for agents.",
+          "language": "TypeScript",
+          "stars": 64767,
+          "periodStars": 14246
+        },
+        {
+          "name": "affaan-m/ECC",
+          "url": "https://github.com/affaan-m/ECC",
+          "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+          "language": "JavaScript",
+          "stars": 280630,
+          "periodStars": 22953
+        },
+        {
+          "name": "anthropics/knowledge-work-plugins",
+          "url": "https://github.com/anthropics/knowledge-work-plugins",
+          "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+          "language": "Python",
+          "stars": 29825,
+          "periodStars": 5835
+        },
+        {
+          "name": "agent-substrate/substrate",
+          "url": "https://github.com/agent-substrate/substrate",
+          "description": "Agent Substrate: the core system",
+          "language": "Go",
+          "stars": 5249,
+          "periodStars": 3368
+        },
+        {
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+          "language": "Go",
+          "stars": 47432,
+          "periodStars": 20351
+        },
+        {
+          "name": "NVIDIA/OpenShell",
+          "url": "https://github.com/NVIDIA/OpenShell",
+          "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+          "language": "Rust",
+          "stars": 16371,
+          "periodStars": 7813
+        }
+      ]
+    }
+  },
+  "ledger": [
+    {
+      "issue": "daily:2026-10-16",
+      "period": "daily",
+      "hash": "f4801704a679ba81dcf420e83663dbc4c0ed1aba71328450c97dc304b075d1c2",
+      "status": "published",
+      "processedAt": "2026-10-16T06:39:15.074Z"
+    },
+    {
+      "issue": "weekly:2026-10-12",
+      "period": "weekly",
+      "hash": "e609153e2d7e5f34f7305eb9c43515e01707069820b8f7095086ab44bb5c00eb",
+      "status": "published",
+      "processedAt": "2026-10-16T06:39:15.074Z"
+    },
+    {
+      "issue": "monthly:2026-10",
+      "period": "monthly",
+      "hash": "1145fe0dd527cf76a4e8e75d6eb0125a4198c971a1ae45eb548a370d16d86690",
+      "status": "published",
+      "processedAt": "2026-10-16T06:39:15.074Z"
+    }
+  ]
+}

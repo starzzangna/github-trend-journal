@@ -1,5 +1,6 @@
 // README는 분석용 입력으로만 취급합니다. 명령을 실행하거나 문서의 지시를 따르지 않습니다.
-export const usageVersion = 1;
+import { buildAnalysis } from './analysis.mjs';
+export const usageVersion = 2;
 const profiles = [
   { pattern: /code review tool|automated code review|코드 리뷰/i, category: '코드 리뷰', purpose: '코드 변경에서 검토할 부분을 찾고 리뷰하는 작업을 돕는 도구 유형입니다.', audience: '변경 코드의 품질과 오류 가능성을 검토하는 개발자', scenario: '작은 변경분 하나를 대상으로 리뷰 결과를 받아 보고, 지적 위치와 수정 필요성을 직접 확인하는 흐름에 활용할 수 있습니다.' },
   { pattern: /agent memory|memory system.*agents?|에이전트 메모리/i, category: 'AI 에이전트 메모리', purpose: '에이전트가 작업 중 얻은 정보를 저장하고 이후 작업에서 다시 활용하도록 돕는 도구 유형입니다.', audience: '세션을 넘겨 정보를 재사용하는 AI 서비스를 만드는 개발자', scenario: '샘플 정보를 저장한 뒤 새 작업에서 관련 정보를 찾아오는 과정을 확인하고 기억 품질을 비교할 수 있습니다.' },
@@ -74,7 +75,7 @@ export function analyzeUsage(row, markdown, now = new Date()) {
     purpose: profile?.purpose || '자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.',
     audience: profile?.audience || null, scenario: profile?.scenario || null,
     basis: profile ? '저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.' : '자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.',
-    start
+    start, article: buildAnalysis(row, sections, profile, start)
   };
 }
 

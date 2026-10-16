@@ -6,7 +6,7 @@
     "collect": "node scripts/collect.mjs",
     "build": "node scripts/build.mjs",
     "test": "node --test",
-    "check": "node --check scripts/collect.mjs && node --check scripts/build.mjs && node --check scripts/trends.mjs && node --check scripts/publication.mjs && node --check scripts/usage.mjs && node --check scripts/serve.mjs && node --check web/app.js",
+    "check": "node --check scripts/collect.mjs && node --check scripts/build.mjs && node --check scripts/trends.mjs && node --check scripts/publication.mjs && node --check scripts/usage.mjs && node --check scripts/analysis.mjs && node --check scripts/serve.mjs && node --check web/app.js",
     "preview": "node scripts/serve.mjs"
   },
   "engines": { "node": ">=22" }

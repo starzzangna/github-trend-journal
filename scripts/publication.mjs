@@ -38,6 +38,8 @@ export async function collectPublication(previous, { now = new Date(), fetcher =
       const key = row.name.toLowerCase();
       if (!cache.has(key)) cache.set(key, await analyzeProject(row));
       const usage = cache.get(key);
+      // 분석 형식 갱신 중 README 조회에 실패하면 기존의 정상 분석을 유지합니다.
+      if (usage?.status === 'unavailable' && row.usage?.status === 'ready') continue;
       if (!usage || (row.usage?.version === usageVersion && row.usage.status === 'unavailable' && usage.status === 'unavailable')) continue;
       row.usage = structuredClone(usage);
       changed = true;

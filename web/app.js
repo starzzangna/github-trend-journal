@@ -5,15 +5,21 @@ const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': 
 let reports;
 const numeric = value => Number.isFinite(value) ? value.toLocaleString('ko-KR') : '미제공';
 function currentPeriod() { const key = location.hash.slice(1); return key in periodLabels ? key : 'daily'; }
-function usageMarkup(row, href) {
+function usageMarkup(row, href, expanded = false) {
   const usage = row.usage;
   if (!usage || usage.status !== 'ready') return `<div class="usage-pending"><strong>사용법 확인 대기</strong><p>${escape(usage?.reason || '아직 README 분석이 완료되지 않았습니다.')}</p><a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">공식 README에서 사용법 확인 ↗</a></div>`;
   const start = usage.start;
-  return `<section class="usage" aria-label="${escape(row.name)} 활용 분석"><div class="usage-title"><span>어디에 쓰나요?</span><span class="usage-category">${escape(usage.category)}</span></div><p class="usage-purpose">${escape(usage.purpose)}</p>
-    <details><summary>활용 방법과 시작 절차 보기 <span aria-hidden="true">＋</span></summary><div class="usage-content">
-      ${usage.audience ? `<div class="usage-item"><h4>이런 분이 살펴보세요</h4><p>${escape(usage.audience)}</p></div>` : ''}
-      ${usage.scenario ? `<div class="usage-item"><h4>활용 예 <span>분류 기반 제안</span></h4><p>${escape(usage.scenario)}</p></div>` : ''}
-      <div class="usage-item official"><h4>README에서 확인한 시작 방법</h4>${start ? `<p>공식 README의 <strong>${escape(start.heading)}</strong> 절을 확인하세요.</p>${start.steps.length ? `<ul>${start.steps.map(step => `<li>${escape(step)}</li>`).join('')}</ul>` : ''}${start.excerpt ? `<blockquote lang="en">${escape(start.excerpt)}</blockquote>` : ''}${start.command ? `<span class="command-label">원문 명령 예시 · 실행 전 전체 절차를 확인하세요</span><pre><code>${escape(start.command)}</code></pre>` : '<p class="usage-note">짧은 실행 예시를 확인하지 못했습니다. 명령을 임의로 생성하지 않았습니다.</p>'}` : '<p>README에서 시작 절차를 자동으로 찾지 못했습니다. 원문에서 설치·사용 방법을 확인해 주세요.</p>'}<a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">공식 사용 문서 읽기 ↗</a></div>
+  const article = usage.article;
+  const sourceLink = section => `<a class="finding-source" href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">근거 · ${escape(section)} ↗</a>`;
+  return `<section class="usage" aria-label="${escape(row.name)} 활용 분석"><div class="usage-title"><span>PROJECT ANALYSIS · 분석 노트</span><span class="usage-category">${escape(usage.category)}</span></div>
+    <div class="article-intro">${(article?.paragraphs || [usage.purpose]).map(text => `<p>${escape(text)}</p>`).join('')}</div>
+    ${article ? `<div class="analysis-coverage"><span>핵심 항목 ${article.coverage.findings}개</span><span>문서 환경 ${article.coverage.conditions}개</span><span>${article.coverage.hasStart ? '시작 경로 확인' : '시작 경로 미확인'}</span></div>` : ''}
+    <details ${expanded ? 'open' : ''}><summary>전체 분석 읽기 · 기능, 사용 흐름, 도입 검토 <span aria-hidden="true">＋</span></summary><div class="usage-content">
+      ${article ? `<div class="note-section"><h4><span>01</span> 핵심 기능과 활용 의미 <small>문서 탐지 + 해설</small></h4>${article.findings.length ? `<div class="finding-list">${article.findings.map(finding => `<div class="finding"><h5>${escape(finding.title)}</h5><p>${escape(finding.body)}</p>${sourceLink(finding.section)}</div>`).join('')}</div>` : '<p>구체적인 기능을 자동으로 찾을 근거가 충분하지 않습니다. 공식 README에서 지원 범위를 확인해 주세요.</p>'}</div>
+      <div class="note-section"><h4><span>02</span> 실제 작업에 적용한다면 <small>분석에 따른 제안</small></h4><ol class="workflow-list">${article.workflow.map(step => `<li><h5>${escape(step.title)}</h5><p>${escape(step.body)}</p></li>`).join('')}</ol></div>
+      <div class="note-section"><h4><span>03</span> 도입 전에 살펴볼 환경 <small>필수 조건으로 단정하지 않음</small></h4>${article.conditions.length ? article.conditions.map(condition => `<div class="finding"><h5>${escape(condition.title)}</h5><p>${escape(condition.body)}</p>${sourceLink(condition.section)}</div>`).join('') : '<p>설치·시작 절에서 환경 조건을 충분히 추출하지 못했습니다. 별도 조건이 없다는 뜻은 아니며 원문의 요구사항을 확인해야 합니다.</p>'}</div>` : ''}
+      <div class="usage-item official"><h4>${article ? '<span class="note-number">04</span> ' : ''}공식 문서의 시작 경로</h4>${start ? `<p>공식 README의 <strong>${escape(start.heading)}</strong> 절을 확인하세요.</p>${start.steps.length ? `<ul>${start.steps.map(step => `<li>${escape(step)}</li>`).join('')}</ul>` : ''}${start.excerpt ? `<blockquote>${escape(start.excerpt)}</blockquote>` : ''}${start.command ? `<span class="command-label">원문 명령 예시 · 실행 전 전체 절차를 확인하세요</span><pre><code>${escape(start.command)}</code></pre>` : '<p class="usage-note">짧은 실행 예시를 확인하지 못했습니다. 명령을 임의로 생성하지 않았습니다.</p>'}` : '<p>README에서 시작 절차를 자동으로 찾지 못했습니다. 원문에서 설치·사용 방법을 확인해 주세요.</p>'}<a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">공식 사용 문서 읽기 ↗</a></div>
+      ${article ? `<div class="note-section verdict"><h4><span>05</span> 분석을 정리하면</h4><p>${escape(article.verdict)}</p></div><p class="usage-note">${escape(article.limitations)}</p>` : ''}
       <p class="usage-note">${escape(usage.basis)} 프로젝트 실행 검증은 포함하지 않습니다.</p>
     </div></details></section>`;
 }
@@ -37,7 +43,7 @@ function render() {
     <div class="list-heading"><h3>주목할 프로젝트</h3><span>GitHub 표시 순위 기준</span></div>
     <div class="projects">${report.rows.map((row, index) => {
       const href = `https://github.com/${row.name.split('/').map(encodeURIComponent).join('/')}`;
-      return `<article class="project"><span class="rank">${String(index + 1).padStart(2, '0')}</span><div class="project-body"><div class="project-heading"><a href="${escape(href)}" target="_blank" rel="noopener noreferrer">${escape(row.name)} <span>↗</span></a><span class="language">${escape(row.language)}</span></div><p>${escape(row.description || '프로젝트 설명이 제공되지 않았습니다.')}</p><div class="project-meta"><span>☆ 총 스타 ${numeric(row.stars)}</span><a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">README 읽기 ↗</a></div>${usageMarkup(row, href)}</div><div class="growth"><strong>${row.periodStars === null ? '—' : numeric(row.periodStars)}</strong><span>${metricLabels[period]} 스타</span></div></article>`;
+      return `<article class="project"><span class="rank">${String(index + 1).padStart(2, '0')}</span><div class="project-body"><div class="project-heading"><a href="${escape(href)}" target="_blank" rel="noopener noreferrer">${escape(row.name)} <span>↗</span></a><span class="language">${escape(row.language)}</span></div><p>${escape(row.description || '프로젝트 설명이 제공되지 않았습니다.')}</p><div class="project-meta"><span>☆ 총 스타 ${numeric(row.stars)}</span><a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">README 읽기 ↗</a></div>${usageMarkup(row, href, index === 0)}</div><div class="growth"><strong>${row.periodStars === null ? '—' : numeric(row.periodStars)}</strong><span>${metricLabels[period]} 스타</span></div></article>`;
     }).join('')}</div><p class="source-note">출처: <a href="${source}" target="_blank" rel="noopener noreferrer">GitHub Trending ↗</a> · 발행 시점의 목록이며 현재 순위와 다를 수 있습니다. 스타 수는 GitHub의 기간 표시값입니다.</p>`;
 }
 async function load() {

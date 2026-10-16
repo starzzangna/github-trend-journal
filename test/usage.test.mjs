@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { analyzeUsage, fetchUsage, readSections } from '../scripts/usage.mjs';
+import { analyzeUsage, fetchUsage, readSections, usageVersion } from '../scripts/usage.mjs';
 import { collectPublication } from '../scripts/publication.mjs';
 
 const now = new Date('2026-10-16T07:00:00Z');
@@ -64,10 +64,47 @@ test('기존 글을 중복 발행하지 않고 사용법만 보완하며 기간 
 });
 test('README 실패 후 다음 실행에서 복구하고 발행 장부는 유지한다', async () => {
   const state = { version: 1, ledger: [{ issue: 'daily:2026-10-16' }, { issue: 'weekly:2026-10-12' }, { issue: 'monthly:2026-10' }], reports: { daily: { rows: [row] } } };
-  const failed = await collectPublication(state, { now, analyzeProject: async () => ({ version: 1, status: 'unavailable' }) });
-  const failedAgain = await collectPublication(failed.state, { now, analyzeProject: async () => ({ version: 1, status: 'unavailable' }) });
+  const failed = await collectPublication(state, { now, analyzeProject: async () => ({ version: usageVersion, status: 'unavailable' }) });
+  const failedAgain = await collectPublication(failed.state, { now, analyzeProject: async () => ({ version: usageVersion, status: 'unavailable' }) });
   assert.equal(failedAgain.changed, false);
   const recovered = await collectPublication(failed.state, { now, analyzeProject: async r => analyzeUsage(r, readme, now) });
   assert.equal(recovered.state.reports.daily.rows[0].usage.status, 'ready');
+  assert.equal(recovered.state.ledger.length, 3);
+});
+
+test('상세 노트는 문서 근거의 기능·환경과 활용 제안을 구분해 작성한다', () => {
+  const document = '# Voice\n## Features\nVoice cloning and video dubbing.\n## Quick start\nRequires Python 3.11 and CUDA GPU.\n### Install\nUse the installer.\n### Run\nChoose a sample.';
+  const result = analyzeUsage(row, document, now);
+  assert.equal(result.article.paragraphs.length, 2);
+  assert.equal(result.article.findings.length, 2);
+  assert.match(result.article.findings[0].title, /음성/);
+  assert.equal(result.article.findings[0].section, 'Features');
+  assert.equal(result.article.findings[0].source, result.source);
+  assert.equal(result.article.conditions.length, 2);
+  assert.equal(result.article.workflow.length, 3);
+  assert.match(result.article.workflow[1].body, /필수 실행 순서로 가정하지/);
+  assert.match(result.article.verdict, /유형/);
+});
+
+test('코드 예시·기여 안내·다른 분야의 용어를 프로젝트 핵심 기능으로 오인하지 않는다', () => {
+  const document = '# Science\nGenetic transcription.\n## Example\n```text\nvoice cloning\n```\n## Contributing\nvideo dubbing';
+  const result = analyzeUsage({ ...row, description: 'Agent skills for research' }, document, now);
+  assert.ok(!result.article.findings.some(f => /음성|더빙/.test(f.title)));
+});
+
+test('미지원이라고 적힌 내용은 핵심 기능으로 소개하지 않는다', () => {
+  const result = analyzeUsage(row, '# Voice\n## Features\nVoice cloning is not supported yet.', now);
+  assert.equal(result.article.findings.length, 0);
+});
+
+test('분석 형식 갱신에 실패하면 이전 정상 분석을 유지하고 다음 실행에 다시 시도한다', async () => {
+  const previousUsage = { version: 1, status: 'ready', purpose: '기존 분석' };
+  const state = { version: 1, ledger: [{ issue: 'daily:2026-10-16' }, { issue: 'weekly:2026-10-12' }, { issue: 'monthly:2026-10' }], reports: { daily: { rows: [{ ...row, usage: previousUsage }] } } };
+  const failed = await collectPublication(state, { now, analyzeProject: async () => ({ version: usageVersion, status: 'unavailable' }) });
+  assert.equal(failed.changed, false);
+  assert.deepEqual(failed.state.reports.daily.rows[0].usage, previousUsage);
+  const recovered = await collectPublication(failed.state, { now, analyzeProject: async r => analyzeUsage(r, readme, now) });
+  assert.equal(recovered.state.reports.daily.rows[0].usage.version, usageVersion);
+  assert.ok(recovered.state.reports.daily.rows[0].usage.article);
   assert.equal(recovered.state.ledger.length, 3);
 });

@@ -1,5 +1,7 @@
 # Git Trend Journal
 
+[**공개 사이트 미리보기 ↗**](https://starzzangna.github.io/github-trend-journal/)
+
 GitHub Trending의 Today / Week / Month 상위 10개 프로젝트를 한국어 보고서로 자동 생성하는 GitHub Pages 블로그입니다. 프로젝트별 용도·활용 제안과 공식 README의 시작 절차를 함께 제공합니다. 유료 API, 서버, 외부 DB, npm 의존성이 없습니다.
 
 ## 실행
@@ -13,7 +15,7 @@ node scripts/build.mjs
 node scripts/serve.mjs
 ```
 
-미리보기: http://127.0.0.1:4173
+로컬 개발 미리보기: [http://127.0.0.1:4173](http://127.0.0.1:4173) (위 서버를 실행한 컴퓨터에서만 접속할 수 있습니다.)
 
 ## 프로젝트 활용 분석
 

@@ -3,230 +3,28 @@
   "reports": {
     "daily": {
       "period": "daily",
-      "issue": "daily:2026-10-29",
-      "publishedAt": "2026-10-29T06:00:24.041Z",
-      "title": "Today · JetBrains/thinkrail부터 살펴보는 오픈소스 트렌드",
-      "summary": "GitHub Trending 상위 10개 프로젝트를 살펴봤습니다. TypeScript 프로젝트가 3개 포함되어 있습니다.",
+      "issue": "daily:2026-10-30",
+      "publishedAt": "2026-10-30T06:01:43.888Z",
+      "title": "Today · HKUDS/DeepTutor부터 살펴보는 오픈소스 트렌드",
+      "summary": "GitHub Trending 상위 10개 프로젝트를 살펴봤습니다. TypeScript 프로젝트가 5개 포함되어 있습니다.",
       "analysis": [
-        "GitHub 표시 순위의 첫 번째 프로젝트는 JetBrains/thinkrail입니다.",
-        "수집 목록에서 표시된 기간 스타 수가 가장 큰 프로젝트는 HKUDS/DeepTutor으로, 2,371개입니다.",
+        "GitHub 표시 순위의 첫 번째 프로젝트는 HKUDS/DeepTutor입니다.",
+        "수집 목록에서 표시된 기간 스타 수가 가장 큰 프로젝트는 pbakaus/impeccable으로, 2,870개입니다.",
         "이 글은 수집 시점의 목록을 요약한 자동 보고서입니다. 성장 원인이나 과거 대비 변화는 추정하지 않습니다."
       ],
       "source": "https://github.com/trending?since=daily",
       "rows": [
         {
-          "name": "JetBrains/thinkrail",
-          "url": "https://github.com/JetBrains/thinkrail",
-          "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
-          "language": "TypeScript",
-          "stars": 5331,
-          "periodStars": 1068,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
-            "source": "https://github.com/JetBrains/thinkrail#readme",
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Install",
-              "steps": [
-                "Desktop",
-                "Command line",
-                "Platform notes"
-              ],
-              "command": "sudo apt install libgtk-3-0 libwebkit2gtk-4.1-0 libayatana-appindicator3-1 librsvg2-2",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "JetBrains/thinkrail · 프로젝트 분석 노트",
-              "paragraphs": [
-                "JetBrains/thinkrail는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
-                "README에서 살펴볼 핵심 항목은 작업별 절차를 제공하는 스킬, 에이전트와 도구를 연결하는 MCP입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
-              ],
-              "findings": [
-                {
-                  "title": "작업별 절차를 제공하는 스킬",
-                  "body": "에이전트용 스킬을 문서에서 다룹니다. 작업별 지침을 에이전트에 연결하는 유형으로 읽을 수 있습니다. 스킬 설치 여부뿐 아니라 실제 작업에서 해당 지침이 적용되는지를 결과물로 확인하는 것이 중요합니다.",
-                  "section": "What you get",
-                  "source": "https://github.com/JetBrains/thinkrail#readme"
-                },
-                {
-                  "title": "에이전트와 도구를 연결하는 MCP",
-                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
-                  "section": "What you get",
-                  "source": "https://github.com/JetBrains/thinkrail#readme"
-                }
-              ],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Install” 절이 시작 지점입니다. 하위 항목으로 Desktop, Command line, Platform notes 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
-              "coverage": {
-                "findings": 2,
-                "conditions": 0,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "fff39cb4167ffa5c5e323d233a50febfcbcb535e"
-          }
-        },
-        {
-          "name": "elayadesign/ai-design-skills",
-          "url": "https://github.com/elayadesign/ai-design-skills",
-          "description": "",
-          "language": "미분류",
-          "stars": 11384,
-          "periodStars": 2139,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
-            "source": "https://github.com/elayadesign/ai-design-skills#readme",
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Install",
-              "steps": [],
-              "command": "mkdir -p .claude/skills\ngit clone https://github.com/elayadesign/ai-design-skills.git /tmp/ai-design-skills\ncp -r /tmp/ai-design-skills/skills/<skill-name> .claude/skills/",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "elayadesign/ai-design-skills · 프로젝트 분석 노트",
-              "paragraphs": [
-                "elayadesign/ai-design-skills는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
-                "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
-              ],
-              "findings": [],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Install” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 0,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "32677792be09e0b9fba13b10c2f94a804c488900"
-          }
-        },
-        {
-          "name": "obra/superpowers",
-          "url": "https://github.com/obra/superpowers",
-          "description": "An agentic skills framework & software development methodology that works.",
-          "language": "Shell",
-          "stars": 307643,
-          "periodStars": 1095,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
-            "source": "https://github.com/obra/superpowers#readme",
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Installation",
-              "steps": [
-                "Claude Code",
-                "Official Marketplace",
-                "Superpowers Marketplace"
-              ],
-              "command": "/plugin install superpowers@claude-plugins-official",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "obra/superpowers · 프로젝트 분석 노트",
-              "paragraphs": [
-                "obra/superpowers는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
-                "README에서 살펴볼 핵심 항목은 작업별 절차를 제공하는 스킬, 플러그인 탐색과 설치 경로입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
-              ],
-              "findings": [
-                {
-                  "title": "작업별 절차를 제공하는 스킬",
-                  "body": "에이전트용 스킬을 문서에서 다룹니다. 작업별 지침을 에이전트에 연결하는 유형으로 읽을 수 있습니다. 스킬 설치 여부뿐 아니라 실제 작업에서 해당 지침이 적용되는지를 결과물로 확인하는 것이 중요합니다.",
-                  "section": "Skills Library",
-                  "source": "https://github.com/obra/superpowers#readme"
-                },
-                {
-                  "title": "플러그인 탐색과 설치 경로",
-                  "body": "플러그인 목록이나 마켓플레이스가 문서에 등장합니다. 필요한 기능을 개별 플러그인으로 선택하는 방식과 연결됩니다. 전체 목록보다 현재 작업에 맞는 항목을 골라 해당 플러그인의 문서까지 읽는 것이 사용 흐름의 출발점입니다.",
-                  "section": "Claude Code",
-                  "source": "https://github.com/obra/superpowers#readme"
-                }
-              ],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Installation” 절이 시작 지점입니다. 하위 항목으로 Claude Code, Official Marketplace, Superpowers Marketplace 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
-              "coverage": {
-                "findings": 2,
-                "conditions": 0,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b"
-          }
-        },
-        {
           "name": "HKUDS/DeepTutor",
           "url": "https://github.com/HKUDS/DeepTutor",
           "description": "DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/ .",
           "language": "Python",
-          "stars": 48480,
-          "periodStars": 2371,
+          "stars": 50652,
+          "periodStars": 1930,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
             "source": "https://github.com/HKUDS/DeepTutor#readme",
             "category": "용도 분류 미확정",
             "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
@@ -302,137 +100,76 @@
           }
         },
         {
-          "name": "macro-inc/macro",
-          "url": "https://github.com/macro-inc/macro",
-          "description": "Macro is a unified workspace for teams: email, chat, docs, tasks, agents, calls, and CRM — @-linked together with shared AI memory.",
-          "language": "Rust",
-          "stars": 5531,
-          "periodStars": 117,
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "language": "Shell",
+          "stars": 308803,
+          "periodStars": 1034,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
-            "source": "https://github.com/macro-inc/macro#readme",
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": null,
+            "checkedAt": "2026-10-30T06:01:43.888Z",
+            "source": "https://github.com/obra/superpowers#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Installation",
+              "steps": [
+                "Claude Code",
+                "Official Marketplace",
+                "Superpowers Marketplace"
+              ],
+              "command": "/plugin install superpowers@claude-plugins-official",
+              "excerpt": ""
+            },
             "article": {
-              "title": "macro-inc/macro · 프로젝트 분석 노트",
+              "title": "obra/superpowers · 프로젝트 분석 노트",
               "paragraphs": [
-                "macro-inc/macro의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
-                "README에서 살펴볼 핵심 항목은 에이전트와 도구를 연결하는 MCP입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
+                "obra/superpowers는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
+                "README에서 살펴볼 핵심 항목은 작업별 절차를 제공하는 스킬, 플러그인 탐색과 설치 경로입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
               ],
               "findings": [
                 {
-                  "title": "에이전트와 도구를 연결하는 MCP",
-                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
-                  "section": "Why Macro",
-                  "source": "https://github.com/macro-inc/macro#readme"
+                  "title": "작업별 절차를 제공하는 스킬",
+                  "body": "에이전트용 스킬을 문서에서 다룹니다. 작업별 지침을 에이전트에 연결하는 유형으로 읽을 수 있습니다. 스킬 설치 여부뿐 아니라 실제 작업에서 해당 지침이 적용되는지를 결과물로 확인하는 것이 중요합니다.",
+                  "section": "Skills Library",
+                  "source": "https://github.com/obra/superpowers#readme"
+                },
+                {
+                  "title": "플러그인 탐색과 설치 경로",
+                  "body": "플러그인 목록이나 마켓플레이스가 문서에 등장합니다. 필요한 기능을 개별 플러그인으로 선택하는 방식과 연결됩니다. 전체 목록보다 현재 작업에 맞는 항목을 골라 해당 플러그인의 문서까지 읽는 것이 사용 흐름의 출발점입니다.",
+                  "section": "Claude Code",
+                  "source": "https://github.com/obra/superpowers#readme"
                 }
               ],
               "conditions": [],
               "workflow": [
                 {
                   "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
                 },
                 {
                   "title": "문서의 시작 경로 선택하기",
-                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
+                  "body": "README의 “Installation” 절이 시작 지점입니다. 하위 항목으로 Claude Code, Official Marketplace, Superpowers Marketplace 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
                 },
                 {
                   "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
                 }
               ],
-              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
-              "coverage": {
-                "findings": 1,
-                "conditions": 0,
-                "hasStart": false
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "9d8cd478cef941c2024d06e62d563481902aef61"
-          }
-        },
-        {
-          "name": "Nutlope/hallmark",
-          "url": "https://github.com/Nutlope/hallmark",
-          "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex.",
-          "language": "CSS",
-          "stars": 41011,
-          "periodStars": 2110,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
-            "source": "https://github.com/Nutlope/hallmark#readme",
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": {
-              "heading": "Install",
-              "steps": [],
-              "command": "npx skills add nutlope/hallmark -g",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "Nutlope/hallmark · 프로젝트 분석 노트",
-              "paragraphs": [
-                "Nutlope/hallmark의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
-                "README에서 살펴볼 핵심 항목은 플러그인 탐색과 설치 경로, 문서에 넣을 시각 자료입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
-              ],
-              "findings": [
-                {
-                  "title": "플러그인 탐색과 설치 경로",
-                  "body": "플러그인 목록이나 마켓플레이스가 문서에 등장합니다. 필요한 기능을 개별 플러그인으로 선택하는 방식과 연결됩니다. 전체 목록보다 현재 작업에 맞는 항목을 골라 해당 플러그인의 문서까지 읽는 것이 사용 흐름의 출발점입니다.",
-                  "section": "Install",
-                  "source": "https://github.com/Nutlope/hallmark#readme"
-                },
-                {
-                  "title": "문서에 넣을 시각 자료",
-                  "body": "SVG 또는 독립 HTML 결과물이 문서에 언급됩니다. 설명 자료에 그림을 포함하거나 결과물을 수정하려는 사용자가 확인할 항목입니다. 실제 출력 형식과 편집 가능 범위를 예제로 살펴볼 수 있습니다.",
-                  "section": "How a build runs",
-                  "source": "https://github.com/Nutlope/hallmark#readme"
-                }
-              ],
-              "conditions": [
-                {
-                  "title": "Node.js 실행 경로",
-                  "body": "설치·시작 절에서 Node.js 생태계의 실행 방법을 다룹니다. 사용하는 경로에 맞는 런타임과 패키지 실행 조건을 확인할 수 있습니다.",
-                  "section": "Install",
-                  "source": "https://github.com/Nutlope/hallmark#readme"
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Install” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
+              "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
               "coverage": {
                 "findings": 2,
-                "conditions": 1,
+                "conditions": 0,
                 "hasStart": true
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
             },
-            "readmeSha": "2568bb6f51284bc3feeea6a3098d31f6743ec623"
+            "readmeSha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b"
           }
         },
         {
@@ -440,12 +177,12 @@
           "url": "https://github.com/pbakaus/impeccable",
           "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships.",
           "language": "Rust",
-          "stars": 93336,
-          "periodStars": 1472,
+          "stars": 95811,
+          "periodStars": 2870,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
             "source": "https://github.com/pbakaus/impeccable#readme",
             "category": "용도 분류 미확정",
             "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
@@ -512,56 +249,53 @@
           }
         },
         {
-          "name": "makecindy/cindy",
-          "url": "https://github.com/makecindy/cindy",
-          "description": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+          "name": "JetBrains/thinkrail",
+          "url": "https://github.com/JetBrains/thinkrail",
+          "description": "Vibe code with pi in a lightweight, real IDE that customises itself around the way you work — The Vibe You Need",
           "language": "TypeScript",
-          "stars": 8270,
-          "periodStars": 728,
+          "stars": 6156,
+          "periodStars": 1117,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
-            "source": "https://github.com/makecindy/cindy#readme",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
+            "source": "https://github.com/JetBrains/thinkrail#readme",
             "category": "AI 에이전트 스킬",
             "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
             "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
             "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
             "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
             "start": {
-              "heading": "Getting started",
-              "steps": [],
-              "command": "git clone https://github.com/makecindy/cindy.git\ncd cindy\ngit lfs pull\npnpm install",
+              "heading": "Install",
+              "steps": [
+                "Desktop",
+                "Command line",
+                "Platform notes"
+              ],
+              "command": "sudo apt install libgtk-3-0 libwebkit2gtk-4.1-0 libayatana-appindicator3-1 librsvg2-2",
               "excerpt": ""
             },
             "article": {
-              "title": "makecindy/cindy · 프로젝트 분석 노트",
+              "title": "JetBrains/thinkrail · 프로젝트 분석 노트",
               "paragraphs": [
-                "makecindy/cindy는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
-                "README에서 살펴볼 핵심 항목은 에이전트와 도구를 연결하는 MCP, 여러 에이전트의 작업 조정입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
+                "JetBrains/thinkrail는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
+                "README에서 살펴볼 핵심 항목은 작업별 절차를 제공하는 스킬, 에이전트와 도구를 연결하는 MCP입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
               ],
               "findings": [
                 {
-                  "title": "에이전트와 도구를 연결하는 MCP",
-                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
-                  "section": "Real work, in your actual tools",
-                  "source": "https://github.com/makecindy/cindy#readme"
+                  "title": "작업별 절차를 제공하는 스킬",
+                  "body": "에이전트용 스킬을 문서에서 다룹니다. 작업별 지침을 에이전트에 연결하는 유형으로 읽을 수 있습니다. 스킬 설치 여부뿐 아니라 실제 작업에서 해당 지침이 적용되는지를 결과물로 확인하는 것이 중요합니다.",
+                  "section": "What you get",
+                  "source": "https://github.com/JetBrains/thinkrail#readme"
                 },
                 {
-                  "title": "여러 에이전트의 작업 조정",
-                  "body": "복수 에이전트나 작업 조정에 대한 설명이 있습니다. 역할을 나눠 작업을 진행하는 활용과 연결됩니다. 역할 간 입력·출력과 완료 기준을 명확히 정해야 실행 결과를 추적하기 쉽습니다.",
-                  "section": "What's in this repo",
-                  "source": "https://github.com/makecindy/cindy#readme"
+                  "title": "에이전트와 도구를 연결하는 MCP",
+                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
+                  "section": "What you get",
+                  "source": "https://github.com/JetBrains/thinkrail#readme"
                 }
               ],
-              "conditions": [
-                {
-                  "title": "Node.js 실행 경로",
-                  "body": "설치·시작 절에서 Node.js 생태계의 실행 방법을 다룹니다. 사용하는 경로에 맞는 런타임과 패키지 실행 조건을 확인할 수 있습니다.",
-                  "section": "Prerequisites",
-                  "source": "https://github.com/makecindy/cindy#readme"
-                }
-              ],
+              "conditions": [],
               "workflow": [
                 {
                   "title": "적용할 작업 정하기",
@@ -569,7 +303,7 @@
                 },
                 {
                   "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Getting started” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                  "body": "README의 “Install” 절이 시작 지점입니다. 하위 항목으로 Desktop, Command line, Platform notes 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
                 },
                 {
                   "title": "작은 결과물로 적합성 판단하기",
@@ -579,12 +313,85 @@
               "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
               "coverage": {
                 "findings": 2,
+                "conditions": 0,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "263ab41caeb6e6278769fc708e8dcd7b4d91bbcc"
+          }
+        },
+        {
+          "name": "milind-soni/OpenMausBot",
+          "url": "https://github.com/milind-soni/OpenMausBot",
+          "description": "Open-source Grok Bot alternative with a virtual machine that bots can use",
+          "language": "TypeScript",
+          "stars": 7661,
+          "periodStars": 1199,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
+            "source": "https://github.com/milind-soni/OpenMausBot#readme",
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Quick start",
+              "steps": [
+                "Desktop capability status",
+                "Triggers: schedules and webhooks"
+              ],
+              "command": "",
+              "excerpt": "See the Ubuntu Desktop guide for installation, capabilities, and troubleshooting."
+            },
+            "article": {
+              "title": "milind-soni/OpenMausBot · 프로젝트 분석 노트",
+              "paragraphs": [
+                "milind-soni/OpenMausBot의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "README에서 살펴볼 핵심 항목은 에이전트와 도구를 연결하는 MCP입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
+              ],
+              "findings": [
+                {
+                  "title": "에이전트와 도구를 연결하는 MCP",
+                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
+                  "section": "Orchestrate OpenMausBot over MCP",
+                  "source": "https://github.com/milind-soni/OpenMausBot#readme"
+                }
+              ],
+              "conditions": [
+                {
+                  "title": "Node.js 실행 경로",
+                  "body": "설치·시작 절에서 Node.js 생태계의 실행 방법을 다룹니다. 사용하는 경로에 맞는 런타임과 패키지 실행 조건을 확인할 수 있습니다.",
+                  "section": "Quick start",
+                  "source": "https://github.com/milind-soni/OpenMausBot#readme"
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Quick start” 절이 시작 지점입니다. 하위 항목으로 Desktop capability status, Triggers: schedules and webhooks 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
+              "coverage": {
+                "findings": 1,
                 "conditions": 1,
                 "hasStart": true
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
             },
-            "readmeSha": "0d3c698b5d03b65ca10fdefb4d3a49a1d19bde22"
+            "readmeSha": "50140729a8a27690fad4c327d019b3858e25affc"
           }
         },
         {
@@ -592,12 +399,12 @@
           "url": "https://github.com/nightly-labs/openbot",
           "description": "A local-first desktop workspace for persistent AI teammates. Run Codex, Claude, and Grok with dedicated workspaces, task queues, file sharing, browser control, and agent-to-agent collaboration.",
           "language": "TypeScript",
-          "stars": 3424,
-          "periodStars": 1054,
+          "stars": 4003,
+          "periodStars": 709,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
             "source": "https://github.com/nightly-labs/openbot#readme",
             "category": "용도 분류 미확정",
             "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
@@ -664,7 +471,243 @@
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
             },
-            "readmeSha": "c895cf81d1cc77b64996ea44301bf7cb0fabb48c"
+            "readmeSha": "9e7985028bdb88ef577018cde0d33fc9458d4361"
+          }
+        },
+        {
+          "name": "elayadesign/ai-design-skills",
+          "url": "https://github.com/elayadesign/ai-design-skills",
+          "description": "",
+          "language": "미분류",
+          "stars": 12428,
+          "periodStars": 1187,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
+            "source": "https://github.com/elayadesign/ai-design-skills#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Install",
+              "steps": [],
+              "command": "mkdir -p .claude/skills\ngit clone https://github.com/elayadesign/ai-design-skills.git /tmp/ai-design-skills\ncp -r /tmp/ai-design-skills/skills/<skill-name> .claude/skills/",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "elayadesign/ai-design-skills · 프로젝트 분석 노트",
+              "paragraphs": [
+                "elayadesign/ai-design-skills는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
+                "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
+              ],
+              "findings": [],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Install” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
+                }
+              ],
+              "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 0,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "32677792be09e0b9fba13b10c2f94a804c488900"
+          }
+        },
+        {
+          "name": "thedotmack/claude-mem",
+          "url": "https://github.com/thedotmack/claude-mem",
+          "description": "Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More",
+          "language": "TypeScript",
+          "stars": 105024,
+          "periodStars": 336,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
+            "source": "https://github.com/thedotmack/claude-mem#readme",
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Quick Start",
+              "steps": [
+                "🦞 OpenClaw Gateway"
+              ],
+              "command": "npx claude-mem install --ide grok-bot",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "thedotmack/claude-mem · 프로젝트 분석 노트",
+              "paragraphs": [
+                "thedotmack/claude-mem의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "README에서 살펴볼 핵심 항목은 작업 정보의 유지, 플러그인 탐색과 설치 경로, 에이전트와 도구를 연결하는 MCP, 토큰 사용량을 줄이는 접근입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
+              ],
+              "findings": [
+                {
+                  "title": "작업 정보의 유지",
+                  "body": "세션 정보나 지속 메모리에 대한 설명이 있습니다. 여러 단계로 진행되는 작업에서 이전 정보를 이어 쓰는 흐름과 관련됩니다. 세션을 바꾼 뒤에도 필요한 정보가 재사용되는지 확인해 볼 수 있습니다.",
+                  "section": "README 도입부",
+                  "source": "https://github.com/thedotmack/claude-mem#readme"
+                },
+                {
+                  "title": "플러그인 탐색과 설치 경로",
+                  "body": "플러그인 목록이나 마켓플레이스가 문서에 등장합니다. 필요한 기능을 개별 플러그인으로 선택하는 방식과 연결됩니다. 전체 목록보다 현재 작업에 맞는 항목을 골라 해당 플러그인의 문서까지 읽는 것이 사용 흐름의 출발점입니다.",
+                  "section": "Quick Start",
+                  "source": "https://github.com/thedotmack/claude-mem#readme"
+                },
+                {
+                  "title": "에이전트와 도구를 연결하는 MCP",
+                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
+                  "section": "MCP Search Tools",
+                  "source": "https://github.com/thedotmack/claude-mem#readme"
+                },
+                {
+                  "title": "토큰 사용량을 줄이는 접근",
+                  "body": "토큰 절감에 관한 설명이 있습니다. 사용량 감소와 결과의 정보량을 함께 비교해야 실제 활용 가치를 판단할 수 있습니다. 문서의 수치와 별개로 자신의 작업에서 입력량·출력량·정확도를 기록해 볼 수 있습니다.",
+                  "section": "MCP Search Tools",
+                  "source": "https://github.com/thedotmack/claude-mem#readme"
+                }
+              ],
+              "conditions": [
+                {
+                  "title": "Python 실행 경로",
+                  "body": "설치·시작 절에서 Python을 다룹니다. 요구 버전과 패키지 설치 범위는 원문의 해당 경로를 확인하세요.",
+                  "section": "System Requirements",
+                  "source": "https://github.com/thedotmack/claude-mem#readme"
+                },
+                {
+                  "title": "Node.js 실행 경로",
+                  "body": "설치·시작 절에서 Node.js 생태계의 실행 방법을 다룹니다. 사용하는 경로에 맞는 런타임과 패키지 실행 조건을 확인할 수 있습니다.",
+                  "section": "Quick Start",
+                  "source": "https://github.com/thedotmack/claude-mem#readme"
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Quick Start” 절이 시작 지점입니다. 하위 항목으로 🦞 OpenClaw Gateway 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
+              "coverage": {
+                "findings": 4,
+                "conditions": 2,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "9a2cfbe945c6290edae9618548aca660e940e60f"
+          }
+        },
+        {
+          "name": "CopilotKit/OpenBot",
+          "url": "https://github.com/CopilotKit/OpenBot",
+          "description": "Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.",
+          "language": "TypeScript",
+          "stars": 8294,
+          "periodStars": 247,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
+            "source": "https://github.com/CopilotKit/OpenBot#readme",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick start",
+              "steps": [
+                "Intelligence on your own machine"
+              ],
+              "command": "cp .env.example .env\n   bun install",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "CopilotKit/OpenBot · 프로젝트 분석 노트",
+              "paragraphs": [
+                "CopilotKit/OpenBot는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
+                "README에서 살펴볼 핵심 항목은 에이전트와 도구를 연결하는 MCP입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
+              ],
+              "findings": [
+                {
+                  "title": "에이전트와 도구를 연결하는 MCP",
+                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
+                  "section": "What it is",
+                  "source": "https://github.com/CopilotKit/OpenBot#readme"
+                }
+              ],
+              "conditions": [
+                {
+                  "title": "컨테이너 실행 환경",
+                  "body": "시작·설치 관련 절에 Docker가 등장합니다. 컨테이너 실행 경로를 사용할 때 필요한 설정과 실행 방식을 해당 절에서 확인할 수 있습니다.",
+                  "section": "Requirements",
+                  "source": "https://github.com/CopilotKit/OpenBot#readme"
+                },
+                {
+                  "title": "클러스터 운영 환경",
+                  "body": "설치 관련 절에 Kubernetes가 등장합니다. 로컬 애플리케이션 설치와 클러스터 배포 중 어떤 경로가 문서화돼 있는지 확인해야 합니다.",
+                  "section": "Organization sign-in for desktop installations",
+                  "source": "https://github.com/CopilotKit/OpenBot#readme"
+                },
+                {
+                  "title": "Node.js 실행 경로",
+                  "body": "설치·시작 절에서 Node.js 생태계의 실행 방법을 다룹니다. 사용하는 경로에 맞는 런타임과 패키지 실행 조건을 확인할 수 있습니다.",
+                  "section": "Quick start",
+                  "source": "https://github.com/CopilotKit/OpenBot#readme"
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Quick start” 절이 시작 지점입니다. 하위 항목으로 Intelligence on your own machine 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
+                }
+              ],
+              "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
+              "coverage": {
+                "findings": 1,
+                "conditions": 3,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "0ef1c5438bf4274a765d7aa968ce71b999a18d04"
           }
         },
         {
@@ -672,12 +715,12 @@
           "url": "https://github.com/togg53192-cmd/jailbreaks",
           "description": "LIST OF ALL MY JAILBREAKS",
           "language": "미분류",
-          "stars": 7482,
-          "periodStars": 1477,
+          "stars": 9469,
+          "periodStars": 1594,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-10-29T06:00:24.041Z",
+            "checkedAt": "2026-10-30T06:01:43.888Z",
             "source": "https://github.com/togg53192-cmd/jailbreaks#readme",
             "category": "용도 분류 미확정",
             "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
@@ -2489,6 +2532,13 @@
       "hash": "cc3168aac5af101246750a70ef1b22c9d1d4c2e8704088a5a6e6c44ef259de73",
       "status": "published",
       "processedAt": "2026-10-29T06:00:24.041Z"
+    },
+    {
+      "issue": "daily:2026-10-30",
+      "period": "daily",
+      "hash": "82d2e9af1b56c8ddbc8dcafcfe3a26f130adf0b7b7f45aa4a0a8dc800a5a828e",
+      "status": "published",
+      "processedAt": "2026-10-30T06:01:43.888Z"
     }
   ]
 }

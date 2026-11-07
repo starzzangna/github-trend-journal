@@ -3,28 +3,84 @@
   "reports": {
     "daily": {
       "period": "daily",
-      "issue": "daily:2026-11-06",
-      "publishedAt": "2026-11-06T07:00:02.758Z",
-      "title": "Today · NVIDIA/auto-ontology부터 살펴보는 오픈소스 트렌드",
-      "summary": "GitHub Trending 상위 10개 프로젝트를 살펴봤습니다. Python 프로젝트가 4개 포함되어 있습니다.",
+      "issue": "daily:2026-11-07",
+      "publishedAt": "2026-11-07T06:14:01.696Z",
+      "title": "Today · zed-industries/zed부터 살펴보는 오픈소스 트렌드",
+      "summary": "GitHub Trending 상위 10개 프로젝트를 살펴봤습니다. Rust 프로젝트가 2개 포함되어 있습니다.",
       "analysis": [
-        "GitHub 표시 순위의 첫 번째 프로젝트는 NVIDIA/auto-ontology입니다.",
-        "수집 목록에서 표시된 기간 스타 수가 가장 큰 프로젝트는 NVIDIA/auto-ontology으로, 2,679개입니다.",
+        "GitHub 표시 순위의 첫 번째 프로젝트는 zed-industries/zed입니다.",
+        "수집 목록에서 표시된 기간 스타 수가 가장 큰 프로젝트는 NVIDIA/auto-ontology으로, 2,015개입니다.",
         "이 글은 수집 시점의 목록을 요약한 자동 보고서입니다. 성장 원인이나 과거 대비 변화는 추정하지 않습니다."
       ],
       "source": "https://github.com/trending?since=daily",
       "rows": [
         {
+          "name": "zed-industries/zed",
+          "url": "https://github.com/zed-industries/zed",
+          "description": "Code at the speed of thought – Zed is a high-performance, multiplayer code editor from the creators of Atom and Tree-sitter.",
+          "language": "Rust",
+          "stars": 93811,
+          "periodStars": 306,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
+            "source": "https://github.com/zed-industries/zed#readme",
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Installation",
+              "steps": [],
+              "command": "",
+              "excerpt": "On macOS, Linux, and Windows you can download Zed directly or install Zed via your local package manager (macOS/Linux/Windows)."
+            },
+            "article": {
+              "title": "zed-industries/zed · 프로젝트 분석 노트",
+              "paragraphs": [
+                "zed-industries/zed의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
+              ],
+              "findings": [],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Installation” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 0,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "9f641fb3841909e9e1f6dbfb947f953c0a0c5ebf"
+          }
+        },
+        {
           "name": "NVIDIA/auto-ontology",
           "url": "https://github.com/NVIDIA/auto-ontology",
           "description": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables deterministic query generation, better context retrieval, and more explainable AI for LLM and agent workflows.",
           "language": "Python",
-          "stars": 7874,
-          "periodStars": 2679,
+          "stars": 9305,
+          "periodStars": 2015,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
             "source": "https://github.com/NVIDIA/auto-ontology#readme",
             "category": "AI 에이전트 운영",
             "purpose": "AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.",
@@ -97,223 +153,17 @@
           }
         },
         {
-          "name": "mattpocock/skills",
-          "url": "https://github.com/mattpocock/skills",
-          "description": "Skills for Real Engineers. Straight from my .agents directory.",
-          "language": "Shell",
-          "stars": 315716,
-          "periodStars": 2071,
+          "name": "rails/rails",
+          "url": "https://github.com/rails/rails",
+          "description": "Ruby on Rails",
+          "language": "Ruby",
+          "stars": 59055,
+          "periodStars": 142,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
-            "source": "https://github.com/mattpocock/skills#readme",
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Installation (30-second setup)",
-              "steps": [
-                "1. Get the skills",
-                "2. Run /setup-matt-pocock-skills",
-                "3. Bam - you're ready to go."
-              ],
-              "command": "claude plugin install mattpocock-skills@claude-plugins-official",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "mattpocock/skills · 프로젝트 분석 노트",
-              "paragraphs": [
-                "mattpocock/skills는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
-                "README에서 살펴볼 핵심 항목은 작업별 절차를 제공하는 스킬입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
-              ],
-              "findings": [
-                {
-                  "title": "작업별 절차를 제공하는 스킬",
-                  "body": "에이전트용 스킬을 문서에서 다룹니다. 작업별 지침을 에이전트에 연결하는 유형으로 읽을 수 있습니다. 스킬 설치 여부뿐 아니라 실제 작업에서 해당 지침이 적용되는지를 결과물로 확인하는 것이 중요합니다.",
-                  "section": "Skills For Real Engineers",
-                  "source": "https://github.com/mattpocock/skills#readme"
-                }
-              ],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Installation (30-second setup)” 절이 시작 지점입니다. 하위 항목으로 1. Get the skills, 2. Run /setup-matt-pocock-skills, 3. Bam - you're ready to go. 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
-              "coverage": {
-                "findings": 1,
-                "conditions": 0,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "f7038f139299985eea6c3e18398dbafb379a0010"
-          }
-        },
-        {
-          "name": "garrytan/gstack",
-          "url": "https://github.com/garrytan/gstack",
-          "description": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-          "language": "TypeScript",
-          "stars": 140154,
-          "periodStars": 612,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
-            "source": "https://github.com/garrytan/gstack#readme",
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Quick start",
-              "steps": [],
-              "command": "",
-              "excerpt": "1. Install gstack (two pastes, about 30 seconds of setup; see below)."
-            },
-            "article": {
-              "title": "garrytan/gstack · 프로젝트 분석 노트",
-              "paragraphs": [
-                "garrytan/gstack는 AI 에이전트 스킬 분야의 프로젝트로 분류했습니다. AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다. 관심을 둘 대상은 AI 코딩·연구 에이전트를 사용하는 개발자·연구자입니다.",
-                "README에서 살펴볼 핵심 항목은 에이전트와 도구를 연결하는 MCP, 여러 에이전트의 작업 조정, 화면 구성과 영상 렌더링의 연결, 문서에 넣을 시각 자료입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
-              ],
-              "findings": [
-                {
-                  "title": "에이전트와 도구를 연결하는 MCP",
-                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
-                  "section": "Step 1: Install on your machine",
-                  "source": "https://github.com/garrytan/gstack#readme"
-                },
-                {
-                  "title": "여러 에이전트의 작업 조정",
-                  "body": "복수 에이전트나 작업 조정에 대한 설명이 있습니다. 역할을 나눠 작업을 진행하는 활용과 연결됩니다. 역할 간 입력·출력과 완료 기준을 명확히 정해야 실행 결과를 추적하기 쉽습니다.",
-                  "section": "The sprint",
-                  "source": "https://github.com/garrytan/gstack#readme"
-                },
-                {
-                  "title": "화면 구성과 영상 렌더링의 연결",
-                  "body": "HTML 구성이나 영상 렌더링을 문서에서 다룹니다. 웹 개발 방식으로 제작한 구성을 영상 결과물로 확인하려는 활용과 관련됩니다. 장면 길이와 출력 결과를 작은 예제로 비교하는 접근이 적합합니다.",
-                  "section": "Docs",
-                  "source": "https://github.com/garrytan/gstack#readme"
-                },
-                {
-                  "title": "문서에 넣을 시각 자료",
-                  "body": "SVG 또는 독립 HTML 결과물이 문서에 언급됩니다. 설명 자료에 그림을 포함하거나 결과물을 수정하려는 사용자가 확인할 항목입니다. 실제 출력 형식과 편집 가능 범위를 예제로 살펴볼 수 있습니다.",
-                  "section": "The sprint",
-                  "source": "https://github.com/garrytan/gstack#readme"
-                }
-              ],
-              "conditions": [
-                {
-                  "title": "Node.js 실행 경로",
-                  "body": "설치·시작 절에서 Node.js 생태계의 실행 방법을 다룹니다. 사용하는 경로에 맞는 런타임과 패키지 실행 조건을 확인할 수 있습니다.",
-                  "section": "Install — about 30 seconds",
-                  "source": "https://github.com/garrytan/gstack#readme"
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Quick start” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자에게 검토할 만한 유형입니다. 다만 이 판단은 프로젝트의 인기도나 실제 성능을 보증하는 추천이 아니라 작업 유형에 따른 해석입니다. 위의 시작 경로와 결과 확인 기준을 자신의 작업에 대입해 적용 범위를 정하는 것이 좋습니다.",
-              "coverage": {
-                "findings": 4,
-                "conditions": 1,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "47e3e4ee9d0dc04ceb4cddf57d92da07dd719004"
-          }
-        },
-        {
-          "name": "Usagi-org/ai-goofish-monitor",
-          "url": "https://github.com/Usagi-org/ai-goofish-monitor",
-          "description": "基于 Playwright 和AI实现的闲鱼多任务实时/定时监控与智能分析系统，配备了功能完善的后台管理UI。帮助用户从闲鱼海量商品中，找到心仪产品。",
-          "language": "Python",
-          "stars": 17926,
-          "periodStars": 240,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
-            "source": "https://github.com/Usagi-org/ai-goofish-monitor#readme",
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": null,
-            "article": {
-              "title": "Usagi-org/ai-goofish-monitor · 프로젝트 분석 노트",
-              "paragraphs": [
-                "Usagi-org/ai-goofish-monitor의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
-                "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
-              ],
-              "findings": [],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 0,
-                "hasStart": false
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "af6de028699cfc73afdc66a342a54353d8280eec"
-          }
-        },
-        {
-          "name": "D4Vinci/Scrapling",
-          "url": "https://github.com/D4Vinci/Scrapling",
-          "description": "🕷️ The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev",
-          "language": "Python",
-          "stars": 98330,
-          "periodStars": 1655,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
-            "source": "https://github.com/D4Vinci/Scrapling#readme",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
+            "source": "https://github.com/rails/rails#readme",
             "category": "용도 분류 미확정",
             "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
             "audience": null,
@@ -321,102 +171,22 @@
             "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
             "start": {
               "heading": "Getting Started",
-              "steps": [
-                "Basic Usage",
-                "Spiders",
-                "Advanced Parsing & Navigation"
-              ],
-              "command": "",
-              "excerpt": "Let's give you a quick glimpse of what Scrapling can do without deep diving."
-            },
-            "article": {
-              "title": "D4Vinci/Scrapling · 프로젝트 분석 노트",
-              "paragraphs": [
-                "D4Vinci/Scrapling의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
-                "README에서 살펴볼 핵심 항목은 작업별 절차를 제공하는 스킬, 에이전트와 도구를 연결하는 MCP입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
-              ],
-              "findings": [
-                {
-                  "title": "작업별 절차를 제공하는 스킬",
-                  "body": "에이전트용 스킬을 문서에서 다룹니다. 작업별 지침을 에이전트에 연결하는 유형으로 읽을 수 있습니다. 스킬 설치 여부뿐 아니라 실제 작업에서 해당 지침이 적용되는지를 결과물로 확인하는 것이 중요합니다.",
-                  "section": "README 도입부",
-                  "source": "https://github.com/D4Vinci/Scrapling#readme"
-                },
-                {
-                  "title": "에이전트와 도구를 연결하는 MCP",
-                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
-                  "section": "README 도입부",
-                  "source": "https://github.com/D4Vinci/Scrapling#readme"
-                }
-              ],
-              "conditions": [
-                {
-                  "title": "Python 실행 경로",
-                  "body": "설치·시작 절에서 Python을 다룹니다. 요구 버전과 패키지 설치 범위는 원문의 해당 경로를 확인하세요.",
-                  "section": "Installation",
-                  "source": "https://github.com/D4Vinci/Scrapling#readme"
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Getting Started” 절이 시작 지점입니다. 하위 항목으로 Basic Usage, Spiders, Advanced Parsing & Navigation 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
-              "coverage": {
-                "findings": 2,
-                "conditions": 1,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "bf5a1eff0137552b0696859e17973e4bbf319406"
-          }
-        },
-        {
-          "name": "vercel-labs/agent-desktop",
-          "url": "https://github.com/vercel-labs/agent-desktop",
-          "description": "Computer use CLI for AI agents",
-          "language": "Rust",
-          "stars": 17319,
-          "periodStars": 2173,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
-            "source": "https://github.com/vercel-labs/agent-desktop#readme",
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": {
-              "heading": "Quick start",
               "steps": [],
-              "command": "",
-              "excerpt": "Each command prints one JSON envelope. A trimmed snapshot:"
+              "command": "$ gem install rails",
+              "excerpt": ""
             },
             "article": {
-              "title": "vercel-labs/agent-desktop · 프로젝트 분석 노트",
+              "title": "rails/rails · 프로젝트 분석 노트",
               "paragraphs": [
-                "vercel-labs/agent-desktop의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
-                "README에서 살펴볼 핵심 항목은 에이전트와 도구를 연결하는 MCP입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
+                "rails/rails의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "README에서 살펴볼 핵심 항목은 화면 구성과 영상 렌더링의 연결입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
               ],
               "findings": [
                 {
-                  "title": "에이전트와 도구를 연결하는 MCP",
-                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
-                  "section": "MCP",
-                  "source": "https://github.com/vercel-labs/agent-desktop#readme"
+                  "title": "화면 구성과 영상 렌더링의 연결",
+                  "body": "HTML 구성이나 영상 렌더링을 문서에서 다룹니다. 웹 개발 방식으로 제작한 구성을 영상 결과물로 확인하려는 활용과 관련됩니다. 장면 길이와 출력 결과를 작은 예제로 비교하는 접근이 적합합니다.",
+                  "section": "View layer",
+                  "source": "https://github.com/rails/rails#readme"
                 }
               ],
               "conditions": [],
@@ -427,7 +197,7 @@
                 },
                 {
                   "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Quick start” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                  "body": "README의 “Getting Started” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
                 },
                 {
                   "title": "작은 결과물로 적합성 판단하기",
@@ -442,36 +212,101 @@
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
             },
-            "readmeSha": "32dee9630df91348cb7202f5e4329b30b5237e3c"
+            "readmeSha": "2db661bbb768df422fc31a548c987f3072f6b564"
           }
         },
         {
-          "name": "max-sixty/worktrunk",
-          "url": "https://github.com/max-sixty/worktrunk",
-          "description": "Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows",
-          "language": "Rust",
-          "stars": 11646,
-          "periodStars": 546,
+          "name": "mpv-player/mpv",
+          "url": "https://github.com/mpv-player/mpv",
+          "description": "🎥 Command line media player",
+          "language": "C",
+          "stars": 37927,
+          "periodStars": 37,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
-            "source": "https://github.com/max-sixty/worktrunk#readme",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
+            "source": "https://github.com/mpv-player/mpv#readme",
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": null,
+            "article": {
+              "title": "mpv-player/mpv · 프로젝트 분석 노트",
+              "paragraphs": [
+                "mpv-player/mpv의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "README에서 살펴볼 핵심 항목은 화면 구성과 영상 렌더링의 연결입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
+              ],
+              "findings": [
+                {
+                  "title": "화면 구성과 영상 렌더링의 연결",
+                  "body": "HTML 구성이나 영상 렌더링을 문서에서 다룹니다. 웹 개발 방식으로 제작한 구성을 영상 결과물로 확인하려는 활용과 관련됩니다. 장면 길이와 출력 결과를 작은 예제로 비교하는 접근이 적합합니다.",
+                  "section": "System requirements",
+                  "source": "https://github.com/mpv-player/mpv#readme"
+                }
+              ],
+              "conditions": [
+                {
+                  "title": "연산 장치 관련 조건",
+                  "body": "설치·시작 절에 GPU 또는 CUDA가 등장합니다. 필수 조건인지 선택 가능한 가속 경로인지 원문에서 구분해 확인해야 합니다.",
+                  "section": "System requirements",
+                  "source": "https://github.com/mpv-player/mpv#readme"
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
+              "coverage": {
+                "findings": 1,
+                "conditions": 1,
+                "hasStart": false
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "0d8caf101928aa0831583fd5742cb16d48d43315"
+          }
+        },
+        {
+          "name": "rust-lang/rust",
+          "url": "https://github.com/rust-lang/rust",
+          "description": "Empowering everyone to build reliable and efficient software.",
+          "language": "Rust",
+          "stars": 121515,
+          "periodStars": 192,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
+            "source": "https://github.com/rust-lang/rust#readme",
             "category": "용도 분류 미확정",
             "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
             "audience": null,
             "scenario": null,
             "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
             "start": {
-              "heading": "Quick start",
+              "heading": "Quick Start",
               "steps": [],
-              "command": "$ wt switch --create feature-auth\n✓ Created branch feature-auth from main and worktree @ ~/repo.feature-auth",
-              "excerpt": ""
+              "command": "",
+              "excerpt": "Read [\"Installation\"] from [The Book]."
             },
             "article": {
-              "title": "max-sixty/worktrunk · 프로젝트 분석 노트",
+              "title": "rust-lang/rust · 프로젝트 분석 노트",
               "paragraphs": [
-                "max-sixty/worktrunk의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "rust-lang/rust의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
                 "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
               ],
               "findings": [],
@@ -483,7 +318,7 @@
                 },
                 {
                   "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Quick start” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                  "body": "README의 “Quick Start” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
                 },
                 {
                   "title": "작은 결과물로 적합성 판단하기",
@@ -498,21 +333,140 @@
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
             },
-            "readmeSha": "7dc9e151754e4d5acf1add7d5aa99e69e481b56b"
+            "readmeSha": "ed35016eb3a238614741e5922a06b9bf83f9780e"
           }
         },
         {
-          "name": "lz4/lz4",
-          "url": "https://github.com/lz4/lz4",
-          "description": "Extremely Fast Compression algorithm",
-          "language": "C",
-          "stars": 12466,
-          "periodStars": 23,
+          "name": "react/react",
+          "url": "https://github.com/react/react",
+          "description": "The library for web and native user interfaces.",
+          "language": "JavaScript",
+          "stars": 252304,
+          "periodStars": 248,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
-            "source": "https://github.com/lz4/lz4#readme",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
+            "source": "https://github.com/react/react#readme",
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Installation",
+              "steps": [],
+              "command": "",
+              "excerpt": "React has been designed for gradual adoption from the start, and you can use as little or as much React"
+            },
+            "article": {
+              "title": "react/react · 프로젝트 분석 노트",
+              "paragraphs": [
+                "react/react의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
+              ],
+              "findings": [],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Installation” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 0,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "6dd74794143a0ebfb6c6f094d3f2632d87ad628a"
+          }
+        },
+        {
+          "name": "angular/angular",
+          "url": "https://github.com/angular/angular",
+          "description": "Deliver web apps with confidence 🚀",
+          "language": "TypeScript",
+          "stars": 101418,
+          "periodStars": 135,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
+            "source": "https://github.com/angular/angular#readme",
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Quickstart",
+              "steps": [],
+              "command": "",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "angular/angular · 프로젝트 분석 노트",
+              "paragraphs": [
+                "angular/angular의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "Node.js 실행 경로",
+                  "body": "설치·시작 절에서 Node.js 생태계의 실행 방법을 다룹니다. 사용하는 경로에 맞는 런타임과 패키지 실행 조건을 확인할 수 있습니다.",
+                  "section": "Prerequisites",
+                  "source": "https://github.com/angular/angular#readme"
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Quickstart” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 1,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "c1528944d08b5be8e2997e46a842b35fd998a11f"
+          }
+        },
+        {
+          "name": "symfony/symfony",
+          "url": "https://github.com/symfony/symfony",
+          "description": "The Symfony PHP framework",
+          "language": "PHP",
+          "stars": 31475,
+          "periodStars": 128,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
+            "source": "https://github.com/symfony/symfony#readme",
             "category": "용도 분류 미확정",
             "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
             "audience": null,
@@ -520,9 +474,9 @@
             "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
             "start": null,
             "article": {
-              "title": "lz4/lz4 · 프로젝트 분석 노트",
+              "title": "symfony/symfony · 프로젝트 분석 노트",
               "paragraphs": [
-                "lz4/lz4의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "symfony/symfony의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
                 "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
               ],
               "findings": [],
@@ -549,7 +503,67 @@
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
             },
-            "readmeSha": "25b4c8f07e53b125e836f7b515ec88f4706c559e"
+            "readmeSha": "c83a087239e561e8161b6b824bd365559a16295f"
+          }
+        },
+        {
+          "name": "prometheus/prometheus",
+          "url": "https://github.com/prometheus/prometheus",
+          "description": "The Prometheus monitoring system and time series database.",
+          "language": "Go",
+          "stars": 67232,
+          "periodStars": 148,
+          "usage": {
+            "version": 2,
+            "status": "ready",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
+            "source": "https://github.com/prometheus/prometheus#readme",
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Install",
+              "steps": [
+                "Precompiled binaries",
+                "Docker images",
+                "Building from source"
+              ],
+              "command": "docker run --name prometheus -d -p 127.0.0.1:9090:9090 prom/prometheus",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "prometheus/prometheus · 프로젝트 분석 노트",
+              "paragraphs": [
+                "prometheus/prometheus의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
+                "문서에서 구체적인 기능을 자동으로 충분히 찾아내지 못했습니다. 지원 기능을 단정하는 설명을 늘리지 않고, 확인 가능한 시작 경로와 검토 기준을 제공합니다."
+              ],
+              "findings": [],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Install” 절이 시작 지점입니다. 하위 항목으로 Precompiled binaries, Docker images, Building from source 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 0,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
+            },
+            "readmeSha": "a3aca0783c2aa0ee679234c86e74fc934da08f9d"
           }
         },
         {
@@ -557,12 +571,12 @@
           "url": "https://github.com/google/skills",
           "description": "Agent Skills for Google products and technologies",
           "language": "Python",
-          "stars": 22517,
-          "periodStars": 211,
+          "stars": 22941,
+          "periodStars": 534,
           "usage": {
             "version": 2,
             "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
+            "checkedAt": "2026-11-07T06:14:01.696Z",
             "source": "https://github.com/google/skills#readme",
             "category": "AI 에이전트 스킬",
             "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
@@ -637,77 +651,7 @@
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
             },
-            "readmeSha": "cec629bed635ee1bffd9f70a3c96dd3c536e0141"
-          }
-        },
-        {
-          "name": "vercel-labs/agent-browser",
-          "url": "https://github.com/vercel-labs/agent-browser",
-          "description": "Browser automation CLI for AI agents",
-          "language": "Rust",
-          "stars": 46089,
-          "periodStars": 150,
-          "usage": {
-            "version": 2,
-            "status": "ready",
-            "checkedAt": "2026-11-06T07:00:02.758Z",
-            "source": "https://github.com/vercel-labs/agent-browser#readme",
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": {
-              "heading": "Quick start",
-              "steps": [],
-              "command": "",
-              "excerpt": "The snapshot for example.com:"
-            },
-            "article": {
-              "title": "vercel-labs/agent-browser · 프로젝트 분석 노트",
-              "paragraphs": [
-                "vercel-labs/agent-browser의 용도는 현재 규칙으로 확정하지 못했습니다. 아래에서는 README에서 탐지한 내용과 시작 경로를 정리하며, 확인되지 않은 기능은 설명에 추가하지 않습니다.",
-                "README에서 살펴볼 핵심 항목은 에이전트와 도구를 연결하는 MCP입니다. 아래 해설은 이 항목들이 어떤 작업과 연결되는지를 정리한 것입니다. 문서에 용어가 등장한다는 사실을 출발점으로 삼으며, 개별 기능의 동작 여부와 품질은 직접 검증한 결과가 아닙니다."
-              ],
-              "findings": [
-                {
-                  "title": "에이전트와 도구를 연결하는 MCP",
-                  "body": "MCP가 문서에 언급됩니다. 에이전트가 외부 도구나 기능에 접근하는 연결 경로를 검토할 때 살펴볼 부분입니다. 사용 중인 클라이언트의 연결 방식과 저장소의 설정 절차가 맞는지 확인해야 합니다.",
-                  "section": "For AI agents",
-                  "source": "https://github.com/vercel-labs/agent-browser#readme"
-                }
-              ],
-              "conditions": [
-                {
-                  "title": "Node.js 실행 경로",
-                  "body": "설치·시작 절에서 Node.js 생태계의 실행 방법을 다룹니다. 사용하는 경로에 맞는 런타임과 패키지 실행 조건을 확인할 수 있습니다.",
-                  "section": "Install",
-                  "source": "https://github.com/vercel-labs/agent-browser#readme"
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Quick start” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "자동 분류 근거가 충분하지 않아 대상 사용자에 대한 추천은 보류했습니다. 원문에서 구체적인 입력·출력 예를 확인한 뒤 판단해 주세요.",
-              "coverage": {
-                "findings": 1,
-                "conditions": 1,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다."
-            },
-            "readmeSha": "53f71fd42a568994479edfa5063c58ca0b5dad8d"
+            "readmeSha": "ddd29c3a8732ef8f2debb3e381173f0cce80451c"
           }
         }
       ]
@@ -2437,6 +2381,13 @@
       "hash": "5da75c29ccff85b4e34fae0deb1d96a17732612de5ca9b6f64de32abfbcf02e1",
       "status": "published",
       "processedAt": "2026-11-06T07:00:02.758Z"
+    },
+    {
+      "issue": "daily:2026-11-07",
+      "period": "daily",
+      "hash": "15942134aac92d7a7e595a1310e1c7e957ed1b1d42a0fd5e3e827d0233bb22b6",
+      "status": "published",
+      "processedAt": "2026-11-07T06:14:01.696Z"
     }
   ]
 }

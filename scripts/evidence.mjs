@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { representativeSpecs, ioNotApplicable } from './representatives.mjs';
+import { representativesForVersion, ioNotApplicable } from './representatives.mjs';
 
 const negative = /\b(?:does not|doesn't|cannot|can't|not yet|not supported|unsupported|no support|without|not implemented|planned|coming soon)\b|지원하지|미지원|구현 예정/i;
 
@@ -35,7 +35,7 @@ export function createEvidence(row, sections, now, metadata = {}, evidence = [])
       const paragraphs = document.text.split(/\n\s*\n/).flatMap(text => text.split(/\n(?=\s*(?:[-*]\s|\d+\.\s))/)).map(text => text.replace(/\s+/g, ' ').trim());
       const units = paragraphs.flatMap(text => wholeParagraph ? [text] : text.split(/(?<=[.!?。])\s+/)).map(text => ({ text, kind: document.exampleOnly ? 'example' : 'prose' }));
       if (headings && (allowNegative || !negative.test(document.text))) units.push({ text: document.heading, kind: document.exampleOnly ? 'example' : 'heading' });
-      if (includeExamples && /usage|example|quick.?start|getting started|使用|示例|사용|예시|시작/i.test(document.scope)) {
+      if (includeExamples && (document.representativeId || /usage|example|quick.?start|getting started|使用|示例|사용|예시|시작/i.test(document.scope))) {
         for (const block of document.examples) for (const text of block.split('\n')) units.push({ text: text.trim(), kind: 'example' });
       }
       for (const unit of units) {
@@ -83,7 +83,7 @@ export function assessQuality(usage) {
   const project = usage.article?.project;
   const itemSpecific = usage.version >= 10 && project?.ioScope?.kind === 'item-specific';
   const io = Object.fromEntries(['input', 'output'].map((field, index) => [field, ioNotApplicable(project, field, usage.version) ? 'not-applicable' : project?.[index ? 'outputs' : 'inputs']?.length ? 'documented' : 'insufficient-evidence']));
-  const expected = itemSpecific ? representativeSpecs.filter(item => item.repository === usage.sources?.[0]?.repository) : [];
+  const expected = itemSpecific ? representativesForVersion(usage.version).filter(item => item.repository === usage.sources?.[0]?.repository) : [];
   const representatives = { expected: expected.length, available: expected.filter(spec => project.examples?.some(item => item.id === spec.id)).length };
   if (usage.category === '용도 분류 미확정') missing.push('용도 분류');
   if (!usage.article?.findings.length) missing.push('핵심 기능 근거');

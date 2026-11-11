@@ -19,8 +19,8 @@ test('실제 스킬 모음의 독립된 작업 근거를 확인하고 이름 목
   for (const name of ['anthropics/skills', 'addyosmani/agent-skills']) {
     const row = analyze(docs.find(item => item.repository === name));
     assert.deepEqual(row.usage.quality.io, { input: 'not-applicable', output: 'not-applicable' });
-    assert.equal(row.usage.quality.representatives.status, 'not-configured');
-    assert.ok(row.usage.quality.missing.includes('대표 항목 근거'));
+    assert.deepEqual(row.usage.quality.representatives, { expected: 2, available: 0, status: 'tracked' });
+    assert.ok(row.usage.quality.missing.some(item => item.startsWith('대표 항목:')));
   }
   const renamed = analyze(base, '', 'example/independent-skills');
   assert.deepEqual(renamed.usage.quality.notApplicable, ['입력', '출력']);
@@ -98,6 +98,6 @@ test('확장한 모음과 혼합 계약을 종합할 때 입력·출력 분모�
   assert.equal(c.inputsNotApplicable, 1);
   assert.equal(c.outputs, 1);
   assert.equal(c.outputsNotApplicable, 2);
-  assert.equal(c.exampleUnconfigured, 2);
-  assert.equal(c.exampleMissing, 0);
+  assert.equal(c.exampleUnconfigured, 0);
+  assert.equal(c.exampleMissing, 4);
 });

@@ -1,4 +1,5 @@
-// 사용자가 요청한 두 모음에서 고정된 대표 항목만 읽습니다. 항목의 문서 지시는 실행하지 않습니다.
+import { skillExamples } from './skill-examples.mjs';
+// 공식 문서에서 확인한 고정된 대표 항목만 읽습니다. 항목의 문서 지시는 실행하지 않습니다.
 export const representativeSpecs = [
   {
     repository: 'TheAlgorithms/Java', id: 'java-binary-search', title: 'BinarySearch · 이진 탐색',
@@ -39,8 +40,11 @@ export const representativeSpecs = [
       output: [[/You get a summary, a follow-up email draft, a team summary and proposed CRM updates/i], '통화 요약, 후속 이메일 초안, 팀 요약, CRM 변경 제안을 얻습니다.'],
       caution: [[/Nothing is written to the CRM or sent until you say so/i], '문서에서는 사용자 지시 전까지 CRM에 기록하거나 이메일을 보내지 않는다고 설명합니다. 연결 권한과 실제 반영 여부를 별도로 확인하세요.']
     }
-  }
+  },
+  ...skillExamples
 ];
+
+export const representativesForVersion = version => representativeSpecs.filter(spec => (spec.sinceVersion || 9) <= version);
 
 export function readJavaDocs(java) {
   return [...java.matchAll(/\/\*\*([\s\S]*?)\*\//g)].map((match, index) => ({
@@ -127,7 +131,7 @@ export function explainRepresentatives(row, context) {
     if (!candidates.length) return [];
     const result = { id: spec.id, title: spec.title, scope: 'representative' };
     for (const [field, [patterns, body]] of Object.entries(spec.fields)) {
-      const ids = patterns.map(pattern => context.select(pattern, { candidates, includeExamples: true, wholeParagraph: true, allowNegative: true }));
+      const ids = patterns.map(pattern => context.select(pattern, { candidates, includeExamples: true, wholeParagraph: true, allowNegative: true, headings: true }));
       if (ids.some(id => !id)) return [];
       result[field] = { title: labels[field], body, kind: 'interpretation', exampleOnly: true, evidenceIds: [...new Set(ids)] };
     }
@@ -139,7 +143,7 @@ export function validateRepresentatives(usage) {
   const examples = usage.article?.project?.examples;
   if (!Array.isArray(examples) || examples.length > 2 || new Set(examples.map(item => item.id)).size !== examples.length) throw Error('대표 항목 목록 오류');
   for (const item of examples) {
-    const spec = representativeSpecs.find(spec => spec.id === item.id && usage.sources.some(source => source.repository === spec.repository && source.representativeId === spec.id && source.path === spec.path));
+    const spec = representativesForVersion(usage.version).find(spec => spec.id === item.id && usage.sources.some(source => source.repository === spec.repository && source.representativeId === spec.id && source.path === spec.path));
     if (!spec || item.title !== spec.title || item.scope !== 'representative') throw Error('대표 항목 범위 오류');
     for (const [field, [patterns, body]] of Object.entries(spec.fields)) {
       const claim = item[field];

@@ -1,3 +1,4 @@
+import { assessQuality } from '../scripts/evidence.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -9,6 +10,8 @@ import { synthesizeReport } from '../scripts/report.mjs';
 const script = await readFile(new URL('../web/app.js', import.meta.url), 'utf8');
 const representativeDocs = JSON.parse(await readFile(new URL('./fixtures/representative-documents.json', import.meta.url)));
 const collectionDocs = JSON.parse(await readFile(new URL('./fixtures/collection-documents.json', import.meta.url)));
+const skillDocs = JSON.parse(await readFile(new URL('./fixtures/skill-representatives.json', import.meta.url)));
+import { skillExamples } from '../scripts/skill-examples.mjs';
 const now = new Date('2026-11-11T00:23:00Z');
 const row = { name: 'example/voice', description: 'voice cloning', language: 'Python', stars: 10, periodStars: 2 };
 const usage = analyzeUsage(row, '# Voice\n## Features\nVoice cloning is supported.\n## Input\nText and a reference recording.\n## Output\nGenerated speech audio.\n## Quick start\nRequires Python 3.11.', now);
@@ -29,9 +32,26 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
 
+test('새 모음의 확인된 대표 항목과 2/2 품질·종합을 한국어로 제공하고 원문은 접어 둔다', async () => {
+  const doc = collectionDocs.find(item => item.repository === 'anthropics/skills');
+  const linked = skillDocs.filter(item => item.repository === doc.repository).map(item => ({ markdown: item.markdown, metadata: { path: item.path, sha: item.path, representativeId: skillExamples.find(spec => spec.path === item.path).id } }));
+  const usage = analyzeUsage({ name: doc.repository }, doc.markdown, now, doc.metadata, [...doc.linkedDocuments, ...linked]);
+  const report = createReport('daily', [{ ...row, name: doc.repository, usage }], now);
+  Object.assign(report, synthesizeReport(report, 'daily', now));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: report } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /대표 항목 근거: 2\/2개 확인/);
+  assert.match(html, /대표 항목 사용 예 · 2개/);
+  assert.match(html, /페이지에서 추출한 텍스트를 문자열 변수 text에 누적/);
+  assert.match(html, /LibreOffice 재계산/);
+  assert.doesNotMatch(html, /개별 스킬 문서 확인이 필요합니다/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+});
+
 test('입력만 공통 계약인 모음은 입력을 유지하고 대표 분석 미지원을 0/0 성공으로 표시하지 않는다', async () => {
   const doc = collectionDocs.find(item => item.repository === 'pbakaus/impeccable');
   const value = analyzeUsage({ name: doc.repository }, doc.markdown, now, doc.metadata, doc.linkedDocuments);
+  value.version = 11; value.analyzerVersion = 11; value.quality = assessQuality(value);
   const report = createReport('daily', [{ ...row, name: doc.repository, usage: value }], now);
   Object.assign(report, synthesizeReport(report, 'daily', now));
   const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: report } }) }));

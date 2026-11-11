@@ -8,7 +8,7 @@ import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from '.
 import { addKoreanPresentation } from './korean.mjs';
 import { fetchLinkedDocuments } from './linked.mjs';
 import { readJavaDocs, explainRepresentatives, collectionScope } from './representatives.mjs';
-export const usageVersion = 11;
+export const usageVersion = 12;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();

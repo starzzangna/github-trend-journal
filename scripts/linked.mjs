@@ -2,13 +2,18 @@ import { createHash } from 'node:crypto';
 import { representativeSpecs } from './representatives.mjs';
 
 // 같은 저장소·참조의 링크만 허용합니다. 일반 문서 외에 고정된 대표 항목만 추가로 읽습니다.
-export function repositoryLinks(markdown, repository, metadata = {}) {
+function repositoryReference(repository, metadata = {}) {
   const prefix = `https://github.com/${repository}/blob/`;
-  if (!metadata.html_url?.startsWith(prefix) || !metadata.path) return [];
+  if (!metadata.html_url?.startsWith(prefix) || !metadata.path) return null;
   const relative = metadata.html_url.slice(prefix.length);
   const suffix = metadata.path.split('/').map(encodeURIComponent).join('/');
-  if (!relative.endsWith(suffix)) return [];
+  if (!relative.endsWith(suffix)) return null;
   const ref = relative.slice(0, -suffix.length).replace(/\/$/, '');
+  return ref || null;
+}
+
+export function repositoryLinks(markdown, repository, metadata = {}) {
+  const ref = repositoryReference(repository, metadata);
   if (!ref) return [];
   const clean = markdown.replace(/<!--[\s\S]*?-->/g, '').replace(/(`{3,}|~{3,})[\s\S]*?\1/g, '');
   const refs = new Map([...clean.matchAll(/^\s*\[([^\]]+)\]:\s*(\S+)/gm)].map(match => [match[1].toLowerCase(), match[2]]));
@@ -76,9 +81,19 @@ export async function fetchLinkedDocuments(markdown, repository, metadata, { fet
   for (const spec of representativeSpecs.filter(item => item.repository === repository)) {
     const parent = spec.parent === metadata.path ? { markdown, metadata } : documents.find(item => item.metadata.path === spec.parent);
     if (!parent) continue;
-    const link = repositoryLinks(parent.markdown, repository, parent.metadata).find(item => item.path === spec.link);
-    if (!link || states.some(item => item.path === spec.path)) continue;
-    const target = spec.format === 'javadoc' ? link : { ...link, path: spec.path, url: link.url + '/README.md', raw: link.raw + '/README.md' };
+    let link = repositoryLinks(parent.markdown, repository, parent.metadata).find(item => item.path === spec.link);
+    // 개별 링크가 없는 공식 명령 문서만 README의 확인한 설명과 고정 경로를 함께 사용합니다.
+    if (!link && spec.rootAnchor && spec.rootAnchor.test(parent.markdown.replace(/<!--[\s\S]*?-->/g, '').replace(/(`{3,}|~{3,})[\s\S]*?\1/g, '').replace(/\s+/g, ' '))) {
+      const ref = repositoryReference(repository, parent.metadata);
+      if (ref) link = { path: spec.path, url: `https://github.com/${repository}/blob/${ref}/${spec.path}`, raw: `https://raw.githubusercontent.com/${repository}/${ref}/${spec.path}` };
+    }
+    if (!link) continue;
+    const existing = documents.find(item => item.metadata.path === spec.path);
+    if (existing) { Object.assign(existing.metadata, { representativeId: spec.id, format: spec.format }); continue; }
+    if (states.some(item => item.path === spec.path)) continue;
+    const suffix = spec.path === link.path ? '' : spec.path.startsWith(link.path + '/') ? spec.path.slice(link.path.length) : null;
+    if (suffix === null) continue;
+    const target = { ...link, path: spec.path, url: link.url + suffix, raw: link.raw + suffix };
     await collect({ ...target, representativeId: spec.id, format: spec.format });
   }
   return { documents, states };

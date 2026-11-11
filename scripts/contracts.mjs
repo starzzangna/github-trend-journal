@@ -10,7 +10,7 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   validateAiNote(row, usage);
   if (!usage || [1, 2].includes(usage.version)) return;
   const fail = message => { throw new Error(`분석 데이터 오류: ${message}`); };
-  if (![3, 4, 5, 6, 7, 8, 9, 10, 11].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
+  if (![3, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
   if (!['ready', 'unavailable'].includes(usage.status)) fail('처리 상태');
   if (!['available', 'unavailable'].includes(usage.document?.status)) fail('문서 조회 상태');
   if (!['complete', 'partial', 'unavailable'].includes(usage.quality?.status)) fail('분석 품질 상태');

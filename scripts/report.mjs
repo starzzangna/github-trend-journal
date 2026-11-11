@@ -1,4 +1,4 @@
-import { validateRepresentatives, validateCollectionScope, representativeSpecs, ioNotApplicable } from './representatives.mjs';
+import { validateRepresentatives, validateCollectionScope, representativesForVersion, ioNotApplicable } from './representatives.mjs';
 import { labels } from './trends.mjs';
 
 export const reportVersion = 3;
@@ -32,7 +32,7 @@ export function synthesizeReport(report, period, now) {
     try { validateRepresentatives(usage); examples = project.examples; } catch { /* 검증되지 않은 대표 설명은 종합하지 않습니다. */ }
     if (examples.length) coverage.exampleProjects++;
     coverage.examples += examples.length;
-    coverage.exampleMissing += itemSpecific ? representativeSpecs.filter(spec => spec.repository === row.name && !examples.some(item => item.id === spec.id)).length : 0;
+    coverage.exampleMissing += itemSpecific ? representativesForVersion(usage.version).filter(spec => spec.repository === row.name && !examples.some(item => item.id === spec.id)).length : 0;
     for (const example of examples) representativeExamples.push({ ...structuredClone(example), name: row.name });
     for (const [kind, items] of [['input', project?.inputs], ['output', project?.outputs], ['condition', project?.conditions]]) {
       if (itemSpecific && kind !== 'condition' && ioNotApplicable(project, kind, usage.version)) continue;

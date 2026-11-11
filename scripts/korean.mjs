@@ -116,12 +116,13 @@ function summarizeFinding(claim, usage) {
 function summarizeRole(claim, usage, role) {
   if (roles[claim.title]) return roles[claim.title];
   const text = claim.evidenceIds.map(id => usage.evidence.find(item => item.id === id)?.excerpt || '').join(' ');
+  if (claim.title === '공통 입력 계약' && /Then name a command and a target/i.test(text)) return '명령 이름과 적용할 대상 영역을 지정합니다.';
   const items = [
     [/\bURL\b|web page|website/i, '웹 페이지 주소'], [/viewport/i, '화면 크기'], [/\bHTML\b/i, 'HTML 소스'],
     [/\bPNG\b|screenshot/i, '화면 이미지'], [/pixel diff/i, '픽셀 차이'], [/\bJSON\b/i, 'JSON 데이터'],
     [/\bCSV\b/i, 'CSV 자료'], [/text|speech audio/i, '텍스트·음성 자료'], [/reference recording/i, '참고 녹음']
   ].filter(([pattern]) => pattern.test(text)).map(([, label]) => label);
-  return items.length ? `${items.join('·')}${role === '입력' ? '를 입력으로 다룹니다.' : '를 결과로 다룹니다.'}` : `${role} 절은 확인했지만 세부 내용을 한국어로 정리하지 못했습니다. 원문 근거를 확인하세요.`;
+  return items.length ? `${items.join('·')}${role === '입력' ? '를 입력으로 다룹니다.' : '를 결과로 다룹니다.'}` : /^공통 (?:입력|출력) 계약$/.test(claim.title) ? '모음 전체에 적용되는 계약을 문서에서 확인했습니다. 자료 형식과 적용 범위는 원문 근거를 확인하세요.' : `${role} 절은 확인했지만 세부 내용을 한국어로 정리하지 못했습니다. 원문 근거를 확인하세요.`;
 }
 
 function summarizeCondition(claim, usage) {

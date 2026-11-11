@@ -8,6 +8,7 @@ import { synthesizeReport } from '../scripts/report.mjs';
 
 const script = await readFile(new URL('../web/app.js', import.meta.url), 'utf8');
 const representativeDocs = JSON.parse(await readFile(new URL('./fixtures/representative-documents.json', import.meta.url)));
+const collectionDocs = JSON.parse(await readFile(new URL('./fixtures/collection-documents.json', import.meta.url)));
 const now = new Date('2026-11-11T00:23:00Z');
 const row = { name: 'example/voice', description: 'voice cloning', language: 'Python', stars: 10, periodStars: 2 };
 const usage = analyzeUsage(row, '# Voice\n## Features\nVoice cloning is supported.\n## Input\nText and a reference recording.\n## Output\nGenerated speech audio.\n## Quick start\nRequires Python 3.11.', now);
@@ -27,6 +28,21 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   await new Promise(resolve => setImmediate(resolve));
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
+
+test('입력만 공통 계약인 모음은 입력을 유지하고 대표 분석 미지원을 0/0 성공으로 표시하지 않는다', async () => {
+  const doc = collectionDocs.find(item => item.repository === 'pbakaus/impeccable');
+  const value = analyzeUsage({ name: doc.repository }, doc.markdown, now, doc.metadata, doc.linkedDocuments);
+  const report = createReport('daily', [{ ...row, name: doc.repository, usage: value }], now);
+  Object.assign(report, synthesizeReport(report, 'daily', now));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: report } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /공통 출력 · 해당 없음/);
+  assert.match(html, /공통 입력<\/h5>/);
+  assert.match(html, /명령 이름과 적용할 대상 영역을 지정합니다/);
+  assert.match(html, /대표 항목 자동 분석 미지원 모음 1개/);
+  assert.match(html, /개별 스킬 문서 확인이 필요합니다/);
+  assert.doesNotMatch(html, /대표 항목 근거: 0\/0/);
+});
 
 test('대표 항목은 한국어 사용 예와 별도 입출력을 표시하고 원문은 접힌 근거로 제공한다', async () => {
   const name = 'anthropics/knowledge-work-plugins';

@@ -57,14 +57,67 @@ const collectionRules = [
   ['TheAlgorithms/Java', /implementations are intended for learning purposes/i],
   ['anthropics/knowledge-work-plugins', /Each plugin bundles.*specific job function/i]
 ];
-export function collectionScope(row, context) {
+const scopeBody = '항목마다 입출력 계약이 다른 모음입니다. 공통 계약이 확인되거나 의심되는 항목은 계속 평가하고, 항목별 계약만 확인한 범위만 해당 없음으로 구분합니다.';
+const scopeRules = [
+  { id: 'independent-skills', patterns: [/This repository contains skills/i, /skills range from creative applications.*technical tasks.*enterprise workflows/i, /Each skill is self-contained in its own folder/i] },
+  { id: 'lifecycle-skills', patterns: [/pack includes \d+ skills total/i, /slash commands that map to the development lifecycle/i, /Write a PRD covering objectives/i, /Thin vertical slices.*implement, test, verify, commit/i] },
+  { id: 'design-commands', patterns: [/Steer with.*polish.*review with.*critique.*audit/i, /critique scores the design.*audit checks accessibility/i, /Then name a command and a target/i] }
+];
+const sharedPatterns = {
+  input: /(?:all|every|each)\s+(?:skills?|commands?|plugins?|algorithms?)\s+(?:(?:must|always|will)\s+)?(?:accepts?|takes?|reads?|receives?|expects?)\s+.{1,160}|Then name a command and a target/i,
+  output: /(?:all|every|each)\s+(?:skills?|commands?|plugins?|algorithms?)\s+(?:(?:must|always|will)\s+)?(?:returns?|produces?|writes?|emits?)\s+.{1,160}/i
+};
+const commonHeading = field => field === 'input' ? /^(?:(?:common|shared|unified|공통)\s+)?(?:inputs?|입력)(?:\b|\s|$)/i : /^(?:(?:common|shared|unified|공통)\s+)?(?:outputs?|출력)(?:\b|\s|$)/i;
+const contractHint = field => new RegExp(`\\b(?:all|every|each)\\s+(?:skills?|commands?|plugins?|algorithms?)\\s+(?:do not|does not|don't|doesn't|cannot|can't|do not yet)\\s+${field === 'input' ? '(?:accept|take|read|receive|expect)' : '(?:return|produce|write|emit)'}\\s+.{1,160}`, 'i');
+export function ioNotApplicable(project, field, version = 11) {
+  return project?.ioScope?.kind === 'item-specific' && (version < 11 || project.ioScope.exempt?.includes(field));
+}
+export function collectionScope(row, context, project) {
   const rule = collectionRules.find(([name]) => name === row.name);
   const id = rule && context.select(rule[1], { candidates: context.documents.filter(item => item.sourceId === 'readme'), wholeParagraph: true });
-  return id ? { kind: 'item-specific', body: '항목마다 입출력 계약이 다른 모음입니다. 모음 전체의 공통 입출력은 평가 대상에서 제외하고 대표 항목을 따로 확인합니다.', evidenceIds: [id] } : null;
+  let match = id ? { ruleId: `legacy:${row.name}`, evidenceIds: [id] } : null;
+  const candidates = context.documents.filter(item => !item.exampleOnly && !/example|template|예시|샘플/i.test(item.scope));
+  if (!match) for (const candidate of scopeRules) {
+    const ids = candidate.patterns.map(pattern => context.select(pattern, { candidates, wholeParagraph: true }));
+    if (ids.every(Boolean)) { match = { ruleId: candidate.id, evidenceIds: [...new Set(ids)] }; break; }
+  }
+  if (!match) return null;
+  const exempt = [], contracts = {}, hints = {};
+  for (const field of ['input', 'output']) {
+    const sections = candidates.filter(item => commonHeading(field).test(item.title));
+    const positive = context.select(sharedPatterns[field], { candidates, wholeParagraph: true }) || context.select(/.+/, { candidates: sections, wholeParagraph: true });
+    const hint = positive || context.select(sharedPatterns[field], { candidates, wholeParagraph: true, allowNegative: true }) || context.select(contractHint(field), { candidates, wholeParagraph: true, allowNegative: true }) || context.select(commonHeading(field), { candidates: sections, headings: true, allowNegative: true });
+    if (hint) hints[field] = [hint]; else exempt.push(field);
+    if (positive) contracts[field] = [positive];
+    // 모음의 소개·파일 포맷을 작업의 공통 계약으로 승격하지 않습니다.
+    const key = field === 'input' ? 'inputs' : 'outputs';
+    if (hint) project[key] = positive ? [{ title: field === 'input' ? '공통 입력 계약' : '공통 출력 계약', body: '모음 전체에 적용되는 계약의 문서 근거를 확인했습니다. 자료 형식과 적용 범위는 원문 근거를 확인하세요.', kind: 'documented', evidenceIds: [positive] }] : [];
+  }
+  return { kind: 'item-specific', body: scopeBody, ...match, exempt, contracts, hints };
 }
 export function validateCollectionScope(usage, row) {
   const scope = usage.article.project.ioScope;
   if (scope === null) return;
+  if (usage.version >= 11) {
+    const rule = scopeRules.find(rule => rule.id === scope?.ruleId);
+    const legacy = collectionRules.find(([name]) => `legacy:${name}` === scope?.ruleId && name === row.name);
+    const patterns = rule?.patterns || (legacy ? [legacy[1]] : []);
+    const proof = ids => Array.isArray(ids) && ids.length && ids.every(id => usage.evidence.some(item => item.id === id && item.kind === 'prose' && usage.sources.some(source => source.id === item.sourceId && source.repository === row.name && !source.representativeId)));
+    const evidence = (scope.evidenceIds || []).map(id => usage.evidence.find(item => item.id === id));
+    if (scope.kind !== 'item-specific' || scope.body !== scopeBody || !patterns.length || !proof(scope.evidenceIds) || patterns.some(pattern => !evidence.some(item => pattern.test(item.excerpt))) || !Array.isArray(scope.exempt) || JSON.stringify(scope.exempt) !== JSON.stringify(['input', 'output'].filter(field => !scope.hints?.[field]))) throw Error('모음형 입출력 범위 근거 오류');
+    for (const field of ['input', 'output']) {
+      const ids = scope.contracts?.[field];
+      const hints = scope.hints?.[field];
+      if (hints && (!Array.isArray(hints) || !hints.length || hints.some(id => !usage.evidence.some(item => item.id === id && !usage.sources.find(source => source.id === item.sourceId)?.representativeId)))) throw Error('공통 계약 검토 근거 오류');
+      if (ids && (!proof(ids) || !hints || ids.some(id => !hints.includes(id) || /\b(?:does not|do not|doesn't|don't|cannot|can't|not yet|unsupported|planned|coming soon|without)\b/i.test(usage.evidence.find(item => item.id === id).excerpt)))) throw Error('공통 계약 근거 오류');
+      const claims = usage.article.project[field === 'input' ? 'inputs' : 'outputs'];
+      const relevant = item => sharedPatterns[field].test(item.excerpt) || contractHint(field).test(item.excerpt) || commonHeading(field).test(item.section);
+      if (hints && hints.some(id => !relevant(usage.evidence.find(item => item.id === id)))) throw Error('공통 계약 검토 근거 불일치');
+      if (scope.exempt.includes(field) && usage.evidence.some(item => relevant(item) && !usage.sources.find(source => source.id === item.sourceId)?.representativeId && !/example|template|예시|샘플/i.test(item.section) && item.kind !== 'example')) throw Error('공통 계약 평가 누락');
+      if (hints && (ids ? claims.length !== 1 || claims[0].title !== (field === 'input' ? '공통 입력 계약' : '공통 출력 계약') || claims[0].body !== '모음 전체에 적용되는 계약의 문서 근거를 확인했습니다. 자료 형식과 적용 범위는 원문 근거를 확인하세요.' || JSON.stringify(claims[0].evidenceIds) !== JSON.stringify(ids) : claims.length)) throw Error('공통 계약 평가 불일치');
+    }
+    return;
+  }
   const rule = collectionRules.find(([name]) => name === row.name);
   if (!rule || scope?.kind !== 'item-specific' || scope.body !== '항목마다 입출력 계약이 다른 모음입니다. 모음 전체의 공통 입출력은 평가 대상에서 제외하고 대표 항목을 따로 확인합니다.' || !Array.isArray(scope.evidenceIds) || !scope.evidenceIds.length || scope.evidenceIds.some(id => !usage.evidence.some(item => item.id === id && item.sourceId === 'readme' && rule[1].test(item.excerpt)))) throw Error('모음형 입출력 범위 근거 오류');
 }

@@ -44,6 +44,19 @@ function representativeMarkup(project, usage, name, prefix = '') {
   if (!project?.examples?.length) return '';
   return `<section class="representative-examples" aria-label="대표 항목 사용 예"><h5>대표 항목 사용 예</h5><p class="usage-note">각 항목의 공식 문서에 따른 설명입니다. 모음 전체의 공통 입출력이 아니며 실행은 검증하지 않았습니다.</p>${project.examples.map(item => `<section class="note-section"><h5>${escape(item.title)}</h5>${['scenario', 'input', 'output', 'caution'].map(field => `<div class="project-claim"><strong>${escape(item[field].title)}</strong><p>${escape(item[field].body)}</p>${evidenceMarkup(usage, name, { ...item[field], title: prefix + item.title + ' · ' + item[field].title })}</div>`).join('')}</section>`).join('')}</section>`;
 }
+function collectionScopeMarkup(project, usage, name) {
+  if (project?.ioScope?.kind !== 'item-specific') return '';
+  const quality = usage.quality;
+  const excluded = quality.notApplicable || [];
+  const representatives = quality.representatives;
+  const note = representatives?.status === 'not-configured' ? '대표 항목 자동 분석 미지원 · 개별 스킬 문서 확인이 필요합니다.' : representatives?.expected ? `대표 항목 근거: ${numeric(representatives.available)}/${numeric(representatives.expected)}개 확인.` : '공통 계약을 계속 평가합니다.';
+  return `<aside class="missing-note" aria-label="입출력 평가 범위"><strong>공통 ${excluded.length ? excluded.join('·') + ' · 해당 없음' : '입출력 · 평가 유지'}</strong><p>${escape(project.ioScope.body)}</p>${evidenceMarkup(usage, name, { title: '모음형 입출력 평가 범위', evidenceIds: project.ioScope.evidenceIds })}<p>${escape(note)} 해당 없음은 근거 부족으로 집계하지 않습니다.</p></aside>`;
+}
+function projectIoMarkup(project, usage, name) {
+  if (!project) return '<p class="usage-note">이전 형식의 분석입니다. 문서 재확인 후 한국어 설명과 근거를 보완합니다.</p>';
+  const fields = [['input', 'inputs', '입력'], ['output', 'outputs', '출력']].filter(([field]) => usage.quality?.io?.[field] !== 'not-applicable');
+  return fields.length ? `<div class="project-io">${fields.map(([field, key, label]) => `<section><h5>${project.ioScope ? '공통 ' : project.examples?.length ? '모음 전체의 ' : ''}${label}</h5>${usage.version >= 10 ? `<p class="usage-note">${label} · ${usage.quality?.io?.[field] === 'documented' ? '문서 확인' : '근거 부족'}</p>` : ''}${claimList(project[key], usage, name, `${label}을 확인할 문장·사용 예가 부족합니다.`)}</section>`).join('')}</div>` : '';
+}
 function claimList(items, usage, name, missing, prefix = '') {
   return items?.length ? items.map(item => `<div class="project-claim"><strong>${escape(item.title)}</strong><p>${escape(item.summaryKo || (usage.version >= 6 ? item.body : '한국어 요약을 갱신해야 합니다. 원문 근거를 확인하세요.'))}</p>${evidenceMarkup(usage, name, { ...item, title: prefix + item.title })}</div>`).join('') : `<p class="unconfirmed">${missing}</p>`;
 }
@@ -92,9 +105,9 @@ function usageMarkup(row) {
     <div class="decision"><h5>도입 시 주의점</h5>${project?.conditions?.length ? claimList(project.conditions.slice(0, 2), usage, row.name, '', '주의점 · ') : ''}<p>${escape(usage.version >= 6 ? article.verdict : '한국어 검토 내용을 갱신해야 합니다. 원문 근거를 확인하세요.')}</p>${article?.verdictEvidenceIds?.length ? evidenceMarkup(usage, row.name, { title: '도입 시 주의점', evidenceIds: article.verdictEvidenceIds }) : ''}<span class="usage-note">문서에 따른 규칙 요약과 검토 제안이며 실제 실행을 검증한 추천은 아닙니다.</span></div>
     ${aiMarkup(row, usage)}
     ${missing}
-    ${project?.ioScope?.kind === 'item-specific' ? `<aside class="missing-note" aria-label="입출력 평가 범위"><strong>공통 입력·출력 · 해당 없음</strong><p>${escape(project.ioScope.body)}</p>${evidenceMarkup(usage, row.name, { title: '모음형 입출력 평가 범위', evidenceIds: project.ioScope.evidenceIds })}<p>대표 항목 근거: ${numeric(quality.representatives?.available)}/${numeric(quality.representatives?.expected)}개 확인. 해당 없음은 근거 부족으로 집계하지 않습니다.</p></aside>` : ''}
+    ${collectionScopeMarkup(project, usage, row.name)}
     ${representativeMarkup(project, usage, row.name)}
-    ${project && project.ioScope?.kind !== 'item-specific' ? `<div class="project-io"><section><h5>${project.examples?.length ? '모음 전체의 입력' : '입력'}</h5>${usage.version >= 10 ? `<p class="usage-note">입력 · ${quality.io?.input === 'documented' ? '문서 확인' : '근거 부족'}</p>` : ''}${claimList(project.inputs, usage, row.name, project.examples?.length ? '모음 전체에 공통인 입력은 정하지 않았습니다. 대표 항목별 입력을 참고하세요.' : '입력을 확인할 문장·사용 예가 부족합니다.')}</section><section><h5>${project.examples?.length ? '모음 전체의 출력' : '출력'}</h5>${usage.version >= 10 ? `<p class="usage-note">출력 · ${quality.io?.output === 'documented' ? '문서 확인' : '근거 부족'}</p>` : ''}${claimList(project.outputs, usage, row.name, project.examples?.length ? '모음 전체에 공통인 출력은 정하지 않았습니다. 대표 항목별 출력을 참고하세요.' : '출력을 확인할 문장·사용 예가 부족합니다.')}</section></div>` : project?.ioScope?.kind === 'item-specific' ? '' : '<p class="usage-note">이전 형식의 분석입니다. 문서 재확인 후 한국어 설명과 근거를 보완합니다.</p>'}
+    ${projectIoMarkup(project, usage, row.name)}
     <details class="analysis-details"><summary>${escape(row.name)} · 도입 조건과 추가 분석</summary><div class="usage-content">
       ${usage.document?.links?.length ? `<details class="evidence-note"><summary>추가 문서 조회 상태 보기</summary><ul>${usage.document.links.map(item => `<li>${escape(item.path)} · ${item.status === 'available' ? '확인 완료' : item.reason === 'size-limit' ? '분석 제외: 250,000바이트 상한 초과' : item.reason === 'project-size-limit' ? '분석 제외: 프로젝트 문서 크기 상한 초과' : item.reason === 'http' ? `HTTP ${numeric(item.httpStatus)} 응답, 다음 수집에서 재시도` : item.reason === 'timeout' ? '시간 초과, 다음 수집에서 재시도' : '확인 실패, 다음 수집에서 재시도'}</li>`).join('')}</ul></details>` : ''}
       <section class="note-section"><h5>도입 조건</h5>${claimList(project?.conditions || article?.conditions, usage, row.name, '도입 조건을 확인하지 못했습니다. 별도 조건이 없다는 뜻은 아닙니다.')}</section>
@@ -115,7 +128,7 @@ function synthesisMarkup(report) {
     if (!exampleGroups.has(item.name)) exampleGroups.set(item.name, []);
     exampleGroups.get(item.name).push(item);
   }
-  const scopeSummary = synthesis.version >= 2 ? `<section aria-label="입출력 근거와 대표 항목 집계"><h4>입출력 평가 범위</h4><p>공통 입력: 확인 ${synthesis.coverage.inputs}개 · 해당 없음 ${synthesis.coverage.inputsNotApplicable}개 · 근거 부족 ${synthesis.coverage.inputEvidenceMissing}개</p><p>공통 출력: 확인 ${synthesis.coverage.outputs}개 · 해당 없음 ${synthesis.coverage.outputsNotApplicable}개 · 근거 부족 ${synthesis.coverage.outputEvidenceMissing}개</p><p class="usage-note">전체 ${synthesis.coverage.total}개 중 분석 자료 없음 ${synthesis.coverage.unavailable}개는 별도입니다. 해당 없음은 모음형의 공통 계약 평가에서 제외한 수이며 근거 부족이 아닙니다.</p><h4>대표 항목 사용 예 · ${synthesis.coverage.examples}개</h4><p class="usage-note">${synthesis.coverage.exampleProjects}개 프로젝트의 예를 확인했습니다. 대표 항목 근거 부족 ${synthesis.coverage.exampleMissing}개. 공통 입출력 확인 수에는 합산하지 않습니다.</p>${[...exampleGroups].map(([name, examples]) => {
+  const scopeSummary = synthesis.version >= 2 ? `<section aria-label="입출력 근거와 대표 항목 집계"><h4>입출력 평가 범위</h4><p>공통 입력: 확인 ${synthesis.coverage.inputs}개 · 해당 없음 ${synthesis.coverage.inputsNotApplicable}개 · 근거 부족 ${synthesis.coverage.inputEvidenceMissing}개</p><p>공통 출력: 확인 ${synthesis.coverage.outputs}개 · 해당 없음 ${synthesis.coverage.outputsNotApplicable}개 · 근거 부족 ${synthesis.coverage.outputEvidenceMissing}개</p><p class="usage-note">전체 ${synthesis.coverage.total}개 중 분석 자료 없음 ${synthesis.coverage.unavailable}개는 별도입니다. 해당 없음은 모음형의 공통 계약 평가에서 제외한 수이며 근거 부족이 아닙니다.</p><h4>대표 항목 사용 예 · ${synthesis.coverage.examples}개</h4><p class="usage-note">${synthesis.coverage.exampleProjects}개 프로젝트의 예를 확인했습니다. 대표 항목 근거 부족 ${synthesis.coverage.exampleMissing}개.${synthesis.version >= 3 ? ` 대표 항목 자동 분석 미지원 모음 ${synthesis.coverage.exampleUnconfigured}개.` : ''} 공통 입출력 확인 수에는 합산하지 않습니다.</p>${[...exampleGroups].map(([name, examples]) => {
     const row = report.rows.find(row => row.name === name);
     return `<details class="shared-pattern"><summary>${escape(name)} · 대표 항목 ${examples.length}개${freshness(row?.usage).key === 'old' ? ' · 오래된 분석' : ''}</summary>${representativeMarkup({ examples }, row?.usage || {}, name, '종합 · ')}</details>`;
   }).join('')}</section>` : '';

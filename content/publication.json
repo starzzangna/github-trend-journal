@@ -9,10 +9,10 @@
       "title": "Today · AI 에이전트 스킬·개인 재무 관리 프로젝트 분석",
       "summary": "상위 10개 중 공식 문서 근거로 10개의 용도를 분류했습니다. AI 에이전트 스킬 2개, 개인 재무 관리 1개가 포함됩니다. 분류 미확정은 0개입니다.",
       "analysis": [
-        "입력을 설명할 근거가 있는 프로젝트는 9개, 출력은 9개, 도입 조건은 8개입니다. 공통 입력 해당 없음 1개, 출력 해당 없음 1개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 9개·출력 9개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
-        "대표 항목 사용 예는 1개 프로젝트에서 2개를 확인했습니다. 대표 항목 근거 부족은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
+        "입력을 설명할 근거가 있는 프로젝트는 8개, 출력은 8개, 도입 조건은 8개입니다. 공통 입력 해당 없음 2개, 출력 해당 없음 2개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 8개·출력 8개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
+        "대표 항목 사용 예는 1개 프로젝트에서 2개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 1개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "공통으로 확인한 항목은 서비스 인증(4개), 에이전트 클라이언트(4개), 운영체제별 실행 경로(4개), 컨테이너 실행(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
-        "기본 항목 충족 8개 · 부분 분석 2개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
+        "기본 항목 충족 7개 · 부분 분석 3개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
       ],
       "source": "https://github.com/trending?since=daily",
@@ -26,28 +26,28 @@
           "periodStars": 2842,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:08:59.613Z",
-            "analyzedAt": "2026-11-11T16:08:59.613Z",
-            "sourceCheckedAt": "2026-11-11T16:08:59.613Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "13959c6a7c3d12ebf566841cc641dfc83643e74ccfa5d8589f4fe30d9b077625",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:08:59.613Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:08:59.613Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-11T16:08:59.613Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -57,7 +57,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
-                "fetchedAt": "2026-11-11T16:08:59.613Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -65,7 +65,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "c4c656d48e41462bb7064654c2ac03a3a17ab9bb",
-                "fetchedAt": "2026-11-11T16:08:59.613Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -288,7 +288,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -305,27 +306,27 @@
           "periodStars": 960,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "cbc85306e29a8c7346c24aa1310785d63404ad10e533e0c51081607897960416",
             "sourceFingerprint": "36ca7b834063fd6e61de337cec210e3c5c4d6480113fb9f213f45d3bedd9b3ab",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/README_EN.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "docs/full-guide.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -335,7 +336,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "README.md",
                 "sha": "cb130e7bd387db4fbd26949ee9f995b95c347134",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/README.md"
               },
               {
@@ -343,7 +344,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "docs/README_EN.md",
                 "sha": "d5fefdba856f226cd9aa132473f071a821dfd64a",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/docs/README_EN.md"
               },
               {
@@ -351,7 +352,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "docs/full-guide.md",
                 "sha": "1d2443e7fbcdfc34b0fd209cde5f6bd327696be7",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/docs/full-guide.md"
               }
             ],
@@ -711,7 +712,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -728,17 +730,17 @@
           "periodStars": 133,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "78f55c1f8599a23cb38800d0cc11d3414e61686a5dbbd7b164830fa69da83348",
             "sourceFingerprint": "d3ffac55637f9a25786c3ca3b12f6f58a115860e466fc9209d82367204918ba3",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -747,7 +749,7 @@
                 "repository": "GoogleChrome/modern-web-guidance-src",
                 "path": "README.md",
                 "sha": "d130c0043c81edb4dc74c8bb279c625a591fc6ac",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/README.md"
               }
             ],
@@ -980,7 +982,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -997,17 +1000,17 @@
           "periodStars": 333,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "16554a9267726c75d94971834e0196461d33f7beea90546c37e165b1a251cc00",
             "sourceFingerprint": "1aa43eca506fa0b1bf1caf4e9556971ccd6bc004803337c8e2f320f453dddccc",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -1016,7 +1019,7 @@
                 "repository": "shadcn/improve",
                 "path": "README.md",
                 "sha": "17e41e80976356c4bacfa5b9f2e873b67d1fe554",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/shadcn/improve/blob/main/README.md"
               }
             ],
@@ -1152,7 +1155,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -1169,27 +1173,27 @@
           "periodStars": 788,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "981b9416f9d8f05d61fdbc642429112860daf7067ea8882866d588fb4acb62ec",
             "sourceFingerprint": "59f06430f69675d9f31deae799bccfeb5c6b5eca8adb8ebb204a6f8447b54090",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/cursor-setup.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "docs/antigravity-setup.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -1199,7 +1203,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "README.md",
                 "sha": "7f610b8ca80ff9bc7ba7f95f3209430c3481891d",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/README.md"
               },
               {
@@ -1207,7 +1211,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "docs/cursor-setup.md",
                 "sha": "0b92d4c2f326734f9a9539ac77b97e506c58c0f0",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/docs/cursor-setup.md"
               },
               {
@@ -1215,7 +1219,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "docs/antigravity-setup.md",
                 "sha": "f2350a882ce237b74863049d8ab96759ceaa0e99",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/docs/antigravity-setup.md"
               }
             ],
@@ -1307,6 +1311,38 @@
                 "line": 22,
                 "kind": "prose",
                 "excerpt": "/build auto generates the plan and implements every task in a single approved pass — you approve the plan once, then it runs autonomously."
+              },
+              {
+                "id": "e-3cd436cec85b1e55",
+                "sourceId": "readme",
+                "section": "All 25 Skills",
+                "line": 224,
+                "kind": "prose",
+                "excerpt": "The commands above are entry points. The pack includes 25 skills total — 24 lifecycle skills plus the using-agent-skills meta-skill. Each skill is a structured workflow with steps, verification gates, and anti-rationalization tables. You can also reference any skill directly."
+              },
+              {
+                "id": "e-b5733d3bb872a3c2",
+                "sourceId": "readme",
+                "section": "Commands",
+                "line": 22,
+                "kind": "prose",
+                "excerpt": "9 slash commands that map to the development lifecycle. Each one activates the right skills automatically."
+              },
+              {
+                "id": "e-aa276850e9dd7482",
+                "sourceId": "readme",
+                "section": "Define - Clarify what to build",
+                "line": 234,
+                "kind": "prose",
+                "excerpt": "thinking to turn vague ideas into concrete proposals | You have a rough concept that needs exploration | | spec-driven-development | Write a PRD covering objectives, commands, structure, code style, testing, and boundaries before any code | Starting a new project, feature, or significant change | | constraint-driven-development | Interviews you for a quality bar with sane default thresholds, writes CONSTRAINTS.md, places each check by cost, and catches agents silencing checks or skipping tests to get green | No standards are written down, or an agent is"
+              },
+              {
+                "id": "e-e48ddb0fce1e58d6",
+                "sourceId": "readme",
+                "section": "Build - Write the code",
+                "line": 249,
+                "kind": "prose",
+                "excerpt": "| Skill | What It Does | Use When | |-------|-------------|----------| | incremental-implementation | Thin vertical slices - implement, test, verify, commit. Feature flags, safe defaults, rollback-friendly changes | Any change touching more than one file | | test-driven-development | Red-Green-Refactor, test pyramid (80/15/5), test sizes, DAMP over DRY, Beyonce Rule, browser testing | Implementing logic, fixing bugs, or changing behavior | | context-engineering | Feed agents the right information at the right time - rules files, context packing, MCP"
               }
             ],
             "source": "https://github.com/addyosmani/agent-skills#readme",
@@ -1459,7 +1495,23 @@
                 ],
                 "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
                 "examples": [],
-                "ioScope": null
+                "ioScope": {
+                  "kind": "item-specific",
+                  "body": "항목마다 입출력 계약이 다른 모음입니다. 공통 계약이 확인되거나 의심되는 항목은 계속 평가하고, 항목별 계약만 확인한 범위만 해당 없음으로 구분합니다.",
+                  "ruleId": "lifecycle-skills",
+                  "evidenceIds": [
+                    "e-3cd436cec85b1e55",
+                    "e-b5733d3bb872a3c2",
+                    "e-aa276850e9dd7482",
+                    "e-e48ddb0fce1e58d6"
+                  ],
+                  "exempt": [
+                    "input",
+                    "output"
+                  ],
+                  "contracts": {},
+                  "hints": {}
+                }
               },
               "verdictEvidenceIds": [
                 "e-3031e249f7567294"
@@ -1484,16 +1536,22 @@
               ]
             },
             "quality": {
-              "status": "complete",
-              "missing": [],
+              "status": "partial",
+              "missing": [
+                "대표 항목 근거"
+              ],
               "io": {
-                "input": "documented",
-                "output": "documented"
+                "input": "not-applicable",
+                "output": "not-applicable"
               },
-              "notApplicable": [],
+              "notApplicable": [
+                "입력",
+                "출력"
+              ],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "not-configured"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -1510,17 +1568,17 @@
           "periodStars": 712,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "d78330d726ff1cc3252107697261f96b8fb4583b6af741f6145a1002c01f34a9",
             "sourceFingerprint": "4929ccb5c9b0a287e704d97a8bf4a2f63a98ab578ac85d5066998037fe49227f",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -1529,7 +1587,7 @@
                 "repository": "vercel-labs/agent-browser",
                 "path": "README.md",
                 "sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/vercel-labs/agent-browser/blob/main/README.md"
               }
             ],
@@ -1804,7 +1862,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -1821,27 +1880,27 @@
           "periodStars": 1079,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "b809d291006bdea80510d410a055d5432f35c05b49333c19b9c3da12ded2e752",
             "sourceFingerprint": "5f1875ed3b3f3e01efd121854e336dffb3a0278f3bff9439ef463101b5c4f91c",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/hosting/docker.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "docs/clients.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -1851,7 +1910,7 @@
                 "repository": "we-promise/sure",
                 "path": "README.md",
                 "sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/we-promise/sure/blob/main/README.md"
               },
               {
@@ -1859,7 +1918,7 @@
                 "repository": "we-promise/sure",
                 "path": "docs/hosting/docker.md",
                 "sha": "8d82e18b2c8b47554dc487bb15da1b26cc3b474f",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md"
               },
               {
@@ -1867,7 +1926,7 @@
                 "repository": "we-promise/sure",
                 "path": "docs/clients.md",
                 "sha": "8df996e0d932a03895ab8a6334b7953583de378e",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/we-promise/sure/blob/main/docs/clients.md"
               }
             ],
@@ -2193,7 +2252,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -2210,27 +2270,27 @@
           "periodStars": 640,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "775f2455b21a8ebbb57f9ae74ed0c6e6f72473cb35c63d2ad307ab9d462d8654",
             "sourceFingerprint": "08f5f97c5c7ab0bc32cbd6c1c6569604f467a8ba29ea12451e242e4be15cfda5",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/in-process-server.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "homeassistant-addon/DOCS.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -2240,7 +2300,7 @@
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "README.md",
                 "sha": "f67672e7f470b0654d57c347c9c83a9060ca46f5",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/README.md"
               },
               {
@@ -2248,7 +2308,7 @@
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "docs/in-process-server.md",
                 "sha": "ee3ffd82ba442addf93190299ed445eb52a303e8",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/docs/in-process-server.md"
               },
               {
@@ -2256,7 +2316,7 @@
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "homeassistant-addon/DOCS.md",
                 "sha": "4cb76107426b033bf4dd68770cabe4bcacc360ff",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/homeassistant-addon/DOCS.md"
               }
             ],
@@ -2567,7 +2627,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -2584,27 +2645,27 @@
           "periodStars": 20,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "aa4c51a6533283c77d11ea5ca43af32ad25549013684a0a85d985de2038cc4c9",
             "sourceFingerprint": "2c487239c2894f1fa870888bb4665d495cd75f59d212540b52dd2c2ddcace969",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/agent-workflows.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "docker/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -2614,7 +2675,7 @@
                 "repository": "openai/codex-security",
                 "path": "README.md",
                 "sha": "c30adfcdb1b8c61c6051d14f6fad8fe1ea90d81a",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/openai/codex-security/blob/main/README.md"
               },
               {
@@ -2622,7 +2683,7 @@
                 "repository": "openai/codex-security",
                 "path": "docs/agent-workflows.md",
                 "sha": "fcf8512e40061caf89fadddf36f789fc8f120429",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/openai/codex-security/blob/main/docs/agent-workflows.md"
               },
               {
@@ -2630,7 +2691,7 @@
                 "repository": "openai/codex-security",
                 "path": "docker/README.md",
                 "sha": "f6344d23e4586a89736af595553b2fcb963b2f7c",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/openai/codex-security/blob/main/docker/README.md"
               }
             ],
@@ -2958,7 +3019,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -2975,32 +3037,32 @@
           "periodStars": 39,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "369e4c196ba9eec394f1ffe07487418b6eca510ec6c3fe7ff663f73013babffe",
             "sourceFingerprint": "1cc08780d9647579ba95b00639609b303beb66a5fbfffa42c64c617fc8f374e6",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "DIRECTORY.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "src/main/java/com/thealgorithms/searches/BinarySearch.java",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -3010,7 +3072,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "README.md",
                 "sha": "91766e523bca050fa0d0424d3899bdd93ae3cbee",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/README.md"
               },
               {
@@ -3018,7 +3080,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "DIRECTORY.md",
                 "sha": "37d9b3c295e228009927c174f0ecc154276e7ff3",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/DIRECTORY.md"
               },
               {
@@ -3026,7 +3088,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "src/main/java/com/thealgorithms/searches/BinarySearch.java",
                 "sha": "ca873fc6eafaf5bc31cfeab3eb3cf2f8c362df8f",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/BinarySearch.java",
                 "representativeId": "java-binary-search"
               },
@@ -3035,7 +3097,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                 "sha": "d2eca3506c2d788f3d6501a0cdfc3924547a5a4e",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                 "representativeId": "java-bubble-sort"
               }
@@ -3269,10 +3331,17 @@
                 ],
                 "ioScope": {
                   "kind": "item-specific",
-                  "body": "항목마다 입출력 계약이 다른 모음입니다. 모음 전체의 공통 입출력은 평가 대상에서 제외하고 대표 항목을 따로 확인합니다.",
+                  "body": "항목마다 입출력 계약이 다른 모음입니다. 공통 계약이 확인되거나 의심되는 항목은 계속 평가하고, 항목별 계약만 확인한 범위만 해당 없음으로 구분합니다.",
+                  "ruleId": "legacy:TheAlgorithms/Java",
                   "evidenceIds": [
                     "e-3b7187b858d79c1c"
-                  ]
+                  ],
+                  "exempt": [
+                    "input",
+                    "output"
+                  ],
+                  "contracts": {},
+                  "hints": {}
                 }
               },
               "verdictEvidenceIds": [
@@ -3305,7 +3374,8 @@
               ],
               "representatives": {
                 "expected": 2,
-                "available": 2
+                "available": 2,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -3315,25 +3385,26 @@
         }
       ],
       "synthesis": {
-        "version": 2,
+        "version": 3,
         "coverage": {
           "total": 10,
           "classified": 10,
           "unknown": 0,
-          "complete": 8,
-          "partial": 2,
+          "complete": 7,
+          "partial": 3,
           "unavailable": 0,
           "stale": 0,
-          "inputs": 9,
-          "outputs": 9,
+          "inputs": 8,
+          "outputs": 8,
           "conditions": 8,
-          "inputsNotApplicable": 1,
-          "outputsNotApplicable": 1,
+          "inputsNotApplicable": 2,
+          "outputsNotApplicable": 2,
           "inputEvidenceMissing": 0,
           "outputEvidenceMissing": 0,
           "exampleProjects": 1,
           "examples": 2,
-          "exampleMissing": 0
+          "exampleMissing": 0,
+          "exampleUnconfigured": 1
         },
         "categoryGroups": [
           {
@@ -3644,8 +3715,8 @@
         "references": [
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-11T16:08:59.613Z",
-            "analyzedAt": "2026-11-11T16:08:59.613Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-876c10c216e10def"
@@ -3653,8 +3724,8 @@
           },
           {
             "name": "ZhuLinsen/daily_stock_analysis",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-548ff5b5adfcc16e"
@@ -3662,8 +3733,8 @@
           },
           {
             "name": "GoogleChrome/modern-web-guidance-src",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-ecb97bc1efae8b22"
@@ -3671,8 +3742,8 @@
           },
           {
             "name": "shadcn/improve",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-188dd556b9fb0f4e"
@@ -3680,8 +3751,8 @@
           },
           {
             "name": "addyosmani/agent-skills",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-8ae08506abf851b0"
@@ -3689,8 +3760,8 @@
           },
           {
             "name": "vercel-labs/agent-browser",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-9f78adc75b0950e6"
@@ -3698,8 +3769,8 @@
           },
           {
             "name": "we-promise/sure",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-fbb4c93b0def19fc"
@@ -3707,8 +3778,8 @@
           },
           {
             "name": "homeassistant-ai/ha-mcp",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-ef4d62ef3b994805"
@@ -3716,8 +3787,8 @@
           },
           {
             "name": "openai/codex-security",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-ce6ea0f19a2f98b1"
@@ -3725,15 +3796,15 @@
           },
           {
             "name": "TheAlgorithms/Java",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-64817309007c4cab"
             ]
           }
         ],
-        "generatedAt": "2026-11-11T16:08:59.613Z"
+        "generatedAt": "2026-11-11T16:23:12.349Z"
       }
     },
     "weekly": {
@@ -3743,8 +3814,8 @@
       "title": "Week · AI 에이전트 운영·게임 개발 도구 프로젝트 분석",
       "summary": "상위 10개 중 공식 문서 근거로 10개의 용도를 분류했습니다. AI 에이전트 운영 2개, 게임 개발 도구 1개가 포함됩니다. 분류 미확정은 0개입니다.",
       "analysis": [
-        "입력을 설명할 근거가 있는 프로젝트는 10개, 출력은 10개, 도입 조건은 9개입니다. 공통 입력 해당 없음 0개, 출력 해당 없음 0개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 10개·출력 10개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
-        "대표 항목 사용 예는 0개 프로젝트에서 0개를 확인했습니다. 대표 항목 근거 부족은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
+        "입력을 설명할 근거가 있는 프로젝트는 9개, 출력은 9개, 도입 조건은 9개입니다. 공통 입력 해당 없음 1개, 출력 해당 없음 1개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 9개·출력 9개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
+        "대표 항목 사용 예는 0개 프로젝트에서 0개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 1개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "공통으로 확인한 항목은 에이전트 클라이언트(5개), Node.js(5개), 서비스 인증(4개), 운영체제별 실행 경로(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
         "기본 항목 충족 9개 · 부분 분석 1개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
@@ -3760,22 +3831,22 @@
           "periodStars": 9327,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "9927829fec0b8c8d39115fdc7a7c76f82d07ba6231a0293be87a28adae8c4879",
             "sourceFingerprint": "d805e4e9a5939d2e7e9bd16252b020e59c4831282b46661d8696369ab937f380",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "skills/nvidia-ontology-setup/references/troubleshooting.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -3785,7 +3856,7 @@
                 "repository": "NVIDIA/auto-ontology",
                 "path": "README.md",
                 "sha": "464a6484b4dc36cd2120578bc6b6e7dcfe236b23",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/NVIDIA/auto-ontology/blob/main/README.md"
               },
               {
@@ -3793,7 +3864,7 @@
                 "repository": "NVIDIA/auto-ontology",
                 "path": "skills/nvidia-ontology-setup/references/troubleshooting.md",
                 "sha": "692334fffa9ee8630b6a4b1a36545389165f1f4a",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/NVIDIA/auto-ontology/blob/main/skills/nvidia-ontology-setup/references/troubleshooting.md"
               }
             ],
@@ -4106,7 +4177,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -4123,17 +4195,17 @@
           "periodStars": 6443,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "28fed759e0c2f94deeaae77304e4e53eeaddcf39586f6e3ea1243ccdacea6f92",
             "sourceFingerprint": "2640231a4ea5f22bc6971861a1a82a2b0f44ed0f077fdde75f617787155bebcb",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -4142,7 +4214,7 @@
                 "repository": "thedotmack/claude-mem",
                 "path": "README.md",
                 "sha": "24734d2eb7e39bc7222244559b6cfa7698cf0ef8",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
               }
             ],
@@ -4478,7 +4550,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -4495,17 +4568,17 @@
           "periodStars": 2313,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "e571a8dc40b9b47744267ac62de20edf455a78b7e4473d4b3efafdb08416e48c",
             "sourceFingerprint": "99ba63c03d02b4853c327863a268089ac54b3740dbdeaa5efea8296055984b25",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -4514,7 +4587,7 @@
                 "repository": "max-sixty/worktrunk",
                 "path": "README.md",
                 "sha": "cb34774014556b4eedaf43ca5f572cb4bcb5e1f9",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/max-sixty/worktrunk/blob/main/README.md"
               }
             ],
@@ -4759,7 +4832,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -4776,17 +4850,17 @@
           "periodStars": 3169,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "849e66b6f2110e098e7f138d042f99e9f07bc492f941eea8ea4f86d3979a0a2f",
             "sourceFingerprint": "31a142d257a07c278388abc1c14fd3ec1695f991ee68b6b2ffb6fc4887cd6693",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -4795,7 +4869,7 @@
                 "repository": "anthropics/skills",
                 "path": "README.md",
                 "sha": "4171c2c9eba15bf2bdefb496d941ba559368438b",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/anthropics/skills/blob/main/README.md"
               }
             ],
@@ -4855,6 +4929,22 @@
                 "line": 5,
                 "kind": "prose",
                 "excerpt": "Skills teach Claude how to complete specific tasks in a repeatable way, whether that's creating documents with your company's brand guidelines, analyzing data using your organization's specific workflows, or automating personal tasks."
+              },
+              {
+                "id": "e-e07959a842ef0665",
+                "sourceId": "readme",
+                "section": "About This Repository",
+                "line": 14,
+                "kind": "prose",
+                "excerpt": "This repository contains skills that demonstrate what's possible with Claude's skills system. These skills range from creative applications (art, music, design) to technical tasks (testing web apps, MCP server generation) to enterprise workflows (communications, branding, etc.)."
+              },
+              {
+                "id": "e-47d7582d2d6c27a2",
+                "sourceId": "readme",
+                "section": "About This Repository",
+                "line": 14,
+                "kind": "prose",
+                "excerpt": "Each skill is self-contained in its own folder with a SKILL.md file containing the instructions and metadata that Claude uses. Browse through these skills to get inspiration for your own skills or to understand different patterns and approaches."
               }
             ],
             "source": "https://github.com/anthropics/skills#readme",
@@ -4946,7 +5036,21 @@
                 "conditions": [],
                 "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
                 "examples": [],
-                "ioScope": null
+                "ioScope": {
+                  "kind": "item-specific",
+                  "body": "항목마다 입출력 계약이 다른 모음입니다. 공통 계약이 확인되거나 의심되는 항목은 계속 평가하고, 항목별 계약만 확인한 범위만 해당 없음으로 구분합니다.",
+                  "ruleId": "independent-skills",
+                  "evidenceIds": [
+                    "e-e07959a842ef0665",
+                    "e-47d7582d2d6c27a2"
+                  ],
+                  "exempt": [
+                    "input",
+                    "output"
+                  ],
+                  "contracts": {},
+                  "hints": {}
+                }
               },
               "verdictEvidenceIds": [
                 "e-264302096da8e2e0"
@@ -4966,16 +5070,21 @@
               "status": "partial",
               "missing": [
                 "시작 경로",
-                "도입 조건"
+                "도입 조건",
+                "대표 항목 근거"
               ],
               "io": {
-                "input": "documented",
-                "output": "documented"
+                "input": "not-applicable",
+                "output": "not-applicable"
               },
-              "notApplicable": [],
+              "notApplicable": [
+                "입력",
+                "출력"
+              ],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "not-configured"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -4992,17 +5101,17 @@
           "periodStars": 5235,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "829c05057a3566b9e1cd2fcd8c65dbbc7c3fd057d0ddb796ef25db0a5b7cecf3",
             "sourceFingerprint": "a9da65f1b01ee660c8548cf9a2d166865a0cedd1c1f30981948bb96e88679cb1",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -5011,7 +5120,7 @@
                 "repository": "Donchitos/Claude-Code-Game-Studios",
                 "path": "README.md",
                 "sha": "1842501050d579e421bef697ccd37487b37279be",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/main/README.md"
               }
             ],
@@ -5316,7 +5425,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -5333,22 +5443,22 @@
           "periodStars": 7621,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "5d103f21dd2537a23bfe9194700d80396de8f7939230aa360375698609731ab3",
             "sourceFingerprint": "874a5e92ea42c93d6b02b6f376b5047bf98fcb5fda4ac57af1ef47673d496fee",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/self-hosting.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -5358,7 +5468,7 @@
                 "repository": "milind-soni/OpenMausBot",
                 "path": "README.md",
                 "sha": "f1e61d341a7615ad4caab950adea662eda76ecfe",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/milind-soni/OpenMausBot/blob/main/README.md"
               },
               {
@@ -5366,7 +5476,7 @@
                 "repository": "milind-soni/OpenMausBot",
                 "path": "docs/self-hosting.md",
                 "sha": "f0a680f775d726c510e705d5fc21bb131e68f875",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/milind-soni/OpenMausBot/blob/main/docs/self-hosting.md"
               }
             ],
@@ -5743,7 +5853,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -5760,27 +5871,27 @@
           "periodStars": 15379,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "8499ad335d4d2abd71bb1678b81c8b7c1176a6c012a7c554a7f22a22167a308d",
             "sourceFingerprint": "fef7906586df079a8a428e14874ea80c2a5bcc3f3725c415d3ef319f24686a84",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/user/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "docs/user/outside-agents.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -5790,7 +5901,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "README.md",
                 "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/README.md"
               },
               {
@@ -5798,7 +5909,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/install.md",
                 "sha": "c353e3f0fecb58ef4e0941664a1b274ccd88adac",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md"
               },
               {
@@ -5806,7 +5917,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/outside-agents.md",
                 "sha": "dc9af3ad5167cc4d820e5b951a85252a5b26cf8a",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/outside-agents.md"
               }
             ],
@@ -6120,7 +6231,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -6137,22 +6249,22 @@
           "periodStars": 6356,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "9d18862707baac072bbda399afcacd7f622617a1dcae93a2c303d72c3284fe7d",
             "sourceFingerprint": "742c12240758bb74e93ec1b11714d18b66cae1d62f82c5517b266f3187270c60",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "skills/hallmark/references/direction.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -6162,7 +6274,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "README.md",
                 "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/README.md"
               },
               {
@@ -6170,7 +6282,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "skills/hallmark/references/direction.md",
                 "sha": "b7fc330d79b93fb35e63979da14438057b63da3e",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/references/direction.md"
               }
             ],
@@ -6423,7 +6535,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -6440,22 +6553,22 @@
           "periodStars": 4191,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "f9421c41abb56fbcc6d49cd47aedeecb6244e16cef5becd293205c55e8dc83de",
             "sourceFingerprint": "3aea68f869ed0f81a782952e6819b99818311848dea09a20c547f1eef76c287e",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "README.en.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -6465,7 +6578,7 @@
                 "repository": "Renhuai123/ziwei-doushu",
                 "path": "README.md",
                 "sha": "cbd9d20f8b3289d1bf5e379904f9a981ea744e6f",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/Renhuai123/ziwei-doushu/blob/main/README.md"
               },
               {
@@ -6473,7 +6586,7 @@
                 "repository": "Renhuai123/ziwei-doushu",
                 "path": "README.en.md",
                 "sha": "ba192c8f8455dcd989045bd9ac2e49d9f387c3ce",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/Renhuai123/ziwei-doushu/blob/main/README.en.md"
               }
             ],
@@ -6647,7 +6760,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -6664,17 +6778,17 @@
           "periodStars": 8342,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "4e0dc98e3dd287f0e8a62a4c231e836b95cf506716c9986a5f18d0c9a5c10a4b",
             "sourceFingerprint": "48821a493c80ee599fecd6fc175605a86d4dc1076207756ed7c1e717ab85687b",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -6683,7 +6797,7 @@
                 "repository": "D4Vinci/Scrapling",
                 "path": "README.md",
                 "sha": "b7fb1d333673421a9d232e797f9f7e7506103f2f",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/D4Vinci/Scrapling/blob/main/README.md"
               }
             ],
@@ -6956,7 +7070,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -6966,7 +7081,7 @@
         }
       ],
       "synthesis": {
-        "version": 2,
+        "version": 3,
         "coverage": {
           "total": 10,
           "classified": 10,
@@ -6975,16 +7090,17 @@
           "partial": 1,
           "unavailable": 0,
           "stale": 0,
-          "inputs": 10,
-          "outputs": 10,
+          "inputs": 9,
+          "outputs": 9,
           "conditions": 9,
-          "inputsNotApplicable": 0,
-          "outputsNotApplicable": 0,
+          "inputsNotApplicable": 1,
+          "outputsNotApplicable": 1,
           "inputEvidenceMissing": 0,
           "outputEvidenceMissing": 0,
           "exampleProjects": 0,
           "examples": 0,
-          "exampleMissing": 0
+          "exampleMissing": 0,
+          "exampleUnconfigured": 1
         },
         "categoryGroups": [
           {
@@ -7226,8 +7342,8 @@
         "references": [
           {
             "name": "NVIDIA/auto-ontology",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-6b499cb7e78b2817"
@@ -7235,8 +7351,8 @@
           },
           {
             "name": "thedotmack/claude-mem",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-5a0438f27d297590"
@@ -7244,8 +7360,8 @@
           },
           {
             "name": "max-sixty/worktrunk",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-a95b385482e78e14"
@@ -7253,8 +7369,8 @@
           },
           {
             "name": "anthropics/skills",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-1f59cc80cdf5cb48"
@@ -7262,8 +7378,8 @@
           },
           {
             "name": "Donchitos/Claude-Code-Game-Studios",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-02f00b61300880ae"
@@ -7271,8 +7387,8 @@
           },
           {
             "name": "milind-soni/OpenMausBot",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-89f95cd092260c1e"
@@ -7280,8 +7396,8 @@
           },
           {
             "name": "pingdotgg/t3code",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-e65edae5430fd0cf"
@@ -7289,8 +7405,8 @@
           },
           {
             "name": "Nutlope/hallmark",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-81f1fd422178dcb7"
@@ -7298,8 +7414,8 @@
           },
           {
             "name": "Renhuai123/ziwei-doushu",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-adad0a32cbd7e819"
@@ -7307,15 +7423,15 @@
           },
           {
             "name": "D4Vinci/Scrapling",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-b21f914f6304f397"
             ]
           }
         ],
-        "generatedAt": "2026-11-11T16:03:28.054Z"
+        "generatedAt": "2026-11-11T16:23:12.349Z"
       }
     },
     "monthly": {
@@ -7325,10 +7441,10 @@
       "title": "Month · 디자인 에이전트 스킬·역공학·프로그램 분석 프로젝트 분석",
       "summary": "상위 10개 중 공식 문서 근거로 10개의 용도를 분류했습니다. 디자인 에이전트 스킬 2개, 역공학·프로그램 분석 1개가 포함됩니다. 분류 미확정은 0개입니다.",
       "analysis": [
-        "입력을 설명할 근거가 있는 프로젝트는 9개, 출력은 9개, 도입 조건은 9개입니다. 공통 입력 해당 없음 1개, 출력 해당 없음 1개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 9개·출력 9개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
-        "대표 항목 사용 예는 1개 프로젝트에서 2개를 확인했습니다. 대표 항목 근거 부족은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
+        "입력을 설명할 근거가 있는 프로젝트는 9개, 출력은 8개, 도입 조건은 9개입니다. 공통 입력 해당 없음 1개, 출력 해당 없음 2개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 9개·출력 8개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
+        "대표 항목 사용 예는 1개 프로젝트에서 2개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 1개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "공통으로 확인한 항목은 Node.js(7개), 에이전트 클라이언트(6개), 운영체제별 실행 경로(4개), Python(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
-        "기본 항목 충족 9개 · 부분 분석 1개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
+        "기본 항목 충족 8개 · 부분 분석 2개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
       ],
       "source": "https://github.com/trending?since=monthly",
@@ -7342,17 +7458,17 @@
           "periodStars": 31731,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "2e3bf6910658e831d746571b73e9952cb33ab25992580a2d284bcb9250f5ddc1",
             "sourceFingerprint": "3c0e27f9ebbb589c935a9cf71c3742109f1aff36e47d679e5053db527536f7f9",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -7361,7 +7477,7 @@
                 "repository": "cloudflare/security-audit-skill",
                 "path": "README.md",
                 "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/cloudflare/security-audit-skill/blob/main/README.md"
               }
             ],
@@ -7559,7 +7675,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -7576,17 +7693,17 @@
           "periodStars": 22303,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "5c31fd23bf9c7fa5c6a28fb91545698ec5d3fd4747d4159b054077ef07b12882",
             "sourceFingerprint": "1a9e9eb00c55150f6764b346dcb58a2d5b3beb9255d658195dde918f5bf5444e",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -7595,7 +7712,7 @@
                 "repository": "heygen-com/hyperframes",
                 "path": "README.md",
                 "sha": "8e6fb677459ff95bd4d43007095d31f8171b70de",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
               }
             ],
@@ -7821,7 +7938,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -7838,22 +7956,22 @@
           "periodStars": 14378,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "9d18862707baac072bbda399afcacd7f622617a1dcae93a2c303d72c3284fe7d",
             "sourceFingerprint": "742c12240758bb74e93ec1b11714d18b66cae1d62f82c5517b266f3187270c60",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "skills/hallmark/references/direction.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -7863,7 +7981,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "README.md",
                 "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/README.md"
               },
               {
@@ -7871,7 +7989,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "skills/hallmark/references/direction.md",
                 "sha": "b7fc330d79b93fb35e63979da14438057b63da3e",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/references/direction.md"
               }
             ],
@@ -8124,7 +8242,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -8141,27 +8260,27 @@
           "periodStars": 8375,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "ff2b433632a76a9da043674fd346e4415c32b816b9addb53a5bbc0866f5a0676",
             "sourceFingerprint": "4ea046f8972b93daf14f50c93fefa2892edc7d307db4385f6f4e709c5e078cab",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "product-management/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "sales/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -8171,7 +8290,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "README.md",
                 "sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/README.md"
               },
               {
@@ -8179,7 +8298,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "product-management/README.md",
                 "sha": "794694ab4d522a3eb08320472b63f771047bb0a9",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/product-management/README.md",
                 "representativeId": "plugin-product-spec"
               },
@@ -8188,7 +8307,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "sales/README.md",
                 "sha": "2dfe28ad0d9f5cd98b14b21ccb44763d6e652f28",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/sales/README.md",
                 "representativeId": "plugin-sales-call"
               }
@@ -8472,10 +8591,17 @@
                 ],
                 "ioScope": {
                   "kind": "item-specific",
-                  "body": "항목마다 입출력 계약이 다른 모음입니다. 모음 전체의 공통 입출력은 평가 대상에서 제외하고 대표 항목을 따로 확인합니다.",
+                  "body": "항목마다 입출력 계약이 다른 모음입니다. 공통 계약이 확인되거나 의심되는 항목은 계속 평가하고, 항목별 계약만 확인한 범위만 해당 없음으로 구분합니다.",
+                  "ruleId": "legacy:anthropics/knowledge-work-plugins",
                   "evidenceIds": [
                     "e-93e982661b76ffb8"
-                  ]
+                  ],
+                  "exempt": [
+                    "input",
+                    "output"
+                  ],
+                  "contracts": {},
+                  "hints": {}
                 }
               },
               "verdictEvidenceIds": [
@@ -8507,7 +8633,8 @@
               ],
               "representatives": {
                 "expected": 2,
-                "available": 2
+                "available": 2,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -8524,27 +8651,27 @@
           "periodStars": 47234,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "3bcaa24a372d9e3e95889abb2148c51b23b7994b1495dc22382faff640d07c74",
             "sourceFingerprint": "2508499122948c5504f6a7736953322afac06a00a9f31949a03e09e7940d8873",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/install/windows-rocm.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "docs/install/macos.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -8554,7 +8681,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "README.md",
                 "sha": "5b336fbac18c4c3400089956d2cb2307ade2fb6d",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/README.md"
               },
               {
@@ -8562,7 +8689,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "docs/install/windows-rocm.md",
                 "sha": "17b22a642a9e194d050fdb9863c89437438d5432",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/windows-rocm.md"
               },
               {
@@ -8570,7 +8697,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "docs/install/macos.md",
                 "sha": "b8dfdb0eb7d7cea43e7b7593a1c3072d98bd8bb6",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/macos.md"
               }
             ],
@@ -8952,7 +9079,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -8969,17 +9097,17 @@
           "periodStars": 25479,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "596bb4235bacd567ea0f3f04999470a4c0ae03c186a494d1fb74a68863704269",
             "sourceFingerprint": "2ab4796c73dcad459c759cc34b60044300a6a4ffcda3c9c4972407549f752a44",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -8988,7 +9116,7 @@
                 "repository": "pbakaus/impeccable",
                 "path": "README.md",
                 "sha": "1b95cc5b988b9b7687be749d90d978f625b9284a",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/README.md"
               }
             ],
@@ -9080,6 +9208,14 @@
                 "line": 23,
                 "kind": "prose",
                 "excerpt": "- A reviewer. critique scores the design against usability heuristics and ranks what to fix first. audit checks accessibility, performance, theming, and responsive behavior, with findings ranked P0 (blocking) to P3 (polish)."
+              },
+              {
+                "id": "e-a1733f537f164b97",
+                "sourceId": "readme",
+                "section": "How it works",
+                "line": 37,
+                "kind": "prose",
+                "excerpt": "Then name a command and a target:"
               }
             ],
             "source": "https://github.com/pbakaus/impeccable#readme",
@@ -9105,7 +9241,7 @@
               "title": "pbakaus/impeccable · 프로젝트 분석 노트",
               "paragraphs": [
                 "문서가 명시한 해결 문제: Inter for everything. Purple-to-blue gradients. Cards nested in cards, gray text on colored backgrounds, a rounded-square icon tile above every heading. Ask an agent for a page with no other guidance and these show up again and again, across models and projects.",
-                "문서에서 확인한 입력: 페이지·컴포넌트 대상. 출력: 프로젝트 기준 문서. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+                "문서에서 확인한 입력: 공통 입력 계약. 출력: 프로젝트 기준 문서. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
               ],
               "findings": [
                 {
@@ -9175,14 +9311,13 @@
                 },
                 "inputs": [
                   {
-                    "title": "페이지·컴포넌트 대상",
-                    "body": "페이지·개발 서버·앱 또는 컴포넌트를 대상으로 지정하는 경로입니다.",
-                    "kind": "interpretation",
+                    "title": "공통 입력 계약",
+                    "body": "모음 전체에 적용되는 계약의 문서 근거를 확인했습니다. 자료 형식과 적용 범위는 원문 근거를 확인하세요.",
+                    "kind": "documented",
                     "evidenceIds": [
-                      "e-cbffafe342144e79"
+                      "e-a1733f537f164b97"
                     ],
-                    "exampleOnly": false,
-                    "summaryKo": "페이지·개발 서버·앱 또는 컴포넌트를 대상으로 지정하는 경로입니다."
+                    "summaryKo": "명령 이름과 적용할 대상 영역을 지정합니다."
                   }
                 ],
                 "outputs": [
@@ -9223,7 +9358,29 @@
                 ],
                 "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
                 "examples": [],
-                "ioScope": null
+                "ioScope": {
+                  "kind": "item-specific",
+                  "body": "항목마다 입출력 계약이 다른 모음입니다. 공통 계약이 확인되거나 의심되는 항목은 계속 평가하고, 항목별 계약만 확인한 범위만 해당 없음으로 구분합니다.",
+                  "ruleId": "design-commands",
+                  "evidenceIds": [
+                    "e-90bd9a18fd6a2cf0",
+                    "e-1f1f8d1a463184f9",
+                    "e-a1733f537f164b97"
+                  ],
+                  "exempt": [
+                    "output"
+                  ],
+                  "contracts": {
+                    "input": [
+                      "e-a1733f537f164b97"
+                    ]
+                  },
+                  "hints": {
+                    "input": [
+                      "e-a1733f537f164b97"
+                    ]
+                  }
+                }
               },
               "verdictEvidenceIds": [
                 "e-1f1f8d1a463184f9"
@@ -9240,16 +9397,21 @@
               ]
             },
             "quality": {
-              "status": "complete",
-              "missing": [],
+              "status": "partial",
+              "missing": [
+                "대표 항목 근거"
+              ],
               "io": {
                 "input": "documented",
-                "output": "documented"
+                "output": "not-applicable"
               },
-              "notApplicable": [],
+              "notApplicable": [
+                "출력"
+              ],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "not-configured"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -9266,22 +9428,22 @@
           "periodStars": 8092,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "f5be476f3817c232c60374417e7709c9c143418cf4855586e1bdc27cbaf7c802",
             "sourceFingerprint": "ab8f680c191a8c60b0167637a63e1112548b0fd56d295e64db691ca95e2d3c11",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -9291,7 +9453,7 @@
                 "repository": "earthtojake/text-to-cad",
                 "path": "README.md",
                 "sha": "51ab0f716fa1359e1215f2cd3971f8eb03f10908",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/earthtojake/text-to-cad/blob/main/README.md"
               },
               {
@@ -9299,7 +9461,7 @@
                 "repository": "earthtojake/text-to-cad",
                 "path": "docs/install.md",
                 "sha": "dda3032b1ed5f60b5217fd0f03a5b1b2f24b7dea",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/earthtojake/text-to-cad/blob/main/docs/install.md"
               }
             ],
@@ -9629,7 +9791,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -9646,27 +9809,27 @@
           "periodStars": 16685,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "8d87ef7bf2e142ea653b61246010bc819da1b45b344369c7b0f9da5377d47908",
             "sourceFingerprint": "f4651aad7098c09877f52a988c3b940d574236e16cb91dd6f6d4bb0a3f9fb762",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "DevGuide.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "Ghidra/Features/PyGhidra/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -9676,7 +9839,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "README.md",
                 "sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md"
               },
               {
@@ -9684,7 +9847,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "DevGuide.md",
                 "sha": "7cf682836fea723a3875dfa2a2ecdc22414f9745",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/DevGuide.md"
               },
               {
@@ -9692,7 +9855,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "Ghidra/Features/PyGhidra/README.md",
                 "sha": "3485a6048d65b34979373983396324fe2eeae13c",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/Ghidra/Features/PyGhidra/README.md"
               }
             ],
@@ -9997,7 +10160,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -10014,27 +10178,27 @@
           "periodStars": 9973,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "8499ad335d4d2abd71bb1678b81c8b7c1176a6c012a7c554a7f22a22167a308d",
             "sourceFingerprint": "fef7906586df079a8a428e14874ea80c2a5bcc3f3725c415d3ef319f24686a84",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": [
                 {
                   "path": "docs/user/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 },
                 {
                   "path": "docs/user/outside-agents.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:03:28.054Z"
+                  "checkedAt": "2026-11-11T16:23:12.349Z"
                 }
               ]
             },
@@ -10044,7 +10208,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "README.md",
                 "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/README.md"
               },
               {
@@ -10052,7 +10216,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/install.md",
                 "sha": "c353e3f0fecb58ef4e0941664a1b274ccd88adac",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md"
               },
               {
@@ -10060,7 +10224,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/outside-agents.md",
                 "sha": "dc9af3ad5167cc4d820e5b951a85252a5b26cf8a",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/outside-agents.md"
               }
             ],
@@ -10374,7 +10538,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -10391,17 +10556,17 @@
           "periodStars": 12705,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 10,
-            "version": 10,
+            "analyzerVersion": 11,
+            "version": 11,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
+            "checkedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
             "analysisInputFingerprint": "28fed759e0c2f94deeaae77304e4e53eeaddcf39586f6e3ea1243ccdacea6f92",
             "sourceFingerprint": "2640231a4ea5f22bc6971861a1a82a2b0f44ed0f077fdde75f617787155bebcb",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:03:28.054Z",
+              "checkedAt": "2026-11-11T16:23:12.349Z",
               "links": []
             },
             "sources": [
@@ -10410,7 +10575,7 @@
                 "repository": "thedotmack/claude-mem",
                 "path": "README.md",
                 "sha": "24734d2eb7e39bc7222244559b6cfa7698cf0ef8",
-                "fetchedAt": "2026-11-11T16:03:28.054Z",
+                "fetchedAt": "2026-11-11T16:23:12.349Z",
                 "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
               }
             ],
@@ -10746,7 +10911,8 @@
               "notApplicable": [],
               "representatives": {
                 "expected": 0,
-                "available": 0
+                "available": 0,
+                "status": "tracked"
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
@@ -10756,25 +10922,26 @@
         }
       ],
       "synthesis": {
-        "version": 2,
+        "version": 3,
         "coverage": {
           "total": 10,
           "classified": 10,
           "unknown": 0,
-          "complete": 9,
-          "partial": 1,
+          "complete": 8,
+          "partial": 2,
           "unavailable": 0,
           "stale": 0,
           "inputs": 9,
-          "outputs": 9,
+          "outputs": 8,
           "conditions": 9,
           "inputsNotApplicable": 1,
-          "outputsNotApplicable": 1,
+          "outputsNotApplicable": 2,
           "inputEvidenceMissing": 0,
           "outputEvidenceMissing": 0,
           "exampleProjects": 1,
           "examples": 2,
-          "exampleMissing": 0
+          "exampleMissing": 0,
+          "exampleUnconfigured": 1
         },
         "categoryGroups": [
           {
@@ -11126,8 +11293,8 @@
         "references": [
           {
             "name": "cloudflare/security-audit-skill",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-2f3d84d7fb62c538"
@@ -11135,8 +11302,8 @@
           },
           {
             "name": "heygen-com/hyperframes",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-7e57f835ae4884f6"
@@ -11144,8 +11311,8 @@
           },
           {
             "name": "Nutlope/hallmark",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-81f1fd422178dcb7"
@@ -11153,8 +11320,8 @@
           },
           {
             "name": "anthropics/knowledge-work-plugins",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-dc3fa23eacca5302"
@@ -11162,8 +11329,8 @@
           },
           {
             "name": "debpalash/VoiceStudio",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-12c82ccaa38a3fa2"
@@ -11171,8 +11338,8 @@
           },
           {
             "name": "pbakaus/impeccable",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-9e8edc352b586880"
@@ -11180,8 +11347,8 @@
           },
           {
             "name": "earthtojake/text-to-cad",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-012c0a13e7927204"
@@ -11189,8 +11356,8 @@
           },
           {
             "name": "NationalSecurityAgency/ghidra",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-1d13ea76374e633d"
@@ -11198,8 +11365,8 @@
           },
           {
             "name": "pingdotgg/t3code",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-e65edae5430fd0cf"
@@ -11207,15 +11374,15 @@
           },
           {
             "name": "thedotmack/claude-mem",
-            "sourceCheckedAt": "2026-11-11T16:03:28.054Z",
-            "analyzedAt": "2026-11-11T16:03:28.054Z",
+            "sourceCheckedAt": "2026-11-11T16:23:12.349Z",
+            "analyzedAt": "2026-11-11T16:23:12.349Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-5a0438f27d297590"
             ]
           }
         ],
-        "generatedAt": "2026-11-11T16:04:35.591Z"
+        "generatedAt": "2026-11-11T16:23:12.349Z"
       }
     }
   },

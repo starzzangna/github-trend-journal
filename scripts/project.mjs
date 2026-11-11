@@ -1,3 +1,4 @@
+import { ioNotApplicable } from './representatives.mjs';
 // 입력·출력의 역할이 드러난 문장과 사용 예만 해석합니다. 분야만 보고 빈칸을 채우지 않습니다.
 // 배지·메뉴·홍보 공지와 짧은 표어를 해결 문제로 채택하지 않습니다.
 function substantive(text, minLength = 25) {
@@ -144,7 +145,7 @@ export function explainFindings(context, profile, previous = []) {
 
 export function projectVerdict(project, findings) {
   const anchor = findings[0] || project.problem || project.inputs[0] || project.outputs[0];
-  const missing = [project.ioScope?.kind !== 'item-specific' && !project.inputs.length && '입력', project.ioScope?.kind !== 'item-specific' && !project.outputs.length && '출력', !project.conditions.length && '도입 조건'].filter(Boolean);
+  const missing = [!ioNotApplicable(project, 'input', project.ioScope?.exempt ? 11 : 10) && !project.inputs.length && '입력', !ioNotApplicable(project, 'output', project.ioScope?.exempt ? 11 : 10) && !project.outputs.length && '출력', !project.conditions.length && '도입 조건'].filter(Boolean);
   if (!anchor) return { text: '구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.', evidenceIds: [] };
   const questions = {
     '관심 종목의 보고서 생성': '데이터 제공자·모델·알림 경로의 설정과 비용을 확인하세요. 이 보고서가 해당 도구의 투자 판단 정확성을 검증한 것은 아닙니다.',

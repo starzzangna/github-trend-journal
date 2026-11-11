@@ -22,7 +22,7 @@ test('모음형 근거가 있을 때만 공통 입출력을 해당 없음으로 
   assert.deepEqual(usage.quality.io, { input: 'not-applicable', output: 'not-applicable' });
   assert.deepEqual(usage.quality.notApplicable, ['입력', '출력']);
   assert.ok(!usage.quality.missing.includes('출력'));
-  assert.deepEqual(usage.quality.representatives, { expected: 2, available: 2 });
+  assert.deepEqual(usage.quality.representatives, { expected: 2, available: 2, status: 'tracked' });
   assert.ok(usage.quality.missing.includes('도입 조건'));
   assert.equal(usage.quality.status, 'partial');
   const unknown = collectionRow({ noBasis: true }).usage;
@@ -34,7 +34,7 @@ test('모음형 근거가 있을 때만 공통 입출력을 해당 없음으로 
 test('대표 항목 누락은 별도 부족으로 남고 해당 없음으로 품질을 부풀리지 않는다', () => {
   const { usage } = collectionRow({ missing: true });
   assert.equal(usage.quality.io.output, 'not-applicable');
-  assert.deepEqual(usage.quality.representatives, { expected: 2, available: 1 });
+  assert.deepEqual(usage.quality.representatives, { expected: 2, available: 1, status: 'tracked' });
   assert.ok(usage.quality.missing.includes('대표 항목: sales · 통화 후 요약'));
   assert.equal(usage.quality.status, 'partial');
 });

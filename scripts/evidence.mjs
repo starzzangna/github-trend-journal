@@ -1,5 +1,5 @@
 import { createHash } from 'node:crypto';
-import { representativeSpecs } from './representatives.mjs';
+import { representativeSpecs, ioNotApplicable } from './representatives.mjs';
 
 const negative = /\b(?:does not|doesn't|cannot|can't|not yet|not supported|unsupported|no support|without|not implemented|planned|coming soon)\b|지원하지|미지원|구현 예정/i;
 
@@ -34,7 +34,7 @@ export function createEvidence(row, sections, now, metadata = {}, evidence = [])
     for (const document of candidates) {
       const paragraphs = document.text.split(/\n\s*\n/).flatMap(text => text.split(/\n(?=\s*(?:[-*]\s|\d+\.\s))/)).map(text => text.replace(/\s+/g, ' ').trim());
       const units = paragraphs.flatMap(text => wholeParagraph ? [text] : text.split(/(?<=[.!?。])\s+/)).map(text => ({ text, kind: document.exampleOnly ? 'example' : 'prose' }));
-      if (headings && !negative.test(document.text)) units.push({ text: document.heading, kind: document.exampleOnly ? 'example' : 'heading' });
+      if (headings && (allowNegative || !negative.test(document.text))) units.push({ text: document.heading, kind: document.exampleOnly ? 'example' : 'heading' });
       if (includeExamples && /usage|example|quick.?start|getting started|使用|示例|사용|예시|시작/i.test(document.scope)) {
         for (const block of document.examples) for (const text of block.split('\n')) units.push({ text: text.trim(), kind: 'example' });
       }
@@ -82,7 +82,7 @@ export function assessQuality(usage) {
   const missing = [];
   const project = usage.article?.project;
   const itemSpecific = usage.version >= 10 && project?.ioScope?.kind === 'item-specific';
-  const io = Object.fromEntries(['input', 'output'].map((field, index) => [field, itemSpecific ? 'not-applicable' : project?.[index ? 'outputs' : 'inputs']?.length ? 'documented' : 'insufficient-evidence']));
+  const io = Object.fromEntries(['input', 'output'].map((field, index) => [field, ioNotApplicable(project, field, usage.version) ? 'not-applicable' : project?.[index ? 'outputs' : 'inputs']?.length ? 'documented' : 'insufficient-evidence']));
   const expected = itemSpecific ? representativeSpecs.filter(item => item.repository === usage.sources?.[0]?.repository) : [];
   const representatives = { expected: expected.length, available: expected.filter(spec => project.examples?.some(item => item.id === spec.id)).length };
   if (usage.category === '용도 분류 미확정') missing.push('용도 분류');
@@ -90,10 +90,11 @@ export function assessQuality(usage) {
   if (!usage.start) missing.push('시작 경로');
   if (usage.version >= 4) {
     if (!project?.problem) missing.push('해결 문제');
-    if (!itemSpecific && !project?.inputs.length) missing.push('입력');
-    if (!itemSpecific && !project?.outputs.length) missing.push('출력');
+    if (!ioNotApplicable(project, 'input', usage.version) && !project?.inputs.length) missing.push('입력');
+    if (!ioNotApplicable(project, 'output', usage.version) && !project?.outputs.length) missing.push('출력');
     if (!project?.conditions.length) missing.push('도입 조건');
   }
+  if (usage.version >= 11 && itemSpecific && Object.values(io).includes('not-applicable') && !expected.length) missing.push('대표 항목 근거');
   for (const spec of expected) if (!project.examples?.some(item => item.id === spec.id)) missing.push(`대표 항목: ${spec.title}`);
-  return { status: missing.length ? 'partial' : 'complete', missing, ...(usage.version >= 10 ? { io, notApplicable: itemSpecific ? ['입력', '출력'] : [], representatives } : {}), basis: '문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다.' };
+  return { status: missing.length ? 'partial' : 'complete', missing, ...(usage.version >= 10 ? { io, notApplicable: ['input', 'output'].filter(field => ioNotApplicable(project, field, usage.version)).map(field => field === 'input' ? '입력' : '출력'), representatives: { ...representatives, ...(usage.version >= 11 ? { status: itemSpecific && Object.values(io).includes('not-applicable') && !expected.length ? 'not-configured' : 'tracked' } : {}) } } : {}), basis: '문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다.' };
 }

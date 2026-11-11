@@ -1,6 +1,7 @@
+import { validateRepresentatives, validateCollectionScope, representativeSpecs } from './representatives.mjs';
 import { labels } from './trends.mjs';
 
-export const reportVersion = 1;
+export const reportVersion = 2;
 
 // 같은 발행호의 프로젝트 분석에서 확인한 분포와 공통 항목만 종합합니다.
 export function synthesizeReport(report, period, now) {
@@ -8,7 +9,8 @@ export function synthesizeReport(report, period, now) {
   const groups = new Map();
   const patterns = new Map();
   const references = [];
-  const coverage = { total: rows.length, classified: 0, unknown: 0, complete: 0, partial: 0, unavailable: 0, stale: 0, inputs: 0, outputs: 0, conditions: 0 };
+  const representativeExamples = [];
+  const coverage = { total: rows.length, classified: 0, unknown: 0, complete: 0, partial: 0, unavailable: 0, stale: 0, inputs: 0, outputs: 0, conditions: 0, inputsNotApplicable: 0, outputsNotApplicable: 0, inputEvidenceMissing: 0, outputEvidenceMissing: 0, exampleProjects: 0, examples: 0, exampleMissing: 0 };
   for (const row of rows) {
     const usage = row.usage;
     if (usage?.status !== 'ready') { coverage.unknown++; coverage.unavailable++; continue; }
@@ -22,8 +24,19 @@ export function synthesizeReport(report, period, now) {
       groups.get(usage.category).push(row.name);
     } else coverage.unknown++;
     const project = usage.article?.project;
+    let itemSpecific = false;
+    try { validateCollectionScope(usage, row); itemSpecific = usage.version >= 10 && project?.ioScope?.kind === 'item-specific'; } catch { /* 범위 근거가 잘못되면 해당 없음으로 집계하지 않습니다. */ }
+    if (itemSpecific) { coverage.inputsNotApplicable++; coverage.outputsNotApplicable++; }
+    let examples = [];
+    try { validateRepresentatives(usage); examples = project.examples; } catch { /* 검증되지 않은 대표 설명은 종합하지 않습니다. */ }
+    if (examples.length) coverage.exampleProjects++;
+    coverage.examples += examples.length;
+    coverage.exampleMissing += itemSpecific ? representativeSpecs.filter(spec => spec.repository === row.name && !examples.some(item => item.id === spec.id)).length : 0;
+    for (const example of examples) representativeExamples.push({ ...structuredClone(example), name: row.name });
     for (const [kind, items] of [['input', project?.inputs], ['output', project?.outputs], ['condition', project?.conditions]]) {
+      if (itemSpecific && kind !== 'condition') continue;
       const grounded = (items || []).filter(item => item.evidenceIds?.length && item.evidenceIds.every(id => ids.has(id)));
+      if (!grounded.length && kind !== 'condition') coverage[kind === 'input' ? 'inputEvidenceMissing' : 'outputEvidenceMissing']++;
       if (grounded.length) coverage[{ input: 'inputs', output: 'outputs', condition: 'conditions' }[kind]]++;
       for (const item of grounded) {
         const key = `${kind}:${item.title}`;
@@ -40,12 +53,13 @@ export function synthesizeReport(report, period, now) {
   const title = `${labels[period]} · ${categoryGroups.slice(0, 2).map(item => item.category).join('·') || '문서 확인을 기다리는'} 프로젝트 분석`;
   const summary = `상위 ${coverage.total}개 중 공식 문서 근거로 ${coverage.classified}개의 용도를 분류했습니다.${topics ? ` ${topics}가 포함됩니다.` : ''} 분류 미확정은 ${coverage.unknown}개입니다.`;
   const analysis = [
-    `입력을 설명할 근거가 있는 프로젝트는 ${coverage.inputs}개, 출력은 ${coverage.outputs}개, 도입 조건은 ${coverage.conditions}개입니다. 각각 전체 ${coverage.total}개를 기준으로 셉니다.`,
+    `입력을 설명할 근거가 있는 프로젝트는 ${coverage.inputs}개, 출력은 ${coverage.outputs}개, 도입 조건은 ${coverage.conditions}개입니다. 공통 입력 해당 없음 ${coverage.inputsNotApplicable}개, 출력 해당 없음 ${coverage.outputsNotApplicable}개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 ${coverage.total - coverage.unavailable - coverage.inputsNotApplicable}개·출력 ${coverage.total - coverage.unavailable - coverage.outputsNotApplicable}개입니다. 근거 부족은 입력 ${coverage.inputEvidenceMissing}개·출력 ${coverage.outputEvidenceMissing}개이며 분석 자료 없음 ${coverage.unavailable}개는 별도입니다.`,
+    `대표 항목 사용 예는 ${coverage.exampleProjects}개 프로젝트에서 ${coverage.examples}개를 확인했습니다. 대표 항목 근거 부족은 ${coverage.exampleMissing}개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.`,
     sharedPatterns.length ? `공통으로 확인한 항목은 ${sharedPatterns.map(item => `${item.title}(${item.projects.length}개)`).join(', ')}입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.` : '둘 이상의 프로젝트에서 함께 확인한 입출력·도입 조건이 충분하지 않습니다.',
     `기본 항목 충족 ${coverage.complete}개 · 부분 분석 ${coverage.partial}개 · 분석 불가 ${coverage.unavailable}개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 ${coverage.stale}개입니다.`,
     '발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다.'
   ];
-  const body = { version: reportVersion, coverage, categoryGroups, sharedPatterns, references };
+  const body = { version: reportVersion, coverage, categoryGroups, sharedPatterns, representativeExamples, references };
   const old = report.synthesis;
   const unchanged = old && JSON.stringify({ ...old, generatedAt: undefined }) === JSON.stringify(body);
   return { title, summary, analysis, synthesis: { ...body, generatedAt: unchanged ? old.generatedAt : now.toISOString() } };

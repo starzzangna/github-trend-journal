@@ -51,6 +51,23 @@ export function readJavaDocs(java) {
 }
 
 const labels = { scenario: '사용 예', input: '입력', output: '출력', caution: '주의점' };
+
+// 이름이나 빈 배열만으로 해당 없음을 추정하지 않습니다. 확인한 두 모음의 본문 근거만 허용합니다.
+const collectionRules = [
+  ['TheAlgorithms/Java', /implementations are intended for learning purposes/i],
+  ['anthropics/knowledge-work-plugins', /Each plugin bundles.*specific job function/i]
+];
+export function collectionScope(row, context) {
+  const rule = collectionRules.find(([name]) => name === row.name);
+  const id = rule && context.select(rule[1], { candidates: context.documents.filter(item => item.sourceId === 'readme'), wholeParagraph: true });
+  return id ? { kind: 'item-specific', body: '항목마다 입출력 계약이 다른 모음입니다. 모음 전체의 공통 입출력은 평가 대상에서 제외하고 대표 항목을 따로 확인합니다.', evidenceIds: [id] } : null;
+}
+export function validateCollectionScope(usage, row) {
+  const scope = usage.article.project.ioScope;
+  if (scope === null) return;
+  const rule = collectionRules.find(([name]) => name === row.name);
+  if (!rule || scope?.kind !== 'item-specific' || scope.body !== '항목마다 입출력 계약이 다른 모음입니다. 모음 전체의 공통 입출력은 평가 대상에서 제외하고 대표 항목을 따로 확인합니다.' || !Array.isArray(scope.evidenceIds) || !scope.evidenceIds.length || scope.evidenceIds.some(id => !usage.evidence.some(item => item.id === id && item.sourceId === 'readme' && rule[1].test(item.excerpt)))) throw Error('모음형 입출력 범위 근거 오류');
+}
 export function explainRepresentatives(row, context) {
   return representativeSpecs.filter(spec => spec.repository === row.name).flatMap(spec => {
     const candidates = context.representativeDocuments.filter(document => document.representativeId === spec.id);

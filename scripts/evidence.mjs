@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { representativeSpecs } from './representatives.mjs';
 
 const negative = /\b(?:does not|doesn't|cannot|can't|not yet|not supported|unsupported|no support|without|not implemented|planned|coming soon)\b|지원하지|미지원|구현 예정/i;
 
@@ -79,15 +80,20 @@ function plainText(text) {
 
 export function assessQuality(usage) {
   const missing = [];
+  const project = usage.article?.project;
+  const itemSpecific = usage.version >= 10 && project?.ioScope?.kind === 'item-specific';
+  const io = Object.fromEntries(['input', 'output'].map((field, index) => [field, itemSpecific ? 'not-applicable' : project?.[index ? 'outputs' : 'inputs']?.length ? 'documented' : 'insufficient-evidence']));
+  const expected = itemSpecific ? representativeSpecs.filter(item => item.repository === usage.sources?.[0]?.repository) : [];
+  const representatives = { expected: expected.length, available: expected.filter(spec => project.examples?.some(item => item.id === spec.id)).length };
   if (usage.category === '용도 분류 미확정') missing.push('용도 분류');
   if (!usage.article?.findings.length) missing.push('핵심 기능 근거');
   if (!usage.start) missing.push('시작 경로');
   if (usage.version >= 4) {
-    const project = usage.article?.project;
     if (!project?.problem) missing.push('해결 문제');
-    if (!project?.inputs.length) missing.push('입력');
-    if (!project?.outputs.length) missing.push('출력');
+    if (!itemSpecific && !project?.inputs.length) missing.push('입력');
+    if (!itemSpecific && !project?.outputs.length) missing.push('출력');
     if (!project?.conditions.length) missing.push('도입 조건');
   }
-  return { status: missing.length ? 'partial' : 'complete', missing, basis: '문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다.' };
+  for (const spec of expected) if (!project.examples?.some(item => item.id === spec.id)) missing.push(`대표 항목: ${spec.title}`);
+  return { status: missing.length ? 'partial' : 'complete', missing, ...(usage.version >= 10 ? { io, notApplicable: itemSpecific ? ['입력', '출력'] : [], representatives } : {}), basis: '문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다.' };
 }

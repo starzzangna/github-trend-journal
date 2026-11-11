@@ -42,6 +42,24 @@ test('대표 항목은 한국어 사용 예와 별도 입출력을 표시하고 
   assert.doesNotMatch(html, /<details[^>]* open/);
 });
 
+test('품질 표시와 종합에서 해당 없음·근거 부족·대표 항목을 구분하고 근거를 접어 제공한다', async () => {
+  const name = 'anthropics/knowledge-work-plugins';
+  const docs = representativeDocs.filter(item => item.repository === name).map(item => ({ markdown: item.markdown, metadata: { path: item.path, sha: item.id, representativeId: item.id } }));
+  const value = analyzeUsage({ name }, '# Plugins\nPlugins that turn Claude into a specialist for your role, team, and company.\n\nEach plugin bundles the skills, connectors, slash commands, and sub-agents for a specific job function.', now, {}, docs);
+  const unknown = { ...row, usage: analyzeUsage(row, '# Unknown', now) };
+  const report = createReport('daily', [{ ...row, name, usage: value }, unknown], now);
+  Object.assign(report, synthesizeReport(report, 'daily', now));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: report } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /공통 입력·출력 · 해당 없음/);
+  assert.match(html, /공통 출력: 확인 0개 · 해당 없음 1개 · 근거 부족 1개/);
+  assert.match(html, /대표 항목 사용 예 · 2개/);
+  assert.match(html, /대표 항목 근거: 2\/2개 확인/);
+  assert.match(html, /모음형 입출력 평가 범위의 원문 근거/);
+  assert.match(html, /출력 · 근거 부족/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+});
+
 test('문서를 읽었지만 부분 분석인 상태와 미확인 항목을 독립적으로 표시한다', async () => {
   const partial = analyzeUsage({ ...row, description: 'Unknown' }, '# Unknown', now);
   const { container, attributes } = await mount(async () => ({ ok: true, json: async () => dataFor(partial) }));

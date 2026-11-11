@@ -144,7 +144,7 @@ export function explainFindings(context, profile, previous = []) {
 
 export function projectVerdict(project, findings) {
   const anchor = findings[0] || project.problem || project.inputs[0] || project.outputs[0];
-  const missing = [!project.inputs.length && '입력', !project.outputs.length && '출력', !project.conditions.length && '도입 조건'].filter(Boolean);
+  const missing = [project.ioScope?.kind !== 'item-specific' && !project.inputs.length && '입력', project.ioScope?.kind !== 'item-specific' && !project.outputs.length && '출력', !project.conditions.length && '도입 조건'].filter(Boolean);
   if (!anchor) return { text: '구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.', evidenceIds: [] };
   const questions = {
     '관심 종목의 보고서 생성': '데이터 제공자·모델·알림 경로의 설정과 비용을 확인하세요. 이 보고서가 해당 도구의 투자 판단 정확성을 검증한 것은 아닙니다.',

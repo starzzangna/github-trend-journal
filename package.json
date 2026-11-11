@@ -6,7 +6,7 @@
     "collect": "node scripts/collect.mjs",
     "build": "node scripts/build.mjs",
     "test": "node --test",
-    "check": "node --check scripts/collect.mjs && node --check scripts/build.mjs && node --check scripts/trends.mjs && node --check scripts/publication.mjs && node --check scripts/usage.mjs && node --check scripts/analysis.mjs && node --check scripts/serve.mjs && node --check web/app.js && node --check scripts/evidence.mjs && node --check scripts/contracts.mjs && node --check scripts/profiles.mjs && node --check scripts/project.mjs && node --check scripts/freshness.mjs && node --check scripts/report.mjs && node --check scripts/ai.mjs && node --check scripts/korean.mjs && node --check scripts/linked.mjs",
+    "check": "node --check scripts/collect.mjs && node --check scripts/build.mjs && node --check scripts/trends.mjs && node --check scripts/publication.mjs && node --check scripts/usage.mjs && node --check scripts/analysis.mjs && node --check scripts/serve.mjs && node --check web/app.js && node --check scripts/evidence.mjs && node --check scripts/contracts.mjs && node --check scripts/profiles.mjs && node --check scripts/project.mjs && node --check scripts/freshness.mjs && node --check scripts/report.mjs && node --check scripts/ai.mjs && node --check scripts/korean.mjs && node --check scripts/linked.mjs && node --check scripts/representatives.mjs",
     "preview": "node scripts/serve.mjs"
   },
   "engines": {

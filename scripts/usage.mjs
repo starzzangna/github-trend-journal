@@ -7,7 +7,8 @@ import { createHash } from 'node:crypto';
 import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from './freshness.mjs';
 import { addKoreanPresentation } from './korean.mjs';
 import { fetchLinkedDocuments } from './linked.mjs';
-export const usageVersion = 8;
+import { readJavaDocs, explainRepresentatives } from './representatives.mjs';
+export const usageVersion = 9;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
@@ -32,7 +33,7 @@ export function readSections(markdown) {
 
 export function analyzeUsage(row, markdown, now = new Date(), metadata = {}, linkedDocuments = []) {
   const sections = readSections(markdown);
-  const context = createEvidenceBundle(row, [{ sections, metadata }, ...linkedDocuments.map(document => ({ sections: readSections(document.markdown), metadata: document.metadata }))], now);
+  const context = createEvidenceBundle(row, [{ sections, metadata }, ...linkedDocuments.map(document => ({ sections: document.metadata.format === 'javadoc' ? readJavaDocs(document.markdown) : readSections(document.markdown), metadata: document.metadata }))], now);
   const { profile, classification } = classifyProject(row, context);
   const selected = sections.findIndex(s => /quick\s*start|getting started|get started|빠른 시작|시작하기|사용법|安装|快速开始/i.test(s.title));
   const fallback = sections.findIndex(s => /(?:^|\s)(?:installation|install|setup|usage|how to use|설치|사용 방법)(?:\b|\s|$)/i.test(s.title));
@@ -74,6 +75,7 @@ export function analyzeUsage(row, markdown, now = new Date(), metadata = {}, lin
   };
   result.article.project = explainProject(row, context, profile);
   const project = result.article.project;
+  project.examples = explainRepresentatives(row, context);
   result.article.paragraphs = [project.problem?.body || '문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.',
     `문서에서 확인한 입력: ${project.inputs.map(item => item.title).join(', ') || '미확인'}. 출력: ${project.outputs.map(item => item.title).join(', ') || '미확인'}. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다.`];
   result.article.conditions = project.conditions;
@@ -94,7 +96,7 @@ export async function fetchUsage(row, { now = new Date(), fetcher = fetch, token
     const linked = await fetchLinkedDocuments(markdown, row.name, metadata, { fetcher, now });
     const fingerprint = documentFingerprint([{ repository: row.name, path: metadata.path || 'README', sha: metadata.sha }, ...linked.documents.map(document => ({ repository: row.name, path: document.metadata.path, sha: document.metadata.sha }))]);
     const input = analysisInputFingerprint(row);
-    if (!forceAnalysis && !linked.states.some(item => item.status === 'unavailable' && item.reason !== 'size-limit') && previousUsage?.analysisInputFingerprint && previous?.status === 'ready' && previous.version === usageVersion && fingerprint && previous.sourceFingerprint === fingerprint && previous.analysisInputFingerprint === input && Date.parse(previous.analyzedAt) <= now.getTime()) {
+    if (!forceAnalysis && !linked.states.some(item => item.status === 'unavailable' && !['size-limit', 'project-size-limit'].includes(item.reason)) && previousUsage?.analysisInputFingerprint && previous?.status === 'ready' && previous.version === usageVersion && fingerprint && previous.sourceFingerprint === fingerprint && previous.analysisInputFingerprint === input && Date.parse(previous.analyzedAt) <= now.getTime()) {
       return { ...previous, checkedAt: now.toISOString(), sourceCheckedAt: now.toISOString(), document: { status: 'available', checkedAt: now.toISOString(), links: linked.states }, stale: false, analysisReused: true, readmeSha: metadata.sha };
     }
     const result = analyze(row, markdown, now, metadata, linked.documents);

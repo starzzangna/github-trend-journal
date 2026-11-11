@@ -7,6 +7,7 @@ import { createReport } from '../scripts/trends.mjs';
 import { synthesizeReport } from '../scripts/report.mjs';
 
 const script = await readFile(new URL('../web/app.js', import.meta.url), 'utf8');
+const representativeDocs = JSON.parse(await readFile(new URL('./fixtures/representative-documents.json', import.meta.url)));
 const now = new Date('2026-11-11T00:23:00Z');
 const row = { name: 'example/voice', description: 'voice cloning', language: 'Python', stars: 10, periodStars: 2 };
 const usage = analyzeUsage(row, '# Voice\n## Features\nVoice cloning is supported.\n## Input\nText and a reference recording.\n## Output\nGenerated speech audio.\n## Quick start\nRequires Python 3.11.', now);
@@ -26,6 +27,20 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   await new Promise(resolve => setImmediate(resolve));
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
+
+test('대표 항목은 한국어 사용 예와 별도 입출력을 표시하고 원문은 접힌 근거로 제공한다', async () => {
+  const name = 'anthropics/knowledge-work-plugins';
+  const docs = representativeDocs.filter(item => item.repository === name).map(item => ({ markdown: item.markdown, metadata: { path: item.path, sha: item.id, representativeId: item.id, html_url: `https://github.com/${name}/blob/main/${item.path}` } }));
+  const value = analyzeUsage({ name }, '# Knowledge work plugins', now, {}, docs);
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: createReport('daily', [{ ...row, name, usage: value }], now) } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /모음 전체의 공통 입출력이 아니며 실행은 검증하지 않았습니다/);
+  assert.match(html, /기업 고객용 SSO/);
+  assert.match(html, /후속 이메일 초안/);
+  assert.match(html, /모음 전체의 출력/);
+  assert.match(html, /PRD 작성 · 입력의 원문 근거/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+});
 
 test('문서를 읽었지만 부분 분석인 상태와 미확인 항목을 독립적으로 표시한다', async () => {
   const partial = analyzeUsage({ ...row, description: 'Unknown' }, '# Unknown', now);
@@ -277,7 +292,7 @@ test('크기 상한으로 제외한 문서를 네트워크 실패나 매번 재�
   const value = structuredClone(usage);
   value.document.links = [{ path: 'packages/cli/README.md', status: 'unavailable', reason: 'size-limit', checkedAt: now.toISOString() }];
   const page = await mount(async () => ({ ok: true, json: async () => dataFor(value) }));
-  assert.match(page.container.innerHTML, /250,000바이트 상한을 넘어 분석에서 제외/);
+  assert.match(page.container.innerHTML, /250,000바이트 또는 프로젝트당 750,000바이트 상한을 넘어 분석에서 제외/);
   assert.match(page.container.innerHTML, /packages\/cli\/README.md · 분석 제외/);
   assert.doesNotMatch(page.container.innerHTML, /추가 문서 1개를 확인하지 못했습니다|다음 수집에서 재시도/);
   assert.match(page.container.innerHTML, /문서 조회 · 성공/);

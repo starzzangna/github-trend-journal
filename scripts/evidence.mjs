@@ -5,6 +5,7 @@ const negative = /\b(?:does not|doesn't|cannot|can't|not yet|not supported|unsup
 // 원문은 실행하지 않고 문장·사용 예·문서 위치를 분리해 보관합니다.
 export function createEvidence(row, sections, now, metadata = {}, evidence = []) {
   const source = { id: metadata.sourceId || 'readme', repository: row.name, path: metadata.path || 'README', sha: metadata.sha || null, fetchedAt: now.toISOString(), url: `https://github.com/${row.name}#readme` };
+  if (metadata.representativeId) source.representativeId = metadata.representativeId;
   if (metadata.html_url?.startsWith(`https://github.com/${row.name}/blob/`)) source.url = metadata.html_url;
   let excludedLevel = null;
   let excludedTitle = '';
@@ -21,7 +22,7 @@ export function createEvidence(row, sections, now, metadata = {}, evidence = [])
     const scope = [...ancestors.map(item => item.title), section.title].join(' / ');
     ancestors.push(section);
     const examples = [...section.body.matchAll(/(^|\n)\s*(`{3,}|~{3,})[^\n]*\n([\s\S]*?)\n\s*\2(?=\s|$)/g)].map(match => match[3].trim());
-    documents.push({ sourceId: source.id, exampleOnly: Boolean(metadata.exampleOnly), title: section.title || 'README 도입부', line: section.line || 1, scope, text: plainText(section.body), heading: plainText(section.title), examples });
+    documents.push({ representativeId: metadata.representativeId, sourceId: source.id, exampleOnly: Boolean(metadata.exampleOnly), title: section.title || 'README 도입부', line: section.line || 1, scope, text: plainText(section.body), heading: plainText(section.title), examples });
   }
   function register(document, excerpt, kind) {
     const id = `e-${createHash('sha256').update(JSON.stringify([source.id, source.sha, document.title, document.line, kind, excerpt])).digest('hex').slice(0, 16)}`;
@@ -53,16 +54,18 @@ export function createEvidence(row, sections, now, metadata = {}, evidence = [])
 export function createEvidenceBundle(row, inputs, now) {
   const evidence = [];
   const contexts = inputs.map((input, index) => createEvidence(row, input.sections, now, { ...input.metadata, sourceId: index ? `doc-${createHash('sha256').update(input.metadata.path).digest('hex').slice(0, 12)}` : 'readme' }, evidence));
-  const documents = contexts.flatMap(context => context.documents);
+  const allDocuments = contexts.flatMap(context => context.documents);
+  const documents = allDocuments.filter(item => !item.representativeId);
+  const representativeDocuments = allDocuments.filter(item => item.representativeId);
   const select = (pattern, options = {}) => {
     for (const context of contexts) {
-      const candidates = options.candidates ? options.candidates.filter(item => context.documents.includes(item)) : context.documents;
+      const candidates = options.candidates ? options.candidates.filter(item => context.documents.includes(item)) : context.documents.filter(item => !item.representativeId);
       const id = context.select(pattern, { ...options, candidates });
       if (id) return id;
     }
     return null;
   };
-  return { evidence, sources: contexts.flatMap(context => context.sources), documents, introduction: contexts.flatMap(context => context.documents.filter(item => item.text.trim() && !item.exampleOnly).slice(0, 5)), select, find: (pattern, candidates = documents) => select(pattern, { candidates, headings: true }) };
+  return { evidence, sources: contexts.flatMap(context => context.sources), documents, representativeDocuments, introduction: contexts.flatMap(context => context.documents.filter(item => item.text.trim() && !item.exampleOnly && !item.representativeId).slice(0, 5)), select, find: (pattern, candidates = documents) => select(pattern, { candidates, headings: true }) };
 }
 
 function plainText(text) {

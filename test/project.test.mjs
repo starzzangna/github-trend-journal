@@ -115,7 +115,7 @@ test('API 제한 시 기존에 확인한 README 원문 경로만 재사용하고
     return { ok: true, arrayBuffer: async () => Buffer.from('# Tool\nBrowser automation.\n## Input\nA URL.\n## Output\nA screenshot.') };
   } });
   validateUsage(result);
-  assert.equal(result.version, 8);
+  assert.equal(result.version, 9);
   assert.equal(result.document.status, 'available');
   assert.match(result.sources[0].sha, /^[a-f0-9]{40}$/);
   assert.ok(!JSON.stringify(result).includes('private-test-token'));

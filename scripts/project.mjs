@@ -125,6 +125,7 @@ export function explainFindings(context, profile, previous = []) {
     if (result.length === 3) break;
   }
   // 부수적인 MCP·플러그인 언급으로 본업의 설명을 채우지 않습니다.
+  if (!profile) return result;
   for (const item of previous) {
     if (result.length >= 3) break;
     if (/MCP|플러그인|스킬|컨텍스트|토큰|시각 자료/.test(item.title)) continue;
@@ -137,8 +138,6 @@ export function projectVerdict(project, findings) {
   const anchor = findings[0] || project.problem || project.inputs[0] || project.outputs[0];
   const missing = [!project.inputs.length && '입력', !project.outputs.length && '출력', !project.conditions.length && '도입 조건'].filter(Boolean);
   if (!anchor) return { text: '구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.', evidenceIds: [] };
-  const text = anchor.body.replace(/^(?:문서 설명|문서가 명시한 해결 문제|문서에서 설명한 목적):\s*/, '');
-  const excerpt = text.length <= 180 ? text : `${text.slice(0, 180).replace(/\s+\S*$/, '')}…`;
   const questions = {
     '테마·스타일 변경 방식': '기존 CSS·테마를 유지하면서 필요한 부분만 바꿀 수 있는지 확인하세요.',
     '컴포넌트 소스 소유 범위': '컴포넌트 원본을 프로젝트 안에서 수정·유지할 필요가 있는지 검토하세요.',
@@ -168,7 +167,7 @@ export function projectVerdict(project, findings) {
     '직무별 도구·지침 묶음': '직무에 맞는 플러그인을 고르고 연결 도구·데이터와 사내 작업 절차를 함께 검토하세요.'
   };
   return {
-    text: `문서 확인 · ${anchor.title}: “${excerpt}”${questions[anchor.title] ? ` 검토 질문: ${questions[anchor.title]}` : ''}${missing.length ? ` 추가 확인: ${missing.join('·')}.` : ''}`,
+    text: `${questions[anchor.title] || `${anchor.title}에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다.`}${missing.length ? ` 추가 확인: ${missing.join('·')}.` : ''}`,
     evidenceIds: anchor.evidenceIds
   };
 }

@@ -5,7 +5,8 @@ import { classifyProject } from './profiles.mjs';
 import { explainProject, explainFindings, projectVerdict } from './project.mjs';
 import { createHash } from 'node:crypto';
 import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from './freshness.mjs';
-export const usageVersion = 5;
+import { addKoreanPresentation } from './korean.mjs';
+export const usageVersion = 6;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
@@ -82,7 +83,7 @@ export function analyzeUsage(row, markdown, now = new Date(), metadata = {}) {
   result.article.verdict = verdict.text;
   result.article.verdictEvidenceIds = verdict.evidenceIds;
   result.quality = assessQuality(result);
-  return result;
+  return addKoreanPresentation(result);
 }
 
 export async function fetchUsage(row, { now = new Date(), fetcher = fetch, token = process.env.GITHUB_TOKEN, delay = ms => new Promise(resolve => setTimeout(resolve, ms)), previousUsage = row.usage, forceAnalysis = false, analyze = analyzeUsage } = {}) {

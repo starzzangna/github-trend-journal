@@ -81,6 +81,9 @@ details > summary::marker { color: var(--green); }
 .badge--unknown { color: #4e5460; background: #eef0f5; border-color: #bdc3cd; }
 .badge--unavailable { color: #742f2f; background: #f8e9e9; border-color: #cfaaaa; }
 .decision { background: var(--soft); padding: 18px 20px; border-radius: 6px; border-left: 3px solid var(--green); }
+.core-summary { padding: 18px 0; }
+.core-summary > h5 { margin: 0 0 12px; }
+.repository-original { margin-top: 18px; color: var(--muted); font-size: 13px; }
 .usage h5 { font-size: 15px; margin: 0 0 8px; }
 .decision p { margin: 6px 0 8px; font-size: 15px; color: #233d2a; }
 .ai-note { margin-top: 16px; padding: 8px 14px; background: #eef3fb; border: 1px solid #bdcbe1; border-radius: 5px; }

@@ -2,13 +2,14 @@ import { assessQuality } from './evidence.mjs';
 import { synthesizeReport, reportVersion } from './report.mjs';
 import { documentFingerprint } from './freshness.mjs';
 import { validateAiNote } from './ai.mjs';
+import { addKoreanPresentation } from './korean.mjs';
 
 // 구형 보고서는 재조회 전까지 보존하되 새 형식은 저장·빌드 경계에서 검사합니다.
 export function validateUsage(usage, row = { name: usage?.sources?.[0]?.repository }) {
   validateAiNote(row, usage);
   if (!usage || [1, 2].includes(usage.version)) return;
   const fail = message => { throw new Error(`분석 데이터 오류: ${message}`); };
-  if (![3, 4, 5].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
+  if (![3, 4, 5, 6].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
   if (!['ready', 'unavailable'].includes(usage.status)) fail('처리 상태');
   if (!['available', 'unavailable'].includes(usage.document?.status)) fail('문서 조회 상태');
   if (!['complete', 'partial', 'unavailable'].includes(usage.quality?.status)) fail('분석 품질 상태');
@@ -51,6 +52,11 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
     if (usage.version >= 4 && claim.evidenceIds.some(id => usage.evidence.find(item => item.id === id).kind === 'example') && claim.exampleOnly !== true) fail('사용 예 검증 범위 누락');
   }
   if (usage.version >= 5 && (!Array.isArray(usage.article.verdictEvidenceIds) || usage.article.verdictEvidenceIds.some(id => !evidence.has(id)) || (!usage.article.verdictEvidenceIds.length && !usage.article.verdict.includes('보류')))) fail('핵심 판단 근거');
+  if (usage.version >= 6) {
+    const expectedKo = addKoreanPresentation(structuredClone(usage));
+    const collect = value => [value.article.core, value.article.findings.map(item => item.summaryKo), value.article.project.inputs.map(item => item.summaryKo), value.article.project.outputs.map(item => item.summaryKo), value.article.project.conditions.map(item => item.summaryKo)];
+    if (JSON.stringify(collect(usage)) !== JSON.stringify(collect(expectedKo))) fail('한국어 요약과 문서 근거 불일치');
+  }
   const expected = assessQuality(usage);
   if (usage.quality.status !== expected.status || JSON.stringify(usage.quality.missing) !== JSON.stringify(expected.missing)) fail('분석 품질 판정 불일치');
 }

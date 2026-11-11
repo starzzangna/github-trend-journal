@@ -137,7 +137,7 @@ test('재시도가 다시 실패하면 버튼에 초점을 되돌리고 다시 �
   assert.equal(page.attributes['aria-busy'], 'false');
   await page.events.click();
   assert.equal(page.state.focused, 'report-title');
-  assert.match(page.container.innerHTML, /도입 전 판단/);
+  assert.match(page.container.innerHTML, /도입 시 주의점/);
 });
 
 test('잘못된 보고서 파일도 오류로 처리하고 재시도 후 복구한다', async () => {
@@ -149,7 +149,7 @@ test('잘못된 보고서 파일도 오류로 처리하고 재시도 후 복구�
   assert.match(page.container.innerHTML, /보고서를 불러오지 못했습니다/);
   page.location.hash = '#daily';
   await page.events.click();
-  assert.match(page.container.innerHTML, /도입 전 판단/);
+  assert.match(page.container.innerHTML, /도입 시 주의점/);
 });
 
 test('프로젝트 한 건이 손상돼도 다른 프로젝트와 근거를 읽을 수 있다', async () => {
@@ -164,7 +164,7 @@ test('프로젝트 한 건이 손상돼도 다른 프로젝트와 근거를 읽�
 
 test('핵심 판단을 상세 접기 영역보다 먼저 제공하고 빈 결과를 알린다', async () => {
   const page = await mount(async () => ({ ok: true, json: async () => dataFor(usage) }));
-  assert.ok(page.container.innerHTML.indexOf('도입 전 판단') < page.container.innerHTML.indexOf('class="analysis-details"'));
+  assert.ok(page.container.innerHTML.indexOf('도입 시 주의점') < page.container.innerHTML.indexOf('class="analysis-details"'));
   assert.ok(page.container.innerHTML.indexOf('입력</h5>') < page.container.innerHTML.indexOf('class="analysis-details"'));
   const empty = await mount(async () => ({ ok: true, json: async () => ({ reports: {} }) }));
   assert.match(empty.container.innerHTML, /첫 번째 발견을 기다립니다/);
@@ -220,7 +220,7 @@ test('AI 추가 해석은 기본 판단과 품질을 유지하며 근거와 함�
   assert.match(page.container.innerHTML, /작은 검증 제안/);
   assert.match(page.container.innerHTML, /사실 보증은 아닙니다/);
   assert.match(page.container.innerHTML, /분석 품질 · 기본 항목 충족/);
-  assert.match(page.container.innerHTML, /도입 전 판단/);
+  assert.match(page.container.innerHTML, /도입 시 주의점/);
 });
 
 test('AI 검토 실패는 원인 안내와 기본 분석으로 표시하고 오래된 AI 해석은 숨긴다', async () => {
@@ -228,7 +228,7 @@ test('AI 검토 실패는 원인 안내와 기본 분석으로 표시하고 오�
   const fallback = await mount(async () => ({ ok: true, json: async () => dataFor(failed) }));
   assert.match(fallback.container.innerHTML, /근거 검토를 통과하지 못해/);
   assert.match(fallback.container.innerHTML, /규칙 기반 분석으로 제공/);
-  assert.match(fallback.container.innerHTML, /도입 전 판단/);
+  assert.match(fallback.container.innerHTML, /도입 시 주의점/);
   const old = { ...usage, sourceCheckedAt: '2026-11-01T00:23:00Z', ai: { status: 'ready', insights: [{ analysis: '노출되면 안 되는 이전 AI 내용' }] } };
   const hidden = await mount(async () => ({ ok: true, json: async () => dataFor(old) }));
   assert.match(hidden.container.innerHTML, /문서의 최신성을 확인하지 못해 AI 해석을 표시하지 않습니다/);
@@ -239,6 +239,24 @@ test('손상된 AI 노트만 실패 처리하고 규칙 기반 판단은 계속 
   const malformed = { ...usage, ai: { status: 'ready', insights: [{}, {}, {}] } };
   const page = await mount(async () => ({ ok: true, json: async () => dataFor(malformed) }));
   assert.match(page.container.innerHTML, /AI 해석을 표시하지 못해 기본 분석을 제공합니다/);
-  assert.match(page.container.innerHTML, /도입 전 판단/);
+  assert.match(page.container.innerHTML, /도입 시 주의점/);
   assert.doesNotMatch(page.container.innerHTML, /이 프로젝트의 분석을 표시하지 못했습니다/);
+});
+
+test('첫 화면은 한국어 동작·주의점을 표시하고 원문은 접힌 근거 안에 둔다', async () => {
+  const page = await mount(async () => ({ ok: true, json: async () => dataFor(usage) }));
+  const html = page.container.innerHTML;
+  let depth = 0, visible = '';
+  for (const match of html.matchAll(/<\/?details\b[^>]*>|<[^>]*>|[^<]+/g)) {
+    if (/^<details\b/.test(match[0])) depth++;
+    else if (/^<\/details/.test(match[0])) depth--;
+    else if (!depth && !match[0].startsWith('<')) visible += match[0];
+  }
+  assert.match(visible, /핵심 동작/);
+  assert.match(visible, /도입 시 주의점/);
+  assert.match(visible, /음성 복제/);
+  assert.doesNotMatch(visible, /Voice cloning is supported|Generated speech audio|Requires Python|Text and a reference/);
+  assert.match(html, /<blockquote>Voice cloning is supported/);
+  assert.doesNotMatch(html, /<details[^>]*\bopen\b/);
+  assert.ok(html.indexOf('핵심 동작') < html.indexOf('도입 시 주의점'));
 });

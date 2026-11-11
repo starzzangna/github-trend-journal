@@ -1,7 +1,8 @@
+import { assessSkillsSetup, validateSkillsSetup } from './skills-setup.mjs';
 import { validateRepresentatives, validateCollectionScope, representativesForVersion, ioNotApplicable } from './representatives.mjs';
 import { labels } from './trends.mjs';
 
-export const reportVersion = 3;
+export const reportVersion = 4;
 
 // 같은 발행호의 프로젝트 분석에서 확인한 분포와 공통 항목만 종합합니다.
 export function synthesizeReport(report, period, now) {
@@ -10,7 +11,8 @@ export function synthesizeReport(report, period, now) {
   const patterns = new Map();
   const references = [];
   const representativeExamples = [];
-  const coverage = { total: rows.length, classified: 0, unknown: 0, complete: 0, partial: 0, unavailable: 0, stale: 0, inputs: 0, outputs: 0, conditions: 0, inputsNotApplicable: 0, outputsNotApplicable: 0, inputEvidenceMissing: 0, outputEvidenceMissing: 0, exampleProjects: 0, examples: 0, exampleMissing: 0, exampleUnconfigured: 0 };
+  const setupReviews = [];
+  const coverage = { total: rows.length, classified: 0, unknown: 0, complete: 0, partial: 0, unavailable: 0, stale: 0, inputs: 0, outputs: 0, conditions: 0, inputsNotApplicable: 0, outputsNotApplicable: 0, inputEvidenceMissing: 0, outputEvidenceMissing: 0, exampleProjects: 0, examples: 0, exampleMissing: 0, exampleUnconfigured: 0, collectionInstallations: 0, runtimeGroups: 0, runtimeMissing: 0, runtimeConditions: 0 };
   for (const row of rows) {
     const usage = row.usage;
     if (usage?.status !== 'ready') { coverage.unknown++; coverage.unavailable++; continue; }
@@ -24,6 +26,19 @@ export function synthesizeReport(report, period, now) {
       groups.get(usage.category).push(row.name);
     } else coverage.unknown++;
     const project = usage.article?.project;
+    if (usage.version >= 13 && project?.setup) {
+      try {
+        validateSkillsSetup(usage, row);
+        const assessment = assessSkillsSetup(usage);
+        if (assessment) {
+          coverage.collectionInstallations += project.setup.installation ? 1 : 0;
+          coverage.runtimeGroups += assessment.runtimeAvailable;
+          coverage.runtimeMissing += assessment.runtimeExpected - assessment.runtimeAvailable;
+          coverage.runtimeConditions += project.setup.runtimes.reduce((sum, item) => sum + item.conditions.length, 0);
+          setupReviews.push({ name: row.name, ...structuredClone(project.setup), assessment });
+        }
+      } catch { /* 검증되지 않은 설치·실행 조건은 종합에 사용하지 않습니다. */ }
+    }
     let itemSpecific = false;
     try { validateCollectionScope(usage, row); itemSpecific = usage.version >= 10 && project?.ioScope?.kind === 'item-specific'; } catch { /* 범위 근거가 잘못되면 해당 없음으로 집계하지 않습니다. */ }
     if (itemSpecific) { if (ioNotApplicable(project, 'input', usage.version)) coverage.inputsNotApplicable++; if (ioNotApplicable(project, 'output', usage.version)) coverage.outputsNotApplicable++; }
@@ -58,11 +73,12 @@ export function synthesizeReport(report, period, now) {
   const analysis = [
     `입력을 설명할 근거가 있는 프로젝트는 ${coverage.inputs}개, 출력은 ${coverage.outputs}개, 도입 조건은 ${coverage.conditions}개입니다. 공통 입력 해당 없음 ${coverage.inputsNotApplicable}개, 출력 해당 없음 ${coverage.outputsNotApplicable}개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 ${coverage.total - coverage.unavailable - coverage.inputsNotApplicable}개·출력 ${coverage.total - coverage.unavailable - coverage.outputsNotApplicable}개입니다. 근거 부족은 입력 ${coverage.inputEvidenceMissing}개·출력 ${coverage.outputEvidenceMissing}개이며 분석 자료 없음 ${coverage.unavailable}개는 별도입니다.`,
     `대표 항목 사용 예는 ${coverage.exampleProjects}개 프로젝트에서 ${coverage.examples}개를 확인했습니다. 대표 항목 근거 부족은 ${coverage.exampleMissing}개이며 대표 항목 자동 분석 미지원 모음은 ${coverage.exampleUnconfigured}개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.`,
+    `설치·실행 조건을 별도 분석한 모음 ${setupReviews.length}개 중 공통 설치 경로는 ${coverage.collectionInstallations}개 프로젝트에서 확인했습니다. 대표 스킬 실행 조건은 ${coverage.runtimeGroups}개 스킬에서 확인했고 ${coverage.runtimeMissing}개 스킬은 근거가 부족합니다. 확인한 실행 조건 ${coverage.runtimeConditions}개를 모음 전체의 필수 조건으로 합산하지 않습니다.`,
     sharedPatterns.length ? `공통으로 확인한 항목은 ${sharedPatterns.map(item => `${item.title}(${item.projects.length}개)`).join(', ')}입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.` : '둘 이상의 프로젝트에서 함께 확인한 입출력·도입 조건이 충분하지 않습니다.',
     `기본 항목 충족 ${coverage.complete}개 · 부분 분석 ${coverage.partial}개 · 분석 불가 ${coverage.unavailable}개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 ${coverage.stale}개입니다.`,
     '발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다.'
   ];
-  const body = { version: reportVersion, coverage, categoryGroups, sharedPatterns, representativeExamples, references };
+  const body = { version: reportVersion, coverage, categoryGroups, sharedPatterns, representativeExamples, setupReviews, references };
   const old = report.synthesis;
   const unchanged = old && JSON.stringify({ ...old, generatedAt: undefined }) === JSON.stringify(body);
   return { title, summary, analysis, synthesis: { ...body, generatedAt: unchanged ? old.generatedAt : now.toISOString() } };

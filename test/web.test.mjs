@@ -11,6 +11,7 @@ const script = await readFile(new URL('../web/app.js', import.meta.url), 'utf8')
 const representativeDocs = JSON.parse(await readFile(new URL('./fixtures/representative-documents.json', import.meta.url)));
 const collectionDocs = JSON.parse(await readFile(new URL('./fixtures/collection-documents.json', import.meta.url)));
 const skillDocs = JSON.parse(await readFile(new URL('./fixtures/skill-representatives.json', import.meta.url)));
+const setupFixture = JSON.parse(await readFile(new URL('./fixtures/skills-setup.json', import.meta.url)));
 import { skillExamples } from '../scripts/skill-examples.mjs';
 const now = new Date('2026-11-11T00:23:00Z');
 const row = { name: 'example/voice', description: 'voice cloning', language: 'Python', stars: 10, periodStars: 2 };
@@ -31,6 +32,26 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   await new Promise(resolve => setImmediate(resolve));
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
+
+test('공통 설치 절차와 개별 런타임 조건을 구분하고 품질·종합에 반영한다', async () => {
+  const doc = setupFixture;
+  const linked = doc.documents.map(item => ({ markdown: item.markdown, metadata: { path: item.path, sha: item.path, representativeId: item.path.includes('/pdf/') ? 'skill-pdf-text' : 'skill-xlsx-edit' } }));
+  const usage = analyzeUsage({ name: doc.repository }, doc.markdown, now, doc.metadata, linked);
+  const report = createReport('weekly', [{ ...row, name: doc.repository, usage }], now);
+  Object.assign(report, synthesizeReport(report, 'weekly', now));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { weekly: report } }) }), { hash: '#weekly' });
+  const html = page.container.innerHTML;
+  assert.match(html, /분석 품질 · 기본 항목 충족/);
+  assert.match(html, /모음 설치 경로 확인 1개 프로젝트 · 대표 실행 조건 확인 2개 스킬/);
+  assert.match(html, /설치 근거: 확인 · 대표 실행 조건: 2\/2개 스킬 확인/);
+  assert.match(html, /모음 공통의 설치 경로/);
+  assert.match(html, /문서가 전제한 환경/);
+  assert.match(html, /선택 경로의 추가 조건/);
+  assert.match(html, /로컬 설치를 확인한 결과가 아닙니다/);
+  assert.match(html, /종료 코드만 보지 말고 JSON/);
+  assert.doesNotMatch(html, /시작 절차를 자동으로 찾지 못했습니다/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+});
 
 test('새 모음의 확인된 대표 항목과 2/2 품질·종합을 한국어로 제공하고 원문은 접어 둔다', async () => {
   const doc = collectionDocs.find(item => item.repository === 'anthropics/skills');

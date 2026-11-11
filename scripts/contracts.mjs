@@ -1,3 +1,4 @@
+import { validateSkillsSetup } from './skills-setup.mjs';
 import { representativeSpecs, validateRepresentatives, validateCollectionScope } from './representatives.mjs';
 import { assessQuality } from './evidence.mjs';
 import { synthesizeReport, reportVersion } from './report.mjs';
@@ -10,7 +11,7 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   validateAiNote(row, usage);
   if (!usage || [1, 2].includes(usage.version)) return;
   const fail = message => { throw new Error(`분석 데이터 오류: ${message}`); };
-  if (![3, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
+  if (![3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
   if (!['ready', 'unavailable'].includes(usage.status)) fail('처리 상태');
   if (!['available', 'unavailable'].includes(usage.document?.status)) fail('문서 조회 상태');
   if (!['complete', 'partial', 'unavailable'].includes(usage.quality?.status)) fail('분석 품질 상태');
@@ -68,7 +69,9 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   }
   if (usage.version >= 9) validateRepresentatives(usage);
   if (usage.version >= 10) validateCollectionScope(usage, row);
+  validateSkillsSetup(usage, row);
   const expected = assessQuality(usage);
+  if (usage.version >= 13 && JSON.stringify(usage.quality.setup) !== JSON.stringify(expected.setup)) fail('설치·실행 조건 품질 불일치');
   if (usage.version >= 10 && ['io', 'notApplicable', 'representatives'].some(key => JSON.stringify(usage.quality[key]) !== JSON.stringify(expected[key]))) fail('입출력 적용 범위·대표 항목 품질 불일치');
   if (usage.quality.status !== expected.status || JSON.stringify(usage.quality.missing) !== JSON.stringify(expected.missing)) fail('분석 품질 판정 불일치');
 }

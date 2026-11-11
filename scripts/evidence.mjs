@@ -1,3 +1,4 @@
+import { assessSkillsSetup } from './skills-setup.mjs';
 import { createHash } from 'node:crypto';
 import { representativesForVersion, ioNotApplicable } from './representatives.mjs';
 
@@ -30,12 +31,12 @@ export function createEvidence(row, sections, now, metadata = {}, evidence = [])
     if (!evidence.some(item => item.id === id)) evidence.push({ id, sourceId: source.id, section: document.title, line: document.line, kind, excerpt });
     return id;
   }
-  function select(pattern, { candidates = documents, allowNegative = false, includeExamples = false, headings = false, wholeParagraph = false, predicate = () => true } = {}) {
+  function select(pattern, { candidates = documents, allowNegative = false, includeExamples = false, headings = false, codeExamples = false, wholeParagraph = false, predicate = () => true } = {}) {
     for (const document of candidates) {
       const paragraphs = document.text.split(/\n\s*\n/).flatMap(text => text.split(/\n(?=\s*(?:[-*]\s|\d+\.\s))/)).map(text => text.replace(/\s+/g, ' ').trim());
       const units = paragraphs.flatMap(text => wholeParagraph ? [text] : text.split(/(?<=[.!?。])\s+/)).map(text => ({ text, kind: document.exampleOnly ? 'example' : 'prose' }));
       if (headings && (allowNegative || !negative.test(document.text))) units.push({ text: document.heading, kind: document.exampleOnly ? 'example' : 'heading' });
-      if (includeExamples && (document.representativeId || /usage|example|quick.?start|getting started|使用|示例|사용|예시|시작/i.test(document.scope))) {
+      if (includeExamples && (codeExamples || document.representativeId || /usage|example|quick.?start|getting started|使用|示例|사용|예시|시작/i.test(document.scope))) {
         for (const block of document.examples) for (const text of block.split('\n')) units.push({ text: text.trim(), kind: 'example' });
       }
       for (const unit of units) {
@@ -96,5 +97,7 @@ export function assessQuality(usage) {
   }
   if (usage.version >= 11 && itemSpecific && Object.values(io).includes('not-applicable') && !expected.length) missing.push('대표 항목 근거');
   for (const spec of expected) if (!project.examples?.some(item => item.id === spec.id)) missing.push(`대표 항목: ${spec.title}`);
-  return { status: missing.length ? 'partial' : 'complete', missing, ...(usage.version >= 10 ? { io, notApplicable: ['input', 'output'].filter(field => ioNotApplicable(project, field, usage.version)).map(field => field === 'input' ? '입력' : '출력'), representatives: { ...representatives, ...(usage.version >= 11 ? { status: itemSpecific && Object.values(io).includes('not-applicable') && !expected.length ? 'not-configured' : 'tracked' } : {}) } } : {}), basis: '문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다.' };
+  const setup = assessSkillsSetup(usage);
+  if (setup) missing.push(...setup.missing);
+  return { ...(usage.version >= 13 ? { setup } : {}), status: missing.length ? 'partial' : 'complete', missing, ...(usage.version >= 10 ? { io, notApplicable: ['input', 'output'].filter(field => ioNotApplicable(project, field, usage.version)).map(field => field === 'input' ? '입력' : '출력'), representatives: { ...representatives, ...(usage.version >= 11 ? { status: itemSpecific && Object.values(io).includes('not-applicable') && !expected.length ? 'not-configured' : 'tracked' } : {}) } } : {}), basis: '문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다.' };
 }

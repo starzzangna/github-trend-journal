@@ -38,7 +38,7 @@ export function synthesizeReport(report, period, now) {
   const sharedPatterns = [...patterns.values()].filter(item => item.projects.length >= 2).sort((a, b) => b.projects.length - a.projects.length || `${a.kind}:${a.title}`.localeCompare(`${b.kind}:${b.title}`, 'ko')).slice(0, 4);
   const topics = categoryGroups.slice(0, 2).map(item => `${item.category} ${item.count}개`).join(', ');
   const title = `${labels[period]} · ${categoryGroups.slice(0, 2).map(item => item.category).join('·') || '문서 확인을 기다리는'} 프로젝트 분석`;
-  const summary = `상위 ${coverage.total}개 중 README 근거로 ${coverage.classified}개의 용도를 분류했습니다.${topics ? ` ${topics}가 포함됩니다.` : ''} 분류 미확정은 ${coverage.unknown}개입니다.`;
+  const summary = `상위 ${coverage.total}개 중 공식 문서 근거로 ${coverage.classified}개의 용도를 분류했습니다.${topics ? ` ${topics}가 포함됩니다.` : ''} 분류 미확정은 ${coverage.unknown}개입니다.`;
   const analysis = [
     `입력을 설명할 근거가 있는 프로젝트는 ${coverage.inputs}개, 출력은 ${coverage.outputs}개, 도입 조건은 ${coverage.conditions}개입니다. 각각 전체 ${coverage.total}개를 기준으로 셉니다.`,
     sharedPatterns.length ? `공통으로 확인한 항목은 ${sharedPatterns.map(item => `${item.title}(${item.projects.length}개)`).join(', ')}입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.` : '둘 이상의 프로젝트에서 함께 확인한 입출력·도입 조건이 충분하지 않습니다.',

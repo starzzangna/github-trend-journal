@@ -1,12 +1,13 @@
 // README는 분석용 입력으로만 취급합니다. 명령을 실행하거나 문서의 지시를 따르지 않습니다.
 import { buildAnalysis } from './analysis.mjs';
-import { createEvidence, assessQuality } from './evidence.mjs';
+import { createEvidenceBundle, assessQuality } from './evidence.mjs';
 import { classifyProject } from './profiles.mjs';
 import { explainProject, explainFindings, projectVerdict } from './project.mjs';
 import { createHash } from 'node:crypto';
 import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from './freshness.mjs';
 import { addKoreanPresentation } from './korean.mjs';
-export const usageVersion = 6;
+import { fetchLinkedDocuments } from './linked.mjs';
+export const usageVersion = 7;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
@@ -29,9 +30,9 @@ export function readSections(markdown) {
   return sections;
 }
 
-export function analyzeUsage(row, markdown, now = new Date(), metadata = {}) {
+export function analyzeUsage(row, markdown, now = new Date(), metadata = {}, linkedDocuments = []) {
   const sections = readSections(markdown);
-  const context = createEvidence(row, sections, now, metadata);
+  const context = createEvidenceBundle(row, [{ sections, metadata }, ...linkedDocuments.map(document => ({ sections: readSections(document.markdown), metadata: document.metadata }))], now);
   const { profile, classification } = classifyProject(row, context);
   const selected = sections.findIndex(s => /quick\s*start|getting started|get started|빠른 시작|시작하기|사용법|安装|快速开始/i.test(s.title));
   const fallback = sections.findIndex(s => /(?:^|\s)(?:installation|install|setup|usage|how to use|설치|사용 방법)(?:\b|\s|$)/i.test(s.title));
@@ -89,13 +90,15 @@ export function analyzeUsage(row, markdown, now = new Date(), metadata = {}) {
 export async function fetchUsage(row, { now = new Date(), fetcher = fetch, token = process.env.GITHUB_TOKEN, delay = ms => new Promise(resolve => setTimeout(resolve, ms)), previousUsage = row.usage, forceAnalysis = false, analyze = analyzeUsage } = {}) {
   const source = `https://github.com/${row.name}#readme`;
   const previous = normalizeUsage(previousUsage, row);
-  const finish = (markdown, metadata) => {
-    const fingerprint = documentFingerprint([{ repository: row.name, path: metadata.path || 'README', sha: metadata.sha }]);
+  const finish = async (markdown, metadata) => {
+    const linked = await fetchLinkedDocuments(markdown, row.name, metadata, { fetcher, now });
+    const fingerprint = documentFingerprint([{ repository: row.name, path: metadata.path || 'README', sha: metadata.sha }, ...linked.documents.map(document => ({ repository: row.name, path: document.metadata.path, sha: document.metadata.sha }))]);
     const input = analysisInputFingerprint(row);
-    if (!forceAnalysis && previousUsage?.analysisInputFingerprint && previous?.status === 'ready' && previous.version === usageVersion && fingerprint && previous.sourceFingerprint === fingerprint && previous.analysisInputFingerprint === input && Date.parse(previous.analyzedAt) <= now.getTime()) {
-      return { ...previous, checkedAt: now.toISOString(), sourceCheckedAt: now.toISOString(), document: { status: 'available', checkedAt: now.toISOString() }, stale: false, analysisReused: true, readmeSha: metadata.sha };
+    if (!forceAnalysis && !linked.states.some(item => item.status === 'unavailable') && previousUsage?.analysisInputFingerprint && previous?.status === 'ready' && previous.version === usageVersion && fingerprint && previous.sourceFingerprint === fingerprint && previous.analysisInputFingerprint === input && Date.parse(previous.analyzedAt) <= now.getTime()) {
+      return { ...previous, checkedAt: now.toISOString(), sourceCheckedAt: now.toISOString(), document: { status: 'available', checkedAt: now.toISOString(), links: linked.states }, stale: false, analysisReused: true, readmeSha: metadata.sha };
     }
-    return { ...analyze(row, markdown, now, metadata), readmeSha: metadata.sha || null, analysisReused: false };
+    const result = analyze(row, markdown, now, metadata, linked.documents);
+    return { ...result, document: { ...result.document, links: linked.states }, readmeSha: metadata.sha || null, analysisReused: false };
   };
   const unavailable = reason => ({ schemaVersion: 2, analyzerVersion: usageVersion, version: usageVersion, status: 'unavailable', reason, source, checkedAt: now.toISOString(), document: { status: 'unavailable', reason, checkedAt: now.toISOString() }, quality: { status: 'unavailable', missing: ['문서 근거'] }, sources: [], evidence: [] });
   if (!/^[\w.-]+\/[\w.-]+$/.test(row.name)) return unavailable('저장소 경로를 확인하지 못했습니다.');

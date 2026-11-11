@@ -260,3 +260,15 @@ test('첫 화면은 한국어 동작·주의점을 표시하고 원문은 접힌
   assert.doesNotMatch(html, /<details[^>]*\bopen\b/);
   assert.ok(html.indexOf('핵심 동작') < html.indexOf('도입 시 주의점'));
 });
+
+test('연결 문서 조회 실패는 README 분석과 구분해 표시하고 실제 문서 경로로 근거를 연결한다', async () => {
+  const value = structuredClone(usage);
+  value.document.links = [{ path: 'docs/install.md', status: 'unavailable', checkedAt: now.toISOString() }];
+  value.sources[0].path = 'docs/README_EN.md';
+  value.sources[0].url = 'https://github.com/example/voice/blob/main/docs/README_EN.md';
+  const page = await mount(async () => ({ ok: true, json: async () => dataFor(value) }));
+  assert.match(page.container.innerHTML, /추가 문서 1개를 확인하지 못했습니다/);
+  assert.match(page.container.innerHTML, /읽은 문서의 근거만 표시/);
+  assert.match(page.container.innerHTML, /문서 조회 · 성공/);
+  assert.match(page.container.innerHTML, /href="https:\/\/github.com\/example\/voice\/blob\/main\/docs\/README_EN.md"/);
+});

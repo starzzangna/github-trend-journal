@@ -74,6 +74,12 @@ const outputCategories = [
 
 // 범용 키워드보다 실제 처리 방식·결과·제약을 우선합니다. 해설을 생성하지 않고 원문을 표시합니다.
 const detailRules = [
+  ['시장 데이터 분석', /analy[sz]e your watchlist daily|stock analysis system|自选股.*(?:分析|推送)/i, '관심 종목의 보고서 생성'],
+  ['웹 개발 지침', /skills that embed web platform expertise|browser compatibility data/i, '웹 플랫폼 지침과 호환성'],
+  ['코드 보안 점검', /scan repositories, selected paths|validate candidate findings|completed scan saves a report/i, '취약점 탐색·검토 보고서'],
+  ['알고리즘 학습', /implementations are intended for learning purposes|less efficient than the Java standard library/i, 'Java 알고리즘 학습 구현'],
+  ['전통 명반 계산', /charting engine|charting algorithm|knowledge base|紫微斗数.*排盘/i, '명반 계산과 지식 자료'],
+  ['AI 에이전트 스킬', /audits any codebase and writes implementation plans|plan is the product/i, '코드 감사에서 구현 계획으로'],
   ['디자인 시스템', /(?:override|customiz).{0,100}(?:className|CSS|theme)|(?:theme|CSS).{0,100}overrides/i, '테마·스타일 변경 방식'],
   ['디자인 시스템', /swizzle.{0,100}(?:source|component)|(?:ejects|exported directly).{0,100}/i, '컴포넌트 소스 소유 범위'],
   ['브라우저 자동화', /(?:snapshot|Refs).{0,130}(?:ref|DOM|page)|(?:DOM change).{0,100}snapshot/i, '스냅샷 참조의 유효 범위'],
@@ -129,6 +135,8 @@ export function explainFindings(context, profile, previous = []) {
   for (const item of previous) {
     if (result.length >= 3) break;
     if (/MCP|플러그인|스킬|컨텍스트|토큰|시각 자료/.test(item.title)) continue;
+    if (/여러 에이전트/.test(item.title) && !['AI 에이전트 운영', 'AI 에이전트 스킬', '컴퓨터 작업 자동화'].includes(profile.category)) continue;
+    if (/영상 렌더링/.test(item.title) && profile.category !== '영상 제작') continue;
     add(item.title, item.evidenceIds[0]);
   }
   return result;
@@ -139,6 +147,12 @@ export function projectVerdict(project, findings) {
   const missing = [!project.inputs.length && '입력', !project.outputs.length && '출력', !project.conditions.length && '도입 조건'].filter(Boolean);
   if (!anchor) return { text: '구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.', evidenceIds: [] };
   const questions = {
+    '관심 종목의 보고서 생성': '데이터 제공자·모델·알림 경로의 설정과 비용을 확인하세요. 이 보고서가 해당 도구의 투자 판단 정확성을 검증한 것은 아닙니다.',
+    '웹 플랫폼 지침과 호환성': '대상 브라우저의 호환성과 현재 코드에 적용 가능한 지침인지 확인하세요.',
+    '취약점 탐색·검토 보고서': '점검 대상 범위와 발견 항목의 근거를 확인하세요. 보고서만으로 모든 취약점이 제거됐다고 보장하지 않습니다.',
+    'Java 알고리즘 학습 구현': '문서가 밝힌 학습용 범위를 확인하고 운영 코드에는 정확성·성능을 별도로 검증하세요.',
+    '명반 계산과 지식 자료': '전통 규칙의 계산·자료 제공 범위입니다. 해석을 과학적으로 검증한 예측이나 중대한 의사결정의 근거로 취급하지 마세요.',
+    '코드 감사에서 구현 계획으로': '계획 작성과 실행 위임을 구분하고 생성된 계획을 검토한 뒤 적용하세요.',
     '테마·스타일 변경 방식': '기존 CSS·테마를 유지하면서 필요한 부분만 바꿀 수 있는지 확인하세요.',
     '컴포넌트 소스 소유 범위': '컴포넌트 원본을 프로젝트 안에서 수정·유지할 필요가 있는지 검토하세요.',
     '스냅샷 참조의 유효 범위': '페이지가 바뀐 뒤 스냅샷을 다시 읽는 흐름을 자동화에 포함할 수 있는지 확인하세요.',
@@ -176,30 +190,47 @@ export function explainProject(row, context, profile) {
   const lookup = id => context.evidence.find(item => item.id === id);
   const claim = (title, body, id, extra = {}) => ({ title, body, kind: 'interpretation', evidenceIds: [id], ...extra });
   const explicit = (role, pattern) => {
-    const candidates = context.documents.filter(document => pattern.test(document.title));
+    const candidates = context.documents.filter(document => pattern.test(document.title) && (role !== '해결 문제' || !document.exampleOnly));
     const id = context.select(/\S+/, { candidates, includeExamples: true, wholeParagraph: true, allowNegative: role === '해결 문제', predicate: text => role !== '해결 문제' || substantive(text, 25) });
     return id ? claim(role, `문서가 명시한 ${role}: ${lookup(id).excerpt}`, id, { kind: 'documented', exampleOnly: lookup(id).kind === 'example' }) : null;
   };
-  const introduction = context.documents.filter(document => document.text.trim()).slice(0, 5);
+  const introduction = context.introduction || context.documents.filter(document => document.text.trim()).slice(0, 5);
   const problemId = profile && context.select(profile.pattern, { candidates: introduction, wholeParagraph: true, predicate: text => substantive(text) });
   const problem = explicit('해결 문제', /^(?:why|problem|motivation|purpose|해결.*문제|목적)(?:\b|\s|$)/i)
     || (problemId ? claim('해결 문제', `문서에서 설명한 목적: ${lookup(problemId).excerpt}`, problemId, { kind: 'documented' }) : null);
   function roles(role, heading, rules, categories) {
     const direct = explicit(role, heading);
     if (direct) return [direct];
-    return rules.flatMap(([pattern, title, body], index) => {
+    const matched = rules.flatMap(([pattern, title, body], index) => {
       if (!categories[index].includes(profile?.category)) return [];
       const id = context.select(pattern, { includeExamples: true });
       return id ? [claim(title, `${body} 원문: “${lookup(id).excerpt}”`, id, { exampleOnly: lookup(id).kind === 'example' })] : [];
-    }).slice(0, 3);
+    });
+    const extra = [
+      ['입력', ['시장 데이터 분석'], /(?:analy[sz]e your watchlist|watchlist daily|stock codes|自选股|股票代码)/i, '관심 종목', '분석할 관심 종목을 지정합니다.'],
+      ['출력', ['시장 데이터 분석'], /(?:generate a decision dashboard|push to Telegram|analysis report|决策仪表盘)/i, '분석 대시보드', '수집 자료로 분석 대시보드나 보고서를 생성·전달합니다.'],
+      ['입력', ['코드 보안 점검', 'AI 에이전트 스킬'], /(?:scan repositories|audits any codebase|maps the repo|scan code)/i, '검토할 코드', '저장소나 선택한 코드 범위를 검토 대상으로 지정합니다.'],
+      ['출력', ['코드 보안 점검'], /(?:saves a report and findings|export SARIF, JSON|return the saved report|structured output.*findings)/i, '취약점 보고서', '점검 보고서와 발견 항목을 저장하거나 내보냅니다.'],
+      ['출력', ['AI 에이전트 스킬'], /(?:writes implementation plans|plans.*plain markdown|plans land in)/i, '구현 계획', '다른 에이전트가 검토·실행할 구현 계획을 문서로 작성합니다.'],
+      ['입력', ['웹 개발 지침'], /(?:scan a codebase for legacy patterns|modern-web-guidance.*(?:search|scan|retrieve))/i, '코드·검색 요청', '검토할 코드나 필요한 웹 개발 지침의 검색어를 전달합니다.'],
+      ['출력', ['웹 개발 지침'], /(?:search for relevant guides|retrieve a guide by ID|skills that embed web platform expertise)/i, '웹 개발 가이드', '웹 플랫폼 지침과 호환성 정보를 찾아 제공합니다.'],
+      ['입력', ['전통 명반 계산'], /(?:birth.{0,45}(?:date|time)|出生.{0,30}(?:时间|日期))/i, '출생 정보', '전통 명반 계산에 사용할 출생 정보를 전달합니다.'],
+      ['출력', ['전통 명반 계산'], /(?:charting engine|charting algorithm|chart.*JSON|命盘)/i, '전통 명반', '전통 규칙에 따른 명반이나 관련 해석 자료를 제공합니다.'],
+      ['출력', ['알고리즘 학습'], /(?:algorithms.*implemented in Java|implementations.*learning purposes)/i, '학습용 Java 구현', '학습용 알고리즘 구현을 제공합니다.']
+    ].flatMap(([kind, categories, pattern, title, body]) => {
+      if (role !== kind || !categories.includes(profile?.category)) return [];
+      const id = context.select(pattern, { includeExamples: true, headings: true });
+      return id ? [claim(title, body, id, { exampleOnly: lookup(id).kind === 'example' })] : [];
+    });
+    return [...matched, ...extra].slice(0, 3);
   }
   // 설치 하위 절은 부모의 범위를 상속합니다. 지원 목록이나 성능 소개를 필수 조건으로 취급하지 않습니다.
-  const conditionDocuments = context.documents.filter(document => /install|setup|quick.?start|getting started|requirement|prerequis|hosting|deploy|platform|environment|설치|환경|요구|배포/i.test(document.scope));
+  const conditionDocuments = context.documents.filter(document => !document.exampleOnly && /install|setup|quick.?start|getting started|requirement|prerequis|hosting|deploy|platform|environment|설치|환경|요구|배포|安装|配置|部署|运行|要求/i.test(document.scope));
   const conditions = conditionRules.flatMap(([pattern, title]) => {
     const id = context.select(pattern, { candidates: conditionDocuments, allowNegative: true });
     if (!id) return [];
     const item = lookup(id);
-    const document = conditionDocuments.find(document => document.title === item.section && document.line === item.line);
+    const document = conditionDocuments.find(document => document.sourceId === item.sourceId && document.title === item.section && document.line === item.line);
     const text = item.excerpt;
     const term = text.match(pattern)?.[0] || '';
     const clause = text.split(/[,;]|\band\b/i).find(part => part.includes(term)) || text;

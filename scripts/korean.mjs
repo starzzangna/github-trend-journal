@@ -1,6 +1,12 @@
 // 원문의 자유 번역 대신, 이미 확인한 동작 유형을 한정된 한국어 설명으로 옮깁니다.
 // 새로운 기능·수치·필수 조건은 추가하지 않으며 원문은 evidence에 그대로 둡니다.
 const operations = {
+  '관심 종목의 보고서 생성': '관심 종목의 자료를 모아 분석 대시보드나 보고서를 생성합니다.',
+  '웹 플랫폼 지침과 호환성': '코딩 에이전트에 최신 웹 플랫폼 지침과 브라우저 호환성 정보를 제공합니다.',
+  '취약점 탐색·검토 보고서': '저장소의 취약점을 찾아 검토하고 발견 항목과 보고서를 남기는 작업을 지원합니다.',
+  'Java 알고리즘 학습 구현': 'Java로 작성된 알고리즘 구현을 읽고 실행·수정하며 학습하는 자료 모음입니다.',
+  '명반 계산과 지식 자료': '전통 자미두수 규칙으로 명반을 계산하고 관련 지식·해석 자료를 제공합니다.',
+  '코드 감사에서 구현 계획으로': '코드베이스를 검토한 뒤 다른 에이전트가 실행할 구현 계획을 작성합니다.',
   '테마·스타일 변경 방식': '컴포넌트의 스타일과 테마를 기존 CSS 방식에 맞춰 바꾸는 경로를 제공합니다.',
   '컴포넌트 소스 소유 범위': '컴포넌트 내부 구성이나 소스를 가져와 프로젝트에서 직접 수정하는 방식을 다룹니다.',
   '스냅샷 참조의 유효 범위': '페이지를 스냅샷으로 읽고, 요소에 붙은 참조를 사용해 브라우저를 조작합니다.',
@@ -51,6 +57,11 @@ const operations = {
 };
 
 const roles = {
+  '관심 종목': '분석할 관심 종목을 지정합니다.', '분석 대시보드': '분석 대시보드나 보고서를 생성·전달합니다.',
+  '검토할 코드': '저장소나 선택한 코드 범위를 검토 대상으로 지정합니다.', '취약점 보고서': '점검 보고서와 발견 항목을 저장하거나 내보냅니다.',
+  '구현 계획': '다른 에이전트가 검토·실행할 구현 계획을 문서로 작성합니다.', '코드·검색 요청': '검토할 코드나 웹 개발 지침의 검색어를 전달합니다.',
+  '웹 개발 가이드': '웹 플랫폼 지침과 호환성 정보를 찾아 제공합니다.', '출생 정보': '전통 명반 계산에 사용할 출생 정보를 전달합니다.',
+  '전통 명반': '전통 규칙에 따른 명반이나 관련 자료를 제공합니다.', '학습용 Java 구현': '학습용 Java 알고리즘 구현을 제공합니다.',
   '텍스트': '음성으로 변환할 텍스트를 입력합니다.', '참고 음성': '음성 생성에 참고할 녹음을 전달합니다.',
   '웹 페이지': '처리할 웹 페이지 주소를 전달합니다.', '사용자 이름': '검색할 사용자 이름을 지정합니다.',
   'HTML 소스': '화면을 구성할 HTML 소스를 작성하거나 읽습니다.', '컴포넌트·스타일': '애플리케이션에 컴포넌트와 스타일을 연결합니다.',
@@ -101,12 +112,15 @@ function summarizeRole(claim, usage, role) {
 
 function summarizeCondition(claim, usage) {
   const text = claim.evidenceIds.map(id => usage.evidence.find(item => item.id === id)?.excerpt || '').join(' ');
+  const runtime = ['React', 'Python', 'Node.js'].includes(claim.title);
+  const focus = runtime ? text.slice(Math.max(0, text.toLowerCase().indexOf(claim.title === 'Node.js' ? 'node' : claim.title.toLowerCase()))).split(/[,;]/)[0] : '';
+  if (runtime && /\bwithin\b|\d\.x\b|\bor\s+\d/i.test(focus)) return `${claim.title}의 허용 버전대가 따로 명시돼 있습니다. 버전 조합과 추가 요구사항은 원문 근거에서 확인하세요.`;
   let terms = [...new Set([...text.matchAll(/\b(?:Python|React|Node(?:\.js)?|Docker|JDK|Java|Home Assistant|PostgreSQL|Postgres|Redis|Linux|Windows|macOS|Chromium|Chrome for Testing|GPU|CUDA)(?:\s*(?:>=|>|~|\^)?\s*\d+(?:\.\d+){0,2}\+?)?/gi)].filter(match => !['React', 'Python', 'Node.js'].includes(claim.title) || match[0].toLowerCase().startsWith(claim.title === 'Node.js' ? 'node' : claim.title.toLowerCase())).map(match => {
     const following = text.slice(match.index + match[0].length, match.index + match[0].length + 24);
     return `${match[0].trim()}${/^\s*(?:or later|or newer|or higher|and above|or above)\b/i.test(following) ? ' 이상' : ''}`;
   }))];
   terms = terms.filter(term => /\d/.test(term) || !terms.some(other => /\d/.test(other) && other.toLowerCase().startsWith(term.toLowerCase())));
-  const subject = terms.length && ['React', 'Python', 'Node.js'].includes(claim.title) ? terms.join(', ') : `${claim.title}${terms.length ? ` (${terms.join(', ')})` : ''}`;
+  const subject = terms.length && runtime ? terms.join(/\bor\b/i.test(focus) && !/or later|or newer|or higher|or above/i.test(focus) ? ' 또는 ' : ', ') : `${claim.title}${terms.length ? ` (${terms.join(', ')})` : ''}`;
   return { required: `이 설치 경로에서는 ${subject} 조건을 요구합니다.`, optional: `${subject} 관련 경로는 선택 사항입니다.`, 'not-required': `이 문서 경로에서 ${subject} 조건은 필수가 아니라고 설명합니다.`, mentioned: `설치·시작 경로에서 ${subject} 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.` }[claim.scope];
 }
 

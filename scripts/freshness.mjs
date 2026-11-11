@@ -26,6 +26,7 @@ export function normalizeUsage(usage, row) {
 
 export function isFreshUsage(usage, row, now, version, maxAgeMs = documentMaxAgeMs) {
   if (usage?.status !== 'ready' || usage.version !== version || usage.document?.status !== 'available' || usage.stale) return false;
+  if (usage.document.links?.some(item => item.status === 'unavailable')) return false;
   if (usage.analysisInputFingerprint !== analysisInputFingerprint(row)) return false;
   const age = now.getTime() - Date.parse(usage.sourceCheckedAt);
   const analyzed = Date.parse(usage.analyzedAt);

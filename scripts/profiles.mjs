@@ -19,6 +19,11 @@ const originalProfiles = [
 
 // 세부 용도를 먼저 판별해 에이전트·MCP의 부수적 언급으로 주제가 바뀌지 않게 합니다.
 const expandedProfiles = [
+  [/stock analysis system|股票.*分析系统/i, '시장 데이터 분석', '관심 종목의 데이터·뉴스를 모아 분석 보고서를 생성하는 도구입니다.', '시장 데이터 처리 도구를 검토하는 개발자'],
+  [/web platform expertise|modern web guidance.*skills/i, '웹 개발 지침', '코딩 에이전트에 웹 플랫폼 지침과 호환성 정보를 제공합니다.', '웹 개발자'],
+  [/find, investigate, and fix vulnerabilities|scan repositories|security workflows in Codex/i, '코드 보안 점검', '코드의 취약점 탐색·검토·수정 작업을 지원합니다.', '코드 보안을 검토하는 개발자'],
+  [/algorithms.*implemented in Java|implementations.*learning purposes/i, '알고리즘 학습', '학습용 알고리즘 구현을 읽고 실행하는 자료 모음입니다.', '알고리즘을 학습하는 개발자'],
+  [/Zi Wei Dou Shu|Purple Star Astrology|紫微斗数.*排盘/i, '전통 명반 계산', '전통 자미두수 명반 계산과 관련 자료를 제공하는 프로젝트입니다.', '전통 역법·명반 계산 구현을 살펴보는 개발자'],
   [/design system|디자인 시스템/i, '디자인 시스템', '재사용 가능한 UI 컴포넌트와 테마를 애플리케이션에 적용하는 프로젝트입니다.', 'UI를 구현하는 개발자·디자이너'],
   [/physics (?:engine|simulator|simulation)|물리 (?:엔진|시뮬)/i, '물리 시뮬레이션', '물체·관절·접촉 등의 물리 동작을 시뮬레이션하는 프로젝트입니다.', '로봇·시뮬레이션 개발자·연구자'],
   [/personal finance|wealth management|가계부|개인 재무/i, '개인 재무 관리', '개인 재무 정보를 관리하는 애플리케이션입니다.', '재무 관리 도구를 검토하는 사용자'],
@@ -42,7 +47,7 @@ const expandedProfiles = [
 ].map(([pattern, category, purpose, audience]) => ({ pattern, category, purpose, audience, scenario: '문서에 설명된 입력과 출력이 자신의 작업에 맞는지 작은 예제로 확인하세요.' }));
 
 export function classifyProject(row, context) {
-  const introduction = context.documents.filter(d => d.text.trim()).slice(0, 5);
+  const introduction = context.introduction || context.documents.filter(d => d.text.trim()).slice(0, 5);
   const candidates = [...expandedProfiles, ...originalProfiles].map((profile, index) => {
     const id = context.find(profile.pattern, introduction);
     return { profile, id, score: (profile.pattern.test(row.description || '') ? 10 : 0) - index / 100 };

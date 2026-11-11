@@ -30,25 +30,25 @@
             "analyzerVersion": 14,
             "version": 14,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-11T17:01:52.701Z",
+            "analyzedAt": "2026-11-11T17:01:52.701Z",
+            "sourceCheckedAt": "2026-11-11T17:01:52.701Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "13959c6a7c3d12ebf566841cc641dfc83643e74ccfa5d8589f4fe30d9b077625",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-11T17:01:52.701Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-11T17:01:52.701Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-11T17:01:52.701Z"
                 }
               ]
             },
@@ -58,7 +58,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-11T17:01:52.701Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -66,7 +66,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "c4c656d48e41462bb7064654c2ac03a3a17ab9bb",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-11T17:01:52.701Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -4362,8 +4362,8 @@
         "references": [
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-11T17:01:52.701Z",
+            "analyzedAt": "2026-11-11T17:01:52.701Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-876c10c216e10def"
@@ -4451,7 +4451,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-11T16:58:42.958Z"
+        "generatedAt": "2026-11-11T17:01:52.701Z"
       }
     },
     "weekly": {

@@ -2,7 +2,8 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { parseTrending, issueKey, fingerprint } from '../scripts/trends.mjs';
 import { collectPublication as collect } from '../scripts/publication.mjs';
-const collectPublication = (previous, options) => collect(previous, { analyzeProject: async () => ({ version: 2, status: 'ready' }), ...options });
+import { analyzeUsage } from '../scripts/usage.mjs';
+const collectPublication = (previous, options) => collect(previous, { analyzeProject: async row => analyzeUsage(row, '# Example', options.now), ...options });
 
 const fixture = (count = '123', name = 'sample/project') => `<article class="Box-row"><h2><a href="/${name}"> sample / project </a></h2><p>Build &amp; share</p><span itemprop="programmingLanguage">TypeScript</span><a href="/${name}/stargazers"><svg></svg>1,234</a><span>${count} stars today</span></article>`;
 const response = html => ({ ok: true, text: async () => html });
@@ -57,4 +58,22 @@ test('중간 기간 수집 실패 시 기존 게시물과 장부를 변경하지
 test('내용 해시는 스타 수 변동과 무관하고 순위 변화는 반영한다', () => {
   assert.equal(fingerprint(parseTrending(fixture('1'))), fingerprint(parseTrending(fixture('2'))));
   assert.notEqual(fingerprint(parseTrending(fixture('1', 'a/b'))), fingerprint(parseTrending(fixture('1', 'a/c'))));
+});
+
+test('A→B→A 목록은 마지막 B와 비교해 A를 새 발행호로 표시한다', async () => {
+  const a = await collectPublication(empty(), { now: first, fetcher: async () => response(fixture('1', 'sample/a')) });
+  const b = await collectPublication(a.state, { now: new Date('2026-10-17T00:23:00Z'), fetcher: async () => response(fixture('2', 'sample/b')) });
+  const again = await collectPublication(b.state, { now: new Date('2026-10-18T00:23:00Z'), fetcher: async () => response(fixture('3', 'sample/a')) });
+  assert.equal(again.state.reports.daily.rows[0].name, 'sample/a');
+  assert.equal(again.state.reports.daily.publishedAt, '2026-10-18T00:23:00.000Z');
+  assert.equal(again.state.ledger.at(-1).status, 'published');
+  assert.equal(again.state.ledger.filter(entry => entry.period === 'daily' && entry.status === 'published').length, 3);
+});
+
+test('현재 보고서가 없으면 장부에 같은 해시가 있어도 보고서를 복구한다', async () => {
+  const a = await collectPublication(empty(), { now: first, fetcher: async () => response(fixture()) });
+  delete a.state.reports.daily;
+  const recovered = await collectPublication(a.state, { now: new Date('2026-10-17T00:23:00Z'), fetcher: async () => response(fixture()) });
+  assert.equal(recovered.state.reports.daily.rows[0].name, 'sample/project');
+  assert.equal(recovered.state.ledger.at(-1).status, 'published');
 });

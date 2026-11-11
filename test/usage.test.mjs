@@ -4,8 +4,9 @@ import { analyzeUsage, fetchUsage, readSections, usageVersion } from '../scripts
 import { collectPublication } from '../scripts/publication.mjs';
 
 const now = new Date('2026-10-16T07:00:00Z');
+const unavailable = () => fetchUsage(row, { now, token: '', fetcher: async () => ({ status: 404 }) });
 const row = { name: 'sample/voice', description: 'Open-source voice cloning', language: 'Python' };
-const readme = '# Voice\n\nVoice tool.\n\n## Quick start\n\nStart with a short recording.\n\n### Install the tool\n\n```bash\npip install example-voice\n```\n\n### Run a sample\n\n```bash\nexample-voice sample.wav\n```\n\n## Development\n\nInternal details.';
+const readme = '# Voice\n\nVoice cloning tool.\n\n## Quick start\n\nStart with a short recording.\n\n### Install the tool\n\n```bash\npip install example-voice\n```\n\n### Run a sample\n\n```bash\nexample-voice sample.wav\n```\n\n## Development\n\nInternal details.';
 
 test('용도 해석과 문서에서 확인한 시작 절차를 구분한다', () => {
   const result = analyzeUsage(row, readme, now);
@@ -64,8 +65,8 @@ test('기존 글을 중복 발행하지 않고 사용법만 보완하며 기간 
 });
 test('README 실패 후 다음 실행에서 복구하고 발행 장부는 유지한다', async () => {
   const state = { version: 1, ledger: [{ issue: 'daily:2026-10-16' }, { issue: 'weekly:2026-10-12' }, { issue: 'monthly:2026-10' }], reports: { daily: { rows: [row] } } };
-  const failed = await collectPublication(state, { now, analyzeProject: async () => ({ version: usageVersion, status: 'unavailable' }) });
-  const failedAgain = await collectPublication(failed.state, { now, analyzeProject: async () => ({ version: usageVersion, status: 'unavailable' }) });
+  const failed = await collectPublication(state, { now, analyzeProject: unavailable });
+  const failedAgain = await collectPublication(failed.state, { now, analyzeProject: unavailable });
   assert.equal(failedAgain.changed, false);
   const recovered = await collectPublication(failed.state, { now, analyzeProject: async r => analyzeUsage(r, readme, now) });
   assert.equal(recovered.state.reports.daily.rows[0].usage.status, 'ready');
@@ -78,12 +79,14 @@ test('상세 노트는 문서 근거의 기능·환경과 활용 제안을 구�
   assert.equal(result.article.paragraphs.length, 2);
   assert.equal(result.article.findings.length, 2);
   assert.match(result.article.findings[0].title, /음성/);
-  assert.equal(result.article.findings[0].section, 'Features');
-  assert.equal(result.article.findings[0].source, result.source);
+  const evidence = result.evidence.find(item => item.id === result.article.findings[0].evidenceIds[0]);
+  assert.equal(evidence.section, 'Features');
+  assert.equal(evidence.sourceId, result.sources[0].id);
+  assert.match(evidence.excerpt, /Voice cloning/);
   assert.equal(result.article.conditions.length, 2);
   assert.equal(result.article.workflow.length, 3);
   assert.match(result.article.workflow[1].body, /필수 실행 순서로 가정하지/);
-  assert.match(result.article.verdict, /유형/);
+  assert.match(result.article.verdict, /판단.*보류/);
 });
 
 test('코드 예시·기여 안내·다른 분야의 용어를 프로젝트 핵심 기능으로 오인하지 않는다', () => {
@@ -100,9 +103,11 @@ test('미지원이라고 적힌 내용은 핵심 기능으로 소개하지 않�
 test('분석 형식 갱신에 실패하면 이전 정상 분석을 유지하고 다음 실행에 다시 시도한다', async () => {
   const previousUsage = { version: 1, status: 'ready', purpose: '기존 분석' };
   const state = { version: 1, ledger: [{ issue: 'daily:2026-10-16' }, { issue: 'weekly:2026-10-12' }, { issue: 'monthly:2026-10' }], reports: { daily: { rows: [{ ...row, usage: previousUsage }] } } };
-  const failed = await collectPublication(state, { now, analyzeProject: async () => ({ version: usageVersion, status: 'unavailable' }) });
-  assert.equal(failed.changed, false);
-  assert.deepEqual(failed.state.reports.daily.rows[0].usage, previousUsage);
+  const failed = await collectPublication(state, { now, analyzeProject: unavailable });
+  assert.equal(failed.changed, true);
+  assert.equal(failed.state.reports.daily.rows[0].usage.purpose, previousUsage.purpose);
+  assert.equal(failed.state.reports.daily.rows[0].usage.stale, true);
+  assert.equal(failed.state.reports.daily.rows[0].usage.document.status, 'unavailable');
   const recovered = await collectPublication(failed.state, { now, analyzeProject: async r => analyzeUsage(r, readme, now) });
   assert.equal(recovered.state.reports.daily.rows[0].usage.version, usageVersion);
   assert.ok(recovered.state.reports.daily.rows[0].usage.article);

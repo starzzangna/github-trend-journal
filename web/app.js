@@ -1,64 +1,173 @@
 const container = document.querySelector('#report');
+const status = document.querySelector('#report-status');
 const periodLabels = { daily: '오늘의 발견', weekly: '한 주의 발견', monthly: '한 달의 발견' };
-const metricLabels = { daily: '해당 일간', weekly: '해당 주간', monthly: '해당 월간' };
+const metricLabels = { daily: '일간 스타', weekly: '주간 스타', monthly: '월간 스타' };
+let maxDocumentAge = 7 * 24 * 60 * 60 * 1000;
 const escape = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[char]);
-let reports;
 const numeric = value => Number.isFinite(value) ? value.toLocaleString('ko-KR') : '미제공';
-function currentPeriod() { const key = location.hash.slice(1); return key in periodLabels ? key : 'daily'; }
-function usageMarkup(row, href, expanded = false) {
-  const usage = row.usage;
-  if (!usage || usage.status !== 'ready') return `<div class="usage-pending"><strong>사용법 확인 대기</strong><p>${escape(usage?.reason || '아직 README 분석이 완료되지 않았습니다.')}</p><a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">공식 README에서 사용법 확인 ↗</a></div>`;
-  const start = usage.start;
-  const article = usage.article;
-  const sourceLink = section => `<a class="finding-source" href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">근거 · ${escape(section)} ↗</a>`;
-  return `<section class="usage" aria-label="${escape(row.name)} 활용 분석"><div class="usage-title"><span>PROJECT ANALYSIS · 분석 노트</span><span class="usage-category">${escape(usage.category)}</span></div>
-    <div class="article-intro">${(article?.paragraphs || [usage.purpose]).map(text => `<p>${escape(text)}</p>`).join('')}</div>
-    ${article ? `<div class="analysis-coverage"><span>핵심 항목 ${article.coverage.findings}개</span><span>문서 환경 ${article.coverage.conditions}개</span><span>${article.coverage.hasStart ? '시작 경로 확인' : '시작 경로 미확인'}</span></div>` : ''}
-    <details ${expanded ? 'open' : ''}><summary>전체 분석 읽기 · 기능, 사용 흐름, 도입 검토 <span aria-hidden="true">＋</span></summary><div class="usage-content">
-      ${article ? `<div class="note-section"><h4><span>01</span> 핵심 기능과 활용 의미 <small>문서 탐지 + 해설</small></h4>${article.findings.length ? `<div class="finding-list">${article.findings.map(finding => `<div class="finding"><h5>${escape(finding.title)}</h5><p>${escape(finding.body)}</p>${sourceLink(finding.section)}</div>`).join('')}</div>` : '<p>구체적인 기능을 자동으로 찾을 근거가 충분하지 않습니다. 공식 README에서 지원 범위를 확인해 주세요.</p>'}</div>
-      <div class="note-section"><h4><span>02</span> 실제 작업에 적용한다면 <small>분석에 따른 제안</small></h4><ol class="workflow-list">${article.workflow.map(step => `<li><h5>${escape(step.title)}</h5><p>${escape(step.body)}</p></li>`).join('')}</ol></div>
-      <div class="note-section"><h4><span>03</span> 도입 전에 살펴볼 환경 <small>필수 조건으로 단정하지 않음</small></h4>${article.conditions.length ? article.conditions.map(condition => `<div class="finding"><h5>${escape(condition.title)}</h5><p>${escape(condition.body)}</p>${sourceLink(condition.section)}</div>`).join('') : '<p>설치·시작 절에서 환경 조건을 충분히 추출하지 못했습니다. 별도 조건이 없다는 뜻은 아니며 원문의 요구사항을 확인해야 합니다.</p>'}</div>` : ''}
-      <div class="usage-item official"><h4>${article ? '<span class="note-number">04</span> ' : ''}공식 문서의 시작 경로</h4>${start ? `<p>공식 README의 <strong>${escape(start.heading)}</strong> 절을 확인하세요.</p>${start.steps.length ? `<ul>${start.steps.map(step => `<li>${escape(step)}</li>`).join('')}</ul>` : ''}${start.excerpt ? `<blockquote>${escape(start.excerpt)}</blockquote>` : ''}${start.command ? `<span class="command-label">원문 명령 예시 · 실행 전 전체 절차를 확인하세요</span><pre><code>${escape(start.command)}</code></pre>` : '<p class="usage-note">짧은 실행 예시를 확인하지 못했습니다. 명령을 임의로 생성하지 않았습니다.</p>'}` : '<p>README에서 시작 절차를 자동으로 찾지 못했습니다. 원문에서 설치·사용 방법을 확인해 주세요.</p>'}<a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">공식 사용 문서 읽기 ↗</a></div>
-      ${article ? `<div class="note-section verdict"><h4><span>05</span> 분석을 정리하면</h4><p>${escape(article.verdict)}</p></div><p class="usage-note">${escape(article.limitations)}</p>` : ''}
-      <p class="usage-note">${escape(usage.basis)} 프로젝트 실행 검증은 포함하지 않습니다.</p>
-    </div></details></section>`;
-}
-function render() {
+const dateText = value => Number.isFinite(Date.parse(value)) ? new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', dateStyle: 'medium', timeStyle: 'short' }).format(new Date(value)) : '미확인';
+let reports;
+let loading = false;
+let renderedPeriod;
+let selectedPeriod = 'daily';
+function currentPeriod() { const key = location.hash.slice(1); if (Object.hasOwn(periodLabels, key)) selectedPeriod = key; return selectedPeriod; }
+function updateNavigation() {
   const period = currentPeriod();
   for (const tab of document.querySelectorAll('[data-period]')) {
-    if (tab.dataset.period === period) tab.setAttribute('aria-current', 'page');
-    else tab.removeAttribute('aria-current');
+    if (tab.dataset.period === period) tab.setAttribute('aria-current', 'page'); else tab.removeAttribute('aria-current');
   }
+  return period;
+}
+function announce(text) { if (status) status.textContent = text; }
+function sourceUrl(name, source) {
+  const href = `https://github.com/${name}`;
+  return source?.url === `${href}#readme` || source?.url?.startsWith(`${href}/blob/`) ? source.url : `${href}#readme`;
+}
+function freshness(usage) {
+  if (usage?.status !== 'ready') return { key: 'unknown', label: '문서 미확인', note: '문서를 확인해야 분석을 제공할 수 있습니다.' };
+  if (usage.stale || usage.document?.status === 'unavailable') return { key: 'old', label: '오래된 분석', note: '최신 문서 조회에 실패해 이전 분석을 표시합니다. 다음 수집에서 다시 확인합니다.' };
+  const checked = usage.sourceCheckedAt || usage.checkedAt;
+  const age = Date.now() - Date.parse(checked);
+  if (!Number.isFinite(age) || age < 0) return { key: 'unknown', label: '확인 시각 미확인', note: '문서 확인 시각을 확인할 수 없어 최신 여부를 판단하지 않았습니다.' };
+  if (age >= maxDocumentAge) return { key: 'old', label: '오래된 분석', note: '마지막 정상 문서 확인 후 확인 주기를 넘겼습니다. 문서 재확인 전까지 이전 내용을 참고하세요.' };
+  return { key: 'fresh', label: '확인 주기 이내', note: '' };
+}
+function evidenceMarkup(usage, name, claim) {
+  const items = (claim?.evidenceIds || []).map(id => usage.evidence?.find(item => item.id === id)).filter(Boolean);
+  if (!items.length) return '<p class="usage-note">연결된 원문 근거가 없습니다. 공식 문서 확인이 필요합니다.</p>';
+  return `<details class="evidence-note"><summary aria-label="${escape(name)} · ${escape(claim.title || '용도 분류')}의 원문 근거 ${items.length}개 보기">원문 근거 ${items.length}개 보기${items.some(item => item.kind === 'example') ? ' · 사용 예, 실행 미검증' : ''}</summary><div class="evidence-content">${items.map(item => {
+    const source = usage.sources?.find(value => value.id === item.sourceId);
+    return `<blockquote>${escape(item.excerpt)}</blockquote><a class="finding-source" href="${escape(sourceUrl(name, source))}" target="_blank" rel="noopener noreferrer" aria-label="${escape(name)} · ${escape(item.section)} 원문, 새 탭">원문 근거 · ${escape(source?.path || 'README')} / ${escape(item.section)} ↗</a><p class="usage-note">절 시작 ${numeric(item.line)}행${item.kind === 'example' ? ' · 문서의 사용 예이며 실행 검증은 포함하지 않습니다.' : ''}</p>`;
+  }).join('')}</div></details>`;
+}
+function claimList(items, usage, name, missing) {
+  return items?.length ? items.map(item => `<div class="project-claim"><strong>${escape(item.title)}</strong><p>${escape(item.body)}</p>${evidenceMarkup(usage, name, item)}</div>`).join('') : `<p class="unconfirmed">${missing}</p>`;
+}
+function aiMarkup(row, usage) {
+  const note = usage.ai;
+  if (!note) return '';
+  const fallback = text => `<aside class="ai-fallback"><strong>규칙 기반 분석으로 제공</strong><p>${text}</p></aside>`;
+  if (freshness(usage).key !== 'fresh') return fallback('문서의 최신성을 확인하지 못해 AI 해석을 표시하지 않습니다.');
+  if (note.status !== 'ready') {
+    const reasons = {
+      timeout: 'AI 응답 시간이 초과되어 기본 분석을 표시합니다.',
+      budget: '이번 실행의 AI 처리 한도에 도달해 기본 분석을 표시합니다.',
+      'project-limit': '이번 실행의 AI 처리 개수에 도달해 기본 분석을 표시합니다.',
+      'insufficient-evidence': 'AI 해석에 사용할 문서 근거가 부족해 기본 분석을 표시합니다.',
+      ungrounded: 'AI 응답의 원문 근거를 확인하지 못해 기본 분석을 표시합니다.',
+      'verification-failed': 'AI 응답이 근거 검토를 통과하지 못해 기본 분석을 표시합니다.',
+      'invalid-output': 'AI 응답 형식을 확인하지 못해 기본 분석을 표시합니다.'
+    };
+    return fallback(reasons[note.reason] || '선택적 AI 분석을 사용할 수 없어 기본 분석을 표시합니다.');
+  }
+  try {
+    if (!Array.isArray(note.insights) || note.insights.length !== 3) throw Error('AI 노트 형식 오류');
+    const labels = { adoption: '도입 관점', tradeoff: '제약과 절충', validation: '작은 검증 제안' };
+    return `<details class="ai-note"><summary>${escape(row.name)} · 선택적 AI 심층 분석</summary><p class="usage-note">원문 인용 확인과 추가 AI 근거 검토를 거친 해석입니다. 실행·성능 검증이나 사실 보증은 아닙니다.</p>${note.insights.map(insight => `<section class="ai-insight"><h5>${labels[insight.id] || '추가 해석'}</h5><p>${escape(insight.analysis)}</p>${evidenceMarkup(usage, row.name, { title: `AI ${labels[insight.id] || '해석'}`, evidenceIds: insight.citations.map(citation => citation.evidenceId) })}</section>`).join('')}<p class="usage-note">AI 해석 생성 · ${escape(dateText(note.analyzedAt))} KST</p></details>`;
+  } catch { return fallback('AI 해석을 표시하지 못해 기본 분석을 제공합니다.'); }
+}
+function usageMarkup(row) {
+  const usage = row.usage;
+  const age = freshness(usage);
+  const quality = usage?.quality;
+  const qualityText = { complete: '기본 항목 충족', partial: '부분 분석', unavailable: '분석 불가' }[quality?.status] || '분석 확인 대기';
+  const qualityKey = ['complete', 'partial', 'unavailable'].includes(quality?.status) ? quality.status : 'unknown';
+  const badges = `<div class="analysis-status" aria-label="분석 품질과 문서 최신성"><span class="badge badge--${qualityKey}">분석 품질 · ${qualityText}</span><span class="badge badge--${age.key}">문서 최신성 · ${age.label}</span></div>`;
+  const documentText = usage?.document?.status === 'available' ? '성공' : usage?.document?.status === 'unavailable' ? '실패' : '미확인';
+  const missing = quality?.missing?.length ? `<aside class="missing-note" aria-label="미확인 항목"><strong>판단 전에 더 확인할 내용</strong><p>미확인 항목: ${quality.missing.map(escape).join(', ')}</p></aside>` : '';
+  const dates = `<div class="analysis-dates"><span>문서 조회 · ${documentText}</span><span>문서 확인 · ${escape(dateText(usage?.sourceCheckedAt || usage?.checkedAt))} KST</span><span>본문 분석 · ${escape(dateText(usage?.analyzedAt || usage?.checkedAt))} KST</span></div>`;
+  if (!usage || usage.status !== 'ready') return `<section class="usage usage--pending" aria-label="${escape(row.name)} 활용 분석">${badges}<h5>분석을 기다리고 있습니다.</h5><p>${escape(usage?.reason || 'README 분석이 아직 준비되지 않았습니다.')}</p><a href="https://github.com/${escape(row.name)}#readme" target="_blank" rel="noopener noreferrer">공식 README에서 직접 확인 ↗</a></section>`;
+  const article = usage.article;
+  const project = article?.project;
+  const start = usage.start;
+  return `<section class="usage" aria-label="${escape(row.name)} 활용 분석"><div class="usage-title"><span>검토 노트</span><span>${escape(usage.category)}</span></div>${badges}
+    ${age.note ? `<p class="freshness-note freshness-note--${age.key}"><strong>${age.label}</strong> · ${escape(age.note)}</p>` : ''}
+    <div class="decision"><h5>도입 전 판단</h5><p>${escape(article?.verdict || usage.purpose || '문서 근거가 부족해 도입 판단을 보류했습니다.')}</p><span class="usage-note">문서에 따른 검토이며 실제 성능을 검증한 추천은 아닙니다.</span></div>
+    ${aiMarkup(row, usage)}
+    ${missing}
+    ${project ? `<div class="problem-summary"><h5>해결하는 문제</h5>${project.problem ? `<p>${escape(project.problem.body)}</p>${evidenceMarkup(usage, row.name, project.problem)}` : '<p class="unconfirmed">문서에서 해결 문제를 충분히 확인하지 못했습니다.</p>'}</div><div class="project-io"><section><h5>입력</h5>${claimList(project.inputs, usage, row.name, '입력을 확인할 문장·사용 예가 부족합니다.')}</section><section><h5>출력</h5>${claimList(project.outputs, usage, row.name, '출력을 확인할 문장·사용 예가 부족합니다.')}</section></div>` : `<p>${escape(usage.purpose)}</p><p class="usage-note">이전 형식의 분석입니다. 문서 재확인 후 상세 근거를 보완합니다.</p>`}
+    <details class="analysis-details"><summary>${escape(row.name)} · 도입 조건과 추가 분석</summary><div class="usage-content">
+      <section class="note-section"><h5>도입 조건</h5>${claimList(project?.conditions || article?.conditions, usage, row.name, '도입 조건을 확인하지 못했습니다. 별도 조건이 없다는 뜻은 아닙니다.')}</section>
+      ${article?.findings?.length ? `<section class="note-section"><h5>핵심 기능과 활용 의미</h5>${claimList(article.findings, usage, row.name, '')}</section>` : ''}
+      ${article?.workflow?.length ? `<section class="note-section"><h5>작게 확인하는 순서</h5><ol>${article.workflow.map(step => `<li><strong>${escape(step.title)}</strong><p>${escape(step.body)}</p></li>`).join('')}</ol></section>` : ''}
+      <section class="note-section official"><h5>공식 문서의 시작 경로</h5>${start ? `<p><strong>${escape(start.heading)}</strong> 절에서 환경에 맞는 경로를 선택하세요.</p>${start.steps?.length ? `<ul>${start.steps.map(step => `<li>${escape(step)}</li>`).join('')}</ul>` : ''}${start.command ? `<p class="usage-note">원문 명령 예시 · 실행하지 않았습니다.</p><pre><code>${escape(start.command)}</code></pre>` : ''}${start.excerpt ? `<blockquote>${escape(start.excerpt)}</blockquote>` : ''}` : '<p>시작 절차를 자동으로 찾지 못했습니다.</p>'}<a href="https://github.com/${escape(row.name)}#readme" target="_blank" rel="noopener noreferrer">공식 사용 문서 읽기 ↗</a></section>
+      ${usage.classification?.evidenceIds?.length ? `<section class="note-section"><h5>용도 분류 근거</h5>${evidenceMarkup(usage, row.name, { ...usage.classification, title: '용도 분류' })}</section>` : ''}
+      <p class="usage-note">${escape(project?.limitations || article?.limitations || usage.basis)}</p>
+    </div></details>${dates}</section>`;
+}
+function synthesisMarkup(report) {
+  const synthesis = report.synthesis;
+  if (!synthesis) return '';
+  const old = report.rows.filter(row => freshness(row?.usage).key === 'old').length;
+  const scopes = { required: '해당 경로 요구사항', optional: '선택 경로', 'not-required': '필수 아님', mentioned: '문서상 언급' };
+  const proof = project => {
+    const row = report.rows.find(row => row.name === project.name);
+    return `<li><strong>${escape(project.name)}</strong>${project.scope ? ` · ${escape(scopes[project.scope])}` : ''}${project.exampleOnly ? ' · 사용 예, 실행 미검증' : ''}${freshness(row?.usage).key === 'old' ? ' · 오래된 분석' : ''}${evidenceMarkup(row?.usage || {}, project.name, { title: project.name, evidenceIds: project.evidenceIds })}</li>`;
+  };
+  return `<section class="synthesis" aria-label="프로젝트 분석 종합"><div class="synthesis-heading"><h3>이번 목록의 검토 현황</h3><span>분석 갱신 · ${escape(dateText(synthesis.generatedAt))} KST</span></div><div class="review-metrics"><div><strong>${synthesis.coverage.complete}</strong><span>기본 항목 충족</span></div><div><strong>${synthesis.coverage.partial}</strong><span>부분 분석</span></div><div><strong>${old}</strong><span>오래된 분석</span></div></div><p class="usage-note">이 발행호의 ${synthesis.coverage.total}개 기준 · 미분류 ${synthesis.coverage.unknown}개 포함. 오래됨은 현재 시각 기준이며 부분 분석과 동시에 해당할 수 있습니다.</p><details class="distribution"><summary>용도 분포와 전체 분석 범위 보기</summary><ul class="category-groups">${synthesis.categoryGroups.map(group => `<li><strong>${escape(group.category)}</strong> ${group.count}/${synthesis.coverage.total}<span>${group.projects.map(escape).join(', ')}</span></li>`).join('')}</ul><ul>${report.analysis.map(text => `<li>${escape(text)}</li>`).join('')}</ul></details><h4>함께 살펴볼 문서 근거</h4><p class="usage-note">공통 항목이며 같은 성능이나 동일한 필수 조건이라는 뜻은 아닙니다.</p>${synthesis.sharedPatterns.length ? synthesis.sharedPatterns.map(pattern => `<details class="shared-pattern"><summary>${({input:'입력',output:'출력',condition:'도입 조건'})[pattern.kind]} · ${escape(pattern.title)} (${pattern.projects.length}개)</summary><ul>${pattern.projects.map(proof).join('')}</ul></details>`).join('') : '<p>공통 항목을 확인할 근거가 부족합니다.</p>'}</section>`;
+}
+function projectMarkup(row, index) {
+  try {
+    const href = `https://github.com/${row.name}`;
+    if (!/^[\w.-]+\/[\w.-]+$/.test(row.name)) throw Error('저장소 경로 오류');
+    return `<article class="project"><div class="project-header"><span class="rank">${String(index + 1).padStart(2, '0')}</span><div class="project-heading"><h4><a href="${escape(href)}" target="_blank" rel="noopener noreferrer">${escape(row.name)} ↗</a></h4><span class="language">${escape(row.language || '미분류')}</span></div><span class="growth"><strong>${numeric(row.periodStars)}</strong> ${metricLabels[currentPeriod()]}</span></div><div class="project-body"><p class="repository-description">${escape(row.description || '저장소 설명이 없습니다.')}</p>${usageMarkup(row)}<div class="project-meta"><span>총 스타 ${numeric(row.stars)}</span><a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">README 읽기 ↗</a></div></div></article>`;
+  } catch {
+    const link = /^[\w.-]+\/[\w.-]+$/.test(row?.name || '') ? `<a href="https://github.com/${escape(row.name)}#readme" target="_blank" rel="noopener noreferrer">공식 README에서 직접 확인 ↗</a>` : '';
+    return `<article class="project project--error"><h4>${escape(row?.name || `프로젝트 ${index + 1}`)}</h4><p>이 프로젝트의 분석을 표시하지 못했습니다. 다른 프로젝트는 계속 읽을 수 있습니다.</p>${link}</article>`;
+  }
+}
+function validateReports(data) {
+  if (!data?.reports || typeof data.reports !== 'object' || Array.isArray(data.reports)) throw Error('보고서 형식 오류');
+  for (const period of Object.keys(periodLabels)) {
+    const report = data.reports[period];
+    if (!report) continue;
+    if (!Array.isArray(report.rows) || typeof report.title !== 'string' || typeof report.summary !== 'string' || !Array.isArray(report.analysis) || report.analysis.some(text => typeof text !== 'string') || !Number.isFinite(Date.parse(report.publishedAt))) throw Error('보고서 필드 오류');
+  }
+  return data.reports;
+}
+function render({ focusResult = false } = {}) {
+  const period = updateNavigation();
   const report = reports[period];
   container.setAttribute('aria-busy', 'false');
-  if (!report) {
-    container.innerHTML = '<div class="state"><span class="empty-mark">↗</span><h2>첫 번째 발견을 기다립니다.</h2><p>아직 발행된 보고서가 없습니다. 첫 수집이 완료되면 이곳에 자동으로 게시됩니다.</p><a href="https://github.com/trending" target="_blank" rel="noopener noreferrer">GitHub Trending에서 먼저 살펴보기 ↗</a></div>'; return;
+  renderedPeriod = period;
+  if (!report || !report.rows.length) {
+    container.innerHTML = '<div class="state"><h2 id="report-title" tabindex="-1">첫 번째 발견을 기다립니다.</h2><p>아직 발행된 프로젝트가 없습니다.</p><a href="https://github.com/trending" target="_blank" rel="noopener noreferrer">GitHub Trending 살펴보기 ↗</a></div>';
+    announce(`${periodLabels[period]}에 발행된 프로젝트가 없습니다.`);
+  } else {
+    container.innerHTML = `<div class="section-heading"><h2 id="report-title" tabindex="-1">${periodLabels[period]} <span>${report.rows.length} PROJECTS</span></h2><span>최초 발행 · ${escape(dateText(report.publishedAt))} KST</span></div><section class="report-intro"><span class="eyebrow">TREND BRIEF</span><h3>${escape(report.title)}</h3><p>${escape(report.summary)}</p><a href="https://github.com/trending?since=${period}" target="_blank" rel="noopener noreferrer">원본 목록 보기 ↗</a></section>${synthesisMarkup(report)}<div class="list-heading"><h3>프로젝트별 도입 검토</h3><span>GitHub 표시 순위 기준</span></div><div class="projects">${report.rows.map(projectMarkup).join('')}</div><p class="source-note">발행 시점의 목록입니다. 스타 수는 GitHub의 기간 표시값이며 도입 추천 점수가 아닙니다.</p>`;
+    announce(`${periodLabels[period]} ${report.rows.length}개 프로젝트를 불러왔습니다.`);
   }
-  const date = new Intl.DateTimeFormat('ko-KR', { timeZone: 'Asia/Seoul', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(report.publishedAt));
-  const source = `https://github.com/trending?since=${period}`;
-  container.innerHTML = `
-    <div class="section-heading"><h2>${periodLabels[period]} <span>/ ${String(report.rows.length).padStart(2, '0')} PROJECTS</span></h2><time datetime="${escape(report.publishedAt)}">${escape(date)} KST 발행</time></div>
-    <article class="feature"><div class="feature-copy"><div class="eyebrow">TREND BRIEF <span>01 — ${period.toUpperCase()}</span></div><h3>${escape(report.title)}</h3><p>${escape(report.summary)}</p><a href="${source}" target="_blank" rel="noopener noreferrer">원본 트렌드 살펴보기 <span>↗</span></a></div><div class="feature-art" aria-hidden="true"><div class="art-grid"></div><span class="art-label">OPEN SOURCE<br>IN MOTION</span><span class="big-arrow">↗</span><span class="art-bottom">DISCOVER. BUILD. REPEAT.</span></div></article>
-    <div class="analysis"><span class="analysis-label">읽어볼 포인트</span><ul>${report.analysis.map(line => `<li>${escape(line)}</li>`).join('')}</ul></div>
-    <div class="list-heading"><h3>주목할 프로젝트</h3><span>GitHub 표시 순위 기준</span></div>
-    <div class="projects">${report.rows.map((row, index) => {
-      const href = `https://github.com/${row.name.split('/').map(encodeURIComponent).join('/')}`;
-      return `<article class="project"><span class="rank">${String(index + 1).padStart(2, '0')}</span><div class="project-body"><div class="project-heading"><a href="${escape(href)}" target="_blank" rel="noopener noreferrer">${escape(row.name)} <span>↗</span></a><span class="language">${escape(row.language)}</span></div><p>${escape(row.description || '프로젝트 설명이 제공되지 않았습니다.')}</p><div class="project-meta"><span>☆ 총 스타 ${numeric(row.stars)}</span><a href="${escape(href)}#readme" target="_blank" rel="noopener noreferrer">README 읽기 ↗</a></div>${usageMarkup(row, href, index === 0)}</div><div class="growth"><strong>${row.periodStars === null ? '—' : numeric(row.periodStars)}</strong><span>${metricLabels[period]} 스타</span></div></article>`;
-    }).join('')}</div><p class="source-note">출처: <a href="${source}" target="_blank" rel="noopener noreferrer">GitHub Trending ↗</a> · 발행 시점의 목록이며 현재 순위와 다를 수 있습니다. 스타 수는 GitHub의 기간 표시값입니다.</p>`;
+  if (focusResult) document.querySelector('#report-title')?.focus();
 }
-async function load() {
+async function load({ focusResult = false } = {}) {
+  if (loading) return;
+  loading = true;
+  const canRestoreFocus = () => focusResult && (!document.activeElement || document.activeElement === document.body || container.contains(document.activeElement));
   container.setAttribute('aria-busy', 'true');
+  container.innerHTML = `<div class="state state--loading"><h2>보고서를 불러오고 있습니다.</h2><p>잠시만 기다려 주세요.</p>${focusResult ? '<button type="button" disabled>불러오는 중…</button>' : ''}</div>`;
+  announce('보고서를 불러오고 있습니다.');
   try {
-    const response = await fetch('./reports.json', { cache: 'no-cache' });
-    if (!response.ok) throw new Error('보고서 응답 오류');
+    const response = await fetch('./reports.json', { cache: 'no-cache', signal: AbortSignal.timeout(15000) });
+    if (!response.ok) throw Error('보고서 응답 오류');
     const data = await response.json();
-    if (!data.reports || typeof data.reports !== 'object') throw new Error('보고서 형식 오류');
-    reports = data.reports; render();
+    const next = validateReports(data);
+    const previousAge = maxDocumentAge;
+    if (data.documentMaxAgeMs !== undefined) {
+      if (!Number.isFinite(data.documentMaxAgeMs) || data.documentMaxAgeMs < 0) throw Error('확인 주기 오류');
+      maxDocumentAge = data.documentMaxAgeMs;
+    }
+    const previous = reports;
+    reports = next;
+    try { render({ focusResult: canRestoreFocus() }); } catch (error) { reports = previous; maxDocumentAge = previousAge; throw error; }
   } catch {
     container.setAttribute('aria-busy', 'false');
-    container.innerHTML = '<div class="state"><h2>보고서를 불러오지 못했습니다.</h2><p>네트워크 연결을 확인한 뒤 다시 시도해 주세요.</p><button type="button" id="retry">다시 불러오기 ↻</button></div>';
-    document.querySelector('#retry').addEventListener('click', load);
-  }
+    container.innerHTML = '<div class="state state--error"><h2>보고서를 불러오지 못했습니다.</h2><p>보고서 응답을 정상적으로 읽지 못했습니다. 다시 불러오면 같은 기간의 보고서를 확인합니다.</p><button type="button" id="retry">다시 불러오기</button></div>';
+    announce('보고서를 불러오지 못했습니다. 다시 불러오기 버튼을 선택해 주세요.');
+    const retry = document.querySelector('#retry');
+    retry.addEventListener('click', () => load({ focusResult: true }));
+    if (canRestoreFocus()) retry.focus();
+  } finally { loading = false; }
 }
-addEventListener('hashchange', () => { if (reports) render(); });
+addEventListener('hashchange', () => { const period = updateNavigation(); if (reports && !loading && period !== renderedPeriod) render(); });
+updateNavigation();
 load();

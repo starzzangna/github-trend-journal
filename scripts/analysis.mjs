@@ -44,21 +44,7 @@ const evaluation = {
   '실행 파일 이식': '문서에서 다루는 입력 형식과 대상 플랫폼을 먼저 확인하세요. 알려진 작은 예제로 변환 결과와 원래 실행 동작을 대조하면 적용 가능 범위를 판단하는 데 도움이 됩니다.'
 };
 
-function prose(body) {
-  return body.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/(`{3,}|~{3,})[\s\S]*?\1/g, '').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/<[^>]*>/g, ' ').replace(/[`*_]/g, '').replace(/\s+/g, ' ').trim();
-}
-
-function mentions(text, pattern) {
-  const match = text.match(pattern);
-  if (!match) return false;
-  const nearby = text.slice(Math.max(0, match.index - 55), match.index + match[0].length + 40);
-  // 미지원이라고 적힌 예를 기능으로 소개하지 않습니다.
-  return !/(?:does not|doesn't|not yet|not supported|unsupported|no support|without)\b|지원하지|미지원/i.test(nearby);
-}
-
-export function buildAnalysis(row, sections, profile, start) {
-  const source = `https://github.com/${row.name}#readme`;
-  const documents = sections.filter(s => !/contribut|sponsor|star history|license|acknowledg/i.test(s.title)).map(s => ({ title: s.title || 'README 도입부', text: prose(s.body) }));
+export function buildAnalysis(row, profile, start, context) {
   const findings = [];
   const priority = {
     '역공학·프로그램 분석': /디컴파일|실행 중인|어셈블리/,
@@ -84,12 +70,12 @@ export function buildAnalysis(row, sections, profile, start) {
     if (/설계 모델/.test(feature.title) && profile?.category !== 'CAD·설계') continue;
     if (/운동 계획/.test(feature.title) && profile?.category !== '운동 기록') continue;
     if (/분리된 도구/.test(feature.title) && !['AI 에이전트 실행 환경', 'AI 에이전트 운영', 'AI 컨텍스트 관리'].includes(profile?.category)) continue;
-    const document = documents.find(d => mentions(d.text, feature.match) || mentions(d.title, feature.match));
-    if (!document) continue;
-    findings.push({ title: feature.title, body: feature.body, section: document.title, source });
+    const evidenceId = context.find(feature.match);
+    if (!evidenceId) continue;
+    findings.push({ title: feature.title, body: feature.body, kind: 'interpretation', evidenceIds: [evidenceId] });
     if (findings.length === 4) break;
   }
-  const environmentSections = documents.filter(d => /install|setup|set up|quick.?start|getting started|get started|requirement|prerequisite|platform|environment|설치|시작|환경/i.test(d.title));
+  const environmentSections = context.documents.filter(d => /install|setup|set up|quick.?start|getting started|get started|requirement|prerequisite|platform|environment|설치|시작|환경/i.test(d.title));
   const conditions = [];
   for (const [match, title, body] of [
     [/\bDocker\b/i, '컨테이너 실행 환경', '시작·설치 관련 절에 Docker가 등장합니다. 컨테이너 실행 경로를 사용할 때 필요한 설정과 실행 방식을 해당 절에서 확인할 수 있습니다.'],
@@ -100,8 +86,8 @@ export function buildAnalysis(row, sections, profile, start) {
     [/API[ -]?key|API[ -]?token|access token/i, '외부 서비스 인증', '설치·시작 절에서 API 인증값을 언급합니다. 어떤 서비스와 연결되는 경로인지 확인한 뒤 해당 서비스의 이용 조건을 검토할 수 있습니다.'],
     [/\bPostgreSQL\b|\bRedis\b/i, '별도 데이터 서비스', '설치·시작 절에 데이터 서비스가 등장합니다. 내장 실행과 외부 서비스 연결 중 어떤 구성을 사용하는지 확인할 항목입니다.']
   ]) {
-    const document = environmentSections.find(d => match.test(d.text));
-    if (document) conditions.push({ title, body, section: document.title, source });
+    const evidenceId = context.find(match, environmentSections);
+    if (evidenceId) conditions.push({ title, body, kind: 'interpretation', evidenceIds: [evidenceId] });
     if (conditions.length === 3) break;
   }
   const category = profile?.category || '용도 분류 미확정';

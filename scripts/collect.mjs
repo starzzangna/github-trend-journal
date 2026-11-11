@@ -1,15 +1,25 @@
 import { mkdir, readFile, writeFile, rename } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { collectPublication } from './publication.mjs';
+import { validatePublication } from './contracts.mjs';
+import { createAiAnalyzer } from './ai.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const file = `${root}content/publication.json`;
 let state;
 try { state = JSON.parse(await readFile(file, 'utf8')); }
 catch (error) { if (error.code !== 'ENOENT') throw error; state = { version: 1, reports: {}, ledger: [] }; }
-const result = await collectPublication(state);
+const now = new Date();
+const aiAnalyzer = createAiAnalyzer({ env: process.env, now });
+let result;
+try {
+  result = await collectPublication(state, { now, aiAnalyzer, refreshAnalysis: process.argv.includes('--refresh-analysis'), maxDocumentAgeMs: process.argv.includes('--check-documents') ? 0 : undefined });
+} finally {
+  if (aiAnalyzer.summary().enabled) console.log(JSON.stringify({ ai: aiAnalyzer.summary() }));
+}
 // 세 기간이 모두 정상 처리되어야 저장합니다. 오류 시 기존 게시물을 유지합니다.
 if (result.changed) {
+  validatePublication(result.state);
   await mkdir(`${root}content`, { recursive: true });
   await writeFile(`${file}.tmp`, `${JSON.stringify(result.state, null, 2)}\n`);
   await rename(`${file}.tmp`, file);

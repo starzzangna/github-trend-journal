@@ -1,0 +1,66 @@
+import { assessQuality } from './evidence.mjs';
+import { synthesizeReport, reportVersion } from './report.mjs';
+import { documentFingerprint } from './freshness.mjs';
+import { validateAiNote } from './ai.mjs';
+
+// 구형 보고서는 재조회 전까지 보존하되 새 형식은 저장·빌드 경계에서 검사합니다.
+export function validateUsage(usage, row = { name: usage?.sources?.[0]?.repository }) {
+  validateAiNote(row, usage);
+  if (!usage || [1, 2].includes(usage.version)) return;
+  const fail = message => { throw new Error(`분석 데이터 오류: ${message}`); };
+  if (![3, 4].includes(usage.version) || usage.schemaVersion !== (usage.version === 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
+  if (!['ready', 'unavailable'].includes(usage.status)) fail('처리 상태');
+  if (!['available', 'unavailable'].includes(usage.document?.status)) fail('문서 조회 상태');
+  if (!['complete', 'partial', 'unavailable'].includes(usage.quality?.status)) fail('분석 품질 상태');
+  if (!Array.isArray(usage.quality.missing) || usage.quality.missing.some(item => typeof item !== 'string')) fail('미확인 항목');
+  if (!Number.isFinite(Date.parse(usage.document.checkedAt))) fail('문서 확인 시각');
+  if (!Array.isArray(usage.sources) || !Array.isArray(usage.evidence)) fail('출처·근거 목록');
+  const sources = new Map();
+  for (const source of usage.sources) {
+    if (!source.id || sources.has(source.id) || !/^[\w.-]+\/[\w.-]+$/.test(source.repository) || typeof source.path !== 'string' || !source.path || !Number.isFinite(Date.parse(source.fetchedAt)) || (source.sha !== null && typeof source.sha !== 'string')) fail('출처 식별 정보');
+    const prefix = `https://github.com/${source.repository}`;
+    if (source.url !== `${prefix}#readme` && !source.url?.startsWith(`${prefix}/blob/`)) fail('출처 URL');
+    sources.set(source.id, source);
+  }
+  const evidence = new Set();
+  for (const item of usage.evidence) {
+    if (!item.id || evidence.has(item.id) || !sources.has(item.sourceId) || !item.excerpt?.trim() || item.excerpt.length > 600 || !item.section || !Number.isInteger(item.line) || item.line < 1) fail('근거 또는 출처 참조');
+    evidence.add(item.id);
+    if (usage.version === 4 && !['prose', 'heading', 'example'].includes(item.kind)) fail('근거 유형');
+  }
+  if (usage.status === 'unavailable') {
+    if (usage.document.status !== 'unavailable' || usage.quality.status !== 'unavailable') fail('조회 실패와 품질 상태 불일치');
+    return;
+  }
+  if (!usage.article || !Array.isArray(usage.article.findings) || !Array.isArray(usage.article.conditions) || !sources.size) fail('분석 본문');
+  for (const field of ['analyzedAt', 'sourceCheckedAt']) if (usage[field] !== undefined && !Number.isFinite(Date.parse(usage[field]))) fail('분석·문서 확인 시각');
+  if (usage.sourceFingerprint !== undefined && usage.sourceFingerprint !== documentFingerprint(usage.sources)) fail('문서 지문');
+  if (usage.analysisInputFingerprint !== undefined && !/^[a-f0-9]{64}$/.test(usage.analysisInputFingerprint)) fail('분석 입력 지문');
+  const claims = [...usage.article.findings, ...usage.article.conditions];
+  if (usage.version === 4) {
+    const classification = usage.classification;
+    if (!Array.isArray(classification?.evidenceIds) || classification.evidenceIds.some(id => !evidence.has(id)) || (usage.category !== '용도 분류 미확정' && !classification.evidenceIds.length)) fail('분류 근거');
+    if (classification.evidenceIds.some(id => usage.evidence.find(item => item.id === id).kind === 'example')) fail('사용 예만으로 용도 분류');
+    const project = usage.article.project;
+    if (!project || !Array.isArray(project.inputs) || !Array.isArray(project.outputs) || !Array.isArray(project.conditions)) fail('프로젝트 설명');
+    claims.push(...(project.problem ? [project.problem] : []), ...project.inputs, ...project.outputs, ...project.conditions);
+    for (const item of project.conditions) if (!['required', 'optional', 'not-required', 'mentioned'].includes(item.scope)) fail('도입 조건 범위');
+  }
+  for (const claim of claims) {
+    if (typeof claim.title !== 'string' || typeof claim.body !== 'string' || !['interpretation', 'documented'].includes(claim.kind) || !Array.isArray(claim.evidenceIds) || !claim.evidenceIds.length || claim.evidenceIds.some(id => !evidence.has(id))) fail('출처 없는 주장');
+    if (usage.version === 4 && claim.evidenceIds.some(id => usage.evidence.find(item => item.id === id).kind === 'example') && claim.exampleOnly !== true) fail('사용 예 검증 범위 누락');
+  }
+  const expected = assessQuality(usage);
+  if (usage.quality.status !== expected.status || JSON.stringify(usage.quality.missing) !== JSON.stringify(expected.missing)) fail('분석 품질 판정 불일치');
+}
+
+export function validatePublication(state) {
+  for (const [period, report] of Object.entries(state.reports)) {
+    for (const row of report.rows) validateUsage(row.usage, row);
+    if (report.synthesis) {
+      if (report.synthesis.version !== reportVersion || !Number.isFinite(Date.parse(report.synthesis.generatedAt))) throw new Error('종합 보고서 형식 오류');
+      const expected = synthesizeReport(report, period, new Date(report.synthesis.generatedAt));
+      if (JSON.stringify(report.synthesis) !== JSON.stringify(expected.synthesis) || report.summary !== expected.summary || JSON.stringify(report.analysis) !== JSON.stringify(expected.analysis) || report.title !== expected.title) throw new Error('프로젝트 분석과 종합 보고서가 일치하지 않습니다.');
+    }
+  }
+}

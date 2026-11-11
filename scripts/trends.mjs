@@ -43,20 +43,9 @@ export function fingerprint(rows) {
   return createHash('sha256').update(JSON.stringify(rows.map(r => [r.name.toLowerCase(), r.description, r.language]))).digest('hex');
 }
 export function createReport(period, rows, now) {
-  const langs = {};
-  for (const row of rows) langs[row.language] = (langs[row.language] || 0) + 1;
-  const topLanguage = Object.entries(langs).sort((a, b) => b[1] - a[1])[0];
-  const measured = rows.filter(r => r.periodStars !== null);
-  const leader = [...measured].sort((a, b) => b.periodStars - a.periodStars)[0];
   return {
-    period, issue: issueKey(period, now), publishedAt: now.toISOString(),
-    title: `${labels[period]} · ${rows[0].name}부터 살펴보는 오픈소스 트렌드`,
-    summary: `GitHub Trending 상위 ${rows.length}개 프로젝트를 살펴봤습니다. ${topLanguage[0]} 프로젝트가 ${topLanguage[1]}개 포함되어 있습니다.`,
-    analysis: [
-      `GitHub 표시 순위의 첫 번째 프로젝트는 ${rows[0].name}입니다.`,
-      leader ? `수집 목록에서 표시된 기간 스타 수가 가장 큰 프로젝트는 ${leader.name}으로, ${leader.periodStars.toLocaleString('en-US')}개입니다.` : '기간 스타 수가 제공되지 않아 해당 수치 비교는 생략했습니다.',
-      '이 글은 수집 시점의 목록을 요약한 자동 보고서입니다. 성장 원인이나 과거 대비 변화는 추정하지 않습니다.'
-    ],
+    period, issue: issueKey(period, now), collectedAt: now.toISOString(), publishedAt: now.toISOString(),
+    title: `${labels[period]} · 오픈소스 프로젝트 분석`, summary: '', analysis: [],
     source: `https://github.com/trending?since=${period}`, rows
   };
 }

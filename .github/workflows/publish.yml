@@ -31,6 +31,13 @@ jobs:
         run: npm run collect
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # 저장소 변수를 명시적으로 켠 경우에만 유료 AI를 호출합니다.
+          AI_ANALYSIS_ENABLED: ${{ vars.AI_ANALYSIS_ENABLED }}
+          AI_MAX_COST_USD: ${{ vars.AI_MAX_COST_USD }}
+          AI_MAX_PROJECTS: ${{ vars.AI_MAX_PROJECTS }}
+          AI_TIMEOUT_MS: ${{ vars.AI_TIMEOUT_MS }}
+          AI_TOTAL_TIMEOUT_MS: ${{ vars.AI_TOTAL_TIMEOUT_MS }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       - name: 사이트 빌드
         run: npm run build
       - name: Pages 설정

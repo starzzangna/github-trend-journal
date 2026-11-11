@@ -9,7 +9,7 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   validateAiNote(row, usage);
   if (!usage || [1, 2].includes(usage.version)) return;
   const fail = message => { throw new Error(`분석 데이터 오류: ${message}`); };
-  if (![3, 4, 5, 6, 7].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
+  if (![3, 4, 5, 6, 7, 8].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
   if (!['ready', 'unavailable'].includes(usage.status)) fail('처리 상태');
   if (!['available', 'unavailable'].includes(usage.document?.status)) fail('문서 조회 상태');
   if (!['complete', 'partial', 'unavailable'].includes(usage.quality?.status)) fail('분석 품질 상태');
@@ -18,6 +18,10 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   if (!Array.isArray(usage.sources) || !Array.isArray(usage.evidence)) fail('출처·근거 목록');
   if (usage.document.links !== undefined && (!Array.isArray(usage.document.links) || usage.document.links.length > 2 || new Set(usage.document.links.map(item => item.path)).size !== usage.document.links.length || usage.document.links.some(item => typeof item.path !== 'string' || !/\.md$/i.test(item.path) || !['available', 'unavailable'].includes(item.status) || !Number.isFinite(Date.parse(item.checkedAt)) || (item.status === 'available' && !usage.sources.some(source => source.path === item.path))))) fail('추가 문서 조회 상태');
   const sources = new Map();
+  for (const item of usage.document.links || []) {
+    if (item.reason !== undefined && (item.status !== 'unavailable' || !['http', 'format', 'size-limit', 'timeout', 'network'].includes(item.reason))) fail('추가 문서 제외·실패 사유');
+    if (item.httpStatus !== undefined && (item.reason !== 'http' || !Number.isInteger(item.httpStatus) || item.httpStatus < 400 || item.httpStatus > 599)) fail('추가 문서 HTTP 상태');
+  }
   for (const source of usage.sources) {
     if (!source.id || sources.has(source.id) || !/^[\w.-]+\/[\w.-]+$/.test(source.repository) || typeof source.path !== 'string' || !source.path || !Number.isFinite(Date.parse(source.fetchedAt)) || (source.sha !== null && typeof source.sha !== 'string')) fail('출처 식별 정보');
     const prefix = `https://github.com/${source.repository}`;

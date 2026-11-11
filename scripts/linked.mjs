@@ -24,7 +24,7 @@ export function linkedPaths(markdown, repository, metadata = {}) {
       if (path === metadata.path || path.length > 220 || !/\.md$/i.test(path) || path.split('/').some(part => !part || part === '..' || part.startsWith('.'))) continue;
       if (/^(?:tests?|scripts?|assets?|images?)\//i.test(path)) continue;
       if (/\b(?:contributing|license|code.of.conduct|changelog|sponsor|governance)\b/i.test(path)) continue;
-      const score = /readme[_.-]en\.md$/i.test(path) ? 30 : /(?:getting.started|quick.?start|full.guide|install|usage|setup)/i.test(path) ? 20 : /(?:guide|client|user|workflow|in-process|direction|hosting|docker)/i.test(path) ? 15 : /index|readme|directory|DOCS\.md/i.test(path) ? 10 : 0;
+      const score = /readme[_.-]en\.md$/i.test(path) ? 30 : /(?:getting.started|quick.?start|full.guide|install|usage|setup|outside-agents)/i.test(path) ? 20 : /(?:guide|client|user|workflow|in-process|direction|hosting|docker)/i.test(path) ? 15 : /index|readme|directory|DOCS\.md/i.test(path) ? 10 : 0;
       if (!score) continue;
       if (!found.has(path)) found.set(path, { path, url: `https://github.com/${repository}/blob/${ref}/${path.split('/').map(encodeURIComponent).join('/')}`, raw: `https://raw.githubusercontent.com/${repository}/${ref}/${path.split('/').map(encodeURIComponent).join('/')}`, score });
     } catch { /* 잘못된 링크는 네트워크 요청 전에 제외합니다. */ }
@@ -40,26 +40,29 @@ export async function fetchLinkedDocuments(markdown, repository, metadata, { fet
     try {
       const operation = (async () => {
         const response = await fetcher(target.raw, { headers: { 'User-Agent': 'GitTrendJournal/1.0' }, redirect: 'error', signal: controller.signal });
-        if (!response.ok || !response.body?.getReader) throw Error('문서 조회 실패');
+        if (!response.ok) throw Object.assign(Error('문서 조회 실패'), { reason: 'http', httpStatus: response.status });
+        if (!response.body?.getReader) throw Object.assign(Error('문서 형식 오류'), { reason: 'format' });
         const reader = response.body.getReader(), chunks = [];
         let size = 0;
         while (true) {
           const { done, value } = await reader.read();
           if (done) break;
           size += value.byteLength;
-          if (size > 250000) { await reader.cancel(); throw Error('문서 크기 초과'); }
+          if (size > 250000) { await reader.cancel(); throw Object.assign(Error('문서 크기 초과'), { reason: 'size-limit' }); }
           chunks.push(Buffer.from(value));
         }
         const bytes = Buffer.concat(chunks);
-        if (!bytes.length) throw Error('빈 문서');
+        if (!bytes.length) throw Object.assign(Error('빈 문서'), { reason: 'format' });
         return bytes;
       })();
-      const bytes = await Promise.race([operation, new Promise((_, reject) => { timer = setTimeout(() => { controller.abort(); reject(Error('문서 시간 초과')); }, timeoutMs); })]);
+      let timedOut = false;
+      const bytes = await Promise.race([operation, new Promise((_, reject) => { timer = setTimeout(() => { timedOut = true; controller.abort(); reject(Object.assign(Error('문서 시간 초과'), { reason: 'timeout' })); }, timeoutMs); })]).catch(failure => { if (timedOut) throw Object.assign(Error('문서 시간 초과'), { reason: 'timeout' }); throw failure; });
       const sha = createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
       documents.push({ markdown: bytes.toString('utf8'), metadata: { path: target.path, sha, html_url: target.url, exampleOnly: /(?:^|\/)examples?\//i.test(target.path), sourceId: `doc-${createHash('sha256').update(target.path).digest('hex').slice(0, 12)}` } });
       states.push({ path: target.path, status: 'available', checkedAt: now.toISOString() });
-    } catch {
-      states.push({ path: target.path, status: 'unavailable', checkedAt: now.toISOString() });
+    } catch (failure) {
+      const reason = ['http', 'format', 'size-limit', 'timeout'].includes(failure.reason) ? failure.reason : 'network';
+      states.push({ path: target.path, status: 'unavailable', reason, ...(reason === 'http' && Number.isInteger(failure.httpStatus) && failure.httpStatus >= 400 && failure.httpStatus <= 599 ? { httpStatus: failure.httpStatus } : {}), checkedAt: now.toISOString() });
     } finally { clearTimeout(timer); }
   }
   return { documents, states };

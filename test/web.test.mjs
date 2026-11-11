@@ -272,3 +272,13 @@ test('연결 문서 조회 실패는 README 분석과 구분해 표시하고 실
   assert.match(page.container.innerHTML, /문서 조회 · 성공/);
   assert.match(page.container.innerHTML, /href="https:\/\/github.com\/example\/voice\/blob\/main\/docs\/README_EN.md"/);
 });
+
+test('크기 상한으로 제외한 문서를 네트워크 실패나 매번 재시도 대상으로 표시하지 않는다', async () => {
+  const value = structuredClone(usage);
+  value.document.links = [{ path: 'packages/cli/README.md', status: 'unavailable', reason: 'size-limit', checkedAt: now.toISOString() }];
+  const page = await mount(async () => ({ ok: true, json: async () => dataFor(value) }));
+  assert.match(page.container.innerHTML, /250,000바이트 상한을 넘어 분석에서 제외/);
+  assert.match(page.container.innerHTML, /packages\/cli\/README.md · 분석 제외/);
+  assert.doesNotMatch(page.container.innerHTML, /추가 문서 1개를 확인하지 못했습니다|다음 수집에서 재시도/);
+  assert.match(page.container.innerHTML, /문서 조회 · 성공/);
+});

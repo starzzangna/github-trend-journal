@@ -7,7 +7,7 @@ import { createHash } from 'node:crypto';
 import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from './freshness.mjs';
 import { addKoreanPresentation } from './korean.mjs';
 import { fetchLinkedDocuments } from './linked.mjs';
-export const usageVersion = 7;
+export const usageVersion = 8;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
@@ -94,7 +94,7 @@ export async function fetchUsage(row, { now = new Date(), fetcher = fetch, token
     const linked = await fetchLinkedDocuments(markdown, row.name, metadata, { fetcher, now });
     const fingerprint = documentFingerprint([{ repository: row.name, path: metadata.path || 'README', sha: metadata.sha }, ...linked.documents.map(document => ({ repository: row.name, path: document.metadata.path, sha: document.metadata.sha }))]);
     const input = analysisInputFingerprint(row);
-    if (!forceAnalysis && !linked.states.some(item => item.status === 'unavailable') && previousUsage?.analysisInputFingerprint && previous?.status === 'ready' && previous.version === usageVersion && fingerprint && previous.sourceFingerprint === fingerprint && previous.analysisInputFingerprint === input && Date.parse(previous.analyzedAt) <= now.getTime()) {
+    if (!forceAnalysis && !linked.states.some(item => item.status === 'unavailable' && item.reason !== 'size-limit') && previousUsage?.analysisInputFingerprint && previous?.status === 'ready' && previous.version === usageVersion && fingerprint && previous.sourceFingerprint === fingerprint && previous.analysisInputFingerprint === input && Date.parse(previous.analyzedAt) <= now.getTime()) {
       return { ...previous, checkedAt: now.toISOString(), sourceCheckedAt: now.toISOString(), document: { status: 'available', checkedAt: now.toISOString(), links: linked.states }, stale: false, analysisReused: true, readmeSha: metadata.sha };
     }
     const result = analyze(row, markdown, now, metadata, linked.documents);

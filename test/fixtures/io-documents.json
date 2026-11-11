@@ -1,0 +1,206 @@
+[
+  {
+    "row": {
+      "name": "addyosmani/agent-skills",
+      "description": "Production-grade engineering skills for AI coding agents."
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "7f610b8ca80ff9bc7ba7f95f3209430c3481891d",
+        "html_url": "https://github.com/addyosmani/agent-skills/blob/main/README.md"
+      },
+      "markdown": "## Agent Skills\nSkills encode the workflows, quality gates, and best practices that senior engineers use when building software.\n## Agent Personas\nSee docs/agents.md for the decision matrix, orchestration rules, and how personas compose with skills and slash commands.\n## Agent Skills\nSkills encode the workflows, quality gates, and best practices that senior engineers use when building software. These ones are packaged so AI agents follow them consistently across every phase of development.\n## Commands\n/build auto generates the plan and implements every task in a single approved pass — you approve the plan once, then it runs autonomously."
+    },
+    "linkedDocuments": [
+      {
+        "metadata": {
+          "path": "docs/cursor-setup.md",
+          "sha": "0b92d4c2f326734f9a9539ac77b97e506c58c0f0",
+          "html_url": "https://github.com/addyosmani/agent-skills/blob/main/docs/cursor-setup.md"
+        },
+        "markdown": "## How agents should use skills\nRead — full process in .cursor/skills/ /SKILL.md."
+      }
+    ]
+  },
+  {
+    "row": {
+      "name": "we-promise/sure",
+      "description": "The personal finance app for everyone (by everyone)"
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
+        "html_url": "https://github.com/we-promise/sure/blob/main/README.md"
+      },
+      "markdown": "## Sure: The personal finance app for everyone\nSure: The personal finance app for everyone\n## Hosting Sure\nSure is a fully working personal finance app that can be self hosted with Docker. Sure can be accessed from a browser, the macOS desktop app, the mobile app, API clients, and LLM agents. See Sure Clients for an overview."
+    },
+    "linkedDocuments": [
+      {
+        "metadata": {
+          "path": "docs/hosting/docker.md",
+          "sha": "8d82e18b2c8b47554dc487bb15da1b26cc3b474f",
+          "html_url": "https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md"
+        },
+        "markdown": "## What fits in 512 MB\n- Small bank syncs and CSV imports"
+      },
+      {
+        "metadata": {
+          "path": "docs/clients.md",
+          "sha": "8df996e0d932a03895ab8a6334b7953583de378e",
+          "html_url": "https://github.com/we-promise/sure/blob/main/docs/clients.md"
+        },
+        "markdown": "## Native reporting and device continuity\nRead monthly server-calculated totals and the daily spending comparison using GET /api/v1/cashflow."
+      }
+    ]
+  },
+  {
+    "row": {
+      "name": "homeassistant-ai/ha-mcp",
+      "description": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants."
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "f67672e7f470b0654d57c347c9c83a9060ca46f5",
+        "html_url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/README.md"
+      },
+      "markdown": "## HA-MCP — Manage Home Assistant with AI\nConfigure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.\n## 💬 What Can You Do With It?\n| You Say | What Happens | |---------|--------------| | \"Create an automation that turns on the porch light at sunset\" | Creates the automation with proper triggers and actions | | \"Add a weather card to my dashboard\" | Updates your Lovelace dashboard with the new card | | \"The motion sensor automation isn't working, debug it\" | Analyzes execution traces, identifies the issue, suggests fixes | | \"Make my morning routine automation also turn on the coffee maker\" | Reads the existing automation, adds the new action, updates it | | \"Create a script that\n## 🚀 Get Started\nThe recommended way to run ha-mcp is the HA-MCP integration. It installs into Home Assistant through HACS (the built-in Marketplace on Home Assistant 2026.11+), runs the full server in-process, and works on every Home Assistant installation type — Home Assistant OS, Supervised, Container, and Core — with full feature parity. It is the easiest setup in every case: setup asks for an administrator access token and how clients may connect.\n## 🚀 Get Started\n5. Copy the connect URL from the entry's Configure screen (Settings → Devices & Services → “HA-MCP — Manage Home Assistant with AI” → HA-MCP Server → Configure). A notification confirms the server started and points you there."
+    },
+    "linkedDocuments": []
+  },
+  {
+    "row": {
+      "name": "TheAlgorithms/Java",
+      "description": "All Algorithms implemented in Java"
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "91766e523bca050fa0d0424d3899bdd93ae3cbee",
+        "html_url": "https://github.com/TheAlgorithms/Java/blob/master/README.md"
+      },
+      "markdown": "## All algorithms are implemented in Java (for educational purposes)\nThese implementations are intended for learning purposes.\n## All algorithms are implemented in Java (for educational purposes)\nThese implementations are intended for learning purposes. As such, they may be less efficient than the Java standard library."
+    },
+    "linkedDocuments": []
+  },
+  {
+    "row": {
+      "name": "milind-soni/OpenMausBot",
+      "description": "Open-source Grok Bot alternative with a virtual machine that bots can use"
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "f1e61d341a7615ad4caab950adea662eda76ecfe",
+        "html_url": "https://github.com/milind-soni/OpenMausBot/blob/main/README.md"
+      },
+      "markdown": "## OpenMausBot\nThe open-source Grok Bot alternative: your own team of AI bots, in a chat app.\n## 📦 Install a complete team from one Markdown file\nYou can also import the same .md file from disk or paste its public GitHub URL in Teams → Import.\n## 🤝 Share a whole department\nRight-click a department and choose Share department… (or use Templates → Share) to save the whole department as one file: its bots with their instructions, pictures and skills, group chats, routines, shared instructions, Chief of Staff, connection slots and each bot's starter notes (untick them to leave them out).\n## Why\n- Bring your own agents. Bots run on the claude, codex, and grok CLIs installed on your own machine — your existing logins and subscriptions, no new accounts, no proxy in the middle. Point any engine at a custom CLI binary (a versioned build or wrapper) in Settings → Engines."
+    },
+    "linkedDocuments": [
+      {
+        "metadata": {
+          "path": "docs/self-hosting.md",
+          "sha": "f0a680f775d726c510e705d5fc21bb131e68f875",
+          "html_url": "https://github.com/milind-soni/OpenMausBot/blob/main/docs/self-hosting.md"
+        },
+        "markdown": "## The safety floor\nTreat it as a net under saved commands and API-key bots, not as a sandbox."
+      }
+    ]
+  },
+  {
+    "row": {
+      "name": "pingdotgg/t3code",
+      "description": ""
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
+        "html_url": "https://github.com/pingdotgg/t3code/blob/main/README.md"
+      },
+      "markdown": "## T3 Code\nT3 Code is an \"agent harness control surface\".\n## T3 Code\nT3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app (iOS, Android), web app and Electron-based desktop app."
+    },
+    "linkedDocuments": [
+      {
+        "metadata": {
+          "path": "docs/user/outside-agents.md",
+          "sha": "dc9af3ad5167cc4d820e5b951a85252a5b26cf8a",
+          "html_url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/outside-agents.md"
+        },
+        "markdown": "## Outside agents\nThey can read projects and threads, start and message threads, and check which providers and models are available."
+      }
+    ]
+  },
+  {
+    "row": {
+      "name": "Nutlope/hallmark",
+      "description": "Anti-AI-slop design skill for Claude Code, Cursor, and Codex."
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+        "html_url": "https://github.com/Nutlope/hallmark/blob/main/README.md"
+      },
+      "markdown": "## Hallmark\nA design skill for Claude Code, Codex, Cursor and OpenCode that refuses to look AI-generated.\n## How a build runs\nEach page is self-contained HTML and CSS, stamped in its first CSS comment with the decisions it took.\n## New in v2\nPoint it at a URL, a dev server or an app and it captures the screenshots itself.\n## Hallmark\nHallmark holds a hard floor and then gets out of the way. It deals three themes from a catalog of fifty materials, builds the page around what the visitor came to do, and lints the result in a real browser against the tells that read as machine-made: the eyebrow above every heading, tracked-capital labels, one coloured word in a headline, a page of empty frames or nothing but photographs, a hero that misses its screen, an email sign-up at the end of every page, a form that says thanks without sending anything. A fresh-context reviewer gets the last word.\n## How a build runs\n4. scripts/sloplint.mjs --render checks the page at eight widths, then a subagent reviews it with fresh eyes."
+    },
+    "linkedDocuments": []
+  },
+  {
+    "row": {
+      "name": "cloudflare/security-audit-skill",
+      "description": "A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings"
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+        "html_url": "https://github.com/cloudflare/security-audit-skill/blob/main/README.md"
+      },
+      "markdown": "## security-audit\nA coding-agent skill that turns your agent into a security auditor.\n## security-audit\nA coding-agent skill that turns your agent into a security auditor. It orchestrates isolated agents through reconnaissance, coverage-led hunting, candidate validation, structured output, independent record verification, and target-neutral reporting.\n## security-audit\nThe harness grew into a multi-stage, fleet-wide system; this skill is the single-repo starting point it evolved from.\n## What it does\nStructured output -- write confirmed, needsvalidation, and rejected records to findings.json and validate them against report-schema.json."
+    },
+    "linkedDocuments": []
+  },
+  {
+    "row": {
+      "name": "anthropics/knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork"
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
+        "html_url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/README.md"
+      },
+      "markdown": "## Knowledge Work Plugins\nPlugins that turn Claude into a specialist for your role, team, and company.\n## Why Plugins\nPlugins let you go further: tell Claude how you like work done, which tools and data to pull from, how to handle critical workflows, and what slash commands to expose — so your team gets better and more consistent outcomes.\n## Why Plugins\nEach plugin bundles the skills, connectors, slash commands, and sub-agents for a specific job function. Out of the box, they give Claude a strong starting point for helping anyone in that role. The real power comes when you customize them for your company — your tools, your terminology, your processes — so Claude works like it was built for your team."
+    },
+    "linkedDocuments": []
+  },
+  {
+    "row": {
+      "name": "pbakaus/impeccable",
+      "description": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, catch AI slop before it ships."
+    },
+    "excerpted": true,
+    "root": {
+      "metadata": {
+        "path": "README.md",
+        "sha": "1b95cc5b988b9b7687be749d90d978f625b9284a",
+        "html_url": "https://github.com/pbakaus/impeccable/blob/main/README.md"
+      },
+      "markdown": "## Impeccable\nThe design vocabulary for your coding agent.\n## Why\nImpeccable is strongest on interfaces that already exist: point it at a page or a component and iterate.\n## How it works\nRun /impeccable document to capture your existing visual system in DESIGN.md, so changes stay on-brand.\n## Why\n- A reviewer. critique scores the design against usability heuristics and ranks what to fix first. audit checks accessibility, performance, theming, and responsive behavior, with findings ranked P0 (blocking) to P3 (polish)."
+    },
+    "linkedDocuments": []
+  }
+]

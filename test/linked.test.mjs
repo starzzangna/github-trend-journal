@@ -120,6 +120,30 @@ test('README 갱신 실패로 이전 분석기 6을 유지해도 한국어 문�
   assert.doesNotThrow(() => validateUsage(usage));
 });
 
+test('압축 전송 크기와 무관하게 본문 상한을 적용하고 크기 제외는 확인 주기 안에 재시도하지 않는다', async () => {
+  const fetcher = async url => url.startsWith('https://api.github.com') ? rootResponse() : new Response('a'.repeat(250001), { headers: { 'content-length': '100' } });
+  const usage = await fetchUsage(row, { now, fetcher, token: '' });
+  validateUsage(usage);
+  assert.ok(usage.document.links.every(item => item.reason === 'size-limit'));
+  assert.equal(usage.sources.length, 1);
+  assert.equal(isFreshUsage(usage, row, new Date(now.getTime() + 1000), usageVersion), true);
+  assert.equal(isFreshUsage(usage, row, new Date(now.getTime() + 7 * 86400000), usageVersion), false);
+  const checked = await fetchUsage({ ...row, usage }, { now: new Date(now.getTime() + 1000), fetcher, token: '' });
+  assert.equal(checked.analysisReused, true);
+  assert.equal(checked.analyzedAt, usage.analyzedAt);
+});
+
+test('HTTP·시간 초과·형식 실패는 크기 제외와 구분해 저장하고 재조회 대상으로 남긴다', async () => {
+  for (const [response, reason] of [[() => new Response('not found', { status: 404 }), 'http'], [() => new Response(''), 'format'], [() => { throw Error('비공개 오류 상세'); }, 'network']]) {
+    const linked = await fetchLinkedDocuments('[Guide](docs/guide.md)', row.name, metadata, { now, fetcher: response });
+    assert.equal(linked.states[0].reason, reason);
+    if (reason === 'http') assert.equal(linked.states[0].httpStatus, 404);
+    assert.ok(!JSON.stringify(linked).includes('비공개 오류 상세'));
+  }
+  const timed = await fetchLinkedDocuments('[Guide](docs/guide.md)', row.name, metadata, { now, timeoutMs: 10, fetcher: () => new Promise(() => {}) });
+  assert.equal(timed.states[0].reason, 'timeout');
+});
+
 test('배포 보고서에서 미확인이던 여섯 프로젝트를 실제 README·영문판·공식 문서로 설명한다', async () => {
   const docs = JSON.parse(await readFile(new URL('./fixtures/linked-documents.json', import.meta.url), 'utf8'));
   const categories = ['시장 데이터 분석', '웹 개발 지침', 'AI 에이전트 스킬', '코드 보안 점검', '알고리즘 학습', '전통 명반 계산'];

@@ -216,11 +216,25 @@ export function explainProject(row, context, profile) {
       ['출력', ['웹 개발 지침'], /(?:search for relevant guides|retrieve a guide by ID|skills that embed web platform expertise)/i, '웹 개발 가이드', '웹 플랫폼 지침과 호환성 정보를 찾아 제공합니다.'],
       ['입력', ['전통 명반 계산'], /(?:birth.{0,45}(?:date|time)|出生.{0,30}(?:时间|日期))/i, '출생 정보', '전통 명반 계산에 사용할 출생 정보를 전달합니다.'],
       ['출력', ['전통 명반 계산'], /(?:charting engine|charting algorithm|chart.*JSON|命盘)/i, '전통 명반', '전통 규칙에 따른 명반이나 관련 해석 자료를 제공합니다.'],
-      ['출력', ['알고리즘 학습'], /(?:algorithms.*implemented in Java|implementations.*learning purposes)/i, '학습용 Java 구현', '학습용 알고리즘 구현을 제공합니다.']
+      ['출력', ['알고리즘 학습'], /(?:algorithms.*implemented in Java|implementations.*learning purposes)/i, '학습용 Java 구현', '학습용 알고리즘 구현을 제공합니다.'],
+      ['출력', ['AI 에이전트 스킬'], /generates the plan and implements every task/i, '계획·구현 결과', '빌드 명령 경로에서 계획을 생성하고 작업을 구현합니다.'],
+      ['입력', ['개인 재무 관리'], /(?:bank syncs and CSV imports|CSV imports|import.{0,35}(?:transactions|account statements))/i, 'CSV·은행 동기화 자료', '문서에 명시된 CSV 가져오기나 은행 데이터 동기화 경로를 사용합니다.'],
+      ['입력', ['스마트홈 자동화'], /Create an automation that turns on|You Say.{0,25}What Happens/i, 'Home Assistant 작업 요청', 'AI 클라이언트에서 자동화 생성 등 Home Assistant 작업을 요청하는 경로입니다.'],
+      ['출력', ['스마트홈 자동화'], /Creates the automation with proper triggers|Reads the existing automation, adds the new action/i, '자동화 설정', '문서의 작업 예에서는 자동화 설정을 생성하거나 수정합니다.'],
+      ['입력', ['AI 에이전트 운영'], /import the same .md file from disk|paste its public GitHub URL/i, '팀 구성 Markdown', '팀 가져오기 경로에서 Markdown 파일이나 해당 파일의 공개 GitHub 주소를 전달합니다.'],
+      ['출력', ['AI 에이전트 운영'], /save the whole department as one file/i, '팀 공유 파일', '부서 공유 경로에서 봇과 지침 등의 팀 구성을 하나의 파일로 저장합니다.'],
+      ['입력', ['AI 에이전트 운영'], /start and message threads/i, '스레드 작업 요청', '외부 에이전트 연결 경로에서 스레드를 시작하거나 메시지를 보내는 요청을 전달합니다.'],
+      ['출력', ['AI 에이전트 운영'], /read projects and threads/i, '프로젝트·스레드 조회', '외부 에이전트 연결 경로에서 프로젝트와 스레드 정보를 조회합니다.'],
+      ['입력', ['디자인 에이전트 스킬'], /Point it at a URL, a dev server or an app|point it at a page or a component/i, '페이지·컴포넌트 대상', '페이지·개발 서버·앱 또는 컴포넌트를 대상으로 지정하는 경로입니다.'],
+      ['출력', ['디자인 에이전트 스킬'], /Each page is self.contained HTML and CSS/i, 'HTML·CSS 페이지', '페이지 제작 경로에서 독립적인 HTML·CSS 결과물을 만듭니다.'],
+      ['출력', ['디자인 에이전트 스킬'], /writes PRODUCT\.md|capture.{0,80}DESIGN\.md/i, '프로젝트 기준 문서', '프로젝트의 제품·디자인 기준을 문서로 기록하는 경로입니다.'],
+      ['입력', ['AI 에이전트 스킬'], /single.repo starting point/i, '단일 저장소 감사 대상', '문서에서 설명한 단일 저장소 보안 감사 경로의 대상입니다.'],
+      ['출력', ['AI 에이전트 스킬'], /write confirmed.{0,100}findings\.json|derive REPORT\.md/i, '구조화된 감사 결과', '보안 감사 경로에서 구조화된 발견 항목이나 Markdown 보고서를 작성합니다.'],
+      ['입력', ['플러그인 모음'], /tell Claude how you like work done/i, '업무 목표·절차', '플러그인 설정·사용 경로에서 업무 목표와 작업 절차를 전달합니다.']
     ].flatMap(([kind, categories, pattern, title, body]) => {
       if (role !== kind || !categories.includes(profile?.category)) return [];
       const id = context.select(pattern, { includeExamples: true, headings: true });
-      return id ? [claim(title, body, id, { exampleOnly: lookup(id).kind === 'example' })] : [];
+      return id ? [claim(title, body, id, { exampleOnly: lookup(id).kind === 'example' || ['Home Assistant 작업 요청', '자동화 설정'].includes(title) })] : [];
     });
     return [...matched, ...extra].slice(0, 3);
   }
@@ -246,6 +260,6 @@ export function explainProject(row, context, profile) {
     inputs: roles('입력', /^(?:inputs?|입력)(?:\b|\s|$)/i, inputRules, inputCategories),
     outputs: roles('출력', /^(?:outputs?|출력|결과)(?:\b|\s|$)/i, outputRules, outputCategories),
     conditions,
-    limitations: '문서 문장과 사용 예에서 확인한 범위입니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.'
+    limitations: '입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.'
   };
 }

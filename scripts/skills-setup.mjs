@@ -1,3 +1,4 @@
+import { explainJavaSetup, assessJavaSetup, validateJavaSetup } from './java-setup.mjs';
 // 설치 안내와 실행 조건을 문서에서만 추출합니다. 문서의 명령·스킬은 실행하지 않습니다.
 const repository = 'anthropics/skills';
 const installation = {
@@ -23,6 +24,7 @@ function extract(rule, context, candidates) {
   return { ...claim, scope: claim.scope || 'representative-runtime', kind: 'documented', exampleOnly: true, evidenceIds: [...new Set(ids)] };
 }
 export function explainSkillsSetup(row, context) {
+  if (row.name === 'TheAlgorithms/Java') return explainJavaSetup(context);
   if (row.name !== repository) return null;
   return {
     installation: extract(installation, context, context.documents.filter(item => item.sourceId === 'readme' && /Claude Code/i.test(item.scope))),
@@ -39,6 +41,7 @@ export function installationCondition(route) {
   return { ...route, scope: 'optional', path: '모음 공통 · Claude Code 설치 경로' };
 }
 export function assessSkillsSetup(usage) {
+  if (usage.version >= 14 && usage.sources?.[0]?.repository === 'TheAlgorithms/Java') return assessJavaSetup(usage);
   if (usage.version < 13 || usage.sources?.[0]?.repository !== repository) return null;
   const setup = usage.article?.project?.setup;
   const missing = runtimeSpecs.filter(spec => !spec.conditions.every(rule => setup?.runtimes?.find(item => item.representativeId === spec.representativeId)?.conditions.some(item => item.id === rule.id)));
@@ -46,6 +49,7 @@ export function assessSkillsSetup(usage) {
 }
 export function validateSkillsSetup(usage, row) {
   if (usage.version < 13) return;
+  if (usage.version >= 14 && row.name === 'TheAlgorithms/Java') return validateJavaSetup(usage);
   const setup = usage.article?.project?.setup;
   if (row.name !== repository) { if (setup !== null) throw Error('스킬 설치 범위 오류'); return; }
   if (!setup || !Array.isArray(setup.runtimes) || setup.runtimes.length !== runtimeSpecs.length) throw Error('스킬 실행 조건 목록 오류');

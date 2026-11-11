@@ -1,3 +1,4 @@
+import { javaBuildPaths } from './java-setup.mjs';
 import { validateSkillsSetup } from './skills-setup.mjs';
 import { representativeSpecs, validateRepresentatives, validateCollectionScope } from './representatives.mjs';
 import { assessQuality } from './evidence.mjs';
@@ -11,14 +12,14 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   validateAiNote(row, usage);
   if (!usage || [1, 2].includes(usage.version)) return;
   const fail = message => { throw new Error(`분석 데이터 오류: ${message}`); };
-  if (![3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
+  if (![3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
   if (!['ready', 'unavailable'].includes(usage.status)) fail('처리 상태');
   if (!['available', 'unavailable'].includes(usage.document?.status)) fail('문서 조회 상태');
   if (!['complete', 'partial', 'unavailable'].includes(usage.quality?.status)) fail('분석 품질 상태');
   if (!Array.isArray(usage.quality.missing) || usage.quality.missing.some(item => typeof item !== 'string')) fail('미확인 항목');
   if (!Number.isFinite(Date.parse(usage.document.checkedAt))) fail('문서 확인 시각');
   if (!Array.isArray(usage.sources) || !Array.isArray(usage.evidence)) fail('출처·근거 목록');
-  if (usage.document.links !== undefined && (!Array.isArray(usage.document.links) || usage.document.links.length > (usage.version >= 9 ? 4 : 2) || new Set(usage.document.links.map(item => item.path)).size !== usage.document.links.length || usage.document.links.some(item => typeof item.path !== 'string' || (!/\.md$/i.test(item.path) && !(usage.version >= 9 && representativeSpecs.some(spec => spec.repository === row.name && spec.path === item.path))) || !['available', 'unavailable'].includes(item.status) || !Number.isFinite(Date.parse(item.checkedAt)) || (item.status === 'available' && !usage.sources.some(source => source.path === item.path))))) fail('추가 문서 조회 상태');
+  if (usage.document.links !== undefined && (!Array.isArray(usage.document.links) || usage.document.links.length > (usage.version >= 14 && row.name === 'TheAlgorithms/Java' ? 5 : usage.version >= 9 ? 4 : 2) || new Set(usage.document.links.map(item => item.path)).size !== usage.document.links.length || usage.document.links.some(item => typeof item.path !== 'string' || (!/\.md$/i.test(item.path) && !(usage.version >= 14 && row.name === 'TheAlgorithms/Java' && javaBuildPaths.includes(item.path)) && !(usage.version >= 9 && representativeSpecs.some(spec => spec.repository === row.name && spec.path === item.path))) || !['available', 'unavailable'].includes(item.status) || !Number.isFinite(Date.parse(item.checkedAt)) || (item.status === 'available' && !usage.sources.some(source => source.path === item.path))))) fail('추가 문서 조회 상태');
   const sources = new Map();
   for (const item of usage.document.links || []) {
     if (item.reason !== undefined && (item.status !== 'unavailable' || !['http', 'format', 'size-limit', 'project-size-limit', 'timeout', 'network'].includes(item.reason))) fail('추가 문서 제외·실패 사유');

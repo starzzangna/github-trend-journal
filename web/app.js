@@ -46,9 +46,13 @@ function representativeMarkup(project, usage, name, prefix = '') {
 }
 function setupMarkup(setup, usage, name, prefix = '설치·실행 · ') {
   if (!setup) return '';
+  const isBuild = 'build' in setup;
+  const common = isBuild ? setup.build : setup.installation;
+  const action = isBuild ? '빌드·테스트' : '설치';
+  const unit = isBuild ? '알고리즘' : '스킬';
   const render = claim => `<div class="project-claim"><strong>${escape(claim.title)}</strong><p>${escape(claim.body)}</p>${evidenceMarkup(usage, name, { ...claim, title: prefix + claim.title })}</div>`;
-  const labels = { required: '해당 작업 경로의 요구사항', optional: '선택 경로의 추가 조건', 'documented-environment': '문서가 전제한 환경' };
-  return `<section class="representative-examples" aria-label="모음 설치와 대표 실행 조건"><h5>모음 공통의 설치 경로</h5><p class="usage-note">Claude Code 선택 경로와 대표 스킬의 개별 실행 조건을 구분합니다. 설치·실행을 검증한 결과는 아닙니다.</p>${setup.installation ? render(setup.installation) : '<p class="unconfirmed">공통 설치 경로를 확인할 문서 근거가 부족합니다.</p>'}<p class="usage-note">설치 근거: ${setup.installation ? '확인' : '부족'} · 대표 실행 조건: ${numeric(usage.quality?.setup?.runtimeAvailable)}/${numeric(usage.quality?.setup?.runtimeExpected)}개 스킬 확인</p><h5>대표 스킬별 실행 조건</h5>${setup.runtimes.map(item => `<section class="note-section"><h5>${escape(item.title)}</h5><p class="usage-note">실행 조건 근거 ${item.conditions.length}/${numeric(item.expected)}개 확인</p>${item.conditions.length ? item.conditions.map(claim => `<p class="usage-note">${escape(labels[claim.applicability] || '')} · ${escape(claim.path)}</p>${render(claim)}`).join('') : '<p class="unconfirmed">실행 조건을 확인할 근거가 부족합니다.</p>'}</section>`).join('')}<p class="usage-note">한 스킬의 Python·OCR·재계산 조건을 모든 스킬의 필수 조건으로 확대하지 않습니다.</p></section>`;
+  const labels = { required: '해당 작업 경로의 요구사항', optional: '선택 경로의 추가 조건', 'documented-environment': '문서가 전제한 환경', 'documented-behavior': '문서가 밝힌 동작 조건' };
+  return `<section class="representative-examples" aria-label="공통 ${action}와 대표 실행 조건"><h5>${isBuild ? '저장소 공통 빌드·테스트 절차' : '모음 공통의 설치 경로'}</h5><p class="usage-note">${isBuild ? '공식 CI·Maven 설정과 개별 알고리즘의 입력·동작 조건을 구분합니다.' : 'Claude Code 선택 경로와 대표 스킬의 개별 실행 조건을 구분합니다.'} ${action}·실행을 검증한 결과는 아닙니다.</p>${common ? render(common) : `<p class="unconfirmed">공통 ${action} 경로를 확인할 문서 근거가 부족합니다.</p>`}<p class="usage-note">${action} 근거: ${common ? '확인' : '부족'} · 대표 실행 조건: ${numeric(usage.quality?.setup?.runtimeAvailable)}/${numeric(usage.quality?.setup?.runtimeExpected)}개 ${unit} 확인</p><h5>대표 ${unit}별 실행 조건</h5>${setup.runtimes.map(item => `<section class="note-section"><h5>${escape(item.title)}</h5><p class="usage-note">실행 조건 근거 ${item.conditions.length}/${numeric(item.expected)}개 확인</p>${item.conditions.length ? item.conditions.map(claim => `<p class="usage-note">${escape(labels[claim.applicability] || '')} · ${escape(claim.path)}</p>${render(claim)}`).join('') : '<p class="unconfirmed">실행 조건을 확인할 근거가 부족합니다.</p>'}</section>`).join('')}<p class="usage-note">${isBuild ? '이진 탐색의 정렬 전제와 버블 정렬의 원본 변경을 저장소 전체의 필수 조건으로 합치지 않습니다.' : '한 스킬의 Python·OCR·재계산 조건을 모든 스킬의 필수 조건으로 확대하지 않습니다.'}</p></section>`;
 }
 function collectionScopeMarkup(project, usage, name) {
   if (project?.ioScope?.kind !== 'item-specific') return '';
@@ -139,9 +143,9 @@ function synthesisMarkup(report) {
     const row = report.rows.find(row => row.name === name);
     return `<details class="shared-pattern"><summary>${escape(name)} · 대표 항목 ${examples.length}개${freshness(row?.usage).key === 'old' ? ' · 오래된 분석' : ''}</summary>${representativeMarkup({ examples }, row?.usage || {}, name, '종합 · ')}</details>`;
   }).join('')}</section>` : '';
-  const setupSummary = synthesis.version >= 4 && synthesis.setupReviews?.length ? `<section aria-label="설치 경로와 실행 조건 종합"><h4>설치 경로와 실행 조건</h4><p class="usage-note">설치·실행 조건을 별도 분석한 모음 ${synthesis.setupReviews.length}개 기준입니다.</p><p>모음 설치 경로 확인 ${synthesis.coverage.collectionInstallations}개 프로젝트 · 대표 실행 조건 확인 ${synthesis.coverage.runtimeGroups}개 스킬 · 근거 부족 ${synthesis.coverage.runtimeMissing}개 스킬</p><p class="usage-note">개별 실행 조건 ${synthesis.coverage.runtimeConditions}개는 모음 전체의 필수 조건 수에 합산하지 않습니다.</p>${(synthesis.setupReviews || []).map(item => {
+  const setupSummary = synthesis.version >= 4 && synthesis.setupReviews?.length ? `<section aria-label="설치 경로와 실행 조건 종합"><h4>설치·빌드와 실행 조건</h4><p class="usage-note">설치·실행 조건을 별도 분석한 모음 ${synthesis.setupReviews.length}개 기준입니다.</p><p>모음 설치 경로 확인 ${synthesis.coverage.collectionInstallations}개 프로젝트 · 대표 실행 조건 확인 ${synthesis.coverage.runtimeGroups}개 항목 · 근거 부족 ${synthesis.coverage.runtimeMissing}개 항목</p>${synthesis.coverage.collectionBuilds ? `<p>공통 빌드·테스트 경로 확인 ${synthesis.coverage.collectionBuilds}개 프로젝트</p>` : ''}<p class="usage-note">개별 실행 조건 ${synthesis.coverage.runtimeConditions}개는 모음 전체의 필수 조건 수에 합산하지 않습니다.</p>${(synthesis.setupReviews || []).map(item => {
     const row = report.rows.find(row => row.name === item.name);
-    return `<details class="shared-pattern"><summary>${escape(item.name)} · 모음 설치와 대표 실행 조건${freshness(row?.usage).key === 'old' ? ' · 오래된 분석' : ''}</summary>${setupMarkup(item, row?.usage || {}, item.name, '종합 · ')}</details>`;
+    return `<details class="shared-pattern"><summary>${escape(item.name)} · ${'build' in item ? '공통 빌드·테스트' : '모음 설치'}와 대표 실행 조건${freshness(row?.usage).key === 'old' ? ' · 오래된 분석' : ''}</summary>${setupMarkup(item, row?.usage || {}, item.name, '종합 · ')}</details>`;
   }).join('')}</section>` : '';
   const scopes = { required: '해당 경로 요구사항', optional: '선택 경로', 'not-required': '필수 아님', mentioned: '문서상 언급' };
   const proof = project => {

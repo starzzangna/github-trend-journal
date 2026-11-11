@@ -1,3 +1,4 @@
+import { readBuildConfiguration, javaBuildStart, javaBuildCondition } from './java-setup.mjs';
 import { explainSkillsSetup, installationStart, installationCondition } from './skills-setup.mjs';
 // README는 분석용 입력으로만 취급합니다. 명령을 실행하거나 문서의 지시를 따르지 않습니다.
 import { buildAnalysis } from './analysis.mjs';
@@ -9,7 +10,7 @@ import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from '.
 import { addKoreanPresentation } from './korean.mjs';
 import { fetchLinkedDocuments } from './linked.mjs';
 import { readJavaDocs, explainRepresentatives, collectionScope } from './representatives.mjs';
-export const usageVersion = 13;
+export const usageVersion = 14;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
@@ -34,7 +35,7 @@ export function readSections(markdown) {
 
 export function analyzeUsage(row, markdown, now = new Date(), metadata = {}, linkedDocuments = []) {
   const sections = readSections(markdown);
-  const context = createEvidenceBundle(row, [{ sections, metadata }, ...linkedDocuments.map(document => ({ sections: document.metadata.format === 'javadoc' ? readJavaDocs(document.markdown) : readSections(document.markdown), metadata: document.metadata }))], now);
+  const context = createEvidenceBundle(row, [{ sections, metadata }, ...linkedDocuments.map(document => ({ sections: document.metadata.format === 'build-config' ? readBuildConfiguration(document.markdown, document.metadata.path) : document.metadata.format === 'javadoc' ? readJavaDocs(document.markdown) : readSections(document.markdown), metadata: document.metadata }))], now);
   const { profile, classification } = classifyProject(row, context);
   const selected = sections.findIndex(s => /quick\s*start|getting started|get started|빠른 시작|시작하기|사용법|安装|快速开始/i.test(s.title));
   const fallback = sections.findIndex(s => /(?:^|\s)(?:installation|install|setup|usage|how to use|설치|사용 방법)(?:\b|\s|$)/i.test(s.title));
@@ -79,6 +80,12 @@ export function analyzeUsage(row, markdown, now = new Date(), metadata = {}, lin
   project.examples = explainRepresentatives(row, context);
   project.ioScope = collectionScope(row, context, project);
   project.setup = explainSkillsSetup(row, context);
+  if (project.setup?.build) {
+    result.start = javaBuildStart(project.setup.build);
+    result.article = buildAnalysis(row, profile, result.start, context);
+    result.article.project = project;
+    project.conditions.push(javaBuildCondition(project.setup.build));
+  }
   if (project.setup?.installation) {
     result.start = installationStart(project.setup.installation);
     result.article = buildAnalysis(row, profile, result.start, context);

@@ -12,6 +12,7 @@ const representativeDocs = JSON.parse(await readFile(new URL('./fixtures/represe
 const collectionDocs = JSON.parse(await readFile(new URL('./fixtures/collection-documents.json', import.meta.url)));
 const skillDocs = JSON.parse(await readFile(new URL('./fixtures/skill-representatives.json', import.meta.url)));
 const setupFixture = JSON.parse(await readFile(new URL('./fixtures/skills-setup.json', import.meta.url)));
+const javaSetupFixture = JSON.parse(await readFile(new URL('./fixtures/java-setup.json', import.meta.url)));
 import { skillExamples } from '../scripts/skill-examples.mjs';
 const now = new Date('2026-11-11T00:23:00Z');
 const row = { name: 'example/voice', description: 'voice cloning', language: 'Python', stars: 10, periodStars: 2 };
@@ -33,6 +34,27 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
 
+test('Java 공통 빌드·테스트와 대표 알고리즘별 조건을 구분하고 XML 근거를 안전하게 표시한다', async () => {
+  const doc = javaSetupFixture;
+  const root = doc.documents.find(item => item.path === 'README.md');
+  const linked = doc.documents.filter(item => /\.java$|\.xml$|\.yml$/.test(item.path)).map(item => ({ markdown: item.markdown, metadata: { path: item.path, sha: item.path, ...(item.path.endsWith('.java') ? { representativeId: item.path.includes('BinarySearch') ? 'java-binary-search' : 'java-bubble-sort', format: 'javadoc' } : { setupOnly: true, format: 'build-config' }) } }));
+  const usage = analyzeUsage({ name: doc.repository }, root.markdown, now, { path: 'README.md', sha: 'root' }, linked);
+  const report = createReport('daily', [{ ...row, name: doc.repository, usage }], now);
+  Object.assign(report, synthesizeReport(report, 'daily', now));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: report } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /분석 품질 · 기본 항목 충족/);
+  assert.match(html, /저장소 공통 빌드·테스트 절차/);
+  assert.match(html, /빌드·테스트 근거: 확인 · 대표 실행 조건: 2\/2개 알고리즘 확인/);
+  assert.match(html, /공통 빌드·테스트 경로 확인 1개 프로젝트/);
+  assert.match(html, /오름차순 정렬 전제/);
+  assert.match(html, /제자리 정렬과 원본 변경/);
+  assert.match(html, /&lt;maven.compiler.source&gt;21/);
+  assert.doesNotMatch(html, /<maven.compiler.source>/);
+  assert.doesNotMatch(html, /Claude Code 선택 경로/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+});
+
 test('공통 설치 절차와 개별 런타임 조건을 구분하고 품질·종합에 반영한다', async () => {
   const doc = setupFixture;
   const linked = doc.documents.map(item => ({ markdown: item.markdown, metadata: { path: item.path, sha: item.path, representativeId: item.path.includes('/pdf/') ? 'skill-pdf-text' : 'skill-xlsx-edit' } }));
@@ -42,7 +64,7 @@ test('공통 설치 절차와 개별 런타임 조건을 구분하고 품질·�
   const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { weekly: report } }) }), { hash: '#weekly' });
   const html = page.container.innerHTML;
   assert.match(html, /분석 품질 · 기본 항목 충족/);
-  assert.match(html, /모음 설치 경로 확인 1개 프로젝트 · 대표 실행 조건 확인 2개 스킬/);
+  assert.match(html, /모음 설치 경로 확인 1개 프로젝트 · 대표 실행 조건 확인 2개 항목/);
   assert.match(html, /설치 근거: 확인 · 대표 실행 조건: 2\/2개 스킬 확인/);
   assert.match(html, /모음 공통의 설치 경로/);
   assert.match(html, /문서가 전제한 환경/);

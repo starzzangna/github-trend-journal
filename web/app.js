@@ -40,6 +40,10 @@ function evidenceMarkup(usage, name, claim) {
     return `<blockquote>${escape(item.excerpt)}</blockquote><a class="finding-source" href="${escape(sourceUrl(name, source))}" target="_blank" rel="noopener noreferrer" aria-label="${escape(name)} · ${escape(item.section)} 원문, 새 탭">원문 근거 · ${escape(source?.path || 'README')} / ${escape(item.section)} ↗</a><p class="usage-note">절 시작 ${numeric(item.line)}행${claim.exampleOnly || item.kind === 'example' ? ' · 문서의 사용 예이며 실행 검증은 포함하지 않습니다.' : ''}</p>`;
   }).join('')}</div></details>`;
 }
+function representativeMarkup(project, usage, name) {
+  if (!project?.examples?.length) return '';
+  return `<section class="representative-examples" aria-label="대표 항목 사용 예"><h5>대표 항목 사용 예</h5><p class="usage-note">각 항목의 공식 문서에 따른 설명입니다. 모음 전체의 공통 입출력이 아니며 실행은 검증하지 않았습니다.</p>${project.examples.map(item => `<section class="note-section"><h5>${escape(item.title)}</h5>${['scenario', 'input', 'output', 'caution'].map(field => `<div class="project-claim"><strong>${escape(item[field].title)}</strong><p>${escape(item[field].body)}</p>${evidenceMarkup(usage, name, { ...item[field], title: item.title + ' · ' + item[field].title })}</div>`).join('')}</section>`).join('')}</section>`;
+}
 function claimList(items, usage, name, missing, prefix = '') {
   return items?.length ? items.map(item => `<div class="project-claim"><strong>${escape(item.title)}</strong><p>${escape(item.summaryKo || (usage.version >= 6 ? item.body : '한국어 요약을 갱신해야 합니다. 원문 근거를 확인하세요.'))}</p>${evidenceMarkup(usage, name, { ...item, title: prefix + item.title })}</div>`).join('') : `<p class="unconfirmed">${missing}</p>`;
 }
@@ -82,15 +86,16 @@ function usageMarkup(row) {
   const start = usage.start;
   return `<section class="usage" aria-label="${escape(row.name)} 활용 분석"><div class="usage-title"><span>검토 노트</span><span>${escape(usage.category)}</span></div>${badges}
     ${age.note ? `<p class="freshness-note freshness-note--${age.key}"><strong>${age.label}</strong> · ${escape(age.note)}</p>` : ''}
-    ${usage.document?.links?.some(item => item.status === 'unavailable' && item.reason !== 'size-limit') ? `<p class="usage-note">추가 문서 ${usage.document.links.filter(item => item.status === 'unavailable' && item.reason !== 'size-limit').length}개를 확인하지 못했습니다. 읽은 문서의 근거만 표시하며 다음 수집에서 다시 시도합니다.</p>` : ''}
-    ${usage.document?.links?.some(item => item.reason === 'size-limit') ? '<p class="usage-note">추가 문서가 파일당 250,000바이트 상한을 넘어 분석에서 제외됐습니다. 읽은 문서의 근거만 표시하며 문서 확인 주기에 다시 확인합니다.</p>' : ''}
+    ${usage.document?.links?.some(item => item.status === 'unavailable' && !['size-limit', 'project-size-limit'].includes(item.reason)) ? `<p class="usage-note">추가 문서 ${usage.document.links.filter(item => item.status === 'unavailable' && !['size-limit', 'project-size-limit'].includes(item.reason)).length}개를 확인하지 못했습니다. 읽은 문서의 근거만 표시하며 다음 수집에서 다시 시도합니다.</p>` : ''}
+    ${usage.document?.links?.some(item => ['size-limit', 'project-size-limit'].includes(item.reason)) ? '<p class="usage-note">추가 문서가 파일당 250,000바이트 또는 프로젝트당 750,000바이트 상한을 넘어 분석에서 제외됐습니다. 읽은 문서의 근거만 표시하며 문서 확인 주기에 다시 확인합니다.</p>' : ''}
     <section class="core-summary" aria-label="핵심 동작"><h5>핵심 동작</h5>${claimList(article?.core, usage, row.name, '구체적인 핵심 동작을 한국어로 설명할 문서 근거가 부족합니다.', '핵심 동작 · ')}</section>
     <div class="decision"><h5>도입 시 주의점</h5>${project?.conditions?.length ? claimList(project.conditions.slice(0, 2), usage, row.name, '', '주의점 · ') : ''}<p>${escape(usage.version >= 6 ? article.verdict : '한국어 검토 내용을 갱신해야 합니다. 원문 근거를 확인하세요.')}</p>${article?.verdictEvidenceIds?.length ? evidenceMarkup(usage, row.name, { title: '도입 시 주의점', evidenceIds: article.verdictEvidenceIds }) : ''}<span class="usage-note">문서에 따른 규칙 요약과 검토 제안이며 실제 실행을 검증한 추천은 아닙니다.</span></div>
     ${aiMarkup(row, usage)}
     ${missing}
-    ${project ? `<div class="project-io"><section><h5>입력</h5>${claimList(project.inputs, usage, row.name, '입력을 확인할 문장·사용 예가 부족합니다.')}</section><section><h5>출력</h5>${claimList(project.outputs, usage, row.name, '출력을 확인할 문장·사용 예가 부족합니다.')}</section></div>` : '<p class="usage-note">이전 형식의 분석입니다. 문서 재확인 후 한국어 설명과 근거를 보완합니다.</p>'}
+    ${representativeMarkup(project, usage, row.name)}
+    ${project ? `<div class="project-io"><section><h5>${project.examples?.length ? '모음 전체의 입력' : '입력'}</h5>${claimList(project.inputs, usage, row.name, project.examples?.length ? '모음 전체에 공통인 입력은 정하지 않았습니다. 대표 항목별 입력을 참고하세요.' : '입력을 확인할 문장·사용 예가 부족합니다.')}</section><section><h5>${project.examples?.length ? '모음 전체의 출력' : '출력'}</h5>${claimList(project.outputs, usage, row.name, project.examples?.length ? '모음 전체에 공통인 출력은 정하지 않았습니다. 대표 항목별 출력을 참고하세요.' : '출력을 확인할 문장·사용 예가 부족합니다.')}</section></div>` : '<p class="usage-note">이전 형식의 분석입니다. 문서 재확인 후 한국어 설명과 근거를 보완합니다.</p>'}
     <details class="analysis-details"><summary>${escape(row.name)} · 도입 조건과 추가 분석</summary><div class="usage-content">
-      ${usage.document?.links?.length ? `<details class="evidence-note"><summary>추가 문서 조회 상태 보기</summary><ul>${usage.document.links.map(item => `<li>${escape(item.path)} · ${item.status === 'available' ? '확인 완료' : item.reason === 'size-limit' ? '분석 제외: 250,000바이트 상한 초과' : item.reason === 'http' ? `HTTP ${numeric(item.httpStatus)} 응답, 다음 수집에서 재시도` : item.reason === 'timeout' ? '시간 초과, 다음 수집에서 재시도' : '확인 실패, 다음 수집에서 재시도'}</li>`).join('')}</ul></details>` : ''}
+      ${usage.document?.links?.length ? `<details class="evidence-note"><summary>추가 문서 조회 상태 보기</summary><ul>${usage.document.links.map(item => `<li>${escape(item.path)} · ${item.status === 'available' ? '확인 완료' : item.reason === 'size-limit' ? '분석 제외: 250,000바이트 상한 초과' : item.reason === 'project-size-limit' ? '분석 제외: 프로젝트 문서 크기 상한 초과' : item.reason === 'http' ? `HTTP ${numeric(item.httpStatus)} 응답, 다음 수집에서 재시도` : item.reason === 'timeout' ? '시간 초과, 다음 수집에서 재시도' : '확인 실패, 다음 수집에서 재시도'}</li>`).join('')}</ul></details>` : ''}
       <section class="note-section"><h5>도입 조건</h5>${claimList(project?.conditions || article?.conditions, usage, row.name, '도입 조건을 확인하지 못했습니다. 별도 조건이 없다는 뜻은 아닙니다.')}</section>
       ${project?.problem ? `<section class="note-section"><h5>해결 문제의 원문 근거</h5>${evidenceMarkup(usage, row.name, project.problem)}</section>` : ''}
       ${article?.findings?.length ? `<section class="note-section"><h5>핵심 기능과 활용 의미</h5>${claimList(article.findings, usage, row.name, '')}</section>` : ''}

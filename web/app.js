@@ -82,7 +82,7 @@ function usageMarkup(row) {
   const start = usage.start;
   return `<section class="usage" aria-label="${escape(row.name)} 활용 분석"><div class="usage-title"><span>검토 노트</span><span>${escape(usage.category)}</span></div>${badges}
     ${age.note ? `<p class="freshness-note freshness-note--${age.key}"><strong>${age.label}</strong> · ${escape(age.note)}</p>` : ''}
-    <div class="decision"><h5>도입 전 판단</h5><p>${escape(article?.verdict || usage.purpose || '문서 근거가 부족해 도입 판단을 보류했습니다.')}</p><span class="usage-note">문서에 따른 검토이며 실제 성능을 검증한 추천은 아닙니다.</span></div>
+    <div class="decision"><h5>도입 전 판단</h5><p>${escape(article?.verdict || usage.purpose || '문서 근거가 부족해 도입 판단을 보류했습니다.')}</p>${article?.verdictEvidenceIds?.length ? evidenceMarkup(usage, row.name, { title: '도입 전 판단', evidenceIds: article.verdictEvidenceIds }) : ''}<span class="usage-note">문서에 따른 검토이며 실제 성능을 검증한 추천은 아닙니다.</span></div>
     ${aiMarkup(row, usage)}
     ${missing}
     ${project ? `<div class="problem-summary"><h5>해결하는 문제</h5>${project.problem ? `<p>${escape(project.problem.body)}</p>${evidenceMarkup(usage, row.name, project.problem)}` : '<p class="unconfirmed">문서에서 해결 문제를 충분히 확인하지 못했습니다.</p>'}</div><div class="project-io"><section><h5>입력</h5>${claimList(project.inputs, usage, row.name, '입력을 확인할 문장·사용 예가 부족합니다.')}</section><section><h5>출력</h5>${claimList(project.outputs, usage, row.name, '출력을 확인할 문장·사용 예가 부족합니다.')}</section></div>` : `<p>${escape(usage.purpose)}</p><p class="usage-note">이전 형식의 분석입니다. 문서 재확인 후 상세 근거를 보완합니다.</p>`}

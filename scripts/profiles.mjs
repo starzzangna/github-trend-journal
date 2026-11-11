@@ -11,9 +11,9 @@ const originalProfiles = [
   { pattern: /context.compress|context window optimi|上下文压缩|컨텍스트 압축/i, category: 'AI 컨텍스트 관리', purpose: 'AI 작업 중 전달하는 문맥의 크기와 유지 방식을 관리하는 도구 유형입니다.', audience: '긴 AI 코딩 세션이나 많은 도구 출력을 다루는 개발자', scenario: '같은 작업을 적용 전후로 수행해 문맥 사용량과 이전 정보 유지 여부를 비교해 볼 수 있습니다.' },
   { pattern: /gym.*tracker|workout.*track|fitness.*track/i, category: '운동 기록', purpose: '운동 계획과 수행 기록을 관리하는 애플리케이션 유형입니다.', audience: '운동 기록을 직접 관리하려는 사용자', scenario: '운동 루틴 하나와 수행 기록을 입력하고 기록 조회 흐름을 확인해 볼 수 있습니다.' },
   { pattern: /executables porting|port.*(?:linux and windows|ps5)/i, category: '실행 파일 이식', purpose: '실행 파일을 다른 실행 환경으로 옮기는 작업을 다루는 도구 유형입니다.', audience: '플랫폼 호환성과 실행 환경을 연구하는 개발자', scenario: '지원하는 입력 형식과 대상 플랫폼을 먼저 확인한 뒤 작은 예제로 변환·실행 과정을 검토할 수 있습니다.' },
-  { pattern: /plugins? (?:directory|for claude code)|directory of.*plugins|marketplace.*plugins|플러그인 모음/i, category: '플러그인 모음', purpose: '기존 도구에 추가할 플러그인을 찾아 설치하는 데 사용하는 프로젝트 유형입니다.', audience: '지원 도구의 기능을 확장하려는 사용자', scenario: '현재 사용하는 도구와 호환되는 플러그인 하나를 골라 설치하고 실제 작업에서 기능을 확인해 볼 수 있습니다.' },
+  { pattern: /plugins? (?:directory|for claude code)|directory of.*plugins|marketplace.*plugins|each plugin bundles|plugins that turn Claude|플러그인 모음/i, category: '플러그인 모음', purpose: '기존 도구에 추가할 플러그인을 찾아 설치하는 데 사용하는 프로젝트 유형입니다.', audience: '지원 도구의 기능을 확장하려는 사용자', scenario: '현재 사용하는 도구와 호환되는 플러그인 하나를 골라 설치하고 실제 작업에서 기능을 확인해 볼 수 있습니다.' },
   { pattern: /agentic skills|agent skill|skills.*(?:engineer|claude|codex)|skills library|스킬 모음/i, category: 'AI 에이전트 스킬', purpose: 'AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.', audience: 'AI 코딩·연구 에이전트를 사용하는 개발자·연구자', scenario: '필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.' },
-  { pattern: /agent harness|agent.*orchestrat|coordinate.*(?:agent|workflow)|manage agents|multi.agent/i, category: 'AI 에이전트 운영', purpose: 'AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.', audience: '여러 AI 작업을 연결하거나 관리하는 개발자', scenario: '작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다.' }
+  { pattern: /agent harness|agent.*orchestrat|coordinate.*(?:agent|workflow)|manage agents|team of AI bots|bots run on|multi.agent/i, category: 'AI 에이전트 운영', purpose: 'AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.', audience: '여러 AI 작업을 연결하거나 관리하는 개발자', scenario: '작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다.' }
 ];
 
 

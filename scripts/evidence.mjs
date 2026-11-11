@@ -29,10 +29,10 @@ export function createEvidence(row, sections, now, metadata = {}) {
     if (!evidence.some(item => item.id === id)) evidence.push({ id, sourceId: source.id, section: document.title, line: document.line, kind, excerpt });
     return id;
   }
-  function select(pattern, { candidates = documents, allowNegative = false, includeExamples = false, headings = false, predicate = () => true } = {}) {
+  function select(pattern, { candidates = documents, allowNegative = false, includeExamples = false, headings = false, wholeParagraph = false, predicate = () => true } = {}) {
     for (const document of candidates) {
       const paragraphs = document.text.split(/\n\s*\n/).flatMap(text => text.split(/\n(?=\s*(?:[-*]\s|\d+\.\s))/)).map(text => text.replace(/\s+/g, ' ').trim());
-      const units = paragraphs.flatMap(text => text.split(/(?<=[.!?。])\s+/)).map(text => ({ text, kind: 'prose' }));
+      const units = paragraphs.flatMap(text => wholeParagraph ? [text] : text.split(/(?<=[.!?。])\s+/)).map(text => ({ text, kind: 'prose' }));
       if (headings && !negative.test(document.text)) units.push({ text: document.heading, kind: 'heading' });
       if (includeExamples && /usage|example|quick.?start|getting started|使用|示例|사용|예시|시작/i.test(document.scope)) {
         for (const block of document.examples) for (const text of block.split('\n')) units.push({ text: text.trim(), kind: 'example' });
@@ -40,7 +40,8 @@ export function createEvidence(row, sections, now, metadata = {}) {
       for (const unit of units) {
         const match = unit.text.match(pattern);
         if (!match || (!allowNegative && negative.test(unit.text)) || !predicate(unit.text, document, unit.kind)) continue;
-        const begin = Math.max(0, match.index - 140);
+        const offset = match.index < 420 ? 0 : Math.max(0, match.index - 140);
+        const begin = offset ? unit.text.indexOf(' ', offset) + 1 || offset : 0;
         const excerpt = unit.text.length <= 560 ? unit.text : unit.text.slice(begin, begin + 560).replace(/\s+\S*$/, '');
         return register(document, excerpt, unit.kind);
       }
@@ -52,8 +53,10 @@ export function createEvidence(row, sections, now, metadata = {}) {
 
 function plainText(text) {
   return text.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '')
+    .replace(/\[!\[[^\]]*\](?:\([^)]*\)|\[[^\]]*\])\](?:\([^)]*\)|\[[^\]]*\])/g, '')
+    .replace(/^\s*\[[^\]]+\]:\s*\S+.*$/gm, '').replace(/!\[[^\]]*\]\[[^\]]*\]/g, '')
     .replace(/(`{3,}|~{3,})[\s\S]*?\1/g, '').replace(/^\s*(?:`{3,}|~{3,})[\s\S]*$/m, '').replace(/!\[[^\]]*\]\([^)]*\)/g, '')
-    .replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/<[^>]*>/g, ' ').replace(/[`*_]/g, '')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/\[([^\]]+)\]\[[^\]]*\]/g, '$1').replace(/<[^>]*>/g, ' ').replace(/[`*_]/g, '')
     .replace(/[^\S\n]+/g, ' ').trim();
 }
 

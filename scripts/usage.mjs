@@ -2,10 +2,10 @@
 import { buildAnalysis } from './analysis.mjs';
 import { createEvidence, assessQuality } from './evidence.mjs';
 import { classifyProject } from './profiles.mjs';
-import { explainProject } from './project.mjs';
+import { explainProject, explainFindings, projectVerdict } from './project.mjs';
 import { createHash } from 'node:crypto';
 import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from './freshness.mjs';
-export const usageVersion = 4;
+export const usageVersion = 5;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
@@ -75,12 +75,12 @@ export function analyzeUsage(row, markdown, now = new Date(), metadata = {}) {
   result.article.paragraphs = [project.problem?.body || '문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.',
     `문서에서 확인한 입력: ${project.inputs.map(item => item.title).join(', ') || '미확인'}. 출력: ${project.outputs.map(item => item.title).join(', ') || '미확인'}. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다.`];
   result.article.conditions = project.conditions;
-  if (!result.article.findings.length) result.article.findings = project.outputs.slice(0, 4);
+  result.article.findings = explainFindings(context, profile, result.article.findings);
   result.article.coverage.findings = result.article.findings.length;
   result.article.coverage.conditions = project.conditions.length;
-  result.article.verdict = project.inputs.length && project.outputs.length
-    ? `문서에서 확인한 입력(${project.inputs.map(item => item.title).join(', ')})과 출력(${project.outputs.map(item => item.title).join(', ')})이 현재 작업에 맞는지 먼저 비교하세요. 도입 조건은 해당 설치 경로에 한정하며 실제 실행 품질은 검증하지 않았습니다.`
-    : '입력 또는 출력의 문서 근거가 부족해 구체적인 도입 판단을 보류했습니다. 미확인 항목을 원문에서 확인하세요.';
+  const verdict = projectVerdict(project, result.article.findings);
+  result.article.verdict = verdict.text;
+  result.article.verdictEvidenceIds = verdict.evidenceIds;
   result.quality = assessQuality(result);
   return result;
 }

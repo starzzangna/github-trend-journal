@@ -8,7 +8,7 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   validateAiNote(row, usage);
   if (!usage || [1, 2].includes(usage.version)) return;
   const fail = message => { throw new Error(`분석 데이터 오류: ${message}`); };
-  if (![3, 4].includes(usage.version) || usage.schemaVersion !== (usage.version === 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
+  if (![3, 4, 5].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
   if (!['ready', 'unavailable'].includes(usage.status)) fail('처리 상태');
   if (!['available', 'unavailable'].includes(usage.document?.status)) fail('문서 조회 상태');
   if (!['complete', 'partial', 'unavailable'].includes(usage.quality?.status)) fail('분석 품질 상태');
@@ -26,7 +26,7 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   for (const item of usage.evidence) {
     if (!item.id || evidence.has(item.id) || !sources.has(item.sourceId) || !item.excerpt?.trim() || item.excerpt.length > 600 || !item.section || !Number.isInteger(item.line) || item.line < 1) fail('근거 또는 출처 참조');
     evidence.add(item.id);
-    if (usage.version === 4 && !['prose', 'heading', 'example'].includes(item.kind)) fail('근거 유형');
+    if (usage.version >= 4 && !['prose', 'heading', 'example'].includes(item.kind)) fail('근거 유형');
   }
   if (usage.status === 'unavailable') {
     if (usage.document.status !== 'unavailable' || usage.quality.status !== 'unavailable') fail('조회 실패와 품질 상태 불일치');
@@ -37,7 +37,7 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   if (usage.sourceFingerprint !== undefined && usage.sourceFingerprint !== documentFingerprint(usage.sources)) fail('문서 지문');
   if (usage.analysisInputFingerprint !== undefined && !/^[a-f0-9]{64}$/.test(usage.analysisInputFingerprint)) fail('분석 입력 지문');
   const claims = [...usage.article.findings, ...usage.article.conditions];
-  if (usage.version === 4) {
+  if (usage.version >= 4) {
     const classification = usage.classification;
     if (!Array.isArray(classification?.evidenceIds) || classification.evidenceIds.some(id => !evidence.has(id)) || (usage.category !== '용도 분류 미확정' && !classification.evidenceIds.length)) fail('분류 근거');
     if (classification.evidenceIds.some(id => usage.evidence.find(item => item.id === id).kind === 'example')) fail('사용 예만으로 용도 분류');
@@ -48,8 +48,9 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   }
   for (const claim of claims) {
     if (typeof claim.title !== 'string' || typeof claim.body !== 'string' || !['interpretation', 'documented'].includes(claim.kind) || !Array.isArray(claim.evidenceIds) || !claim.evidenceIds.length || claim.evidenceIds.some(id => !evidence.has(id))) fail('출처 없는 주장');
-    if (usage.version === 4 && claim.evidenceIds.some(id => usage.evidence.find(item => item.id === id).kind === 'example') && claim.exampleOnly !== true) fail('사용 예 검증 범위 누락');
+    if (usage.version >= 4 && claim.evidenceIds.some(id => usage.evidence.find(item => item.id === id).kind === 'example') && claim.exampleOnly !== true) fail('사용 예 검증 범위 누락');
   }
+  if (usage.version >= 5 && (!Array.isArray(usage.article.verdictEvidenceIds) || usage.article.verdictEvidenceIds.some(id => !evidence.has(id)) || (!usage.article.verdictEvidenceIds.length && !usage.article.verdict.includes('보류')))) fail('핵심 판단 근거');
   const expected = assessQuality(usage);
   if (usage.quality.status !== expected.status || JSON.stringify(usage.quality.missing) !== JSON.stringify(expected.missing)) fail('분석 품질 판정 불일치');
 }

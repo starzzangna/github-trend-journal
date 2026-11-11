@@ -77,7 +77,7 @@ test('상세 노트는 문서 근거의 기능·환경과 활용 제안을 구�
   const document = '# Voice\n## Features\nVoice cloning and video dubbing.\n## Quick start\nRequires Python 3.11 and CUDA GPU.\n### Install\nUse the installer.\n### Run\nChoose a sample.';
   const result = analyzeUsage(row, document, now);
   assert.equal(result.article.paragraphs.length, 2);
-  assert.equal(result.article.findings.length, 2);
+  assert.equal(result.article.findings.length, 1);
   assert.match(result.article.findings[0].title, /음성/);
   const evidence = result.evidence.find(item => item.id === result.article.findings[0].evidenceIds[0]);
   assert.equal(evidence.section, 'Features');
@@ -86,7 +86,7 @@ test('상세 노트는 문서 근거의 기능·환경과 활용 제안을 구�
   assert.equal(result.article.conditions.length, 2);
   assert.equal(result.article.workflow.length, 3);
   assert.match(result.article.workflow[1].body, /필수 실행 순서로 가정하지/);
-  assert.match(result.article.verdict, /판단.*보류/);
+  assert.match(result.article.verdict, /추가 확인: 입력·출력/);
 });
 
 test('코드 예시·기여 안내·다른 분야의 용어를 프로젝트 핵심 기능으로 오인하지 않는다', () => {

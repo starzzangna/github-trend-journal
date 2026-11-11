@@ -94,7 +94,7 @@ test('설치 하위 절의 필수·선택·불필요 조건을 구분한다', ()
 });
 
 test('잘못된 문제·입출력·분류 근거는 저장 전에 거부한다', () => {
-  const source = analyzeUsage({ name: 'sample/tool', description: 'Browser automation' }, '# Tool\nBrowser automation.\n## Input\nA URL.\n## Output\nA screenshot.', now);
+  const source = analyzeUsage({ name: 'sample/tool', description: 'Browser automation' }, '# Tool\nBrowser automation.\n## Problem\nExtract product records from catalog pages.\n## Input\nA URL.\n## Output\nA screenshot.', now);
   for (const mutate of [
     value => { value.classification.evidenceIds = []; },
     value => { value.article.project.inputs[0].evidenceIds = ['missing']; },
@@ -115,7 +115,7 @@ test('API 제한 시 기존에 확인한 README 원문 경로만 재사용하고
     return { ok: true, arrayBuffer: async () => Buffer.from('# Tool\nBrowser automation.\n## Input\nA URL.\n## Output\nA screenshot.') };
   } });
   validateUsage(result);
-  assert.equal(result.version, 4);
+  assert.equal(result.version, 5);
   assert.equal(result.document.status, 'available');
   assert.match(result.sources[0].sha, /^[a-f0-9]{40}$/);
   assert.ok(!JSON.stringify(result).includes('private-test-token'));

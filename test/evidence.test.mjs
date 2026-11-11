@@ -19,7 +19,7 @@ test('출처·근거·해석을 분리하고 파일 SHA와 절 위치로 원문�
   assert.equal(usage.sources[0].url, metadata.html_url);
   const claim = usage.article.findings[0];
   const evidence = usage.evidence.find(item => claim.evidenceIds.includes(item.id));
-  assert.equal(claim.kind, 'interpretation');
+  assert.equal(claim.kind, 'documented');
   assert.equal(claim.source, undefined);
   assert.equal(evidence.section, 'Features');
   assert.equal(evidence.line, 2);

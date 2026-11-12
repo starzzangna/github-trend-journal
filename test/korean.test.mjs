@@ -17,7 +17,7 @@ test('실제 프로젝트의 동작과 검토 질문을 한국어로 제공하�
   const design = analyze('meta/astryx');
   assert.match(browser.article.core[0].body, /스냅샷/);
   assert.match(framework.article.core[0].body, /서버에서 렌더링/);
-  assert.match(design.article.core[0].body, /기존 CSS/);
+  assert.match(design.article.core[0].body, /className.*Tailwind.*CSS/);
   assert.notEqual(browser.article.core[0].body, framework.article.core[0].body);
   for (const usage of [browser, framework, design]) {
     validateUsage(usage);

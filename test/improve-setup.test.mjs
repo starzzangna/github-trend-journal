@@ -1,3 +1,4 @@
+import { addKoreanPresentation } from '../scripts/korean.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -5,7 +6,6 @@ import { analyzeUsage, fetchUsage } from '../scripts/usage.mjs';
 import { fetchLinkedDocuments } from '../scripts/linked.mjs';
 import { validateUsage, validatePublication } from '../scripts/contracts.mjs';
 import { assessQuality } from '../scripts/evidence.mjs';
-import { addKoreanPresentation } from '../scripts/korean.mjs';
 import { createReport } from '../scripts/trends.mjs';
 import { synthesizeReport } from '../scripts/report.mjs';
 
@@ -121,6 +121,7 @@ test('종합은 설치와 작업 단계만 집계하고 대표 런타임 수를 
   const old = structuredClone(usage);
   old.version = 14; old.analyzerVersion = 14; old.article.project.setup = null;
   old.article.project.conditions = []; old.article.conditions = [];
+  addKoreanPresentation(old);
   old.quality = assessQuality(old);
   validateUsage(old);
   assert.ok(old.quality.missing.includes('도입 조건'));

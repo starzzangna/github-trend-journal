@@ -1,3 +1,4 @@
+import { addKoreanPresentation } from '../scripts/korean.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -7,7 +8,6 @@ import { validateUsage, validatePublication } from '../scripts/contracts.mjs';
 import { createReport } from '../scripts/trends.mjs';
 import { synthesizeReport } from '../scripts/report.mjs';
 import { assessQuality } from '../scripts/evidence.mjs';
-import { addKoreanPresentation } from '../scripts/korean.mjs';
 
 const fixture = JSON.parse(await readFile(new URL('./fixtures/java-setup.json', import.meta.url)));
 const now = new Date('2026-11-12T00:00:00Z');
@@ -116,6 +116,7 @@ test('종합은 공통 빌드 1개와 대표 실행 조건 4개를 분리하고 
   old.version = 13; old.analyzerVersion = 13; old.article.project.setup = null; old.start = null;
   old.article.project.conditions = []; old.article.conditions = [];
   old.document.links = old.document.links.filter(item => /\.md$|\.java$/.test(item.path));
+  addKoreanPresentation(old);
   old.quality = assessQuality(old);
   validateUsage(old);
   assert.ok(old.quality.missing.includes('시작 경로'));

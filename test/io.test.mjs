@@ -11,13 +11,13 @@ const docs = JSON.parse(await readFile(new URL('./fixtures/io-documents.json', i
 test('실제 문서가 명시한 입출력을 작업 경로와 함께 설명한다', () => {
   const expected = {
     'addyosmani/agent-skills': ['스킬 지침', '계획·구현 결과'],
-    'we-promise/sure': ['CSV·은행 동기화 자료', '재무 현황'],
-    'homeassistant-ai/ha-mcp': ['Home Assistant 작업 요청', '자동화 설정'],
-    'milind-soni/OpenMausBot': ['팀 구성 Markdown', '팀 공유 파일'],
-    'pingdotgg/t3code': ['스레드 작업 요청', '프로젝트·스레드 조회'],
-    'Nutlope/hallmark': ['페이지·컴포넌트 대상', 'HTML·CSS 페이지'],
-    'cloudflare/security-audit-skill': ['단일 저장소 감사 대상', '구조화된 감사 결과'],
-    'pbakaus/impeccable': ['페이지·컴포넌트 대상', '프로젝트 기준 문서']
+    'we-promise/sure': ['소규모 은행 동기화·CSV 가져오기', '일상 사용의 대시보드·거래·예산·보고서'],
+    'homeassistant-ai/ha-mcp': ['현관등을 일몰에 켜 달라는 요청 예', '트리거·동작이 포함된 자동화 예'],
+    'milind-soni/OpenMausBot': ['검토 후 가져오는 팀 구성 Markdown', 'department 구성의 공유 파일'],
+    'pingdotgg/t3code': ['허용 권한 안에서 스레드 시작·메시지 요청', '읽기 전용 연결의 프로젝트·스레드·모델 목록'],
+    'Nutlope/hallmark': ['참조할 실제 제품 URL·개발 서버·앱', '선택 근거를 CSS 주석에 남긴 독립 HTML·CSS'],
+    'cloudflare/security-audit-skill': ['지정한 코드베이스의 보안 감사 요청', '검증 기록에서 생성하는 세 가지 보고서'],
+    'pbakaus/impeccable': ['공통 입력 계약', '프로젝트 기준 문서']
   };
   for (const doc of docs) {
     const usage = analyzeUsage(doc.row, doc.root.markdown, now, doc.root.metadata, doc.linkedDocuments);
@@ -37,7 +37,7 @@ test('실제 문서가 명시한 입출력을 작업 경로와 함께 설명한�
     if (doc.row.name === 'pingdotgg/t3code') {
       const evidence = usage.evidence.find(item => project.inputs[0].evidenceIds.includes(item.id));
       assert.equal(usage.sources.find(source => source.id === evidence.sourceId).path, 'docs/user/outside-agents.md');
-      assert.match(project.inputs[0].summaryKo, /외부 에이전트 연결 경로/);
+      assert.match(project.inputs[0].summaryKo, /외부 에이전트.*MCP/);
     }
   }
 });

@@ -95,6 +95,7 @@ const roles = {
 };
 
 function summarizeFinding(claim, usage) {
+  if (usage.version >= 17 && claim.id?.startsWith('detail:core:')) return claim.body;
   const text = claim.evidenceIds.map(id => usage.evidence.find(item => item.id === id)?.excerpt || '').join(' ');
   if (claim.title === '서버 렌더링과 브라우저 반응성') return [
     /renders all markup on the server/i.test(text) && '화면을 서버에서 렌더링합니다.',
@@ -114,6 +115,7 @@ function summarizeFinding(claim, usage) {
 }
 
 function summarizeRole(claim, usage, role) {
+  if (usage.version >= 17 && claim.id?.startsWith('detail:')) return claim.body;
   if (roles[claim.title]) return roles[claim.title];
   const text = claim.evidenceIds.map(id => usage.evidence.find(item => item.id === id)?.excerpt || '').join(' ');
   if (claim.title === '공통 입력 계약' && /Then name a command and a target/i.test(text)) return '명령 이름과 적용할 대상 영역을 지정합니다.';

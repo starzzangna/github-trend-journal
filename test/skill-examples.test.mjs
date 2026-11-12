@@ -1,3 +1,4 @@
+import { addKoreanPresentation } from '../scripts/korean.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -111,7 +112,7 @@ test('6개 대표 예를 종합에 반영하고 일반 입출력 집계에 합�
 test('이전 분석기 11의 미지원 판정은 문서 재조회 전까지 보존한다', () => {
   const root = roots.find(item => item.repository === 'anthropics/skills');
   const usage = analyzeUsage({ name: root.repository }, root.markdown, now, root.metadata, root.linkedDocuments);
-  usage.version = 11; usage.analyzerVersion = 11; usage.quality = assessQuality(usage);
+  usage.version = 11; usage.analyzerVersion = 11; addKoreanPresentation(usage); usage.quality = assessQuality(usage);
   assert.equal(usage.quality.representatives.status, 'not-configured');
   assert.equal(usage.quality.representatives.expected, 0);
   validateUsage(usage);

@@ -29,12 +29,12 @@ test('같은 디자인 스킬도 테마 구성과 검토 방식을 각 문서로
   const hallmark = analyze('Nutlope/hallmark');
   const impeccable = analyze('pbakaus/impeccable');
   assert.equal(hallmark.category, impeccable.category);
-  assert.match(JSON.stringify(hallmark.article.findings), /Fifty themes|fifty materials/);
+  assert.match(JSON.stringify(hallmark.evidence), /Fifty themes|fifty materials/);
   assert.match(JSON.stringify(impeccable.article.findings), /critique|audit/);
-  assert.notEqual(hallmark.article.verdict, impeccable.article.verdict);
+  assert.notEqual(hallmark.article.core[0].body, impeccable.article.core[0].body);
   for (const usage of [hallmark, impeccable]) {
     assert.ok(usage.article.verdictEvidenceIds.length);
-    assert.ok(usage.article.findings.every(claim => claim.kind === 'documented'));
+    assert.ok(usage.article.findings.every(claim => claim.kind === 'interpretation'));
   }
 });
 
@@ -48,9 +48,9 @@ test('실제 프레임워크의 SVG 배지를 기능으로 오인하지 않고 �
 test('실제 브라우저·디자인 시스템의 고유 제약을 핵심 판단 근거로 연결한다', () => {
   const browser = analyze('vercel-labs/agent-browser');
   const design = analyze('meta/astryx');
-  assert.match(browser.article.verdict, /스냅샷/);
-  assert.match(JSON.stringify(browser.article.findings), /snapshot|DOM/);
-  assert.match(JSON.stringify(design.article.findings), /className|swizzle/);
+  assert.match(browser.article.core[0].body, /snapshot|스냅샷/);
+  assert.match(JSON.stringify(browser.evidence), /snapshot|DOM/);
+  assert.match(JSON.stringify(design.evidence), /className|swizzle/);
   for (const usage of [browser, design]) {
     const invalid = structuredClone(usage);
     invalid.article.verdictEvidenceIds = ['missing'];

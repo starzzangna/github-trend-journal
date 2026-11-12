@@ -35,6 +35,20 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
 
+test('처리 단계·입력 구성·출력 파일을 한국어로 구체화하고 원문은 접어서 제공한다', async () => {
+  const doc = JSON.parse(await readFile(new URL('./fixtures/operation-documents.json', import.meta.url))).find(d => d.repository === 'heygen-com/hyperframes');
+  const [root, ...linked] = doc.documents;
+  const usage = analyzeUsage(doc.row, root.markdown, now, root.metadata, linked.map(d => ({ markdown: d.markdown, metadata: d.metadata })));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: createReport('daily', [{ ...row, name: doc.repository, usage }], now) } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /Chrome에서 프레임을 탐색하고 FFmpeg로 인코딩/);
+  assert.match(html, /타이밍·트랙을 붙인 HTML과 탐색 가능한 애니메이션/);
+  assert.match(html, /HTML·CSS·미디어 구성으로 만든 MP4/);
+  assert.match(html, /핵심 동작 · Chrome에서 프레임을 탐색하고 FFmpeg로 인코딩의 원문 근거/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+  assert.doesNotMatch(html, /HTML 화면 구성을 영상 렌더링 작업에 연결합니다/);
+});
+
 test('새 주의점은 구체적 한국어와 접힌 근거를 표시하고 범용 판단 문구를 반복하지 않는다', async () => {
   const doc = JSON.parse(await readFile(new URL('./fixtures/caution-documents.json', import.meta.url))).find(d => d.repository === 'D4Vinci/Scrapling');
   const root = doc.documents[0];

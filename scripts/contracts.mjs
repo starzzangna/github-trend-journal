@@ -1,5 +1,6 @@
 import { javaBuildPaths } from './java-setup.mjs';
 import { validateCautions } from './cautions.mjs';
+import { validateDocumentedOperations } from './operations.mjs';
 import { validateSkillsSetup } from './skills-setup.mjs';
 import { representativeSpecs, validateRepresentatives, validateCollectionScope } from './representatives.mjs';
 import { assessQuality } from './evidence.mjs';
@@ -13,7 +14,7 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   validateAiNote(row, usage);
   if (!usage || [1, 2].includes(usage.version)) return;
   const fail = message => { throw new Error(`분석 데이터 오류: ${message}`); };
-  if (![3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
+  if (![3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17].includes(usage.version) || usage.schemaVersion !== (usage.version >= 4 ? 2 : 1) || usage.analyzerVersion !== usage.version) fail('지원하지 않는 버전');
   if (!['ready', 'unavailable'].includes(usage.status)) fail('처리 상태');
   if (!['available', 'unavailable'].includes(usage.document?.status)) fail('문서 조회 상태');
   if (!['complete', 'partial', 'unavailable'].includes(usage.quality?.status)) fail('분석 품질 상태');
@@ -44,6 +45,7 @@ export function validateUsage(usage, row = { name: usage?.sources?.[0]?.reposito
   }
   if (!usage.article || !Array.isArray(usage.article.findings) || !Array.isArray(usage.article.conditions) || !sources.size) fail('분석 본문');
   validateCautions(usage);
+  validateDocumentedOperations(usage);
   for (const field of ['analyzedAt', 'sourceCheckedAt']) if (usage[field] !== undefined && !Number.isFinite(Date.parse(usage[field]))) fail('분석·문서 확인 시각');
   if (usage.sourceFingerprint !== undefined && usage.sourceFingerprint !== documentFingerprint(usage.sources)) fail('문서 지문');
   if (usage.analysisInputFingerprint !== undefined && !/^[a-f0-9]{64}$/.test(usage.analysisInputFingerprint)) fail('분석 입력 지문');

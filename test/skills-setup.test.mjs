@@ -1,3 +1,4 @@
+import { addKoreanPresentation } from '../scripts/korean.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
@@ -6,7 +7,6 @@ import { assessQuality } from '../scripts/evidence.mjs';
 import { validateUsage, validatePublication } from '../scripts/contracts.mjs';
 import { synthesizeReport } from '../scripts/report.mjs';
 import { createReport } from '../scripts/trends.mjs';
-import { addKoreanPresentation } from '../scripts/korean.mjs';
 
 const fixture = JSON.parse(await readFile(new URL('./fixtures/skills-setup.json', import.meta.url)));
 const now = new Date('2026-11-12T00:00:00Z');
@@ -99,6 +99,7 @@ test('이전 분석기 12는 설치 판정을 새 규칙으로 강제하지 않�
   delete usage.article.project.setup;
   usage.article.project.conditions = [];
   usage.article.conditions = [];
+  addKoreanPresentation(usage);
   usage.quality = assessQuality(usage);
   validateUsage(usage);
   assert.ok(usage.quality.missing.includes('시작 경로'));

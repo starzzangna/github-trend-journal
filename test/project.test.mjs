@@ -23,19 +23,19 @@ test('여러 분야의 실제 README 발췌를 분류하고 문서 근거를 보
 test('실제 디자인 시스템의 React 버전과 브라우저 도구의 출력 구조를 추출한다', () => {
   const design = documents.find(value => value.row.name === 'meta/astryx');
   const first = analyzeUsage(design.row, design.markdown, now, design.metadata);
-  assert.ok(first.article.project.inputs.some(value => value.title === '컴포넌트·스타일'));
+  assert.ok(first.article.project.inputs.some(value => value.title === '미리 빌드된 CSS와 타입이 있는 React 컴포넌트'));
   const react = first.article.project.conditions.find(value => value.title === 'React');
   assert.equal(react.scope, 'required');
   assert.match(react.body, /React 19 or later/);
   const browser = documents.find(value => value.row.name === 'vercel-labs/agent-browser');
   const second = analyzeUsage(browser.row, browser.markdown, now, browser.metadata);
-  assert.ok(second.article.project.outputs.some(value => value.title === '페이지 구조'));
+  assert.ok(second.article.project.outputs.some(value => value.title === '짧은 페이지 텍스트와 요소별 참조'));
 });
 
 test('다른 분야의 XML·CSV 언급을 물리 모델이나 재무 입력으로 오인하지 않는다', () => {
   const document = documents.find(value => value.row.name === 'D4Vinci/Scrapling');
   const usage = analyzeUsage(document.row, document.markdown, now, document.metadata);
-  assert.ok(usage.article.project.inputs.some(value => value.title === '웹 페이지'));
+  assert.ok(usage.article.project.inputs.some(value => value.title === '정적·JavaScript 페이지와 페이지 뒤의 API'));
   assert.ok(!usage.article.project.inputs.some(value => /시뮬레이션|기록/.test(value.title)));
   const finance = documents.find(value => value.row.name === 'we-promise/sure');
   const result = analyzeUsage(finance.row, finance.markdown, now, finance.metadata);
@@ -115,7 +115,7 @@ test('API 제한 시 기존에 확인한 README 원문 경로만 재사용하고
     return { ok: true, arrayBuffer: async () => Buffer.from('# Tool\nBrowser automation.\n## Input\nA URL.\n## Output\nA screenshot.') };
   } });
   validateUsage(result);
-  assert.equal(result.version, 16);
+  assert.equal(result.version, 17);
   assert.equal(result.document.status, 'available');
   assert.match(result.sources[0].sha, /^[a-f0-9]{40}$/);
   assert.ok(!JSON.stringify(result).includes('private-test-token'));

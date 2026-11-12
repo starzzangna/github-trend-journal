@@ -35,6 +35,44 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
 
+test('종합 비교에서 처리 방식·입력·결과물·도입 조건과 대표 범위를 한국어로 보여 준다', async () => {
+  const docs = JSON.parse(await readFile(new URL('./fixtures/operation-documents.json', import.meta.url)));
+  const rows = ['Nutlope/hallmark', 'pbakaus/impeccable'].map(name => {
+    const doc = docs.find(d => d.repository === name), [root, ...linked] = doc.documents;
+    return { ...row, name, usage: analyzeUsage(doc.row, root.markdown, now, root.metadata, linked.map(d => ({ markdown: d.markdown, metadata: d.metadata }))) };
+  });
+  const report = createReport('daily', rows, now);
+  Object.assign(report, synthesizeReport(report, 'daily', now));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: report } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /디자인 에이전트 스킬 · 2개 프로젝트 비교/);
+  for (const name of ['Nutlope/hallmark', 'pbakaus/impeccable']) assert.ok(html.includes(`aria-label="${name} 종합 비교"`));
+  assert.match(html, /<h6>처리 방식<\/h6>/);
+  assert.match(html, /<h6>입력<\/h6>/);
+  assert.match(html, /<h6>결과물<\/h6>/);
+  assert.match(html, /<h6>도입 조건·주의점<\/h6>/);
+  assert.match(html, /공통 출력 · 해당 없음.*대표 항목의 출력이며 모음 전체의 계약이 아닙니다/);
+  assert.match(html, /종합 비교 · 처리 방식 · 세 가지 테마 제안 뒤 브라우저에서 결과 검사의 원문 근거/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+});
+
+test('종합 비교에도 부분 분석·출력 근거 부족·현재 시각 기준의 오래됨을 표시한다', async () => {
+  const docs = JSON.parse(await readFile(new URL('./fixtures/operation-documents.json', import.meta.url)));
+  const doc = docs.find(d => d.repository === 'pingdotgg/t3code'), [root, ...linked] = doc.documents;
+  const usage = analyzeUsage(doc.row, root.markdown, now, root.metadata, linked.map(d => ({ markdown: d.markdown, metadata: d.metadata })));
+  usage.article.project.outputs = [];
+  usage.quality = assessQuality(usage);
+  const report = createReport('daily', [{ ...row, name: doc.repository, usage }], now);
+  Object.assign(report, synthesizeReport(report, 'daily', now));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: report } }) }), { at: new Date(now.getTime() + 8 * 86400000) });
+  const html = page.container.innerHTML;
+  const comparison = html.slice(html.indexOf('class="project-comparisons"'), html.indexOf('aria-label="입출력 근거와 대표 항목 집계"'));
+  assert.match(comparison, /단독 항목 요약/);
+  assert.match(comparison, /분석 품질 · 부분 분석 · 문서 최신성 · 오래된 분석/);
+  assert.match(comparison, /미확인: 출력/);
+  assert.match(comparison, /출력을 구체적으로 설명할 문서 근거가 부족합니다/);
+});
+
 test('처리 단계·입력 구성·출력 파일을 한국어로 구체화하고 원문은 접어서 제공한다', async () => {
   const doc = JSON.parse(await readFile(new URL('./fixtures/operation-documents.json', import.meta.url))).find(d => d.repository === 'heygen-com/hyperframes');
   const [root, ...linked] = doc.documents;

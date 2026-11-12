@@ -13,6 +13,7 @@
         "대표 항목 사용 예는 2개 프로젝트에서 4개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "설치·실행 조건을 별도 분석한 프로젝트 2개 중 공통 설치 경로는 1개 프로젝트에서, 공통 빌드·테스트 경로는 1개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 2개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 4개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
         "계획 작성·실행 위임 등 작업 단계의 조건은 2개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 5개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
+        "같은 용도의 비교는 1개 분야에서 제공합니다. 단독 항목 8개 분야도 처리 방식·입력·결과물·도입 조건을 요약합니다. 같은 발행호 안의 문서 설명을 비교하며 성능·우열·상호 대체 가능성을 판정하지 않습니다.",
         "공통으로 확인한 항목은 서비스 인증(4개), 에이전트 클라이언트(4개), 운영체제별 실행 경로(4개), 컨테이너 실행(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
         "기본 항목 충족 10개 · 부분 분석 0개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
@@ -31,25 +32,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:57:16.294Z",
-            "analyzedAt": "2026-11-12T00:57:16.294Z",
-            "sourceCheckedAt": "2026-11-12T00:57:16.294Z",
+            "checkedAt": "2026-11-12T01:09:56.306Z",
+            "analyzedAt": "2026-11-12T01:09:56.306Z",
+            "sourceCheckedAt": "2026-11-12T01:09:56.306Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "13959c6a7c3d12ebf566841cc641dfc83643e74ccfa5d8589f4fe30d9b077625",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:57:16.294Z",
+              "checkedAt": "2026-11-12T01:09:56.306Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:57:16.294Z"
+                  "checkedAt": "2026-11-12T01:09:56.306Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-12T00:57:16.294Z"
+                  "checkedAt": "2026-11-12T01:09:56.306Z"
                 }
               ]
             },
@@ -59,7 +60,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
-                "fetchedAt": "2026-11-12T00:57:16.294Z",
+                "fetchedAt": "2026-11-12T01:09:56.306Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -67,7 +68,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "c4c656d48e41462bb7064654c2ac03a3a17ab9bb",
-                "fetchedAt": "2026-11-12T00:57:16.294Z",
+                "fetchedAt": "2026-11-12T01:09:56.306Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -4427,7 +4428,7 @@
         }
       ],
       "synthesis": {
-        "version": 6,
+        "version": 7,
         "coverage": {
           "total": 10,
           "classified": 10,
@@ -4519,6 +4520,735 @@
             "count": 1,
             "projects": [
               "openai/codex-security"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "category": "AI 에이전트 스킬",
+            "mode": "comparison",
+            "projects": [
+              {
+                "name": "shadcn/improve",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "선택한 발견 사항을 의존 관계가 있는 계획 파일로 변환",
+                    "body": "선택한 발견 사항마다 plans/에 파일을 쓰고 색인·우선순위·의존 관계를 함께 정리합니다. 감사 결과를 곧바로 소스 수정으로 처리하는 흐름과 구분됩니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-b4adb52b2df02541"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "감사할 코드베이스",
+                      "body": "감사 대상은 코드베이스입니다. 코드 검토 결과를 다른 에이전트가 실행할 계획으로 만드는 흐름이며, 계획 단계에서 선택하는 발견 사항과 구분됩니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-188dd556b9fb0f4e"
+                      ]
+                    },
+                    {
+                      "title": "계획으로 만들 발견 사항",
+                      "body": "계획 단계에서는 감사 결과 중 선택한 발견 사항을 대상으로 파일을 작성합니다. 감사할 저장소를 고르는 단계와 발견 사항을 실행 계획으로 만드는 단계를 구분합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-b4adb52b2df02541"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "plans/의 개별 계획 파일과 권장 순서 색인",
+                      "body": "plans/ 아래에 계획을 하나씩 저장하고 권장 실행 순서를 담은 색인을 만듭니다. 파일을 읽고 검토한 뒤 실행자에게 인계하는 산출물입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-cb72f23beaba9b85"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "설치·호환 · Agent Skills",
+                    "body": "공식 README는 npx skills add shadcn/improve로 설치하고 Agent Skills 형식을 지원하는 에이전트에서 사용하는 경로를 안내합니다. 계획은 Markdown이라 다른 에이전트나 사람에게 인계할 수 있습니다. 이 호환 설명이 모든 호스트의 자동 실행 위임 지원을 뜻하지는 않습니다.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-c0ba06e5af65f852",
+                      "e-b195047bead3ea6e"
+                    ],
+                    "exampleOnly": true,
+                    "scope": "project-install",
+                    "context": "공통 설치·호환 경로"
+                  },
+                  {
+                    "title": "설치 호환성과 자동 실행 위임은 별개",
+                    "body": "Agent Skills 호환 호스트라도 자동 execute에는 격리 worktree의 별도 실행자를 만들 수 있는 기능이 필요합니다. 지원하지 않는 호스트는 작성한 계획을 수동 실행자에게 인계하는 경로입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-a570766e9ef8b638"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "계획 작성자가 소스를 고치거나 병합하지 않음",
+                    "body": "스킬은 소스를 직접 수정하지 않고 plans/에 계획을 씁니다. 구현은 일회용 worktree에서 진행하며 최종 병합은 사용자가 판단하는 흐름입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-5730aea031ca5201"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              },
+              {
+                "name": "addyosmani/agent-skills",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "build auto의 작업별 테스트와 커밋",
+                    "body": "대표 /build auto 경로는 승인한 계획의 각 작업을 테스트하며 개별 커밋하고, 실패나 위험 단계에서 멈춥니다. 이 구현 흐름을 모든 스킬의 공통 출력으로 합치지 않습니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-d06b87b575fa80e7"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "입력",
+                      "body": "만들려는 기능의 큰 방향과 요구사항을 전달하고, 질문을 통해 모호한 부분을 구체화합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-8c05b96a0ee42f8b"
+                      ],
+                      "exampleOnly": true,
+                      "context": "spec-driven-development · 명세 작성 · 대표 항목"
+                    },
+                    {
+                      "title": "입력",
+                      "body": "오류 출력, 로그, 재현 절차를 진단 자료로 보존합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-f5d313ce9fbd194b"
+                      ],
+                      "exampleOnly": true,
+                      "context": "debugging-and-error-recovery · 오류 복구 · 대표 항목"
+                    }
+                  ]
+                },
+                "outputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "출력",
+                      "body": "무엇을 왜 만들고 어떤 기준으로 완료를 판단할지 정리한 구조화된 명세를 작성합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-74661ad7e6f12fe5"
+                      ],
+                      "exampleOnly": true,
+                      "context": "spec-driven-development · 명세 작성 · 대표 항목"
+                    },
+                    {
+                      "title": "출력",
+                      "body": "원인과 수정 내용을 확인하고, 수정 전에는 실패하는 회귀 테스트로 재발 방지 여부를 검증합니다. 이 보고서가 실제 버그를 고쳤다는 뜻은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-579825989ca76859",
+                        "e-cbbc120f2297c527"
+                      ],
+                      "exampleOnly": true,
+                      "context": "debugging-and-error-recovery · 오류 복구 · 대표 항목"
+                    }
+                  ]
+                },
+                "conditions": [
+                  {
+                    "title": "build auto의 승인 범위와 중단 조건",
+                    "body": "/build auto는 계획을 한 번 승인한 뒤 작업 사이의 수동 승인을 줄이는 경로입니다. 각 작업의 테스트·개별 커밋은 유지하며 실패나 위험 단계에서는 멈추므로 무조건 끝까지 진행하는 모드로 이해하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-d06b87b575fa80e7"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "개인 재무 관리",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "we-promise/sure",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "은행 동기화·CSV 자료를 다루는 재무 앱",
+                    "body": "Docker 가이드의 일상 사용 범위는 소규모 은행 동기화·CSV 가져오기와 대시보드·거래·예산·보고서입니다. 외부 AI 비서 연결은 이 일반 사용 범위와 별도로 안내하는 경로입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-9b43ab8fb98d4e8c",
+                      "e-4ab3be78e56628c6"
+                    ]
+                  },
+                  {
+                    "title": "재무 데이터에 접근하는 외부 비서 연결",
+                    "body": "외부 비서 경로는 원격 AI 에이전트에 대화를 위임하고, 에이전트가 Sure의 /mcp로 계좌·거래·대차대조표를 조회하는 방식입니다. Sure 자체의 일반 사용 흐름과 별도의 선택 경로입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-c5622c7b23660bd4"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "소규모 은행 동기화·CSV 가져오기",
+                      "body": "Docker 호스팅 가이드가 설명하는 사용 범위에는 소규모 은행 동기화와 CSV 가져오기가 포함됩니다. 이 근거만으로 CSV 열 구성이나 모든 은행의 호환성을 단정하지 않습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-9b43ab8fb98d4e8c"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "일상 사용의 대시보드·거래·예산·보고서",
+                      "body": "Docker 가이드는 초기 설정 뒤 일상 사용으로 대시보드·거래·예산·보고서를 안내합니다. 보고서의 파일 내보내기 형식까지 확인한 설명은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-4ab3be78e56628c6"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "인증 정보는 가족별로 격리되지 않음",
+                    "body": "Plaid 같은 제공자 인증, AI 연결 설정, 동기화 설정과 외부 비서 연결은 인스턴스 전체에 한 번 저장되어 모든 family에 적용됩니다. 가족별로 서로 다른 연결을 전제하기 전에 이 공유 범위를 확인해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-bc6272bfb21610ce"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "디자인 시스템",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "meta/astryx",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "기존 CSS로 컴포넌트 스타일 변경",
+                    "body": "StyleX로 작성된 내부 스타일을 소비자가 채택할 필요 없이 className으로 Tailwind·CSS modules·일반 CSS를 덮어씁니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-d670673a2210fa94"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "미리 빌드된 CSS와 타입이 있는 React 컴포넌트",
+                      "body": "애플리케이션에서 미리 빌드된 CSS를 가져오고 타입이 있는 React 컴포넌트를 사용합니다. 이 사용 경로에는 별도 빌드 플러그인이나 스타일 라이브러리 도입이 필요 없다고 설명합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-77575985a77efa38"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "테마·다크 모드·템플릿을 포함한 UI 구성",
+                      "body": "접근성 컴포넌트, 브랜드 수준 테마, 다크 모드와 바로 사용할 템플릿을 CLI와 함께 제공하는 구성입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-77575985a77efa38"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "React 버전과 구성 요소 범위",
+                    "body": "core의 peer dependency는 react·react-dom이며 React 19 이상이 필요합니다. 기존 React 버전과 맞는지 먼저 확인해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-6184804e28a9adbd"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "실험 패키지와 안정 릴리스 구분",
+                    "body": "lab은 npm에 배포되지 않습니다. vega·charts는 @canary로만 배포되고 안정 릴리스가 없으므로 core와 같은 안정성을 전제하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f1a911832209a9ac"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "브라우저 자동화",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "vercel-labs/agent-browser",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "스냅샷 참조로 조작하고 페이지를 다시 확인",
+                    "body": "스냅샷(snapshot)으로 페이지를 짧은 텍스트와 @e1 같은 요소 참조로 읽습니다. 참조로 동작을 실행한 뒤 페이지를 다시 읽어 결과를 확인하며 브라우저는 명령 사이에도 열려 있습니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-e98136aec8d70a35"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "현재 스냅샷의 요소 참조",
+                      "body": "동작 명령에는 snapshot이 부여한 @e1 같은 요소 참조를 사용합니다. URL로 페이지를 여는 단계 이후에 페이지 내부 요소를 대상으로 조작하는 입력입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-e98136aec8d70a35"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "짧은 페이지 텍스트와 요소별 참조",
+                      "body": "snapshot 결과는 각 요소에 참조를 붙인 짧은 페이지 텍스트입니다. 조작 후에는 다시 읽어 변경 결과를 확인합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-e98136aec8d70a35"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "Linux 브라우저 실행 의존성",
+                    "body": "Linux에서는 agent-browser install --with-deps가 브라우저 시스템 라이브러리도 설치하는 경로입니다. CLI 설치와 브라우저 실행 환경 준비를 구분해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-2e8f2707c05079d4"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "스냅샷 참조로 조작한 뒤 다시 읽기",
+                    "body": "snapshot이 부여한 @e1 같은 참조로 동작한 뒤 페이지를 다시 읽어 결과를 확인하는 흐름입니다. 한 번 얻은 참조만으로 후속 상태를 추정하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-e98136aec8d70a35"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "스마트홈 자동화",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "homeassistant-ai/ha-mcp",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "자연어 요청에 따라 자동화·대시보드 수정",
+                    "body": "공식 사용 예는 현관등의 일몰 자동화 생성, Lovelace 날씨 카드 추가, 실행 추적을 통한 자동화 오류 진단을 구분해 보여 줍니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-9eef1fee2b94c4b8"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "현관등을 일몰에 켜 달라는 요청 예",
+                      "body": "클라이언트에서 “일몰에 현관등을 켜는 자동화를 만들어 달라”고 요청하는 사용 예입니다. 모든 자연어 요청을 임의로 처리한다는 보장은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-9eef1fee2b94c4b8"
+                      ],
+                      "exampleOnly": true
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "트리거·동작이 포함된 자동화 예",
+                      "body": "해당 사용 예의 결과는 적절한 트리거와 동작을 가진 자동화 생성입니다. 날씨 카드 요청은 Lovelace 대시보드 변경으로 이어지는 별도 예입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-9eef1fee2b94c4b8"
+                      ],
+                      "exampleOnly": true
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "Docker HTTP 연결의 토큰과 비밀 URL",
+                    "body": "Docker HTTP 서버는 Home Assistant URL과 장기 토큰을 설정하고 클라이언트가 서버의 비밀 URL로 연결하는 경로입니다. 관리자 토큰이 권장되며 일반 토큰은 기능 제한이 있으므로 다른 설치 경로의 권한과 동일하게 취급하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-4edf39967b83c855"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "YAML 수정 도구의 beta 이동",
+                    "body": "v7.3.0에서 ha_config_set_yaml이 beta로 이동했다는 호환성 변경이 공지돼 있습니다. 기존 YAML 수정 흐름을 유지할 때 현재 제공 범위를 확인해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-bf627915cf14df8a"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "시장 데이터 분석",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "ZhuLinsen/daily_stock_analysis",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "여러 시장의 관심 종목을 분석해 알림으로 전달",
+                    "body": "A주·홍콩·미국·일본·한국·대만 관심 종목을 매일 분석하고 결정 대시보드를 기업용 메신저·Telegram·Discord·Slack·이메일로 전달하는 흐름입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-321b44a30c3daa7d"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "시장별 관심 종목 목록",
+                      "body": "분석 대상으로 A주·홍콩·미국·일본·한국·대만의 관심 종목을 지정하는 경로입니다. 모든 시장 자료를 동시에 입력해야 한다는 뜻은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-321b44a30c3daa7d"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "메신저·이메일로 전달되는 결정 대시보드",
+                      "body": "매일 생성한 결정 대시보드를 기업위챗·Feishu·Telegram·Discord·Slack·이메일로 전달합니다. 이는 문서의 전달 경로이며 투자 수익을 검증한 결과가 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-321b44a30c3daa7d"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "무료 시세원의 실패와 대체 경로",
+                    "body": "기본 무료 시세원은 별도 설정 없이 쓸 수 있지만 상위 서비스의 제한·인터페이스 변경·네트워크에 따라 불안정할 수 있습니다. 장기 예약·일괄 분석은 Tushare·Longbridge 같은 토큰 기반 경로를 별도로 설정하도록 안내합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-0847b31dcb266b8b"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "분석 결과의 사용 범위",
+                    "body": "문서는 학습·연구용이며 투자 조언이 아니라고 명시합니다. 자동으로 전달된 보고서를 투자 판단의 검증 결과로 취급하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-1864b253b7869526"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "알고리즘 학습",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "TheAlgorithms/Java",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "학습용 알고리즘 구현과 표준 라이브러리의 구분",
+                    "body": "Java 알고리즘 구현을 학습 목적으로 제공하며 표준 라이브러리보다 비효율적일 수 있다고 설명합니다. 항목별 호출과 결과는 공통 계약으로 합치지 않고 대표 사용 예에서 따로 설명합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-3b7187b858d79c1c"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "입력",
+                      "body": "오름차순으로 정렬된 배열과 찾을 값을 전달합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-819cae17c9d48366"
+                      ],
+                      "exampleOnly": true,
+                      "context": "BinarySearch · 이진 탐색 · 대표 항목"
+                    },
+                    {
+                      "title": "입력",
+                      "body": "정렬할 배열을 전달합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-910dde72ac986a12"
+                      ],
+                      "exampleOnly": true,
+                      "context": "BubbleSort · 버블 정렬 · 대표 항목"
+                    }
+                  ]
+                },
+                "outputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "출력",
+                      "body": "찾으면 해당 원소의 인덱스를 반환하고, 찾지 못하거나 배열이 비어 있으면 -1을 반환합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-819cae17c9d48366"
+                      ],
+                      "exampleOnly": true,
+                      "context": "BinarySearch · 이진 탐색 · 대표 항목"
+                    },
+                    {
+                      "title": "출력",
+                      "body": "정렬된 배열을 반환합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-910dde72ac986a12"
+                      ],
+                      "exampleOnly": true,
+                      "context": "BubbleSort · 버블 정렬 · 대표 항목"
+                    }
+                  ]
+                },
+                "conditions": [
+                  {
+                    "title": "저장소 공통 빌드·테스트 · JDK 21·Maven",
+                    "body": "pom.xml의 컴파일 기준은 Java 21이며 JUnit·Surefire 테스트 설정이 있습니다. 공식 CI는 Ubuntu에서 Temurin JDK 21로 Maven verify를 실행하고, Checkstyle·SpotBugs·PMD를 별도로 검사합니다. 이는 저장소 공통 검증 경로이며 개별 알고리즘의 직접 실행 명령이나 다른 JDK·운영체제의 호환성 보증은 아닙니다.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-f7a6d3a3aeeee179",
+                      "e-468fe7cf40d39b04",
+                      "e-9ba2a64cb0028657",
+                      "e-717a0df2f28f7f48",
+                      "e-6bda79087a1a30a4",
+                      "e-c47ead30e5f612dc",
+                      "e-4201e02b5cd5c022",
+                      "e-f6ac0c1fa7c0cb68",
+                      "e-5d7de07ad070acd3"
+                    ],
+                    "scope": "collection-build",
+                    "context": "저장소 공통 빌드·테스트"
+                  },
+                  {
+                    "title": "학습 구현을 표준 라이브러리 대체 성능으로 해석하지 않기",
+                    "body": "문서는 학습 목적의 구현이며 Java 표준 라이브러리보다 비효율적일 수 있다고 명시합니다. 공통 빌드 통과와 운영 환경의 성능 적합성은 별도로 판단해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-3b7187b858d79c1c"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "웹 개발 지침",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "GoogleChrome/modern-web-guidance-src",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "로컬 검색 뒤 가이드 본문을 에이전트에 제공",
+                    "body": "search는 오프라인 임베딩과 BM25로 질의에 맞는 가이드를 찾습니다. 검색 단계에는 네트워크 호출이나 API 키가 필요 없다고 설명합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-d12778e9a7ec3586"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "웹 플랫폼 질문을 담은 검색 질의",
+                      "body": "modern-web-guidance search에 질의를 전달하면 해당 질문과 맞는 가이드를 찾는 경로입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-d12778e9a7ec3586"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "retrieve로 가져오는 코드 패턴·주의점·대체 구현",
+                      "body": "retrieve로 가이드를 가져와 해당 API의 코드 패턴·주의점·대체 구현을 에이전트의 문맥에 넣습니다. 검색 결과 목록과 가이드 본문 조회를 구분합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-bfbe746db3713b2c"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "신기능의 대체 동작을 구분",
+                    "body": "추측 미리 읽기 같은 부가 기능은 구형 브라우저가 무시해도 되지만 대화상자 제어·네트워크 비콘 같은 핵심 동작은 별도 대체 경로가 필요하다고 설명합니다. 같은 호환성 전략을 모든 API에 적용하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-1952da47d88796be"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "코드 보안 점검",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "openai/codex-security",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "전체 저장소·선택 경로·Git 변경의 보안 스캔",
+                    "body": "전체 저장소, 선택한 경로 또는 Git 변경을 스캔합니다. Deep 스캔은 Standard 스캔을 반복하고 중복을 제거한 발견 사항을 반환합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-fe0e5d30c8338a5e"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "저장소·선택 경로·Git 변경",
+                      "body": "스캔 대상을 저장소 전체, 지정 경로 또는 Git 변경으로 선택합니다. 단일 파일 형식만을 입력으로 받는 분석기와 구분됩니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-fe0e5d30c8338a5e"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "발견 사항의 추적과 SARIF·JSON·CSV 내보내기",
+                      "body": "완료 스캔의 발견 사항을 SARIF·JSON·CSV로 내보내거나 Linear·Jira·GitHub에서 추적하는 경로를 제공합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-9a881901b3978bde"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "허용 Node 버전대를 구분",
+                    "body": "요구 환경은 Node.js 22.x 중 22.13.0 이상, 또는 24.x·26.x와 Python 3.10 이상입니다. Node.js의 모든 상위 버전을 허용하는 조건으로 확대하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-74fd7a130f8cf9b5"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -5058,8 +5788,8 @@
         "references": [
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-12T00:57:16.294Z",
-            "analyzedAt": "2026-11-12T00:57:16.294Z",
+            "sourceCheckedAt": "2026-11-12T01:09:56.306Z",
+            "analyzedAt": "2026-11-12T01:09:56.306Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-876c10c216e10def"
@@ -5147,7 +5877,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-12T00:57:16.294Z"
+        "generatedAt": "2026-11-12T01:09:56.306Z"
       }
     },
     "weekly": {
@@ -5161,6 +5891,7 @@
         "대표 항목 사용 예는 1개 프로젝트에서 2개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "설치·실행 조건을 별도 분석한 프로젝트 1개 중 공통 설치 경로는 1개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 2개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 4개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
         "계획 작성·실행 위임 등 작업 단계의 조건은 0개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 0개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
+        "같은 용도의 비교는 1개 분야에서 제공합니다. 단독 항목 8개 분야도 처리 방식·입력·결과물·도입 조건을 요약합니다. 같은 발행호 안의 문서 설명을 비교하며 성능·우열·상호 대체 가능성을 판정하지 않습니다.",
         "공통으로 확인한 항목은 에이전트 클라이언트(5개), Node.js(5개), 서비스 인증(4개), 운영체제별 실행 경로(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
         "기본 항목 충족 10개 · 부분 분석 0개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
@@ -9095,7 +9826,7 @@
         }
       ],
       "synthesis": {
-        "version": 6,
+        "version": 7,
         "coverage": {
           "total": 10,
           "classified": 10,
@@ -9187,6 +9918,679 @@
             "count": 1,
             "projects": [
               "max-sixty/worktrunk"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "category": "AI 에이전트 운영",
+            "mode": "comparison",
+            "projects": [
+              {
+                "name": "milind-soni/OpenMausBot",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "기존 로그인으로 로컬 에이전트 CLI 실행",
+                    "body": "봇이 로컬 claude·codex·grok CLI를 기존 로그인·구독으로 실행합니다. 설정의 Engines에서는 별도 CLI 바이너리나 wrapper를 지정하는 경로도 안내합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f8ac0d1f72790f1e"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "검토 후 가져오는 팀 구성 Markdown",
+                      "body": "Teams → Import에서 로컬 .md 파일이나 공개 GitHub URL을 가져올 수 있습니다. 앱은 봇·채널 등을 생성하기 전에 검토 화면을 표시합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-7e0fd1815dff6f17"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "department 구성의 공유 파일",
+                      "body": "Share department는 봇의 지침·이미지·스킬, 그룹 채팅·루틴·공유 지침 등을 하나의 파일로 저장합니다. 대화 이력·키·비밀번호는 포함하지 않는다고 설명합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-e31dc470c9ead807"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "로컬 에이전트 설치와 로그인 선행",
+                    "body": "요구 환경은 macOS·Windows 또는 Ubuntu 24.04 x64, Node 24 이상과 pnpm입니다. claude·codex·grok CLI 중 적어도 하나가 설치되고 로그인돼 있어야 하므로 관리 화면 설치만으로 실행 준비가 끝나지 않습니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-d0bc21a5eb248493"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              },
+              {
+                "name": "pingdotgg/t3code",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "외부 에이전트가 MCP로 프로젝트·스레드 작업",
+                    "body": "T3가 직접 시작하지 않은 에이전트도 MCP 서버로 프로젝트·스레드를 읽고 스레드를 시작하거나 메시지를 보낼 수 있습니다. 로그인한 에이전트마다 사용자가 허용 범위를 고릅니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-0b1ba3817b5c4907"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "허용 권한 안에서 스레드 시작·메시지 요청",
+                      "body": "외부 에이전트가 한 번 로그인한 뒤, 사용자가 허용한 범위에서 MCP로 스레드 시작·메시지 전송을 요청하는 경로입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-0b1ba3817b5c4907"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "읽기 전용 연결의 프로젝트·스레드·모델 목록",
+                      "body": "Read only 권한에서는 프로젝트·스레드와 사용 가능한 provider·model을 읽으며 변경은 할 수 없습니다. 쓰기 작업이 가능한 연결과 결과 범위를 구분합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-f50ddb5875f8b8be"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "일회 실행 경로에도 Node.js가 필요",
+                    "body": "설치 없이 시험하는 npx t3@latest 경로도 npx 실행용 Node.js는 필요합니다. 데스크톱 앱 설치와 이 CLI 시험 경로의 환경을 구분하세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-d6d9818c3148749d"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "지원 에이전트별 연결 환경 확인",
+                    "body": "문서가 안내하는 지원 대상은 Codex·Claude·Cursor·Grok Build·OpenCode·Antigravity·fx입니다. 이름이 비슷한 다른 에이전트도 연결된다고 확대하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f59657cb3f93baec"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "게임 개발 도구",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "Donchitos/Claude-Code-Game-Studios",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "질문과 한 페이지 brief에서 플레이 가능한 게임으로",
+                    "body": "게임 설명을 받은 Claude Code가 몇 가지 질문을 하고 한 페이지 brief를 작성한 뒤, 이를 바탕으로 브라우저에서 플레이 가능한 첫 게임을 만듭니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-1b44d16479b9d440"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "질문으로 구체화하는 게임 설명",
+                      "body": "만들 게임을 설명하면 Claude Code가 추가 질문으로 요구사항을 구체화하는 입력 경로입니다. 완성된 게임 설계 문서를 반드시 먼저 전달하는 계약은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-1b44d16479b9d440"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "한 페이지 brief와 첫 브라우저 게임",
+                      "body": "한 페이지 brief를 작성하고 그 brief로 플레이 가능한 브라우저 게임을 만듭니다. 완성 제품이나 스토어 배포까지를 보장하는 결과는 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-1b44d16479b9d440"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "Python 부재 시 설정이 조용히 기본값으로 바뀜",
+                    "body": "Python 3가 project.yaml을 읽습니다. 없으면 모든 설정이 조용히 기본값으로 돌아간다고 명시하므로 게임이 생성됐다는 사실만으로 설정 적용을 판단하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-40c2e5d1032a2977"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "브라우저가 없으면 플레이·스크린샷 검증 미평가",
+                    "body": "/prototype의 플레이·스크린샷 검사에는 Chrome·Edge·Chromium 중 하나가 필요합니다. 없을 때의 not assessed 표시는 테스트 성공을 뜻하지 않습니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-aff3f30b552c28af"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "데이터 의미·지식 그래프",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "NVIDIA/auto-ontology",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "생성한 SQL을 데이터베이스에 검사해 보정",
+                    "body": "질의 과정에서 필터 값과 SQL을 실제 데이터베이스에 대조하고 검사 실패 시 SQL을 고칩니다. SQL 문자열 생성만으로 끝나는 흐름과 구분됩니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-fba2361d85eb8fc0"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "의도와 대상 항목을 추출할 자연어 질문",
+                      "body": "질문의 의도를 분류하고 질문에 등장한 항목을 추출하는 질의 단계의 입력입니다. 뒤의 SQL 생성·데이터베이스 검사와 구분됩니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-2da73121cf0d7e0e"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "답변과 실행 SQL·처리 단계",
+                      "body": "질의를 실행한 뒤 답변과 함께 사용한 SQL 및 처리 단계를 반환합니다. 답변 텍스트만 제공하는 결과와 구분됩니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-aa67750f663ed95c"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "Compose 시작 전 기본 비밀번호 교체",
+                    "body": "Compose는 Postgres·pgAdmin·웹 앱을 호스트에 공개합니다. 실행 전에 각 기본 비밀번호를 바꾸도록 안내하므로 샘플 설정을 그대로 공개 환경에 사용하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f472516637c8170e"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "수집과 질의의 임베딩 모델 일치",
+                    "body": "구조화 출력을 지원하는 모델을 사용하고 수집과 질의에 같은 임베딩 모델을 유지해야 합니다. 모델 역할별 설정을 바꿀 때 이 일치 조건을 함께 확인하세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-06800b5c5b126b59"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "디자인 에이전트 스킬",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "Nutlope/hallmark",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "세 가지 테마 제안 뒤 브라우저에서 결과 검사",
+                    "body": "카탈로그에서 세 가지 테마를 제시하고 방문자가 하려는 일에 맞춰 페이지를 구성한 뒤 실제 브라우저에서 검사합니다. 마지막에는 새 문맥의 검토자가 판단합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-b354f4d1d4e13618"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "참조할 실제 제품 URL·개발 서버·앱",
+                      "body": "실제 제품의 URL, 개발 서버 또는 앱을 지정하면 스크린샷을 직접 수집하는 경로입니다. 페이지 생성 요구사항과 시각적 참조를 구분해 전달할 수 있습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-5f20f39a5587ee64"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "선택 근거를 CSS 주석에 남긴 독립 HTML·CSS",
+                      "body": "페이지마다 독립적인 HTML·CSS를 만들고 첫 CSS 주석에 설계 결정을 기록합니다. 이미지 목업만 반환하는 결과가 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-bf54ff9eabaf8871"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "설치에 필요한 Node 환경",
+                    "body": "문서는 Node 18 이상이 필요하다고 명시합니다. 스킬 설치를 시작하기 전에 해당 환경을 준비해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-35911bcab4f82a26"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "생성 뒤 실제 브라우저와 별도 문맥 검토",
+                    "body": "테마를 고른 뒤 끝내지 않고 실제 브라우저에서 결과를 검사하고 새 문맥의 검토자가 마지막으로 판단하는 흐름입니다. 테마 선택만으로 UI 검증이 끝났다고 보지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-b354f4d1d4e13618"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "웹 데이터 수집",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "D4Vinci/Scrapling",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "CSS·XPath 추출과 적응형 요소 추적",
+                    "body": "CSS·XPath·텍스트·정규식으로 대상을 찾고 적응형 요소 추적·유사 요소 매칭과 Markdown 출력을 제공합니다. 단순 URL 다운로드와 구분되는 파싱 흐름입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-783580aa597e6d94"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "정적·JavaScript 페이지와 페이지 뒤의 API",
+                      "body": "정적 페이지를 수집하거나 JavaScript를 렌더링하고 웹사이트와 상호작용한 뒤 뒤쪽 API 호출에서 데이터를 추출하는 경로를 제공합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-95e7eee41891a648"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "spider의 JSON·JSONL·CSV·XML 내보내기",
+                      "body": "spider 수집 결과를 JSON·JSONL·CSV·XML로 내보내는 경로입니다. 페이지 본문을 Markdown으로 만드는 파싱 경로와 구분됩니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-7a56e88789079639"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "기본 설치는 parser만 포함",
+                    "body": "기본 설치는 parser와 그 의존성만 포함합니다. fetchers·spiders를 그대로 import하면 ModuleNotFoundError가 나므로 수집 기능을 쓸 때는 별도 의존성을 설치해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-7301ad3410fb2e20"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "HTTP 요청과 브라우저 설치 구분",
+                    "body": "scrapling install은 브라우저 fetcher가 필요할 때 실행하는 절차입니다. 일반 HTTP 요청에는 브라우저 설치가 필요하지 않습니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-6c9d73b153bed62b"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "전통 명반 계산",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "Renhuai123/ziwei-doushu",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "출생지·진태양시 기준으로 날짜 경계 보정",
+                    "body": "공식 영문 문서는 출생지를 지정하면 진태양시를 사용해 늦은 자시의 날짜 경계를 판단하고, 출생지가 없으면 해당 보정을 하지 않는다고 설명합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-fa8036fa11613251"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "v3 샘플 데이터의 출생 필드",
+                      "body": "v3 샘플 데이터의 birthInfo에는 연·월·일, 성별, 경도가 있고 hour는 0~23시가 아닌 시진 순서 0~11입니다. 이 필드 설명을 현재 엔진의 모든 호출 형식과 동일시하지 않습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-8bbff28d2a998b0c"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "v3 데이터셋의 명반 JSON과 주제별 해석",
+                      "body": "v3 데이터셋은 명반 JSON과 13개 주제의 해석 텍스트를 담습니다. 문서는 이후 온라인 엔진의 출력과 이 데이터셋이 달라질 수 있다고 명시합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-2bf581643709ebca"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "명반 계산과 API 키 경로 구분",
+                    "body": "명반 계산에는 API 키가 필요 없다고 설명합니다. 이 면제 조건을 별도의 AI 해석이나 다른 서비스 경로까지 확대하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-c1bc7339a9b517ef"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "AI 에이전트 메모리",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "thedotmack/claude-mem",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "도구 호출을 로컬 worker로 전달해 관측 기록 작성",
+                    "body": "호스트 hook이 읽기·편집·실행 등의 도구 호출을 작은 로컬 worker로 전달합니다. 이 수집 단계와 별도 observer가 관측 기록을 작성하는 단계는 구분됩니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f8f513b21dae101c",
+                      "e-0ff609bc2af8d878"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "hook으로 수집하는 읽기·편집·실행 기록",
+                      "body": "에이전트 hook이 도구 호출의 읽기·편집·실행 활동을 worker로 넘기는 경로입니다. 호스트에 hook이 없는 경우까지 같은 수집을 보장하지 않습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-f8f513b21dae101c"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "짧은 관측 기록과 세션 종료 요약",
+                      "body": "별도 observer가 수집 활동을 짧은 관측 기록으로 만들고 세션이 끝날 때 요약을 씁니다. 전체 대화를 그대로 출력하는 설명과 구분됩니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-0ff609bc2af8d878"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "검색 지원과 세션 기록 지원 구분",
+                    "body": "Copilot CLI·Goose·Roo Code·Warp는 기존 기억을 검색할 수 있지만 해당 세션은 기록되지 않습니다. 지원 에이전트 목록만 보고 모든 호스트에서 자동 수집된다고 가정하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-45cdc17520fa9634"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "AI 에이전트 스킬",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "anthropics/skills",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "작업에 맞춰 지침·스크립트·자원을 동적으로 로드",
+                    "body": "Claude가 특정 작업을 수행할 때 지침·스크립트·자원 폴더를 동적으로 읽는 구성입니다. 문서 작업과 데이터 분석 등의 작업 조건은 개별 스킬에 속합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-264302096da8e2e0"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "입력",
+                      "body": "추출할 PDF 파일을 입력합니다. 문서 예의 파일 이름은 document.pdf입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-3452a58de222561c"
+                      ],
+                      "exampleOnly": true,
+                      "context": "pdf · PDF 텍스트 추출 · 대표 항목"
+                    },
+                    {
+                      "title": "입력",
+                      "body": "편집할 스프레드시트나 CSV·TSV 자료를 전달합니다. 이 형식 목록이 모든 편집 도구의 완전한 호환성을 보장하지는 않습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-1cc7d747a3e66bd0"
+                      ],
+                      "exampleOnly": true,
+                      "context": "xlsx · 스프레드시트 편집 · 대표 항목"
+                    }
+                  ]
+                },
+                "outputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "출력",
+                      "body": "페이지에서 추출한 텍스트를 문자열 변수 text에 누적합니다. 이 예가 별도 텍스트 파일 저장까지 수행한다는 뜻은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-69e102a6bf0b56ac"
+                      ],
+                      "exampleOnly": true,
+                      "context": "pdf · PDF 텍스트 추출 · 대표 항목"
+                    },
+                    {
+                      "title": "출력",
+                      "body": "결과물은 스프레드시트 파일입니다. HTML 보고서나 독립 Python 스크립트를 주된 산출물로 삼는 작업과 구분합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-c3de679b2c614ddd"
+                      ],
+                      "exampleOnly": true,
+                      "context": "xlsx · 스프레드시트 편집 · 대표 항목"
+                    }
+                  ]
+                },
+                "conditions": [
+                  {
+                    "title": "모음 설치 · Claude Code",
+                    "body": "Claude Code에서 이 저장소를 플러그인 마켓플레이스로 등록하고, Browse and install plugins에서 anthropic-agent-skills의 document-skills 또는 example-skills를 선택해 설치하는 경로입니다. 설치 후 스킬 이름을 언급해 사용합니다. Claude.ai·API의 조건을 이 경로의 필수 조건으로 합치지 않습니다.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-ebc39c2063f7a424",
+                      "e-17286a10c3c3030f",
+                      "e-fad8c7f09e6e026f",
+                      "e-8a7436c679895c29",
+                      "e-4d02ca086a0144f9",
+                      "e-9a7f45d4cd3029d7",
+                      "e-30fb97b64f2102a2"
+                    ],
+                    "exampleOnly": true,
+                    "scope": "collection-install",
+                    "context": "공통 설치·호환 경로"
+                  },
+                  {
+                    "title": "대표 XLSX 스킬: 종료 코드 0만으로 성공 판단 금지",
+                    "body": "XLSX 재계산은 LibreOffice가 파일을 다시 쓰고 JSON 상태와 오류 수를 반환하는 경로입니다. errors_found도 종료 코드 0일 수 있으므로 JSON 상태·total_errors를 확인해야 합니다. 이는 XLSX 작업 조건이며 모음 전체의 공통 요구사항은 아닙니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-2a1fb4e3cd9aaaff"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "Git 워크트리 관리",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "max-sixty/worktrunk",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "브랜치 이름으로 worktree 경로 계산",
+                    "body": "worktree를 브랜치 이름으로 지정하면 설정 가능한 템플릿으로 경로를 계산합니다. 브랜치를 받는 명령에는 이미 checkout된 worktree 경로도 전달할 수 있습니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-c55c73d142b927ae"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "브랜치 이름 또는 checkout된 worktree 경로",
+                      "body": "브랜치를 인수로 받는 명령은 브랜치 이름 대신 해당 브랜치가 checkout된 worktree 경로도 받습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-c55c73d142b927ae"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "템플릿으로 계산한 작업 경로",
+                      "body": "지정한 브랜치의 작업 디렉터리 경로를 설정 템플릿으로 계산합니다. 이 근거가 모든 명령의 출력 형식을 JSON 등으로 정한다는 뜻은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-c55c73d142b927ae"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "생성·병합 시 hook의 실행 시점",
+                    "body": "hook은 worktree 생성, 병합 전·후 등에 명령을 실행하는 기능입니다. 단순 경로 전환과 자동 명령 실행의 범위를 구분해 프로젝트의 hook 설정을 검토하세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-170f44a9e505113e"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -9639,7 +11043,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-12T00:55:40.643Z"
+        "generatedAt": "2026-11-12T01:09:56.306Z"
       }
     },
     "monthly": {
@@ -9653,6 +11057,7 @@
         "대표 항목 사용 예는 2개 프로젝트에서 4개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "설치·실행 조건을 별도 분석한 프로젝트 0개 중 공통 설치 경로는 0개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 0개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 0개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
         "계획 작성·실행 위임 등 작업 단계의 조건은 0개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 0개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
+        "같은 용도의 비교는 1개 분야에서 제공합니다. 단독 항목 8개 분야도 처리 방식·입력·결과물·도입 조건을 요약합니다. 같은 발행호 안의 문서 설명을 비교하며 성능·우열·상호 대체 가능성을 판정하지 않습니다.",
         "공통으로 확인한 항목은 Node.js(7개), 에이전트 클라이언트(6개), 운영체제별 실행 경로(4개), Python(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
         "기본 항목 충족 9개 · 부분 분석 1개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
@@ -13573,7 +14978,7 @@
         }
       ],
       "synthesis": {
-        "version": 6,
+        "version": 7,
         "coverage": {
           "total": 10,
           "classified": 10,
@@ -13665,6 +15070,699 @@
             "count": 1,
             "projects": [
               "earthtojake/text-to-cad"
+            ]
+          }
+        ],
+        "comparisons": [
+          {
+            "category": "디자인 에이전트 스킬",
+            "mode": "comparison",
+            "projects": [
+              {
+                "name": "Nutlope/hallmark",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "세 가지 테마 제안 뒤 브라우저에서 결과 검사",
+                    "body": "카탈로그에서 세 가지 테마를 제시하고 방문자가 하려는 일에 맞춰 페이지를 구성한 뒤 실제 브라우저에서 검사합니다. 마지막에는 새 문맥의 검토자가 판단합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-b354f4d1d4e13618"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "참조할 실제 제품 URL·개발 서버·앱",
+                      "body": "실제 제품의 URL, 개발 서버 또는 앱을 지정하면 스크린샷을 직접 수집하는 경로입니다. 페이지 생성 요구사항과 시각적 참조를 구분해 전달할 수 있습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-5f20f39a5587ee64"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "선택 근거를 CSS 주석에 남긴 독립 HTML·CSS",
+                      "body": "페이지마다 독립적인 HTML·CSS를 만들고 첫 CSS 주석에 설계 결정을 기록합니다. 이미지 목업만 반환하는 결과가 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-bf54ff9eabaf8871"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "설치에 필요한 Node 환경",
+                    "body": "문서는 Node 18 이상이 필요하다고 명시합니다. 스킬 설치를 시작하기 전에 해당 환경을 준비해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-35911bcab4f82a26"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "생성 뒤 실제 브라우저와 별도 문맥 검토",
+                    "body": "테마를 고른 뒤 끝내지 않고 실제 브라우저에서 결과를 검사하고 새 문맥의 검토자가 마지막으로 판단하는 흐름입니다. 테마 선택만으로 UI 검증이 끝났다고 보지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-b354f4d1d4e13618"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              },
+              {
+                "name": "pbakaus/impeccable",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "critique 점수와 audit 수정 우선순위",
+                    "body": "critique는 사용성 기준으로 디자인을 평가하고 수정 순위를 매깁니다. audit는 접근성·성능·테마·반응형 문제를 P0부터 P3까지 나누는 별도 검사입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-1f1f8d1a463184f9"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "공통 입력 계약",
+                      "body": "명령 이름과 적용할 대상 영역을 지정합니다.",
+                      "kind": "documented",
+                      "evidenceIds": [
+                        "e-a1733f537f164b97"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "출력",
+                      "body": "기술 품질 점수와 P0~P3 심각도별 발견 사항을 담은 감사 보고서를 만듭니다. 이 저널이 대상 UI의 점수를 측정한 결과는 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-88d37a0e77b6e9c9",
+                        "e-dd9e455d1b53d268"
+                      ],
+                      "exampleOnly": true,
+                      "context": "audit · UI 기술 감사 · 대표 항목"
+                    },
+                    {
+                      "title": "출력",
+                      "body": "대화로 제공하는 비평 보고서가 주된 결과이며, 스냅샷은 해당 실행을 보관한 자료입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-a6faa41c4fb55193"
+                      ],
+                      "exampleOnly": true,
+                      "context": "critique · UX 비평 · 대표 항목"
+                    }
+                  ]
+                },
+                "conditions": [
+                  {
+                    "title": "live mode는 로컬 checkout에서만 사용",
+                    "body": "live mode는 로컬 checkout 수정용이며 배포 사이트에 주입하거나 동작을 위해 운영 CSP를 약화하지 않도록 안내합니다. 낯선 저장소에서는 복사 편집 시 실행되는 선택적 검증 스크립트도 먼저 검토해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-3377b8e3c73f245c"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "Apply의 CLI 대체 실행과 권한 범위",
+                    "body": "최근 1분 동안 chat agent가 응답하지 않으면 Apply가 PATH의 codex 또는 claude CLI를 승인·샌드박스 제한 없이 실행하고 환경을 상속한다고 설명합니다. 편집 요청을 적용하기 전에 실제 실행 주체와 권한 범위를 확인해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-c4d7f42e1e9e239c"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "역공학·프로그램 분석",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "NationalSecurityAgency/ghidra",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "컴파일된 프로그램의 디스어셈블·디컴파일 분석",
+                    "body": "컴파일된 프로그램을 분석하는 프레임워크로 디스어셈블·어셈블·디컴파일·그래프·스크립팅 기능을 제공합니다. 특정 프로세서나 실행 형식의 지원 여부는 별도로 대조해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-94b14c39b9f75671"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "플랫폼별 컴파일된 프로그램",
+                      "body": "Windows·macOS·Linux 등에서 컴파일된 프로그램을 분석 대상으로 삼습니다. 원본 소스가 필수 입력이라는 설명은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-94b14c39b9f75671"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "기계 명령·디컴파일·그래프 분석 표현",
+                      "body": "디스어셈블·디컴파일·그래프 기능으로 프로그램을 살펴보는 결과를 제공합니다. 완전한 원본 소스 복원이나 특정 파일 내보내기 형식을 보장하는 설명은 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-94b14c39b9f75671"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "기존 설치 폴더 위에 압축을 풀지 않기",
+                    "body": "공식 사전 빌드 설치 절차는 기존 설치 위에 압축을 풀지 말라고 명시합니다. 새 릴리스를 기존 폴더에 덮어쓰는 방식으로 갱신하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-4840b3dba5af06b5"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "사전 빌드 실행과 소스 빌드 환경 구분",
+                    "body": "사전 빌드 릴리스 설치 절차에는 64비트 JDK 25가 명시돼 있습니다. 소스 빌드용 Gradle·컴파일러 요구사항을 일반 실행의 필수 조건으로 모두 합치지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-6cf9aa5cd61bb900"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "영상 제작",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "heygen-com/hyperframes",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "Chrome에서 프레임을 탐색하고 FFmpeg로 인코딩",
+                    "body": "브라우저에서 미리 본 HTML 구성을 headless Chrome이 프레임별로 탐색하고 FFmpeg가 영상으로 인코딩합니다. 같은 입력으로 같은 영상을 만드는 렌더링 경로라고 설명합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-1382ec4fb4d9dbe4"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "타이밍·트랙을 붙인 HTML과 탐색 가능한 애니메이션",
+                      "body": "HTML에 타이밍·트랙 data 속성을 붙입니다. GSAP·CSS·Lottie·Three.js·Anime.js·WAAPI 또는 별도 frame adapter로 탐색 가능한 애니메이션을 구성합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-052597812eb0744d"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "HTML·CSS·미디어 구성으로 만든 MP4",
+                      "body": "HTML·CSS·미디어와 탐색 가능한 애니메이션을 MP4 영상으로 변환합니다. 인터랙티브 슬라이드 같은 다른 스킬의 결과와 구분되는 영상 렌더링 경로입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-da19b1a5df877d40"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "수동 CLI 렌더링 환경",
+                    "body": "수동 CLI 경로는 Node.js 22 이상과 FFmpeg를 요구합니다. HTML을 브라우저에서 미리 보는 것과 영상으로 인코딩할 실행 환경을 구분하세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-b4808a81720bc2a3"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "비대화형 설치의 범위",
+                    "body": "스킬 선택기는 대화형 전용입니다. 비대화형 실행에서 --skill을 생략하면 9개 전체가 설치되므로 일부만 필요할 때는 설치 범위를 명시해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-205cd02761180484"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "음성 제작",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "debpalash/VoiceStudio",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "참고 녹음의 목소리로 음성 생성",
+                    "body": "깨끗한 참고 녹음을 익숙한 목소리의 음성으로 바꾸는 voice cloning 경로입니다. 영상 번역·더빙과 구분해 제공하는 기능입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-12c82ccaa38a3fa2"
+                    ]
+                  },
+                  {
+                    "title": "원본 타이밍을 유지하는 영상 더빙",
+                    "body": "영상 더빙은 번역한 음성을 원본 영상의 타이밍에 맞추는 별도의 작업 경로입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-a71f9b7b5e4cda01"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "voice cloning용 깨끗한 참고 녹음",
+                      "body": "목소리 복제 경로에는 깨끗한 참고 녹음을 사용합니다. 이 근거만으로 허용 파일 형식이나 최소 길이를 정하지 않습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-12c82ccaa38a3fa2"
+                      ]
+                    },
+                    {
+                      "title": "번역·더빙할 원본 영상",
+                      "body": "영상 더빙 경로의 대상은 번역·더빙할 영상입니다. 참고 녹음 하나로 영상 더빙까지 수행한다는 설명이 아닙니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-a71f9b7b5e4cda01"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "참고 녹음의 목소리를 반영한 음성",
+                      "body": "voice cloning 경로는 깨끗한 참고 녹음에서 해당 목소리의 음성을 만듭니다. 문서의 이 설명만으로 결과 파일 확장자를 정하지 않습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-12c82ccaa38a3fa2"
+                      ]
+                    },
+                    {
+                      "title": "원본 영상 타이밍에 맞춘 번역·더빙 음성",
+                      "body": "영상 더빙 경로는 영상을 번역하고 원본 영상의 타이밍에 맞는 음성을 만듭니다. 참고 녹음으로 만드는 voice cloning과 다른 사용 경로입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-a71f9b7b5e4cda01"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "Intel Mac은 UI 전용",
+                    "body": "macOS 설치 문서는 Intel Mac에서 로컬 backend를 지원하지 않는다고 명시합니다. x64 앱 UI가 실행된다는 사실과 로컬 음성 모델 실행 지원을 구분해야 합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-bbafc7ef52121650"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "플러그인 모음",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "anthropics/knowledge-work-plugins",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "직무별 스킬·MCP 연결·명령을 회사 흐름에 맞게 구성",
+                    "body": "직무별 플러그인이 스킬·connector·slash command·sub-agent를 묶습니다. 회사 도구·용어·절차에 맞게 수정하는 구성이고, PRD 작성과 영업 상담 정리는 아래 대표 예에서 따로 설명합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-93e982661b76ffb8"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "입력",
+                      "body": "문제 정의나 기능 아이디어를 전달합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-25789bba84c00e4f"
+                      ],
+                      "exampleOnly": true,
+                      "context": "product-management · PRD 작성 · 대표 항목"
+                    },
+                    {
+                      "title": "입력",
+                      "body": "통화 메모·녹취록을 붙여 넣거나, 통화 기록 도구가 연결돼 있으면 해당 통화를 지정합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-6b2fcc589741aab8"
+                      ],
+                      "exampleOnly": true,
+                      "context": "sales · 통화 후 요약 · 대표 항목"
+                    }
+                  ]
+                },
+                "outputs": {
+                  "status": "not-applicable",
+                  "claims": [],
+                  "examples": [
+                    {
+                      "title": "출력",
+                      "body": "사용자 스토리, 요구사항 우선순위, 성공 지표 등을 담은 구조화된 제품 요구사항 문서(PRD)를 만듭니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-25789bba84c00e4f"
+                      ],
+                      "exampleOnly": true,
+                      "context": "product-management · PRD 작성 · 대표 항목"
+                    },
+                    {
+                      "title": "출력",
+                      "body": "통화 요약, 후속 이메일 초안, 팀 요약, CRM 변경 제안을 얻습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-6b2fcc589741aab8"
+                      ],
+                      "exampleOnly": true,
+                      "context": "sales · 통화 후 요약 · 대표 항목"
+                    }
+                  ]
+                },
+                "conditions": [
+                  {
+                    "title": "대표 sales 플러그인: 조회와 실제 업무 반영 구분",
+                    "body": "sales 문서는 요청에 따라 connector 권한 안에서 CRM 갱신, 메일 발송, 채팅 게시와 일정 예약까지 가능하다고 설명합니다. 스킬이 먼저 제안한 변경은 근거와 함께 보여주는 경로이므로 초안 작성과 실제 외부 반영을 구분해야 합니다. 다른 직무 플러그인 전체의 공통 동작은 아닙니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-d6d61c49a1cdf719"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "AI 에이전트 메모리",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "thedotmack/claude-mem",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "도구 호출을 로컬 worker로 전달해 관측 기록 작성",
+                    "body": "호스트 hook이 읽기·편집·실행 등의 도구 호출을 작은 로컬 worker로 전달합니다. 이 수집 단계와 별도 observer가 관측 기록을 작성하는 단계는 구분됩니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f8f513b21dae101c",
+                      "e-0ff609bc2af8d878"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "hook으로 수집하는 읽기·편집·실행 기록",
+                      "body": "에이전트 hook이 도구 호출의 읽기·편집·실행 활동을 worker로 넘기는 경로입니다. 호스트에 hook이 없는 경우까지 같은 수집을 보장하지 않습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-f8f513b21dae101c"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "짧은 관측 기록과 세션 종료 요약",
+                      "body": "별도 observer가 수집 활동을 짧은 관측 기록으로 만들고 세션이 끝날 때 요약을 씁니다. 전체 대화를 그대로 출력하는 설명과 구분됩니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-0ff609bc2af8d878"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "검색 지원과 세션 기록 지원 구분",
+                    "body": "Copilot CLI·Goose·Roo Code·Warp는 기존 기억을 검색할 수 있지만 해당 세션은 기록되지 않습니다. 지원 에이전트 목록만 보고 모든 호스트에서 자동 수집된다고 가정하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-45cdc17520fa9634"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "AI 에이전트 스킬",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "cloudflare/security-audit-skill",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "확정·추가 검증·기각 기록을 구조화한 보안 감사",
+                    "body": "발견 사항을 confirmed·needs_validation·rejected로 나눠 findings.json에 기록하고 report-schema.json으로 검사합니다. 의심되는 사항을 모두 확정 취약점으로 취급하지 않습니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-52967a2d77b74ef1"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "지정한 코드베이스의 보안 감사 요청",
+                      "body": "에이전트를 감사할 코드베이스에서 시작하거나 해당 코드베이스를 가리킨 뒤 보안 감사를 요청하는 사용 경로입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-0b0512560f4955dd"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "검증 기록에서 생성하는 세 가지 보고서",
+                      "body": "검증된 기록과 coverage ledger를 바탕으로 REPORT.md·FINDINGS-DETAIL.md·NEEDS-VALIDATION.md를 만듭니다. 확정 사항과 추가 검증 대상을 별도 산출물로 유지합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-e43e9280899ab6c5"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "대상 코드 실행 전에 OS 샌드박스 필요",
+                    "body": "대상 빌드·테스트 등을 실행하려면 외부 네트워크 차단, 허용 환경 변수, 자원 상한과 지정 임시 경로 쓰기를 강제하는 OS 샌드박스가 필요합니다. 이 통제가 없으면 실행하지 않고 needs_validation으로 남기는 절차입니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-a2df1d11024bcd88"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "AI 에이전트 운영",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "pingdotgg/t3code",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "외부 에이전트가 MCP로 프로젝트·스레드 작업",
+                    "body": "T3가 직접 시작하지 않은 에이전트도 MCP 서버로 프로젝트·스레드를 읽고 스레드를 시작하거나 메시지를 보낼 수 있습니다. 로그인한 에이전트마다 사용자가 허용 범위를 고릅니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-0b1ba3817b5c4907"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "허용 권한 안에서 스레드 시작·메시지 요청",
+                      "body": "외부 에이전트가 한 번 로그인한 뒤, 사용자가 허용한 범위에서 MCP로 스레드 시작·메시지 전송을 요청하는 경로입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-0b1ba3817b5c4907"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "읽기 전용 연결의 프로젝트·스레드·모델 목록",
+                      "body": "Read only 권한에서는 프로젝트·스레드와 사용 가능한 provider·model을 읽으며 변경은 할 수 없습니다. 쓰기 작업이 가능한 연결과 결과 범위를 구분합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-f50ddb5875f8b8be"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "일회 실행 경로에도 Node.js가 필요",
+                    "body": "설치 없이 시험하는 npx t3@latest 경로도 npx 실행용 Node.js는 필요합니다. 데스크톱 앱 설치와 이 CLI 시험 경로의 환경을 구분하세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-d6d9818c3148749d"
+                    ],
+                    "context": "도입 시 주의점"
+                  },
+                  {
+                    "title": "지원 에이전트별 연결 환경 확인",
+                    "body": "문서가 안내하는 지원 대상은 Codex·Claude·Cursor·Grok Build·OpenCode·Antigravity·fx입니다. 이름이 비슷한 다른 에이전트도 연결된다고 확대하지 마세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f59657cb3f93baec"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "CAD·설계",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "earthtojake/text-to-cad",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "부품·조립체 요청을 Python 모델과 CAD 뷰어로 연결",
+                    "body": "에이전트에 부품이나 조립체를 요청하면 Python 스크립트로 모델을 작성하고 실행해 CAD 뷰어에 표시합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-11d98ae0fe1ff2be"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "에이전트에 전달할 부품·조립체 요청",
+                      "body": "만들 부품이나 조립체를 에이전트에 설명하는 모델 작성 요청입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-11d98ae0fe1ff2be"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "STEP·GLB·STL·3MF 형식의 3D 모델",
+                      "body": "로컬 워크플로에서 3D 모델을 STEP·GLB·STL·3MF 파일로 생성합니다. 형상 생성과 제조 가능성 검사·외부 제조 서비스 연결은 각각 구분되는 작업입니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-8993aa39f1992c8b"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "모델 생성에는 Python 코드 실행이 포함",
+                    "body": "설계 요청은 Python 스크립트로 작성되고 그 스크립트를 실행해 모델을 만듭니다. 뷰어에 표시된 형상만 확인하지 말고 생성된 모델 코드도 검토하는 흐름으로 사용하세요.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-11d98ae0fe1ff2be"
+                    ],
+                    "context": "도입 시 주의점"
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -14128,7 +16226,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-12T00:55:40.643Z"
+        "generatedAt": "2026-11-12T01:09:56.306Z"
       }
     }
   },

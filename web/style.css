@@ -127,6 +127,16 @@ pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #253b2d; color
 .project--error h4 { margin: 0; }
 .project--error > a { display: inline-flex; align-items: center; min-height: 44px; }
 .source-note { color: var(--muted); font-size: 12px; }
+.comparison-group { margin: 14px 0; border: 1px solid var(--line); border-radius: 5px; }
+.comparison-group > summary { padding: 14px 16px; cursor: pointer; font-weight: 600; overflow-wrap: anywhere; }
+.comparison-group > summary > span { display: block; margin-top: 4px; font-size: 12px; color: var(--muted); font-weight: 400; }
+.comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: 16px; padding: 0 16px 16px; align-items: start; }
+.comparison-project { min-width: 0; padding: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; overflow-wrap: anywhere; }
+.comparison-project h5 { margin: 0 0 8px; font-size: 15px; }
+.comparison-project h5 a { display: inline-flex; align-items: center; min-height: 44px; }
+.comparison-project h6 { margin: 20px 0 10px; padding-top: 14px; border-top: 1px solid var(--line); font-size: 14px; }
+.comparison-claim { margin-bottom: 20px; }
+.comparison-claim > p { margin: 8px 0; }
 .method { display: flex; gap: 20px; padding: 24px; border: 1px solid var(--line); margin: 32px 0 44px; }
 .method-symbol { font-size: 28px; color: var(--green); }
 .method h2 { font-size: 16px; margin: 0 0 10px; }

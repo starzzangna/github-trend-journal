@@ -1,0 +1,435 @@
+[
+  {
+    "repository": "meta/astryx",
+    "expected": [
+      "react",
+      "canary"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/meta/astryx/blob/main/README.md",
+        "sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
+        "markdown": "## Getting Started\n\nAstryx requires **React 19** or later (`react` and `react-dom` are peer dependencies of `@astryxdesign/core`).\n\nInstall Astryx, a theme, and its peer dependencies:\n\n```bash\n# npm\nnpm install @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nnpm install -D @astryxdesign/cli\n\n# pnpm\npnpm add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\npnpm add -D @astryxdesign/cli\n\n# yarn\nyarn add @astryxdesign/core @astryxdesign/theme-neutral @stylexjs/stylex\nyarn add -D @astryxdesign/cli\n```\n\nYou can also install the CLI once for your computer, so `astryx` works in any folder and every coding agent knows Astryx; in a project, it still runs that project's own version:\n\n```bash\nnpm i -g @astryxdesign/cli\n```\n\nProject install, global install, or both? `astryx docs global/project-global-or-both` compares them (both is recommended), and `astryx docs global` explains how global mode works.\n\nThe simplest setup is a few CSS imports plus a theme provider — no build plugin, no PostCSS or Babel config. See the **[@astryxdesign/core README](packages/core/README.md#quick-start)** for the full guide (Next.js, Tailwind, Vite, and CDN).\n\nFor reliable CLI access, add a script to your `package.json`:\n\n```json\n\"scripts\": {\n  \"astryx\": \"node node_modules/@astryxdesign/cli/clients/cli/bin/astryx.mjs\"\n}\n```\n\nThen use it as `npm run astryx -- component --list`. This avoids path errors when AI assistants or new developers invoke the CLI directly.\n\n\n## Packages\n\n| Package                                    | Description                                                                                          | README                             |\n| ------------------------------------------ | ---------------------------------------------------------------------------------------------------- | ---------------------------------- |\n| [`@astryxdesign/core`](packages/core)      | Components, theme system, and utilities                                                              | [README](packages/core/README.md)  |\n| [`@astryxdesign/cli`](packages/cli)        | CLI tooling: component docs, templates, scaffolding, themes, and codemods                            | [README](packages/cli/README.md)   |\n| [`@astryxdesign/build`](packages/build)    | Build plugins for StyleX source builds                                                               | [README](packages/build/README.md) |\n| [`@astryxdesign/theme-*`](packages/themes) | Seven ready-made, fully customizable themes (neutral, butter, chocolate, matcha, stone, gothic, y2k) | [README](packages/themes)          |\n\n> `@astryxdesign/lab` (experimental components) is used internally for Storybook and the sandbox and is not published to npm. `@astryxdesign/vega` (Vega/Vega-Lite chart wrapper) and `@astryxdesign/charts` (chart components) are published to npm only under the `@canary` dist-tag — there is no stable release yet.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "ZhuLinsen/daily_stock_analysis",
+    "expected": [
+      "feeds",
+      "research"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/README.md",
+        "sha": "cb130e7bd387db4fbd26949ee9f995b95c347134",
+        "markdown": "### 技术栈与数据来源\n\n| 类型 | 支持 |\n|------|------|\n| AI 模型 | [Modelflare](https://modelflare.dev/sign-up?utm_source=github&utm_campaign=daily_stock_analysis)、[AIHubMix](https://inferera.com/?aff=CfMq)、Gemini、OpenAI 兼容、DeepSeek、通义千问、Claude、Ollama 本地模型等 |\n| 行情数据 | AkShare、Tushare、Pytdx、Baostock、YFinance、Longbridge |\n| 新闻搜索 | [SerpAPI](https://serpapi.com/github-daily-stock-analysis)、[Anspire](https://open.anspire.cn/dsa?share_code=QFBC0FYC)、[Tavily](https://tavily.com/)、[Bocha](https://open.bocha.cn/)、[Brave](https://brave.com/search/api/)、[MiniMax](https://platform.minimaxi.com/)、SearXNG |\n| 社交舆情 | [Stock Sentiment API](https://api.adanos.org/docs)（Reddit / X / Polymarket，仅美股，可选） |\n\n> 项目默认内置 AkShare、Baostock、YFinance 等免费行情源，可零配置运行；免费源受上游限流、接口变动和网络波动影响，稳定性不保证。长期定时、批量分析或更稳定行情建议配置 Tushare、Longbridge 等 token 型数据源，适用市场、Actions 映射和 fallback 规则见 [数据源配置](docs/full-guide.md#数据源配置)。\n\n\n## ⚠️ 免责声明\n\n本项目仅供学习和研究使用，不构成任何投资建议。股市有风险，投资需谨慎。作者不对使用本项目产生的任何损失负责。\n\n---\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "GoogleChrome/modern-web-guidance-src",
+    "expected": [
+      "fallback"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/README.md",
+        "sha": "d130c0043c81edb4dc74c8bb279c625a591fc6ac",
+        "markdown": "### Safe Adoption of Modern Features\n\n* **Progressive Enhancement & Nuanced Fallbacks**: We distinguish between purely additive enhancements (like speculative preloading) which are safe to let older browsers silently ignore, and critical behaviors (like dialog controls or network beacons) where we write highly considered, low-overhead fallbacks.\n* **Responsible Fallbacks**: We prioritize lightweight, case-specific custom fallbacks (<50 LOC) or conditionally-loaded polyfills instead of heavy third-party bundles.\n* **Gotchas & Quirks**: We document hidden platform limitations, such as the 64KB payload quota for `fetchLater()` or macOS-specific scrollbar behaviors.\n* **Baseline-Aware Integration**: We leverage real-time compatibility data from the **Baseline** project so agents dynamically adapt to current browser support.\n* **Origin Trial & Volatile Feature Gates**: Guides covering experimental **Origin Trial** APIs or **volatile features** (single-engine features shipped within the last 3 months or still stabilizing) remain discoverable via `search`, but are gated on `retrieve` so agents do not adopt unstable APIs without explicit developer consent.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "shadcn/improve",
+    "expected": [
+      "host",
+      "merge"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/shadcn/improve/blob/main/README.md",
+        "sha": "17e41e80976356c4bacfa5b9f2e873b67d1fe554",
+        "markdown": "## Hard rules\n\n- Never modifies source code itself. The only writes go to `plans/`; executors edit only in disposable worktrees, and merging is always yours.\n- Never runs commands that mutate your working tree — read, search, and read-only analysis only.\n- Never reproduces secret values. Locations and credential types only, rotation always recommended.\n- Asked to implement? It declines and points at the plan (or offers `execute`).\n\n"
+      },
+      {
+        "path": "skills/improve/SKILL.md",
+        "url": "https://github.com/shadcn/improve/blob/main/skills/improve/SKILL.md",
+        "sha": "df5b9001adda5ee72697ab5f7d3efe74c212e478",
+        "markdown": "## Invocation variants\n\n- Bare invocation → full workflow above.\n- `quick` / `deep` (anywhere in the invocation) → effort level for the audit; see the table in Phase 2. Composes with everything: `quick security`, `deep --issues`. Default is `standard`.\n- With a focus argument (e.g. `security`, `perf`, `tests`) → run Recon, then audit only that category, then plan.\n- `branch` → audit only the current working branch's changes: scope = files changed since the merge-base with the default branch (`git diff --name-only $(git merge-base origin/<default> HEAD)..HEAD`) plus their direct importers/callers. Light recon, all categories, usually no subagents. **Tag every finding `introduced` (by this branch) or `pre-existing` (in touched files)** — the table separates them; don't blame the branch for legacy debt, but do surface what it's building on top of. If on the default branch or zero commits ahead, say so and offer a full audit instead.\n- `next` (or `features`, `roadmap`) → run Recon, then audit only the direction category, in more depth: 4–6 grounded suggestions, each with evidence, trade-offs, and a coarse effort estimate. Selected ones become design/spike plans, not build-everything plans.\n- `plan <description>` → skip the audit; the user already knows what they want. Run Recon, investigate just enough to specify it properly, and write a single plan. If the description is too ambiguous to specify honestly, first try to resolve each ambiguity from the codebase itself; only what's left becomes questions to the user — asked one at a time, each with a recommended answer.\n- `review-plan <file>` → critique an existing plan in `plans/` against the template's standards and tighten it. If you authored the plan in this same session, also have a fresh-context subagent read it cold and report ambiguities — self-critique misses gaps you mentally fill from context the executor won't have.\n- `execute <plan>` → dispatch a cheaper executor subagent on one plan (isolated worktree), then review its diff like a tech lead — re-run done criteria, check scope, read the code — and render a verdict. Treat the executor's diff as untrusted until reviewed: verify every hunk traces to a plan step and reject any out-of-scope change, however plausible it looks. Requires a host agent that can spawn subagents in an isolated worktree; if yours can't, say so and hand the plan over for manual execution instead. **Read [references/closing-the-loop.md](references/closing-the-loop.md) before the first dispatch.**\n- `reconcile` → process what happened since last session: verify DONE plans, investigate BLOCKED ones, refresh drifted TODOs, retire dead findings. See [references/closing-the-loop.md](references/closing-the-loop.md).\n- `--issues` (modifier on any planning invocation) → also publish each written plan as a GitHub issue via `gh`, URL recorded in the plan and index. Only with the explicit flag. **Before creating any issue, check whether the repo is public (`gh repo view --json visibility`). If it is, warn the user that issues are publicly visible and get explicit confirmation before publishing any plan that describes a security vulnerability, credential location, or other sensitive finding.** See [references/closing-the-loop.md](references/closing-the-loop.md).\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "addyosmani/agent-skills",
+    "expected": [
+      "auto"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/addyosmani/agent-skills/blob/main/README.md",
+        "sha": "7f610b8ca80ff9bc7ba7f95f3209430c3481891d",
+        "markdown": "## Commands\n\n9 slash commands that map to the development lifecycle. Each one activates the right skills automatically.\n\n| What you're doing | Command | Key principle |\n|-------------------|---------|---------------|\n| Define what to build | `/spec` | Spec before code |\n| Plan how to build it | `/plan` | Small, atomic tasks |\n| Build incrementally | `/build` | One slice at a time |\n| Prove it works | `/test` | Tests are proof |\n| Set the quality bar | `/constraints` | Decide it once, enforce it everywhere |\n| Review before merge | `/review` | Improve code health |\n| Audit web performance | `/webperf` | Measure before you optimize |\n| Simplify the code | `/code-simplify` | Clarity over cleverness |\n| Ship to production | `/ship` | Faster is safer |\n\nIn Claude Code these install as plugin commands. Where a built-in command has the same name, as `/review` does, use the namespaced form: `/agent-skills:review`.\n\nWant fewer manual steps once the spec exists? **`/build auto`** generates the plan and implements every task in a single approved pass — you approve the plan once, then it runs autonomously. It removes the human stepping *between* tasks, not the verification: every task is still test-driven and committed individually, and it pauses on failures or risky steps.\n\nSkills also activate automatically based on what you're doing — designing an API triggers `api-and-interface-design`, building UI triggers `frontend-ui-engineering`, and so on.\n\n---\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "vercel-labs/agent-browser",
+    "expected": [
+      "deps",
+      "refs"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/vercel-labs/agent-browser/blob/main/README.md",
+        "sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
+        "markdown": "# agent-browser\n\nBrowser automation for AI agents: open pages, read them as an accessibility tree, and act on elements from the shell.\n\n<p>\n  <a href=\"https://vercel.com/labs#labs-products\"><img alt=\"Vercel Labs Product\" src=\"https://img.shields.io/badge/LABS-PRODUCT-0a0a0a.svg?style=for-the-badge&amp;logo=Vercel&amp;labelColor=000000\" height=\"28\"></a>\n  <a href=\"https://www.npmjs.com/package/agent-browser\"><img alt=\"npm version: agent-browser\" src=\"https://img.shields.io/npm/v/agent-browser.svg?style=for-the-badge&amp;labelColor=000000\" height=\"28\"></a>\n  <a href=\"https://github.com/vercel-labs/agent-browser/blob/main/LICENSE\"><img alt=\"License: Apache-2.0\" src=\"https://img.shields.io/github/license/vercel-labs/agent-browser.svg?style=for-the-badge&amp;labelColor=000000\" height=\"28\"></a>\n  <a href=\"https://www.npmjs.com/package/agent-browser\"><img alt=\"npm downloads per month: agent-browser\" src=\"https://img.shields.io/npm/dm/agent-browser.svg?style=for-the-badge&amp;labelColor=000000&amp;label=npm%20downloads\" height=\"28\"></a>\n  <a href=\"https://skills.sh/vercel-labs/agent-browser\"><img alt=\"skills.sh\" src=\"https://skills.sh/b/vercel-labs/agent-browser?style=for-the-badge\" height=\"28\"></a>\n</p>\n\nagent-browser is a native Rust CLI that gives an AI agent a browser it can drive one command at a time. `snapshot` returns the page as compact text with a ref such as `@e1` for each element. The agent acts on a ref, reads the page again to check the result, and repeats. The browser stays open between commands, so each step is one short shell call.\n\n\n## Install\n\n```bash\nnpm install -g agent-browser\nagent-browser install           # download Chrome for Testing (first time only)\n```\n\n- **Homebrew:** `brew install agent-browser`, then `agent-browser install`.\n- **Linux:** `agent-browser install --with-deps` also installs the browser's system libraries.\n- **No install:** `npx agent-browser open example.com`.\n\nProject installs, building from source, `upgrade`, and `doctor` are covered in [Installation](https://agent-browser.dev/installation).\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "we-promise/sure",
+    "expected": [
+      "shared"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/we-promise/sure/blob/main/README.md",
+        "sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
+        "markdown": ""
+      },
+      {
+        "path": "docs/hosting/docker.md",
+        "url": "https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md",
+        "sha": "8d82e18b2c8b47554dc487bb15da1b26cc3b474f",
+        "markdown": "### Upgrade note: instance-wide settings need a super admin\n\nProvider credentials (such as Plaid), the shared AI connection settings (LLM provider, endpoints, API keys and models), sync settings, and the external assistant connection are stored once for the whole instance and apply to every family. On an instance with more than one family, only a `super_admin` can change them. When there is a single family, its admins keep access. Family-scoped choices, such as which assistant a family uses, stay with that family's admins.\n\nInstalls created before the first user was automatically made `super_admin` may have no super admin at all. If your instance has more than one family (for example, because someone else signed up), these instance-wide settings are hidden after the update and saving them returns \"not authorized\". Promote your own user once:\n\n```bash\ndocker compose exec web bin/rails runner 'User.find_by!(email: \"you@example.com\").update!(role: :super_admin)'\n```\n\nAfter that, you can promote other users at `/admin/users`. See section 3.5 of the [OIDC guide](oidc.md) for the console variant.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "homeassistant-ai/ha-mcp",
+    "expected": [
+      "docker",
+      "beta"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/README.md",
+        "sha": "e55a391e681dbb454b5306a1c99315c043b5ebb3",
+        "markdown": "> **Breaking change (v7.3.0):** `ha_config_set_yaml` has been moved to [beta](docs/beta.md).\n\n<div align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/homeassistant-ai/ha-mcp/master/docs/img/ha-mcp-logo.png\" alt=\"Home Assistant MCP Server Logo\" width=\"300\"/>\n\n\n### Other install methods\n\nThese run the server outside Home Assistant — useful for **Container** / **Core** installs (which can't run apps) or a separate host. The [Setup Wizard](https://homeassistant-ai.github.io/ha-mcp/setup/) generates the exact client-specific config for each.\n\n- **Docker (HTTP server):** run `ghcr.io/homeassistant-ai/ha-mcp` in HTTP mode, pointed at your Home Assistant URL and a long-lived token (an administrator's is recommended; non-admin tokens work with limitations), and connect your client to its secret URL. See the [Setup Wizard](https://homeassistant-ai.github.io/ha-mcp/setup/) for the full command and per-client config.\n- **PyPI / uvx (HTTP server):** run the published `ha-mcp` package with `uvx --python 3.14 ha-mcp@latest` (or pip) as a streamable-HTTP server the same way. Details in the [Setup Wizard](https://homeassistant-ai.github.io/ha-mcp/setup/).\n- **Local stdio (not recommended):** runs ha-mcp on your own machine over stdio. The one-command installers in the **Demo server** section below use this path; the [Setup Wizard](https://homeassistant-ai.github.io/ha-mcp/setup/) covers connecting it to your own Home Assistant.\n- **OIDC authentication:** gate remote access behind an external identity provider (Authentik, Keycloak, Auth0, etc.) instead of a secret URL — all authenticated users share the server's Home Assistant credentials. See [OIDC Mode](docs/oidc.md).\n\n  > ⚠️ **stdio has known transport issues.** The stdio transport has connection problems that streamable HTTP does not ([#1713](https://github.com/homeassistant-ai/ha-mcp/issues/1713)). It is recommended only for demo/testing tinkering — for a real setup, use the custom component or an HTTP method above.\n\n<details>\n<summary><b>🌐 Remote access (Nabu Casa / Webhook Proxy app / OpenAI Tunnel)</b></summary>\n\n> **Using the HA-MCP custom component?** You do not need the **Webhook Proxy** — the component has its own built-in webhook for remote access (see the **Get Started** quick start at the top). The proxy is for the **app** (it can also front another external server via its `mcp_server_url` option). The **OpenAI Tunnel** below is different: it applies to **any** install method when Home Assistant isn't publicly reachable at all (no Nabu Casa or reverse proxy).\n\nAlready have **Nabu Casa** or another reverse proxy pointing at your Home Assistant? The Webhook Proxy app routes MCP traffic through your existing setup — no separate tunnel or port forwarding needed.\n\n1. Install the **MCP Server app** (see above) and the **Webhook Proxy** app from the same store\n2. Start the webhook proxy and **restart Home Assistant** when prompted\n3. Copy the webhook URL from the app logs:\n   ```\n   MCP Server URL (remote): https://xxxxx.ui.nabu.casa/api/webhook/mcp_xxxxxxxx\n   ```\n4. Configure your AI client with that URL\n\nFor other remote access methods (Cloudflare Tunnel, custom reverse proxy), see the [Setup Wizard](https://homeassistant-ai.github.io/ha-mcp/setup/).\n\n**ChatGPT / Codex behind a firewall (OpenAI Tunnel).** ChatGPT connectors normally require a publicly reachable URL. If you can't (or don't want to) expose one, the community [OpenAI Tunnel for HA-MCP](https://github.com/norpol/hass-codex-tunnel-mcp) integration by [@norpol](https://github.com/norpol) runs OpenAI's [`tunnel-client`](https://github.com/openai/tunnel-client) inside Home Assistant and connects your local MCP server URL to an OpenAI-hosted tunnel over an outbound-only connection — no port forwarding, reverse proxy, or public URL. Point it at your ha-mcp URL, then attach the ChatGPT connector to the same tunnel ID. See the [FAQ entry](https://homeassistant-ai.github.io/ha-mcp/faq/#openai-tunnel) and [#1811](https://github.com/homeassistant-ai/ha-mcp/issues/1811).\n\n[Webhook proxy documentation →](https://github.com/homeassistant-ai/ha-mcp/blob/master/homeassistant-addon-webhook-proxy/DOCS.md)\n\n</details>\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "openai/codex-security",
+    "expected": [
+      "versions"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/openai/codex-security/blob/main/README.md",
+        "sha": "c30adfcdb1b8c61c6051d14f6fad8fe1ea90d81a",
+        "markdown": "## Quick start\n\nRequires Node.js 22.13.0+ within 22.x, or Node.js 24.x or 26.x, and Python 3.10+.\nPython 3.10 also requires `tomli`.\n\nInstall the CLI globally and sign in:\n\n```bash\nnpm install --global @openai/codex-security\ncs login\n```\n\nRun your first scan from the repository directory:\n\n```bash\ncs scan .\n```\n\nWhen the scan completes, open the Markdown file at the **REPORT** path in the\nterminal. Run `cs scans show` from the same repository to find its latest\ncompleted scan again. See [scan scope and follow-up work](sdk/typescript/docs/cli.md#understand-scan-scope-and-follow-up-work)\nfor how to interpret exclusions in the report.\n\n`cs` and `codex-security` run the same CLI. If the short name conflicts with\nanother command, use `codex-security`. To skip the global install, or if npm\nreports an `EEXIST` conflict, use `npx @openai/codex-security` in place of\n`cs` for both login and scanning.\n\nFor CI, set `OPENAI_API_KEY` or `CODEX_API_KEY` in the scan process's environment.\nFor a headless machine, see [device or SSH login](sdk/typescript/docs/cli.md#authentication).\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "TheAlgorithms/Java",
+    "expected": [
+      "learning"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/TheAlgorithms/Java/blob/master/README.md",
+        "sha": "91766e523bca050fa0d0424d3899bdd93ae3cbee",
+        "markdown": "### All algorithms are implemented in Java (for educational purposes)\nThese implementations are intended for learning purposes. As such, they may be less efficient than the Java standard library.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "NVIDIA/auto-ontology",
+    "expected": [
+      "passwords",
+      "embedding"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/NVIDIA/auto-ontology/blob/main/README.md",
+        "sha": "464a6484b4dc36cd2120578bc6b6e7dcfe236b23",
+        "markdown": "## Quickstart\n\nThis runs Auto-Ontology with Docker Compose against Wide World Importers,\nMicrosoft's sample sales database. You need Docker with Compose v2,\n[uv](https://docs.astral.sh/uv/), and an NVIDIA API key (`nvapi-...`) from\n[build.nvidia.com](https://build.nvidia.com).\n\n1. Clone the repository and create `.env`:\n\n   ```bash\n   git clone https://github.com/NVIDIA/auto-ontology.git && cd auto-ontology\n   cp .env.example .env\n   ```\n\n   Then set these values in `.env`:\n\n   ```dotenv\n   DEFAULT_MODELS_API_KEY=nvapi-...\n   AUTH_SECRET=<a long random string, e.g. from openssl rand -base64 32>\n   APP_URL=http://localhost:3000\n   POSTGRES_PASSWORD=<a new password>\n   CONNECTION_STRINGS=postgresql://postgres:<the same password>@postgres:5432/wideworldimporters\n   AUTO_ONTOLOGY_ADMIN_PASSWORD=<a new password>\n   PGADMIN_PASSWORD=<a new password>\n   ```\n\n   Compose publishes Postgres, pgAdmin, and the web app on the host, so replace\n   each default password before you start it. `.env.example` also sets an API\n   key per model role: replace each `nvapi-your-api-key-here` with your key, or\n   delete those lines so they fall back to `DEFAULT_MODELS_API_KEY`.\n\n2. Start Postgres and load the sample database. The seed script lives in\n   auto-ontology-eval; pass it the Postgres password you set:\n\n   ```bash\n   docker compose up -d --wait postgres\n   git clone https://github.com/NVIDIA/auto-ontology-eval.git ../auto-ontology-eval\n   (cd ../auto-ontology-eval && uv sync && cp .env.example .env && \\\n     POSTGRES_PASSWORD='<the same password>' \\\n     uv run python scripts/seed/seed_wwi.py --database-name wideworldimporters --drop)\n   ```\n\n3. Build and start the rest of the stack:\n\n   ```bash\n   docker compose up -d --build\n   ```\n\n4. Open <http://localhost:3000> and sign in with `AUTO_ONTOLOGY_ADMIN_EMAIL` and\n   `AUTO_ONTOLOGY_ADMIN_PASSWORD` from `.env`. Go to **Settings → Semantic\n   Compilation** and turn it on. Ingestion runs at startup; compilation starts\n   immediately and reports **Semantic compilation is ready** when it finishes.\n\n5. Ask a question in **Chat**:\n\n   > What was revenue for the USB food flash drive - sushi roll in Pennsylvania\n   > in June 2015?\n\n   The agent resolves *revenue*, *product*, and *state* to terms in the\n   ontology, follows their relationships to the joins it needs, and runs the\n   query. The answer comes back with its SQL and the steps that produced it,\n   so you can check the result against the source:\n\n   ```text\n   Answer:  Revenue for USB food flash drive - sushi roll in Pennsylvania in\n            June 2015 was $588.80, from 3 invoice lines.\n\n   SQL:     SELECT SUM(il.extendedprice) AS revenue, COUNT(*) AS invoice_lines\n            FROM sales.invoicelines il\n            JOIN sales.invoices i             ON il.invoiceid = i.invoiceid\n            JOIN warehouse.stockitems si      ON il.stockitemid = si.stockitemid\n            JOIN sales.customers c            ON i.customerid = c.customerid\n            JOIN application.cities ct        ON c.deliverycityid = ct.cityid\n            JOIN application.stateprovinces sp ON ct.stateprovinceid = sp.stateprovinceid\n            WHERE si.stockitemname = 'USB food flash drive - sushi roll'\n              AND sp.stateprovincename = 'Pennsylvania'\n              AND i.invoicedate >= '2015-06-01' AND i.invoicedate < '2015-07-01'\n\n   Steps:   Resolved terms: Invoice Line (revenue), Stock Item, State Province, Invoice\n            Joined: invoice line -> invoice -> customer -> city -> state province\n            Validated the filter values against the data, then executed\n   ```\n\n6. Ask something the data can't answer. Wide World Importers has no\n   advertising data, so a question about ad spend has nothing to resolve\n   against. An agent connected through [MCP](#mcp-server) checks answerability\n   first and asks you to clarify:\n\n   ```text\n   You:    What was return on ad spend for the sushi roll flash drive in June 2015?\n   Agent:  check_answerable -> coverage 0.5; no term covers \"ad spend\"\n   Agent:  I can find revenue for that product, but this data has no\n           advertising spend, so I can't compute return on ad spend. Do you\n           want June 2015 revenue instead, or is ad spend tracked in another\n           source I should connect?\n   ```\n\nIf the UI loads without its left navigation after a restart, the browser is\nholding a stale session cookie. Clear site data for `localhost:3000` and sign in\nagain. For other setup failures, see the\n[setup skill's troubleshooting guide](./skills/nvidia-ontology-setup/references/troubleshooting.md).\n\n\n### Models\n\nAuto-Ontology uses four model roles. With an `nvapi-` key, each defaults to an\nNVIDIA NIM on [build.nvidia.com](https://build.nvidia.com):\n\n| Role            | Default model                           | What it does                                                                                                                   |\n| --------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |\n| `REASONING`     | `nvidia/nemotron-3.5-lightning-30b-a3b` | Builds the ontology (terms, relationships, SQL attributes), writes each answer's SQL and explanation, and grades answerability |\n| `NON_REASONING` | `nvidia/nemotron-3.5-lightning-30b-a3b` | Runs the agent's faster steps: question intent, entity extraction, candidate selection, and SQL checks and repair              |\n| `EMBED`         | `nvidia/nemotron-3.5-embed-1b`          | Indexes tables, columns, terms, and SQL attributes in pgvector, and matches each question to them                              |\n| `RERANK`        | `nvidia/nemotron-3.5-rerank-8b`         | Ranks candidate tables when compilation builds bridge-table SQL attributes                                                     |\n\nTo use self-hosted NIM or any OpenAI-compatible endpoint, set\n`<ROLE>_ENDPOINT`, `<ROLE>_API_KEY`, and `<ROLE>_MODEL`. Any field you leave\nunset falls back to `DEFAULT_MODELS_<FIELD>`, so the simplest setup fills in\n`DEFAULT_MODELS_*` and overrides only what differs. Use models\nthat support structured output, and keep the embedding model the same for\ningestion and queries. [`.env.example`](./.env.example) documents every\nvariable.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "thedotmack/claude-mem",
+    "expected": [
+      "search-only"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md",
+        "sha": "af0dc772f3d3effeabaa5f5f328909ad66f3e637",
+        "markdown": "<h1 align=\"center\">\n  <br>\n  <a href=\"https://github.com/thedotmack/claude-mem\">\n    <picture>\n      <source media=\"(prefers-color-scheme: dark)\" srcset=\"docs/public/claude-mem-logo-for-dark-mode.webp\">\n      <source media=\"(prefers-color-scheme: light)\" srcset=\"docs/public/claude-mem-logo-for-light-mode.webp\">\n      <img src=\"docs/public/claude-mem-logo-for-light-mode.webp\" alt=\"Claude-Mem\" width=\"400\">\n    </picture>\n  </a>\n</h1>\n\n<p align=\"center\">\n  <img alt=\"Vercel OSS Program\" src=\"https://vercel.com/oss/program-badge-2026.svg\" height=\"24\" />\n  &nbsp;&nbsp;&nbsp;\n  <img alt=\"Greptile\" src=\"docs/public/greptile-wordmark-green.svg\" height=\"24\" />\n  &nbsp;&nbsp;&nbsp;\n  <img alt=\"SerpApi\" src=\"docs/public/serpapi-logo-with-wordmark-gradient.svg\" height=\"24\" />\n</p>\n\n<p align=\"center\">\n  <a href=\"docs/i18n/README.zh.md\">🇨🇳 中文</a> •\n  <a href=\"docs/i18n/README.zh-tw.md\">🇹🇼 繁體中文</a> •\n  <a href=\"docs/i18n/README.ja.md\">🇯🇵 日本語</a> •\n  <a href=\"docs/i18n/README.pt.md\">🇵🇹 Português</a> •\n  <a href=\"docs/i18n/README.pt-br.md\">🇧🇷 Português</a> •\n  <a href=\"docs/i18n/README.ko.md\">🇰🇷 한국어</a> •\n  <a href=\"docs/i18n/README.es.md\">🇪🇸 Español</a> •\n  <a href=\"docs/i18n/README.de.md\">🇩🇪 Deutsch</a> •\n  <a href=\"docs/i18n/README.fr.md\">🇫🇷 Français</a> •\n  <a href=\"docs/i18n/README.he.md\">🇮🇱 עברית</a> •\n  <a href=\"docs/i18n/README.ar.md\">🇸🇦 العربية</a> •\n  <a href=\"docs/i18n/README.ru.md\">🇷🇺 Русский</a> •\n  <a href=\"docs/i18n/README.pl.md\">🇵🇱 Polski</a> •\n  <a href=\"docs/i18n/README.cs.md\">🇨🇿 Čeština</a> •\n  <a href=\"docs/i18n/README.nl.md\">🇳🇱 Nederlands</a> •\n  <a href=\"docs/i18n/README.tr.md\">🇹🇷 Türkçe</a> •\n  <a href=\"docs/i18n/README.uk.md\">🇺🇦 Українська</a> •\n  <a href=\"docs/i18n/README.vi.md\">🇻🇳 Tiếng Việt</a> •\n  <a href=\"docs/i18n/README.tl.md\">🇵🇭 Tagalog</a> •\n  <a href=\"docs/i18n/README.id.md\">🇮🇩 Indonesia</a> •\n  <a href=\"docs/i18n/README.th.md\">🇹🇭 ไทย</a> •\n  <a href=\"docs/i18n/README.hi.md\">🇮🇳 हिन्दी</a> •\n  <a href=\"docs/i18n/README.bn.md\">🇧🇩 বাংলা</a> •\n  <a href=\"docs/i18n/README.ur.md\">🇵🇰 اردو</a> •\n  <a href=\"docs/i18n/README.ro.md\">🇷🇴 Română</a> •\n  <a href=\"docs/i18n/README.sv.md\">🇸🇪 Svenska</a> •\n  <a href=\"docs/i18n/README.it.md\">🇮🇹 Italiano</a> •\n  <a href=\"docs/i18n/README.el.md\">🇬🇷 Ελληνικά</a> •\n  <a href=\"docs/i18n/README.hu.md\">🇭🇺 Magyar</a> •\n  <a href=\"docs/i18n/README.fi.md\">🇫🇮 Suomi</a> •\n  <a href=\"docs/i18n/README.da.md\">🇩🇰 Dansk</a> •\n  <a href=\"docs/i18n/README.no.md\">🇳🇴 Norsk</a>\n</p>\n\n<h4 align=\"center\">Your coding agent forgets everything between sessions. Claude-Mem remembers for it.</h4>\n\n<p align=\"center\">\n  <a href=\"LICENSE\">\n    <img src=\"https://img.shields.io/badge/License-Apache%202.0-blue.svg\" alt=\"License\">\n  </a>\n  <a href=\"package.json\">\n    <img src=\"https://img.shields.io/badge/version-15.17.1-green.svg\" alt=\"Version\">\n  </a>\n  <a href=\"package.json\">\n    <img src=\"https://img.shields.io/badge/node-%5E20.19%20%7C%7C%20%3E%3D22.12-brightgreen.svg\" alt=\"Node\">\n  </a>\n  <a href=\"https://github.com/thedotmack/awesome-claude-code\">\n    <img src=\"https://awesome.re/mentioned-badge.svg\" alt=\"Mentioned in Awesome Claude Code\">\n  </a>\n</p>\n\n<p align=\"center\">\n <a href=\"https://www.star-history.com/thedotmack/claude-mem\">\n  <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/badge?repo=thedotmack/claude-mem&type=rank&theme=dark\" /><source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/badge?repo=thedotmack/claude-mem&type=rank\" /><img alt=\"Star History Rank\" src=\"https://api.star-history.com/badge?repo=thedotmack/claude-mem&type=rank\" /></picture> <picture><source media=\"(prefers-color-scheme: dark)\" srcset=\"https://api.star-history.com/badge?repo=thedotmack/claude-mem&type=trending&theme=dark\" /><source media=\"(prefers-color-scheme: light)\" srcset=\"https://api.star-history.com/badge?repo=thedotmack/claude-mem&type=trending\" /><img alt=\"GitHub Trending Repository of the Day\" src=\"https://api.star-history.com/badge?repo=thedotmack/claude-mem&type=trending\" /></picture>\n </a>\n</p>\n\n<br>\n\n<table align=\"center\">\n  <tr>\n    <td align=\"center\">\n      <a href=\"https://github.com/thedotmack/claude-mem\">\n        <picture>\n          <img\n            src=\"https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/cm-preview.gif\"\n            alt=\"Claude-Mem Preview\"\n            width=\"500\"\n          >\n        </picture>\n      </a>\n    </td>\n    <td align=\"center\">\n      <a href=\"https://www.star-history.com/#thedotmack/claude-mem&Date\">\n        <picture>\n          <source\n            media=\"(prefers-color-scheme: dark)\"\n            srcset=\"https://api.star-history.com/image?repos=thedotmack/claude-mem&type=date&theme=dark&legend=top-left\"\n          />\n          <source\n            media=\"(prefers-color-scheme: light)\"\n            srcset=\"https://api.star-history.com/image?repos=thedotmack/claude-mem&type=date&legend=top-left\"\n          />\n          <img\n            alt=\"Star History Chart\"\n            src=\"https://api.star-history.com/image?repos=thedotmack/claude-mem&type=date&legend=top-left\"\n            width=\"500\"\n          />\n        </picture>\n      </a>\n    </td>\n  </tr>\n</table>\n\n<p align=\"center\">\n  <a href=\"#quick-start\">Quick Start</a> •\n  <a href=\"#how-it-works\">How It Works</a> •\n  <a href=\"#mcp-search-tools\">Search Tools</a> •\n  <a href=\"#documentation\">Documentation</a> •\n  <a href=\"#configuration\">Configuration</a> •\n  <a href=\"#troubleshooting\">Troubleshooting</a> •\n  <a href=\"#license\">License</a>\n</p>\n\n<p align=\"center\">\n  Every new session, your agent starts from zero. It re-reads the same files, re-asks the same questions, and walks back into mistakes you already fixed together.\n</p>\n\n<p align=\"center\">\n  Claude-Mem runs a second agent beside it that takes notes while it works. The next session starts with a short index of what matters, and pulls in the details only when it needs them. Works with Claude Code, Codex, Cursor, OpenCode and 11 more agents. Copilot CLI, Goose, Roo Code and Warp can search your memory, but their sessions aren't recorded.\n</p>\n\n---\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "max-sixty/worktrunk",
+    "expected": [
+      "hooks"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/max-sixty/worktrunk/blob/main/README.md",
+        "sha": "cb34774014556b4eedaf43ca5f572cb4bcb5e1f9",
+        "markdown": "## Worktrunk makes git worktrees as easy as branches\n\nWorktrees are addressed by branch name; paths are computed from a configurable template. Commands that take a branch also accept the path of the worktree it is checked out in.\n\n<p class=\"workflow-stage\">Start with the core commands</p>\n\n**Core commands:**\n\n<table class=\"cmd-compare\">\n  <thead>\n    <tr>\n      <th>Task</th>\n      <th>Worktrunk</th>\n      <th>Plain git</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Switch worktrees</td>\n      <td data-label=\"Worktrunk\"><code>wt switch feat</code></td>\n      <td data-label=\"Plain git\"><code>cd ../repo.feat</code></td>\n    </tr>\n    <tr>\n      <td>Create + start Claude</td>\n      <td data-label=\"Worktrunk\"><code>wt switch -c -x claude feat</code></td>\n      <td data-label=\"Plain git\"><pre><code>git worktree add -b feat ../repo.feat && \\\ncd ../repo.feat && \\\nclaude</code></pre></td>\n    </tr>\n    <tr>\n      <td>Clean up</td>\n      <td data-label=\"Worktrunk\"><code>wt remove</code></td>\n      <td data-label=\"Plain git\"><pre><code>cd ../repo && \\\ngit worktree remove ../repo.feat && \\\ngit branch -d feat</code></pre></td>\n    </tr>\n    <tr>\n      <td>List with status</td>\n      <td data-label=\"Worktrunk\"><code>wt list</code></td>\n      <td data-label=\"Plain git\"><span class=\"cmd-compare-value\"><code>git worktree list</code> (paths only)</span></td>\n    </tr>\n  </tbody>\n</table>\n\n<p class=\"workflow-stage\">Expand into the more advanced commands as needed</p>\n\n<p class=\"workflow-heading\"><strong>Workflow automation:</strong></p>\n\n- **[Hooks](https://worktrunk.dev/hook/)** — run commands on create, pre-merge, post-merge, etc\n- **[LLM commit messages](https://worktrunk.dev/llm-commits/)** — generate commit messages from diffs\n- **[Merge workflow](https://worktrunk.dev/merge/)** — squash, rebase, merge, clean up in one command\n- **[Interactive picker](https://worktrunk.dev/switch/#interactive-picker)** — browse worktrees with streaming CI status and diff, log, PR and comment previews\n- **[Share build caches](https://worktrunk.dev/step/#wt-step-copy-ignored)** — ten worktrees get `target/`, `node_modules/`, etc without building or copying them (on APFS, btrfs, and XFS)\n- **[`wt list --full`](https://worktrunk.dev/list/#full-mode)** — [CI status](https://worktrunk.dev/list/#ci-status) and [AI-generated summaries](https://worktrunk.dev/list/#llm-summaries) per branch\n- **[PR checkout](https://worktrunk.dev/switch/#pull-requests-and-merge-requests)** — `wt switch pr:123` to jump straight to a PR's branch\n- **[Dev server per worktree](https://worktrunk.dev/tips-patterns/#dev-server-per-worktree)** — `hash_port` template filter gives each worktree a unique port\n- **[Aliases](https://worktrunk.dev/extending/#aliases) & [per-branch variables](https://worktrunk.dev/config/#wt-config-state-vars)** — custom `wt <name>` commands and branch-scoped state for hook templates\n- ...and **[lots more](#next-steps)**\n\nMultiple parallel agents, same simple commands:\n\n![Worktrunk omnibus demo: multiple Claude agents in Zellij tabs with hooks, LLM commits, and merge workflow](https://raw.githubusercontent.com/max-sixty/worktrunk-assets/main/assets/docs/light/wt-zellij-omnibus.gif)\n\n<!-- END AUTO-GENERATED -->\n\n<!-- ⚠️ AUTO-GENERATED from docs/src/content/docs/worktrunk.md#install..next-steps — edit source to update -->\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "anthropics/skills",
+    "expected": [
+      "xlsx-errors"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/anthropics/skills/blob/main/README.md",
+        "sha": "4171c2c9eba15bf2bdefb496d941ba559368438b",
+        "markdown": ""
+      },
+      {
+        "path": "skills/xlsx/SKILL.md",
+        "url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
+        "sha": "cc347203f2247b009b8ea34574bccfa62fce3669",
+        "markdown": "## Recalculate (mandatory whenever the file contains formulas)\n\nopenpyxl writes formulas as strings with **no cached values**. Until you recalculate, every\nformula cell reads back as `None` to anything reading cached values — `pandas`,\n`load_workbook(data_only=True)`, and most previewers.\n\n```bash\npython scripts/recalc.py output.xlsx [timeout_seconds]   # default 30\n```\n\nLibreOffice computes every formula, the file is **rewritten in place**, and you get JSON:\n`status` (`success` | `errors_found`), `total_formulas`, `total_errors`, and an\n`error_summary` naming up to 100 cells per error type (`locations_truncated` says how many it\nwithheld — trust `total_errors`, not the length of the list). Fix what it names and run it\nagain. **JSON with an `error` key instead of a `status` means nothing was recalculated**, and\nonly that case exits non-zero — `errors_found` exits 0, so never treat a clean exit as a clean\nworkbook.\n\n**A green recalc proves your formulas *evaluate*, not that they are *right*.** An off-by-one\nrange or a reference to the wrong row yields a clean, error-free file with wrong numbers.\nWrite 2–3 formulas first and check they pull the values you expect, before building out a grid.\n\n**A workbook that links to another file loses those links** if you re-save it with openpyxl and\nthen recalculate. Such a formula reads `='[1]Returns Analysis'!$B$2` — the `[1]` is an index\ninto the workbook's external-reference list, naming a *separate file on disk*, not a sheet.\nThat file is rarely present here, so the cell's cached value is the only thing holding its\ndata. openpyxl strips that value on save; LibreOffice then has to resolve the reference for\nreal, fails, writes `#NAME?`, and deletes every link. `recalc.py` refuses to run in that state\n— copy those cells' values out of the original before you save over them (`--force` overrides,\nand accepts the loss).\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "Donchitos/Claude-Code-Game-Studios",
+    "expected": [
+      "python",
+      "browser"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/main/README.md",
+        "sha": "1842501050d579e421bef697ccd37487b37279be",
+        "markdown": "### Prerequisites\n\n- [Git](https://git-scm.com/)\n- [Claude Code](https://code.claude.com/docs/en/setup) — the native installer is recommended (`npm install -g @anthropic-ai/claude-code` also works, on Node.js 22+)\n- [Python 3](https://www.python.org/) — reads `project.yaml` for every skill and hook; without it every setting silently falls back to its default\n- Bash — runs every hook; built into macOS and Linux, and on Windows it comes with [Git for Windows](https://git-scm.com/downloads/win). Without it on Windows the hooks skip themselves, and session start says their checks are off\n- **Chrome, Edge or Chromium** — `/prototype` plays and screenshots each game in it; without one, those checks say they were not assessed\n- **Recommended**: [Node.js](https://nodejs.org/) (to grow a game into a web project, for a 3D game's three.js, and for the web engine's build and tests) and [jq](https://jqlang.github.io/jq/) (for hook validation)\n\nHooks fail gracefully if optional tools are missing — you just lose validation — with one deliberate exception: a commit that stages data JSON is blocked when there is no Python to validate it.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "milind-soni/OpenMausBot",
+    "expected": [
+      "agents"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/milind-soni/OpenMausBot/blob/main/README.md",
+        "sha": "9eb918d3f784c3ab91ebc753e31488d4d346e109",
+        "markdown": "## Quick start\n\n**Released builds ([latest release](https://github.com/milind-soni/OpenMausBot/releases/latest)):** the harness server is embedded, so no separate server setup is required.\n\n| | Download | Install |\n|---|---|---|\n| **macOS** (Apple silicon) | [OpenMausBot.dmg](https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot.dmg) | Drag it to Applications, open it. Signed & notarized. |\n| **macOS** (Intel) | [OpenMausBot-intel.dmg](https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot-intel.dmg) | Same app, built for Intel Macs. Signed & notarized. |\n| **Windows** (x64) | [OpenMausBot-setup.exe](https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot-setup.exe) | Run it — one-click, per-user, no admin rights. The installer isn't code-signed yet, so SmartScreen shows \"unknown publisher\": **More info → Run anyway**. |\n| **Ubuntu 24.04** (x64) | [OpenMausBot-amd64.deb](https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot-amd64.deb) · [OpenMausBot.AppImage](https://github.com/milind-soni/OpenMausBot/releases/latest/download/OpenMausBot.AppImage) | Install the `.deb` with APT (recommended), or make the AppImage executable and run it. Beta; GNOME is the supported desktop. |\n\nSee the [Ubuntu Desktop guide](docs/linux-desktop.md) for installation, capabilities, and troubleshooting.\nAny desktop build can also pair as a client to another Windows, macOS, or Ubuntu host over Tailscale; see [desktop-to-desktop companion mode](docs/desktop-companion.md).\n\n\n**From source:**\n\n```sh\ngit clone https://github.com/milind-soni/OpenMausBot && cd OpenMausBot\npnpm install\n\npnpm dev:server    # harness server → 127.0.0.1:8799\npnpm dev           # app → http://127.0.0.1:5199\npnpm dev:desktop   # Electron shell; keep the two commands above running\n```\n\nRequirements: **macOS, Windows, or Ubuntu 24.04 x64**, **Node 24+**, **pnpm**, and at least one agent CLI — [`claude`](https://claude.com/claude-code),\n[`codex`](https://github.com/openai/codex), or [`grok`](https://x.ai/cli) — installed and logged in. They appear\nin the model picker automatically.\n\nPackage the desktop application:\n\n```sh\npnpm package:mac      # macOS: DMG + ZIP; requires Swift/Xcode tools\npnpm package:win      # Windows: installer + ZIP\npnpm package:linux    # Ubuntu x64: .deb + AppImage + verified CUA runtime\n```\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "pingdotgg/t3code",
+    "expected": [
+      "npx",
+      "providers"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/pingdotgg/t3code/blob/main/README.md",
+        "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
+        "markdown": "## Installation\n\n> [!WARNING]\n> T3 Code currently supports Codex, Claude, Cursor, Grok Build, OpenCode, Antigravity, and fx. Install and authenticate at least one provider before use:\n>\n> - Codex: install [Codex CLI](https://developers.openai.com/codex/cli) and run `codex login`\n> - Claude: install [Claude Code](https://claude.com/product/claude-code) and run `claude auth login`\n> - Cursor: install [Cursor CLI](https://cursor.com/cli) and run `agent login`\n> - Grok Build: install [Grok Build CLI](https://x.ai/cli) and run `grok login`\n> - OpenCode: install [OpenCode](https://opencode.ai) and run `opencode auth login`\n> - Antigravity: enable it in Settings, then use **Install Antigravity** and **Sign in with Google**. No CLI is required.\n> - fx: install [fx](https://fx.sh) and run `fx login` on the machine running the T3 Code server ([setup guide](./docs/user/providers-fx.md))\n\n"
+      },
+      {
+        "path": "docs/user/install.md",
+        "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md",
+        "sha": "ea7448149ced304ae47b9246b03ace1749a8e1f7",
+        "markdown": "## Command line\n\n```bash\ncurl -fsSL https://t3.codes/install.sh | sh\n```\n\nOn Windows, in PowerShell:\n\n```powershell\nirm https://t3.codes/install.ps1 | iex\n```\n\nThis installs the `t3` binary to `~/.local/bin`. If that folder is not on your\n`PATH` yet, the installer says so and, for zsh, bash on Linux, and fish, prints\na command to add it. On Windows, `t3` works in the same PowerShell window right\naway; add the folder to your `PATH` for new windows. If a `t3` that the\ninstaller or the desktop app did not create is already there, it leaves that\none alone and stops. Set `T3CODE_CHANNEL=nightly` to install the nightly train, or\n`T3CODE_VERSION` to pin an exact version.\n\n| Task                                  | Command                                                                 |\n| ------------------------------------- | ----------------------------------------------------------------------- |\n| Start the server and open the web app | `t3`                                                                    |\n| Start the server without a browser    | `t3 serve`                                                              |\n| Use it from your other devices        | `t3 up` ([details](./remote-access.md))                                 |\n| Keep it running in the background     | `t3 service install` ([details](./background-service.md))               |\n| Move to the newest release            | `t3 update`                                                             |\n| Reclaim database space                | `t3 doctor` ([details](./background-service.md#reclaim-database-space)) |\n| Remove it again                       | `t3 uninstall`                                                          |\n\nRun `t3 help` or `t3 --help` for the full reference. To start in a new working\ndirectory, use an explicit path such as `t3 ./my-project`. A bare directory name\nis accepted only if it already exists.\n\nIf `t3` or `t3 start` reports an already running server, connect to that server\ninstead. Stop it before starting a replacement, or use a different `--base-dir`\nfor an independent server.\n\nTo try T3 Code once without installing it, run `npx t3@latest` instead (needs\nNode.js for `npx`). It offers to install the `t3` command first. If you say no,\nit asks again at the next minor release, and `npx t3 install` installs it later.\n`npx t3` always runs the version npm picked, even when a `t3` is installed. On\nthe nightly train, run your installed `t3` (for example `t3 connect`), not\n`npx t3`, which runs the latest stable release.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "Nutlope/hallmark",
+    "expected": [
+      "node",
+      "review"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/Nutlope/hallmark/blob/main/README.md",
+        "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
+        "markdown": "# Hallmark\n\n**A design skill for Claude Code, Codex, Cursor and OpenCode that refuses to look AI-generated.**\n\n[usehallmark.com](https://www.usehallmark.com) &nbsp;·&nbsp; fifty themes &nbsp;·&nbsp; custom on request &nbsp;·&nbsp; redesign and audit by name\n\nMade by Together AI.\n\n<p align=\"center\">\n  <img src=\"site/OG-hallmark.png\" alt=\"Hallmark, the design skill that ends AI slop\" />\n</p>\n\nHallmark holds a hard floor and then gets out of the way. It deals three themes from a catalog of fifty materials, builds the page around what the visitor came to do, and lints the result in a real browser against the tells that read as machine-made: the eyebrow above every heading, tracked-capital labels, one coloured word in a headline, a page of empty frames or nothing but photographs, a hero that misses its screen, an email sign-up at the end of every page, a form that says thanks without sending anything. A fresh-context reviewer gets the last word.\n\nThe gates come in tiers. The **Floor** never ships (contrast, focus, reduced motion, invented facts, a broken phone layout). **Reflex** gates are the defaults a model falls into; a build with a reason may overrule one on the record. **Finish** checks are craft detail that never blocks a ship.\n\n\n## Install\n\n```\nnpx skills add nutlope/hallmark -g\n```\n\n`-g` installs for every project; leave it off to install into the current one. Needs Node 18 or later. The browser checks (`sloplint --render`, screenshots) also need `npm i -g puppeteer-core` and Chrome; without them the static checks still run.\n\n| Harness | Lands in | Invoke |\n| --- | --- | --- |\n| Claude Code | `~/.claude/skills/hallmark` | `/hallmark <prompt>` or describe a new build |\n| Codex CLI | `~/.agents/skills/hallmark` | `$hallmark <prompt>` or describe a new build |\n| Cursor | finds the copies above | `/hallmark <prompt>` or describe a new build |\n| OpenCode | finds the copies above | `/hallmark <prompt>` or describe a new build |\n\n- **One harness only:** `npx skills add nutlope/hallmark -g --agent claude-code` (or `codex`, `opencode`, `cursor`, `github-copilot`).\n- **As a Claude Code plugin:** `/plugin marketplace add nutlope/hallmark`, then `/plugin install hallmark@hallmark` (invoked as `/hallmark:hallmark`).\n- **From a clone:** `node skills/hallmark/scripts/install.mjs` validates every theme and reference before it copies; `install-hook.mjs` adds an edit-time Floor check to Claude Code.\n- **Lint any page:** `node skills/hallmark/scripts/sloplint.mjs <file-or-dir> --render`.\n- **If it does not fire on its own,** name it: *use hallmark to build ...*.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "Renhuai123/ziwei-doushu",
+    "expected": [
+      "key"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/Renhuai123/ziwei-doushu/blob/main/README.md",
+        "sha": "cbd9d20f8b3289d1bf5e379904f9a981ea744e6f",
+        "markdown": ""
+      },
+      {
+        "path": "README.en.md",
+        "url": "https://github.com/Renhuai123/ziwei-doushu/blob/main/README.en.md",
+        "sha": "ba192c8f8455dcd989045bd9ac2e49d9f387c3ce",
+        "markdown": "## Quick start\n\n```bash\ngit clone https://github.com/Renhuai123/ziwei-doushu.git\ncd ziwei-doushu\nnpm ci\nnpm run dev          # charting demo at http://localhost:3000/chart\n\nnpm run typecheck    # TypeScript check\nnpm test             # charting regression tests\n```\n\n**No API key is needed for charting.** The open-source version contains **no backend routes**: AI interpretation (`/api/interpret`) and compatibility analysis (`/api/heming`) return 404 until you implement them yourself.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "D4Vinci/Scrapling",
+    "expected": [
+      "extras",
+      "browser"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/D4Vinci/Scrapling/blob/main/README.md",
+        "sha": "b7fb1d333673421a9d232e797f9f7e7506103f2f",
+        "markdown": "## Installation\n\nScrapling requires Python 3.10 or higher:\n\n```bash\npip install scrapling\n```\n\n> [!IMPORTANT]\n> This installation only includes the parser engine and its dependencies, without any fetchers or commandline dependencies. So importing anything from `scrapling.fetchers` or `scrapling.spiders`, like in the examples above, will raise `ModuleNotFoundError` with this installation alone. If you are going to use any of the fetchers or spiders, install the fetchers' dependencies first as shown below.\n\n\n### Optional Dependencies\n\n1. If you are going to use any of the extra features below, the fetchers, or their classes, you will need to install fetchers' dependencies and their browser dependencies as follows:\n    ```bash\n    pip install \"scrapling[fetchers]\"\n    \n    scrapling install           # normal install\n    scrapling install  --force  # force reinstall\n    ```\n\n    This downloads all browsers, along with their system dependencies and fingerprint manipulation dependencies.\n\n    Or you can install them from the code instead of running a command like this:\n    ```python\n    from scrapling.cli import install\n    \n    install([], standalone_mode=False)          # normal install\n    install([\"--force\"], standalone_mode=False) # force reinstall\n    ```\n\n2. Extra features:\n   - Install the MCP server feature:\n       ```bash\n       pip install \"scrapling[ai]\"\n       ```\n   - Install dependencies for ([building RAG systems](https://scrapling.readthedocs.io/en/latest/ai/building-rag-systems.html)):\n       ```bash\n       pip install \"scrapling[rag]\"\n       ```\n   - Install shell features (Web Scraping shell and the `extract` command): \n       ```bash\n       pip install \"scrapling[shell]\"\n       ```\n   - Install everything: \n       ```bash\n       pip install \"scrapling[all]\"\n       ```\n   Run `scrapling install` when you need browser fetchers. HTTP requests do not need a browser installation.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "cloudflare/security-audit-skill",
+    "expected": [
+      "sandbox"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/cloudflare/security-audit-skill/blob/main/README.md",
+        "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
+        "markdown": "## Requirements\n\n- A coding agent with a model that supports tool use and parallel sub-agents\n- Node.js for the zero-dependency findings and coverage-ledger validators\n- An OS-enforced sandbox for target-controlled builds, tests, processes, browsers, emulators, fuzzers, and fixtures. It must disable external networking, use a sanitized allowlisted environment, enforce resource limits, and allow writes only to assigned scratch paths. Without these controls, the workflow keeps the lead as `needs_validation` instead of executing target code.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "heygen-com/hyperframes",
+    "expected": [
+      "cli",
+      "skills"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md",
+        "sha": "8e6fb677459ff95bd4d43007095d31f8171b70de",
+        "markdown": "## Skills\n\nHyperFrames ships 9 skills. Make any video by asking for it; the `/hyperframes` skill carries the contract and the references (film, captions, overlays, motion, look). Read it first.\n\nFor standalone installation, default to the **core set** (`/hyperframes`, `/hyperframes-cli`, `/hyperframes-registry`, `/media-use`, `/reverse-any-video`, `/style-sampling`). `npx hyperframes skills update` installs exactly that from anywhere; the interactive picker (`npx skills add heygen-com/hyperframes`) lists it as the \"Core Skills\" group, nothing pre-selected. The picker is interactive-only — a non-interactive or agent run without `--skill` installs all 9. Use `npx skills add heygen-com/hyperframes --all` to install the complete published set deliberately (skips the picker), or `npx skills add heygen-com/hyperframes --skill <name>` for just one (bare name, no leading `/`).\n\nStandalone installs stay lean after that: `npx hyperframes init` installs the **core set** only when it is missing and never touches a skill you already have (`npx hyperframes skills update` refreshes them, and never removes one); `/figma`, `/slideshow` and `/remotion-to-hyperframes` install **on demand** with `npx hyperframes skills update <name>`. Nothing re-pulls the full set behind your back.\n\n\n### Manually with the CLI\n\n```bash\nnpx hyperframes init my-video\ncd my-video\nnpx hyperframes preview      # preview in browser with live reload\nnpx hyperframes render       # render to MP4\n```\n\n**Requirements:** Node.js 22+, FFmpeg\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "anthropics/knowledge-work-plugins",
+    "expected": [
+      "sales-actions"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/README.md",
+        "sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
+        "markdown": ""
+      },
+      {
+        "path": "sales/README.md",
+        "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/sales/README.md",
+        "sha": "2dfe28ad0d9f5cd98b14b21ccb44763d6e652f28",
+        "markdown": "## What's new in 2.0\n\n- **From 9 to 36 skills.** New skills cover deal reviews, close plans, stakeholder maps, renewals, customer health, lead routing, CRM updates, meeting booking, inbox sweeps and team pipeline views.\n- **Works across CRMs and email providers.** Skills read your CRM's own stages and fields instead of assuming one vendor's setup, and work the same on Gmail or Outlook, Slack or Teams. No settings file is needed; a skill asks once for anything it cannot find.\n- **Uses uploaded files when nothing is connected.** Upload a pipeline export, a transcript or a list of accounts, and the skill works from that.\n- **Acts when you ask.** Skills can update CRM records, create email drafts or send email, post to chat and book meetings, within each connector's permissions. Changes a skill suggests on its own are shown to you first, with the evidence behind them.\n- **Treats outside content as information.** Emails, call transcripts, chat messages and documents are read as information, never as instructions. If an email or transcript asks for an action, the skill shows you the action before anything happens.\n- **Existing skill names still work.** `account-research`, `call-summary`, `forecast`, `call-prep`, `daily-briefing`, `draft-outreach`, `pipeline-review`, `competitive-intelligence` and `create-an-asset` keep their names, rebuilt on the new skills. Two behave differently: `create-an-asset` now builds decks, one-pagers and leave-behinds from your account data rather than landing pages or interactive demos, and `forecast` writes a commit, best-case and pipeline narrative instead of best, likely and worst scenarios.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "debpalash/VoiceStudio",
+    "expected": [
+      "intel"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/debpalash/VoiceStudio/blob/main/README.md",
+        "sha": "5b336fbac18c4c3400089956d2cb2307ade2fb6d",
+        "markdown": ""
+      },
+      {
+        "path": "docs/install/macos.md",
+        "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/macos.md",
+        "sha": "b8dfdb0eb7d7cea43e7b7593a1c3072d98bd8bb6",
+        "markdown": "# VoiceStudio — Install on macOS\n\nVoiceStudio's macOS desktop app is built with Electron. The archived Tauri app\nis no longer maintained; if you still run it, follow the\n[migration guide](../electron-migration.md).\n\n> [!IMPORTANT]\n> **Intel Macs are not supported** for the local backend (app UI only).\n> PyTorch stopped shipping Intel-Mac (macOS\n> x86_64) wheels after 2.2.x and VoiceStudio's dependencies need a newer torch,\n> so a local Python backend cannot install on an Intel Mac — from the DMG *or*\n> from source ([#889](https://github.com/debpalash/VoiceStudio/issues/889)).\n> On Intel, packaged setup stops before creating a Python environment or\n> downloading dependencies and shows remote-backend guidance instead: use the\n> remote connection controls on the setup screen to point the app at a backend\n> on another machine, or run VoiceStudio on an Apple Silicon Mac, Windows, or\n> Linux. A source checkout behaves the same way: `bun run setup:api` stops\n> before syncing anything, and the app opens the same remote-backend screen\n> instead of reporting an incomplete Python environment\n> ([#3584](https://github.com/debpalash/VoiceStudio/issues/3584)).\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "pbakaus/impeccable",
+    "expected": [
+      "live",
+      "apply"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/pbakaus/impeccable/blob/main/README.md",
+        "sha": "1b95cc5b988b9b7687be749d90d978f625b9284a",
+        "markdown": "### Live mode\n\n`/impeccable live` opens your running dev server with an overlay. Select an element, pick a direction, and Impeccable hot-swaps variants in place. Accept one and it is written back to your source. It works with Vite, Next, SvelteKit, Astro, Nuxt, and plain HTML. [Iterate in the browser](https://impeccable.style/tutorials/iterate-live).\n\nLive mode edits a local checkout only; don't inject it into a deployed site or weaken a production CSP to make it work. Applying copy edits runs your `package.json`'s optional `impeccable:manual-edit-validate` script with your permissions, so review it before using live mode in an unfamiliar repo.\n\nApply sends staged copy edits to your chat agent while a live session is polling. If none has polled in the last minute, it runs the `codex` CLI from your PATH instead (or `claude` when codex is missing), with approvals, permission checks, and sandboxing off (`--dangerously-bypass-approvals-and-sandbox` or `--permission-mode bypassPermissions`) and your environment inherited. Its prompt carries the staged edits, the edited elements' HTML and nearby text, the page URL, and candidate source paths. Set `IMPECCABLE_LIVE_COPY_AGENT=chat` in the environment that starts live mode to keep Apply in your chat session, or `off` to disable Apply. The server reads it once at startup.\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "earthtojake/text-to-cad",
+    "expected": [
+      "python"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/earthtojake/text-to-cad/blob/main/README.md",
+        "sha": "51ab0f716fa1359e1215f2cd3971f8eb03f10908",
+        "markdown": "## 🚀 Quickstart\n\nmacOS and Linux:\n\n```bash\ncurl -fsSL https://texttocad.dev/install.sh | sh\n```\n\nWindows, in PowerShell:\n\n```powershell\nirm https://www.texttocad.dev/install.ps1 | iex\n```\n\nIt installs uv if it is missing, then sets up text-to-cad in every agent app on\nyour computer with each app's own commands (the plugin, which brings the skills\nand CAD's MCP server, or for an agent without a plugin the skills alone; Claude\nCode gets the skills, and Claude Desktop the server, for its Chat and Code tabs),\nregisters the `cad` command, and moves CAD's server to the new release. Run\nit again to update everything, or click CAD's update button when it shows one; it\nlists the apps to restart.\n\nThen ask your agent for a part or an assembly: it writes the model as a Python\nscript, runs it to build the model and shows it in the CAD viewer.\n\nInstalling by hand, app by app, and updates: [docs/install.md](docs/install.md)\n\n"
+      }
+    ]
+  },
+  {
+    "repository": "NationalSecurityAgency/ghidra",
+    "expected": [
+      "install",
+      "jdk"
+    ],
+    "documents": [
+      {
+        "path": "README.md",
+        "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md",
+        "sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
+        "markdown": "## Install\nTo install an official pre-built multi-platform Ghidra release:  \n* Install [JDK 25 64-bit][jdk]\n* Download a Ghidra [release file][releases]\n  - **NOTE:** The official multi-platform release file is named \n    `ghidra_<version>_<release>_<date>.zip` which can be found under the \"Assets\" drop-down.\n    Downloading either of the files named \"Source Code\" is not correct for this step.\n* Extract the Ghidra release file\n  - **NOTE:** Do not extract on top of an existing installation\n* Launch Ghidra: `./ghidraRun` (`ghidraRun.bat` for Windows)\n  - or launch [PyGhidra][pyghidra]: `./support/pyghidraRun` (`support\\pyghidraRun.bat` for Windows)\n\nFor additional information and troubleshooting tips about installing and running a Ghidra release, \nplease refer to the [Getting Started][gettingstarted] document which can be found at the root of a \nGhidra installation directory. \n\n"
+      }
+    ]
+  }
+]

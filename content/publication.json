@@ -28,28 +28,28 @@
           "periodStars": 2842,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:09:30.896Z",
-            "analyzedAt": "2026-11-12T00:09:30.896Z",
-            "sourceCheckedAt": "2026-11-12T00:09:30.896Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "13959c6a7c3d12ebf566841cc641dfc83643e74ccfa5d8589f4fe30d9b077625",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:09:30.896Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:09:30.896Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-12T00:09:30.896Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -59,7 +59,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
-                "fetchedAt": "2026-11-12T00:09:30.896Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -67,7 +67,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "c4c656d48e41462bb7064654c2ac03a3a17ab9bb",
-                "fetchedAt": "2026-11-12T00:09:30.896Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -127,6 +127,14 @@
                 "line": 25,
                 "kind": "prose",
                 "excerpt": "- Open internals. Components are built to be composed at any level, not locked behind a closed top-level API. The building blocks you'd reach for are exported directly, and when you need to go deeper, swizzle ejects a component's full source into your project to own."
+              },
+              {
+                "id": "e-f1a911832209a9ac",
+                "sourceId": "readme",
+                "section": "Packages",
+                "line": 78,
+                "kind": "prose",
+                "excerpt": "> @astryxdesign/lab (experimental components) is used internally for Storybook and the sandbox and is not published to npm. @astryxdesign/vega (Vega/Vega-Lite chart wrapper) and @astryxdesign/charts (chart components) are published to npm only under the @canary dist-tag — there is no stable release yet."
               }
             ],
             "source": "https://github.com/meta/astryx#readme",
@@ -262,6 +270,26 @@
               "verdictEvidenceIds": [
                 "e-d670673a2210fa94"
               ],
+              "cautions": [
+                {
+                  "id": "react",
+                  "title": "React 버전과 구성 요소 범위",
+                  "body": "core의 peer dependency는 react·react-dom이며 React 19 이상이 필요합니다. 기존 React 버전과 맞는지 먼저 확인해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-6184804e28a9adbd"
+                  ]
+                },
+                {
+                  "id": "canary",
+                  "title": "실험 패키지와 안정 릴리스 구분",
+                  "body": "lab은 npm에 배포되지 않습니다. vega·charts는 @canary로만 배포되고 안정 릴리스가 없으므로 core와 같은 안정성을 전제하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-f1a911832209a9ac"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "테마·스타일 변경 방식",
@@ -310,27 +338,27 @@
           "periodStars": 960,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "cbc85306e29a8c7346c24aa1310785d63404ad10e533e0c51081607897960416",
             "sourceFingerprint": "36ca7b834063fd6e61de337cec210e3c5c4d6480113fb9f213f45d3bedd9b3ab",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/README_EN.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "docs/full-guide.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -340,7 +368,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "README.md",
                 "sha": "cb130e7bd387db4fbd26949ee9f995b95c347134",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/README.md"
               },
               {
@@ -348,7 +376,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "docs/README_EN.md",
                 "sha": "d5fefdba856f226cd9aa132473f071a821dfd64a",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/docs/README_EN.md"
               },
               {
@@ -356,7 +384,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "docs/full-guide.md",
                 "sha": "1d2443e7fbcdfc34b0fd209cde5f6bd327696be7",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/docs/full-guide.md"
               }
             ],
@@ -392,14 +420,6 @@
                 "line": 236,
                 "kind": "prose",
                 "excerpt": "per-run toolcalltimeoutseconds > 单工具显式 timeoutseconds > 类别默认 > 无限制，剩余 wall-clock 预算仅作不可突破的外层 cap，inf/nan/负数降级为「无限制」；超时为 best-effort 软中断：Python 线程无法被强制停止，handler 可能在超时后继续运行，超时结果标记 retriable: false 并写入 nonretriabletoolresults 阻断重试，且为仍在后台的 handler 武装协作取消信号（istoolcancellationrequested() 与既有 checktoolexecution() 检查点均响应，handler 从不轮询则行为不变）以尽量减小副作用 | 0 | 否 | | AGENTSEARCHTOOLTIMEOUTS | Agent search 类工具默认超时秒数；0 表示关闭，回退到全局预算 | 0 | 否 | | AGENTANALYSISTOOLTIMEOUTS | Agent analysis 类工具默认超时秒数；0 表示关闭，回退到全局预算 | 0 | 否 | | AGENTACTIONTOOLTIMEOUTS | Agent action"
-              },
-              {
-                "id": "e-08ceaf35597e0286",
-                "sourceId": "doc-000e4149ea42",
-                "section": "API 接口",
-                "line": 1711,
-                "kind": "prose",
-                "excerpt": "> 说明：运行流快照接口返回 lanes/nodes/edges/events/summary 统一契约。active task 缺少 diagnostics 时返回 skeleton flow；若任务 SSE 已收到真实 flowevent，快照会包含最近增量事件。completed history 优先使用 contextsnapshot.diagnostics 与 analysiscontextpackoverview 构建完整拓扑。cancelrequested/cancelled 是合法状态，不会映射为 failed。"
               },
               {
                 "id": "e-ce1b1e0fe0384065",
@@ -456,6 +476,22 @@
                 "line": 3,
                 "kind": "prose",
                 "excerpt": "> 🤖 基于 AI 大模型的 A股/港股/美股/日股/韩股/台股自选股智能分析系统，每日自动分析并推送「决策仪表盘」到企业微信/飞书/Telegram/Discord/Slack/邮箱"
+              },
+              {
+                "id": "e-0847b31dcb266b8b",
+                "sourceId": "readme",
+                "section": "技术栈与数据来源",
+                "line": 57,
+                "kind": "prose",
+                "excerpt": "> 项目默认内置 AkShare、Baostock、YFinance 等免费行情源，可零配置运行；免费源受上游限流、接口变动和网络波动影响，稳定性不保证。长期定时、批量分析或更稳定行情建议配置 Tushare、Longbridge 等 token 型数据源，适用市场、Actions 映射和 fallback 规则见 数据源配置。"
+              },
+              {
+                "id": "e-1864b253b7869526",
+                "sourceId": "readme",
+                "section": "⚠️ 免责声明",
+                "line": 300,
+                "kind": "prose",
+                "excerpt": "本项目仅供学习和研究使用，不构成任何投资建议。股市有风险，投资需谨慎。作者不对使用本项目产生的任何损失负责。"
               }
             ],
             "source": "https://github.com/ZhuLinsen/daily_stock_analysis#readme",
@@ -511,17 +547,6 @@
                   "summaryKo": "설치·시작 경로에서 Python 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                 },
                 {
-                  "title": "Node.js",
-                  "body": "이 문서 경로의 언급: > 说明：运行流快照接口返回 lanes/nodes/edges/events/summary 统一契约。active task 缺少 diagnostics 时返回 skeleton flow；若任务 SSE 已收到真实 flowevent，快照会包含最近增量事件。completed history 优先使用 contextsnapshot.diagnostics 与 analysiscontextpackoverview 构建完整拓扑。cancelrequested/cancelled 是合法状态，不会映射为 failed。",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-08ceaf35597e0286"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / 📖 完整配置与部署指南 / 本地 WebUI 管理界面 / API 接口",
-                  "summaryKo": "설치·시작 경로에서 node 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
                   "title": "컨테이너 실행",
                   "body": "이 문서 경로의 언급: > Ollama 更适合本地 / Docker 部署，GitHub Actions 推荐使用云端 API。",
                   "kind": "documented",
@@ -564,6 +589,17 @@
                   "scope": "mentioned",
                   "path": " / 📖 完整配置与部署指南 / 环境变量完整列表 / 数据源配置",
                   "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Windows, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "브라우저 실행 환경",
+                  "body": "이 문서 경로의 언급: | 超过此长度不转图片，避免超大图片（默认 15000） | 可选 | | MD2IMGENGINE | 转图引擎：wkhtmltoimage（默认）、markdown-to-file 或 playwright（需安装 Web 依赖与 Chromium） | 可选 | | SHAREIMAGEXIAOHONGSHUURL | 分享图小红书主页 URL；留空可不显示链接 | 可选 | | SHAREIMAGEXIAOHONGSHUHANDLE | 分享图小红书昵称；全部小红书配置留空时显示内置昵称 @霸天土小豆 | 可选 | | SHAREIMAGEXIAOHONGSHUQRPATH | 分享图小红书二维码文件路径；支持绝对路径或相对项目根目录，全部小红书配置留空时使用仓库内置二维码 | 可选 | | PREFETCHREALTIMEQUOTES | 设为 false 可禁用实时行情预取，避免 efinance/akshareem 全市场拉取（默认 true） | 可选",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-634e6e6e5fffed6c"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / 📖 完整配置与部署指南 / GitHub Actions 详细配置 / 2. 配置 Secrets / 推送行为配置",
+                  "summaryKo": "설치·시작 경로에서 브라우저 실행 환경 (Chromium) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                 }
               ],
               "workflow": [
@@ -633,17 +669,6 @@
                     "summaryKo": "설치·시작 경로에서 Python 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                   },
                   {
-                    "title": "Node.js",
-                    "body": "이 문서 경로의 언급: > 说明：运行流快照接口返回 lanes/nodes/edges/events/summary 统一契约。active task 缺少 diagnostics 时返回 skeleton flow；若任务 SSE 已收到真实 flowevent，快照会包含最近增量事件。completed history 优先使用 contextsnapshot.diagnostics 与 analysiscontextpackoverview 构建完整拓扑。cancelrequested/cancelled 是合法状态，不会映射为 failed。",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-08ceaf35597e0286"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / 📖 完整配置与部署指南 / 本地 WebUI 管理界面 / API 接口",
-                    "summaryKo": "설치·시작 경로에서 node 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
                     "title": "컨테이너 실행",
                     "body": "이 문서 경로의 언급: > Ollama 更适合本地 / Docker 部署，GitHub Actions 推荐使用云端 API。",
                     "kind": "documented",
@@ -686,6 +711,17 @@
                     "scope": "mentioned",
                     "path": " / 📖 完整配置与部署指南 / 环境变量完整列表 / 数据源配置",
                     "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Windows, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "브라우저 실행 환경",
+                    "body": "이 문서 경로의 언급: | 超过此长度不转图片，避免超大图片（默认 15000） | 可选 | | MD2IMGENGINE | 转图引擎：wkhtmltoimage（默认）、markdown-to-file 或 playwright（需安装 Web 依赖与 Chromium） | 可选 | | SHAREIMAGEXIAOHONGSHUURL | 分享图小红书主页 URL；留空可不显示链接 | 可选 | | SHAREIMAGEXIAOHONGSHUHANDLE | 分享图小红书昵称；全部小红书配置留空时显示内置昵称 @霸天土小豆 | 可选 | | SHAREIMAGEXIAOHONGSHUQRPATH | 分享图小红书二维码文件路径；支持绝对路径或相对项目根目录，全部小红书配置留空时使用仓库内置二维码 | 可选 | | PREFETCHREALTIMEQUOTES | 设为 false 可禁用实时行情预取，避免 efinance/akshareem 全市场拉取（默认 true） | 可选",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-634e6e6e5fffed6c"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / 📖 完整配置与部署指南 / GitHub Actions 详细配置 / 2. 配置 Secrets / 推送行为配置",
+                    "summaryKo": "설치·시작 경로에서 브라우저 실행 환경 (Chromium) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                   }
                 ],
                 "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
@@ -695,6 +731,26 @@
               },
               "verdictEvidenceIds": [
                 "e-321b44a30c3daa7d"
+              ],
+              "cautions": [
+                {
+                  "id": "feeds",
+                  "title": "무료 시세원의 실패와 대체 경로",
+                  "body": "기본 무료 시세원은 별도 설정 없이 쓸 수 있지만 상위 서비스의 제한·인터페이스 변경·네트워크에 따라 불안정할 수 있습니다. 장기 예약·일괄 분석은 Tushare·Longbridge 같은 토큰 기반 경로를 별도로 설정하도록 안내합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-0847b31dcb266b8b"
+                  ]
+                },
+                {
+                  "id": "research",
+                  "title": "분석 결과의 사용 범위",
+                  "body": "문서는 학습·연구용이며 투자 조언이 아니라고 명시합니다. 자동으로 전달된 보고서를 투자 판단의 검증 결과로 취급하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-1864b253b7869526"
+                  ]
+                }
               ],
               "core": [
                 {
@@ -736,17 +792,17 @@
           "periodStars": 133,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "78f55c1f8599a23cb38800d0cc11d3414e61686a5dbbd7b164830fa69da83348",
             "sourceFingerprint": "d3ffac55637f9a25786c3ca3b12f6f58a115860e466fc9209d82367204918ba3",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -755,7 +811,7 @@
                 "repository": "GoogleChrome/modern-web-guidance-src",
                 "path": "README.md",
                 "sha": "d130c0043c81edb4dc74c8bb279c625a591fc6ac",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/README.md"
               }
             ],
@@ -839,6 +895,14 @@
                 "line": 23,
                 "kind": "example",
                 "excerpt": "npx modern-web-guidance@latest search \"animate a dialog modal backdrop\""
+              },
+              {
+                "id": "e-1952da47d88796be",
+                "sourceId": "readme",
+                "section": "Safe Adoption of Modern Features",
+                "line": 452,
+                "kind": "prose",
+                "excerpt": "Progressive Enhancement & Nuanced Fallbacks: We distinguish between purely additive enhancements (like speculative preloading) which are safe to let older browsers silently ignore, and critical behaviors (like dialog controls or network beacons) where we write highly considered, low-overhead fallbacks. Responsible Fallbacks: We prioritize lightweight, case-specific custom fallbacks (<50 LOC) or conditionally-loaded polyfills instead of heavy third-party bundles. Gotchas & Quirks: We document hidden platform limitations, such as the 64KB payload quota"
               }
             ],
             "source": "https://github.com/GoogleChrome/modern-web-guidance-src#readme",
@@ -968,6 +1032,17 @@
               "verdictEvidenceIds": [
                 "e-5acc255f67d137ab"
               ],
+              "cautions": [
+                {
+                  "id": "fallback",
+                  "title": "신기능의 대체 동작을 구분",
+                  "body": "추측 미리 읽기 같은 부가 기능은 구형 브라우저가 무시해도 되지만 대화상자 제어·네트워크 비콘 같은 핵심 동작은 별도 대체 경로가 필요하다고 설명합니다. 같은 호환성 전략을 모든 API에 적용하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-1952da47d88796be"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "웹 플랫폼 지침과 호환성",
@@ -1008,27 +1083,27 @@
           "periodStars": 333,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "16554a9267726c75d94971834e0196461d33f7beea90546c37e165b1a251cc00",
             "sourceFingerprint": "5a391ebfc69422be21d14879bf2f802e3704751c5ab8b5fc65523fcc29a6b342",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "skills/improve/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "skills/improve/references/closing-the-loop.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -1038,7 +1113,7 @@
                 "repository": "shadcn/improve",
                 "path": "README.md",
                 "sha": "17e41e80976356c4bacfa5b9f2e873b67d1fe554",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/shadcn/improve/blob/main/README.md"
               },
               {
@@ -1046,7 +1121,7 @@
                 "repository": "shadcn/improve",
                 "path": "skills/improve/SKILL.md",
                 "sha": "df5b9001adda5ee72697ab5f7d3efe74c212e478",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/shadcn/improve/blob/main/skills/improve/SKILL.md",
                 "setupOnly": true
               },
@@ -1055,7 +1130,7 @@
                 "repository": "shadcn/improve",
                 "path": "skills/improve/references/closing-the-loop.md",
                 "sha": "f0e524f4b1e9d332f0c92d0c990da5a071cfb06b",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/shadcn/improve/blob/main/skills/improve/references/closing-the-loop.md",
                 "setupOnly": true
               }
@@ -1180,6 +1255,14 @@
                 "line": 59,
                 "kind": "prose",
                 "excerpt": "| Verdict | When | Action | |---|---|---| | APPROVE | Criteria pass, scope clean, quality holds | Update index status to DONE. Present to the user: diff summary, worktree path and branch, anything from NOTES. Merging is the user's decision — never merge, push, or commit to their branch. | | REVISE | Fixable gaps | SendMessage to the same executor with specific, actionable feedback (\"criterion 3 fails: X; the error handling in api.ts:90 swallows the error — use the Result pattern per the plan\"). Max 2 revision rounds, then BLOCK. | | BLOCK | STOP"
+              },
+              {
+                "id": "e-5730aea031ca5201",
+                "sourceId": "readme",
+                "section": "Hard rules",
+                "line": 100,
+                "kind": "prose",
+                "excerpt": "- Never modifies source code itself. The only writes go to plans/; executors edit only in disposable worktrees, and merging is always yours."
               }
             ],
             "source": "https://github.com/shadcn/improve#readme",
@@ -1424,6 +1507,26 @@
               "verdictEvidenceIds": [
                 "e-188dd556b9fb0f4e"
               ],
+              "cautions": [
+                {
+                  "id": "host",
+                  "title": "설치 호환성과 자동 실행 위임은 별개",
+                  "body": "Agent Skills 호환 호스트라도 자동 execute에는 격리 worktree의 별도 실행자를 만들 수 있는 기능이 필요합니다. 지원하지 않는 호스트는 작성한 계획을 수동 실행자에게 인계하는 경로입니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-a570766e9ef8b638"
+                  ]
+                },
+                {
+                  "id": "merge",
+                  "title": "계획 작성자가 소스를 고치거나 병합하지 않음",
+                  "body": "스킬은 소스를 직접 수정하지 않고 plans/에 계획을 씁니다. 구현은 일회용 worktree에서 진행하며 최종 병합은 사용자가 판단하는 흐름입니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-5730aea031ca5201"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "코드 감사에서 구현 계획으로",
@@ -1469,37 +1572,37 @@
           "periodStars": 788,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "981b9416f9d8f05d61fdbc642429112860daf7067ea8882866d588fb4acb62ec",
             "sourceFingerprint": "8ac55eab95ef21374f305788f08dad6e2709aace70c31484f0c91957300a06a2",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/cursor-setup.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "docs/antigravity-setup.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "skills/spec-driven-development/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "skills/debugging-and-error-recovery/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -1509,7 +1612,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "README.md",
                 "sha": "7f610b8ca80ff9bc7ba7f95f3209430c3481891d",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/README.md"
               },
               {
@@ -1517,7 +1620,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "docs/cursor-setup.md",
                 "sha": "0b92d4c2f326734f9a9539ac77b97e506c58c0f0",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/docs/cursor-setup.md"
               },
               {
@@ -1525,7 +1628,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "docs/antigravity-setup.md",
                 "sha": "f2350a882ce237b74863049d8ab96759ceaa0e99",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/docs/antigravity-setup.md"
               },
               {
@@ -1533,7 +1636,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "skills/spec-driven-development/SKILL.md",
                 "sha": "3fcc536f14f261dab1a785ef906ddf6f12074389",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/skills/spec-driven-development/SKILL.md",
                 "representativeId": "skill-spec-writing"
               },
@@ -1542,7 +1645,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "skills/debugging-and-error-recovery/SKILL.md",
                 "sha": "13c1a431626c23270542c7b570d7193ba79c3a96",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/skills/debugging-and-error-recovery/SKILL.md",
                 "representativeId": "skill-debug-recovery"
               }
@@ -1739,6 +1842,14 @@
                 "line": 249,
                 "kind": "prose",
                 "excerpt": "| Skill | What It Does | Use When | |-------|-------------|----------| | incremental-implementation | Thin vertical slices - implement, test, verify, commit. Feature flags, safe defaults, rollback-friendly changes | Any change touching more than one file | | test-driven-development | Red-Green-Refactor, test pyramid (80/15/5), test sizes, DAMP over DRY, Beyonce Rule, browser testing | Implementing logic, fixing bugs, or changing behavior | | context-engineering | Feed agents the right information at the right time - rules files, context packing, MCP"
+              },
+              {
+                "id": "e-d06b87b575fa80e7",
+                "sourceId": "readme",
+                "section": "Commands",
+                "line": 22,
+                "kind": "prose",
+                "excerpt": "Want fewer manual steps once the spec exists? /build auto generates the plan and implements every task in a single approved pass — you approve the plan once, then it runs autonomously. It removes the human stepping between tasks, not the verification: every task is still test-driven and committed individually, and it pauses on failures or risky steps."
               }
             ],
             "source": "https://github.com/addyosmani/agent-skills#readme",
@@ -1997,6 +2108,17 @@
               "verdictEvidenceIds": [
                 "e-3031e249f7567294"
               ],
+              "cautions": [
+                {
+                  "id": "auto",
+                  "title": "build auto의 승인 범위와 중단 조건",
+                  "body": "/build auto는 계획을 한 번 승인한 뒤 작업 사이의 수동 승인을 줄이는 경로입니다. 각 작업의 테스트·개별 커밋은 유지하며 실패나 위험 단계에서는 멈추므로 무조건 끝까지 진행하는 모드로 이해하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-d06b87b575fa80e7"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "작업 절차와 검토 산출물",
@@ -2048,17 +2170,17 @@
           "periodStars": 712,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "d78330d726ff1cc3252107697261f96b8fb4583b6af741f6145a1002c01f34a9",
             "sourceFingerprint": "4929ccb5c9b0a287e704d97a8bf4a2f63a98ab578ac85d5066998037fe49227f",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -2067,7 +2189,7 @@
                 "repository": "vercel-labs/agent-browser",
                 "path": "README.md",
                 "sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/vercel-labs/agent-browser/blob/main/README.md"
               }
             ],
@@ -2314,6 +2436,26 @@
               "verdictEvidenceIds": [
                 "e-e98136aec8d70a35"
               ],
+              "cautions": [
+                {
+                  "id": "deps",
+                  "title": "Linux 브라우저 실행 의존성",
+                  "body": "Linux에서는 agent-browser install --with-deps가 브라우저 시스템 라이브러리도 설치하는 경로입니다. CLI 설치와 브라우저 실행 환경 준비를 구분해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-2e8f2707c05079d4"
+                  ]
+                },
+                {
+                  "id": "refs",
+                  "title": "스냅샷 참조로 조작한 뒤 다시 읽기",
+                  "body": "snapshot이 부여한 @e1 같은 참조로 동작한 뒤 페이지를 다시 읽어 결과를 확인하는 흐름입니다. 한 번 얻은 참조만으로 후속 상태를 추정하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-e98136aec8d70a35"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "스냅샷 참조의 유효 범위",
@@ -2362,27 +2504,27 @@
           "periodStars": 1079,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "b809d291006bdea80510d410a055d5432f35c05b49333c19b9c3da12ded2e752",
             "sourceFingerprint": "5f1875ed3b3f3e01efd121854e336dffb3a0278f3bff9439ef463101b5c4f91c",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/hosting/docker.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "docs/clients.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -2392,7 +2534,7 @@
                 "repository": "we-promise/sure",
                 "path": "README.md",
                 "sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/we-promise/sure/blob/main/README.md"
               },
               {
@@ -2400,7 +2542,7 @@
                 "repository": "we-promise/sure",
                 "path": "docs/hosting/docker.md",
                 "sha": "8d82e18b2c8b47554dc487bb15da1b26cc3b474f",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md"
               },
               {
@@ -2408,7 +2550,7 @@
                 "repository": "we-promise/sure",
                 "path": "docs/clients.md",
                 "sha": "8df996e0d932a03895ab8a6334b7953583de378e",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/we-promise/sure/blob/main/docs/clients.md"
               }
             ],
@@ -2500,6 +2642,14 @@
                 "line": 116,
                 "kind": "prose",
                 "excerpt": "Read monthly server-calculated totals and the daily spending comparison using GET /api/v1/cashflow."
+              },
+              {
+                "id": "e-bc6272bfb21610ce",
+                "sourceId": "doc-05a88f6858df",
+                "section": "Upgrade note: instance-wide settings need a super admin",
+                "line": 457,
+                "kind": "prose",
+                "excerpt": "Provider credentials (such as Plaid), the shared AI connection settings (LLM provider, endpoints, API keys and models), sync settings, and the external assistant connection are stored once for the whole instance and apply to every family. On an instance with more than one family, only a superadmin can change them. When there is a single family, its admins keep access. Family-scoped choices, such as which assistant a family uses, stay with that family's admins."
               }
             ],
             "source": "https://github.com/we-promise/sure#readme",
@@ -2714,6 +2864,17 @@
               "verdictEvidenceIds": [
                 "e-80f9074e87200e11"
               ],
+              "cautions": [
+                {
+                  "id": "shared",
+                  "title": "인증 정보는 가족별로 격리되지 않음",
+                  "body": "Plaid 같은 제공자 인증, AI 연결 설정, 동기화 설정과 외부 비서 연결은 인스턴스 전체에 한 번 저장되어 모든 family에 적용됩니다. 가족별로 서로 다른 연결을 전제하기 전에 이 공유 범위를 확인해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-bc6272bfb21610ce"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "자체 호스팅과 접근 경로",
@@ -2754,27 +2915,27 @@
           "periodStars": 640,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "775f2455b21a8ebbb57f9ae74ed0c6e6f72473cb35c63d2ad307ab9d462d8654",
             "sourceFingerprint": "b08f9bf06fd6663053aa93a7b3df20029940e968ccb64d122bdf02f2057c03e9",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/in-process-server.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "homeassistant-addon/DOCS.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -2784,7 +2945,7 @@
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "README.md",
                 "sha": "e55a391e681dbb454b5306a1c99315c043b5ebb3",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/README.md"
               },
               {
@@ -2792,7 +2953,7 @@
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "docs/in-process-server.md",
                 "sha": "ee3ffd82ba442addf93190299ed445eb52a303e8",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/docs/in-process-server.md"
               },
               {
@@ -2800,7 +2961,7 @@
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "homeassistant-addon/DOCS.md",
                 "sha": "4cb76107426b033bf4dd68770cabe4bcacc360ff",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/homeassistant-addon/DOCS.md"
               }
             ],
@@ -2908,6 +3069,22 @@
                 "line": 34,
                 "kind": "prose",
                 "excerpt": "5. Copy the connect URL from the entry's Configure screen (Settings → Devices & Services → “HA-MCP — Manage Home Assistant with AI” → HA-MCP Server → Configure). A notification confirms the server started and points you there."
+              },
+              {
+                "id": "e-4edf39967b83c855",
+                "sourceId": "readme",
+                "section": "Other install methods",
+                "line": 86,
+                "kind": "prose",
+                "excerpt": "- Docker (HTTP server): run ghcr.io/homeassistant-ai/ha-mcp in HTTP mode, pointed at your Home Assistant URL and a long-lived token (an administrator's is recommended; non-admin tokens work with limitations), and connect your client to its secret URL. See the Setup Wizard for the full command and per-client config."
+              },
+              {
+                "id": "e-bf627915cf14df8a",
+                "sourceId": "readme",
+                "section": "README 도입부",
+                "line": 1,
+                "kind": "prose",
+                "excerpt": "> Breaking change (v7.3.0): haconfigsetyaml has been moved to beta."
               }
             ],
             "source": "https://github.com/homeassistant-ai/ha-mcp#readme",
@@ -3113,6 +3290,26 @@
               "verdictEvidenceIds": [
                 "e-6ff2f405a8811211"
               ],
+              "cautions": [
+                {
+                  "id": "docker",
+                  "title": "Docker HTTP 연결의 토큰과 비밀 URL",
+                  "body": "Docker HTTP 서버는 Home Assistant URL과 장기 토큰을 설정하고 클라이언트가 서버의 비밀 URL로 연결하는 경로입니다. 관리자 토큰이 권장되며 일반 토큰은 기능 제한이 있으므로 다른 설치 경로의 권한과 동일하게 취급하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-4edf39967b83c855"
+                  ]
+                },
+                {
+                  "id": "beta",
+                  "title": "YAML 수정 도구의 beta 이동",
+                  "body": "v7.3.0에서 ha_config_set_yaml이 beta로 이동했다는 호환성 변경이 공지돼 있습니다. 기존 YAML 수정 흐름을 유지할 때 현재 제공 범위를 확인해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-bf627915cf14df8a"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "설치 경로별 인증 차이",
@@ -3161,27 +3358,27 @@
           "periodStars": 20,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "aa4c51a6533283c77d11ea5ca43af32ad25549013684a0a85d985de2038cc4c9",
             "sourceFingerprint": "2c487239c2894f1fa870888bb4665d495cd75f59d212540b52dd2c2ddcace969",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/agent-workflows.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "docker/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -3191,7 +3388,7 @@
                 "repository": "openai/codex-security",
                 "path": "README.md",
                 "sha": "c30adfcdb1b8c61c6051d14f6fad8fe1ea90d81a",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/openai/codex-security/blob/main/README.md"
               },
               {
@@ -3199,7 +3396,7 @@
                 "repository": "openai/codex-security",
                 "path": "docs/agent-workflows.md",
                 "sha": "fcf8512e40061caf89fadddf36f789fc8f120429",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/openai/codex-security/blob/main/docs/agent-workflows.md"
               },
               {
@@ -3207,7 +3404,7 @@
                 "repository": "openai/codex-security",
                 "path": "docker/README.md",
                 "sha": "f6344d23e4586a89736af595553b2fcb963b2f7c",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/openai/codex-security/blob/main/docker/README.md"
               }
             ],
@@ -3299,6 +3496,14 @@
                 "line": 12,
                 "kind": "prose",
                 "excerpt": "- Scan repositories, selected paths, or Git changes. Deep scans repeat Standard scans and return their deduplicated findings."
+              },
+              {
+                "id": "e-74fd7a130f8cf9b5",
+                "sourceId": "readme",
+                "section": "Quick start",
+                "line": 37,
+                "kind": "prose",
+                "excerpt": "Requires Node.js 22.13.0+ within 22.x, or Node.js 24.x or 26.x, and Python 3.10+. Python 3.10 also requires tomli."
               }
             ],
             "source": "https://github.com/openai/codex-security#readme",
@@ -3515,6 +3720,17 @@
               "verdictEvidenceIds": [
                 "e-fe0e5d30c8338a5e"
               ],
+              "cautions": [
+                {
+                  "id": "versions",
+                  "title": "허용 Node 버전대를 구분",
+                  "body": "요구 환경은 Node.js 22.x 중 22.13.0 이상, 또는 24.x·26.x와 Python 3.10 이상입니다. Node.js의 모든 상위 버전을 허용하는 조건으로 확대하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-74fd7a130f8cf9b5"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "취약점 탐색·검토 보고서",
@@ -3555,42 +3771,42 @@
           "periodStars": 39,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "369e4c196ba9eec394f1ffe07487418b6eca510ec6c3fe7ff663f73013babffe",
             "sourceFingerprint": "c62718d61d803d72e69de7ab18d207c8b8bd55c58e337877a13d4cc220511c04",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "DIRECTORY.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "pom.xml",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": ".github/workflows/build.yml",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "src/main/java/com/thealgorithms/searches/BinarySearch.java",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -3600,7 +3816,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "README.md",
                 "sha": "91766e523bca050fa0d0424d3899bdd93ae3cbee",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/README.md"
               },
               {
@@ -3608,7 +3824,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "DIRECTORY.md",
                 "sha": "37d9b3c295e228009927c174f0ecc154276e7ff3",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/DIRECTORY.md"
               },
               {
@@ -3616,7 +3832,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "pom.xml",
                 "sha": "2af08520649aa6dfed75ffc4c05929ff7833a2e2",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/pom.xml",
                 "setupOnly": true
               },
@@ -3625,7 +3841,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": ".github/workflows/build.yml",
                 "sha": "e83512b89972f444a55ae9c0be849ac4edb67dda",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/.github/workflows/build.yml",
                 "setupOnly": true
               },
@@ -3634,7 +3850,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "src/main/java/com/thealgorithms/searches/BinarySearch.java",
                 "sha": "ca873fc6eafaf5bc31cfeab3eb3cf2f8c362df8f",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/BinarySearch.java",
                 "representativeId": "java-binary-search"
               },
@@ -3643,7 +3859,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                 "sha": "d2eca3506c2d788f3d6501a0cdfc3924547a5a4e",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                 "representativeId": "java-bubble-sort"
               }
@@ -4119,6 +4335,17 @@
               },
               "verdictEvidenceIds": [
                 "e-3b7187b858d79c1c"
+              ],
+              "cautions": [
+                {
+                  "id": "learning",
+                  "title": "학습 구현을 표준 라이브러리 대체 성능으로 해석하지 않기",
+                  "body": "문서는 학습 목적의 구현이며 Java 표준 라이브러리보다 비효율적일 수 있다고 명시합니다. 공통 빌드 통과와 운영 환경의 성능 적합성은 별도로 판단해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-3b7187b858d79c1c"
+                  ]
+                }
               ],
               "core": [
                 {
@@ -4792,8 +5019,8 @@
         "references": [
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-12T00:09:30.896Z",
-            "analyzedAt": "2026-11-12T00:09:30.896Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-876c10c216e10def"
@@ -4801,8 +5028,8 @@
           },
           {
             "name": "ZhuLinsen/daily_stock_analysis",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-548ff5b5adfcc16e"
@@ -4810,8 +5037,8 @@
           },
           {
             "name": "GoogleChrome/modern-web-guidance-src",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-ecb97bc1efae8b22"
@@ -4819,8 +5046,8 @@
           },
           {
             "name": "shadcn/improve",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-188dd556b9fb0f4e"
@@ -4828,8 +5055,8 @@
           },
           {
             "name": "addyosmani/agent-skills",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-8ae08506abf851b0"
@@ -4837,8 +5064,8 @@
           },
           {
             "name": "vercel-labs/agent-browser",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-9f78adc75b0950e6"
@@ -4846,8 +5073,8 @@
           },
           {
             "name": "we-promise/sure",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-fbb4c93b0def19fc"
@@ -4855,8 +5082,8 @@
           },
           {
             "name": "homeassistant-ai/ha-mcp",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-5d022c4714f3d5c3"
@@ -4864,8 +5091,8 @@
           },
           {
             "name": "openai/codex-security",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-ce6ea0f19a2f98b1"
@@ -4873,15 +5100,15 @@
           },
           {
             "name": "TheAlgorithms/Java",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-64817309007c4cab"
             ]
           }
         ],
-        "generatedAt": "2026-11-12T00:09:30.896Z"
+        "generatedAt": "2026-11-12T00:35:24.476Z"
       }
     },
     "weekly": {
@@ -4910,22 +5137,22 @@
           "periodStars": 9327,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "9927829fec0b8c8d39115fdc7a7c76f82d07ba6231a0293be87a28adae8c4879",
             "sourceFingerprint": "d805e4e9a5939d2e7e9bd16252b020e59c4831282b46661d8696369ab937f380",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "skills/nvidia-ontology-setup/references/troubleshooting.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -4935,7 +5162,7 @@
                 "repository": "NVIDIA/auto-ontology",
                 "path": "README.md",
                 "sha": "464a6484b4dc36cd2120578bc6b6e7dcfe236b23",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/NVIDIA/auto-ontology/blob/main/README.md"
               },
               {
@@ -4943,7 +5170,7 @@
                 "repository": "NVIDIA/auto-ontology",
                 "path": "skills/nvidia-ontology-setup/references/troubleshooting.md",
                 "sha": "692334fffa9ee8630b6a4b1a36545389165f1f4a",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/NVIDIA/auto-ontology/blob/main/skills/nvidia-ontology-setup/references/troubleshooting.md"
               }
             ],
@@ -5027,6 +5254,22 @@
                 "line": 7,
                 "kind": "prose",
                 "excerpt": "Agents can retrieve documents and query databases, but reliability gates agentic analytics: a revenue metric answered faster is worth nothing if the number is wrong. Agents need a context layer that tells them where data lives, what it means, whether to use it, how to use it, where it came from, and what is similar. NVIDIA Auto Ontology is an open library that builds that layer from enterprise metadata, reconciles definitions across systems, and exposes it to any agent harness through MCP, CLI, and API. It complements the semantic models customers"
+              },
+              {
+                "id": "e-f472516637c8170e",
+                "sourceId": "readme",
+                "section": "Quickstart",
+                "line": 88,
+                "kind": "prose",
+                "excerpt": "Compose publishes Postgres, pgAdmin, and the web app on the host, so replace each default password before you start it. .env.example also sets an API key per model role: replace each nvapi-your-api-key-here with your key, or delete those lines so they fall back to DEFAULTMODELSAPIKEY."
+              },
+              {
+                "id": "e-06800b5c5b126b59",
+                "sourceId": "readme",
+                "section": "Models",
+                "line": 405,
+                "kind": "prose",
+                "excerpt": "To use self-hosted NIM or any OpenAI-compatible endpoint, set ENDPOINT, APIKEY, and MODEL. Any field you leave unset falls back to DEFAULTMODELS , so the simplest setup fills in DEFAULTMODELS and overrides only what differs. Use models that support structured output, and keep the embedding model the same for ingestion and queries. .env.example documents every variable."
               }
             ],
             "source": "https://github.com/NVIDIA/auto-ontology#readme",
@@ -5228,6 +5471,26 @@
               "verdictEvidenceIds": [
                 "e-7419fef43b51897d"
               ],
+              "cautions": [
+                {
+                  "id": "passwords",
+                  "title": "Compose 시작 전 기본 비밀번호 교체",
+                  "body": "Compose는 Postgres·pgAdmin·웹 앱을 호스트에 공개합니다. 실행 전에 각 기본 비밀번호를 바꾸도록 안내하므로 샘플 설정을 그대로 공개 환경에 사용하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-f472516637c8170e"
+                  ]
+                },
+                {
+                  "id": "embedding",
+                  "title": "수집과 질의의 임베딩 모델 일치",
+                  "body": "구조화 출력을 지원하는 모델을 사용하고 수집과 질의에 같은 임베딩 모델을 유지해야 합니다. 모델 역할별 설정을 바꿀 때 이 일치 조건을 함께 확인하세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-06800b5c5b126b59"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "자연어 질의와 의미 계층",
@@ -5276,17 +5539,17 @@
           "periodStars": 6443,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "28fed759e0c2f94deeaae77304e4e53eeaddcf39586f6e3ea1243ccdacea6f92",
             "sourceFingerprint": "6c62fc72cbbe307a3ecfc3cbe21aec482cc4e8e337f0f20e4d13ad2765d37d01",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -5295,7 +5558,7 @@
                 "repository": "thedotmack/claude-mem",
                 "path": "README.md",
                 "sha": "af0dc772f3d3effeabaa5f5f328909ad66f3e637",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
               }
             ],
@@ -5395,6 +5658,14 @@
                 "line": 248,
                 "kind": "prose",
                 "excerpt": "- Progressive Disclosure - Philosophy behind Claude-Mem's context priming strategy"
+              },
+              {
+                "id": "e-45cdc17520fa9634",
+                "sourceId": "readme",
+                "section": "README 도입부",
+                "line": 1,
+                "kind": "prose",
+                "excerpt": "Claude-Mem runs a second agent beside it that takes notes while it works. The next session starts with a short index of what matters, and pulls in the details only when it needs them. Works with Claude Code, Codex, Cursor, OpenCode and 11 more agents. Copilot CLI, Goose, Roo Code and Warp can search your memory, but their sessions aren't recorded."
               }
             ],
             "source": "https://github.com/thedotmack/claude-mem#readme",
@@ -5587,6 +5858,17 @@
               "verdictEvidenceIds": [
                 "e-5cf8ae7b6e4c91fe"
               ],
+              "cautions": [
+                {
+                  "id": "search-only",
+                  "title": "검색 지원과 세션 기록 지원 구분",
+                  "body": "Copilot CLI·Goose·Roo Code·Warp는 기존 기억을 검색할 수 있지만 해당 세션은 기록되지 않습니다. 지원 에이전트 목록만 보고 모든 호스트에서 자동 수집된다고 가정하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-45cdc17520fa9634"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "세션 기록의 저장·재사용 방식",
@@ -5635,17 +5917,17 @@
           "periodStars": 2313,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "e571a8dc40b9b47744267ac62de20edf455a78b7e4473d4b3efafdb08416e48c",
             "sourceFingerprint": "99ba63c03d02b4853c327863a268089ac54b3740dbdeaa5efea8296055984b25",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -5654,7 +5936,7 @@
                 "repository": "max-sixty/worktrunk",
                 "path": "README.md",
                 "sha": "cb34774014556b4eedaf43ca5f572cb4bcb5e1f9",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/max-sixty/worktrunk/blob/main/README.md"
               }
             ],
@@ -5871,6 +6153,17 @@
               "verdictEvidenceIds": [
                 "e-c55c73d142b927ae"
               ],
+              "cautions": [
+                {
+                  "id": "hooks",
+                  "title": "생성·병합 시 hook의 실행 시점",
+                  "body": "hook은 worktree 생성, 병합 전·후 등에 명령을 실행하는 기능입니다. 단순 경로 전환과 자동 명령 실행의 범위를 구분해 프로젝트의 hook 설정을 검토하세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-170f44a9e505113e"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "브랜치와 작업 경로의 연결",
@@ -5919,27 +6212,27 @@
           "periodStars": 3169,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "849e66b6f2110e098e7f138d042f99e9f07bc492f941eea8ea4f86d3979a0a2f",
             "sourceFingerprint": "37f3688e7cb6e96cdc2175ca5cda09546202363b0147d7d4174a028259b4c249",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "skills/pdf/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "skills/xlsx/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -5949,7 +6242,7 @@
                 "repository": "anthropics/skills",
                 "path": "README.md",
                 "sha": "4171c2c9eba15bf2bdefb496d941ba559368438b",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/anthropics/skills/blob/main/README.md"
               },
               {
@@ -5957,7 +6250,7 @@
                 "repository": "anthropics/skills",
                 "path": "skills/pdf/SKILL.md",
                 "sha": "9f606f1cd68dcab9dabb75b548e90c1de028b8a2",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md",
                 "representativeId": "skill-pdf-text"
               },
@@ -5966,7 +6259,7 @@
                 "repository": "anthropics/skills",
                 "path": "skills/xlsx/SKILL.md",
                 "sha": "cc347203f2247b009b8ea34574bccfa62fce3669",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
                 "representativeId": "skill-xlsx-edit"
               }
@@ -6532,6 +6825,17 @@
               "verdictEvidenceIds": [
                 "e-264302096da8e2e0"
               ],
+              "cautions": [
+                {
+                  "id": "xlsx-errors",
+                  "title": "대표 XLSX 스킬: 종료 코드 0만으로 성공 판단 금지",
+                  "body": "XLSX 재계산은 LibreOffice가 파일을 다시 쓰고 JSON 상태와 오류 수를 반환하는 경로입니다. errors_found도 종료 코드 0일 수 있으므로 JSON 상태·total_errors를 확인해야 합니다. 이는 XLSX 작업 조건이며 모음 전체의 공통 요구사항은 아닙니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-2a1fb4e3cd9aaaff"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "스킬의 구성과 로딩",
@@ -6580,17 +6884,17 @@
           "periodStars": 5235,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "829c05057a3566b9e1cd2fcd8c65dbbc7c3fd057d0ddb796ef25db0a5b7cecf3",
             "sourceFingerprint": "a9da65f1b01ee660c8548cf9a2d166865a0cedd1c1f30981948bb96e88679cb1",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -6599,7 +6903,7 @@
                 "repository": "Donchitos/Claude-Code-Game-Studios",
                 "path": "README.md",
                 "sha": "1842501050d579e421bef697ccd37487b37279be",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/main/README.md"
               }
             ],
@@ -6884,6 +7188,26 @@
               "verdictEvidenceIds": [
                 "e-1b44d16479b9d440"
               ],
+              "cautions": [
+                {
+                  "id": "python",
+                  "title": "Python 부재 시 설정이 조용히 기본값으로 바뀜",
+                  "body": "Python 3가 project.yaml을 읽습니다. 없으면 모든 설정이 조용히 기본값으로 돌아간다고 명시하므로 게임이 생성됐다는 사실만으로 설정 적용을 판단하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-40c2e5d1032a2977"
+                  ]
+                },
+                {
+                  "id": "browser",
+                  "title": "브라우저가 없으면 플레이·스크린샷 검증 미평가",
+                  "body": "/prototype의 플레이·스크린샷 검사에는 Chrome·Edge·Chromium 중 하나가 필요합니다. 없을 때의 not assessed 표시는 테스트 성공을 뜻하지 않습니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-aff3f30b552c28af"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "게임 요구사항에서 초안까지",
@@ -6924,22 +7248,22 @@
           "periodStars": 7621,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "5d103f21dd2537a23bfe9194700d80396de8f7939230aa360375698609731ab3",
             "sourceFingerprint": "31aac98b75e2dd663ff4bb4481d0c6daff1ba8e1123db570747d9f302fbf6ff9",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/self-hosting.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -6949,7 +7273,7 @@
                 "repository": "milind-soni/OpenMausBot",
                 "path": "README.md",
                 "sha": "9eb918d3f784c3ab91ebc753e31488d4d346e109",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/milind-soni/OpenMausBot/blob/main/README.md"
               },
               {
@@ -6957,7 +7281,7 @@
                 "repository": "milind-soni/OpenMausBot",
                 "path": "docs/self-hosting.md",
                 "sha": "f0a680f775d726c510e705d5fc21bb131e68f875",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/milind-soni/OpenMausBot/blob/main/docs/self-hosting.md"
               }
             ],
@@ -7057,6 +7381,14 @@
                 "line": 83,
                 "kind": "prose",
                 "excerpt": "- Bring your own agents. Bots run on the claude, codex, and grok CLIs installed on your own machine — your existing logins and subscriptions, no new accounts, no proxy in the middle. Point any engine at a custom CLI binary (a versioned build or wrapper) in Settings → Engines."
+              },
+              {
+                "id": "e-d0bc21a5eb248493",
+                "sourceId": "readme",
+                "section": "Quick start",
+                "line": 341,
+                "kind": "prose",
+                "excerpt": "Requirements: macOS, Windows, or Ubuntu 24.04 x64, Node 24+, pnpm, and at least one agent CLI — claude, codex, or grok — installed and logged in. They appear in the model picker automatically."
               }
             ],
             "source": "https://github.com/milind-soni/OpenMausBot#readme",
@@ -7306,6 +7638,17 @@
               "verdictEvidenceIds": [
                 "e-f8ac0d1f72790f1e"
               ],
+              "cautions": [
+                {
+                  "id": "agents",
+                  "title": "로컬 에이전트 설치와 로그인 선행",
+                  "body": "요구 환경은 macOS·Windows 또는 Ubuntu 24.04 x64, Node 24 이상과 pnpm입니다. claude·codex·grok CLI 중 적어도 하나가 설치되고 로그인돼 있어야 하므로 관리 화면 설치만으로 실행 준비가 끝나지 않습니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-d0bc21a5eb248493"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "기존 로컬 에이전트 제어",
@@ -7354,27 +7697,27 @@
           "periodStars": 15379,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "8499ad335d4d2abd71bb1678b81c8b7c1176a6c012a7c554a7f22a22167a308d",
-            "sourceFingerprint": "a901e34f0d60373c46daa4118a62291605d006809e88ae9aa1bb591ee36b97f1",
+            "sourceFingerprint": "422baa0d8acd5687464ddf68347f9fb95118f0436fe5990e080ee38619d1a028",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/user/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "docs/user/outside-agents.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -7384,7 +7727,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "README.md",
                 "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/README.md"
               },
               {
@@ -7392,15 +7735,15 @@
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/install.md",
                 "sha": "ea7448149ced304ae47b9246b03ace1749a8e1f7",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md"
               },
               {
                 "id": "doc-3a99448d97e0",
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/outside-agents.md",
-                "sha": "dc9af3ad5167cc4d820e5b951a85252a5b26cf8a",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "sha": "84d00cc98b16c00d3c499f83c679246b600f4ed2",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/outside-agents.md"
               }
             ],
@@ -7470,12 +7813,28 @@
                 "excerpt": "> [!WARNING] > T3 Code currently supports Codex, Claude, Cursor, Grok Build, OpenCode, Antigravity, and fx."
               },
               {
-                "id": "e-66346c62304e9934",
+                "id": "e-d1f65b5e8ea22280",
                 "sourceId": "doc-3a99448d97e0",
                 "section": "Outside agents",
                 "line": 1,
                 "kind": "prose",
                 "excerpt": "They can read projects and threads, start and message threads, and check which providers and models are available."
+              },
+              {
+                "id": "e-d6d9818c3148749d",
+                "sourceId": "doc-5445c9485dbf",
+                "section": "Command line",
+                "line": 11,
+                "kind": "prose",
+                "excerpt": "To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx). It offers to install the t3 command first. If you say no, it asks again at the next minor release, and npx t3 install installs it later. npx t3 always runs the version npm picked, even when a t3 is installed. On the nightly train, run your installed t3 (for example t3 connect), not npx t3, which runs the latest stable release."
+              },
+              {
+                "id": "e-f59657cb3f93baec",
+                "sourceId": "readme",
+                "section": "Installation",
+                "line": 13,
+                "kind": "prose",
+                "excerpt": "> [!WARNING] > T3 Code currently supports Codex, Claude, Cursor, Grok Build, OpenCode, Antigravity, and fx. Install and authenticate at least one provider before use: > > - Codex: install Codex CLI and run codex login > - Claude: install Claude Code and run claude auth login > - Cursor: install Cursor CLI and run agent login > - Grok Build: install Grok Build CLI and run grok login > - OpenCode: install OpenCode and run opencode auth login > - Antigravity: enable it in Settings, then use Install Antigravity and Sign in with Google. No CLI is required. >"
               }
             ],
             "source": "https://github.com/pingdotgg/t3code#readme",
@@ -7611,7 +7970,7 @@
                     "body": "외부 에이전트 연결 경로에서 스레드를 시작하거나 메시지를 보내는 요청을 전달합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-66346c62304e9934"
+                      "e-d1f65b5e8ea22280"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "외부 에이전트 연결 경로에서 스레드를 시작하거나 메시지를 보내는 요청을 전달합니다."
@@ -7623,7 +7982,7 @@
                     "body": "외부 에이전트 연결 경로에서 프로젝트와 스레드 정보를 조회합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-66346c62304e9934"
+                      "e-d1f65b5e8ea22280"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "외부 에이전트 연결 경로에서 프로젝트와 스레드 정보를 조회합니다."
@@ -7694,6 +8053,26 @@
               "verdictEvidenceIds": [
                 "e-ea869cc6db74fb4e"
               ],
+              "cautions": [
+                {
+                  "id": "npx",
+                  "title": "일회 실행 경로에도 Node.js가 필요",
+                  "body": "설치 없이 시험하는 npx t3@latest 경로도 npx 실행용 Node.js는 필요합니다. 데스크톱 앱 설치와 이 CLI 시험 경로의 환경을 구분하세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-d6d9818c3148749d"
+                  ]
+                },
+                {
+                  "id": "providers",
+                  "title": "지원 에이전트별 연결 환경 확인",
+                  "body": "문서가 안내하는 지원 대상은 Codex·Claude·Cursor·Grok Build·OpenCode·Antigravity·fx입니다. 이름이 비슷한 다른 에이전트도 연결된다고 확대하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-f59657cb3f93baec"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "기존 로컬 에이전트 제어",
@@ -7734,22 +8113,22 @@
           "periodStars": 6356,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "9d18862707baac072bbda399afcacd7f622617a1dcae93a2c303d72c3284fe7d",
             "sourceFingerprint": "742c12240758bb74e93ec1b11714d18b66cae1d62f82c5517b266f3187270c60",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "skills/hallmark/references/direction.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -7759,7 +8138,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "README.md",
                 "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/README.md"
               },
               {
@@ -7767,7 +8146,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "skills/hallmark/references/direction.md",
                 "sha": "b7fc330d79b93fb35e63979da14438057b63da3e",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/references/direction.md"
               }
             ],
@@ -7835,6 +8214,14 @@
                 "line": 65,
                 "kind": "prose",
                 "excerpt": "4. scripts/sloplint.mjs --render checks the page at eight widths, then a subagent reviews it with fresh eyes."
+              },
+              {
+                "id": "e-35911bcab4f82a26",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 85,
+                "kind": "prose",
+                "excerpt": "-g installs for every project; leave it off to install into the current one. Needs Node 18 or later. The browser checks (sloplint --render, screenshots) also need npm i -g puppeteer-core and Chrome; without them the static checks still run."
               }
             ],
             "source": "https://github.com/Nutlope/hallmark#readme",
@@ -7992,6 +8379,26 @@
               "verdictEvidenceIds": [
                 "e-b354f4d1d4e13618"
               ],
+              "cautions": [
+                {
+                  "id": "node",
+                  "title": "설치에 필요한 Node 환경",
+                  "body": "문서는 Node 18 이상이 필요하다고 명시합니다. 스킬 설치를 시작하기 전에 해당 환경을 준비해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-35911bcab4f82a26"
+                  ]
+                },
+                {
+                  "id": "review",
+                  "title": "생성 뒤 실제 브라우저와 별도 문맥 검토",
+                  "body": "테마를 고른 뒤 끝내지 않고 실제 브라우저에서 결과를 검사하고 새 문맥의 검토자가 마지막으로 판단하는 흐름입니다. 테마 선택만으로 UI 검증이 끝났다고 보지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-b354f4d1d4e13618"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "테마 선택과 페이지 구성",
@@ -8040,22 +8447,22 @@
           "periodStars": 4191,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "f9421c41abb56fbcc6d49cd47aedeecb6244e16cef5becd293205c55e8dc83de",
             "sourceFingerprint": "3aea68f869ed0f81a782952e6819b99818311848dea09a20c547f1eef76c287e",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "README.en.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -8065,7 +8472,7 @@
                 "repository": "Renhuai123/ziwei-doushu",
                 "path": "README.md",
                 "sha": "cbd9d20f8b3289d1bf5e379904f9a981ea744e6f",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/Renhuai123/ziwei-doushu/blob/main/README.md"
               },
               {
@@ -8073,7 +8480,7 @@
                 "repository": "Renhuai123/ziwei-doushu",
                 "path": "README.en.md",
                 "sha": "ba192c8f8455dcd989045bd9ac2e49d9f387c3ce",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/Renhuai123/ziwei-doushu/blob/main/README.en.md"
               }
             ],
@@ -8101,6 +8508,14 @@
                 "line": 126,
                 "kind": "prose",
                 "excerpt": "| 字段 | 含义 | |------|------| | k | 键：YYYY-MM-DD-时辰序号-性别，如 1990-01-01-0-male | | y / m / d | 公历出生日期；只含真实存在的日期（不再有 2 月 30 日之类） | | h | 时辰序号 0–11（子 = 0 …… 亥 = 11），不是钟点；对照表见上一节 | | g | male / female | | ms | 命宫第一颗主星；命宫无主星时为 null | | t | 各维字数 | | c | 13 维解读全文（Markdown），键为 overview / personality / love / career / wealth / health / family / children / move / friends / home / spirit / parents |"
+              },
+              {
+                "id": "e-c1bc7339a9b517ef",
+                "sourceId": "doc-b4f47ddd2e9b",
+                "section": "Quick start",
+                "line": 67,
+                "kind": "prose",
+                "excerpt": "No API key is needed for charting. The open-source version contains no backend routes: AI interpretation (/api/interpret) and compatibility analysis (/api/heming) return 404 until you implement them yourself."
               }
             ],
             "source": "https://github.com/Renhuai123/ziwei-doushu#readme",
@@ -8227,6 +8642,17 @@
               "verdictEvidenceIds": [
                 "e-adad0a32cbd7e819"
               ],
+              "cautions": [
+                {
+                  "id": "key",
+                  "title": "명반 계산과 API 키 경로 구분",
+                  "body": "명반 계산에는 API 키가 필요 없다고 설명합니다. 이 면제 조건을 별도의 AI 해석이나 다른 서비스 경로까지 확대하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-c1bc7339a9b517ef"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "명반 계산과 지식 자료",
@@ -8267,17 +8693,17 @@
           "periodStars": 8342,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "4e0dc98e3dd287f0e8a62a4c231e836b95cf506716c9986a5f18d0c9a5c10a4b",
             "sourceFingerprint": "48821a493c80ee599fecd6fc175605a86d4dc1076207756ed7c1e717ab85687b",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -8286,7 +8712,7 @@
                 "repository": "D4Vinci/Scrapling",
                 "path": "README.md",
                 "sha": "b7fb1d333673421a9d232e797f9f7e7506103f2f",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/D4Vinci/Scrapling/blob/main/README.md"
               }
             ],
@@ -8370,6 +8796,22 @@
                 "line": 1,
                 "kind": "prose",
                 "excerpt": "Use it from Python, the terminal, or your AI agent through its MCP server and Agent Skill. From extracting a few fields to collecting a whole website as clean Markdown, Scrapling covers the full scraping workflow."
+              },
+              {
+                "id": "e-7301ad3410fb2e20",
+                "sourceId": "readme",
+                "section": "Installation",
+                "line": 537,
+                "kind": "prose",
+                "excerpt": "> [!IMPORTANT] > This installation only includes the parser engine and its dependencies, without any fetchers or commandline dependencies. So importing anything from scrapling.fetchers or scrapling.spiders, like in the examples above, will raise ModuleNotFoundError with this installation alone. If you are going to use any of the fetchers or spiders, install the fetchers' dependencies first as shown below."
+              },
+              {
+                "id": "e-6c9d73b153bed62b",
+                "sourceId": "readme",
+                "section": "Optional Dependencies",
+                "line": 548,
+                "kind": "prose",
+                "excerpt": "Run scrapling install when you need browser fetchers. HTTP requests do not need a browser installation."
               }
             ],
             "source": "https://github.com/D4Vinci/Scrapling#readme",
@@ -8530,6 +8972,26 @@
               },
               "verdictEvidenceIds": [
                 "e-783580aa597e6d94"
+              ],
+              "cautions": [
+                {
+                  "id": "extras",
+                  "title": "기본 설치는 parser만 포함",
+                  "body": "기본 설치는 parser와 그 의존성만 포함합니다. fetchers·spiders를 그대로 import하면 ModuleNotFoundError가 나므로 수집 기능을 쓸 때는 별도 의존성을 설치해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-7301ad3410fb2e20"
+                  ]
+                },
+                {
+                  "id": "browser",
+                  "title": "HTTP 요청과 브라우저 설치 구분",
+                  "body": "scrapling install은 브라우저 fetcher가 필요할 때 실행하는 절차입니다. 일반 HTTP 요청에는 브라우저 설치가 필요하지 않습니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-6c9d73b153bed62b"
+                  ]
+                }
               ],
               "core": [
                 {
@@ -9027,8 +9489,8 @@
         "references": [
           {
             "name": "NVIDIA/auto-ontology",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-6b499cb7e78b2817"
@@ -9036,8 +9498,8 @@
           },
           {
             "name": "thedotmack/claude-mem",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-d8da972adecd3a94"
@@ -9045,8 +9507,8 @@
           },
           {
             "name": "max-sixty/worktrunk",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-a95b385482e78e14"
@@ -9054,8 +9516,8 @@
           },
           {
             "name": "anthropics/skills",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-1f59cc80cdf5cb48"
@@ -9063,8 +9525,8 @@
           },
           {
             "name": "Donchitos/Claude-Code-Game-Studios",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-02f00b61300880ae"
@@ -9072,8 +9534,8 @@
           },
           {
             "name": "milind-soni/OpenMausBot",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-48c69eb08f59ca5f"
@@ -9081,8 +9543,8 @@
           },
           {
             "name": "pingdotgg/t3code",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-e65edae5430fd0cf"
@@ -9090,8 +9552,8 @@
           },
           {
             "name": "Nutlope/hallmark",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-81f1fd422178dcb7"
@@ -9099,8 +9561,8 @@
           },
           {
             "name": "Renhuai123/ziwei-doushu",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-adad0a32cbd7e819"
@@ -9108,15 +9570,15 @@
           },
           {
             "name": "D4Vinci/Scrapling",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-b21f914f6304f397"
             ]
           }
         ],
-        "generatedAt": "2026-11-12T00:08:10.331Z"
+        "generatedAt": "2026-11-12T00:35:24.476Z"
       }
     },
     "monthly": {
@@ -9145,17 +9607,17 @@
           "periodStars": 31731,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "2e3bf6910658e831d746571b73e9952cb33ab25992580a2d284bcb9250f5ddc1",
             "sourceFingerprint": "3c0e27f9ebbb589c935a9cf71c3742109f1aff36e47d679e5053db527536f7f9",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -9164,7 +9626,7 @@
                 "repository": "cloudflare/security-audit-skill",
                 "path": "README.md",
                 "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/cloudflare/security-audit-skill/blob/main/README.md"
               }
             ],
@@ -9216,6 +9678,14 @@
                 "line": 7,
                 "kind": "prose",
                 "excerpt": "Structured output -- write confirmed, needsvalidation, and rejected records to findings.json and validate them against report-schema.json."
+              },
+              {
+                "id": "e-a2df1d11024bcd88",
+                "sourceId": "readme",
+                "section": "Requirements",
+                "line": 86,
+                "kind": "prose",
+                "excerpt": "- An OS-enforced sandbox for target-controlled builds, tests, processes, browsers, emulators, fuzzers, and fixtures. It must disable external networking, use a sanitized allowlisted environment, enforce resource limits, and allow writes only to assigned scratch paths. Without these controls, the workflow keeps the lead as needsvalidation instead of executing target code."
               }
             ],
             "source": "https://github.com/cloudflare/security-audit-skill#readme",
@@ -9342,6 +9812,17 @@
               "verdictEvidenceIds": [
                 "e-e871399518d20a3c"
               ],
+              "cautions": [
+                {
+                  "id": "sandbox",
+                  "title": "대상 코드 실행 전에 OS 샌드박스 필요",
+                  "body": "대상 빌드·테스트 등을 실행하려면 외부 네트워크 차단, 허용 환경 변수, 자원 상한과 지정 임시 경로 쓰기를 강제하는 OS 샌드박스가 필요합니다. 이 통제가 없으면 실행하지 않고 needs_validation으로 남기는 절차입니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-a2df1d11024bcd88"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "작업 절차와 검토 산출물",
@@ -9382,17 +9863,17 @@
           "periodStars": 22303,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "5c31fd23bf9c7fa5c6a28fb91545698ec5d3fd4747d4159b054077ef07b12882",
             "sourceFingerprint": "1a9e9eb00c55150f6764b346dcb58a2d5b3beb9255d658195dde918f5bf5444e",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -9401,7 +9882,7 @@
                 "repository": "heygen-com/hyperframes",
                 "path": "README.md",
                 "sha": "8e6fb677459ff95bd4d43007095d31f8171b70de",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
               }
             ],
@@ -9461,6 +9942,22 @@
                 "line": 1,
                 "kind": "prose",
                 "excerpt": "Write HTML."
+              },
+              {
+                "id": "e-b4808a81720bc2a3",
+                "sourceId": "readme",
+                "section": "Manually with the CLI",
+                "line": 131,
+                "kind": "prose",
+                "excerpt": "Requirements: Node.js 22+, FFmpeg"
+              },
+              {
+                "id": "e-205cd02761180484",
+                "sourceId": "readme",
+                "section": "Skills",
+                "line": 86,
+                "kind": "prose",
+                "excerpt": "For standalone installation, default to the core set (/hyperframes, /hyperframes-cli, /hyperframes-registry, /media-use, /reverse-any-video, /style-sampling). npx hyperframes skills update installs exactly that from anywhere; the interactive picker (npx skills add heygen-com/hyperframes) lists it as the \"Core Skills\" group, nothing pre-selected. The picker is interactive-only — a non-interactive or agent run without --skill installs all 9. Use npx skills add heygen-com/hyperframes --all to install the complete published set deliberately (skips the"
               }
             ],
             "source": "https://github.com/heygen-com/hyperframes#readme",
@@ -9599,6 +10096,26 @@
               "verdictEvidenceIds": [
                 "e-5a0ae31db4be0c98"
               ],
+              "cautions": [
+                {
+                  "id": "cli",
+                  "title": "수동 CLI 렌더링 환경",
+                  "body": "수동 CLI 경로는 Node.js 22 이상과 FFmpeg를 요구합니다. HTML을 브라우저에서 미리 보는 것과 영상으로 인코딩할 실행 환경을 구분하세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-b4808a81720bc2a3"
+                  ]
+                },
+                {
+                  "id": "skills",
+                  "title": "비대화형 설치의 범위",
+                  "body": "스킬 선택기는 대화형 전용입니다. 비대화형 실행에서 --skill을 생략하면 9개 전체가 설치되므로 일부만 필요할 때는 설치 범위를 명시해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-205cd02761180484"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "HTML 구성에서 영상으로 변환",
@@ -9647,22 +10164,22 @@
           "periodStars": 14378,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "9d18862707baac072bbda399afcacd7f622617a1dcae93a2c303d72c3284fe7d",
             "sourceFingerprint": "742c12240758bb74e93ec1b11714d18b66cae1d62f82c5517b266f3187270c60",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "skills/hallmark/references/direction.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -9672,7 +10189,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "README.md",
                 "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/README.md"
               },
               {
@@ -9680,7 +10197,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "skills/hallmark/references/direction.md",
                 "sha": "b7fc330d79b93fb35e63979da14438057b63da3e",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/references/direction.md"
               }
             ],
@@ -9748,6 +10265,14 @@
                 "line": 65,
                 "kind": "prose",
                 "excerpt": "4. scripts/sloplint.mjs --render checks the page at eight widths, then a subagent reviews it with fresh eyes."
+              },
+              {
+                "id": "e-35911bcab4f82a26",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 85,
+                "kind": "prose",
+                "excerpt": "-g installs for every project; leave it off to install into the current one. Needs Node 18 or later. The browser checks (sloplint --render, screenshots) also need npm i -g puppeteer-core and Chrome; without them the static checks still run."
               }
             ],
             "source": "https://github.com/Nutlope/hallmark#readme",
@@ -9905,6 +10430,26 @@
               "verdictEvidenceIds": [
                 "e-b354f4d1d4e13618"
               ],
+              "cautions": [
+                {
+                  "id": "node",
+                  "title": "설치에 필요한 Node 환경",
+                  "body": "문서는 Node 18 이상이 필요하다고 명시합니다. 스킬 설치를 시작하기 전에 해당 환경을 준비해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-35911bcab4f82a26"
+                  ]
+                },
+                {
+                  "id": "review",
+                  "title": "생성 뒤 실제 브라우저와 별도 문맥 검토",
+                  "body": "테마를 고른 뒤 끝내지 않고 실제 브라우저에서 결과를 검사하고 새 문맥의 검토자가 마지막으로 판단하는 흐름입니다. 테마 선택만으로 UI 검증이 끝났다고 보지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-b354f4d1d4e13618"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "테마 선택과 페이지 구성",
@@ -9953,27 +10498,27 @@
           "periodStars": 8375,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "ff2b433632a76a9da043674fd346e4415c32b816b9addb53a5bbc0866f5a0676",
             "sourceFingerprint": "4ea046f8972b93daf14f50c93fefa2892edc7d307db4385f6f4e709c5e078cab",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "product-management/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "sales/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -9983,7 +10528,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "README.md",
                 "sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/README.md"
               },
               {
@@ -9991,7 +10536,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "product-management/README.md",
                 "sha": "794694ab4d522a3eb08320472b63f771047bb0a9",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/product-management/README.md",
                 "representativeId": "plugin-product-spec"
               },
@@ -10000,7 +10545,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "sales/README.md",
                 "sha": "2dfe28ad0d9f5cd98b14b21ccb44763d6e652f28",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/sales/README.md",
                 "representativeId": "plugin-sales-call"
               }
@@ -10109,6 +10654,14 @@
                 "line": 5,
                 "kind": "prose",
                 "excerpt": "Each plugin bundles the skills, connectors, slash commands, and sub-agents for a specific job function. Out of the box, they give Claude a strong starting point for helping anyone in that role. The real power comes when you customize them for your company — your tools, your terminology, your processes — so Claude works like it was built for your team."
+              },
+              {
+                "id": "e-d6d61c49a1cdf719",
+                "sourceId": "doc-25dd6ed7c180",
+                "section": "What's new in 2.0",
+                "line": 12,
+                "kind": "prose",
+                "excerpt": "- Acts when you ask. Skills can update CRM records, create email drafts or send email, post to chat and book meetings, within each connector's permissions. Changes a skill suggests on its own are shown to you first, with the evidence behind them."
               }
             ],
             "source": "https://github.com/anthropics/knowledge-work-plugins#readme",
@@ -10301,6 +10854,17 @@
               "verdictEvidenceIds": [
                 "e-93e982661b76ffb8"
               ],
+              "cautions": [
+                {
+                  "id": "sales-actions",
+                  "title": "대표 sales 플러그인: 조회와 실제 업무 반영 구분",
+                  "body": "sales 문서는 요청에 따라 connector 권한 안에서 CRM 갱신, 메일 발송, 채팅 게시와 일정 예약까지 가능하다고 설명합니다. 스킬이 먼저 제안한 변경은 근거와 함께 보여주는 경로이므로 초안 작성과 실제 외부 반영을 구분해야 합니다. 다른 직무 플러그인 전체의 공통 동작은 아닙니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-d6d61c49a1cdf719"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "직무별 도구·지침 묶음",
@@ -10346,27 +10910,27 @@
           "periodStars": 47234,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "3bcaa24a372d9e3e95889abb2148c51b23b7994b1495dc22382faff640d07c74",
             "sourceFingerprint": "2508499122948c5504f6a7736953322afac06a00a9f31949a03e09e7940d8873",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/install/windows-rocm.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "docs/install/macos.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -10376,7 +10940,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "README.md",
                 "sha": "5b336fbac18c4c3400089956d2cb2307ade2fb6d",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/README.md"
               },
               {
@@ -10384,7 +10948,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "docs/install/windows-rocm.md",
                 "sha": "17b22a642a9e194d050fdb9863c89437438d5432",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/windows-rocm.md"
               },
               {
@@ -10392,7 +10956,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "docs/install/macos.md",
                 "sha": "b8dfdb0eb7d7cea43e7b7593a1c3072d98bd8bb6",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/macos.md"
               }
             ],
@@ -10492,6 +11056,14 @@
                 "line": 61,
                 "kind": "prose",
                 "excerpt": "Local models Choose your engines and download only the models you need."
+              },
+              {
+                "id": "e-bbafc7ef52121650",
+                "sourceId": "doc-737535f5545c",
+                "section": "VoiceStudio — Install on macOS",
+                "line": 1,
+                "kind": "prose",
+                "excerpt": "> [!IMPORTANT] > Intel Macs are not supported for the local backend (app UI only). > PyTorch stopped shipping Intel-Mac (macOS > x8664) wheels after 2.2.x and VoiceStudio's dependencies need a newer torch, > so a local Python backend cannot install on an Intel Mac — from the DMG or > from source (#889). > On Intel, packaged setup stops before creating a Python environment or > downloading dependencies and shows remote-backend guidance instead: use the > remote connection controls on the setup screen to point the app at a backend > on another machine, or"
               }
             ],
             "source": "https://github.com/debpalash/VoiceStudio#readme",
@@ -10746,6 +11318,17 @@
               "verdictEvidenceIds": [
                 "e-12c82ccaa38a3fa2"
               ],
+              "cautions": [
+                {
+                  "id": "intel",
+                  "title": "Intel Mac은 UI 전용",
+                  "body": "macOS 설치 문서는 Intel Mac에서 로컬 backend를 지원하지 않는다고 명시합니다. x64 앱 UI가 실행된다는 사실과 로컬 음성 모델 실행 지원을 구분해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-bbafc7ef52121650"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "음성 생성·더빙의 변환 경로",
@@ -10794,27 +11377,27 @@
           "periodStars": 25479,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "596bb4235bacd567ea0f3f04999470a4c0ae03c186a494d1fb74a68863704269",
             "sourceFingerprint": "f5c2fbf0830cab0530ff137b30bff648a34e8c10a5a0366695e6d9b5f23f2bf0",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "skill/reference/audit.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "skill/reference/critique.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -10824,7 +11407,7 @@
                 "repository": "pbakaus/impeccable",
                 "path": "README.md",
                 "sha": "1b95cc5b988b9b7687be749d90d978f625b9284a",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/README.md"
               },
               {
@@ -10832,7 +11415,7 @@
                 "repository": "pbakaus/impeccable",
                 "path": "skill/reference/audit.md",
                 "sha": "741db4c0a63505d056da22913a0b52f936acce96",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
                 "representativeId": "skill-ui-audit"
               },
@@ -10841,7 +11424,7 @@
                 "repository": "pbakaus/impeccable",
                 "path": "skill/reference/critique.md",
                 "sha": "4dd9f4ba2c006efdce0c0fe1b5a31e83fb93d30a",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/critique.md",
                 "representativeId": "skill-ui-critique"
               }
@@ -11006,6 +11589,22 @@
                 "line": 37,
                 "kind": "prose",
                 "excerpt": "Then name a command and a target:"
+              },
+              {
+                "id": "e-3377b8e3c73f245c",
+                "sourceId": "readme",
+                "section": "Live mode",
+                "line": 66,
+                "kind": "prose",
+                "excerpt": "Live mode edits a local checkout only; don't inject it into a deployed site or weaken a production CSP to make it work. Applying copy edits runs your package.json's optional impeccable:manual-edit-validate script with your permissions, so review it before using live mode in an unfamiliar repo."
+              },
+              {
+                "id": "e-c4d7f42e1e9e239c",
+                "sourceId": "readme",
+                "section": "Live mode",
+                "line": 66,
+                "kind": "prose",
+                "excerpt": "Apply sends staged copy edits to your chat agent while a live session is polling. If none has polled in the last minute, it runs the codex CLI from your PATH instead (or claude when codex is missing), with approvals, permission checks, and sandboxing off (--dangerously-bypass-approvals-and-sandbox or --permission-mode bypassPermissions) and your environment inherited. Its prompt carries the staged edits, the edited elements' HTML and nearby text, the page URL, and candidate source paths. Set IMPECCABLELIVECOPYAGENT=chat in the environment that starts"
               }
             ],
             "source": "https://github.com/pbakaus/impeccable#readme",
@@ -11261,6 +11860,26 @@
               "verdictEvidenceIds": [
                 "e-1f1f8d1a463184f9"
               ],
+              "cautions": [
+                {
+                  "id": "live",
+                  "title": "live mode는 로컬 checkout에서만 사용",
+                  "body": "live mode는 로컬 checkout 수정용이며 배포 사이트에 주입하거나 동작을 위해 운영 CSP를 약화하지 않도록 안내합니다. 낯선 저장소에서는 복사 편집 시 실행되는 선택적 검증 스크립트도 먼저 검토해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-3377b8e3c73f245c"
+                  ]
+                },
+                {
+                  "id": "apply",
+                  "title": "Apply의 CLI 대체 실행과 권한 범위",
+                  "body": "최근 1분 동안 chat agent가 응답하지 않으면 Apply가 PATH의 codex 또는 claude CLI를 승인·샌드박스 제한 없이 실행하고 환경을 상속한다고 설명합니다. 편집 요청을 적용하기 전에 실제 실행 주체와 권한 범위를 확인해야 합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-c4d7f42e1e9e239c"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "검토 방식과 남기는 문서",
@@ -11303,22 +11922,22 @@
           "periodStars": 8092,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "f5be476f3817c232c60374417e7709c9c143418cf4855586e1bdc27cbaf7c802",
             "sourceFingerprint": "be7da6003899b82b0da4372f107749d78cb1e22282a1de70eb4a0252fbe9a5df",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -11328,7 +11947,7 @@
                 "repository": "earthtojake/text-to-cad",
                 "path": "README.md",
                 "sha": "51ab0f716fa1359e1215f2cd3971f8eb03f10908",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/earthtojake/text-to-cad/blob/main/README.md"
               },
               {
@@ -11336,7 +11955,7 @@
                 "repository": "earthtojake/text-to-cad",
                 "path": "docs/install.md",
                 "sha": "28fcafc3ecca60b332b40b08b08027abd6aa5da0",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/earthtojake/text-to-cad/blob/main/docs/install.md"
               }
             ],
@@ -11638,6 +12257,17 @@
               "verdictEvidenceIds": [
                 "e-11d98ae0fe1ff2be"
               ],
+              "cautions": [
+                {
+                  "id": "python",
+                  "title": "모델 생성에는 Python 코드 실행이 포함",
+                  "body": "설계 요청은 Python 스크립트로 작성되고 그 스크립트를 실행해 모델을 만듭니다. 뷰어에 표시된 형상만 확인하지 말고 생성된 모델 코드도 검토하는 흐름으로 사용하세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-11d98ae0fe1ff2be"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "모델 작성 방식과 내보내기 형식",
@@ -11686,27 +12316,27 @@
           "periodStars": 16685,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "8d87ef7bf2e142ea653b61246010bc819da1b45b344369c7b0f9da5377d47908",
             "sourceFingerprint": "f4651aad7098c09877f52a988c3b940d574236e16cb91dd6f6d4bb0a3f9fb762",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "DevGuide.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "Ghidra/Features/PyGhidra/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -11716,7 +12346,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "README.md",
                 "sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md"
               },
               {
@@ -11724,7 +12354,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "DevGuide.md",
                 "sha": "7cf682836fea723a3875dfa2a2ecdc22414f9745",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/DevGuide.md"
               },
               {
@@ -11732,7 +12362,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "Ghidra/Features/PyGhidra/README.md",
                 "sha": "3485a6048d65b34979373983396324fe2eeae13c",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/Ghidra/Features/PyGhidra/README.md"
               }
             ],
@@ -12009,6 +12639,26 @@
               "verdictEvidenceIds": [
                 "e-94b14c39b9f75671"
               ],
+              "cautions": [
+                {
+                  "id": "install",
+                  "title": "기존 설치 폴더 위에 압축을 풀지 않기",
+                  "body": "공식 사전 빌드 설치 절차는 기존 설치 위에 압축을 풀지 말라고 명시합니다. 새 릴리스를 기존 폴더에 덮어쓰는 방식으로 갱신하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-4840b3dba5af06b5"
+                  ]
+                },
+                {
+                  "id": "jdk",
+                  "title": "사전 빌드 실행과 소스 빌드 환경 구분",
+                  "body": "사전 빌드 릴리스 설치 절차에는 64비트 JDK 25가 명시돼 있습니다. 소스 빌드용 Gradle·컴파일러 요구사항을 일반 실행의 필수 조건으로 모두 합치지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-6cf9aa5cd61bb900"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "분석 대상과 지원 범위",
@@ -12057,27 +12707,27 @@
           "periodStars": 9973,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "8499ad335d4d2abd71bb1678b81c8b7c1176a6c012a7c554a7f22a22167a308d",
-            "sourceFingerprint": "a901e34f0d60373c46daa4118a62291605d006809e88ae9aa1bb591ee36b97f1",
+            "sourceFingerprint": "422baa0d8acd5687464ddf68347f9fb95118f0436fe5990e080ee38619d1a028",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": [
                 {
                   "path": "docs/user/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 },
                 {
                   "path": "docs/user/outside-agents.md",
                   "status": "available",
-                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                  "checkedAt": "2026-11-12T00:35:24.476Z"
                 }
               ]
             },
@@ -12087,7 +12737,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "README.md",
                 "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/README.md"
               },
               {
@@ -12095,15 +12745,15 @@
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/install.md",
                 "sha": "ea7448149ced304ae47b9246b03ace1749a8e1f7",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md"
               },
               {
                 "id": "doc-3a99448d97e0",
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/outside-agents.md",
-                "sha": "dc9af3ad5167cc4d820e5b951a85252a5b26cf8a",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "sha": "84d00cc98b16c00d3c499f83c679246b600f4ed2",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/outside-agents.md"
               }
             ],
@@ -12173,12 +12823,28 @@
                 "excerpt": "> [!WARNING] > T3 Code currently supports Codex, Claude, Cursor, Grok Build, OpenCode, Antigravity, and fx."
               },
               {
-                "id": "e-66346c62304e9934",
+                "id": "e-d1f65b5e8ea22280",
                 "sourceId": "doc-3a99448d97e0",
                 "section": "Outside agents",
                 "line": 1,
                 "kind": "prose",
                 "excerpt": "They can read projects and threads, start and message threads, and check which providers and models are available."
+              },
+              {
+                "id": "e-d6d9818c3148749d",
+                "sourceId": "doc-5445c9485dbf",
+                "section": "Command line",
+                "line": 11,
+                "kind": "prose",
+                "excerpt": "To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx). It offers to install the t3 command first. If you say no, it asks again at the next minor release, and npx t3 install installs it later. npx t3 always runs the version npm picked, even when a t3 is installed. On the nightly train, run your installed t3 (for example t3 connect), not npx t3, which runs the latest stable release."
+              },
+              {
+                "id": "e-f59657cb3f93baec",
+                "sourceId": "readme",
+                "section": "Installation",
+                "line": 13,
+                "kind": "prose",
+                "excerpt": "> [!WARNING] > T3 Code currently supports Codex, Claude, Cursor, Grok Build, OpenCode, Antigravity, and fx. Install and authenticate at least one provider before use: > > - Codex: install Codex CLI and run codex login > - Claude: install Claude Code and run claude auth login > - Cursor: install Cursor CLI and run agent login > - Grok Build: install Grok Build CLI and run grok login > - OpenCode: install OpenCode and run opencode auth login > - Antigravity: enable it in Settings, then use Install Antigravity and Sign in with Google. No CLI is required. >"
               }
             ],
             "source": "https://github.com/pingdotgg/t3code#readme",
@@ -12314,7 +12980,7 @@
                     "body": "외부 에이전트 연결 경로에서 스레드를 시작하거나 메시지를 보내는 요청을 전달합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-66346c62304e9934"
+                      "e-d1f65b5e8ea22280"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "외부 에이전트 연결 경로에서 스레드를 시작하거나 메시지를 보내는 요청을 전달합니다."
@@ -12326,7 +12992,7 @@
                     "body": "외부 에이전트 연결 경로에서 프로젝트와 스레드 정보를 조회합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-66346c62304e9934"
+                      "e-d1f65b5e8ea22280"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "외부 에이전트 연결 경로에서 프로젝트와 스레드 정보를 조회합니다."
@@ -12397,6 +13063,26 @@
               "verdictEvidenceIds": [
                 "e-ea869cc6db74fb4e"
               ],
+              "cautions": [
+                {
+                  "id": "npx",
+                  "title": "일회 실행 경로에도 Node.js가 필요",
+                  "body": "설치 없이 시험하는 npx t3@latest 경로도 npx 실행용 Node.js는 필요합니다. 데스크톱 앱 설치와 이 CLI 시험 경로의 환경을 구분하세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-d6d9818c3148749d"
+                  ]
+                },
+                {
+                  "id": "providers",
+                  "title": "지원 에이전트별 연결 환경 확인",
+                  "body": "문서가 안내하는 지원 대상은 Codex·Claude·Cursor·Grok Build·OpenCode·Antigravity·fx입니다. 이름이 비슷한 다른 에이전트도 연결된다고 확대하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-f59657cb3f93baec"
+                  ]
+                }
+              ],
               "core": [
                 {
                   "title": "기존 로컬 에이전트 제어",
@@ -12437,17 +13123,17 @@
           "periodStars": 12705,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 15,
-            "version": 15,
+            "analyzerVersion": 16,
+            "version": 16,
             "status": "ready",
-            "checkedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "checkedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
             "analysisInputFingerprint": "28fed759e0c2f94deeaae77304e4e53eeaddcf39586f6e3ea1243ccdacea6f92",
             "sourceFingerprint": "6c62fc72cbbe307a3ecfc3cbe21aec482cc4e8e337f0f20e4d13ad2765d37d01",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "checkedAt": "2026-11-12T00:35:24.476Z",
               "links": []
             },
             "sources": [
@@ -12456,7 +13142,7 @@
                 "repository": "thedotmack/claude-mem",
                 "path": "README.md",
                 "sha": "af0dc772f3d3effeabaa5f5f328909ad66f3e637",
-                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "fetchedAt": "2026-11-12T00:35:24.476Z",
                 "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
               }
             ],
@@ -12556,6 +13242,14 @@
                 "line": 248,
                 "kind": "prose",
                 "excerpt": "- Progressive Disclosure - Philosophy behind Claude-Mem's context priming strategy"
+              },
+              {
+                "id": "e-45cdc17520fa9634",
+                "sourceId": "readme",
+                "section": "README 도입부",
+                "line": 1,
+                "kind": "prose",
+                "excerpt": "Claude-Mem runs a second agent beside it that takes notes while it works. The next session starts with a short index of what matters, and pulls in the details only when it needs them. Works with Claude Code, Codex, Cursor, OpenCode and 11 more agents. Copilot CLI, Goose, Roo Code and Warp can search your memory, but their sessions aren't recorded."
               }
             ],
             "source": "https://github.com/thedotmack/claude-mem#readme",
@@ -12747,6 +13441,17 @@
               },
               "verdictEvidenceIds": [
                 "e-5cf8ae7b6e4c91fe"
+              ],
+              "cautions": [
+                {
+                  "id": "search-only",
+                  "title": "검색 지원과 세션 기록 지원 구분",
+                  "body": "Copilot CLI·Goose·Roo Code·Warp는 기존 기억을 검색할 수 있지만 해당 세션은 기록되지 않습니다. 지원 에이전트 목록만 보고 모든 호스트에서 자동 수집된다고 가정하지 마세요.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-45cdc17520fa9634"
+                  ]
+                }
               ],
               "core": [
                 {
@@ -13255,8 +13960,8 @@
         "references": [
           {
             "name": "cloudflare/security-audit-skill",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-2f3d84d7fb62c538"
@@ -13264,8 +13969,8 @@
           },
           {
             "name": "heygen-com/hyperframes",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-7e57f835ae4884f6"
@@ -13273,8 +13978,8 @@
           },
           {
             "name": "Nutlope/hallmark",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-81f1fd422178dcb7"
@@ -13282,8 +13987,8 @@
           },
           {
             "name": "anthropics/knowledge-work-plugins",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-dc3fa23eacca5302"
@@ -13291,8 +13996,8 @@
           },
           {
             "name": "debpalash/VoiceStudio",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-12c82ccaa38a3fa2"
@@ -13300,8 +14005,8 @@
           },
           {
             "name": "pbakaus/impeccable",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-9e8edc352b586880"
@@ -13309,8 +14014,8 @@
           },
           {
             "name": "earthtojake/text-to-cad",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-012c0a13e7927204"
@@ -13318,8 +14023,8 @@
           },
           {
             "name": "NationalSecurityAgency/ghidra",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-1d13ea76374e633d"
@@ -13327,8 +14032,8 @@
           },
           {
             "name": "pingdotgg/t3code",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-e65edae5430fd0cf"
@@ -13336,15 +14041,15 @@
           },
           {
             "name": "thedotmack/claude-mem",
-            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
-            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:35:24.476Z",
+            "analyzedAt": "2026-11-12T00:35:24.476Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-d8da972adecd3a94"
             ]
           }
         ],
-        "generatedAt": "2026-11-12T00:08:10.331Z"
+        "generatedAt": "2026-11-12T00:35:24.476Z"
       }
     }
   },

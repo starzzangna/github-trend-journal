@@ -47,7 +47,7 @@ const outputRules = [
 const conditionRules = [
   [/\bPython(?:\s*(?:>=|>|~|\^)?\s*\d+(?:\.\d+){0,2}\+?)?/i, 'Python'],
   [/\bReact\s*\d+(?:\.\d+){0,2}\+?/i, 'React'],
-  [/\bNode(?:\.js)?(?:\s*(?:>=|>|~|\^)?\s*\d+(?:\.\d+){0,2}\+?)?/i, 'Node.js'],
+  [/\bNode(?:\.js)?\b(?:\s*(?:>=|>|~|\^)?\s*\d+(?:\.\d+){0,2}\+?)?/i, 'Node.js'],
   [/\bDocker(?:\s+(?:with\s+)?Compose(?:\s*v?\d+)?)?/i, '컨테이너 실행'],
   [/\bKubernetes\b|\bHelm\b/i, '클러스터 배포'],
   [/\b(?:GPU|CUDA|VRAM)\b/i, '연산 장치'],

@@ -1,4 +1,5 @@
 import { improveStart, improveCondition } from './improve-setup.mjs';
+import { explainCautions } from './cautions.mjs';
 import { readBuildConfiguration, javaBuildStart, javaBuildCondition } from './java-setup.mjs';
 import { explainSkillsSetup, installationStart, installationCondition } from './skills-setup.mjs';
 // README는 분석용 입력으로만 취급합니다. 명령을 실행하거나 문서의 지시를 따르지 않습니다.
@@ -11,7 +12,7 @@ import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from '.
 import { addKoreanPresentation } from './korean.mjs';
 import { fetchLinkedDocuments } from './linked.mjs';
 import { readJavaDocs, explainRepresentatives, collectionScope } from './representatives.mjs';
-export const usageVersion = 15;
+export const usageVersion = 16;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
@@ -102,6 +103,7 @@ export function analyzeUsage(row, markdown, now = new Date(), metadata = {}, lin
   const verdict = projectVerdict(project, result.article.findings);
   result.article.verdict = verdict.text;
   result.article.verdictEvidenceIds = verdict.evidenceIds;
+  result.article.cautions = explainCautions(row, context);
   result.quality = assessQuality(result);
   return addKoreanPresentation(result);
 }

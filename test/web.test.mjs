@@ -35,6 +35,25 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
 
+test('새 주의점은 구체적 한국어와 접힌 근거를 표시하고 범용 판단 문구를 반복하지 않는다', async () => {
+  const doc = JSON.parse(await readFile(new URL('./fixtures/caution-documents.json', import.meta.url))).find(d => d.repository === 'D4Vinci/Scrapling');
+  const root = doc.documents[0];
+  const usage = analyzeUsage({ name: doc.repository }, root.markdown, now, { path: root.path, sha: root.sha, html_url: root.url });
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: createReport('daily', [{ ...row, name: doc.repository, usage }], now) } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /기본 설치는 parser만 포함/);
+  assert.match(html, /ModuleNotFoundError/);
+  assert.match(html, /HTTP 요청에는 브라우저 설치가 필요하지/);
+  assert.match(html, /주의점 · 기본 설치는 parser만 포함의 원문 근거/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+  assert.doesNotMatch(html, /목표 사이트의 구조가 바뀌었을 때 선택자가 같은 데이터를 찾는지 비교하세요/);
+});
+
+test('구체적인 주의점 근거가 없으면 분류별 상투 문구 대신 부족 상태를 표시한다', async () => {
+  const page = await mount(async () => ({ ok: true, json: async () => dataFor(usage) }));
+  assert.match(page.container.innerHTML, /구체적인 도입 주의점을 설명할 문서 근거가 부족합니다/);
+});
+
 test('improve의 설치·호환과 계획·위임 조건을 단계별 한국어로 표시하고 종합에 반영한다', async () => {
   const doc = improveSetupFixture;
   const linked = doc.documents.map(item => ({ markdown: item.markdown, metadata: { path: item.path, sha: item.path, setupOnly: true, format: 'markdown' } }));

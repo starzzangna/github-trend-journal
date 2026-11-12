@@ -13,6 +13,7 @@ const collectionDocs = JSON.parse(await readFile(new URL('./fixtures/collection-
 const skillDocs = JSON.parse(await readFile(new URL('./fixtures/skill-representatives.json', import.meta.url)));
 const setupFixture = JSON.parse(await readFile(new URL('./fixtures/skills-setup.json', import.meta.url)));
 const javaSetupFixture = JSON.parse(await readFile(new URL('./fixtures/java-setup.json', import.meta.url)));
+const improveSetupFixture = JSON.parse(await readFile(new URL('./fixtures/improve-setup.json', import.meta.url)));
 import { skillExamples } from '../scripts/skill-examples.mjs';
 const now = new Date('2026-11-11T00:23:00Z');
 const row = { name: 'example/voice', description: 'voice cloning', language: 'Python', stars: 10, periodStars: 2 };
@@ -33,6 +34,24 @@ async function mount(fetcher, { at = now, hash = '' } = {}) {
   await new Promise(resolve => setImmediate(resolve));
   return { container, attributes, events, globalEvents, state, status, location, document };
 }
+
+test('improve의 설치·호환과 계획·위임 조건을 단계별 한국어로 표시하고 종합에 반영한다', async () => {
+  const doc = improveSetupFixture;
+  const linked = doc.documents.map(item => ({ markdown: item.markdown, metadata: { path: item.path, sha: item.path, setupOnly: true, format: 'markdown' } }));
+  const usage = analyzeUsage({ name: doc.repository }, doc.markdown, now, doc.metadata, linked);
+  const report = createReport('daily', [{ ...row, name: doc.repository, usage }], now);
+  Object.assign(report, synthesizeReport(report, 'daily', now));
+  const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { daily: report } }) }));
+  const html = page.container.innerHTML;
+  assert.match(html, /분석 품질 · 기본 항목 충족/);
+  assert.match(html, /설치·호환 환경/);
+  assert.match(html, /작업 조건: 2\/2개 단계 확인/);
+  assert.match(html, /소스 읽기 전용과 계획 저장 범위/);
+  assert.match(html, /수동 실행자에게 인계/);
+  assert.match(html, /실행 결과 재검증과 사용자 병합 판단/);
+  assert.match(html, /작업 조건 확인 2개 단계 · 근거 부족 0개 단계 · 개별 조건 5개/);
+  assert.doesNotMatch(html, /<details[^>]* open/);
+});
 
 test('Java 공통 빌드·테스트와 대표 알고리즘별 조건을 구분하고 XML 근거를 안전하게 표시한다', async () => {
   const doc = javaSetupFixture;
@@ -64,7 +83,7 @@ test('공통 설치 절차와 개별 런타임 조건을 구분하고 품질·�
   const page = await mount(async () => ({ ok: true, json: async () => ({ reports: { weekly: report } }) }), { hash: '#weekly' });
   const html = page.container.innerHTML;
   assert.match(html, /분석 품질 · 기본 항목 충족/);
-  assert.match(html, /모음 설치 경로 확인 1개 프로젝트 · 대표 실행 조건 확인 2개 항목/);
+  assert.match(html, /설치 경로 확인 1개 프로젝트 · 대표 실행 조건 확인 2개 항목/);
   assert.match(html, /설치 근거: 확인 · 대표 실행 조건: 2\/2개 스킬 확인/);
   assert.match(html, /모음 공통의 설치 경로/);
   assert.match(html, /문서가 전제한 환경/);

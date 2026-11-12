@@ -44,8 +44,14 @@ function representativeMarkup(project, usage, name, prefix = '') {
   if (!project?.examples?.length) return '';
   return `<section class="representative-examples" aria-label="대표 항목 사용 예"><h5>대표 항목 사용 예</h5><p class="usage-note">각 항목의 공식 문서에 따른 설명입니다. 모음 전체의 공통 입출력이 아니며 실행은 검증하지 않았습니다.</p>${project.examples.map(item => `<section class="note-section"><h5>${escape(item.title)}</h5>${['scenario', 'input', 'output', 'caution'].map(field => `<div class="project-claim"><strong>${escape(item[field].title)}</strong><p>${escape(item[field].body)}</p>${evidenceMarkup(usage, name, { ...item[field], title: prefix + item.title + ' · ' + item[field].title })}</div>`).join('')}</section>`).join('')}</section>`;
 }
+function improveSetupMarkup(setup, usage, name, prefix) {
+  const render = claim => `<div class="project-claim"><strong>${escape(claim.title)}</strong><p>${escape(claim.body)}</p>${evidenceMarkup(usage, name, { ...claim, title: prefix + claim.title })}</div>`;
+  const assessment = usage.quality?.setup;
+  return `<section class="representative-examples" aria-label="설치·호환과 계획·실행 조건"><h5>설치·호환 환경</h5><p class="usage-note">공식 문서의 기능 조건이며 설치·계획 작성·실행 위임을 실제 검증한 결과는 아닙니다.</p>${setup.installation ? render(setup.installation) : '<p class="unconfirmed">설치·호환 환경의 문서 근거가 부족합니다.</p>'}<p class="usage-note">설치 근거: ${setup.installation ? '확인' : '부족'} · 작업 조건: ${numeric(assessment?.workflowAvailable)}/${numeric(assessment?.workflowExpected)}개 단계 확인</p><h5>계획 작성과 실행 위임의 조건</h5>${setup.workflows.map(item => `<section class="note-section"><h5>${escape(item.title)}</h5><p class="usage-note">작업 조건 근거 ${item.conditions.length}/${numeric(item.expected)}개 확인</p>${item.conditions.length ? item.conditions.map(claim => `<p class="usage-note">${escape(claim.path)}</p>${render(claim)}`).join('') : '<p class="unconfirmed">이 단계의 조건을 확인할 근거가 부족합니다.</p>'}</section>`).join('')}<p class="usage-note">설치 호환성, 읽기 전용 계획 작성, 별도 실행자 위임·검토를 구분합니다. 실행 위임을 자동 병합 승인으로 취급하지 않습니다.</p></section>`;
+}
 function setupMarkup(setup, usage, name, prefix = '설치·실행 · ') {
   if (!setup) return '';
+  if (setup.workflows) return improveSetupMarkup(setup, usage, name, prefix);
   const isBuild = 'build' in setup;
   const common = isBuild ? setup.build : setup.installation;
   const action = isBuild ? '빌드·테스트' : '설치';
@@ -143,9 +149,9 @@ function synthesisMarkup(report) {
     const row = report.rows.find(row => row.name === name);
     return `<details class="shared-pattern"><summary>${escape(name)} · 대표 항목 ${examples.length}개${freshness(row?.usage).key === 'old' ? ' · 오래된 분석' : ''}</summary>${representativeMarkup({ examples }, row?.usage || {}, name, '종합 · ')}</details>`;
   }).join('')}</section>` : '';
-  const setupSummary = synthesis.version >= 4 && synthesis.setupReviews?.length ? `<section aria-label="설치 경로와 실행 조건 종합"><h4>설치·빌드와 실행 조건</h4><p class="usage-note">설치·실행 조건을 별도 분석한 모음 ${synthesis.setupReviews.length}개 기준입니다.</p><p>모음 설치 경로 확인 ${synthesis.coverage.collectionInstallations}개 프로젝트 · 대표 실행 조건 확인 ${synthesis.coverage.runtimeGroups}개 항목 · 근거 부족 ${synthesis.coverage.runtimeMissing}개 항목</p>${synthesis.coverage.collectionBuilds ? `<p>공통 빌드·테스트 경로 확인 ${synthesis.coverage.collectionBuilds}개 프로젝트</p>` : ''}<p class="usage-note">개별 실행 조건 ${synthesis.coverage.runtimeConditions}개는 모음 전체의 필수 조건 수에 합산하지 않습니다.</p>${(synthesis.setupReviews || []).map(item => {
+  const setupSummary = synthesis.version >= 4 && synthesis.setupReviews?.length ? `<section aria-label="설치 경로와 실행 조건 종합"><h4>설치·빌드와 실행 조건</h4><p class="usage-note">설치·실행 조건을 별도 분석한 프로젝트 ${synthesis.setupReviews.length}개 기준입니다.</p><p>설치 경로 확인 ${synthesis.coverage.collectionInstallations}개 프로젝트 · 대표 실행 조건 확인 ${synthesis.coverage.runtimeGroups}개 항목 · 근거 부족 ${synthesis.coverage.runtimeMissing}개 항목</p>${synthesis.coverage.collectionBuilds ? `<p>공통 빌드·테스트 경로 확인 ${synthesis.coverage.collectionBuilds}개 프로젝트</p>` : ''}<p class="usage-note">개별 실행 조건 ${synthesis.coverage.runtimeConditions}개는 모음 전체의 필수 조건 수에 합산하지 않습니다.</p>${synthesis.coverage.workflowGroups || synthesis.coverage.workflowMissing ? `<p>작업 조건 확인 ${synthesis.coverage.workflowGroups}개 단계 · 근거 부족 ${synthesis.coverage.workflowMissing}개 단계 · 개별 조건 ${synthesis.coverage.workflowConditions}개</p>` : ''}${(synthesis.setupReviews || []).map(item => {
     const row = report.rows.find(row => row.name === item.name);
-    return `<details class="shared-pattern"><summary>${escape(item.name)} · ${'build' in item ? '공통 빌드·테스트' : '모음 설치'}와 대표 실행 조건${freshness(row?.usage).key === 'old' ? ' · 오래된 분석' : ''}</summary>${setupMarkup(item, row?.usage || {}, item.name, '종합 · ')}</details>`;
+    return `<details class="shared-pattern"><summary>${escape(item.name)} · ${item.workflows ? '설치·호환과 계획·실행 조건' : ('build' in item ? '공통 빌드·테스트' : '모음 설치') + '와 대표 실행 조건'}${freshness(row?.usage).key === 'old' ? ' · 오래된 분석' : ''}</summary>${setupMarkup(item, row?.usage || {}, item.name, '종합 · ')}</details>`;
   }).join('')}</section>` : '';
   const scopes = { required: '해당 경로 요구사항', optional: '선택 경로', 'not-required': '필수 아님', mentioned: '문서상 언급' };
   const proof = project => {

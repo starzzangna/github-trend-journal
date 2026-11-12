@@ -9,11 +9,12 @@
       "title": "Today · AI 에이전트 스킬·개인 재무 관리 프로젝트 분석",
       "summary": "상위 10개 중 공식 문서 근거로 10개의 용도를 분류했습니다. AI 에이전트 스킬 2개, 개인 재무 관리 1개가 포함됩니다. 분류 미확정은 0개입니다.",
       "analysis": [
-        "입력을 설명할 근거가 있는 프로젝트는 8개, 출력은 8개, 도입 조건은 9개입니다. 공통 입력 해당 없음 2개, 출력 해당 없음 2개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 8개·출력 8개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
+        "입력을 설명할 근거가 있는 프로젝트는 8개, 출력은 8개, 도입 조건은 10개입니다. 공통 입력 해당 없음 2개, 출력 해당 없음 2개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 8개·출력 8개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
         "대표 항목 사용 예는 2개 프로젝트에서 4개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
-        "설치·실행 조건을 별도 분석한 모음 1개 중 공통 설치 경로는 0개 프로젝트에서, 공통 빌드·테스트 경로는 1개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 2개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 4개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
+        "설치·실행 조건을 별도 분석한 프로젝트 2개 중 공통 설치 경로는 1개 프로젝트에서, 공통 빌드·테스트 경로는 1개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 2개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 4개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
+        "계획 작성·실행 위임 등 작업 단계의 조건은 2개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 5개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
         "공통으로 확인한 항목은 서비스 인증(4개), 에이전트 클라이언트(4개), 운영체제별 실행 경로(4개), 컨테이너 실행(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
-        "기본 항목 충족 9개 · 부분 분석 1개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
+        "기본 항목 충족 10개 · 부분 분석 0개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
       ],
       "source": "https://github.com/trending?since=daily",
@@ -27,28 +28,28 @@
           "periodStars": 2842,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T17:01:52.701Z",
-            "analyzedAt": "2026-11-11T17:01:52.701Z",
-            "sourceCheckedAt": "2026-11-11T17:01:52.701Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "13959c6a7c3d12ebf566841cc641dfc83643e74ccfa5d8589f4fe30d9b077625",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T17:01:52.701Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T17:01:52.701Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-11T17:01:52.701Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -58,7 +59,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
-                "fetchedAt": "2026-11-11T17:01:52.701Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -66,7 +67,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "c4c656d48e41462bb7064654c2ac03a3a17ab9bb",
-                "fetchedAt": "2026-11-11T17:01:52.701Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -309,27 +310,27 @@
           "periodStars": 960,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "cbc85306e29a8c7346c24aa1310785d63404ad10e533e0c51081607897960416",
             "sourceFingerprint": "36ca7b834063fd6e61de337cec210e3c5c4d6480113fb9f213f45d3bedd9b3ab",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/README_EN.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "docs/full-guide.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -339,7 +340,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "README.md",
                 "sha": "cb130e7bd387db4fbd26949ee9f995b95c347134",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/README.md"
               },
               {
@@ -347,7 +348,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "docs/README_EN.md",
                 "sha": "d5fefdba856f226cd9aa132473f071a821dfd64a",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/docs/README_EN.md"
               },
               {
@@ -355,7 +356,7 @@
                 "repository": "ZhuLinsen/daily_stock_analysis",
                 "path": "docs/full-guide.md",
                 "sha": "1d2443e7fbcdfc34b0fd209cde5f6bd327696be7",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/ZhuLinsen/daily_stock_analysis/blob/main/docs/full-guide.md"
               }
             ],
@@ -735,17 +736,17 @@
           "periodStars": 133,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "78f55c1f8599a23cb38800d0cc11d3414e61686a5dbbd7b164830fa69da83348",
             "sourceFingerprint": "d3ffac55637f9a25786c3ca3b12f6f58a115860e466fc9209d82367204918ba3",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -754,7 +755,7 @@
                 "repository": "GoogleChrome/modern-web-guidance-src",
                 "path": "README.md",
                 "sha": "d130c0043c81edb4dc74c8bb279c625a591fc6ac",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/GoogleChrome/modern-web-guidance-src/blob/main/README.md"
               }
             ],
@@ -1007,18 +1008,29 @@
           "periodStars": 333,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "16554a9267726c75d94971834e0196461d33f7beea90546c37e165b1a251cc00",
-            "sourceFingerprint": "1aa43eca506fa0b1bf1caf4e9556971ccd6bc004803337c8e2f320f453dddccc",
+            "sourceFingerprint": "5a391ebfc69422be21d14879bf2f802e3704751c5ab8b5fc65523fcc29a6b342",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
-              "links": []
+              "checkedAt": "2026-11-12T00:08:10.331Z",
+              "links": [
+                {
+                  "path": "skills/improve/SKILL.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                },
+                {
+                  "path": "skills/improve/references/closing-the-loop.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
+                }
+              ]
             },
             "sources": [
               {
@@ -1026,8 +1038,26 @@
                 "repository": "shadcn/improve",
                 "path": "README.md",
                 "sha": "17e41e80976356c4bacfa5b9f2e873b67d1fe554",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/shadcn/improve/blob/main/README.md"
+              },
+              {
+                "id": "doc-e993298ccc80",
+                "repository": "shadcn/improve",
+                "path": "skills/improve/SKILL.md",
+                "sha": "df5b9001adda5ee72697ab5f7d3efe74c212e478",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "url": "https://github.com/shadcn/improve/blob/main/skills/improve/SKILL.md",
+                "setupOnly": true
+              },
+              {
+                "id": "doc-c60524ba6129",
+                "repository": "shadcn/improve",
+                "path": "skills/improve/references/closing-the-loop.md",
+                "sha": "f0e524f4b1e9d332f0c92d0c990da5a071cfb06b",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
+                "url": "https://github.com/shadcn/improve/blob/main/skills/improve/references/closing-the-loop.md",
+                "setupOnly": true
               }
             ],
             "evidence": [
@@ -1038,6 +1068,118 @@
                 "line": 1,
                 "kind": "prose",
                 "excerpt": "An agent skill that audits any codebase and writes implementation plans for other agents to execute."
+              },
+              {
+                "id": "e-c0ba06e5af65f852",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 13,
+                "kind": "example",
+                "excerpt": "npx skills add shadcn/improve"
+              },
+              {
+                "id": "e-b195047bead3ea6e",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 13,
+                "kind": "prose",
+                "excerpt": "Works in any agent that supports Agent Skills format. The plans it writes are plain markdown, so any agent (or human) can pick them up."
+              },
+              {
+                "id": "e-53dc21fde9158744",
+                "sourceId": "doc-e993298ccc80",
+                "section": "Hard Rules",
+                "line": 16,
+                "kind": "prose",
+                "excerpt": "1. Never modify source code yourself. No edits, no fixes, no \"quick wins while you're in there.\" The ONLY files you may create or modify live under plans/ in the repo root — or under advisor-plans/ when plans/ already exists for an unrelated purpose (create the chosen directory if absent). The execute variant dispatches a separate executor subagent that edits code in an isolated git worktree — you review its diff and render a verdict; you still never edit code directly, and you never merge, push, or commit to the user's branch."
+              },
+              {
+                "id": "e-80210f0d4d82f55c",
+                "sourceId": "doc-e993298ccc80",
+                "section": "Hard Rules",
+                "line": 16,
+                "kind": "prose",
+                "excerpt": "3. Every plan must be fully self-contained. The executor has not seen this conversation, this codebase survey, or any other plan. If a plan references \"the pattern discussed above,\" it is broken."
+              },
+              {
+                "id": "e-f2577ab5a1076f05",
+                "sourceId": "doc-e993298ccc80",
+                "section": "Phase 4 — Write the plans",
+                "line": 80,
+                "kind": "prose",
+                "excerpt": "Before writing anything: record git rev-parse --short HEAD — every plan stamps the commit it was written against (the executor uses it for drift detection). If plans/ already exists from a previous run, reconcile, don't duplicate: read plans/README.md, keep numbering monotonic, skip findings already planned or listed as rejected, and mark superseded plans stale in the index. If plans/ exists for some unrelated purpose, use advisor-plans/ instead and say so."
+              },
+              {
+                "id": "e-c20571970e6f39d8",
+                "sourceId": "readme",
+                "section": "What makes the plans executable",
+                "line": 82,
+                "kind": "prose",
+                "excerpt": "- Verification gates. Every step ends with a command and its expected output. Done criteria are machine-checkable. The executor never has to judge whether it succeeded."
+              },
+              {
+                "id": "e-a570766e9ef8b638",
+                "sourceId": "doc-e993298ccc80",
+                "section": "Invocation variants",
+                "line": 107,
+                "kind": "prose",
+                "excerpt": "- execute → dispatch a cheaper executor subagent on one plan (isolated worktree), then review its diff like a tech lead — re-run done criteria, check scope, read the code — and render a verdict. Treat the executor's diff as untrusted until reviewed: verify every hunk traces to a plan step and reject any out-of-scope change, however plausible it looks. Requires a host agent that can spawn subagents in an isolated worktree; if yours can't, say so and hand the plan over for manual execution instead. Read references/closing-the-loop.md before the first"
+              },
+              {
+                "id": "e-d2ee46a50db5ce87",
+                "sourceId": "doc-e993298ccc80",
+                "section": "Invocation variants",
+                "line": 107,
+                "kind": "prose",
+                "excerpt": "and reject any out-of-scope change, however plausible it looks. Requires a host agent that can spawn subagents in an isolated worktree; if yours can't, say so and hand the plan over for manual execution instead. Read references/closing-the-loop.md before the first"
+              },
+              {
+                "id": "e-cca0e802a087a329",
+                "sourceId": "doc-c60524ba6129",
+                "section": "Preconditions (check all before dispatching)",
+                "line": 11,
+                "kind": "prose",
+                "excerpt": "- The repo is a git repository (worktree isolation requires it). If not: stop and say so."
+              },
+              {
+                "id": "e-917640bb4246bfd4",
+                "sourceId": "doc-c60524ba6129",
+                "section": "Preconditions (check all before dispatching)",
+                "line": 11,
+                "kind": "prose",
+                "excerpt": "- The plan file exists and its dependencies show DONE in plans/README.md. If not: stop, name the missing dependency."
+              },
+              {
+                "id": "e-4a1069487c19c56f",
+                "sourceId": "doc-c60524ba6129",
+                "section": "Preconditions (check all before dispatching)",
+                "line": 11,
+                "kind": "prose",
+                "excerpt": "- Run the plan's drift check yourself. If in-scope files changed since Planned at, reconcile the plan first (see below) — don't hand a stale plan to an executor."
+              },
+              {
+                "id": "e-451c7764429ffdb8",
+                "sourceId": "doc-c60524ba6129",
+                "section": "Review (the advisor's real job here)",
+                "line": 48,
+                "kind": "prose",
+                "excerpt": "1. Re-run every done criterion in the worktree. Don't trust the executor's report — verify."
+              },
+              {
+                "id": "e-040ac920e17642ff",
+                "sourceId": "doc-c60524ba6129",
+                "section": "Review (the advisor's real job here)",
+                "line": 48,
+                "kind": "prose",
+                "excerpt": "2. Scope compliance: git -C diff --stat against the plan's in-scope list. Any file outside scope fails review, full stop."
+              },
+              {
+                "id": "e-27f49bdab350431f",
+                "sourceId": "doc-c60524ba6129",
+                "section": "Verdict",
+                "line": 59,
+                "kind": "prose",
+                "excerpt": "| Verdict | When | Action | |---|---|---| | APPROVE | Criteria pass, scope clean, quality holds | Update index status to DONE. Present to the user: diff summary, worktree path and branch, anything from NOTES. Merging is the user's decision — never merge, push, or commit to their branch. | | REVISE | Fixable gaps | SendMessage to the same executor with specific, actionable feedback (\"criterion 3 fails: X; the error handling in api.ts:90 swallows the error — use the Result pattern per the plan\"). Max 2 revision rounds, then BLOCK. | | BLOCK | STOP"
               }
             ],
             "source": "https://github.com/shadcn/improve#readme",
@@ -1055,9 +1197,19 @@
             "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
             "start": {
               "heading": "Install",
-              "steps": [],
+              "steps": [
+                "Agent Skills 호환 호스트 확인",
+                "공식 설치 명령 확인",
+                "계획 작성과 실행 위임의 지원 범위 구분"
+              ],
               "command": "npx skills add shadcn/improve",
-              "excerpt": ""
+              "excerpt": "",
+              "summaryKo": "공식 README는 npx skills add shadcn/improve로 설치하고 Agent Skills 형식을 지원하는 에이전트에서 사용하는 경로를 안내합니다. 계획은 Markdown이라 다른 에이전트나 사람에게 인계할 수 있습니다. 이 호환 설명이 모든 호스트의 자동 실행 위임 지원을 뜻하지는 않습니다.",
+              "scope": "project-install",
+              "evidenceIds": [
+                "e-c0ba06e5af65f852",
+                "e-b195047bead3ea6e"
+              ]
             },
             "article": {
               "title": "shadcn/improve · 프로젝트 분석 노트",
@@ -1076,7 +1228,22 @@
                   "summaryKo": "코드베이스를 검토한 뒤 다른 에이전트가 실행할 구현 계획을 작성합니다."
                 }
               ],
-              "conditions": [],
+              "conditions": [
+                {
+                  "id": "improve-install",
+                  "title": "설치·호환 · Agent Skills",
+                  "scope": "mentioned",
+                  "body": "공식 README는 npx skills add shadcn/improve로 설치하고 Agent Skills 형식을 지원하는 에이전트에서 사용하는 경로를 안내합니다. 계획은 Markdown이라 다른 에이전트나 사람에게 인계할 수 있습니다. 이 호환 설명이 모든 호스트의 자동 실행 위임 지원을 뜻하지는 않습니다.",
+                  "kind": "documented",
+                  "exampleOnly": true,
+                  "evidenceIds": [
+                    "e-c0ba06e5af65f852",
+                    "e-b195047bead3ea6e"
+                  ],
+                  "path": "프로젝트 설치 · Agent Skills 호환 환경",
+                  "summaryKo": "설치·시작 경로에서 설치·호환 · Agent Skills 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
               "workflow": [
                 {
                   "title": "적용할 작업 정하기",
@@ -1084,17 +1251,17 @@
                 },
                 {
                   "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Install” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                  "body": "README의 “Install” 절이 시작 지점입니다. 하위 항목으로 Agent Skills 호환 호스트 확인, 공식 설치 명령 확인, 계획 작성과 실행 위임의 지원 범위 구분 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
                 },
                 {
                   "title": "작은 결과물로 적합성 판단하기",
                   "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
                 }
               ],
-              "verdict": "계획 작성과 실행 위임을 구분하고 생성된 계획을 검토한 뒤 적용하세요. 추가 확인: 도입 조건.",
+              "verdict": "계획 작성과 실행 위임을 구분하고 생성된 계획을 검토한 뒤 적용하세요.",
               "coverage": {
                 "findings": 1,
-                "conditions": 0,
+                "conditions": 1,
                 "hasStart": true
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
@@ -1131,11 +1298,128 @@
                     "summaryKo": "다른 에이전트가 검토·실행할 구현 계획을 문서로 작성합니다."
                   }
                 ],
-                "conditions": [],
+                "conditions": [
+                  {
+                    "id": "improve-install",
+                    "title": "설치·호환 · Agent Skills",
+                    "scope": "mentioned",
+                    "body": "공식 README는 npx skills add shadcn/improve로 설치하고 Agent Skills 형식을 지원하는 에이전트에서 사용하는 경로를 안내합니다. 계획은 Markdown이라 다른 에이전트나 사람에게 인계할 수 있습니다. 이 호환 설명이 모든 호스트의 자동 실행 위임 지원을 뜻하지는 않습니다.",
+                    "kind": "documented",
+                    "exampleOnly": true,
+                    "evidenceIds": [
+                      "e-c0ba06e5af65f852",
+                      "e-b195047bead3ea6e"
+                    ],
+                    "path": "프로젝트 설치 · Agent Skills 호환 환경",
+                    "summaryKo": "설치·시작 경로에서 설치·호환 · Agent Skills 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
                 "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
                 "examples": [],
                 "ioScope": null,
-                "setup": null
+                "setup": {
+                  "installation": {
+                    "id": "improve-install",
+                    "title": "설치·호환 · Agent Skills",
+                    "scope": "project-install",
+                    "body": "공식 README는 npx skills add shadcn/improve로 설치하고 Agent Skills 형식을 지원하는 에이전트에서 사용하는 경로를 안내합니다. 계획은 Markdown이라 다른 에이전트나 사람에게 인계할 수 있습니다. 이 호환 설명이 모든 호스트의 자동 실행 위임 지원을 뜻하지는 않습니다.",
+                    "kind": "documented",
+                    "exampleOnly": true,
+                    "evidenceIds": [
+                      "e-c0ba06e5af65f852",
+                      "e-b195047bead3ea6e"
+                    ]
+                  },
+                  "runtimes": [],
+                  "workflows": [
+                    {
+                      "id": "improve-planning",
+                      "title": "계획 작성",
+                      "expected": 2,
+                      "conditions": [
+                        {
+                          "id": "improve-readonly",
+                          "title": "소스 읽기 전용과 계획 저장 범위",
+                          "applicability": "required",
+                          "path": "감사·계획 작성자 역할",
+                          "body": "계획 작성자는 소스를 직접 수정하지 않습니다. 계획은 저장소의 plans/ 아래에 두며 그 이름이 다른 용도로 쓰이면 advisor-plans/를 사용하도록 설명합니다. 계획 작성과 구현 실행을 같은 작업으로 취급하지 마세요.",
+                          "scope": "workflow-condition",
+                          "kind": "documented",
+                          "exampleOnly": true,
+                          "evidenceIds": [
+                            "e-53dc21fde9158744"
+                          ]
+                        },
+                        {
+                          "id": "improve-self-contained",
+                          "title": "자체 완결 계획·검증 기준·기준 커밋",
+                          "applicability": "required",
+                          "path": "다른 실행자에게 전달할 계획",
+                          "body": "다른 실행자가 현재 대화 없이 읽을 수 있는 자체 완결 계획을 작성하고 기준 Git 커밋을 기록합니다. 문서는 단계마다 검증 명령과 예상 결과를 두도록 설명하므로 대화 맥락이나 실행자의 추측에 의존하지 않아야 합니다.",
+                          "scope": "workflow-condition",
+                          "kind": "documented",
+                          "exampleOnly": true,
+                          "evidenceIds": [
+                            "e-80210f0d4d82f55c",
+                            "e-f2577ab5a1076f05",
+                            "e-c20571970e6f39d8"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": "improve-execution",
+                      "title": "execute · 실행 위임",
+                      "expected": 3,
+                      "conditions": [
+                        {
+                          "id": "improve-host",
+                          "title": "격리 실행자를 만들 수 있는 호스트",
+                          "applicability": "required",
+                          "path": "execute를 선택한 경우",
+                          "body": "자동 execute는 격리된 git worktree에 별도 실행자를 만들 수 있는 호스트가 필요합니다. Agent Skills 형식만 지원한다고 이 기능까지 있다고 가정하면 안 됩니다. 지원하지 않는 호스트에서는 계획을 수동 실행자에게 인계하도록 안내합니다.",
+                          "scope": "workflow-condition",
+                          "kind": "documented",
+                          "exampleOnly": true,
+                          "evidenceIds": [
+                            "e-a570766e9ef8b638",
+                            "e-d2ee46a50db5ce87"
+                          ]
+                        },
+                        {
+                          "id": "improve-preflight",
+                          "title": "Git 저장소·선행 계획·변경 확인",
+                          "applicability": "required",
+                          "path": "실행자를 보내기 전",
+                          "body": "Git 저장소인지, 계획 파일이 존재하고 선행 작업이 DONE인지 확인해야 합니다. 계획의 기준 커밋 이후 대상 파일이 달라졌다면 드리프트를 확인하고 계획을 먼저 조정하는 조건입니다.",
+                          "scope": "workflow-condition",
+                          "kind": "documented",
+                          "exampleOnly": true,
+                          "evidenceIds": [
+                            "e-cca0e802a087a329",
+                            "e-917640bb4246bfd4",
+                            "e-4a1069487c19c56f"
+                          ]
+                        },
+                        {
+                          "id": "improve-review",
+                          "title": "실행 결과 재검증과 사용자 병합 판단",
+                          "applicability": "required",
+                          "path": "실행자 결과 검토",
+                          "body": "실행자의 완료 보고만 믿지 않고 격리 worktree에서 완료 기준을 다시 검증하고 변경 범위를 검토합니다. 문서는 최종 병합을 사용자의 결정으로 남깁니다. 계획 작성이나 실행 위임이 자동 병합 승인을 의미하지 않습니다.",
+                          "scope": "workflow-condition",
+                          "kind": "documented",
+                          "exampleOnly": true,
+                          "evidenceIds": [
+                            "e-451c7764429ffdb8",
+                            "e-040ac920e17642ff",
+                            "e-27f49bdab350431f"
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
               },
               "verdictEvidenceIds": [
                 "e-188dd556b9fb0f4e"
@@ -1152,11 +1436,14 @@
               ]
             },
             "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "도입 조건"
-              ],
+              "setup": {
+                "installation": "documented",
+                "workflowExpected": 2,
+                "workflowAvailable": 2,
+                "missing": []
+              },
+              "status": "complete",
+              "missing": [],
               "io": {
                 "input": "documented",
                 "output": "documented"
@@ -1182,37 +1469,37 @@
           "periodStars": 788,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "981b9416f9d8f05d61fdbc642429112860daf7067ea8882866d588fb4acb62ec",
             "sourceFingerprint": "8ac55eab95ef21374f305788f08dad6e2709aace70c31484f0c91957300a06a2",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/cursor-setup.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "docs/antigravity-setup.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "skills/spec-driven-development/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "skills/debugging-and-error-recovery/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -1222,7 +1509,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "README.md",
                 "sha": "7f610b8ca80ff9bc7ba7f95f3209430c3481891d",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/README.md"
               },
               {
@@ -1230,7 +1517,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "docs/cursor-setup.md",
                 "sha": "0b92d4c2f326734f9a9539ac77b97e506c58c0f0",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/docs/cursor-setup.md"
               },
               {
@@ -1238,7 +1525,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "docs/antigravity-setup.md",
                 "sha": "f2350a882ce237b74863049d8ab96759ceaa0e99",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/docs/antigravity-setup.md"
               },
               {
@@ -1246,7 +1533,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "skills/spec-driven-development/SKILL.md",
                 "sha": "3fcc536f14f261dab1a785ef906ddf6f12074389",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/skills/spec-driven-development/SKILL.md",
                 "representativeId": "skill-spec-writing"
               },
@@ -1255,7 +1542,7 @@
                 "repository": "addyosmani/agent-skills",
                 "path": "skills/debugging-and-error-recovery/SKILL.md",
                 "sha": "13c1a431626c23270542c7b570d7193ba79c3a96",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/addyosmani/agent-skills/blob/main/skills/debugging-and-error-recovery/SKILL.md",
                 "representativeId": "skill-debug-recovery"
               }
@@ -1761,17 +2048,17 @@
           "periodStars": 712,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "d78330d726ff1cc3252107697261f96b8fb4583b6af741f6145a1002c01f34a9",
             "sourceFingerprint": "4929ccb5c9b0a287e704d97a8bf4a2f63a98ab578ac85d5066998037fe49227f",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -1780,7 +2067,7 @@
                 "repository": "vercel-labs/agent-browser",
                 "path": "README.md",
                 "sha": "53f71fd42a568994479edfa5063c58ca0b5dad8d",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/vercel-labs/agent-browser/blob/main/README.md"
               }
             ],
@@ -2075,27 +2362,27 @@
           "periodStars": 1079,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "b809d291006bdea80510d410a055d5432f35c05b49333c19b9c3da12ded2e752",
             "sourceFingerprint": "5f1875ed3b3f3e01efd121854e336dffb3a0278f3bff9439ef463101b5c4f91c",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/hosting/docker.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "docs/clients.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -2105,7 +2392,7 @@
                 "repository": "we-promise/sure",
                 "path": "README.md",
                 "sha": "35f5c2e0681b8ef1c55545a5846535e8198ce4c8",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/we-promise/sure/blob/main/README.md"
               },
               {
@@ -2113,7 +2400,7 @@
                 "repository": "we-promise/sure",
                 "path": "docs/hosting/docker.md",
                 "sha": "8d82e18b2c8b47554dc487bb15da1b26cc3b474f",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/we-promise/sure/blob/main/docs/hosting/docker.md"
               },
               {
@@ -2121,7 +2408,7 @@
                 "repository": "we-promise/sure",
                 "path": "docs/clients.md",
                 "sha": "8df996e0d932a03895ab8a6334b7953583de378e",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/we-promise/sure/blob/main/docs/clients.md"
               }
             ],
@@ -2467,27 +2754,27 @@
           "periodStars": 640,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "775f2455b21a8ebbb57f9ae74ed0c6e6f72473cb35c63d2ad307ab9d462d8654",
-            "sourceFingerprint": "08f5f97c5c7ab0bc32cbd6c1c6569604f467a8ba29ea12451e242e4be15cfda5",
+            "sourceFingerprint": "b08f9bf06fd6663053aa93a7b3df20029940e968ccb64d122bdf02f2057c03e9",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/in-process-server.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "homeassistant-addon/DOCS.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -2496,8 +2783,8 @@
                 "id": "readme",
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "README.md",
-                "sha": "f67672e7f470b0654d57c347c9c83a9060ca46f5",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "sha": "e55a391e681dbb454b5306a1c99315c043b5ebb3",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/README.md"
               },
               {
@@ -2505,7 +2792,7 @@
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "docs/in-process-server.md",
                 "sha": "ee3ffd82ba442addf93190299ed445eb52a303e8",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/docs/in-process-server.md"
               },
               {
@@ -2513,13 +2800,13 @@
                 "repository": "homeassistant-ai/ha-mcp",
                 "path": "homeassistant-addon/DOCS.md",
                 "sha": "4cb76107426b033bf4dd68770cabe4bcacc360ff",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/homeassistant-ai/ha-mcp/blob/master/homeassistant-addon/DOCS.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-ef4d62ef3b994805",
+                "id": "e-5d022c4714f3d5c3",
                 "sourceId": "readme",
                 "section": "HA-MCP — Manage Home Assistant with AI",
                 "line": 6,
@@ -2527,7 +2814,7 @@
                 "excerpt": "Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants."
               },
               {
-                "id": "e-e5ea4ac0666d858c",
+                "id": "e-48ad240dfe1103fa",
                 "sourceId": "readme",
                 "section": "Smaller or local LLMs (Ollama, etc.)",
                 "line": 348,
@@ -2535,7 +2822,7 @@
                 "excerpt": "- Raise the model's context window above the default."
               },
               {
-                "id": "e-b198b1e54c63267a",
+                "id": "e-7967b85a06ca270b",
                 "sourceId": "readme",
                 "section": "🧠 Better Results with Agent Skills",
                 "line": 326,
@@ -2543,7 +2830,7 @@
                 "excerpt": "For better configurations, pair it with Home Assistant Agent Skills — domain knowledge that teaches the agent Home Assistant best practices."
               },
               {
-                "id": "e-006c588e3cef0212",
+                "id": "e-4fb1abc6797eb3b2",
                 "sourceId": "readme",
                 "section": "HA-MCP — Manage Home Assistant with AI",
                 "line": 6,
@@ -2551,7 +2838,7 @@
                 "excerpt": "HA-MCP — Manage Home Assistant with AI"
               },
               {
-                "id": "e-550595d91c2b3a85",
+                "id": "e-27dee4a564c35d20",
                 "sourceId": "readme",
                 "section": "🚀 Get Started",
                 "line": 34,
@@ -2559,7 +2846,15 @@
                 "excerpt": "- Replaces other install methods: the in-process server is a complete, standalone ha-mcp install — it takes the place of the app (add-on), Docker, and uvx/PyPI (stdio) methods."
               },
               {
-                "id": "e-f6300aa441d628e7",
+                "id": "e-d7659c86e03c637b",
+                "sourceId": "readme",
+                "section": "Other install methods",
+                "line": 86,
+                "kind": "prose",
+                "excerpt": "- PyPI / uvx (HTTP server): run the published ha-mcp package with uvx --python 3.14 ha-mcp@latest (or pip) as a streamable-HTTP server the same way."
+              },
+              {
+                "id": "e-43c91f8022fc138a",
                 "sourceId": "readme",
                 "section": "🚀 Get Started",
                 "line": 34,
@@ -2567,7 +2862,7 @@
                 "excerpt": "It is the easiest setup in every case: setup asks for an administrator access token and how clients may connect."
               },
               {
-                "id": "e-def8d08a585d49eb",
+                "id": "e-0cfb70a4059d4a0c",
                 "sourceId": "readme",
                 "section": "Other install methods",
                 "line": 86,
@@ -2583,7 +2878,7 @@
                 "excerpt": "- An administrator access token."
               },
               {
-                "id": "e-6ce7cdbd36b7a61b",
+                "id": "e-7bdbc41a084ae5eb",
                 "sourceId": "readme",
                 "section": "Other install methods",
                 "line": 86,
@@ -2591,7 +2886,7 @@
                 "excerpt": "ChatGPT / Codex behind a firewall (OpenAI Tunnel)."
               },
               {
-                "id": "e-a05ae557027d52c7",
+                "id": "e-9eef1fee2b94c4b8",
                 "sourceId": "readme",
                 "section": "💬 What Can You Do With It?",
                 "line": 193,
@@ -2599,7 +2894,7 @@
                 "excerpt": "| You Say | What Happens | |---------|--------------| | \"Create an automation that turns on the porch light at sunset\" | Creates the automation with proper triggers and actions | | \"Add a weather card to my dashboard\" | Updates your Lovelace dashboard with the new card | | \"The motion sensor automation isn't working, debug it\" | Analyzes execution traces, identifies the issue, suggests fixes | | \"Make my morning routine automation also turn on the coffee maker\" | Reads the existing automation, adds the new action, updates it | | \"Create a script that"
               },
               {
-                "id": "e-e408f9004a0a5278",
+                "id": "e-6ff2f405a8811211",
                 "sourceId": "readme",
                 "section": "🚀 Get Started",
                 "line": 34,
@@ -2607,7 +2902,7 @@
                 "excerpt": "The recommended way to run ha-mcp is the HA-MCP integration. It installs into Home Assistant through HACS (the built-in Marketplace on Home Assistant 2026.11+), runs the full server in-process, and works on every Home Assistant installation type — Home Assistant OS, Supervised, Container, and Core — with full feature parity. It is the easiest setup in every case: setup asks for an administrator access token and how clients may connect."
               },
               {
-                "id": "e-16c0d76309d606d3",
+                "id": "e-f4d8f3f65337d113",
                 "sourceId": "readme",
                 "section": "🚀 Get Started",
                 "line": 34,
@@ -2619,7 +2914,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-ef4d62ef3b994805"
+                "e-5d022c4714f3d5c3"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -2650,7 +2945,7 @@
                   "body": "문서 설명: The recommended way to run ha-mcp is the HA-MCP integration. It installs into Home Assistant through HACS (the built-in Marketplace on Home Assistant 2026.11+), runs the full server in-process, and works on every Home Assistant installation type — Home Assistant OS, Supervised, Container, and Core — with full feature parity. It is the easiest setup in every case: setup asks for an administrator access token and how clients may connect.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-e408f9004a0a5278"
+                    "e-6ff2f405a8811211"
                   ],
                   "summaryKo": "Home Assistant와 AI 클라이언트를 연결하며 설치 경로에 따라 인증 구성이 달라집니다."
                 },
@@ -2659,18 +2954,29 @@
                   "body": "문서 설명: 5. Copy the connect URL from the entry's Configure screen (Settings → Devices & Services → “HA-MCP — Manage Home Assistant with AI” → HA-MCP Server → Configure). A notification confirms the server started and points you there.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-16c0d76309d606d3"
+                    "e-f4d8f3f65337d113"
                   ],
                   "summaryKo": "AI 클라이언트에서 Home Assistant의 기기·항목이나 자동화 설정을 관리하는 경로를 제공합니다."
                 }
               ],
               "conditions": [
                 {
+                  "title": "Python",
+                  "body": "이 문서 경로의 언급: - PyPI / uvx (HTTP server): run the published ha-mcp package with uvx --python 3.14 ha-mcp@latest (or pip) as a streamable-HTTP server the same way.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-d7659c86e03c637b"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / HA-MCP — Manage Home Assistant with AI / 🚀 Get Started / Other install methods",
+                  "summaryKo": "설치·시작 경로에서 python 3.14 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
                   "title": "컨테이너 실행",
                   "body": "이 문서 경로의 언급: - Docker (HTTP server): run ghcr.io/homeassistant-ai/ha-mcp in HTTP mode, pointed at your Home Assistant URL and a long-lived token (an administrator's is recommended; non-admin tokens work with limitations), and connect your client to its secret URL.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-def8d08a585d49eb"
+                    "e-0cfb70a4059d4a0c"
                   ],
                   "scope": "mentioned",
                   "path": " / HA-MCP — Manage Home Assistant with AI / 🚀 Get Started / Other install methods",
@@ -2692,7 +2998,7 @@
                   "body": "이 문서 경로의 언급: ChatGPT / Codex behind a firewall (OpenAI Tunnel).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-6ce7cdbd36b7a61b"
+                    "e-7bdbc41a084ae5eb"
                   ],
                   "scope": "mentioned",
                   "path": " / HA-MCP — Manage Home Assistant with AI / 🚀 Get Started / Other install methods",
@@ -2716,7 +3022,7 @@
               "verdict": "선택한 설치 경로의 인증 요구를 확인하고 다른 경로의 토큰 조건과 섞지 마세요.",
               "coverage": {
                 "findings": 2,
-                "conditions": 3,
+                "conditions": 4,
                 "hasStart": true
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
@@ -2726,7 +3032,7 @@
                   "body": "문서에서 설명한 목적: Configure and automate Home Assistant with Claude, ChatGPT, and other AI assistants.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-ef4d62ef3b994805"
+                    "e-5d022c4714f3d5c3"
                   ]
                 },
                 "inputs": [
@@ -2735,7 +3041,7 @@
                     "body": "AI 클라이언트에서 자동화 생성 등 Home Assistant 작업을 요청하는 경로입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-a05ae557027d52c7"
+                      "e-9eef1fee2b94c4b8"
                     ],
                     "exampleOnly": true,
                     "summaryKo": "문서의 사용 예처럼 AI 클라이언트에서 Home Assistant 작업을 요청합니다."
@@ -2747,7 +3053,7 @@
                     "body": "문서의 작업 예에서는 자동화 설정을 생성하거나 수정합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-a05ae557027d52c7"
+                      "e-9eef1fee2b94c4b8"
                     ],
                     "exampleOnly": true,
                     "summaryKo": "문서의 작업 예에서는 자동화 설정을 생성하거나 수정합니다."
@@ -2755,11 +3061,22 @@
                 ],
                 "conditions": [
                   {
+                    "title": "Python",
+                    "body": "이 문서 경로의 언급: - PyPI / uvx (HTTP server): run the published ha-mcp package with uvx --python 3.14 ha-mcp@latest (or pip) as a streamable-HTTP server the same way.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-d7659c86e03c637b"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / HA-MCP — Manage Home Assistant with AI / 🚀 Get Started / Other install methods",
+                    "summaryKo": "설치·시작 경로에서 python 3.14 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
                     "title": "컨테이너 실행",
                     "body": "이 문서 경로의 언급: - Docker (HTTP server): run ghcr.io/homeassistant-ai/ha-mcp in HTTP mode, pointed at your Home Assistant URL and a long-lived token (an administrator's is recommended; non-admin tokens work with limitations), and connect your client to its secret URL.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-def8d08a585d49eb"
+                      "e-0cfb70a4059d4a0c"
                     ],
                     "scope": "mentioned",
                     "path": " / HA-MCP — Manage Home Assistant with AI / 🚀 Get Started / Other install methods",
@@ -2781,7 +3098,7 @@
                     "body": "이 문서 경로의 언급: ChatGPT / Codex behind a firewall (OpenAI Tunnel).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-6ce7cdbd36b7a61b"
+                      "e-7bdbc41a084ae5eb"
                     ],
                     "scope": "mentioned",
                     "path": " / HA-MCP — Manage Home Assistant with AI / 🚀 Get Started / Other install methods",
@@ -2794,7 +3111,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-e408f9004a0a5278"
+                "e-6ff2f405a8811211"
               ],
               "core": [
                 {
@@ -2802,7 +3119,7 @@
                   "body": "Home Assistant와 AI 클라이언트를 연결하며 설치 경로에 따라 인증 구성이 달라집니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-e408f9004a0a5278"
+                    "e-6ff2f405a8811211"
                   ]
                 },
                 {
@@ -2810,7 +3127,7 @@
                   "body": "AI 클라이언트에서 Home Assistant의 기기·항목이나 자동화 설정을 관리하는 경로를 제공합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-16c0d76309d606d3"
+                    "e-f4d8f3f65337d113"
                   ]
                 }
               ]
@@ -2831,7 +3148,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "f67672e7f470b0654d57c347c9c83a9060ca46f5",
+            "readmeSha": "e55a391e681dbb454b5306a1c99315c043b5ebb3",
             "analysisReused": false
           }
         },
@@ -2844,27 +3161,27 @@
           "periodStars": 20,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "aa4c51a6533283c77d11ea5ca43af32ad25549013684a0a85d985de2038cc4c9",
             "sourceFingerprint": "2c487239c2894f1fa870888bb4665d495cd75f59d212540b52dd2c2ddcace969",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/agent-workflows.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "docker/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -2874,7 +3191,7 @@
                 "repository": "openai/codex-security",
                 "path": "README.md",
                 "sha": "c30adfcdb1b8c61c6051d14f6fad8fe1ea90d81a",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/openai/codex-security/blob/main/README.md"
               },
               {
@@ -2882,7 +3199,7 @@
                 "repository": "openai/codex-security",
                 "path": "docs/agent-workflows.md",
                 "sha": "fcf8512e40061caf89fadddf36f789fc8f120429",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/openai/codex-security/blob/main/docs/agent-workflows.md"
               },
               {
@@ -2890,7 +3207,7 @@
                 "repository": "openai/codex-security",
                 "path": "docker/README.md",
                 "sha": "f6344d23e4586a89736af595553b2fcb963b2f7c",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/openai/codex-security/blob/main/docker/README.md"
               }
             ],
@@ -3238,42 +3555,42 @@
           "periodStars": 39,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "369e4c196ba9eec394f1ffe07487418b6eca510ec6c3fe7ff663f73013babffe",
-            "sourceFingerprint": "dca9c17df3c63c48db8955b00539a1aa6718102f29b40aa05b16b0cdc16cb1a1",
+            "sourceFingerprint": "c62718d61d803d72e69de7ab18d207c8b8bd55c58e337877a13d4cc220511c04",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "DIRECTORY.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "pom.xml",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": ".github/workflows/build.yml",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "src/main/java/com/thealgorithms/searches/BinarySearch.java",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -3283,7 +3600,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "README.md",
                 "sha": "91766e523bca050fa0d0424d3899bdd93ae3cbee",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/README.md"
               },
               {
@@ -3291,7 +3608,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "DIRECTORY.md",
                 "sha": "37d9b3c295e228009927c174f0ecc154276e7ff3",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/DIRECTORY.md"
               },
               {
@@ -3299,7 +3616,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "pom.xml",
                 "sha": "2af08520649aa6dfed75ffc4c05929ff7833a2e2",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/pom.xml",
                 "setupOnly": true
               },
@@ -3307,8 +3624,8 @@
                 "id": "doc-5c3fa597431e",
                 "repository": "TheAlgorithms/Java",
                 "path": ".github/workflows/build.yml",
-                "sha": "38d1471dcf1305ef012fd0fc56a360b30b861e1b",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "sha": "e83512b89972f444a55ae9c0be849ac4edb67dda",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/.github/workflows/build.yml",
                 "setupOnly": true
               },
@@ -3317,7 +3634,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "src/main/java/com/thealgorithms/searches/BinarySearch.java",
                 "sha": "ca873fc6eafaf5bc31cfeab3eb3cf2f8c362df8f",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/searches/BinarySearch.java",
                 "representativeId": "java-binary-search"
               },
@@ -3326,7 +3643,7 @@
                 "repository": "TheAlgorithms/Java",
                 "path": "src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                 "sha": "d2eca3506c2d788f3d6501a0cdfc3924547a5a4e",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/TheAlgorithms/Java/blob/master/src/main/java/com/thealgorithms/sorts/BubbleSort.java",
                 "representativeId": "java-bubble-sort"
               }
@@ -3421,7 +3738,7 @@
                 "excerpt": "<dependencies> <dependency> <groupId>org.junit.jupiter</groupId> <artifactId>junit-jupiter</artifactId> <scope>test</scope> </dependency> <dependency> <groupId>org.assertj</groupId> <artifactId>assertj-core</artifactId> <version>${assertj.version}</version> <scope>test</scope> </dependency> <dependency> <groupId>org.mockito</groupId> <artifactId>mockito-core</artifactId> <version>5.24.0</version> <scope>test</scope> </dependency> <dependency> <groupId>org.apache.commons</groupId> <artifactId>commons-lang3</artifactId> <version>3.21.0</version>"
               },
               {
-                "id": "e-fda3c15033a24aa9",
+                "id": "e-717a0df2f28f7f48",
                 "sourceId": "doc-5c3fa597431e",
                 "section": ".github/workflows/build.yml",
                 "line": 1,
@@ -3429,15 +3746,15 @@
                 "excerpt": "jobs: build: runs-on: ubuntu-latest steps:"
               },
               {
-                "id": "e-4f6a93a1ecef2d7c",
+                "id": "e-6bda79087a1a30a4",
                 "sourceId": "doc-5c3fa597431e",
                 "section": ".github/workflows/build.yml",
                 "line": 1,
                 "kind": "prose",
-                "excerpt": "- name: Set up JDK uses: actions/setup-java@v6.1.0 with: java-version: 21 distribution: 'temurin'"
+                "excerpt": "- name: Set up JDK uses: actions/setup-java@v6.2.0 with: java-version: 21 distribution: 'temurin'"
               },
               {
-                "id": "e-466a0870dd83107c",
+                "id": "e-c47ead30e5f612dc",
                 "sourceId": "doc-5c3fa597431e",
                 "section": ".github/workflows/build.yml",
                 "line": 1,
@@ -3445,7 +3762,7 @@
                 "excerpt": "- name: Build with Maven run: mvn --batch-mode --update-snapshots verify"
               },
               {
-                "id": "e-4d437c2642599dc3",
+                "id": "e-4201e02b5cd5c022",
                 "sourceId": "doc-5c3fa597431e",
                 "section": ".github/workflows/build.yml",
                 "line": 1,
@@ -3453,7 +3770,7 @@
                 "excerpt": "- name: Checkstyle run: mvn checkstyle:check"
               },
               {
-                "id": "e-37123adeb853fdee",
+                "id": "e-f6ac0c1fa7c0cb68",
                 "sourceId": "doc-5c3fa597431e",
                 "section": ".github/workflows/build.yml",
                 "line": 1,
@@ -3461,7 +3778,7 @@
                 "excerpt": "- name: SpotBugs run: mvn spotbugs:check"
               },
               {
-                "id": "e-0dd1bc8326ad7f1a",
+                "id": "e-5d7de07ad070acd3",
                 "sourceId": "doc-5c3fa597431e",
                 "section": ".github/workflows/build.yml",
                 "line": 1,
@@ -3497,12 +3814,12 @@
                 "e-f7a6d3a3aeeee179",
                 "e-468fe7cf40d39b04",
                 "e-9ba2a64cb0028657",
-                "e-fda3c15033a24aa9",
-                "e-4f6a93a1ecef2d7c",
-                "e-466a0870dd83107c",
-                "e-4d437c2642599dc3",
-                "e-37123adeb853fdee",
-                "e-0dd1bc8326ad7f1a"
+                "e-717a0df2f28f7f48",
+                "e-6bda79087a1a30a4",
+                "e-c47ead30e5f612dc",
+                "e-4201e02b5cd5c022",
+                "e-f6ac0c1fa7c0cb68",
+                "e-5d7de07ad070acd3"
               ]
             },
             "article": {
@@ -3534,12 +3851,12 @@
                     "e-f7a6d3a3aeeee179",
                     "e-468fe7cf40d39b04",
                     "e-9ba2a64cb0028657",
-                    "e-fda3c15033a24aa9",
-                    "e-4f6a93a1ecef2d7c",
-                    "e-466a0870dd83107c",
-                    "e-4d437c2642599dc3",
-                    "e-37123adeb853fdee",
-                    "e-0dd1bc8326ad7f1a"
+                    "e-717a0df2f28f7f48",
+                    "e-6bda79087a1a30a4",
+                    "e-c47ead30e5f612dc",
+                    "e-4201e02b5cd5c022",
+                    "e-f6ac0c1fa7c0cb68",
+                    "e-5d7de07ad070acd3"
                   ],
                   "path": "저장소 공통 · 공식 CI 빌드·테스트 경로",
                   "summaryKo": "설치·시작 경로에서 저장소 공통 빌드·테스트 · JDK 21·Maven (JDK, java) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
@@ -3600,12 +3917,12 @@
                       "e-f7a6d3a3aeeee179",
                       "e-468fe7cf40d39b04",
                       "e-9ba2a64cb0028657",
-                      "e-fda3c15033a24aa9",
-                      "e-4f6a93a1ecef2d7c",
-                      "e-466a0870dd83107c",
-                      "e-4d437c2642599dc3",
-                      "e-37123adeb853fdee",
-                      "e-0dd1bc8326ad7f1a"
+                      "e-717a0df2f28f7f48",
+                      "e-6bda79087a1a30a4",
+                      "e-c47ead30e5f612dc",
+                      "e-4201e02b5cd5c022",
+                      "e-f6ac0c1fa7c0cb68",
+                      "e-5d7de07ad070acd3"
                     ],
                     "path": "저장소 공통 · 공식 CI 빌드·테스트 경로",
                     "summaryKo": "설치·시작 경로에서 저장소 공통 빌드·테스트 · JDK 21·Maven (JDK, java) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
@@ -3722,12 +4039,12 @@
                       "e-f7a6d3a3aeeee179",
                       "e-468fe7cf40d39b04",
                       "e-9ba2a64cb0028657",
-                      "e-fda3c15033a24aa9",
-                      "e-4f6a93a1ecef2d7c",
-                      "e-466a0870dd83107c",
-                      "e-4d437c2642599dc3",
-                      "e-37123adeb853fdee",
-                      "e-0dd1bc8326ad7f1a"
+                      "e-717a0df2f28f7f48",
+                      "e-6bda79087a1a30a4",
+                      "e-c47ead30e5f612dc",
+                      "e-4201e02b5cd5c022",
+                      "e-f6ac0c1fa7c0cb68",
+                      "e-5d7de07ad070acd3"
                     ]
                   },
                   "runtimes": [
@@ -3844,18 +4161,18 @@
         }
       ],
       "synthesis": {
-        "version": 5,
+        "version": 6,
         "coverage": {
           "total": 10,
           "classified": 10,
           "unknown": 0,
-          "complete": 9,
-          "partial": 1,
+          "complete": 10,
+          "partial": 0,
           "unavailable": 0,
           "stale": 0,
           "inputs": 8,
           "outputs": 8,
-          "conditions": 9,
+          "conditions": 10,
           "inputsNotApplicable": 2,
           "outputsNotApplicable": 2,
           "inputEvidenceMissing": 0,
@@ -3864,11 +4181,14 @@
           "examples": 4,
           "exampleMissing": 0,
           "exampleUnconfigured": 0,
-          "collectionInstallations": 0,
+          "collectionInstallations": 1,
           "collectionBuilds": 1,
           "runtimeGroups": 2,
           "runtimeMissing": 0,
-          "runtimeConditions": 4
+          "runtimeConditions": 4,
+          "workflowGroups": 2,
+          "workflowMissing": 0,
+          "workflowConditions": 5
         },
         "categoryGroups": [
           {
@@ -3998,7 +4318,7 @@
               {
                 "name": "homeassistant-ai/ha-mcp",
                 "evidenceIds": [
-                  "e-6ce7cdbd36b7a61b"
+                  "e-7bdbc41a084ae5eb"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -4074,7 +4394,7 @@
               {
                 "name": "homeassistant-ai/ha-mcp",
                 "evidenceIds": [
-                  "e-def8d08a585d49eb"
+                  "e-0cfb70a4059d4a0c"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -4263,6 +4583,116 @@
         ],
         "setupReviews": [
           {
+            "installation": {
+              "id": "improve-install",
+              "title": "설치·호환 · Agent Skills",
+              "scope": "project-install",
+              "body": "공식 README는 npx skills add shadcn/improve로 설치하고 Agent Skills 형식을 지원하는 에이전트에서 사용하는 경로를 안내합니다. 계획은 Markdown이라 다른 에이전트나 사람에게 인계할 수 있습니다. 이 호환 설명이 모든 호스트의 자동 실행 위임 지원을 뜻하지는 않습니다.",
+              "kind": "documented",
+              "exampleOnly": true,
+              "evidenceIds": [
+                "e-c0ba06e5af65f852",
+                "e-b195047bead3ea6e"
+              ]
+            },
+            "runtimes": [],
+            "workflows": [
+              {
+                "id": "improve-planning",
+                "title": "계획 작성",
+                "expected": 2,
+                "conditions": [
+                  {
+                    "id": "improve-readonly",
+                    "title": "소스 읽기 전용과 계획 저장 범위",
+                    "applicability": "required",
+                    "path": "감사·계획 작성자 역할",
+                    "body": "계획 작성자는 소스를 직접 수정하지 않습니다. 계획은 저장소의 plans/ 아래에 두며 그 이름이 다른 용도로 쓰이면 advisor-plans/를 사용하도록 설명합니다. 계획 작성과 구현 실행을 같은 작업으로 취급하지 마세요.",
+                    "scope": "workflow-condition",
+                    "kind": "documented",
+                    "exampleOnly": true,
+                    "evidenceIds": [
+                      "e-53dc21fde9158744"
+                    ]
+                  },
+                  {
+                    "id": "improve-self-contained",
+                    "title": "자체 완결 계획·검증 기준·기준 커밋",
+                    "applicability": "required",
+                    "path": "다른 실행자에게 전달할 계획",
+                    "body": "다른 실행자가 현재 대화 없이 읽을 수 있는 자체 완결 계획을 작성하고 기준 Git 커밋을 기록합니다. 문서는 단계마다 검증 명령과 예상 결과를 두도록 설명하므로 대화 맥락이나 실행자의 추측에 의존하지 않아야 합니다.",
+                    "scope": "workflow-condition",
+                    "kind": "documented",
+                    "exampleOnly": true,
+                    "evidenceIds": [
+                      "e-80210f0d4d82f55c",
+                      "e-f2577ab5a1076f05",
+                      "e-c20571970e6f39d8"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "improve-execution",
+                "title": "execute · 실행 위임",
+                "expected": 3,
+                "conditions": [
+                  {
+                    "id": "improve-host",
+                    "title": "격리 실행자를 만들 수 있는 호스트",
+                    "applicability": "required",
+                    "path": "execute를 선택한 경우",
+                    "body": "자동 execute는 격리된 git worktree에 별도 실행자를 만들 수 있는 호스트가 필요합니다. Agent Skills 형식만 지원한다고 이 기능까지 있다고 가정하면 안 됩니다. 지원하지 않는 호스트에서는 계획을 수동 실행자에게 인계하도록 안내합니다.",
+                    "scope": "workflow-condition",
+                    "kind": "documented",
+                    "exampleOnly": true,
+                    "evidenceIds": [
+                      "e-a570766e9ef8b638",
+                      "e-d2ee46a50db5ce87"
+                    ]
+                  },
+                  {
+                    "id": "improve-preflight",
+                    "title": "Git 저장소·선행 계획·변경 확인",
+                    "applicability": "required",
+                    "path": "실행자를 보내기 전",
+                    "body": "Git 저장소인지, 계획 파일이 존재하고 선행 작업이 DONE인지 확인해야 합니다. 계획의 기준 커밋 이후 대상 파일이 달라졌다면 드리프트를 확인하고 계획을 먼저 조정하는 조건입니다.",
+                    "scope": "workflow-condition",
+                    "kind": "documented",
+                    "exampleOnly": true,
+                    "evidenceIds": [
+                      "e-cca0e802a087a329",
+                      "e-917640bb4246bfd4",
+                      "e-4a1069487c19c56f"
+                    ]
+                  },
+                  {
+                    "id": "improve-review",
+                    "title": "실행 결과 재검증과 사용자 병합 판단",
+                    "applicability": "required",
+                    "path": "실행자 결과 검토",
+                    "body": "실행자의 완료 보고만 믿지 않고 격리 worktree에서 완료 기준을 다시 검증하고 변경 범위를 검토합니다. 문서는 최종 병합을 사용자의 결정으로 남깁니다. 계획 작성이나 실행 위임이 자동 병합 승인을 의미하지 않습니다.",
+                    "scope": "workflow-condition",
+                    "kind": "documented",
+                    "exampleOnly": true,
+                    "evidenceIds": [
+                      "e-451c7764429ffdb8",
+                      "e-040ac920e17642ff",
+                      "e-27f49bdab350431f"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "name": "shadcn/improve",
+            "assessment": {
+              "installation": "documented",
+              "workflowExpected": 2,
+              "workflowAvailable": 2,
+              "missing": []
+            }
+          },
+          {
             "build": {
               "id": "java-repository-build",
               "title": "저장소 공통 빌드·테스트 · JDK 21·Maven",
@@ -4274,12 +4704,12 @@
                 "e-f7a6d3a3aeeee179",
                 "e-468fe7cf40d39b04",
                 "e-9ba2a64cb0028657",
-                "e-fda3c15033a24aa9",
-                "e-4f6a93a1ecef2d7c",
-                "e-466a0870dd83107c",
-                "e-4d437c2642599dc3",
-                "e-37123adeb853fdee",
-                "e-0dd1bc8326ad7f1a"
+                "e-717a0df2f28f7f48",
+                "e-6bda79087a1a30a4",
+                "e-c47ead30e5f612dc",
+                "e-4201e02b5cd5c022",
+                "e-f6ac0c1fa7c0cb68",
+                "e-5d7de07ad070acd3"
               ]
             },
             "runtimes": [
@@ -4362,8 +4792,8 @@
         "references": [
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-11T17:01:52.701Z",
-            "analyzedAt": "2026-11-11T17:01:52.701Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-876c10c216e10def"
@@ -4371,8 +4801,8 @@
           },
           {
             "name": "ZhuLinsen/daily_stock_analysis",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-548ff5b5adfcc16e"
@@ -4380,8 +4810,8 @@
           },
           {
             "name": "GoogleChrome/modern-web-guidance-src",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-ecb97bc1efae8b22"
@@ -4389,8 +4819,8 @@
           },
           {
             "name": "shadcn/improve",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-188dd556b9fb0f4e"
@@ -4398,8 +4828,8 @@
           },
           {
             "name": "addyosmani/agent-skills",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-8ae08506abf851b0"
@@ -4407,8 +4837,8 @@
           },
           {
             "name": "vercel-labs/agent-browser",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-9f78adc75b0950e6"
@@ -4416,8 +4846,8 @@
           },
           {
             "name": "we-promise/sure",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-fbb4c93b0def19fc"
@@ -4425,17 +4855,17 @@
           },
           {
             "name": "homeassistant-ai/ha-mcp",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-ef4d62ef3b994805"
+              "e-5d022c4714f3d5c3"
             ]
           },
           {
             "name": "openai/codex-security",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-ce6ea0f19a2f98b1"
@@ -4443,15 +4873,15 @@
           },
           {
             "name": "TheAlgorithms/Java",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-64817309007c4cab"
             ]
           }
         ],
-        "generatedAt": "2026-11-11T17:01:52.701Z"
+        "generatedAt": "2026-11-12T00:08:10.331Z"
       }
     },
     "weekly": {
@@ -4463,7 +4893,8 @@
       "analysis": [
         "입력을 설명할 근거가 있는 프로젝트는 9개, 출력은 9개, 도입 조건은 10개입니다. 공통 입력 해당 없음 1개, 출력 해당 없음 1개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 9개·출력 9개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
         "대표 항목 사용 예는 1개 프로젝트에서 2개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
-        "설치·실행 조건을 별도 분석한 모음 1개 중 공통 설치 경로는 1개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 2개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 4개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
+        "설치·실행 조건을 별도 분석한 프로젝트 1개 중 공통 설치 경로는 1개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 2개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 4개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
+        "계획 작성·실행 위임 등 작업 단계의 조건은 0개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 0개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
         "공통으로 확인한 항목은 에이전트 클라이언트(5개), Node.js(5개), 서비스 인증(4개), 운영체제별 실행 경로(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
         "기본 항목 충족 10개 · 부분 분석 0개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
@@ -4479,22 +4910,22 @@
           "periodStars": 9327,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "9927829fec0b8c8d39115fdc7a7c76f82d07ba6231a0293be87a28adae8c4879",
             "sourceFingerprint": "d805e4e9a5939d2e7e9bd16252b020e59c4831282b46661d8696369ab937f380",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "skills/nvidia-ontology-setup/references/troubleshooting.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -4504,7 +4935,7 @@
                 "repository": "NVIDIA/auto-ontology",
                 "path": "README.md",
                 "sha": "464a6484b4dc36cd2120578bc6b6e7dcfe236b23",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/NVIDIA/auto-ontology/blob/main/README.md"
               },
               {
@@ -4512,7 +4943,7 @@
                 "repository": "NVIDIA/auto-ontology",
                 "path": "skills/nvidia-ontology-setup/references/troubleshooting.md",
                 "sha": "692334fffa9ee8630b6a4b1a36545389165f1f4a",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/NVIDIA/auto-ontology/blob/main/skills/nvidia-ontology-setup/references/troubleshooting.md"
               }
             ],
@@ -4845,17 +5276,17 @@
           "periodStars": 6443,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "28fed759e0c2f94deeaae77304e4e53eeaddcf39586f6e3ea1243ccdacea6f92",
-            "sourceFingerprint": "2640231a4ea5f22bc6971861a1a82a2b0f44ed0f077fdde75f617787155bebcb",
+            "sourceFingerprint": "6c62fc72cbbe307a3ecfc3cbe21aec482cc4e8e337f0f20e4d13ad2765d37d01",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -4863,14 +5294,14 @@
                 "id": "readme",
                 "repository": "thedotmack/claude-mem",
                 "path": "README.md",
-                "sha": "24734d2eb7e39bc7222244559b6cfa7698cf0ef8",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "sha": "af0dc772f3d3effeabaa5f5f328909ad66f3e637",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-5a0438f27d297590",
+                "id": "e-d8da972adecd3a94",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
@@ -4878,7 +5309,7 @@
                 "excerpt": "Your coding agent forgets everything between sessions."
               },
               {
-                "id": "e-bea9bb3b28357cca",
+                "id": "e-952fbc3244a4baea",
                 "sourceId": "readme",
                 "section": "🦞 OpenClaw Gateway",
                 "line": 212,
@@ -4886,7 +5317,7 @@
                 "excerpt": "Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command:"
               },
               {
-                "id": "e-25d204201b42536d",
+                "id": "e-af91829159343d98",
                 "sourceId": "readme",
                 "section": "Quick Start",
                 "line": 135,
@@ -4894,7 +5325,7 @@
                 "excerpt": "Or install from the plugin marketplace inside Claude Code:"
               },
               {
-                "id": "e-b72de70938e74799",
+                "id": "e-c656544b4e8cc387",
                 "sourceId": "readme",
                 "section": "How it fits together",
                 "line": 281,
@@ -4902,15 +5333,7 @@
                 "excerpt": "- Search (src/servers/mcp-server.ts, plugin/skills/mem-search/): the MCP tools and the mem-search skill that drives them."
               },
               {
-                "id": "e-27d376fbf2846c0b",
-                "sourceId": "readme",
-                "section": "MCP Search Tools",
-                "line": 299,
-                "kind": "prose",
-                "excerpt": "- ~10x token savings by filtering before fetching details"
-              },
-              {
-                "id": "e-52a20c822545dc2c",
+                "id": "e-cdd25d15ca9c4911",
                 "sourceId": "readme",
                 "section": "System Requirements",
                 "line": 338,
@@ -4918,15 +5341,15 @@
                 "excerpt": "- uv: Python package manager for vector search (auto-installed if missing)"
               },
               {
-                "id": "e-02be9cc9f003e547",
+                "id": "e-70b29aac2e929430",
                 "sourceId": "readme",
                 "section": "Quick Start",
                 "line": 135,
                 "kind": "prose",
-                "excerpt": "Run npx claude-mem install --runtime worker on their computer in an interactive terminal (enable PTY in your shell tool)."
+                "excerpt": "If the user is available, run npx claude-mem install --setup browser on their computer and keep it running."
               },
               {
-                "id": "e-b341e79b7e9c2821",
+                "id": "e-0d59ebbf7e01d97b",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
@@ -4934,7 +5357,7 @@
                 "excerpt": "Your coding agent forgets everything between sessions. Claude-Mem remembers for it."
               },
               {
-                "id": "e-284dcbac4e7fc284",
+                "id": "e-1f6a4e5efb4797f7",
                 "sourceId": "readme",
                 "section": "System Requirements",
                 "line": 338,
@@ -4942,15 +5365,7 @@
                 "excerpt": "- Node.js: 20.19 or later in the 20.x line, or 22.12 or later"
               },
               {
-                "id": "e-784bcc51bad6d96a",
-                "sourceId": "readme",
-                "section": "Quick Start",
-                "line": 135,
-                "kind": "prose",
-                "excerpt": "It first asks in the terminal which agents to set up and, for Claude Code, whether to disable native auto-memory (and whether to overwrite an existing install)."
-              },
-              {
-                "id": "e-0cc0e913ac371519",
+                "id": "e-fb65161f17358a2b",
                 "sourceId": "readme",
                 "section": "Quick Start",
                 "line": 135,
@@ -4958,7 +5373,7 @@
                 "excerpt": "Then just start working: observations stream in from your first prompt, and your second session in a project opens with memory from the first."
               },
               {
-                "id": "e-1f1537786e7323a5",
+                "id": "e-9f2fc9785f459b97",
                 "sourceId": "readme",
                 "section": "What You Get",
                 "line": 222,
@@ -4966,7 +5381,7 @@
                 "excerpt": "Each session opens with a compact index of past observations, layered so the agent opens full details only when it needs them, and the header can show what each layer costs in tokens."
               },
               {
-                "id": "e-3f0d37146feb3804",
+                "id": "e-5cf8ae7b6e4c91fe",
                 "sourceId": "readme",
                 "section": "What You Get",
                 "line": 222,
@@ -4974,7 +5389,7 @@
                 "excerpt": "- ⚙️ Choose what gets injected. Fine-grained settings for what context a new session starts with."
               },
               {
-                "id": "e-36b7ebf510b4d920",
+                "id": "e-f9b6a08ba1b6d94a",
                 "sourceId": "readme",
                 "section": "Best Practices",
                 "line": 248,
@@ -4986,7 +5401,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-5a0438f27d297590"
+                "e-d8da972adecd3a94"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -5017,7 +5432,7 @@
                   "body": "문서 설명: - ⚙️ Choose what gets injected. Fine-grained settings for what context a new session starts with.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-3f0d37146feb3804"
+                    "e-5cf8ae7b6e4c91fe"
                   ],
                   "summaryKo": "에이전트의 작업 기록을 수집하거나 다음 세션에 전달할 문맥을 선택해 재사용합니다."
                 },
@@ -5026,7 +5441,7 @@
                   "body": "문서 설명: - Progressive Disclosure - Philosophy behind Claude-Mem's context priming strategy",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-36b7ebf510b4d920"
+                    "e-f9b6a08ba1b6d94a"
                   ],
                   "summaryKo": "저장된 기억을 단계적으로 조회해 필요한 작업 정보를 찾습니다."
                 },
@@ -5035,7 +5450,7 @@
                   "body": "문서 설명: Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command:",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-bea9bb3b28357cca"
+                    "e-952fbc3244a4baea"
                   ],
                   "summaryKo": "세션 사이에서 작업 정보를 유지하는 메모리 기능을 다룹니다."
                 }
@@ -5046,7 +5461,7 @@
                   "body": "이 문서 경로의 요구사항: - uv: Python package manager for vector search (auto-installed if missing)",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-52a20c822545dc2c"
+                    "e-cdd25d15ca9c4911"
                   ],
                   "scope": "required",
                   "path": " / System Requirements",
@@ -5057,7 +5472,7 @@
                   "body": "이 문서 경로의 요구사항: - Node.js: 20.19 or later in the 20.x line, or 22.12 or later",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-284dcbac4e7fc284"
+                    "e-1f6a4e5efb4797f7"
                   ],
                   "scope": "required",
                   "path": " / System Requirements",
@@ -5065,10 +5480,10 @@
                 },
                 {
                   "title": "에이전트 클라이언트",
-                  "body": "이 문서 경로의 언급: It first asks in the terminal which agents to set up and, for Claude Code, whether to disable native auto-memory (and whether to overwrite an existing install).",
+                  "body": "이 문서 경로의 언급: Or install from the plugin marketplace inside Claude Code:",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-784bcc51bad6d96a"
+                    "e-af91829159343d98"
                   ],
                   "scope": "mentioned",
                   "path": " / Quick Start",
@@ -5102,7 +5517,7 @@
                   "body": "문서에서 설명한 목적: Your coding agent forgets everything between sessions. Claude-Mem remembers for it.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-b341e79b7e9c2821"
+                    "e-0d59ebbf7e01d97b"
                   ]
                 },
                 "inputs": [
@@ -5111,7 +5526,7 @@
                     "body": "에이전트의 작업·세션 기록을 수집하는 흐름이 문서에 있습니다. 원문: “Then just start working: observations stream in from your first prompt, and your second session in a project opens with memory from the first.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-0cc0e913ac371519"
+                      "e-fb65161f17358a2b"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "에이전트의 작업·세션 기록을 수집합니다."
@@ -5123,7 +5538,7 @@
                     "body": "저장한 관측·기억을 검색하거나 다음 세션의 문맥으로 재사용합니다. 원문: “Each session opens with a compact index of past observations, layered so the agent opens full details only when it needs them, and the header can show what each layer costs in tokens.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-1f1537786e7323a5"
+                      "e-9f2fc9785f459b97"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "기록을 검색해 이후 세션의 문맥으로 재사용합니다."
@@ -5135,7 +5550,7 @@
                     "body": "이 문서 경로의 요구사항: - uv: Python package manager for vector search (auto-installed if missing)",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-52a20c822545dc2c"
+                      "e-cdd25d15ca9c4911"
                     ],
                     "scope": "required",
                     "path": " / System Requirements",
@@ -5146,7 +5561,7 @@
                     "body": "이 문서 경로의 요구사항: - Node.js: 20.19 or later in the 20.x line, or 22.12 or later",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-284dcbac4e7fc284"
+                      "e-1f6a4e5efb4797f7"
                     ],
                     "scope": "required",
                     "path": " / System Requirements",
@@ -5154,10 +5569,10 @@
                   },
                   {
                     "title": "에이전트 클라이언트",
-                    "body": "이 문서 경로의 언급: It first asks in the terminal which agents to set up and, for Claude Code, whether to disable native auto-memory (and whether to overwrite an existing install).",
+                    "body": "이 문서 경로의 언급: Or install from the plugin marketplace inside Claude Code:",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-784bcc51bad6d96a"
+                      "e-af91829159343d98"
                     ],
                     "scope": "mentioned",
                     "path": " / Quick Start",
@@ -5170,7 +5585,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-3f0d37146feb3804"
+                "e-5cf8ae7b6e4c91fe"
               ],
               "core": [
                 {
@@ -5178,7 +5593,7 @@
                   "body": "에이전트의 작업 기록을 수집하거나 다음 세션에 전달할 문맥을 선택해 재사용합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-3f0d37146feb3804"
+                    "e-5cf8ae7b6e4c91fe"
                   ]
                 },
                 {
@@ -5186,7 +5601,7 @@
                   "body": "저장된 기억을 단계적으로 조회해 필요한 작업 정보를 찾습니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-36b7ebf510b4d920"
+                    "e-f9b6a08ba1b6d94a"
                   ]
                 }
               ]
@@ -5207,7 +5622,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "24734d2eb7e39bc7222244559b6cfa7698cf0ef8",
+            "readmeSha": "af0dc772f3d3effeabaa5f5f328909ad66f3e637",
             "analysisReused": false
           }
         },
@@ -5220,17 +5635,17 @@
           "periodStars": 2313,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "e571a8dc40b9b47744267ac62de20edf455a78b7e4473d4b3efafdb08416e48c",
             "sourceFingerprint": "99ba63c03d02b4853c327863a268089ac54b3740dbdeaa5efea8296055984b25",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -5239,7 +5654,7 @@
                 "repository": "max-sixty/worktrunk",
                 "path": "README.md",
                 "sha": "cb34774014556b4eedaf43ca5f572cb4bcb5e1f9",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/max-sixty/worktrunk/blob/main/README.md"
               }
             ],
@@ -5504,27 +5919,27 @@
           "periodStars": 3169,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "849e66b6f2110e098e7f138d042f99e9f07bc492f941eea8ea4f86d3979a0a2f",
             "sourceFingerprint": "37f3688e7cb6e96cdc2175ca5cda09546202363b0147d7d4174a028259b4c249",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "skills/pdf/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "skills/xlsx/SKILL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -5534,7 +5949,7 @@
                 "repository": "anthropics/skills",
                 "path": "README.md",
                 "sha": "4171c2c9eba15bf2bdefb496d941ba559368438b",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/anthropics/skills/blob/main/README.md"
               },
               {
@@ -5542,7 +5957,7 @@
                 "repository": "anthropics/skills",
                 "path": "skills/pdf/SKILL.md",
                 "sha": "9f606f1cd68dcab9dabb75b548e90c1de028b8a2",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/anthropics/skills/blob/main/skills/pdf/SKILL.md",
                 "representativeId": "skill-pdf-text"
               },
@@ -5551,7 +5966,7 @@
                 "repository": "anthropics/skills",
                 "path": "skills/xlsx/SKILL.md",
                 "sha": "cc347203f2247b009b8ea34574bccfa62fce3669",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/anthropics/skills/blob/main/skills/xlsx/SKILL.md",
                 "representativeId": "skill-xlsx-edit"
               }
@@ -6165,17 +6580,17 @@
           "periodStars": 5235,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "829c05057a3566b9e1cd2fcd8c65dbbc7c3fd057d0ddb796ef25db0a5b7cecf3",
             "sourceFingerprint": "a9da65f1b01ee660c8548cf9a2d166865a0cedd1c1f30981948bb96e88679cb1",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -6184,7 +6599,7 @@
                 "repository": "Donchitos/Claude-Code-Game-Studios",
                 "path": "README.md",
                 "sha": "1842501050d579e421bef697ccd37487b37279be",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/Donchitos/Claude-Code-Game-Studios/blob/main/README.md"
               }
             ],
@@ -6509,22 +6924,22 @@
           "periodStars": 7621,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "5d103f21dd2537a23bfe9194700d80396de8f7939230aa360375698609731ab3",
-            "sourceFingerprint": "874a5e92ea42c93d6b02b6f376b5047bf98fcb5fda4ac57af1ef47673d496fee",
+            "sourceFingerprint": "31aac98b75e2dd663ff4bb4481d0c6daff1ba8e1123db570747d9f302fbf6ff9",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/self-hosting.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -6533,8 +6948,8 @@
                 "id": "readme",
                 "repository": "milind-soni/OpenMausBot",
                 "path": "README.md",
-                "sha": "f1e61d341a7615ad4caab950adea662eda76ecfe",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "sha": "9eb918d3f784c3ab91ebc753e31488d4d346e109",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/milind-soni/OpenMausBot/blob/main/README.md"
               },
               {
@@ -6542,13 +6957,13 @@
                 "repository": "milind-soni/OpenMausBot",
                 "path": "docs/self-hosting.md",
                 "sha": "f0a680f775d726c510e705d5fc21bb131e68f875",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/milind-soni/OpenMausBot/blob/main/docs/self-hosting.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-89f95cd092260c1e",
+                "id": "e-48c69eb08f59ca5f",
                 "sourceId": "readme",
                 "section": "OpenMausBot",
                 "line": 3,
@@ -6556,7 +6971,7 @@
                 "excerpt": "The open-source Grok Bot alternative: your own team of AI bots, in a chat app."
               },
               {
-                "id": "e-9701ea40d1f355e8",
+                "id": "e-ec0d9ad361ba312f",
                 "sourceId": "readme",
                 "section": "Orchestrate OpenMausBot over MCP",
                 "line": 318,
@@ -6580,7 +6995,7 @@
                 "excerpt": "Every command the CLI prints starts the way you started it (npx openmausbot, openmausbot, pnpm omb, or docker compose exec omb openmausbot), so you can paste it as is."
               },
               {
-                "id": "e-77674eb2362cb010",
+                "id": "e-23915afe2a5513ef",
                 "sourceId": "readme",
                 "section": "Quick start",
                 "line": 341,
@@ -6588,7 +7003,7 @@
                 "excerpt": "Requirements: macOS, Windows, or Ubuntu 24.04 x64, Node 24+, pnpm, and at least one agent CLI — claude, codex, or grok — installed and logged in."
               },
               {
-                "id": "e-acdb6742253f79cc",
+                "id": "e-4ae4030e62549671",
                 "sourceId": "readme",
                 "section": "Why",
                 "line": 83,
@@ -6596,7 +7011,7 @@
                 "excerpt": "One assistant in one box is the wrong shape for agents. OpenMausBot is an independent, open-source project inspired by Grok Bot — it keeps the idea (AI as a messaging app: a roster of bots you chat with, each with its own personality, memory of its thread, model, computer, and apps) and rebuilds it open, local-first, and on the agents you already have:"
               },
               {
-                "id": "e-6891383292a5352b",
+                "id": "e-0e0bbc0941f05e15",
                 "sourceId": "readme",
                 "section": "Desktop capability status",
                 "line": 379,
@@ -6604,7 +7019,7 @@
                 "excerpt": "| Credential | What it enables | Where to get it | |---|---|---| | Composio project key (ak…) | Connect Gmail, GitHub, Slack, Notion, and other apps to your bots | OpenMausBot Composio setup | | Boat API key | Give bots an isolated remote Linux computer with a desktop and terminal | Boat API key guide | | ElevenLabs key | Read replies aloud, and call your bots | ElevenLabs API keys | | Fish Audio key | Read replies aloud with Fish Audio voices, and call your bots | Fish Audio API keys |"
               },
               {
-                "id": "e-e2ce3d451f4dbd99",
+                "id": "e-e6f8823a5a9b04b5",
                 "sourceId": "readme",
                 "section": "Quick start",
                 "line": 341,
@@ -6620,7 +7035,7 @@
                 "excerpt": "The published image installs the current Chrome for Testing whenever a new Stable ships."
               },
               {
-                "id": "e-01d9f7b9c177e11e",
+                "id": "e-500eaa5fe0541f9e",
                 "sourceId": "readme",
                 "section": "📦 Install a complete team from one Markdown file",
                 "line": 202,
@@ -6628,7 +7043,7 @@
                 "excerpt": "You can also import the same .md file from disk or paste its public GitHub URL in Teams → Import."
               },
               {
-                "id": "e-8278347b60540298",
+                "id": "e-a852661325789367",
                 "sourceId": "readme",
                 "section": "🤝 Share a whole department",
                 "line": 216,
@@ -6636,7 +7051,7 @@
                 "excerpt": "Right-click a department and choose Share department… (or use Templates → Share) to save the whole department as one file: its bots with their instructions, pictures and skills, group chats, routines, shared instructions, Chief of Staff, connection slots and each bot's starter notes (untick them to leave them out)."
               },
               {
-                "id": "e-7b25bd2c1fa95f44",
+                "id": "e-f8ac0d1f72790f1e",
                 "sourceId": "readme",
                 "section": "Why",
                 "line": 83,
@@ -6648,7 +7063,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-89f95cd092260c1e"
+                "e-48c69eb08f59ca5f"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -6678,7 +7093,7 @@
                   "body": "문서 설명: - Bring your own agents. Bots run on the claude, codex, and grok CLIs installed on your own machine — your existing logins and subscriptions, no new accounts, no proxy in the middle. Point any engine at a custom CLI binary (a versioned build or wrapper) in Settings → Engines.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-7b25bd2c1fa95f44"
+                    "e-f8ac0d1f72790f1e"
                   ],
                   "summaryKo": "봇이 로컬 에이전트 명령을 실행하며 기존 로그인과 구독을 사용하는 구성을 제공합니다."
                 },
@@ -6698,7 +7113,7 @@
                   "body": "이 문서 경로의 언급: Requirements: macOS, Windows, or Ubuntu 24.04 x64, Node 24+, pnpm, and at least one agent CLI — claude, codex, or grok — installed and logged in.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-77674eb2362cb010"
+                    "e-23915afe2a5513ef"
                   ],
                   "scope": "mentioned",
                   "path": " / OpenMausBot / Quick start",
@@ -6720,7 +7135,7 @@
                   "body": "이 문서 경로의 언급: | Credential | What it enables | Where to get it | |---|---|---| | Composio project key (ak…) | Connect Gmail, GitHub, Slack, Notion, and other apps to your bots | OpenMausBot Composio setup | | Boat API key | Give bots an isolated remote Linux computer with a desktop and terminal | Boat API key guide | | ElevenLabs key | Read replies aloud, and call your bots | ElevenLabs API keys | | Fish Audio key | Read replies aloud with Fish Audio voices, and call your bots | Fish Audio API keys |",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-6891383292a5352b"
+                    "e-0e0bbc0941f05e15"
                   ],
                   "scope": "mentioned",
                   "path": " / OpenMausBot / Quick start / Desktop capability status",
@@ -6731,7 +7146,7 @@
                   "body": "이 문서 경로의 언급: | | Download | Install | |---|---|---| | macOS (Apple silicon) | OpenMausBot.dmg | Drag it to Applications, open it.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-e2ce3d451f4dbd99"
+                    "e-e6f8823a5a9b04b5"
                   ],
                   "scope": "mentioned",
                   "path": " / OpenMausBot / Quick start",
@@ -6753,7 +7168,7 @@
                   "body": "이 문서 경로의 언급: Requirements: macOS, Windows, or Ubuntu 24.04 x64, Node 24+, pnpm, and at least one agent CLI — claude, codex, or grok — installed and logged in.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-77674eb2362cb010"
+                    "e-23915afe2a5513ef"
                   ],
                   "scope": "mentioned",
                   "path": " / OpenMausBot / Quick start",
@@ -6787,7 +7202,7 @@
                   "body": "문서가 명시한 해결 문제: One assistant in one box is the wrong shape for agents. OpenMausBot is an independent, open-source project inspired by Grok Bot — it keeps the idea (AI as a messaging app: a roster of bots you chat with, each with its own personality, memory of its thread, model, computer, and apps) and rebuilds it open, local-first, and on the agents you already have:",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-acdb6742253f79cc"
+                    "e-4ae4030e62549671"
                   ],
                   "exampleOnly": false
                 },
@@ -6797,7 +7212,7 @@
                     "body": "팀 가져오기 경로에서 Markdown 파일이나 해당 파일의 공개 GitHub 주소를 전달합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-01d9f7b9c177e11e"
+                      "e-500eaa5fe0541f9e"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "팀 가져오기 경로에서 Markdown 파일이나 공개 GitHub 파일 주소를 전달합니다."
@@ -6809,7 +7224,7 @@
                     "body": "부서 공유 경로에서 봇과 지침 등의 팀 구성을 하나의 파일로 저장합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-8278347b60540298"
+                      "e-a852661325789367"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "부서 공유 경로에서 봇과 지침 등의 팀 구성을 한 파일로 저장합니다."
@@ -6821,7 +7236,7 @@
                     "body": "이 문서 경로의 언급: Requirements: macOS, Windows, or Ubuntu 24.04 x64, Node 24+, pnpm, and at least one agent CLI — claude, codex, or grok — installed and logged in.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-77674eb2362cb010"
+                      "e-23915afe2a5513ef"
                     ],
                     "scope": "mentioned",
                     "path": " / OpenMausBot / Quick start",
@@ -6843,7 +7258,7 @@
                     "body": "이 문서 경로의 언급: | Credential | What it enables | Where to get it | |---|---|---| | Composio project key (ak…) | Connect Gmail, GitHub, Slack, Notion, and other apps to your bots | OpenMausBot Composio setup | | Boat API key | Give bots an isolated remote Linux computer with a desktop and terminal | Boat API key guide | | ElevenLabs key | Read replies aloud, and call your bots | ElevenLabs API keys | | Fish Audio key | Read replies aloud with Fish Audio voices, and call your bots | Fish Audio API keys |",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-6891383292a5352b"
+                      "e-0e0bbc0941f05e15"
                     ],
                     "scope": "mentioned",
                     "path": " / OpenMausBot / Quick start / Desktop capability status",
@@ -6854,7 +7269,7 @@
                     "body": "이 문서 경로의 언급: | | Download | Install | |---|---|---| | macOS (Apple silicon) | OpenMausBot.dmg | Drag it to Applications, open it.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-e2ce3d451f4dbd99"
+                      "e-e6f8823a5a9b04b5"
                     ],
                     "scope": "mentioned",
                     "path": " / OpenMausBot / Quick start",
@@ -6876,7 +7291,7 @@
                     "body": "이 문서 경로의 언급: Requirements: macOS, Windows, or Ubuntu 24.04 x64, Node 24+, pnpm, and at least one agent CLI — claude, codex, or grok — installed and logged in.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-77674eb2362cb010"
+                      "e-23915afe2a5513ef"
                     ],
                     "scope": "mentioned",
                     "path": " / OpenMausBot / Quick start",
@@ -6889,7 +7304,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-7b25bd2c1fa95f44"
+                "e-f8ac0d1f72790f1e"
               ],
               "core": [
                 {
@@ -6897,7 +7312,7 @@
                   "body": "봇이 로컬 에이전트 명령을 실행하며 기존 로그인과 구독을 사용하는 구성을 제공합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-7b25bd2c1fa95f44"
+                    "e-f8ac0d1f72790f1e"
                   ]
                 },
                 {
@@ -6926,7 +7341,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "f1e61d341a7615ad4caab950adea662eda76ecfe",
+            "readmeSha": "9eb918d3f784c3ab91ebc753e31488d4d346e109",
             "analysisReused": false
           }
         },
@@ -6939,27 +7354,27 @@
           "periodStars": 15379,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "8499ad335d4d2abd71bb1678b81c8b7c1176a6c012a7c554a7f22a22167a308d",
-            "sourceFingerprint": "fef7906586df079a8a428e14874ea80c2a5bcc3f3725c415d3ef319f24686a84",
+            "sourceFingerprint": "a901e34f0d60373c46daa4118a62291605d006809e88ae9aa1bb591ee36b97f1",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/user/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "docs/user/outside-agents.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -6969,15 +7384,15 @@
                 "repository": "pingdotgg/t3code",
                 "path": "README.md",
                 "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/README.md"
               },
               {
                 "id": "doc-5445c9485dbf",
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/install.md",
-                "sha": "c353e3f0fecb58ef4e0941664a1b274ccd88adac",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "sha": "ea7448149ced304ae47b9246b03ace1749a8e1f7",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md"
               },
               {
@@ -6985,7 +7400,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/outside-agents.md",
                 "sha": "dc9af3ad5167cc4d820e5b951a85252a5b26cf8a",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/outside-agents.md"
               }
             ],
@@ -7015,7 +7430,7 @@
                 "excerpt": "T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app (iOS, Android), web app and Electron-based desktop app."
               },
               {
-                "id": "e-b40390563f8feff5",
+                "id": "e-1fc0666632d095f6",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Command line",
                 "line": 11,
@@ -7023,7 +7438,7 @@
                 "excerpt": "To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx)."
               },
               {
-                "id": "e-eccbc11d665ac218",
+                "id": "e-a29b46735ae4befc",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Providers",
                 "line": 182,
@@ -7039,7 +7454,7 @@
                 "excerpt": "On Windows, in PowerShell:"
               },
               {
-                "id": "e-bb4969d5f3226826",
+                "id": "e-ba0aa59ab4219950",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Providers",
                 "line": 182,
@@ -7109,7 +7524,7 @@
                   "body": "이 문서 경로의 언급: To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-b40390563f8feff5"
+                    "e-1fc0666632d095f6"
                   ],
                   "scope": "mentioned",
                   "path": " / Install T3 Code / Command line",
@@ -7120,7 +7535,7 @@
                   "body": "이 문서 경로의 언급: Each instance can have its own environment variables, such as API keys or a custom base URL.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-eccbc11d665ac218"
+                    "e-a29b46735ae4befc"
                   ],
                   "scope": "mentioned",
                   "path": " / Install T3 Code / Providers",
@@ -7142,7 +7557,7 @@
                   "body": "이 문서 경로의 언급: Update now runs the installer that owns the CLI (Homebrew, mise, or a global npm, pnpm, Yarn, Bun, Volta, or Vite+ install), or the CLI's own update command when T3 Code cannot tell.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-bb4969d5f3226826"
+                    "e-ba0aa59ab4219950"
                   ],
                   "scope": "mentioned",
                   "path": " / Install T3 Code / Providers",
@@ -7220,7 +7635,7 @@
                     "body": "이 문서 경로의 언급: To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-b40390563f8feff5"
+                      "e-1fc0666632d095f6"
                     ],
                     "scope": "mentioned",
                     "path": " / Install T3 Code / Command line",
@@ -7231,7 +7646,7 @@
                     "body": "이 문서 경로의 언급: Each instance can have its own environment variables, such as API keys or a custom base URL.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-eccbc11d665ac218"
+                      "e-a29b46735ae4befc"
                     ],
                     "scope": "mentioned",
                     "path": " / Install T3 Code / Providers",
@@ -7253,7 +7668,7 @@
                     "body": "이 문서 경로의 언급: Update now runs the installer that owns the CLI (Homebrew, mise, or a global npm, pnpm, Yarn, Bun, Volta, or Vite+ install), or the CLI's own update command when T3 Code cannot tell.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-bb4969d5f3226826"
+                      "e-ba0aa59ab4219950"
                     ],
                     "scope": "mentioned",
                     "path": " / Install T3 Code / Providers",
@@ -7319,22 +7734,22 @@
           "periodStars": 6356,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "9d18862707baac072bbda399afcacd7f622617a1dcae93a2c303d72c3284fe7d",
             "sourceFingerprint": "742c12240758bb74e93ec1b11714d18b66cae1d62f82c5517b266f3187270c60",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "skills/hallmark/references/direction.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -7344,7 +7759,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "README.md",
                 "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/README.md"
               },
               {
@@ -7352,7 +7767,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "skills/hallmark/references/direction.md",
                 "sha": "b7fc330d79b93fb35e63979da14438057b63da3e",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/references/direction.md"
               }
             ],
@@ -7625,22 +8040,22 @@
           "periodStars": 4191,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "f9421c41abb56fbcc6d49cd47aedeecb6244e16cef5becd293205c55e8dc83de",
             "sourceFingerprint": "3aea68f869ed0f81a782952e6819b99818311848dea09a20c547f1eef76c287e",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "README.en.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -7650,7 +8065,7 @@
                 "repository": "Renhuai123/ziwei-doushu",
                 "path": "README.md",
                 "sha": "cbd9d20f8b3289d1bf5e379904f9a981ea744e6f",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/Renhuai123/ziwei-doushu/blob/main/README.md"
               },
               {
@@ -7658,7 +8073,7 @@
                 "repository": "Renhuai123/ziwei-doushu",
                 "path": "README.en.md",
                 "sha": "ba192c8f8455dcd989045bd9ac2e49d9f387c3ce",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/Renhuai123/ziwei-doushu/blob/main/README.en.md"
               }
             ],
@@ -7852,17 +8267,17 @@
           "periodStars": 8342,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "4e0dc98e3dd287f0e8a62a4c231e836b95cf506716c9986a5f18d0c9a5c10a4b",
             "sourceFingerprint": "48821a493c80ee599fecd6fc175605a86d4dc1076207756ed7c1e717ab85687b",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -7871,7 +8286,7 @@
                 "repository": "D4Vinci/Scrapling",
                 "path": "README.md",
                 "sha": "b7fb1d333673421a9d232e797f9f7e7506103f2f",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/D4Vinci/Scrapling/blob/main/README.md"
               }
             ],
@@ -8157,7 +8572,7 @@
         }
       ],
       "synthesis": {
-        "version": 5,
+        "version": 6,
         "coverage": {
           "total": 10,
           "classified": 10,
@@ -8181,7 +8596,10 @@
           "collectionBuilds": 0,
           "runtimeGroups": 2,
           "runtimeMissing": 0,
-          "runtimeConditions": 4
+          "runtimeConditions": 4,
+          "workflowGroups": 0,
+          "workflowMissing": 0,
+          "workflowConditions": 0
         },
         "categoryGroups": [
           {
@@ -8257,7 +8675,7 @@
               {
                 "name": "thedotmack/claude-mem",
                 "evidenceIds": [
-                  "e-784bcc51bad6d96a"
+                  "e-af91829159343d98"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -8273,7 +8691,7 @@
               {
                 "name": "milind-soni/OpenMausBot",
                 "evidenceIds": [
-                  "e-77674eb2362cb010"
+                  "e-23915afe2a5513ef"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -8303,7 +8721,7 @@
               {
                 "name": "thedotmack/claude-mem",
                 "evidenceIds": [
-                  "e-284dcbac4e7fc284"
+                  "e-1f6a4e5efb4797f7"
                 ],
                 "scope": "required",
                 "exampleOnly": false
@@ -8319,7 +8737,7 @@
               {
                 "name": "milind-soni/OpenMausBot",
                 "evidenceIds": [
-                  "e-77674eb2362cb010"
+                  "e-23915afe2a5513ef"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -8327,7 +8745,7 @@
               {
                 "name": "pingdotgg/t3code",
                 "evidenceIds": [
-                  "e-b40390563f8feff5"
+                  "e-1fc0666632d095f6"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -8357,7 +8775,7 @@
               {
                 "name": "milind-soni/OpenMausBot",
                 "evidenceIds": [
-                  "e-6891383292a5352b"
+                  "e-0e0bbc0941f05e15"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -8365,7 +8783,7 @@
               {
                 "name": "pingdotgg/t3code",
                 "evidenceIds": [
-                  "e-eccbc11d665ac218"
+                  "e-a29b46735ae4befc"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -8403,7 +8821,7 @@
               {
                 "name": "milind-soni/OpenMausBot",
                 "evidenceIds": [
-                  "e-e2ce3d451f4dbd99"
+                  "e-e6f8823a5a9b04b5"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -8609,8 +9027,8 @@
         "references": [
           {
             "name": "NVIDIA/auto-ontology",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-6b499cb7e78b2817"
@@ -8618,17 +9036,17 @@
           },
           {
             "name": "thedotmack/claude-mem",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-5a0438f27d297590"
+              "e-d8da972adecd3a94"
             ]
           },
           {
             "name": "max-sixty/worktrunk",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-a95b385482e78e14"
@@ -8636,8 +9054,8 @@
           },
           {
             "name": "anthropics/skills",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-1f59cc80cdf5cb48"
@@ -8645,8 +9063,8 @@
           },
           {
             "name": "Donchitos/Claude-Code-Game-Studios",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-02f00b61300880ae"
@@ -8654,17 +9072,17 @@
           },
           {
             "name": "milind-soni/OpenMausBot",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-89f95cd092260c1e"
+              "e-48c69eb08f59ca5f"
             ]
           },
           {
             "name": "pingdotgg/t3code",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-e65edae5430fd0cf"
@@ -8672,8 +9090,8 @@
           },
           {
             "name": "Nutlope/hallmark",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-81f1fd422178dcb7"
@@ -8681,8 +9099,8 @@
           },
           {
             "name": "Renhuai123/ziwei-doushu",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-adad0a32cbd7e819"
@@ -8690,15 +9108,15 @@
           },
           {
             "name": "D4Vinci/Scrapling",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-b21f914f6304f397"
             ]
           }
         ],
-        "generatedAt": "2026-11-11T16:58:42.958Z"
+        "generatedAt": "2026-11-12T00:08:10.331Z"
       }
     },
     "monthly": {
@@ -8710,7 +9128,8 @@
       "analysis": [
         "입력을 설명할 근거가 있는 프로젝트는 9개, 출력은 8개, 도입 조건은 9개입니다. 공통 입력 해당 없음 1개, 출력 해당 없음 2개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 9개·출력 8개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
         "대표 항목 사용 예는 2개 프로젝트에서 4개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
-        "설치·실행 조건을 별도 분석한 모음 0개 중 공통 설치 경로는 0개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 0개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 0개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
+        "설치·실행 조건을 별도 분석한 프로젝트 0개 중 공통 설치 경로는 0개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 0개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 0개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
+        "계획 작성·실행 위임 등 작업 단계의 조건은 0개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 0개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
         "공통으로 확인한 항목은 Node.js(7개), 에이전트 클라이언트(6개), 운영체제별 실행 경로(4개), Python(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
         "기본 항목 충족 9개 · 부분 분석 1개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
@@ -8726,17 +9145,17 @@
           "periodStars": 31731,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "2e3bf6910658e831d746571b73e9952cb33ab25992580a2d284bcb9250f5ddc1",
             "sourceFingerprint": "3c0e27f9ebbb589c935a9cf71c3742109f1aff36e47d679e5053db527536f7f9",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -8745,7 +9164,7 @@
                 "repository": "cloudflare/security-audit-skill",
                 "path": "README.md",
                 "sha": "c80305c88cd5087db37f76a0d230c1fc092c864c",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/cloudflare/security-audit-skill/blob/main/README.md"
               }
             ],
@@ -8963,17 +9382,17 @@
           "periodStars": 22303,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "5c31fd23bf9c7fa5c6a28fb91545698ec5d3fd4747d4159b054077ef07b12882",
             "sourceFingerprint": "1a9e9eb00c55150f6764b346dcb58a2d5b3beb9255d658195dde918f5bf5444e",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -8982,7 +9401,7 @@
                 "repository": "heygen-com/hyperframes",
                 "path": "README.md",
                 "sha": "8e6fb677459ff95bd4d43007095d31f8171b70de",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
               }
             ],
@@ -9228,22 +9647,22 @@
           "periodStars": 14378,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "9d18862707baac072bbda399afcacd7f622617a1dcae93a2c303d72c3284fe7d",
             "sourceFingerprint": "742c12240758bb74e93ec1b11714d18b66cae1d62f82c5517b266f3187270c60",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "skills/hallmark/references/direction.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -9253,7 +9672,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "README.md",
                 "sha": "2568bb6f51284bc3feeea6a3098d31f6743ec623",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/README.md"
               },
               {
@@ -9261,7 +9680,7 @@
                 "repository": "Nutlope/hallmark",
                 "path": "skills/hallmark/references/direction.md",
                 "sha": "b7fc330d79b93fb35e63979da14438057b63da3e",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/Nutlope/hallmark/blob/main/skills/hallmark/references/direction.md"
               }
             ],
@@ -9534,27 +9953,27 @@
           "periodStars": 8375,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "ff2b433632a76a9da043674fd346e4415c32b816b9addb53a5bbc0866f5a0676",
             "sourceFingerprint": "4ea046f8972b93daf14f50c93fefa2892edc7d307db4385f6f4e709c5e078cab",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "product-management/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "sales/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -9564,7 +9983,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "README.md",
                 "sha": "261e2f47e2b1701258e4bd3ec18620dc5d7c28ad",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/README.md"
               },
               {
@@ -9572,7 +9991,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "product-management/README.md",
                 "sha": "794694ab4d522a3eb08320472b63f771047bb0a9",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/product-management/README.md",
                 "representativeId": "plugin-product-spec"
               },
@@ -9581,7 +10000,7 @@
                 "repository": "anthropics/knowledge-work-plugins",
                 "path": "sales/README.md",
                 "sha": "2dfe28ad0d9f5cd98b14b21ccb44763d6e652f28",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/anthropics/knowledge-work-plugins/blob/main/sales/README.md",
                 "representativeId": "plugin-sales-call"
               }
@@ -9927,27 +10346,27 @@
           "periodStars": 47234,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "3bcaa24a372d9e3e95889abb2148c51b23b7994b1495dc22382faff640d07c74",
             "sourceFingerprint": "2508499122948c5504f6a7736953322afac06a00a9f31949a03e09e7940d8873",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/install/windows-rocm.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "docs/install/macos.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -9957,7 +10376,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "README.md",
                 "sha": "5b336fbac18c4c3400089956d2cb2307ade2fb6d",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/README.md"
               },
               {
@@ -9965,7 +10384,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "docs/install/windows-rocm.md",
                 "sha": "17b22a642a9e194d050fdb9863c89437438d5432",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/windows-rocm.md"
               },
               {
@@ -9973,7 +10392,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "docs/install/macos.md",
                 "sha": "b8dfdb0eb7d7cea43e7b7593a1c3072d98bd8bb6",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/macos.md"
               }
             ],
@@ -10375,27 +10794,27 @@
           "periodStars": 25479,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "596bb4235bacd567ea0f3f04999470a4c0ae03c186a494d1fb74a68863704269",
             "sourceFingerprint": "f5c2fbf0830cab0530ff137b30bff648a34e8c10a5a0366695e6d9b5f23f2bf0",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "skill/reference/audit.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "skill/reference/critique.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -10405,7 +10824,7 @@
                 "repository": "pbakaus/impeccable",
                 "path": "README.md",
                 "sha": "1b95cc5b988b9b7687be749d90d978f625b9284a",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/README.md"
               },
               {
@@ -10413,7 +10832,7 @@
                 "repository": "pbakaus/impeccable",
                 "path": "skill/reference/audit.md",
                 "sha": "741db4c0a63505d056da22913a0b52f936acce96",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
                 "representativeId": "skill-ui-audit"
               },
@@ -10422,7 +10841,7 @@
                 "repository": "pbakaus/impeccable",
                 "path": "skill/reference/critique.md",
                 "sha": "4dd9f4ba2c006efdce0c0fe1b5a31e83fb93d30a",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/critique.md",
                 "representativeId": "skill-ui-critique"
               }
@@ -10884,22 +11303,22 @@
           "periodStars": 8092,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "f5be476f3817c232c60374417e7709c9c143418cf4855586e1bdc27cbaf7c802",
             "sourceFingerprint": "be7da6003899b82b0da4372f107749d78cb1e22282a1de70eb4a0252fbe9a5df",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -10909,7 +11328,7 @@
                 "repository": "earthtojake/text-to-cad",
                 "path": "README.md",
                 "sha": "51ab0f716fa1359e1215f2cd3971f8eb03f10908",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/earthtojake/text-to-cad/blob/main/README.md"
               },
               {
@@ -10917,7 +11336,7 @@
                 "repository": "earthtojake/text-to-cad",
                 "path": "docs/install.md",
                 "sha": "28fcafc3ecca60b332b40b08b08027abd6aa5da0",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/earthtojake/text-to-cad/blob/main/docs/install.md"
               }
             ],
@@ -11267,27 +11686,27 @@
           "periodStars": 16685,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "8d87ef7bf2e142ea653b61246010bc819da1b45b344369c7b0f9da5377d47908",
             "sourceFingerprint": "f4651aad7098c09877f52a988c3b940d574236e16cb91dd6f6d4bb0a3f9fb762",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "DevGuide.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "Ghidra/Features/PyGhidra/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -11297,7 +11716,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "README.md",
                 "sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md"
               },
               {
@@ -11305,7 +11724,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "DevGuide.md",
                 "sha": "7cf682836fea723a3875dfa2a2ecdc22414f9745",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/DevGuide.md"
               },
               {
@@ -11313,7 +11732,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "Ghidra/Features/PyGhidra/README.md",
                 "sha": "3485a6048d65b34979373983396324fe2eeae13c",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/Ghidra/Features/PyGhidra/README.md"
               }
             ],
@@ -11638,27 +12057,27 @@
           "periodStars": 9973,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "8499ad335d4d2abd71bb1678b81c8b7c1176a6c012a7c554a7f22a22167a308d",
-            "sourceFingerprint": "fef7906586df079a8a428e14874ea80c2a5bcc3f3725c415d3ef319f24686a84",
+            "sourceFingerprint": "a901e34f0d60373c46daa4118a62291605d006809e88ae9aa1bb591ee36b97f1",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": [
                 {
                   "path": "docs/user/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 },
                 {
                   "path": "docs/user/outside-agents.md",
                   "status": "available",
-                  "checkedAt": "2026-11-11T16:58:42.958Z"
+                  "checkedAt": "2026-11-12T00:08:10.331Z"
                 }
               ]
             },
@@ -11668,15 +12087,15 @@
                 "repository": "pingdotgg/t3code",
                 "path": "README.md",
                 "sha": "4abbd5bd932cf0f1f681f9ef4da927b98c316a60",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/README.md"
               },
               {
                 "id": "doc-5445c9485dbf",
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/install.md",
-                "sha": "c353e3f0fecb58ef4e0941664a1b274ccd88adac",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "sha": "ea7448149ced304ae47b9246b03ace1749a8e1f7",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md"
               },
               {
@@ -11684,7 +12103,7 @@
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/outside-agents.md",
                 "sha": "dc9af3ad5167cc4d820e5b951a85252a5b26cf8a",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/outside-agents.md"
               }
             ],
@@ -11714,7 +12133,7 @@
                 "excerpt": "T3 Code is an \"agent harness control surface\". It enables control of the agents on your machine with a best-in-class mobile app (iOS, Android), web app and Electron-based desktop app."
               },
               {
-                "id": "e-b40390563f8feff5",
+                "id": "e-1fc0666632d095f6",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Command line",
                 "line": 11,
@@ -11722,7 +12141,7 @@
                 "excerpt": "To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx)."
               },
               {
-                "id": "e-eccbc11d665ac218",
+                "id": "e-a29b46735ae4befc",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Providers",
                 "line": 182,
@@ -11738,7 +12157,7 @@
                 "excerpt": "On Windows, in PowerShell:"
               },
               {
-                "id": "e-bb4969d5f3226826",
+                "id": "e-ba0aa59ab4219950",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Providers",
                 "line": 182,
@@ -11808,7 +12227,7 @@
                   "body": "이 문서 경로의 언급: To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-b40390563f8feff5"
+                    "e-1fc0666632d095f6"
                   ],
                   "scope": "mentioned",
                   "path": " / Install T3 Code / Command line",
@@ -11819,7 +12238,7 @@
                   "body": "이 문서 경로의 언급: Each instance can have its own environment variables, such as API keys or a custom base URL.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-eccbc11d665ac218"
+                    "e-a29b46735ae4befc"
                   ],
                   "scope": "mentioned",
                   "path": " / Install T3 Code / Providers",
@@ -11841,7 +12260,7 @@
                   "body": "이 문서 경로의 언급: Update now runs the installer that owns the CLI (Homebrew, mise, or a global npm, pnpm, Yarn, Bun, Volta, or Vite+ install), or the CLI's own update command when T3 Code cannot tell.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-bb4969d5f3226826"
+                    "e-ba0aa59ab4219950"
                   ],
                   "scope": "mentioned",
                   "path": " / Install T3 Code / Providers",
@@ -11919,7 +12338,7 @@
                     "body": "이 문서 경로의 언급: To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-b40390563f8feff5"
+                      "e-1fc0666632d095f6"
                     ],
                     "scope": "mentioned",
                     "path": " / Install T3 Code / Command line",
@@ -11930,7 +12349,7 @@
                     "body": "이 문서 경로의 언급: Each instance can have its own environment variables, such as API keys or a custom base URL.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-eccbc11d665ac218"
+                      "e-a29b46735ae4befc"
                     ],
                     "scope": "mentioned",
                     "path": " / Install T3 Code / Providers",
@@ -11952,7 +12371,7 @@
                     "body": "이 문서 경로의 언급: Update now runs the installer that owns the CLI (Homebrew, mise, or a global npm, pnpm, Yarn, Bun, Volta, or Vite+ install), or the CLI's own update command when T3 Code cannot tell.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-bb4969d5f3226826"
+                      "e-ba0aa59ab4219950"
                     ],
                     "scope": "mentioned",
                     "path": " / Install T3 Code / Providers",
@@ -12018,17 +12437,17 @@
           "periodStars": 12705,
           "usage": {
             "schemaVersion": 2,
-            "analyzerVersion": 14,
-            "version": 14,
+            "analyzerVersion": 15,
+            "version": 15,
             "status": "ready",
-            "checkedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
+            "checkedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
             "analysisInputFingerprint": "28fed759e0c2f94deeaae77304e4e53eeaddcf39586f6e3ea1243ccdacea6f92",
-            "sourceFingerprint": "2640231a4ea5f22bc6971861a1a82a2b0f44ed0f077fdde75f617787155bebcb",
+            "sourceFingerprint": "6c62fc72cbbe307a3ecfc3cbe21aec482cc4e8e337f0f20e4d13ad2765d37d01",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-11T16:58:42.958Z",
+              "checkedAt": "2026-11-12T00:08:10.331Z",
               "links": []
             },
             "sources": [
@@ -12036,14 +12455,14 @@
                 "id": "readme",
                 "repository": "thedotmack/claude-mem",
                 "path": "README.md",
-                "sha": "24734d2eb7e39bc7222244559b6cfa7698cf0ef8",
-                "fetchedAt": "2026-11-11T16:58:42.958Z",
+                "sha": "af0dc772f3d3effeabaa5f5f328909ad66f3e637",
+                "fetchedAt": "2026-11-12T00:08:10.331Z",
                 "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-5a0438f27d297590",
+                "id": "e-d8da972adecd3a94",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
@@ -12051,7 +12470,7 @@
                 "excerpt": "Your coding agent forgets everything between sessions."
               },
               {
-                "id": "e-bea9bb3b28357cca",
+                "id": "e-952fbc3244a4baea",
                 "sourceId": "readme",
                 "section": "🦞 OpenClaw Gateway",
                 "line": 212,
@@ -12059,7 +12478,7 @@
                 "excerpt": "Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command:"
               },
               {
-                "id": "e-25d204201b42536d",
+                "id": "e-af91829159343d98",
                 "sourceId": "readme",
                 "section": "Quick Start",
                 "line": 135,
@@ -12067,7 +12486,7 @@
                 "excerpt": "Or install from the plugin marketplace inside Claude Code:"
               },
               {
-                "id": "e-b72de70938e74799",
+                "id": "e-c656544b4e8cc387",
                 "sourceId": "readme",
                 "section": "How it fits together",
                 "line": 281,
@@ -12075,15 +12494,7 @@
                 "excerpt": "- Search (src/servers/mcp-server.ts, plugin/skills/mem-search/): the MCP tools and the mem-search skill that drives them."
               },
               {
-                "id": "e-27d376fbf2846c0b",
-                "sourceId": "readme",
-                "section": "MCP Search Tools",
-                "line": 299,
-                "kind": "prose",
-                "excerpt": "- ~10x token savings by filtering before fetching details"
-              },
-              {
-                "id": "e-52a20c822545dc2c",
+                "id": "e-cdd25d15ca9c4911",
                 "sourceId": "readme",
                 "section": "System Requirements",
                 "line": 338,
@@ -12091,15 +12502,15 @@
                 "excerpt": "- uv: Python package manager for vector search (auto-installed if missing)"
               },
               {
-                "id": "e-02be9cc9f003e547",
+                "id": "e-70b29aac2e929430",
                 "sourceId": "readme",
                 "section": "Quick Start",
                 "line": 135,
                 "kind": "prose",
-                "excerpt": "Run npx claude-mem install --runtime worker on their computer in an interactive terminal (enable PTY in your shell tool)."
+                "excerpt": "If the user is available, run npx claude-mem install --setup browser on their computer and keep it running."
               },
               {
-                "id": "e-b341e79b7e9c2821",
+                "id": "e-0d59ebbf7e01d97b",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
@@ -12107,7 +12518,7 @@
                 "excerpt": "Your coding agent forgets everything between sessions. Claude-Mem remembers for it."
               },
               {
-                "id": "e-284dcbac4e7fc284",
+                "id": "e-1f6a4e5efb4797f7",
                 "sourceId": "readme",
                 "section": "System Requirements",
                 "line": 338,
@@ -12115,15 +12526,7 @@
                 "excerpt": "- Node.js: 20.19 or later in the 20.x line, or 22.12 or later"
               },
               {
-                "id": "e-784bcc51bad6d96a",
-                "sourceId": "readme",
-                "section": "Quick Start",
-                "line": 135,
-                "kind": "prose",
-                "excerpt": "It first asks in the terminal which agents to set up and, for Claude Code, whether to disable native auto-memory (and whether to overwrite an existing install)."
-              },
-              {
-                "id": "e-0cc0e913ac371519",
+                "id": "e-fb65161f17358a2b",
                 "sourceId": "readme",
                 "section": "Quick Start",
                 "line": 135,
@@ -12131,7 +12534,7 @@
                 "excerpt": "Then just start working: observations stream in from your first prompt, and your second session in a project opens with memory from the first."
               },
               {
-                "id": "e-1f1537786e7323a5",
+                "id": "e-9f2fc9785f459b97",
                 "sourceId": "readme",
                 "section": "What You Get",
                 "line": 222,
@@ -12139,7 +12542,7 @@
                 "excerpt": "Each session opens with a compact index of past observations, layered so the agent opens full details only when it needs them, and the header can show what each layer costs in tokens."
               },
               {
-                "id": "e-3f0d37146feb3804",
+                "id": "e-5cf8ae7b6e4c91fe",
                 "sourceId": "readme",
                 "section": "What You Get",
                 "line": 222,
@@ -12147,7 +12550,7 @@
                 "excerpt": "- ⚙️ Choose what gets injected. Fine-grained settings for what context a new session starts with."
               },
               {
-                "id": "e-36b7ebf510b4d920",
+                "id": "e-f9b6a08ba1b6d94a",
                 "sourceId": "readme",
                 "section": "Best Practices",
                 "line": 248,
@@ -12159,7 +12562,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-5a0438f27d297590"
+                "e-d8da972adecd3a94"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -12190,7 +12593,7 @@
                   "body": "문서 설명: - ⚙️ Choose what gets injected. Fine-grained settings for what context a new session starts with.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-3f0d37146feb3804"
+                    "e-5cf8ae7b6e4c91fe"
                   ],
                   "summaryKo": "에이전트의 작업 기록을 수집하거나 다음 세션에 전달할 문맥을 선택해 재사용합니다."
                 },
@@ -12199,7 +12602,7 @@
                   "body": "문서 설명: - Progressive Disclosure - Philosophy behind Claude-Mem's context priming strategy",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-36b7ebf510b4d920"
+                    "e-f9b6a08ba1b6d94a"
                   ],
                   "summaryKo": "저장된 기억을 단계적으로 조회해 필요한 작업 정보를 찾습니다."
                 },
@@ -12208,7 +12611,7 @@
                   "body": "문서 설명: Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command:",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-bea9bb3b28357cca"
+                    "e-952fbc3244a4baea"
                   ],
                   "summaryKo": "세션 사이에서 작업 정보를 유지하는 메모리 기능을 다룹니다."
                 }
@@ -12219,7 +12622,7 @@
                   "body": "이 문서 경로의 요구사항: - uv: Python package manager for vector search (auto-installed if missing)",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-52a20c822545dc2c"
+                    "e-cdd25d15ca9c4911"
                   ],
                   "scope": "required",
                   "path": " / System Requirements",
@@ -12230,7 +12633,7 @@
                   "body": "이 문서 경로의 요구사항: - Node.js: 20.19 or later in the 20.x line, or 22.12 or later",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-284dcbac4e7fc284"
+                    "e-1f6a4e5efb4797f7"
                   ],
                   "scope": "required",
                   "path": " / System Requirements",
@@ -12238,10 +12641,10 @@
                 },
                 {
                   "title": "에이전트 클라이언트",
-                  "body": "이 문서 경로의 언급: It first asks in the terminal which agents to set up and, for Claude Code, whether to disable native auto-memory (and whether to overwrite an existing install).",
+                  "body": "이 문서 경로의 언급: Or install from the plugin marketplace inside Claude Code:",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-784bcc51bad6d96a"
+                    "e-af91829159343d98"
                   ],
                   "scope": "mentioned",
                   "path": " / Quick Start",
@@ -12275,7 +12678,7 @@
                   "body": "문서에서 설명한 목적: Your coding agent forgets everything between sessions. Claude-Mem remembers for it.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-b341e79b7e9c2821"
+                    "e-0d59ebbf7e01d97b"
                   ]
                 },
                 "inputs": [
@@ -12284,7 +12687,7 @@
                     "body": "에이전트의 작업·세션 기록을 수집하는 흐름이 문서에 있습니다. 원문: “Then just start working: observations stream in from your first prompt, and your second session in a project opens with memory from the first.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-0cc0e913ac371519"
+                      "e-fb65161f17358a2b"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "에이전트의 작업·세션 기록을 수집합니다."
@@ -12296,7 +12699,7 @@
                     "body": "저장한 관측·기억을 검색하거나 다음 세션의 문맥으로 재사용합니다. 원문: “Each session opens with a compact index of past observations, layered so the agent opens full details only when it needs them, and the header can show what each layer costs in tokens.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-1f1537786e7323a5"
+                      "e-9f2fc9785f459b97"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "기록을 검색해 이후 세션의 문맥으로 재사용합니다."
@@ -12308,7 +12711,7 @@
                     "body": "이 문서 경로의 요구사항: - uv: Python package manager for vector search (auto-installed if missing)",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-52a20c822545dc2c"
+                      "e-cdd25d15ca9c4911"
                     ],
                     "scope": "required",
                     "path": " / System Requirements",
@@ -12319,7 +12722,7 @@
                     "body": "이 문서 경로의 요구사항: - Node.js: 20.19 or later in the 20.x line, or 22.12 or later",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-284dcbac4e7fc284"
+                      "e-1f6a4e5efb4797f7"
                     ],
                     "scope": "required",
                     "path": " / System Requirements",
@@ -12327,10 +12730,10 @@
                   },
                   {
                     "title": "에이전트 클라이언트",
-                    "body": "이 문서 경로의 언급: It first asks in the terminal which agents to set up and, for Claude Code, whether to disable native auto-memory (and whether to overwrite an existing install).",
+                    "body": "이 문서 경로의 언급: Or install from the plugin marketplace inside Claude Code:",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-784bcc51bad6d96a"
+                      "e-af91829159343d98"
                     ],
                     "scope": "mentioned",
                     "path": " / Quick Start",
@@ -12343,7 +12746,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-3f0d37146feb3804"
+                "e-5cf8ae7b6e4c91fe"
               ],
               "core": [
                 {
@@ -12351,7 +12754,7 @@
                   "body": "에이전트의 작업 기록을 수집하거나 다음 세션에 전달할 문맥을 선택해 재사용합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-3f0d37146feb3804"
+                    "e-5cf8ae7b6e4c91fe"
                   ]
                 },
                 {
@@ -12359,7 +12762,7 @@
                   "body": "저장된 기억을 단계적으로 조회해 필요한 작업 정보를 찾습니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-36b7ebf510b4d920"
+                    "e-f9b6a08ba1b6d94a"
                   ]
                 }
               ]
@@ -12380,13 +12783,13 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "24734d2eb7e39bc7222244559b6cfa7698cf0ef8",
+            "readmeSha": "af0dc772f3d3effeabaa5f5f328909ad66f3e637",
             "analysisReused": false
           }
         }
       ],
       "synthesis": {
-        "version": 5,
+        "version": 6,
         "coverage": {
           "total": 10,
           "classified": 10,
@@ -12410,7 +12813,10 @@
           "collectionBuilds": 0,
           "runtimeGroups": 0,
           "runtimeMissing": 0,
-          "runtimeConditions": 0
+          "runtimeConditions": 0,
+          "workflowGroups": 0,
+          "workflowMissing": 0,
+          "workflowConditions": 0
         },
         "categoryGroups": [
           {
@@ -12526,7 +12932,7 @@
               {
                 "name": "pingdotgg/t3code",
                 "evidenceIds": [
-                  "e-b40390563f8feff5"
+                  "e-1fc0666632d095f6"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -12534,7 +12940,7 @@
               {
                 "name": "thedotmack/claude-mem",
                 "evidenceIds": [
-                  "e-284dcbac4e7fc284"
+                  "e-1f6a4e5efb4797f7"
                 ],
                 "scope": "required",
                 "exampleOnly": false
@@ -12588,7 +12994,7 @@
               {
                 "name": "thedotmack/claude-mem",
                 "evidenceIds": [
-                  "e-784bcc51bad6d96a"
+                  "e-af91829159343d98"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -12664,7 +13070,7 @@
               {
                 "name": "thedotmack/claude-mem",
                 "evidenceIds": [
-                  "e-52a20c822545dc2c"
+                  "e-cdd25d15ca9c4911"
                 ],
                 "scope": "required",
                 "exampleOnly": false
@@ -12849,8 +13255,8 @@
         "references": [
           {
             "name": "cloudflare/security-audit-skill",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-2f3d84d7fb62c538"
@@ -12858,8 +13264,8 @@
           },
           {
             "name": "heygen-com/hyperframes",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-7e57f835ae4884f6"
@@ -12867,8 +13273,8 @@
           },
           {
             "name": "Nutlope/hallmark",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-81f1fd422178dcb7"
@@ -12876,8 +13282,8 @@
           },
           {
             "name": "anthropics/knowledge-work-plugins",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-dc3fa23eacca5302"
@@ -12885,8 +13291,8 @@
           },
           {
             "name": "debpalash/VoiceStudio",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-12c82ccaa38a3fa2"
@@ -12894,8 +13300,8 @@
           },
           {
             "name": "pbakaus/impeccable",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-9e8edc352b586880"
@@ -12903,8 +13309,8 @@
           },
           {
             "name": "earthtojake/text-to-cad",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-012c0a13e7927204"
@@ -12912,8 +13318,8 @@
           },
           {
             "name": "NationalSecurityAgency/ghidra",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-1d13ea76374e633d"
@@ -12921,8 +13327,8 @@
           },
           {
             "name": "pingdotgg/t3code",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-e65edae5430fd0cf"
@@ -12930,15 +13336,15 @@
           },
           {
             "name": "thedotmack/claude-mem",
-            "sourceCheckedAt": "2026-11-11T16:58:42.958Z",
-            "analyzedAt": "2026-11-11T16:58:42.958Z",
+            "sourceCheckedAt": "2026-11-12T00:08:10.331Z",
+            "analyzedAt": "2026-11-12T00:08:10.331Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-5a0438f27d297590"
+              "e-d8da972adecd3a94"
             ]
           }
         ],
-        "generatedAt": "2026-11-11T16:58:42.958Z"
+        "generatedAt": "2026-11-12T00:08:10.331Z"
       }
     }
   },

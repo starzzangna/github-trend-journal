@@ -1,3 +1,4 @@
+import { improveStart, improveCondition } from './improve-setup.mjs';
 import { readBuildConfiguration, javaBuildStart, javaBuildCondition } from './java-setup.mjs';
 import { explainSkillsSetup, installationStart, installationCondition } from './skills-setup.mjs';
 // README는 분석용 입력으로만 취급합니다. 명령을 실행하거나 문서의 지시를 따르지 않습니다.
@@ -10,7 +11,7 @@ import { analysisInputFingerprint, documentFingerprint, normalizeUsage } from '.
 import { addKoreanPresentation } from './korean.mjs';
 import { fetchLinkedDocuments } from './linked.mjs';
 import { readJavaDocs, explainRepresentatives, collectionScope } from './representatives.mjs';
-export const usageVersion = 14;
+export const usageVersion = 15;
 
 function clean(value) {
   return value.replace(/<!--[\s\S]*?-->/g, '').replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, '').replace(/<[^>]+>/g, ' ').replace(/!\[[^\]]*\]\([^)]*\)/g, '').replace(/\[([^\]]+)\]\([^)]*\)/g, '$1').replace(/[*_`]/g, '').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
@@ -87,10 +88,10 @@ export function analyzeUsage(row, markdown, now = new Date(), metadata = {}, lin
     project.conditions.push(javaBuildCondition(project.setup.build));
   }
   if (project.setup?.installation) {
-    result.start = installationStart(project.setup.installation);
+    result.start = row.name === 'shadcn/improve' ? improveStart(project.setup.installation) : installationStart(project.setup.installation);
     result.article = buildAnalysis(row, profile, result.start, context);
     result.article.project = project;
-    project.conditions.push(installationCondition(project.setup.installation));
+    project.conditions.push(row.name === 'shadcn/improve' ? improveCondition(project.setup.installation) : installationCondition(project.setup.installation));
   }
   result.article.paragraphs = [project.problem?.body || '문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.',
     `문서에서 확인한 입력: ${project.inputs.map(item => item.title).join(', ') || '미확인'}. 출력: ${project.outputs.map(item => item.title).join(', ') || '미확인'}. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다.`];

@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto';
 import { representativeSpecs } from './representatives.mjs';
 import { javaBuildPaths } from './java-setup.mjs';
+import { improveSetupPaths } from './improve-setup.mjs';
 
 // 같은 저장소·참조의 링크만 허용합니다. 일반 문서 외에 고정된 대표 항목만 추가로 읽습니다.
 function repositoryReference(repository, metadata = {}) {
@@ -71,7 +72,7 @@ export async function fetchLinkedDocuments(markdown, repository, metadata, { fet
       const bytes = await Promise.race([operation, new Promise((_, reject) => { timer = setTimeout(() => { timedOut = true; controller.abort(); reject(Object.assign(Error('문서 시간 초과'), { reason: 'timeout' })); }, timeoutMs); })]).catch(failure => { if (timedOut) throw Object.assign(Error('문서 시간 초과'), { reason: 'timeout' }); throw failure; });
       const sha = createHash('sha1').update(`blob ${bytes.length}\0`).update(bytes).digest('hex');
       totalBytes += bytes.length;
-      documents.push({ markdown: bytes.toString('utf8'), metadata: { path: target.path, sha, html_url: target.url, ...(target.setupOnly ? { setupOnly: true, format: 'build-config' } : {}), ...(target.representativeId ? { representativeId: target.representativeId, format: target.format } : {}), exampleOnly: /(?:^|\/)examples?\//i.test(target.path), sourceId: `doc-${createHash('sha256').update(target.path).digest('hex').slice(0, 12)}` } });
+      documents.push({ markdown: bytes.toString('utf8'), metadata: { path: target.path, sha, html_url: target.url, ...(target.setupOnly ? { setupOnly: true, format: target.format || 'build-config' } : {}), ...(target.representativeId ? { representativeId: target.representativeId, format: target.format } : {}), exampleOnly: /(?:^|\/)examples?\//i.test(target.path), sourceId: `doc-${createHash('sha256').update(target.path).digest('hex').slice(0, 12)}` } });
       states.push({ path: target.path, status: 'available', checkedAt: now.toISOString() });
     } catch (failure) {
       const reason = ['http', 'format', 'size-limit', 'project-size-limit', 'timeout'].includes(failure.reason) ? failure.reason : 'network';
@@ -80,6 +81,17 @@ export async function fetchLinkedDocuments(markdown, repository, metadata, { fet
   };
   const generalTargets = repository === 'TheAlgorithms/Java' ? repositoryLinks(markdown, repository, metadata).filter(item => item.path === 'DIRECTORY.md') : linkedPaths(markdown, repository, metadata);
   for (const target of generalTargets) await collect(target);
+  // improve의 공식 스킬 한 파일과 그 파일이 직접 연결한 실행 위임 문서만 읽습니다.
+  if (repository === 'shadcn/improve' && /An agent skill that audits any codebase and writes implementation plans for other agents to execute/i.test(markdown.replace(/<!--[\s\S]*?-->/g, '').replace(/(`{3,}|~{3,})[\s\S]*?\1/g, ''))) {
+    const ref = repositoryReference(repository, metadata);
+    if (ref) {
+      const path = improveSetupPaths[0];
+      await collect({ path, url: `https://github.com/${repository}/blob/${ref}/${path}`, raw: `https://raw.githubusercontent.com/${repository}/${ref}/${path}`, setupOnly: true, format: 'markdown' });
+      const parent = documents.find(item => item.metadata.path === path);
+      const child = parent && repositoryLinks(parent.markdown, repository, parent.metadata).find(item => item.path === improveSetupPaths[1]);
+      if (child) await collect({ ...child, setupOnly: true, format: 'markdown' });
+    }
+  }
   // Java의 공통 빌드 근거는 확인한 두 설정 파일로 한정합니다. 숨김 경로를 일반 탐색에 허용하지 않습니다.
   if (repository === 'TheAlgorithms/Java' && /implementations are intended for learning purposes/i.test(markdown.replace(/<!--[\s\S]*?-->/g, '').replace(/(`{3,}|~{3,})[\s\S]*?\1/g, ''))) {
     const ref = repositoryReference(repository, metadata);

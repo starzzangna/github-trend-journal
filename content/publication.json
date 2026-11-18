@@ -3,17 +3,17 @@
   "reports": {
     "daily": {
       "period": "daily",
-      "issue": "daily:2026-11-17",
-      "collectedAt": "2026-11-17T08:08:14.628Z",
-      "publishedAt": "2026-11-17T08:08:14.628Z",
-      "title": "Today · AI 에이전트 스킬·AI 에이전트 운영 프로젝트 분석",
-      "summary": "상위 10개 중 공식 문서 근거로 8개의 용도를 분류했습니다. AI 에이전트 스킬 5개, AI 에이전트 운영 2개가 포함됩니다. 분류 미확정은 2개입니다.",
+      "issue": "daily:2026-11-18",
+      "collectedAt": "2026-11-18T07:42:50.784Z",
+      "publishedAt": "2026-11-18T07:42:50.784Z",
+      "title": "Today · AI 에이전트 스킬·음성 제작 프로젝트 분석",
+      "summary": "상위 10개 중 공식 문서 근거로 6개의 용도를 분류했습니다. AI 에이전트 스킬 4개, 음성 제작 1개가 포함됩니다. 분류 미확정은 4개입니다.",
       "analysis": [
-        "입력을 설명할 근거가 있는 프로젝트는 1개, 출력은 0개, 도입 조건은 6개입니다. 공통 입력 해당 없음 0개, 출력 해당 없음 0개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 10개·출력 10개입니다. 근거 부족은 입력 9개·출력 10개이며 분석 자료 없음 0개는 별도입니다.",
+        "입력을 설명할 근거가 있는 프로젝트는 2개, 출력은 1개, 도입 조건은 6개입니다. 공통 입력 해당 없음 0개, 출력 해당 없음 0개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 10개·출력 10개입니다. 근거 부족은 입력 8개·출력 9개이며 분석 자료 없음 0개는 별도입니다.",
         "대표 항목 사용 예는 0개 프로젝트에서 0개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "설치·실행 조건을 별도 분석한 프로젝트 0개 중 공통 설치 경로는 0개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 0개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 0개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
         "계획 작성·실행 위임 등 작업 단계의 조건은 0개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 0개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
-        "같은 용도의 비교는 2개 분야에서 제공합니다. 단독 항목 1개 분야도 처리 방식·입력·결과물·도입 조건을 요약합니다. 같은 발행호 안의 문서 설명을 비교하며 성능·우열·상호 대체 가능성을 판정하지 않습니다.",
+        "같은 용도의 비교는 1개 분야에서 제공합니다. 단독 항목 2개 분야도 처리 방식·입력·결과물·도입 조건을 요약합니다. 같은 발행호 안의 문서 설명을 비교하며 성능·우열·상호 대체 가능성을 판정하지 않습니다.",
         "공통으로 확인한 항목은 에이전트 클라이언트(5개), 서비스 인증(4개), 운영체제별 실행 경로(4개), Python(3개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
         "기본 항목 충족 0개 · 부분 분석 10개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
@@ -21,940 +21,12 @@
       "source": "https://github.com/trending?since=daily",
       "rows": [
         {
-          "name": "ag-ui-protocol/ag-ui",
-          "url": "https://github.com/ag-ui-protocol/ag-ui",
-          "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
-          "language": "TypeScript",
-          "stars": 19535,
-          "periodStars": 791,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-15T06:48:56.370Z",
-            "analyzedAt": "2026-11-15T06:48:56.370Z",
-            "sourceCheckedAt": "2026-11-15T06:48:56.370Z",
-            "analysisInputFingerprint": "818d573767f5710df6aeb9d96fbdd1e435e0161758c8e9304f391346c657b51d",
-            "sourceFingerprint": "79dc3d60eb6b805b67295e654ecfe59e00becc3e1f0f679dbb2a69dd0237f477",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-15T06:48:56.370Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "ag-ui-protocol/ag-ui",
-                "path": "README.md",
-                "sha": "df7ba5f63308abf31d81d45288dac37d22e4efe7",
-                "fetchedAt": "2026-11-15T06:48:56.370Z",
-                "url": "https://github.com/ag-ui-protocol/ag-ui/blob/main/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-49d9517e19ef1bba",
-                "sourceId": "readme",
-                "section": "Where does AGUI fit in the agentic protocol stack?",
-                "line": 65,
-                "kind": "prose",
-                "excerpt": "- MCP gives agents tools"
-              },
-              {
-                "id": "e-0b8186348254aaf4",
-                "sourceId": "readme",
-                "section": "Why AG-UI?",
-                "line": 60,
-                "kind": "prose",
-                "excerpt": "AG-UI was developed based on real-world requirements and practical experience building in-app agent interactions."
-              }
-            ],
-            "source": "https://github.com/ag-ui-protocol/ag-ui#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [],
-              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
-            },
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": {
-              "heading": "🚀 Getting Started",
-              "steps": [],
-              "command": "npx create-ag-ui-app my-agent-app",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "ag-ui-protocol/ag-ui · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서가 명시한 해결 문제: AG-UI was developed based on real-world requirements and practical experience building in-app agent interactions.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “🚀 Getting Started” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "해결 문제에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력·도입 조건.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 0,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서가 명시한 해결 문제: AG-UI was developed based on real-world requirements and practical experience building in-app agent interactions.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-0b8186348254aaf4"
-                  ],
-                  "exampleOnly": false
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-0b8186348254aaf4"
-              ],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "용도 분류",
-                "핵심 기능 근거",
-                "입력",
-                "출력",
-                "도입 조건"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "df7ba5f63308abf31d81d45288dac37d22e4efe7",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "backnotprop/plannotator",
-          "url": "https://github.com/backnotprop/plannotator",
-          "description": "The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.",
-          "language": "TypeScript",
-          "stars": 12806,
-          "periodStars": 696,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-14T06:44:06.785Z",
-            "analyzedAt": "2026-11-14T06:44:06.785Z",
-            "sourceCheckedAt": "2026-11-14T06:44:06.785Z",
-            "analysisInputFingerprint": "cfd25387318bbb5b84c2e985e095e2dd3a456bd8ee648764e53458675d2a0785",
-            "sourceFingerprint": "fcf8239340edf6ddb70d4cc38ae2eaf06dc77983f809c764ebcf5d8d1c1e4a57",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-14T06:44:06.785Z",
-              "links": [
-                {
-                  "path": "apps/amp-plugin/README.md",
-                  "status": "available",
-                  "checkedAt": "2026-11-14T06:44:06.785Z"
-                },
-                {
-                  "path": "apps/hook/README.md",
-                  "status": "available",
-                  "checkedAt": "2026-11-14T06:44:06.785Z"
-                }
-              ]
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "backnotprop/plannotator",
-                "path": "README.md",
-                "sha": "4667f4c611c15e1af87b0885cdc11b5fbb604cf6",
-                "fetchedAt": "2026-11-14T06:44:06.785Z",
-                "url": "https://github.com/backnotprop/plannotator/blob/main/README.md"
-              },
-              {
-                "id": "doc-1578b3ad545c",
-                "repository": "backnotprop/plannotator",
-                "path": "apps/amp-plugin/README.md",
-                "sha": "1e33c2341a220fa0953ac231a2960e39e180330f",
-                "fetchedAt": "2026-11-14T06:44:06.785Z",
-                "url": "https://github.com/backnotprop/plannotator/blob/main/apps/amp-plugin/README.md"
-              },
-              {
-                "id": "doc-fe48af805a37",
-                "repository": "backnotprop/plannotator",
-                "path": "apps/hook/README.md",
-                "sha": "4bd16da7c2695f0db492394cfc12276ea529b84e",
-                "fetchedAt": "2026-11-14T06:44:06.785Z",
-                "url": "https://github.com/backnotprop/plannotator/blob/main/apps/hook/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-ff4fe0dc9fbb8537",
-                "sourceId": "readme",
-                "section": "Plannotator",
-                "line": 38,
-                "kind": "prose",
-                "excerpt": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work."
-              },
-              {
-                "id": "e-d2fc14113290af9b",
-                "sourceId": "readme",
-                "section": "Install",
-                "line": 222,
-                "kind": "prose",
-                "excerpt": "| README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator."
-              },
-              {
-                "id": "e-035155ad1b45352a",
-                "sourceId": "readme",
-                "section": "Plannotator Inbox",
-                "line": 89,
-                "kind": "prose",
-                "excerpt": "Any other agent reaches it over MCP with plannotator inbox mcp, and plannotator inbox --help is the guide an agent reads."
-              },
-              {
-                "id": "e-9c11b27e2d565f9b",
-                "sourceId": "readme",
-                "section": "Install",
-                "line": 222,
-                "kind": "prose",
-                "excerpt": "A full install can also contact GitHub for release resolution and agent files, Ataraxy-Labs/sem for the optional sem sidecar, and npm for Pi, selected extra skills, or the managed agent-terminal runtime."
-              },
-              {
-                "id": "e-08d5e0c15a95b170",
-                "sourceId": "readme",
-                "section": "Plannotator",
-                "line": 38,
-                "kind": "prose",
-                "excerpt": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants."
-              },
-              {
-                "id": "e-1407d9a590e4a362",
-                "sourceId": "readme",
-                "section": "Install",
-                "line": 222,
-                "kind": "prose",
-                "excerpt": "Plan review is enabled automatically via Codex's experimental Stop hook (macOS/Linux/WSL; on native Windows, Codex hooks are experimental and the installer prints manual setup steps)."
-              }
-            ],
-            "source": "https://github.com/backnotprop/plannotator#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [
-                "e-ff4fe0dc9fbb8537"
-              ],
-              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
-            },
-            "category": "AI 에이전트 운영",
-            "purpose": "AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.",
-            "audience": "여러 AI 작업을 연결하거나 관리하는 개발자",
-            "scenario": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Install",
-              "steps": [
-                "Uninstall",
-                "Try it"
-              ],
-              "command": "# macOS / Linux / WSL\ncurl -fsSL https://plannotator.ai/install.sh | bash",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "backnotprop/plannotator · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 설명한 목적: ⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [
-                {
-                  "title": "여러 에이전트의 작업 조정",
-                  "body": "문서 설명: ⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-ff4fe0dc9fbb8537"
-                  ],
-                  "summaryKo": "여러 에이전트의 역할과 작업 흐름을 조정합니다."
-                }
-              ],
-              "conditions": [
-                {
-                  "title": "운영체제별 실행 경로",
-                  "body": "이 문서 경로의 언급: Plan review is enabled automatically via Codex's experimental Stop hook (macOS/Linux/WSL; on native Windows, Codex hooks are experimental and the installer prints manual setup steps).",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-1407d9a590e4a362"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Plannotator / Install",
-                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (macOS, Linux, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "에이전트 클라이언트",
-                  "body": "이 문서 경로의 언급: | README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-d2fc14113290af9b"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Plannotator / Install",
-                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Install” 절이 시작 지점입니다. 하위 항목으로 Uninstall, Try it 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "역할이 하나인 작은 작업부터 시작해 입력·실행·종료 결과를 추적하세요. 역할을 늘릴 때 작업 누락이나 중복 수행을 구분할 수 있는지가 운영 관점의 확인 지점입니다."
-                }
-              ],
-              "verdict": "여러 에이전트의 작업 조정에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력.",
-              "coverage": {
-                "findings": 1,
-                "conditions": 2,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서에서 설명한 목적: ⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-08d5e0c15a95b170"
-                  ]
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [
-                  {
-                    "title": "운영체제별 실행 경로",
-                    "body": "이 문서 경로의 언급: Plan review is enabled automatically via Codex's experimental Stop hook (macOS/Linux/WSL; on native Windows, Codex hooks are experimental and the installer prints manual setup steps).",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-1407d9a590e4a362"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Plannotator / Install",
-                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (macOS, Linux, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "에이전트 클라이언트",
-                    "body": "이 문서 경로의 언급: | README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-d2fc14113290af9b"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Plannotator / Install",
-                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  }
-                ],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-ff4fe0dc9fbb8537"
-              ],
-              "cautions": [],
-              "core": [
-                {
-                  "title": "여러 에이전트의 작업 조정",
-                  "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-ff4fe0dc9fbb8537"
-                  ]
-                }
-              ]
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "입력",
-                "출력"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "4667f4c611c15e1af87b0885cdc11b5fbb604cf6",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "dream-num/univer",
-          "url": "https://github.com/dream-num/univer",
-          "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
-          "language": "TypeScript",
-          "stars": 28535,
-          "periodStars": 1828,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-15T06:48:56.370Z",
-            "analyzedAt": "2026-11-15T06:48:56.370Z",
-            "sourceCheckedAt": "2026-11-15T06:48:56.370Z",
-            "analysisInputFingerprint": "4f3036e6ec00c0a22e00b7df3cc82a2f54539d8a90dc620ab1fe264c22f9487f",
-            "sourceFingerprint": "5ba6dcad22c48705515461a27d39a07db67328024bda070b63d36df25aa34b66",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-15T06:48:56.370Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "dream-num/univer",
-                "path": "README.md",
-                "sha": "ea0b74e1ed93f291abb2c12d878fd9af8f9ae824",
-                "fetchedAt": "2026-11-15T06:48:56.370Z",
-                "url": "https://github.com/dream-num/univer/blob/dev/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-5a29869fbbdea5f6",
-                "sourceId": "readme",
-                "section": "💡 What is Univer?",
-                "line": 66,
-                "kind": "prose",
-                "excerpt": "Agents can use the same open-source APIs; your application supplies the model and tool orchestration."
-              },
-              {
-                "id": "e-0d62c13e76ed4b11",
-                "sourceId": "readme",
-                "section": "CLI, agent integrations, and developer skills",
-                "line": 694,
-                "kind": "prose",
-                "excerpt": "Univer Office for WorkBuddy Local Office integration, MCP previews, and draft review."
-              },
-              {
-                "id": "e-8ee0100dda1329e3",
-                "sourceId": "readme",
-                "section": "🚀 Build on the open-source foundation",
-                "line": 146,
-                "kind": "prose",
-                "excerpt": "Coordinate edits and undo/redo across features. Inserting a row inside a filter range changes both the base content and the filter range; undo needs to restore both. Each feature supplies its own changes and undo data, and the command composes their execution and history. The architecture walkthrough explains how to extend these editing workflows."
-              }
-            ],
-            "source": "https://github.com/dream-num/univer#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [
-                "e-5a29869fbbdea5f6"
-              ],
-              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
-            },
-            "category": "AI 에이전트 운영",
-            "purpose": "AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.",
-            "audience": "여러 AI 작업을 연결하거나 관리하는 개발자",
-            "scenario": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Quick start: an open-source spreadsheet editor",
-              "steps": [],
-              "command": "pnpm add @univerjs/presets @univerjs/preset-sheets-core",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "dream-num/univer · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 설명한 목적: Coordinate edits and undo/redo across features. Inserting a row inside a filter range changes both the base content and the filter range; undo needs to restore both. Each feature supplies its own changes and undo data, and the command composes their execution and history. The architecture walkthrough explains how to extend these editing workflows.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [
-                {
-                  "title": "여러 에이전트의 작업 조정",
-                  "body": "문서 설명: Agents can use the same open-source APIs; your application supplies the model and tool orchestration.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-5a29869fbbdea5f6"
-                  ],
-                  "summaryKo": "여러 에이전트의 역할과 작업 흐름을 조정합니다."
-                }
-              ],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Quick start: an open-source spreadsheet editor” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "역할이 하나인 작은 작업부터 시작해 입력·실행·종료 결과를 추적하세요. 역할을 늘릴 때 작업 누락이나 중복 수행을 구분할 수 있는지가 운영 관점의 확인 지점입니다."
-                }
-              ],
-              "verdict": "여러 에이전트의 작업 조정에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력·도입 조건.",
-              "coverage": {
-                "findings": 1,
-                "conditions": 0,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서에서 설명한 목적: Coordinate edits and undo/redo across features. Inserting a row inside a filter range changes both the base content and the filter range; undo needs to restore both. Each feature supplies its own changes and undo data, and the command composes their execution and history. The architecture walkthrough explains how to extend these editing workflows.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-8ee0100dda1329e3"
-                  ]
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-5a29869fbbdea5f6"
-              ],
-              "cautions": [],
-              "core": [
-                {
-                  "title": "여러 에이전트의 작업 조정",
-                  "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-5a29869fbbdea5f6"
-                  ]
-                }
-              ]
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "입력",
-                "출력",
-                "도입 조건"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "ea0b74e1ed93f291abb2c12d878fd9af8f9ae824",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "tradermonty/claude-trading-skills",
-          "url": "https://github.com/tradermonty/claude-trading-skills",
-          "description": "Claude Code skills for equity investors and traders — market analysis, technical charting, economic calendars, screeners, and trading strategy development.",
-          "language": "Python",
-          "stars": 6585,
-          "periodStars": 837,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analysisInputFingerprint": "ddfeb5f837d10516d4607a9cadca24810e4b09522a8d4ac016db0a09caaecd8d",
-            "sourceFingerprint": "6ca61c0a9da5ba27bec0592bed38b76ae6be81c0929351583aa5cc82d107e3a1",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-17T08:08:14.628Z",
-              "links": [
-                {
-                  "path": "docs/en/offline-quickstart.md",
-                  "status": "available",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
-                },
-                {
-                  "path": "workflows/README.md",
-                  "status": "available",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
-                }
-              ]
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "tradermonty/claude-trading-skills",
-                "path": "README.md",
-                "sha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
-                "url": "https://github.com/tradermonty/claude-trading-skills/blob/main/README.md"
-              },
-              {
-                "id": "doc-84a4435d3da4",
-                "repository": "tradermonty/claude-trading-skills",
-                "path": "docs/en/offline-quickstart.md",
-                "sha": "1e8cf08f30c1fb5b8b617571e6e92d4ea352b25d",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
-                "url": "https://github.com/tradermonty/claude-trading-skills/blob/main/docs/en/offline-quickstart.md"
-              },
-              {
-                "id": "doc-4d2cace23cf1",
-                "repository": "tradermonty/claude-trading-skills",
-                "path": "workflows/README.md",
-                "sha": "9603e37e91cccc08f0094244de05828a5196a6e7",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
-                "url": "https://github.com/tradermonty/claude-trading-skills/blob/main/workflows/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-d1c4c328b070e99c",
-                "sourceId": "readme",
-                "section": "Claude Trading Skills",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors."
-              },
-              {
-                "id": "e-b2017b5b48d1668a",
-                "sourceId": "readme",
-                "section": "Core Portfolio",
-                "line": 195,
-                "kind": "prose",
-                "excerpt": "| Skill | Summary | Integrations | Role | Status | |---|---|---|---|---| | Portfolio Manager (portfolio-manager) | Comprehensive portfolio analysis using Alpaca MCP Server integration to fetch holdings and positions, then analyze asset allocation, risk metrics, individual stock positions, diversification, and generate rebalancing recommendations."
-              },
-              {
-                "id": "e-d2a8f80f474d6e9e",
-                "sourceId": "readme",
-                "section": "See Example Outputs",
-                "line": 57,
-                "kind": "prose",
-                "excerpt": "Select a preview to open the full-size SVG; on a phone, zoom after opening."
-              },
-              {
-                "id": "e-7f05b128c265c3b6",
-                "sourceId": "readme",
-                "section": "Supported platforms",
-                "line": 132,
-                "kind": "prose",
-                "excerpt": "The shared project environment supports Python 3.11 to 3.13 on Linux, Windows, and macOS."
-              },
-              {
-                "id": "e-53852fac6506f804",
-                "sourceId": "readme",
-                "section": "API Requirements",
-                "line": 406,
-                "kind": "prose",
-                "excerpt": "Several skills require API keys for data access:"
-              },
-              {
-                "id": "e-32994c743498692c",
-                "sourceId": "readme",
-                "section": "Use with Claude Code (desktop or CLI)",
-                "line": 125,
-                "kind": "prose",
-                "excerpt": "Edit a source folder if you want to customize a skill, then run python3 scripts/packageskills.py --skill before uploading to the web app."
-              },
-              {
-                "id": "e-36fb9de5acfd4f90",
-                "sourceId": "readme",
-                "section": "Use with Claude Code (desktop or CLI)",
-                "line": 125,
-                "kind": "prose",
-                "excerpt": "Copy the desired skill folder (e.g., backtest-expert) to ~/.claude/skills/ for personal use or .claude/skills/ inside a project (see the Claude Code setup guide)."
-              },
-              {
-                "id": "e-78222c4ddef95d59",
-                "sourceId": "readme",
-                "section": "Core Skill Areas",
-                "line": 152,
-                "kind": "prose",
-                "excerpt": "This repository contains skills across the following areas:"
-              },
-              {
-                "id": "e-6427eb2f56cebf56",
-                "sourceId": "readme",
-                "section": "Claude Trading Skills",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "The goal is not to outsource buy/sell decisions to AI. The goal is to structure market review, risk management, trade planning, journaling, and continuous improvement. It is open source because the workflows, checklists, and review habits behind better trading decisions can improve through shared practice."
-              }
-            ],
-            "source": "https://github.com/tradermonty/claude-trading-skills#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [
-                "e-d1c4c328b070e99c"
-              ],
-              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
-            },
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Getting Started",
-              "steps": [
-                "Use with Claude Web App",
-                "Use with Claude Code (desktop or CLI)"
-              ],
-              "command": "",
-              "excerpt": "First time here? Read the FAQ for plan, cost, safety, and scope"
-            },
-            "article": {
-              "title": "tradermonty/claude-trading-skills · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 설명한 목적: Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [
-                {
-                  "title": "작업 절차와 검토 산출물",
-                  "body": "문서 설명: The goal is not to outsource buy/sell decisions to AI. The goal is to structure market review, risk management, trade planning, journaling, and continuous improvement. It is open source because the workflows, checklists, and review habits behind better trading decisions can improve through shared practice.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-6427eb2f56cebf56"
-                  ],
-                  "summaryKo": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다."
-                }
-              ],
-              "conditions": [
-                {
-                  "title": "Python",
-                  "body": "이 문서 경로의 언급: Edit a source folder if you want to customize a skill, then run python3 scripts/packageskills.py --skill before uploading to the web app.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-32994c743498692c"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Claude Trading Skills / Getting Started / Use with Claude Code (desktop or CLI)",
-                  "summaryKo": "설치·시작 경로에서 python3 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "서비스 인증",
-                  "body": "이 문서 경로의 요구사항: Several skills require API keys for data access:",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-53852fac6506f804"
-                  ],
-                  "scope": "required",
-                  "path": " / Claude Trading Skills / API Requirements",
-                  "summaryKo": "이 설치 경로에서는 서비스 인증 조건을 요구합니다."
-                },
-                {
-                  "title": "운영체제별 실행 경로",
-                  "body": "이 문서 경로의 언급: The shared project environment supports Python 3.11 to 3.13 on Linux, Windows, and macOS.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-7f05b128c265c3b6"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Claude Trading Skills / Supported platforms",
-                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Python 3.11, Linux, Windows, macOS) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "에이전트 클라이언트",
-                  "body": "이 문서 경로의 언급: Copy the desired skill folder (e.g., backtest-expert) to ~/.claude/skills/ for personal use or .claude/skills/ inside a project (see the Claude Code setup guide).",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-36fb9de5acfd4f90"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Claude Trading Skills / Getting Started / Use with Claude Code (desktop or CLI)",
-                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Getting Started” 절이 시작 지점입니다. 하위 항목으로 Use with Claude Web App, Use with Claude Code (desktop or CLI) 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "지침 설치 자체보다 단계별 검토 기록과 결과물이 남는지를 확인하세요. 추가 확인: 입력·출력.",
-              "coverage": {
-                "findings": 1,
-                "conditions": 4,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서에서 설명한 목적: Claude Trading Skills is a Claude Skills-based trading workflow toolkit for time-constrained individual investors.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-d1c4c328b070e99c"
-                  ]
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [
-                  {
-                    "title": "Python",
-                    "body": "이 문서 경로의 언급: Edit a source folder if you want to customize a skill, then run python3 scripts/packageskills.py --skill before uploading to the web app.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-32994c743498692c"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Claude Trading Skills / Getting Started / Use with Claude Code (desktop or CLI)",
-                    "summaryKo": "설치·시작 경로에서 python3 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "서비스 인증",
-                    "body": "이 문서 경로의 요구사항: Several skills require API keys for data access:",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-53852fac6506f804"
-                    ],
-                    "scope": "required",
-                    "path": " / Claude Trading Skills / API Requirements",
-                    "summaryKo": "이 설치 경로에서는 서비스 인증 조건을 요구합니다."
-                  },
-                  {
-                    "title": "운영체제별 실행 경로",
-                    "body": "이 문서 경로의 언급: The shared project environment supports Python 3.11 to 3.13 on Linux, Windows, and macOS.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-7f05b128c265c3b6"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Claude Trading Skills / Supported platforms",
-                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Python 3.11, Linux, Windows, macOS) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "에이전트 클라이언트",
-                    "body": "이 문서 경로의 언급: Copy the desired skill folder (e.g., backtest-expert) to ~/.claude/skills/ for personal use or .claude/skills/ inside a project (see the Claude Code setup guide).",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-36fb9de5acfd4f90"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Claude Trading Skills / Getting Started / Use with Claude Code (desktop or CLI)",
-                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  }
-                ],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-6427eb2f56cebf56"
-              ],
-              "cautions": [],
-              "core": [
-                {
-                  "title": "작업 절차와 검토 산출물",
-                  "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-6427eb2f56cebf56"
-                  ]
-                }
-              ]
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "입력",
-                "출력"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "a3c2d91c57fb18cbe5cdb5b2aaca5e34f44b63b8",
-            "analysisReused": false
-          }
-        },
-        {
           "name": "elementalsouls/Claude-BugHunter",
           "url": "https://github.com/elementalsouls/Claude-BugHunter",
           "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
           "language": "Python",
-          "stars": 7806,
-          "periodStars": 1094,
+          "stars": 9960,
+          "periodStars": 1005,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1350,514 +422,12 @@
           }
         },
         {
-          "name": "getarcaneapp/arcane",
-          "url": "https://github.com/getarcaneapp/arcane",
-          "description": "Modern Docker Management, Designed for Everyone",
-          "language": "Go",
-          "stars": 8939,
-          "periodStars": 46,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analysisInputFingerprint": "a0450237a0c936ebf50d58f859ab1a11d1bd6bf7a47234e211274eb666484011",
-            "sourceFingerprint": "fc343c3ad77cdfab9f8d864ae64064c1e26dd066d49a03e060ec7084641d0b6a",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-17T08:08:14.628Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "getarcaneapp/arcane",
-                "path": "README.md",
-                "sha": "94063cc0583ae7b52e1d376c702a9fce852f6284",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
-                "url": "https://github.com/getarcaneapp/arcane/blob/main/README.md"
-              }
-            ],
-            "evidence": [],
-            "source": "https://github.com/getarcaneapp/arcane#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [],
-              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
-            },
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": null,
-            "article": {
-              "title": "getarcaneapp/arcane · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 0,
-                "hasStart": false
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": null,
-                "inputs": [],
-                "outputs": [],
-                "conditions": [],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "용도 분류",
-                "핵심 기능 근거",
-                "시작 경로",
-                "해결 문제",
-                "입력",
-                "출력",
-                "도입 조건"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "94063cc0583ae7b52e1d376c702a9fce852f6284",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "DeanChensj/jiangshan-map",
-          "url": "https://github.com/DeanChensj/jiangshan-map",
-          "description": "江山时序 · 中国历史交互地图时间轴 (403 BCE – Present) | Interactive Historical Atlas of China across 18 dynasties, 198 territory snapshots, ancient-to-modern place genealogy & classical poetry routes",
-          "language": "JavaScript",
-          "stars": 7353,
-          "periodStars": 288,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analysisInputFingerprint": "346a3b3440f7a2e6923fba80a9a8771f4f34c5c262dafe4ce7e267c70d719902",
-            "sourceFingerprint": "b4900a0170ee030c830a3dbbd816a4d99fecadbdc955c634e509873b04883d7e",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-17T08:08:14.628Z",
-              "links": [
-                {
-                  "path": "data/atlas/README.md",
-                  "status": "available",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
-                }
-              ]
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "DeanChensj/jiangshan-map",
-                "path": "README.md",
-                "sha": "829772a299f298891803d8dff0cd16366597b0e5",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
-                "url": "https://github.com/DeanChensj/jiangshan-map/blob/main/README.md"
-              },
-              {
-                "id": "doc-24cf94d54272",
-                "repository": "DeanChensj/jiangshan-map",
-                "path": "data/atlas/README.md",
-                "sha": "98b085958719f156406be3e0f9090e6e70859ac3",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
-                "url": "https://github.com/DeanChensj/jiangshan-map/blob/main/data/atlas/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-6f1488a88539aed5",
-                "sourceId": "readme",
-                "section": "Feature 1: Scrub the Timeline to Watch Realms Rise & Fall, Track Monarchs, and Compare Ancient & Modern Borders",
-                "line": 42,
-                "kind": "prose",
-                "excerpt": "- Voice Narration: Turn on the narration toggle next to the play button and autoplay reads out each year and its events in the browser's built-in voice; it also follows a person's chronicle on autoplay (requires a browser with speech synthesis)."
-              },
-              {
-                "id": "e-57a2877903ff32be",
-                "sourceId": "readme",
-                "section": "AI Agent, MCP & LLM Integration",
-                "line": 158,
-                "kind": "prose",
-                "excerpt": "- Ready-to-Use Agent Skill: skills/jiangshan-atlas/SKILL.md (includes the zero-dependency CLI renderer skills/jiangshan-atlas/scripts/jiangshan.py)"
-              },
-              {
-                "id": "e-7e11433957e692a8",
-                "sourceId": "readme",
-                "section": "AI Agent, MCP & LLM Integration",
-                "line": 158,
-                "kind": "prose",
-                "excerpt": "Chronicles of the Realm works out of the box as a historical-geography visualization engine for LLMs, MCP Clients, and AI Agents."
-              },
-              {
-                "id": "e-f386255357c55496",
-                "sourceId": "readme",
-                "section": "Why It's Fun to Explore",
-                "line": 31,
-                "kind": "prose",
-                "excerpt": "Have you ever wondered while reading Chinese history or classical poetry:"
-              }
-            ],
-            "source": "https://github.com/DeanChensj/jiangshan-map#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [
-                "e-6f1488a88539aed5"
-              ],
-              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
-            },
-            "category": "음성 제작",
-            "purpose": "텍스트나 음성 자료를 음성 콘텐츠로 만드는 작업에 사용하는 도구 유형입니다.",
-            "audience": "음성 콘텐츠 제작자·오디오 기능 개발자",
-            "scenario": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": null,
-            "article": {
-              "title": "DeanChensj/jiangshan-map · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서가 명시한 해결 문제: Have you ever wondered while reading Chinese history or classical poetry:",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "같은 문장과 음성 샘플로 발음·말투·긴 문장의 연결 상태를 비교하세요. 짧은 샘플이 만족스럽더라도 실제 길이의 자료에서 결과가 유지되는지 확인해야 제작 흐름에 맞는지 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "해결 문제에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력·도입 조건.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 0,
-                "hasStart": false
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서가 명시한 해결 문제: Have you ever wondered while reading Chinese history or classical poetry:",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-f386255357c55496"
-                  ],
-                  "exampleOnly": false
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-f386255357c55496"
-              ],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "핵심 기능 근거",
-                "시작 경로",
-                "입력",
-                "출력",
-                "도입 조건"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "829772a299f298891803d8dff0cd16366597b0e5",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "google-labs-code/stitch-skills",
-          "url": "https://github.com/google-labs-code/stitch-skills",
-          "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-          "language": "TypeScript",
-          "stars": 9849,
-          "periodStars": 529,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-16T06:48:39.424Z",
-            "analyzedAt": "2026-11-16T06:48:39.424Z",
-            "sourceCheckedAt": "2026-11-16T06:48:39.424Z",
-            "analysisInputFingerprint": "61d28a85355963a46db3d5bac09aee4f51f1025b7f0b8837a3fd5be618fbc2d4",
-            "sourceFingerprint": "ee035b3b5f6798041eaa1accead33eab0b610a7c68257f9e04a308c9c38265d4",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-16T06:48:39.424Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "google-labs-code/stitch-skills",
-                "path": "README.md",
-                "sha": "baecaabfa0fc08d596e3d5921479321eaacac02a",
-                "fetchedAt": "2026-11-16T06:48:39.424Z",
-                "url": "https://github.com/google-labs-code/stitch-skills/blob/main/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-fe46f9727db18cf7",
-                "sourceId": "readme",
-                "section": "Stitch Design Skills",
-                "line": 1,
-                "kind": "heading",
-                "excerpt": "Stitch Design Skills"
-              },
-              {
-                "id": "e-d55c13d1f78f80b3",
-                "sourceId": "readme",
-                "section": "Codex",
-                "line": 10,
-                "kind": "prose",
-                "excerpt": "Add the Stitch Skills marketplace, then install the plugins you need."
-              },
-              {
-                "id": "e-67654f5731fa7fff",
-                "sourceId": "readme",
-                "section": "Stitch Design Skills",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard."
-              },
-              {
-                "id": "e-1497ae9a7c3636ee",
-                "sourceId": "readme",
-                "section": "OpenCode",
-                "line": 62,
-                "kind": "prose",
-                "excerpt": "Install skills and the Stitch MCP server manually:"
-              },
-              {
-                "id": "e-263fb93da3ccdd01",
-                "sourceId": "readme",
-                "section": "Build (stitch-build)",
-                "line": 140,
-                "kind": "prose",
-                "excerpt": "| Skill | Description | Prompt Example | |---|---|---| | stitch::react-components | Convert Stitch screens to React component systems with automated validation and design token consistency | · \"Convert all screens in Stitch project projects/123 to React components.\" · \"Sync the app to the last updates of the Stitch project 13039335308618232534.\" | | stitch::react-native | Convert Stitch HTML designs to production-ready React Native components with StyleSheet and platform-specific code | · \"Convert the Stitch design to React Native components with proper"
-              },
-              {
-                "id": "e-7e8e2f09864ed24c",
-                "sourceId": "readme",
-                "section": "Stitch Design Skills",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install)."
-              },
-              {
-                "id": "e-f106cb64576e0d68",
-                "sourceId": "readme",
-                "section": "Codex",
-                "line": 10,
-                "kind": "prose",
-                "excerpt": "Via the Codex UI"
-              }
-            ],
-            "source": "https://github.com/google-labs-code/stitch-skills#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [
-                "e-67654f5731fa7fff"
-              ],
-              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
-            },
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Quick Start",
-              "steps": [
-                "1. Install Plugins (Recommended)",
-                "Codex",
-                "Claude Code & Cursor"
-              ],
-              "command": "",
-              "excerpt": "The fastest way to set up the full Stitch plugin suite globally."
-            },
-            "article": {
-              "title": "google-labs-code/stitch-skills · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 설명한 목적: A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [
-                {
-                  "title": "에이전트 클라이언트",
-                  "body": "이 문서 경로의 언급: Via the Codex UI",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-f106cb64576e0d68"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex",
-                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Quick Start” 절이 시작 지점입니다. 하위 항목으로 1. Install Plugins (Recommended), Codex, Claude Code & Cursor 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "해결 문제에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 1,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서에서 설명한 목적: A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-7e8e2f09864ed24c"
-                  ]
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [
-                  {
-                    "title": "에이전트 클라이언트",
-                    "body": "이 문서 경로의 언급: Via the Codex UI",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-f106cb64576e0d68"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex",
-                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  }
-                ],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-7e8e2f09864ed24c"
-              ],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "핵심 기능 근거",
-                "입력",
-                "출력"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "baecaabfa0fc08d596e3d5921479321eaacac02a",
-            "analysisReused": false
-          }
-        },
-        {
           "name": "mvanhorn/last30days-skill",
           "url": "https://github.com/mvanhorn/last30days-skill",
           "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
           "language": "Python",
-          "stars": 68397,
-          "periodStars": 135,
+          "stars": 69402,
+          "periodStars": 696,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -2167,68 +737,135 @@
           }
         },
         {
-          "name": "NVIDIA/SkillEvaluator",
-          "url": "https://github.com/NVIDIA/SkillEvaluator",
-          "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
-          "language": "Python",
-          "stars": 3025,
-          "periodStars": 873,
+          "name": "alibaba/open-code-review",
+          "url": "https://github.com/alibaba/open-code-review",
+          "description": "Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.",
+          "language": "Go",
+          "stars": 53971,
+          "periodStars": 763,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analysisInputFingerprint": "ed113ced09091de9e0efc33a10489c7a675f2d863ccbb03e6fc828e0dbf025aa",
-            "sourceFingerprint": "da9d2a85a6c0dd3edd3c483fc344fe8df122875d49f07ab0ae4c2bdad17ea0aa",
+            "checkedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analysisInputFingerprint": "66d87f32f9971e9cc092298d5ece02ffb6aa9d01a85f50e4ecb5059b8f915d67",
+            "sourceFingerprint": "c0f140ab943d00e38a66e59bc762177e4bf35d6dc6cd4ad9b4c80be3a451e2a8",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-17T08:08:14.628Z",
-              "links": []
+              "checkedAt": "2026-11-18T07:42:50.784Z",
+              "links": [
+                {
+                  "path": "plugins/open-code-review/README.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-18T07:42:50.784Z"
+                },
+                {
+                  "path": "plugins/open-code-review/opencode/README.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-18T07:42:50.784Z"
+                }
+              ]
             },
             "sources": [
               {
                 "id": "readme",
-                "repository": "NVIDIA/SkillEvaluator",
+                "repository": "alibaba/open-code-review",
                 "path": "README.md",
-                "sha": "d39c6fb242cd56c25e87ee60b3f4bce8835add9b",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
-                "url": "https://github.com/NVIDIA/SkillEvaluator/blob/main/README.md"
+                "sha": "8728015fc50b50da660a793da84694df9652aa80",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/alibaba/open-code-review/blob/main/README.md"
+              },
+              {
+                "id": "doc-769c3942fb97",
+                "repository": "alibaba/open-code-review",
+                "path": "plugins/open-code-review/README.md",
+                "sha": "c478273e1fb63348239848446d556121c1aef814",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/alibaba/open-code-review/blob/main/plugins/open-code-review/README.md"
+              },
+              {
+                "id": "doc-b6758e689b05",
+                "repository": "alibaba/open-code-review",
+                "path": "plugins/open-code-review/opencode/README.md",
+                "sha": "5887fadd95578321eacfec4c72348c0602dc8177",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/alibaba/open-code-review/blob/main/plugins/open-code-review/opencode/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-675d0487a9a0df72",
-                "sourceId": "readme",
-                "section": "README 도입부",
-                "line": 3,
+                "id": "e-5de666f6acb0fe2c",
+                "sourceId": "doc-769c3942fb97",
+                "section": "Copilot CLI",
+                "line": 36,
                 "kind": "prose",
-                "excerpt": "Evaluate and improve AI agent skills and plugins: quality, security, overlap, compatibility, and real impact across agents"
+                "excerpt": "Install the plugin, which adds the two Agent Skills open-code-review and open-code-review-delegate."
               },
               {
-                "id": "e-82ed5c9b1e6e9303",
+                "id": "e-48f66cbea743d3c7",
                 "sourceId": "readme",
-                "section": "Check your skill without a key",
-                "line": 127,
+                "section": "Agent Skills",
+                "line": 111,
                 "kind": "prose",
-                "excerpt": "No API key, scanner, GPU or Docker is needed."
+                "excerpt": "Use the skills in Claude Code, Codex, Cursor, Kimi Code, or another agent that supports Agent Skills and can run local commands."
               },
               {
-                "id": "e-4751a35c6a168984",
+                "id": "e-b06f7822a7d0be4b",
                 "sourceId": "readme",
-                "section": "README 도입부",
-                "line": 3,
+                "section": "Documentation",
+                "line": 205,
                 "kind": "prose",
-                "excerpt": "Agent skills are folders of instructions and supporting files defined by the Agent Skills specification. SkillEvaluator is part of the NVIDIA Verified Skills pipeline."
+                "excerpt": "- MCP Server — extend the review agent with external tools"
+              },
+              {
+                "id": "e-b34f686f6c8243dc",
+                "sourceId": "readme",
+                "section": "1. Install the Skills",
+                "line": 115,
+                "kind": "prose",
+                "excerpt": "You can also install it ahead of time with npm install -g @alibaba-group/open-code-review."
+              },
+              {
+                "id": "e-a5f14a63bac608b4",
+                "sourceId": "readme",
+                "section": "Quick Start",
+                "line": 150,
+                "kind": "prose",
+                "excerpt": "The interactive UI guides you through provider selection, API key entry, and model configuration, then automatically tests connectivity."
+              },
+              {
+                "id": "e-031cfc81d62124f7",
+                "sourceId": "doc-769c3942fb97",
+                "section": "Copilot CLI",
+                "line": 36,
+                "kind": "prose",
+                "excerpt": "Install the plugin, which adds the two Agent Skills open-code-review and open-code-review-delegate. Mention /open-code-review or just describe the task; Copilot picks the skill."
+              },
+              {
+                "id": "e-7afe88cc0ebfcf72",
+                "sourceId": "readme",
+                "section": "Quick Start",
+                "line": 150,
+                "kind": "prose",
+                "excerpt": "- OCR calls the model: ocr review, the /open-code-review:review command, and the open-code-review skill use OCR's own provider configuration, not your Claude Code Team/Pro subscription login."
+              },
+              {
+                "id": "e-00b8f4c5ca04ac79",
+                "sourceId": "readme",
+                "section": "Documentation",
+                "line": 205,
+                "kind": "prose",
+                "excerpt": "- Claude Code — install a plugin with review slash commands"
               }
             ],
-            "source": "https://github.com/NVIDIA/SkillEvaluator#readme",
+            "source": "https://github.com/alibaba/open-code-review#readme",
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-675d0487a9a0df72"
+                "e-5de666f6acb0fe2c"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -2238,63 +875,50 @@
             "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
             "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
             "start": {
-              "heading": "Get started",
-              "steps": [
-                "⚡ Harness check: will your agent load your skill?"
-              ],
-              "command": "pip install skillevaluator",
+              "heading": "Quick Start",
+              "steps": [],
+              "command": "ocr config provider          # Select a built-in provider or add a custom one\nocr config model             # Pick a model for the active provider",
               "excerpt": ""
             },
             "article": {
-              "title": "NVIDIA/SkillEvaluator · 프로젝트 분석 노트",
+              "title": "alibaba/open-code-review · 프로젝트 분석 노트",
               "paragraphs": [
-                "문서에서 설명한 목적: Evaluate and improve AI agent skills and plugins: quality, security, overlap, compatibility, and real impact across agents",
+                "문서에서 설명한 목적: Install the plugin, which adds the two Agent Skills open-code-review and open-code-review-delegate. Mention /open-code-review or just describe the task; Copilot picks the skill.",
                 "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
               ],
               "findings": [
                 {
-                  "title": "스킬의 구성과 로딩",
-                  "body": "문서 설명: Agent skills are folders of instructions and supporting files defined by the Agent Skills specification. SkillEvaluator is part of the NVIDIA Verified Skills pipeline.",
+                  "title": "작업 절차와 검토 산출물",
+                  "body": "문서 설명: - Claude Code — install a plugin with review slash commands",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-4751a35c6a168984"
+                    "e-00b8f4c5ca04ac79"
                   ],
-                  "summaryKo": "작업별 지침·스크립트·자료를 스킬로 묶고 에이전트가 필요할 때 읽도록 합니다."
+                  "summaryKo": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다."
                 }
               ],
               "conditions": [
                 {
-                  "title": "컨테이너 실행",
-                  "body": "이 문서 경로의 언급: No API key, scanner, GPU or Docker is needed.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-82ed5c9b1e6e9303"
-                  ],
-                  "scope": "mentioned",
-                  "path": " /  / Quickstart / Check your skill without a key",
-                  "summaryKo": "설치·시작 경로에서 컨테이너 실행 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "연산 장치",
-                  "body": "이 문서 경로의 언급: No API key, scanner, GPU or Docker is needed.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-82ed5c9b1e6e9303"
-                  ],
-                  "scope": "mentioned",
-                  "path": " /  / Quickstart / Check your skill without a key",
-                  "summaryKo": "설치·시작 경로에서 연산 장치 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
                   "title": "서비스 인증",
-                  "body": "필수가 아닌 조건: No API key, scanner, GPU or Docker is needed.",
+                  "body": "이 문서 경로의 언급: The interactive UI guides you through provider selection, API key entry, and model configuration, then automatically tests connectivity.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-82ed5c9b1e6e9303"
+                    "e-a5f14a63bac608b4"
                   ],
-                  "scope": "not-required",
-                  "path": " /  / Quickstart / Check your skill without a key",
-                  "summaryKo": "이 문서 경로에서 서비스 인증 (GPU, Docker) 조건은 필수가 아니라고 설명합니다."
+                  "scope": "mentioned",
+                  "path": " / How to Use / CLI / Quick Start",
+                  "summaryKo": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "에이전트 클라이언트",
+                  "body": "이 문서 경로의 언급: - OCR calls the model: ocr review, the /open-code-review:review command, and the open-code-review skill use OCR's own provider configuration, not your Claude Code Team/Pro subscription login.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-7afe88cc0ebfcf72"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / How to Use / CLI / Quick Start",
+                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                 }
               ],
               "workflow": [
@@ -2304,64 +928,53 @@
                 },
                 {
                   "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Get started” 절이 시작 지점입니다. 하위 항목으로 ⚡ Harness check: will your agent load your skill? 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                  "body": "README의 “Quick Start” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
                 },
                 {
                   "title": "작은 결과물로 적합성 판단하기",
                   "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
                 }
               ],
-              "verdict": "필요한 작업의 SKILL.md와 부속 자료를 함께 가져와 적용할 수 있는지 확인하세요. 추가 확인: 입력·출력.",
+              "verdict": "지침 설치 자체보다 단계별 검토 기록과 결과물이 남는지를 확인하세요. 추가 확인: 입력·출력.",
               "coverage": {
                 "findings": 1,
-                "conditions": 3,
+                "conditions": 2,
                 "hasStart": true
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
               "project": {
                 "problem": {
                   "title": "해결 문제",
-                  "body": "문서에서 설명한 목적: Evaluate and improve AI agent skills and plugins: quality, security, overlap, compatibility, and real impact across agents",
+                  "body": "문서에서 설명한 목적: Install the plugin, which adds the two Agent Skills open-code-review and open-code-review-delegate. Mention /open-code-review or just describe the task; Copilot picks the skill.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-675d0487a9a0df72"
+                    "e-031cfc81d62124f7"
                   ]
                 },
                 "inputs": [],
                 "outputs": [],
                 "conditions": [
                   {
-                    "title": "컨테이너 실행",
-                    "body": "이 문서 경로의 언급: No API key, scanner, GPU or Docker is needed.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-82ed5c9b1e6e9303"
-                    ],
-                    "scope": "mentioned",
-                    "path": " /  / Quickstart / Check your skill without a key",
-                    "summaryKo": "설치·시작 경로에서 컨테이너 실행 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "연산 장치",
-                    "body": "이 문서 경로의 언급: No API key, scanner, GPU or Docker is needed.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-82ed5c9b1e6e9303"
-                    ],
-                    "scope": "mentioned",
-                    "path": " /  / Quickstart / Check your skill without a key",
-                    "summaryKo": "설치·시작 경로에서 연산 장치 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
                     "title": "서비스 인증",
-                    "body": "필수가 아닌 조건: No API key, scanner, GPU or Docker is needed.",
+                    "body": "이 문서 경로의 언급: The interactive UI guides you through provider selection, API key entry, and model configuration, then automatically tests connectivity.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-82ed5c9b1e6e9303"
+                      "e-a5f14a63bac608b4"
                     ],
-                    "scope": "not-required",
-                    "path": " /  / Quickstart / Check your skill without a key",
-                    "summaryKo": "이 문서 경로에서 서비스 인증 (GPU, Docker) 조건은 필수가 아니라고 설명합니다."
+                    "scope": "mentioned",
+                    "path": " / How to Use / CLI / Quick Start",
+                    "summaryKo": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "에이전트 클라이언트",
+                    "body": "이 문서 경로의 언급: - OCR calls the model: ocr review, the /open-code-review:review command, and the open-code-review skill use OCR's own provider configuration, not your Claude Code Team/Pro subscription login.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-7afe88cc0ebfcf72"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / How to Use / CLI / Quick Start",
+                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                   }
                 ],
                 "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
@@ -2370,16 +983,16 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-4751a35c6a168984"
+                "e-00b8f4c5ca04ac79"
               ],
               "cautions": [],
               "core": [
                 {
-                  "title": "스킬의 구성과 로딩",
-                  "body": "작업별 지침·스크립트·자료를 스킬로 묶고 에이전트가 필요할 때 읽도록 합니다.",
+                  "title": "작업 절차와 검토 산출물",
+                  "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-4751a35c6a168984"
+                    "e-00b8f4c5ca04ac79"
                   ]
                 }
               ]
@@ -2403,7 +1016,1454 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "d39c6fb242cd56c25e87ee60b3f4bce8835add9b",
+            "readmeSha": "8728015fc50b50da660a793da84694df9652aa80",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "Tencent/LoopForge",
+          "url": "https://github.com/Tencent/LoopForge",
+          "description": "Self-hosted workflows for coding-agent delivery. Orchestrate CodeBuddy, Codex and Claude Code with scripts and human approval gates. Includes Local workflows for coding assistants.",
+          "language": "Go",
+          "stars": 3559,
+          "periodStars": 591,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analysisInputFingerprint": "5abb35320a30cad02acce6ad9dfba6f645782eb1ebdb7e7761b21a75ccee259c",
+            "sourceFingerprint": "f6e1972112cf6a3a4955cd1c37c0baa383121c7a9717a1e197fc4d7cd0f1754c",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-18T07:42:50.784Z",
+              "links": [
+                {
+                  "path": "docs/local/usage.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-18T07:42:50.784Z"
+                },
+                {
+                  "path": "docs/api/README.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-18T07:42:50.784Z"
+                }
+              ]
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "Tencent/LoopForge",
+                "path": "README.md",
+                "sha": "8141eec354b8852ef67a908ef2547232a2e4bf9d",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/Tencent/LoopForge/blob/main/README.md"
+              },
+              {
+                "id": "doc-14d673e6dfba",
+                "repository": "Tencent/LoopForge",
+                "path": "docs/local/usage.md",
+                "sha": "cd894ba9b95cdfa66803f0a7d23d10398595f0d0",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/Tencent/LoopForge/blob/main/docs/local/usage.md"
+              },
+              {
+                "id": "doc-ac0e4a04bf39",
+                "repository": "Tencent/LoopForge",
+                "path": "docs/api/README.md",
+                "sha": "a78eb46b88b2dfa43fed3bf38e0dc0df1ac6e27d",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/Tencent/LoopForge/blob/main/docs/api/README.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-4f1163d9c4c24783",
+                "sourceId": "doc-14d673e6dfba",
+                "section": "Portable Edition",
+                "line": 132,
+                "kind": "prose",
+                "excerpt": "If you only want the portable Agent Skills workflow, use the Portable Edition."
+              },
+              {
+                "id": "e-64d473b638a95056",
+                "sourceId": "readme",
+                "section": "Why LoopForge",
+                "line": 62,
+                "kind": "prose",
+                "excerpt": "Planning, implementation, review and testing each get their own prompt, executor, model, rules, Skills and MCP tools."
+              },
+              {
+                "id": "e-0ee646c2f5c1fbb7",
+                "sourceId": "readme",
+                "section": "Features",
+                "line": 172,
+                "kind": "prose",
+                "excerpt": "| | Insights & cost | Engineering metrics, business-domain reports with static HTML/SVG export, and token/cost accounting for SOPs and conversations at public list prices."
+              },
+              {
+                "id": "e-8eb362c46fb55d59",
+                "sourceId": "readme",
+                "section": "Quick start",
+                "line": 72,
+                "kind": "prose",
+                "excerpt": "The installer checks Docker, Compose, Python 3 and curl and offers to install missing components."
+              },
+              {
+                "id": "e-81b3fb2f8658a0ea",
+                "sourceId": "readme",
+                "section": "Quick start",
+                "line": 72,
+                "kind": "prose",
+                "excerpt": "Host Go and Node.js installations are not required."
+              },
+              {
+                "id": "e-cf2928c2736e2aee",
+                "sourceId": "readme",
+                "section": "Why LoopForge",
+                "line": 62,
+                "kind": "prose",
+                "excerpt": "Ask a coding agent to \"fix this bug\" and the result depends on that run. It might skip the plan, forget the tests, review its own code, or stop halfway without anyone noticing. That's fine for a demo, but it isn't how a team ships."
+              },
+              {
+                "id": "e-61a9f3634e69343a",
+                "sourceId": "readme",
+                "section": "Quick start",
+                "line": 72,
+                "kind": "prose",
+                "excerpt": "Configure model API keys and GitHub authorization after startup."
+              },
+              {
+                "id": "e-c13ed768c497ff0d",
+                "sourceId": "readme",
+                "section": "Quick start",
+                "line": 72,
+                "kind": "prose",
+                "excerpt": "Python/curl installation supports apt, dnf and yum on Linux; the Compose plugin supports x8664/arm64 and verifies the official release SHA-256."
+              },
+              {
+                "id": "e-ee7ca7ae28bf2d90",
+                "sourceId": "readme",
+                "section": "Quick start",
+                "line": 72,
+                "kind": "prose",
+                "excerpt": "macOS needs a working Python 3 and Docker Desktop; Homebrew can install missing components."
+              },
+              {
+                "id": "e-90d15018e97dace7",
+                "sourceId": "readme",
+                "section": "What you need for real work",
+                "line": 102,
+                "kind": "prose",
+                "excerpt": "| Executor | Credentials | Installation | | --- | --- | --- | | CodeBuddy | Personal key, or a shared key an administrator configures for chat and SOP runs | In the Docker image | | Codex | Personal key; a connected execution machine can use its local login | In the Docker image | | Claude Code | Personal key; a connected execution machine can use its local login | Installed from npm on first use, then cached | | OpenCode · Kimi Code · Pi | Personal key only | Installed from npm on first use, then cached | | DeepSeek Harness | Personal key only | In the"
+              }
+            ],
+            "source": "https://github.com/Tencent/LoopForge#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Quick start",
+              "steps": [
+                "Try it without an API key",
+                "What you need for real work"
+              ],
+              "command": "git clone https://github.com/Tencent/LoopForge.git\ncd LoopForge\n./start.sh",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "Tencent/LoopForge · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서가 명시한 해결 문제: Ask a coding agent to \"fix this bug\" and the result depends on that run. It might skip the plan, forget the tests, review its own code, or stop halfway without anyone noticing. That's fine for a demo, but it isn't how a team ships.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "Python",
+                  "body": "이 문서 경로의 언급: The installer checks Docker, Compose, Python 3 and curl and offers to install missing components.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-8eb362c46fb55d59"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Quick start",
+                  "summaryKo": "설치·시작 경로에서 Python 3 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "Node.js",
+                  "body": "필수가 아닌 조건: Host Go and Node.js installations are not required.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-81b3fb2f8658a0ea"
+                  ],
+                  "scope": "not-required",
+                  "path": " / Quick start",
+                  "summaryKo": "이 문서 경로에서 Node.js 조건은 필수가 아니라고 설명합니다."
+                },
+                {
+                  "title": "컨테이너 실행",
+                  "body": "이 문서 경로의 언급: The installer checks Docker, Compose, Python 3 and curl and offers to install missing components.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-8eb362c46fb55d59"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Quick start",
+                  "summaryKo": "설치·시작 경로에서 컨테이너 실행 (Docker, Python 3) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "서비스 인증",
+                  "body": "이 문서 경로의 언급: Configure model API keys and GitHub authorization after startup.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-61a9f3634e69343a"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Quick start",
+                  "summaryKo": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "운영체제별 실행 경로",
+                  "body": "이 문서 경로의 언급: Python/curl installation supports apt, dnf and yum on Linux; the Compose plugin supports x8664/arm64 and verifies the official release SHA-256.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-c13ed768c497ff0d"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Quick start",
+                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Python, Linux) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "런타임·설치 도구",
+                  "body": "이 문서 경로의 언급: macOS needs a working Python 3 and Docker Desktop; Homebrew can install missing components.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-ee7ca7ae28bf2d90"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Quick start",
+                  "summaryKo": "설치·시작 경로에서 런타임·설치 도구 (macOS, Python 3, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Quick start” 절이 시작 지점입니다. 하위 항목으로 Try it without an API key, What you need for real work 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "해결 문제에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 6,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": {
+                  "title": "해결 문제",
+                  "body": "문서가 명시한 해결 문제: Ask a coding agent to \"fix this bug\" and the result depends on that run. It might skip the plan, forget the tests, review its own code, or stop halfway without anyone noticing. That's fine for a demo, but it isn't how a team ships.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-cf2928c2736e2aee"
+                  ],
+                  "exampleOnly": false
+                },
+                "inputs": [],
+                "outputs": [],
+                "conditions": [
+                  {
+                    "title": "Python",
+                    "body": "이 문서 경로의 언급: The installer checks Docker, Compose, Python 3 and curl and offers to install missing components.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-8eb362c46fb55d59"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Quick start",
+                    "summaryKo": "설치·시작 경로에서 Python 3 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "Node.js",
+                    "body": "필수가 아닌 조건: Host Go and Node.js installations are not required.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-81b3fb2f8658a0ea"
+                    ],
+                    "scope": "not-required",
+                    "path": " / Quick start",
+                    "summaryKo": "이 문서 경로에서 Node.js 조건은 필수가 아니라고 설명합니다."
+                  },
+                  {
+                    "title": "컨테이너 실행",
+                    "body": "이 문서 경로의 언급: The installer checks Docker, Compose, Python 3 and curl and offers to install missing components.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-8eb362c46fb55d59"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Quick start",
+                    "summaryKo": "설치·시작 경로에서 컨테이너 실행 (Docker, Python 3) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "서비스 인증",
+                    "body": "이 문서 경로의 언급: Configure model API keys and GitHub authorization after startup.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-61a9f3634e69343a"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Quick start",
+                    "summaryKo": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "운영체제별 실행 경로",
+                    "body": "이 문서 경로의 언급: Python/curl installation supports apt, dnf and yum on Linux; the Compose plugin supports x8664/arm64 and verifies the official release SHA-256.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-c13ed768c497ff0d"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Quick start",
+                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Python, Linux) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "런타임·설치 도구",
+                    "body": "이 문서 경로의 언급: macOS needs a working Python 3 and Docker Desktop; Homebrew can install missing components.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-ee7ca7ae28bf2d90"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Quick start",
+                    "summaryKo": "설치·시작 경로에서 런타임·설치 도구 (macOS, Python 3, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [
+                "e-cf2928c2736e2aee"
+              ],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "입력",
+                "출력"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "8141eec354b8852ef67a908ef2547232a2e4bf9d",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "dream-num/univer",
+          "url": "https://github.com/dream-num/univer",
+          "description": "Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.",
+          "language": "TypeScript",
+          "stars": 29503,
+          "periodStars": 1774,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-15T06:48:56.370Z",
+            "analyzedAt": "2026-11-15T06:48:56.370Z",
+            "sourceCheckedAt": "2026-11-15T06:48:56.370Z",
+            "analysisInputFingerprint": "4f3036e6ec00c0a22e00b7df3cc82a2f54539d8a90dc620ab1fe264c22f9487f",
+            "sourceFingerprint": "5ba6dcad22c48705515461a27d39a07db67328024bda070b63d36df25aa34b66",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-15T06:48:56.370Z",
+              "links": []
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "dream-num/univer",
+                "path": "README.md",
+                "sha": "ea0b74e1ed93f291abb2c12d878fd9af8f9ae824",
+                "fetchedAt": "2026-11-15T06:48:56.370Z",
+                "url": "https://github.com/dream-num/univer/blob/dev/README.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-5a29869fbbdea5f6",
+                "sourceId": "readme",
+                "section": "💡 What is Univer?",
+                "line": 66,
+                "kind": "prose",
+                "excerpt": "Agents can use the same open-source APIs; your application supplies the model and tool orchestration."
+              },
+              {
+                "id": "e-0d62c13e76ed4b11",
+                "sourceId": "readme",
+                "section": "CLI, agent integrations, and developer skills",
+                "line": 694,
+                "kind": "prose",
+                "excerpt": "Univer Office for WorkBuddy Local Office integration, MCP previews, and draft review."
+              },
+              {
+                "id": "e-8ee0100dda1329e3",
+                "sourceId": "readme",
+                "section": "🚀 Build on the open-source foundation",
+                "line": 146,
+                "kind": "prose",
+                "excerpt": "Coordinate edits and undo/redo across features. Inserting a row inside a filter range changes both the base content and the filter range; undo needs to restore both. Each feature supplies its own changes and undo data, and the command composes their execution and history. The architecture walkthrough explains how to extend these editing workflows."
+              }
+            ],
+            "source": "https://github.com/dream-num/univer#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [
+                "e-5a29869fbbdea5f6"
+              ],
+              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
+            },
+            "category": "AI 에이전트 운영",
+            "purpose": "AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.",
+            "audience": "여러 AI 작업을 연결하거나 관리하는 개발자",
+            "scenario": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick start: an open-source spreadsheet editor",
+              "steps": [],
+              "command": "pnpm add @univerjs/presets @univerjs/preset-sheets-core",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "dream-num/univer · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 설명한 목적: Coordinate edits and undo/redo across features. Inserting a row inside a filter range changes both the base content and the filter range; undo needs to restore both. Each feature supplies its own changes and undo data, and the command composes their execution and history. The architecture walkthrough explains how to extend these editing workflows.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [
+                {
+                  "title": "여러 에이전트의 작업 조정",
+                  "body": "문서 설명: Agents can use the same open-source APIs; your application supplies the model and tool orchestration.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-5a29869fbbdea5f6"
+                  ],
+                  "summaryKo": "여러 에이전트의 역할과 작업 흐름을 조정합니다."
+                }
+              ],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Quick start: an open-source spreadsheet editor” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "역할이 하나인 작은 작업부터 시작해 입력·실행·종료 결과를 추적하세요. 역할을 늘릴 때 작업 누락이나 중복 수행을 구분할 수 있는지가 운영 관점의 확인 지점입니다."
+                }
+              ],
+              "verdict": "여러 에이전트의 작업 조정에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력·도입 조건.",
+              "coverage": {
+                "findings": 1,
+                "conditions": 0,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": {
+                  "title": "해결 문제",
+                  "body": "문서에서 설명한 목적: Coordinate edits and undo/redo across features. Inserting a row inside a filter range changes both the base content and the filter range; undo needs to restore both. Each feature supplies its own changes and undo data, and the command composes their execution and history. The architecture walkthrough explains how to extend these editing workflows.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-8ee0100dda1329e3"
+                  ]
+                },
+                "inputs": [],
+                "outputs": [],
+                "conditions": [],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [
+                "e-5a29869fbbdea5f6"
+              ],
+              "cautions": [],
+              "core": [
+                {
+                  "title": "여러 에이전트의 작업 조정",
+                  "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-5a29869fbbdea5f6"
+                  ]
+                }
+              ]
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "입력",
+                "출력",
+                "도입 조건"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "ea0b74e1ed93f291abb2c12d878fd9af8f9ae824",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "getarcaneapp/arcane",
+          "url": "https://github.com/getarcaneapp/arcane",
+          "description": "Modern Docker Management, Designed for Everyone",
+          "language": "Go",
+          "stars": 9495,
+          "periodStars": 618,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-17T08:08:14.628Z",
+            "analyzedAt": "2026-11-17T08:08:14.628Z",
+            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
+            "analysisInputFingerprint": "a0450237a0c936ebf50d58f859ab1a11d1bd6bf7a47234e211274eb666484011",
+            "sourceFingerprint": "fc343c3ad77cdfab9f8d864ae64064c1e26dd066d49a03e060ec7084641d0b6a",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-17T08:08:14.628Z",
+              "links": []
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "getarcaneapp/arcane",
+                "path": "README.md",
+                "sha": "94063cc0583ae7b52e1d376c702a9fce852f6284",
+                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "url": "https://github.com/getarcaneapp/arcane/blob/main/README.md"
+              }
+            ],
+            "evidence": [],
+            "source": "https://github.com/getarcaneapp/arcane#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": null,
+            "article": {
+              "title": "getarcaneapp/arcane · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 0,
+                "hasStart": false
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [],
+                "outputs": [],
+                "conditions": [],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "시작 경로",
+                "해결 문제",
+                "입력",
+                "출력",
+                "도입 조건"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "94063cc0583ae7b52e1d376c702a9fce852f6284",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "google-labs-code/stitch-skills",
+          "url": "https://github.com/google-labs-code/stitch-skills",
+          "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
+          "language": "TypeScript",
+          "stars": 10222,
+          "periodStars": 350,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-16T06:48:39.424Z",
+            "analyzedAt": "2026-11-16T06:48:39.424Z",
+            "sourceCheckedAt": "2026-11-16T06:48:39.424Z",
+            "analysisInputFingerprint": "61d28a85355963a46db3d5bac09aee4f51f1025b7f0b8837a3fd5be618fbc2d4",
+            "sourceFingerprint": "ee035b3b5f6798041eaa1accead33eab0b610a7c68257f9e04a308c9c38265d4",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-16T06:48:39.424Z",
+              "links": []
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "google-labs-code/stitch-skills",
+                "path": "README.md",
+                "sha": "baecaabfa0fc08d596e3d5921479321eaacac02a",
+                "fetchedAt": "2026-11-16T06:48:39.424Z",
+                "url": "https://github.com/google-labs-code/stitch-skills/blob/main/README.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-fe46f9727db18cf7",
+                "sourceId": "readme",
+                "section": "Stitch Design Skills",
+                "line": 1,
+                "kind": "heading",
+                "excerpt": "Stitch Design Skills"
+              },
+              {
+                "id": "e-d55c13d1f78f80b3",
+                "sourceId": "readme",
+                "section": "Codex",
+                "line": 10,
+                "kind": "prose",
+                "excerpt": "Add the Stitch Skills marketplace, then install the plugins you need."
+              },
+              {
+                "id": "e-67654f5731fa7fff",
+                "sourceId": "readme",
+                "section": "Stitch Design Skills",
+                "line": 1,
+                "kind": "prose",
+                "excerpt": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard."
+              },
+              {
+                "id": "e-1497ae9a7c3636ee",
+                "sourceId": "readme",
+                "section": "OpenCode",
+                "line": 62,
+                "kind": "prose",
+                "excerpt": "Install skills and the Stitch MCP server manually:"
+              },
+              {
+                "id": "e-263fb93da3ccdd01",
+                "sourceId": "readme",
+                "section": "Build (stitch-build)",
+                "line": 140,
+                "kind": "prose",
+                "excerpt": "| Skill | Description | Prompt Example | |---|---|---| | stitch::react-components | Convert Stitch screens to React component systems with automated validation and design token consistency | · \"Convert all screens in Stitch project projects/123 to React components.\" · \"Sync the app to the last updates of the Stitch project 13039335308618232534.\" | | stitch::react-native | Convert Stitch HTML designs to production-ready React Native components with StyleSheet and platform-specific code | · \"Convert the Stitch design to React Native components with proper"
+              },
+              {
+                "id": "e-7e8e2f09864ed24c",
+                "sourceId": "readme",
+                "section": "Stitch Design Skills",
+                "line": 1,
+                "kind": "prose",
+                "excerpt": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install)."
+              },
+              {
+                "id": "e-f106cb64576e0d68",
+                "sourceId": "readme",
+                "section": "Codex",
+                "line": 10,
+                "kind": "prose",
+                "excerpt": "Via the Codex UI"
+              }
+            ],
+            "source": "https://github.com/google-labs-code/stitch-skills#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [
+                "e-67654f5731fa7fff"
+              ],
+              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
+            },
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quick Start",
+              "steps": [
+                "1. Install Plugins (Recommended)",
+                "Codex",
+                "Claude Code & Cursor"
+              ],
+              "command": "",
+              "excerpt": "The fastest way to set up the full Stitch plugin suite globally."
+            },
+            "article": {
+              "title": "google-labs-code/stitch-skills · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 설명한 목적: A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "에이전트 클라이언트",
+                  "body": "이 문서 경로의 언급: Via the Codex UI",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-f106cb64576e0d68"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex",
+                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Quick Start” 절이 시작 지점입니다. 하위 항목으로 1. Install Plugins (Recommended), Codex, Claude Code & Cursor 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
+                }
+              ],
+              "verdict": "해결 문제에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 1,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": {
+                  "title": "해결 문제",
+                  "body": "문서에서 설명한 목적: A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-7e8e2f09864ed24c"
+                  ]
+                },
+                "inputs": [],
+                "outputs": [],
+                "conditions": [
+                  {
+                    "title": "에이전트 클라이언트",
+                    "body": "이 문서 경로의 언급: Via the Codex UI",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-f106cb64576e0d68"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex",
+                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [
+                "e-7e8e2f09864ed24c"
+              ],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "핵심 기능 근거",
+                "입력",
+                "출력"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "baecaabfa0fc08d596e3d5921479321eaacac02a",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "description": "Cursor plugin specification and official plugins",
+          "language": "TypeScript",
+          "stars": 16999,
+          "periodStars": 201,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analysisInputFingerprint": "26868314c625f9664cfba427fdcba82657837a867f1e85d4e2705e395fb7cbbd",
+            "sourceFingerprint": "598e37dc3ecb120df188496cd2789c01f2ca2a2250539f4afa4cd656aceffb18",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-18T07:42:50.784Z",
+              "links": []
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "cursor/plugins",
+                "path": "README.md",
+                "sha": "ee488e42344cc6ec6bfed86ace1fb64d7f9eae9e",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/cursor/plugins/blob/main/README.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-f2ae0df2abe5bcd8",
+                "sourceId": "readme",
+                "section": "Plugins",
+                "line": 5,
+                "kind": "prose",
+                "excerpt": "| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions."
+              },
+              {
+                "id": "e-99abe13cbc0f8a96",
+                "sourceId": "readme",
+                "section": "Repository structure",
+                "line": 150,
+                "kind": "prose",
+                "excerpt": "The root .cursor-plugin/marketplace.json lists all plugins, and each plugin has its own manifest:"
+              },
+              {
+                "id": "e-3a4ccb9bddff90eb",
+                "sourceId": "readme",
+                "section": "Plugins",
+                "line": 5,
+                "kind": "prose",
+                "excerpt": "| | thermos | Thermos | Cursor | Developer Tools | Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows."
+              },
+              {
+                "id": "e-f7a1e12cad5ca17e",
+                "sourceId": "readme",
+                "section": "Repository structure",
+                "line": 150,
+                "kind": "prose",
+                "excerpt": "This is a multi-plugin marketplace repository."
+              },
+              {
+                "id": "e-01804b1601081369",
+                "sourceId": "readme",
+                "section": "Plugins",
+                "line": 5,
+                "kind": "prose",
+                "excerpt": "| | tailscale | Tailscale | Cursor | Integrations | Let Grok Bot reach MCP servers on your private Tailscale network: connect your own tailnet, or your team's company tailnets turned on by a team admin, with each member using their own device."
+              }
+            ],
+            "source": "https://github.com/cursor/plugins#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [
+                "e-f2ae0df2abe5bcd8"
+              ],
+              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
+            },
+            "category": "음성 제작",
+            "purpose": "텍스트나 음성 자료를 음성 콘텐츠로 만드는 작업에 사용하는 도구 유형입니다.",
+            "audience": "음성 콘텐츠 제작자·오디오 기능 개발자",
+            "scenario": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": null,
+            "article": {
+              "title": "cursor/plugins · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 텍스트. 출력: 생성 음성. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [
+                {
+                  "title": "음성을 텍스트로 옮기는 작업",
+                  "body": "문서 설명: | | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-f2ae0df2abe5bcd8"
+                  ],
+                  "summaryKo": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다."
+                }
+              ],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "같은 문장과 음성 샘플로 발음·말투·긴 문장의 연결 상태를 비교하세요. 짧은 샘플이 만족스럽더라도 실제 길이의 자료에서 결과가 유지되는지 확인해야 제작 흐름에 맞는지 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "음성을 텍스트로 옮기는 작업에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 도입 조건.",
+              "coverage": {
+                "findings": 1,
+                "conditions": 0,
+                "hasStart": false
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [
+                  {
+                    "title": "텍스트",
+                    "body": "음성으로 변환할 텍스트를 입력으로 받는 흐름입니다. 원문: “| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.”",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f2ae0df2abe5bcd8"
+                    ],
+                    "exampleOnly": false,
+                    "summaryKo": "음성으로 변환할 텍스트를 입력합니다."
+                  }
+                ],
+                "outputs": [
+                  {
+                    "title": "생성 음성",
+                    "body": "텍스트나 음성 생성 작업의 결과로 음성을 다룹니다. 원문: “| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.”",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f2ae0df2abe5bcd8"
+                    ],
+                    "exampleOnly": false,
+                    "summaryKo": "음성을 생성합니다."
+                  }
+                ],
+                "conditions": [],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [
+                "e-f2ae0df2abe5bcd8"
+              ],
+              "cautions": [],
+              "core": [
+                {
+                  "title": "음성을 텍스트로 옮기는 작업",
+                  "body": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-f2ae0df2abe5bcd8"
+                  ]
+                }
+              ]
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "시작 경로",
+                "해결 문제",
+                "도입 조건"
+              ],
+              "io": {
+                "input": "documented",
+                "output": "documented"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "ee488e42344cc6ec6bfed86ace1fb64d7f9eae9e",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "language": "Shell",
+          "stars": 319562,
+          "periodStars": 1917,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analysisInputFingerprint": "73527a5a45c3ce87311f2f97dbd49eb377286905edd2e8aa5e3b9e3893fe8a5e",
+            "sourceFingerprint": "1b16af646be35cba8111924870dd28e6a9b70b3db659770901e972d1f8bfa9ac",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-18T07:42:50.784Z",
+              "links": [
+                {
+                  "path": "docs/README.kimi.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-18T07:42:50.784Z"
+                },
+                {
+                  "path": "docs/README.opencode.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-18T07:42:50.784Z"
+                }
+              ]
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "obra/superpowers",
+                "path": "README.md",
+                "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/obra/superpowers/blob/main/README.md"
+              },
+              {
+                "id": "doc-6b3104fbb0be",
+                "repository": "obra/superpowers",
+                "path": "docs/README.kimi.md",
+                "sha": "0d7cd74d0b5d65c60ae44d51dcf11691ae1041f6",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/obra/superpowers/blob/main/docs/README.kimi.md"
+              },
+              {
+                "id": "doc-9c578c76a100",
+                "repository": "obra/superpowers",
+                "path": "docs/README.opencode.md",
+                "sha": "6509d8428b1d018efd8e77507191cc1b55ab6e90",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/obra/superpowers/blob/main/docs/README.opencode.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-609cec1b2960b713",
+                "sourceId": "readme",
+                "section": "Claude Code",
+                "line": 56,
+                "kind": "prose",
+                "excerpt": "Superpowers is available via the official Claude plugin marketplace"
+              },
+              {
+                "id": "e-34cd91ee382437e8",
+                "sourceId": "readme",
+                "section": "Skills Library",
+                "line": 342,
+                "kind": "heading",
+                "excerpt": "Skills Library"
+              },
+              {
+                "id": "e-74f3c07fa06d6a45",
+                "sourceId": "doc-9c578c76a100",
+                "section": "Windows install issues",
+                "line": 196,
+                "kind": "prose",
+                "excerpt": "Some Windows OpenCode builds have upstream installer issues with git-backed plugin specs, including cache paths for git+https URLs and Bun not finding git.exe even when it works in a normal terminal."
+              },
+              {
+                "id": "e-e537088362ec8cc2",
+                "sourceId": "readme",
+                "section": "Superpowers Marketplace",
+                "line": 68,
+                "kind": "prose",
+                "excerpt": "The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code."
+              }
+            ],
+            "source": "https://github.com/obra/superpowers#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Installation",
+              "steps": [
+                "Claude Code",
+                "Official Marketplace",
+                "Superpowers Marketplace"
+              ],
+              "command": "/plugin install superpowers@claude-plugins-official",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "obra/superpowers · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "운영체제별 실행 경로",
+                  "body": "이 문서 경로의 언급: Some Windows OpenCode builds have upstream installer issues with git-backed plugin specs, including cache paths for git+https URLs and Bun not finding git.exe even when it works in a normal terminal.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-74f3c07fa06d6a45"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Superpowers for OpenCode / Troubleshooting / Windows install issues",
+                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "에이전트 클라이언트",
+                  "body": "이 문서 경로의 언급: The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-e537088362ec8cc2"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Superpowers / Installation / Claude Code / Superpowers Marketplace",
+                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Installation” 절이 시작 지점입니다. 하위 항목으로 Claude Code, Official Marketplace, Superpowers Marketplace 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 2,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [],
+                "outputs": [],
+                "conditions": [
+                  {
+                    "title": "운영체제별 실행 경로",
+                    "body": "이 문서 경로의 언급: Some Windows OpenCode builds have upstream installer issues with git-backed plugin specs, including cache paths for git+https URLs and Bun not finding git.exe even when it works in a normal terminal.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-74f3c07fa06d6a45"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Superpowers for OpenCode / Troubleshooting / Windows install issues",
+                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "에이전트 클라이언트",
+                    "body": "이 문서 경로의 언급: The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-e537088362ec8cc2"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Superpowers / Installation / Claude Code / Superpowers Marketplace",
+                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "해결 문제",
+                "입력",
+                "출력"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "ag-ui-protocol/ag-ui",
+          "url": "https://github.com/ag-ui-protocol/ag-ui",
+          "description": "AG-UI: the Agent-User Interaction Protocol. Bring Agents into Frontend Applications.",
+          "language": "TypeScript",
+          "stars": 20170,
+          "periodStars": 1445,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-15T06:48:56.370Z",
+            "analyzedAt": "2026-11-15T06:48:56.370Z",
+            "sourceCheckedAt": "2026-11-15T06:48:56.370Z",
+            "analysisInputFingerprint": "818d573767f5710df6aeb9d96fbdd1e435e0161758c8e9304f391346c657b51d",
+            "sourceFingerprint": "79dc3d60eb6b805b67295e654ecfe59e00becc3e1f0f679dbb2a69dd0237f477",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-15T06:48:56.370Z",
+              "links": []
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "ag-ui-protocol/ag-ui",
+                "path": "README.md",
+                "sha": "df7ba5f63308abf31d81d45288dac37d22e4efe7",
+                "fetchedAt": "2026-11-15T06:48:56.370Z",
+                "url": "https://github.com/ag-ui-protocol/ag-ui/blob/main/README.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-49d9517e19ef1bba",
+                "sourceId": "readme",
+                "section": "Where does AGUI fit in the agentic protocol stack?",
+                "line": 65,
+                "kind": "prose",
+                "excerpt": "- MCP gives agents tools"
+              },
+              {
+                "id": "e-0b8186348254aaf4",
+                "sourceId": "readme",
+                "section": "Why AG-UI?",
+                "line": 60,
+                "kind": "prose",
+                "excerpt": "AG-UI was developed based on real-world requirements and practical experience building in-app agent interactions."
+              }
+            ],
+            "source": "https://github.com/ag-ui-protocol/ag-ui#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "🚀 Getting Started",
+              "steps": [],
+              "command": "npx create-ag-ui-app my-agent-app",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "ag-ui-protocol/ag-ui · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서가 명시한 해결 문제: AG-UI was developed based on real-world requirements and practical experience building in-app agent interactions.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “🚀 Getting Started” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "해결 문제에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력·도입 조건.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 0,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": {
+                  "title": "해결 문제",
+                  "body": "문서가 명시한 해결 문제: AG-UI was developed based on real-world requirements and practical experience building in-app agent interactions.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-0b8186348254aaf4"
+                  ],
+                  "exampleOnly": false
+                },
+                "inputs": [],
+                "outputs": [],
+                "conditions": [],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [
+                "e-0b8186348254aaf4"
+              ],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "입력",
+                "출력",
+                "도입 조건"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "df7ba5f63308abf31d81d45288dac37d22e4efe7",
             "analysisReused": false
           }
         }
@@ -2412,19 +2472,19 @@
         "version": 7,
         "coverage": {
           "total": 10,
-          "classified": 8,
-          "unknown": 2,
+          "classified": 6,
+          "unknown": 4,
           "complete": 0,
           "partial": 10,
           "unavailable": 0,
           "stale": 0,
-          "inputs": 1,
-          "outputs": 0,
+          "inputs": 2,
+          "outputs": 1,
           "conditions": 6,
           "inputsNotApplicable": 0,
           "outputsNotApplicable": 0,
-          "inputEvidenceMissing": 9,
-          "outputEvidenceMissing": 10,
+          "inputEvidenceMissing": 8,
+          "outputEvidenceMissing": 9,
           "exampleProjects": 0,
           "examples": 0,
           "exampleMissing": 0,
@@ -2441,28 +2501,26 @@
         "categoryGroups": [
           {
             "category": "AI 에이전트 스킬",
-            "count": 5,
+            "count": 4,
             "projects": [
-              "tradermonty/claude-trading-skills",
               "elementalsouls/Claude-BugHunter",
-              "google-labs-code/stitch-skills",
               "mvanhorn/last30days-skill",
-              "NVIDIA/SkillEvaluator"
-            ]
-          },
-          {
-            "category": "AI 에이전트 운영",
-            "count": 2,
-            "projects": [
-              "backnotprop/plannotator",
-              "dream-num/univer"
+              "alibaba/open-code-review",
+              "google-labs-code/stitch-skills"
             ]
           },
           {
             "category": "음성 제작",
             "count": 1,
             "projects": [
-              "DeanChensj/jiangshan-map"
+              "cursor/plugins"
+            ]
+          },
+          {
+            "category": "AI 에이전트 운영",
+            "count": 1,
+            "projects": [
+              "dream-num/univer"
             ]
           }
         ],
@@ -2471,52 +2529,6 @@
             "category": "AI 에이전트 스킬",
             "mode": "comparison",
             "projects": [
-              {
-                "name": "tradermonty/claude-trading-skills",
-                "state": "ready",
-                "processing": [
-                  {
-                    "title": "작업 절차와 검토 산출물",
-                    "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
-                    "kind": "interpretation",
-                    "evidenceIds": [
-                      "e-6427eb2f56cebf56"
-                    ]
-                  }
-                ],
-                "inputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "outputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "conditions": [
-                  {
-                    "title": "Python",
-                    "body": "설치·시작 경로에서 python3 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-32994c743498692c"
-                    ],
-                    "scope": "mentioned",
-                    "context": " / Claude Trading Skills / Getting Started / Use with Claude Code (desktop or CLI)"
-                  },
-                  {
-                    "title": "서비스 인증",
-                    "body": "이 설치 경로에서는 서비스 인증 조건을 요구합니다.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-53852fac6506f804"
-                    ],
-                    "scope": "required",
-                    "context": " / Claude Trading Skills / API Requirements"
-                  }
-                ]
-              },
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "state": "ready",
@@ -2573,33 +2585,6 @@
                 ]
               },
               {
-                "name": "google-labs-code/stitch-skills",
-                "state": "ready",
-                "processing": [],
-                "inputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "outputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "conditions": [
-                  {
-                    "title": "에이전트 클라이언트",
-                    "body": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-f106cb64576e0d68"
-                    ],
-                    "scope": "mentioned",
-                    "context": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex"
-                  }
-                ]
-              },
-              {
                 "name": "mvanhorn/last30days-skill",
                 "state": "ready",
                 "processing": [],
@@ -2637,15 +2622,15 @@
                 ]
               },
               {
-                "name": "NVIDIA/SkillEvaluator",
+                "name": "alibaba/open-code-review",
                 "state": "ready",
                 "processing": [
                   {
-                    "title": "스킬의 구성과 로딩",
-                    "body": "작업별 지침·스크립트·자료를 스킬로 묶고 에이전트가 필요할 때 읽도록 합니다.",
+                    "title": "작업 절차와 검토 산출물",
+                    "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-4751a35c6a168984"
+                      "e-00b8f4c5ca04ac79"
                     ]
                   }
                 ],
@@ -2661,79 +2646,109 @@
                 },
                 "conditions": [
                   {
-                    "title": "컨테이너 실행",
-                    "body": "설치·시작 경로에서 컨테이너 실행 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
+                    "title": "서비스 인증",
+                    "body": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-82ed5c9b1e6e9303"
+                      "e-a5f14a63bac608b4"
                     ],
                     "scope": "mentioned",
-                    "context": " /  / Quickstart / Check your skill without a key"
-                  },
-                  {
-                    "title": "연산 장치",
-                    "body": "설치·시작 경로에서 연산 장치 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-82ed5c9b1e6e9303"
-                    ],
-                    "scope": "mentioned",
-                    "context": " /  / Quickstart / Check your skill without a key"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "category": "AI 에이전트 운영",
-            "mode": "comparison",
-            "projects": [
-              {
-                "name": "backnotprop/plannotator",
-                "state": "ready",
-                "processing": [
-                  {
-                    "title": "여러 에이전트의 작업 조정",
-                    "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
-                    "kind": "interpretation",
-                    "evidenceIds": [
-                      "e-ff4fe0dc9fbb8537"
-                    ]
-                  }
-                ],
-                "inputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "outputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "conditions": [
-                  {
-                    "title": "운영체제별 실행 경로",
-                    "body": "설치·시작 경로에서 운영체제별 실행 경로 (macOS, Linux, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-1407d9a590e4a362"
-                    ],
-                    "scope": "mentioned",
-                    "context": " / Plannotator / Install"
+                    "context": " / How to Use / CLI / Quick Start"
                   },
                   {
                     "title": "에이전트 클라이언트",
                     "body": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-d2fc14113290af9b"
+                      "e-7afe88cc0ebfcf72"
                     ],
                     "scope": "mentioned",
-                    "context": " / Plannotator / Install"
+                    "context": " / How to Use / CLI / Quick Start"
                   }
                 ]
               },
+              {
+                "name": "google-labs-code/stitch-skills",
+                "state": "ready",
+                "processing": [],
+                "inputs": {
+                  "status": "insufficient-evidence",
+                  "claims": [],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "insufficient-evidence",
+                  "claims": [],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "에이전트 클라이언트",
+                    "body": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-f106cb64576e0d68"
+                    ],
+                    "scope": "mentioned",
+                    "context": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "category": "음성 제작",
+            "mode": "single",
+            "projects": [
+              {
+                "name": "cursor/plugins",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "음성을 텍스트로 옮기는 작업",
+                    "body": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f2ae0df2abe5bcd8"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "텍스트",
+                      "body": "음성으로 변환할 텍스트를 입력합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-f2ae0df2abe5bcd8"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "생성 음성",
+                      "body": "음성을 생성합니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-f2ae0df2abe5bcd8"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "conditions": []
+              }
+            ]
+          },
+          {
+            "category": "AI 에이전트 운영",
+            "mode": "single",
+            "projects": [
               {
                 "name": "dream-num/univer",
                 "state": "ready",
@@ -2760,28 +2775,6 @@
                 "conditions": []
               }
             ]
-          },
-          {
-            "category": "음성 제작",
-            "mode": "single",
-            "projects": [
-              {
-                "name": "DeanChensj/jiangshan-map",
-                "state": "ready",
-                "processing": [],
-                "inputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "outputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "conditions": []
-              }
-            ]
           }
         ],
         "sharedPatterns": [
@@ -2790,25 +2783,25 @@
             "title": "에이전트 클라이언트",
             "projects": [
               {
-                "name": "backnotprop/plannotator",
-                "evidenceIds": [
-                  "e-d2fc14113290af9b"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "tradermonty/claude-trading-skills",
-                "evidenceIds": [
-                  "e-36fb9de5acfd4f90"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
                   "e-4ba75c89e42471e1"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "mvanhorn/last30days-skill",
+                "evidenceIds": [
+                  "e-190f7f4030302841"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "alibaba/open-code-review",
+                "evidenceIds": [
+                  "e-7afe88cc0ebfcf72"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2822,9 +2815,9 @@
                 "exampleOnly": false
               },
               {
-                "name": "mvanhorn/last30days-skill",
+                "name": "obra/superpowers",
                 "evidenceIds": [
-                  "e-190f7f4030302841"
+                  "e-e537088362ec8cc2"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2835,14 +2828,6 @@
             "kind": "condition",
             "title": "서비스 인증",
             "projects": [
-              {
-                "name": "tradermonty/claude-trading-skills",
-                "evidenceIds": [
-                  "e-53852fac6506f804"
-                ],
-                "scope": "required",
-                "exampleOnly": false
-              },
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
@@ -2860,11 +2845,19 @@
                 "exampleOnly": false
               },
               {
-                "name": "NVIDIA/SkillEvaluator",
+                "name": "alibaba/open-code-review",
                 "evidenceIds": [
-                  "e-82ed5c9b1e6e9303"
+                  "e-a5f14a63bac608b4"
                 ],
-                "scope": "not-required",
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "Tencent/LoopForge",
+                "evidenceIds": [
+                  "e-61a9f3634e69343a"
+                ],
+                "scope": "mentioned",
                 "exampleOnly": false
               }
             ]
@@ -2873,22 +2866,6 @@
             "kind": "condition",
             "title": "운영체제별 실행 경로",
             "projects": [
-              {
-                "name": "backnotprop/plannotator",
-                "evidenceIds": [
-                  "e-1407d9a590e4a362"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "tradermonty/claude-trading-skills",
-                "evidenceIds": [
-                  "e-7f05b128c265c3b6"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
@@ -2904,6 +2881,22 @@
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
+              },
+              {
+                "name": "Tencent/LoopForge",
+                "evidenceIds": [
+                  "e-c13ed768c497ff0d"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "obra/superpowers",
+                "evidenceIds": [
+                  "e-74f3c07fa06d6a45"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
               }
             ]
           },
@@ -2911,14 +2904,6 @@
             "kind": "condition",
             "title": "Python",
             "projects": [
-              {
-                "name": "tradermonty/claude-trading-skills",
-                "evidenceIds": [
-                  "e-32994c743498692c"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
@@ -2934,6 +2919,14 @@
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
+              },
+              {
+                "name": "Tencent/LoopForge",
+                "evidenceIds": [
+                  "e-8eb362c46fb55d59"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
               }
             ]
           }
@@ -2942,71 +2935,12 @@
         "setupReviews": [],
         "references": [
           {
-            "name": "ag-ui-protocol/ag-ui",
-            "sourceCheckedAt": "2026-11-15T06:48:56.370Z",
-            "analyzedAt": "2026-11-15T06:48:56.370Z",
-            "stale": false,
-            "classificationEvidenceIds": []
-          },
-          {
-            "name": "backnotprop/plannotator",
-            "sourceCheckedAt": "2026-11-14T06:44:06.785Z",
-            "analyzedAt": "2026-11-14T06:44:06.785Z",
-            "stale": false,
-            "classificationEvidenceIds": [
-              "e-ff4fe0dc9fbb8537"
-            ]
-          },
-          {
-            "name": "dream-num/univer",
-            "sourceCheckedAt": "2026-11-15T06:48:56.370Z",
-            "analyzedAt": "2026-11-15T06:48:56.370Z",
-            "stale": false,
-            "classificationEvidenceIds": [
-              "e-5a29869fbbdea5f6"
-            ]
-          },
-          {
-            "name": "tradermonty/claude-trading-skills",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "stale": false,
-            "classificationEvidenceIds": [
-              "e-d1c4c328b070e99c"
-            ]
-          },
-          {
             "name": "elementalsouls/Claude-BugHunter",
             "sourceCheckedAt": "2026-11-16T06:48:39.424Z",
             "analyzedAt": "2026-11-16T06:48:39.424Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-19f51490a62fb69a"
-            ]
-          },
-          {
-            "name": "getarcaneapp/arcane",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "stale": false,
-            "classificationEvidenceIds": []
-          },
-          {
-            "name": "DeanChensj/jiangshan-map",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "stale": false,
-            "classificationEvidenceIds": [
-              "e-6f1488a88539aed5"
-            ]
-          },
-          {
-            "name": "google-labs-code/stitch-skills",
-            "sourceCheckedAt": "2026-11-16T06:48:39.424Z",
-            "analyzedAt": "2026-11-16T06:48:39.424Z",
-            "stale": false,
-            "classificationEvidenceIds": [
-              "e-67654f5731fa7fff"
             ]
           },
           {
@@ -3019,16 +2953,71 @@
             ]
           },
           {
-            "name": "NVIDIA/SkillEvaluator",
+            "name": "alibaba/open-code-review",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "stale": false,
+            "classificationEvidenceIds": [
+              "e-5de666f6acb0fe2c"
+            ]
+          },
+          {
+            "name": "Tencent/LoopForge",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "stale": false,
+            "classificationEvidenceIds": []
+          },
+          {
+            "name": "dream-num/univer",
+            "sourceCheckedAt": "2026-11-15T06:48:56.370Z",
+            "analyzedAt": "2026-11-15T06:48:56.370Z",
+            "stale": false,
+            "classificationEvidenceIds": [
+              "e-5a29869fbbdea5f6"
+            ]
+          },
+          {
+            "name": "getarcaneapp/arcane",
             "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
             "analyzedAt": "2026-11-17T08:08:14.628Z",
             "stale": false,
+            "classificationEvidenceIds": []
+          },
+          {
+            "name": "google-labs-code/stitch-skills",
+            "sourceCheckedAt": "2026-11-16T06:48:39.424Z",
+            "analyzedAt": "2026-11-16T06:48:39.424Z",
+            "stale": false,
             "classificationEvidenceIds": [
-              "e-675d0487a9a0df72"
+              "e-67654f5731fa7fff"
             ]
+          },
+          {
+            "name": "cursor/plugins",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "stale": false,
+            "classificationEvidenceIds": [
+              "e-f2ae0df2abe5bcd8"
+            ]
+          },
+          {
+            "name": "obra/superpowers",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "stale": false,
+            "classificationEvidenceIds": []
+          },
+          {
+            "name": "ag-ui-protocol/ag-ui",
+            "sourceCheckedAt": "2026-11-15T06:48:56.370Z",
+            "analyzedAt": "2026-11-15T06:48:56.370Z",
+            "stale": false,
+            "classificationEvidenceIds": []
           }
         ],
-        "generatedAt": "2026-11-17T08:08:14.628Z"
+        "generatedAt": "2026-11-18T07:42:50.784Z"
       }
     },
     "weekly": {
@@ -3062,25 +3051,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
+            "checkedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "13959c6a7c3d12ebf566841cc641dfc83643e74ccfa5d8589f4fe30d9b077625",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-17T08:08:14.628Z",
+              "checkedAt": "2026-11-18T07:42:50.784Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
+                  "checkedAt": "2026-11-18T07:42:50.784Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
+                  "checkedAt": "2026-11-18T07:42:50.784Z"
                 }
               ]
             },
@@ -3090,7 +3079,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "29b89543395d69bd2a5385a9e768ec9bd9015f73",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -3098,7 +3087,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "c4c656d48e41462bb7064654c2ac03a3a17ab9bb",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -7735,8 +7724,8 @@
         "references": [
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-876c10c216e10def"
@@ -7824,7 +7813,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-17T08:08:14.628Z"
+        "generatedAt": "2026-11-18T07:42:50.784Z"
       }
     },
     "monthly": {
@@ -13298,6 +13287,13 @@
       "hash": "c1a493a75ede457bfa9f23aa8faf2bed394309c850433c1974d78c55daa6d160",
       "status": "published",
       "processedAt": "2026-11-17T08:08:14.628Z"
+    },
+    {
+      "issue": "daily:2026-11-18",
+      "period": "daily",
+      "hash": "0214d768d12f83b7167853927994a22b8fe5287bd4b638287a09472f0869ca01",
+      "status": "published",
+      "processedAt": "2026-11-18T07:42:50.784Z"
     }
   ]
 }

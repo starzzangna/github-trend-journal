@@ -3,193 +3,398 @@
   "reports": {
     "daily": {
       "period": "daily",
-      "issue": "daily:2026-11-19",
-      "collectedAt": "2026-11-19T07:39:05.372Z",
-      "publishedAt": "2026-11-19T07:39:05.372Z",
-      "title": "Today · AI 에이전트 스킬·브라우저 자동화 프로젝트 분석",
-      "summary": "상위 10개 중 공식 문서 근거로 6개의 용도를 분류했습니다. AI 에이전트 스킬 3개, 브라우저 자동화 1개가 포함됩니다. 분류 미확정은 4개입니다.",
+      "issue": "daily:2026-11-20",
+      "collectedAt": "2026-11-20T07:29:44.107Z",
+      "publishedAt": "2026-11-20T07:29:44.107Z",
+      "title": "Today · AI 에이전트 스킬·다이어그램 제작 프로젝트 분석",
+      "summary": "상위 10개 중 공식 문서 근거로 5개의 용도를 분류했습니다. AI 에이전트 스킬 2개, 다이어그램 제작 1개가 포함됩니다. 분류 미확정은 5개입니다.",
       "analysis": [
-        "입력을 설명할 근거가 있는 프로젝트는 1개, 출력은 1개, 도입 조건은 6개입니다. 공통 입력 해당 없음 0개, 출력 해당 없음 0개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 10개·출력 10개입니다. 근거 부족은 입력 9개·출력 9개이며 분석 자료 없음 0개는 별도입니다.",
+        "입력을 설명할 근거가 있는 프로젝트는 2개, 출력은 1개, 도입 조건은 8개입니다. 공통 입력 해당 없음 0개, 출력 해당 없음 0개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 10개·출력 10개입니다. 근거 부족은 입력 8개·출력 9개이며 분석 자료 없음 0개는 별도입니다.",
         "대표 항목 사용 예는 0개 프로젝트에서 0개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "설치·실행 조건을 별도 분석한 프로젝트 0개 중 공통 설치 경로는 0개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 0개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 0개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
         "계획 작성·실행 위임 등 작업 단계의 조건은 0개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 0개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
         "같은 용도의 비교는 1개 분야에서 제공합니다. 단독 항목 3개 분야도 처리 방식·입력·결과물·도입 조건을 요약합니다. 같은 발행호 안의 문서 설명을 비교하며 성능·우열·상호 대체 가능성을 판정하지 않습니다.",
-        "공통으로 확인한 항목은 Python(4개), 서비스 인증(3개), 에이전트 클라이언트(3개), 운영체제별 실행 경로(3개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
+        "공통으로 확인한 항목은 운영체제별 실행 경로(6개), 에이전트 클라이언트(5개), Python(4개), 서비스 인증(2개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
         "기본 항목 충족 0개 · 부분 분석 10개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
       ],
       "source": "https://github.com/trending?since=daily",
       "rows": [
         {
-          "name": "cursor/plugins",
-          "url": "https://github.com/cursor/plugins",
-          "description": "Cursor plugin specification and official plugins",
-          "language": "TypeScript",
-          "stars": 17338,
-          "periodStars": 314,
+          "name": "elementalsouls/Claude-BugHunter",
+          "url": "https://github.com/elementalsouls/Claude-BugHunter",
+          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+          "language": "Python",
+          "stars": 13000,
+          "periodStars": 1349,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-18T07:42:50.784Z",
-            "analyzedAt": "2026-11-18T07:42:50.784Z",
-            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
-            "analysisInputFingerprint": "26868314c625f9664cfba427fdcba82657837a867f1e85d4e2705e395fb7cbbd",
-            "sourceFingerprint": "598e37dc3ecb120df188496cd2789c01f2ca2a2250539f4afa4cd656aceffb18",
+            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analysisInputFingerprint": "5f2a430f27fff34154ab1fea0d26d652fd4625600869e76495e62c5bb0dc5363",
+            "sourceFingerprint": "3a2f1085d364764913771fe360063922bbe5709a57e396e0a47cf2de00f2ae14",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-18T07:42:50.784Z",
-              "links": []
+              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "links": [
+                {
+                  "path": "INSTALL.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                },
+                {
+                  "path": "USAGE.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                }
+              ]
             },
             "sources": [
               {
                 "id": "readme",
-                "repository": "cursor/plugins",
+                "repository": "elementalsouls/Claude-BugHunter",
                 "path": "README.md",
-                "sha": "ee488e42344cc6ec6bfed86ace1fb64d7f9eae9e",
-                "fetchedAt": "2026-11-18T07:42:50.784Z",
-                "url": "https://github.com/cursor/plugins/blob/main/README.md"
+                "sha": "cd07caf4e92730b808891539a9397f1489f039d6",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/README.md"
+              },
+              {
+                "id": "doc-09b140a43ebf",
+                "repository": "elementalsouls/Claude-BugHunter",
+                "path": "INSTALL.md",
+                "sha": "0c45c09799a1e176cdff7afec2ce7ae94f0bca4c",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/INSTALL.md"
+              },
+              {
+                "id": "doc-58a825c70bcc",
+                "repository": "elementalsouls/Claude-BugHunter",
+                "path": "USAGE.md",
+                "sha": "4afa72efa79c4bc48867989ac6cb215a3cd1d093",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/USAGE.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-f2ae0df2abe5bcd8",
+                "id": "e-228a63fba4dca9fe",
                 "sourceId": "readme",
-                "section": "Plugins",
+                "section": "Quickstart",
+                "line": 44,
+                "kind": "prose",
+                "excerpt": "All 83 skills + 15 commands load namespaced under claude-bughunter: and update when you bump the plugin version — no files copied into ~/.claude/."
+              },
+              {
+                "id": "e-ca4ef9a9c8bb7b16",
+                "sourceId": "readme",
+                "section": "Runs on multiple agent harnesses",
+                "line": 106,
+                "kind": "heading",
+                "excerpt": "Runs on multiple agent harnesses"
+              },
+              {
+                "id": "e-16cf7c2ae53af62d",
+                "sourceId": "readme",
+                "section": "Runs on multiple agent harnesses",
+                "line": 106,
+                "kind": "prose",
+                "excerpt": "The skills are plain Agent Skills — the same SKILL.md format that Claude Code · OpenCode · OpenAI Codex CLI · Hermes Agent · Google AntiGravity all load."
+              },
+              {
+                "id": "e-ce24465d80498911",
+                "sourceId": "doc-09b140a43ebf",
+                "section": "Run on other harnesses (OpenCode · Codex · Hermes · Google AntiGravity)",
+                "line": 67,
+                "kind": "prose",
+                "excerpt": "Slash commands, the plugin marketplace, and the /hunt engine are Claude-Code-only; other harnesses get the skill knowledge + Burp MCP."
+              },
+              {
+                "id": "e-922ea1db3cc994a6",
+                "sourceId": "readme",
+                "section": "claude-bughunter",
+                "line": 3,
+                "kind": "prose",
+                "excerpt": "> A self-contained Claude skill bundle for bug hunting and external red-team work · 83 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com)."
+              },
+              {
+                "id": "e-5d6e306d16806e4d",
+                "sourceId": "doc-09b140a43ebf",
+                "section": "Prerequisites",
                 "line": 5,
                 "kind": "prose",
-                "excerpt": "| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions."
+                "excerpt": "- Python 3.9+ — for the cbh CLI runner"
               },
               {
-                "id": "e-99abe13cbc0f8a96",
-                "sourceId": "readme",
-                "section": "Repository structure",
-                "line": 150,
+                "id": "e-e4b6dcc979b87079",
+                "sourceId": "doc-09b140a43ebf",
+                "section": "Step 5 — (Optional) Set up the skill regenerator",
+                "line": 140,
                 "kind": "prose",
-                "excerpt": "The root .cursor-plugin/marketplace.json lists all plugins, and each plugin has its own manifest:"
+                "excerpt": "You need both keys (console.anthropic.com/billing for the API key) to run the generator."
               },
               {
-                "id": "e-3a4ccb9bddff90eb",
+                "id": "e-003ba69e5d7b6727",
                 "sourceId": "readme",
-                "section": "Plugins",
-                "line": 5,
+                "section": "What is this?",
+                "line": 29,
                 "kind": "prose",
-                "excerpt": "| | thermos | Thermos | Cursor | Developer Tools | Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows."
+                "excerpt": "claude-bughunter is a drop-in skill bundle for the Claude Code skills system. Install once and Claude Code stops being a chatbot and starts behaving like a senior bug-hunting researcher or red-team operator: it knows the techniques, the chain templates, the VRT mappings, the platform CVE chains, and the hygiene — and it stays in scope."
               },
               {
-                "id": "e-f7a1e12cad5ca17e",
+                "id": "e-b408e1bbaa02dfa5",
                 "sourceId": "readme",
-                "section": "Repository structure",
-                "line": 150,
+                "section": "Why your model switched mid-session",
+                "line": 212,
                 "kind": "prose",
-                "excerpt": "This is a multi-plugin marketplace repository."
+                "excerpt": "Separate from refusals, and easy to miss. On Opus 5, a narrow set of higher-risk cyber requests — Anthropic names exploit generation, binary-based vulnerability scanning and penetration testing — fall back to Opus 4.8 rather than being refused. You get a notice and the response is labelled with the model that answered, but in a long agentic run that is easy to scroll past, so it can look like Opus 5 quietly got worse. See why Claude switched models."
               },
               {
-                "id": "e-01804b1601081369",
+                "id": "e-ef9b2c963c642825",
                 "sourceId": "readme",
-                "section": "Plugins",
-                "line": 5,
+                "section": "Quickstart",
+                "line": 44,
                 "kind": "prose",
-                "excerpt": "| | tailscale | Tailscale | Cursor | Integrations | Let Grok Bot reach MCP servers on your private Tailscale network: connect your own tailnet, or your team's company tailnets turned on by a team admin, with each member using their own device."
+                "excerpt": "Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder."
+              },
+              {
+                "id": "e-c9eb177fcc392036",
+                "sourceId": "doc-09b140a43ebf",
+                "section": "Troubleshooting",
+                "line": 229,
+                "kind": "prose",
+                "excerpt": "| Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv"
+              },
+              {
+                "id": "e-2d8d39c0db1244f3",
+                "sourceId": "readme",
+                "section": "Quickstart",
+                "line": 44,
+                "kind": "prose",
+                "excerpt": "Option A — install as a Claude Code plugin (recommended)."
+              },
+              {
+                "id": "e-3f64c266e2d6ea7f",
+                "sourceId": "doc-58a825c70bcc",
+                "section": "8. Limitations and known issues",
+                "line": 424,
+                "kind": "prose",
+                "excerpt": "The 15 reference files load on demand, but the SKILL.md still consumes context on every trigger."
               }
             ],
-            "source": "https://github.com/cursor/plugins#readme",
+            "source": "https://github.com/elementalsouls/Claude-BugHunter#readme",
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-f2ae0df2abe5bcd8"
+                "e-228a63fba4dca9fe"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
-            "category": "음성 제작",
-            "purpose": "텍스트나 음성 자료를 음성 콘텐츠로 만드는 작업에 사용하는 도구 유형입니다.",
-            "audience": "음성 콘텐츠 제작자·오디오 기능 개발자",
-            "scenario": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다.",
+            "category": "AI 에이전트 스킬",
+            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
+            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
+            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
             "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": null,
+            "start": {
+              "heading": "Quickstart",
+              "steps": [],
+              "command": "/plugin marketplace add elementalsouls/Claude-BugHunter\n/plugin install claude-bughunter@elementalsouls",
+              "excerpt": ""
+            },
             "article": {
-              "title": "cursor/plugins · 프로젝트 분석 노트",
+              "title": "elementalsouls/Claude-BugHunter · 프로젝트 분석 노트",
               "paragraphs": [
-                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
-                "문서에서 확인한 입력: 텍스트. 출력: 생성 음성. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+                "문서가 명시한 해결 문제: Separate from refusals, and easy to miss. On Opus 5, a narrow set of higher-risk cyber requests — Anthropic names exploit generation, binary-based vulnerability scanning and penetration testing — fall back to Opus 4.8 rather than being refused. You get a notice and the response is labelled with the model that answered, but in a long agentic run that is easy to scroll past, so it can look like Opus 5 quietly got worse. See why Claude switched models.",
+                "문서에서 확인한 입력: 스킬 지침. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
               ],
               "findings": [
                 {
-                  "title": "음성을 텍스트로 옮기는 작업",
-                  "body": "문서 설명: | | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+                  "title": "작업 절차와 검토 산출물",
+                  "body": "문서 설명: > A self-contained Claude skill bundle for bug hunting and external red-team work · 83 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-f2ae0df2abe5bcd8"
+                    "e-922ea1db3cc994a6"
                   ],
-                  "summaryKo": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다."
+                  "summaryKo": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다."
                 }
               ],
-              "conditions": [],
+              "conditions": [
+                {
+                  "title": "Python",
+                  "body": "이 문서 경로의 요구사항: - Python 3.9+ — for the cbh CLI runner",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-5d6e306d16806e4d"
+                  ],
+                  "scope": "required",
+                  "path": " / Installation Guide / Prerequisites",
+                  "summaryKo": "이 설치 경로에서는 Python 3.9+ 조건을 요구합니다."
+                },
+                {
+                  "title": "서비스 인증",
+                  "body": "선택 가능한 경로: You need both keys (console.anthropic.com/billing for the API key) to run the generator.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-e4b6dcc979b87079"
+                  ],
+                  "scope": "optional",
+                  "path": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator",
+                  "summaryKo": "서비스 인증 관련 경로는 선택 사항입니다."
+                },
+                {
+                  "title": "운영체제별 실행 경로",
+                  "body": "이 문서 경로의 언급: Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-ef9b2c963c642825"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / claude-bughunter / Quickstart",
+                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (macOS, Linux, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "런타임·설치 도구",
+                  "body": "이 문서 경로의 언급: | Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-c9eb177fcc392036"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Installation Guide / Troubleshooting",
+                  "summaryKo": "설치·시작 경로에서 런타임·설치 도구 (Python 3.9, macOS, Python 3.12, python3.12, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "에이전트 클라이언트",
+                  "body": "이 문서 경로의 언급: Option A — install as a Claude Code plugin (recommended).",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-2d8d39c0db1244f3"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / claude-bughunter / Quickstart",
+                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
               "workflow": [
                 {
                   "title": "적용할 작업 정하기",
-                  "body": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다."
+                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
                 },
                 {
                   "title": "문서의 시작 경로 선택하기",
-                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
+                  "body": "README의 “Quickstart” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
                 },
                 {
                   "title": "작은 결과물로 적합성 판단하기",
-                  "body": "같은 문장과 음성 샘플로 발음·말투·긴 문장의 연결 상태를 비교하세요. 짧은 샘플이 만족스럽더라도 실제 길이의 자료에서 결과가 유지되는지 확인해야 제작 흐름에 맞는지 판단할 수 있습니다."
+                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
                 }
               ],
-              "verdict": "음성을 텍스트로 옮기는 작업에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 도입 조건.",
+              "verdict": "지침 설치 자체보다 단계별 검토 기록과 결과물이 남는지를 확인하세요. 추가 확인: 출력.",
               "coverage": {
                 "findings": 1,
-                "conditions": 0,
-                "hasStart": false
+                "conditions": 5,
+                "hasStart": true
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
               "project": {
-                "problem": null,
+                "problem": {
+                  "title": "해결 문제",
+                  "body": "문서가 명시한 해결 문제: Separate from refusals, and easy to miss. On Opus 5, a narrow set of higher-risk cyber requests — Anthropic names exploit generation, binary-based vulnerability scanning and penetration testing — fall back to Opus 4.8 rather than being refused. You get a notice and the response is labelled with the model that answered, but in a long agentic run that is easy to scroll past, so it can look like Opus 5 quietly got worse. See why Claude switched models.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-b408e1bbaa02dfa5"
+                  ],
+                  "exampleOnly": false
+                },
                 "inputs": [
                   {
-                    "title": "텍스트",
-                    "body": "음성으로 변환할 텍스트를 입력으로 받는 흐름입니다. 원문: “| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.”",
+                    "title": "스킬 지침",
+                    "body": "지침·스크립트·자료가 들어 있는 스킬을 읽어 작업에 적용합니다. 원문: “The 15 reference files load on demand, but the SKILL.md still consumes context on every trigger.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-f2ae0df2abe5bcd8"
+                      "e-3f64c266e2d6ea7f"
                     ],
                     "exampleOnly": false,
-                    "summaryKo": "음성으로 변환할 텍스트를 입력합니다."
+                    "summaryKo": "작업별 지침과 관련 자료를 스킬로 읽습니다."
                   }
                 ],
-                "outputs": [
+                "outputs": [],
+                "conditions": [
                   {
-                    "title": "생성 음성",
-                    "body": "텍스트나 음성 생성 작업의 결과로 음성을 다룹니다. 원문: “| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.”",
-                    "kind": "interpretation",
+                    "title": "Python",
+                    "body": "이 문서 경로의 요구사항: - Python 3.9+ — for the cbh CLI runner",
+                    "kind": "documented",
                     "evidenceIds": [
-                      "e-f2ae0df2abe5bcd8"
+                      "e-5d6e306d16806e4d"
                     ],
-                    "exampleOnly": false,
-                    "summaryKo": "음성을 생성합니다."
+                    "scope": "required",
+                    "path": " / Installation Guide / Prerequisites",
+                    "summaryKo": "이 설치 경로에서는 Python 3.9+ 조건을 요구합니다."
+                  },
+                  {
+                    "title": "서비스 인증",
+                    "body": "선택 가능한 경로: You need both keys (console.anthropic.com/billing for the API key) to run the generator.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-e4b6dcc979b87079"
+                    ],
+                    "scope": "optional",
+                    "path": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator",
+                    "summaryKo": "서비스 인증 관련 경로는 선택 사항입니다."
+                  },
+                  {
+                    "title": "운영체제별 실행 경로",
+                    "body": "이 문서 경로의 언급: Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-ef9b2c963c642825"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / claude-bughunter / Quickstart",
+                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (macOS, Linux, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "런타임·설치 도구",
+                    "body": "이 문서 경로의 언급: | Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-c9eb177fcc392036"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Installation Guide / Troubleshooting",
+                    "summaryKo": "설치·시작 경로에서 런타임·설치 도구 (Python 3.9, macOS, Python 3.12, python3.12, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "에이전트 클라이언트",
+                    "body": "이 문서 경로의 언급: Option A — install as a Claude Code plugin (recommended).",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-2d8d39c0db1244f3"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / claude-bughunter / Quickstart",
+                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                   }
                 ],
-                "conditions": [],
                 "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
                 "examples": [],
                 "ioScope": null,
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-f2ae0df2abe5bcd8"
+                "e-922ea1db3cc994a6"
               ],
               "cautions": [],
               "core": [
                 {
-                  "title": "음성을 텍스트로 옮기는 작업",
-                  "body": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다.",
+                  "title": "작업 절차와 검토 산출물",
+                  "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-f2ae0df2abe5bcd8"
+                    "e-922ea1db3cc994a6"
                   ]
                 }
               ]
@@ -198,13 +403,11 @@
               "setup": null,
               "status": "partial",
               "missing": [
-                "시작 경로",
-                "해결 문제",
-                "도입 조건"
+                "출력"
               ],
               "io": {
                 "input": "documented",
-                "output": "documented"
+                "output": "insufficient-evidence"
               },
               "notApplicable": [],
               "representatives": {
@@ -214,7 +417,236 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "ee488e42344cc6ec6bfed86ace1fb64d7f9eae9e",
+            "readmeSha": "cd07caf4e92730b808891539a9397f1489f039d6",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "obra/superpowers",
+          "url": "https://github.com/obra/superpowers",
+          "description": "An agentic skills framework & software development methodology that works.",
+          "language": "Shell",
+          "stars": 322319,
+          "periodStars": 2028,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analysisInputFingerprint": "73527a5a45c3ce87311f2f97dbd49eb377286905edd2e8aa5e3b9e3893fe8a5e",
+            "sourceFingerprint": "1b16af646be35cba8111924870dd28e6a9b70b3db659770901e972d1f8bfa9ac",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "links": [
+                {
+                  "path": "docs/README.kimi.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                },
+                {
+                  "path": "docs/README.opencode.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                }
+              ]
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "obra/superpowers",
+                "path": "README.md",
+                "sha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/obra/superpowers/blob/main/README.md"
+              },
+              {
+                "id": "doc-6b3104fbb0be",
+                "repository": "obra/superpowers",
+                "path": "docs/README.kimi.md",
+                "sha": "0d7cd74d0b5d65c60ae44d51dcf11691ae1041f6",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/obra/superpowers/blob/main/docs/README.kimi.md"
+              },
+              {
+                "id": "doc-9c578c76a100",
+                "repository": "obra/superpowers",
+                "path": "docs/README.opencode.md",
+                "sha": "6509d8428b1d018efd8e77507191cc1b55ab6e90",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/obra/superpowers/blob/main/docs/README.opencode.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-609cec1b2960b713",
+                "sourceId": "readme",
+                "section": "Claude Code",
+                "line": 56,
+                "kind": "prose",
+                "excerpt": "Superpowers is available via the official Claude plugin marketplace"
+              },
+              {
+                "id": "e-34cd91ee382437e8",
+                "sourceId": "readme",
+                "section": "Skills Library",
+                "line": 342,
+                "kind": "heading",
+                "excerpt": "Skills Library"
+              },
+              {
+                "id": "e-74f3c07fa06d6a45",
+                "sourceId": "doc-9c578c76a100",
+                "section": "Windows install issues",
+                "line": 196,
+                "kind": "prose",
+                "excerpt": "Some Windows OpenCode builds have upstream installer issues with git-backed plugin specs, including cache paths for git+https URLs and Bun not finding git.exe even when it works in a normal terminal."
+              },
+              {
+                "id": "e-e537088362ec8cc2",
+                "sourceId": "readme",
+                "section": "Superpowers Marketplace",
+                "line": 68,
+                "kind": "prose",
+                "excerpt": "The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code."
+              }
+            ],
+            "source": "https://github.com/obra/superpowers#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Installation",
+              "steps": [
+                "Claude Code",
+                "Official Marketplace",
+                "Superpowers Marketplace"
+              ],
+              "command": "/plugin install superpowers@claude-plugins-official",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "obra/superpowers · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "운영체제별 실행 경로",
+                  "body": "이 문서 경로의 언급: Some Windows OpenCode builds have upstream installer issues with git-backed plugin specs, including cache paths for git+https URLs and Bun not finding git.exe even when it works in a normal terminal.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-74f3c07fa06d6a45"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Superpowers for OpenCode / Troubleshooting / Windows install issues",
+                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "에이전트 클라이언트",
+                  "body": "이 문서 경로의 언급: The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-e537088362ec8cc2"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Superpowers / Installation / Claude Code / Superpowers Marketplace",
+                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Installation” 절이 시작 지점입니다. 하위 항목으로 Claude Code, Official Marketplace, Superpowers Marketplace 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 2,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [],
+                "outputs": [],
+                "conditions": [
+                  {
+                    "title": "운영체제별 실행 경로",
+                    "body": "이 문서 경로의 언급: Some Windows OpenCode builds have upstream installer issues with git-backed plugin specs, including cache paths for git+https URLs and Bun not finding git.exe even when it works in a normal terminal.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-74f3c07fa06d6a45"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Superpowers for OpenCode / Troubleshooting / Windows install issues",
+                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "에이전트 클라이언트",
+                    "body": "이 문서 경로의 언급: The Superpowers marketplace provides Superpowers and some other related plugins for Claude Code.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-e537088362ec8cc2"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Superpowers / Installation / Claude Code / Superpowers Marketplace",
+                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "해결 문제",
+                "입력",
+                "출력"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
             "analysisReused": false
           }
         },
@@ -223,8 +655,8 @@
           "url": "https://github.com/HKUDS/CLI-Anything",
           "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
           "language": "Python",
-          "stars": 60038,
-          "periodStars": 389,
+          "stars": 60804,
+          "periodStars": 898,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -585,12 +1017,1182 @@
           }
         },
         {
+          "name": "jingyaogong/minimind",
+          "url": "https://github.com/jingyaogong/minimind",
+          "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
+          "language": "Python",
+          "stars": 67226,
+          "periodStars": 238,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analysisInputFingerprint": "4da8bd1e26e4178f570eded0f246259503195d3aa33ea9eb626233a60d16f40c",
+            "sourceFingerprint": "970955cdcc87519694c4850e488d6bd69118b8b46aab3f626c629350c80eee27",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "links": [
+                {
+                  "path": "README_en.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                }
+              ]
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "jingyaogong/minimind",
+                "path": "README.md",
+                "sha": "1b11a450c0e50ba81f7072103020c859cb90ac0e",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/jingyaogong/minimind/blob/master/README.md"
+              },
+              {
+                "id": "doc-4f212053d7c5",
+                "repository": "jingyaogong/minimind",
+                "path": "README_en.md",
+                "sha": "215d5ce6b87f7ac306e8bdadc472e19653488de0",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/jingyaogong/minimind/blob/master/README_en.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-3e71c515af7e83d4",
+                "sourceId": "doc-4f212053d7c5",
+                "section": "7.4 Agentic RL 🔥",
+                "line": 1176,
+                "kind": "prose",
+                "excerpt": "The concept of \"Agentic\" is broad, and here it is used in a narrower sense: the goal is to let small models like MiniMind (~100M) learn basic calling, observation, and re-planning capabilities on a limited tool set, rather than covering the full scope of state management, long-term memory, and complex workflow orchestration in a complete Agent system."
+              },
+              {
+                "id": "e-ee5bc8270b7fe2fb",
+                "sourceId": "doc-4f212053d7c5",
+                "section": "📌 Quick Start",
+                "line": 211,
+                "kind": "prose",
+                "excerpt": "CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt"
+              }
+            ],
+            "source": "https://github.com/jingyaogong/minimind#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "📌 快速开始",
+              "steps": [
+                "第0步",
+                "Ⅰ 🚀 模型推理",
+                "1' 下载模型"
+              ],
+              "command": "# 克隆仓库、安装依赖\ngit clone --depth 1 https://github.com/jingyaogong/minimind\ncd minimind && pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "jingyaogong/minimind · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "Python",
+                  "body": "이 문서 경로의 언급: CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-ee5bc8270b7fe2fb"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / 📌 Quick Start",
+                  "summaryKo": "설치·시작 경로에서 Python 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "연산 장치",
+                  "body": "이 문서 경로의 언급: CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-ee5bc8270b7fe2fb"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / 📌 Quick Start",
+                  "summaryKo": "설치·시작 경로에서 연산 장치 (GPU, CUDA, Python) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “📌 快速开始” 절이 시작 지점입니다. 하위 항목으로 第0步, Ⅰ 🚀 模型推理, 1' 下载模型 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 2,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [],
+                "outputs": [],
+                "conditions": [
+                  {
+                    "title": "Python",
+                    "body": "이 문서 경로의 언급: CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-ee5bc8270b7fe2fb"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / 📌 Quick Start",
+                    "summaryKo": "설치·시작 경로에서 Python 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "연산 장치",
+                    "body": "이 문서 경로의 언급: CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-ee5bc8270b7fe2fb"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / 📌 Quick Start",
+                    "summaryKo": "설치·시작 경로에서 연산 장치 (GPU, CUDA, Python) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "해결 문제",
+                "입력",
+                "출력"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "1b11a450c0e50ba81f7072103020c859cb90ac0e",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "cursor/plugins",
+          "url": "https://github.com/cursor/plugins",
+          "description": "Cursor plugin specification and official plugins",
+          "language": "TypeScript",
+          "stars": 17645,
+          "periodStars": 384,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analysisInputFingerprint": "26868314c625f9664cfba427fdcba82657837a867f1e85d4e2705e395fb7cbbd",
+            "sourceFingerprint": "598e37dc3ecb120df188496cd2789c01f2ca2a2250539f4afa4cd656aceffb18",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-18T07:42:50.784Z",
+              "links": []
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "cursor/plugins",
+                "path": "README.md",
+                "sha": "ee488e42344cc6ec6bfed86ace1fb64d7f9eae9e",
+                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "url": "https://github.com/cursor/plugins/blob/main/README.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-f2ae0df2abe5bcd8",
+                "sourceId": "readme",
+                "section": "Plugins",
+                "line": 5,
+                "kind": "prose",
+                "excerpt": "| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions."
+              },
+              {
+                "id": "e-99abe13cbc0f8a96",
+                "sourceId": "readme",
+                "section": "Repository structure",
+                "line": 150,
+                "kind": "prose",
+                "excerpt": "The root .cursor-plugin/marketplace.json lists all plugins, and each plugin has its own manifest:"
+              },
+              {
+                "id": "e-3a4ccb9bddff90eb",
+                "sourceId": "readme",
+                "section": "Plugins",
+                "line": 5,
+                "kind": "prose",
+                "excerpt": "| | thermos | Thermos | Cursor | Developer Tools | Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows."
+              },
+              {
+                "id": "e-f7a1e12cad5ca17e",
+                "sourceId": "readme",
+                "section": "Repository structure",
+                "line": 150,
+                "kind": "prose",
+                "excerpt": "This is a multi-plugin marketplace repository."
+              },
+              {
+                "id": "e-01804b1601081369",
+                "sourceId": "readme",
+                "section": "Plugins",
+                "line": 5,
+                "kind": "prose",
+                "excerpt": "| | tailscale | Tailscale | Cursor | Integrations | Let Grok Bot reach MCP servers on your private Tailscale network: connect your own tailnet, or your team's company tailnets turned on by a team admin, with each member using their own device."
+              }
+            ],
+            "source": "https://github.com/cursor/plugins#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [
+                "e-f2ae0df2abe5bcd8"
+              ],
+              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
+            },
+            "category": "음성 제작",
+            "purpose": "텍스트나 음성 자료를 음성 콘텐츠로 만드는 작업에 사용하는 도구 유형입니다.",
+            "audience": "음성 콘텐츠 제작자·오디오 기능 개발자",
+            "scenario": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": null,
+            "article": {
+              "title": "cursor/plugins · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 텍스트. 출력: 생성 음성. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [
+                {
+                  "title": "음성을 텍스트로 옮기는 작업",
+                  "body": "문서 설명: | | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-f2ae0df2abe5bcd8"
+                  ],
+                  "summaryKo": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다."
+                }
+              ],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "짧은 샘플로 음성 생성 품질을 비교한 뒤 내레이션 제작 흐름에 적용해 볼 수 있습니다."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "같은 문장과 음성 샘플로 발음·말투·긴 문장의 연결 상태를 비교하세요. 짧은 샘플이 만족스럽더라도 실제 길이의 자료에서 결과가 유지되는지 확인해야 제작 흐름에 맞는지 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "음성을 텍스트로 옮기는 작업에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 도입 조건.",
+              "coverage": {
+                "findings": 1,
+                "conditions": 0,
+                "hasStart": false
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [
+                  {
+                    "title": "텍스트",
+                    "body": "음성으로 변환할 텍스트를 입력으로 받는 흐름입니다. 원문: “| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.”",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f2ae0df2abe5bcd8"
+                    ],
+                    "exampleOnly": false,
+                    "summaryKo": "음성으로 변환할 텍스트를 입력합니다."
+                  }
+                ],
+                "outputs": [
+                  {
+                    "title": "생성 음성",
+                    "body": "텍스트나 음성 생성 작업의 결과로 음성을 다룹니다. 원문: “| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.”",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-f2ae0df2abe5bcd8"
+                    ],
+                    "exampleOnly": false,
+                    "summaryKo": "음성을 생성합니다."
+                  }
+                ],
+                "conditions": [],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [
+                "e-f2ae0df2abe5bcd8"
+              ],
+              "cautions": [],
+              "core": [
+                {
+                  "title": "음성을 텍스트로 옮기는 작업",
+                  "body": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다.",
+                  "kind": "interpretation",
+                  "evidenceIds": [
+                    "e-f2ae0df2abe5bcd8"
+                  ]
+                }
+              ]
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "시작 경로",
+                "해결 문제",
+                "도입 조건"
+              ],
+              "io": {
+                "input": "documented",
+                "output": "documented"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "ee488e42344cc6ec6bfed86ace1fb64d7f9eae9e",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "firecrawl/firecrawl",
+          "url": "https://github.com/firecrawl/firecrawl",
+          "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+          "language": "TypeScript",
+          "stars": 204551,
+          "periodStars": 825,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analysisInputFingerprint": "13967537d40bf16ae3a4f4aa351ffa802e0d411642d2eaecf33f77acf05ae7ac",
+            "sourceFingerprint": "d88d44d454c5a238e80890de389ec6bde4ee5bf6b16182986a9662c1a8d8b1a1",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "links": []
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "firecrawl/firecrawl",
+                "path": "README.md",
+                "sha": "eaecfed6c8a76b16b4e8bcd5d499a473ece1cb11",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-e80c31b978536eed",
+                "sourceId": "readme",
+                "section": "🔥 Firecrawl",
+                "line": 40,
+                "kind": "prose",
+                "excerpt": "Run Firecrawl on your own machine as one binary that turns websites into clean markdown, plugs into your AI agent as an MCP server and serves the Firecrawl API on localhost."
+              },
+              {
+                "id": "e-b2fa20173316d849",
+                "sourceId": "readme",
+                "section": "Self-hosting",
+                "line": 571,
+                "kind": "prose",
+                "excerpt": "The server runs with Docker Compose alongside Redis, PostgreSQL and a browser service, and the self-hosting guide takes you from checkout to your first scrape."
+              },
+              {
+                "id": "e-e54c48e0b72c645b",
+                "sourceId": "readme",
+                "section": "Self-hosting",
+                "line": 571,
+                "kind": "prose",
+                "excerpt": "SELFHOST.md lists the services and settings for the revision you checked out, and larger deployments can start from the Kubernetes manifests or the Helm chart."
+              }
+            ],
+            "source": "https://github.com/firecrawl/firecrawl#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": null,
+            "article": {
+              "title": "firecrawl/firecrawl · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "컨테이너 실행",
+                  "body": "이 문서 경로의 언급: The server runs with Docker Compose alongside Redis, PostgreSQL and a browser service, and the self-hosting guide takes you from checkout to your first scrape.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-b2fa20173316d849"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / 🔥 Firecrawl / Self-hosting",
+                  "summaryKo": "설치·시작 경로에서 컨테이너 실행 (Docker, Redis, PostgreSQL) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "클러스터 배포",
+                  "body": "이 문서 경로의 언급: SELFHOST.md lists the services and settings for the revision you checked out, and larger deployments can start from the Kubernetes manifests or the Helm chart.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-e54c48e0b72c645b"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / 🔥 Firecrawl / Self-hosting",
+                  "summaryKo": "설치·시작 경로에서 클러스터 배포 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "데이터 서비스",
+                  "body": "이 문서 경로의 언급: The server runs with Docker Compose alongside Redis, PostgreSQL and a browser service, and the self-hosting guide takes you from checkout to your first scrape.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-b2fa20173316d849"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / 🔥 Firecrawl / Self-hosting",
+                  "summaryKo": "설치·시작 경로에서 데이터 서비스 (Docker, Redis, PostgreSQL) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 3,
+                "hasStart": false
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [],
+                "outputs": [],
+                "conditions": [
+                  {
+                    "title": "컨테이너 실행",
+                    "body": "이 문서 경로의 언급: The server runs with Docker Compose alongside Redis, PostgreSQL and a browser service, and the self-hosting guide takes you from checkout to your first scrape.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-b2fa20173316d849"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / 🔥 Firecrawl / Self-hosting",
+                    "summaryKo": "설치·시작 경로에서 컨테이너 실행 (Docker, Redis, PostgreSQL) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "클러스터 배포",
+                    "body": "이 문서 경로의 언급: SELFHOST.md lists the services and settings for the revision you checked out, and larger deployments can start from the Kubernetes manifests or the Helm chart.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-e54c48e0b72c645b"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / 🔥 Firecrawl / Self-hosting",
+                    "summaryKo": "설치·시작 경로에서 클러스터 배포 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "데이터 서비스",
+                    "body": "이 문서 경로의 언급: The server runs with Docker Compose alongside Redis, PostgreSQL and a browser service, and the self-hosting guide takes you from checkout to your first scrape.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-b2fa20173316d849"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / 🔥 Firecrawl / Self-hosting",
+                    "summaryKo": "설치·시작 경로에서 데이터 서비스 (Docker, Redis, PostgreSQL) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "시작 경로",
+                "해결 문제",
+                "입력",
+                "출력"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "eaecfed6c8a76b16b4e8bcd5d499a473ece1cb11",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "nginx/nginx",
+          "url": "https://github.com/nginx/nginx",
+          "description": "The official NGINX Open Source repository.",
+          "language": "C",
+          "stars": 32419,
+          "periodStars": 73,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analysisInputFingerprint": "1aee3b5d2b9a7046e8e17c31953bb5086e2d84264354f23d7b2ae46cfa3a336c",
+            "sourceFingerprint": "5482551cc1bae267057af7f8b40cddc30723ab5f3e9cbb2a0ebbe26d187455ed",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "links": []
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "nginx/nginx",
+                "path": "README.md",
+                "sha": "d6761842c97dc151ae951f86e9738e0300f9db05",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/nginx/nginx/blob/master/README.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-e172e4941fa822fe",
+                "sourceId": "readme",
+                "section": "Linux binary installation process",
+                "line": 90,
+                "kind": "prose",
+                "excerpt": "The NGINX binary installation process takes advantage of package managers native to specific Linux distributions."
+              }
+            ],
+            "source": "https://github.com/nginx/nginx#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Getting started with NGINX",
+              "steps": [
+                "Installing SSL certificates and enabling TLS encryption",
+                "Load Balancing",
+                "Rate limiting"
+              ],
+              "command": "",
+              "excerpt": "For a gentle introduction to NGINX basics, please see our Beginner’s Guide."
+            },
+            "article": {
+              "title": "nginx/nginx · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "운영체제별 실행 경로",
+                  "body": "이 문서 경로의 언급: The NGINX binary installation process takes advantage of package managers native to specific Linux distributions.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-e172e4941fa822fe"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Downloading and installing / Linux binary installation process",
+                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Linux) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Getting started with NGINX” 절이 시작 지점입니다. 하위 항목으로 Installing SSL certificates and enabling TLS encryption, Load Balancing, Rate limiting 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 1,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [],
+                "outputs": [],
+                "conditions": [
+                  {
+                    "title": "운영체제별 실행 경로",
+                    "body": "이 문서 경로의 언급: The NGINX binary installation process takes advantage of package managers native to specific Linux distributions.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-e172e4941fa822fe"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Downloading and installing / Linux binary installation process",
+                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Linux) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "해결 문제",
+                "입력",
+                "출력"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "d6761842c97dc151ae951f86e9738e0300f9db05",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "openvinotoolkit/openvino",
+          "url": "https://github.com/openvinotoolkit/openvino",
+          "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
+          "language": "C++",
+          "stars": 11625,
+          "periodStars": 246,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analysisInputFingerprint": "b7982ab88f93d06fb7618246af218e41b255da3e3a61e91a88b5f0ec71aa1ac3",
+            "sourceFingerprint": "6544e63a9c6b9fbf92fceaa1a347beb5b0d8db4fbb23278d7515c4859b8fa314",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "links": [
+                {
+                  "path": "docs/dev/index.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                }
+              ]
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "openvinotoolkit/openvino",
+                "path": "README.md",
+                "sha": "7fa8d27f1e8f8e7d675aebc7a0a7c718c5b26d32",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/openvinotoolkit/openvino/blob/master/README.md"
+              },
+              {
+                "id": "doc-536f1e6cf1be",
+                "repository": "openvinotoolkit/openvino",
+                "path": "docs/dev/index.md",
+                "sha": "19ca4026c2050f33f8af8937771a70329afa8f26",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/openvinotoolkit/openvino/blob/master/docs/dev/index.md"
+              }
+            ],
+            "evidence": [],
+            "source": "https://github.com/openvinotoolkit/openvino#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [],
+              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
+            },
+            "category": "용도 분류 미확정",
+            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
+            "audience": null,
+            "scenario": null,
+            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
+            "start": {
+              "heading": "Installation",
+              "steps": [
+                "Verify Installation"
+              ],
+              "command": "pip install -U openvino",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "openvinotoolkit/openvino · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Installation” 절이 시작 지점입니다. 하위 항목으로 Verify Installation 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
+                }
+              ],
+              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 0,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": null,
+                "inputs": [],
+                "outputs": [],
+                "conditions": [],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "용도 분류",
+                "핵심 기능 근거",
+                "해결 문제",
+                "입력",
+                "출력",
+                "도입 조건"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "7fa8d27f1e8f8e7d675aebc7a0a7c718c5b26d32",
+            "analysisReused": false
+          }
+        },
+        {
+          "name": "cathrynlavery/diagram-design",
+          "url": "https://github.com/cathrynlavery/diagram-design",
+          "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
+          "language": "HTML",
+          "stars": 68855,
+          "periodStars": 271,
+          "usage": {
+            "schemaVersion": 2,
+            "analyzerVersion": 17,
+            "version": 17,
+            "status": "ready",
+            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analysisInputFingerprint": "0482282847fcfd93d2d9969beaa46e9ec38127b21d075b889fb59354d26e38f4",
+            "sourceFingerprint": "780b4fed7e91a642a61606142be5ef3a3173b8f810c8be96330fcf2b28367769",
+            "document": {
+              "status": "available",
+              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "links": [
+                {
+                  "path": "skills/diagram-design/references/style-guide.md",
+                  "status": "available",
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                }
+              ]
+            },
+            "sources": [
+              {
+                "id": "readme",
+                "repository": "cathrynlavery/diagram-design",
+                "path": "README.md",
+                "sha": "0095129f4a907e05558f18276d8f11cd70076dba",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/cathrynlavery/diagram-design/blob/main/README.md"
+              },
+              {
+                "id": "doc-1c79bb3e40a8",
+                "repository": "cathrynlavery/diagram-design",
+                "path": "skills/diagram-design/references/style-guide.md",
+                "sha": "4927c1197a0f30e35f52aa821dab307c6b5410bf",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "url": "https://github.com/cathrynlavery/diagram-design/blob/main/skills/diagram-design/references/style-guide.md"
+              }
+            ],
+            "evidence": [
+              {
+                "id": "e-d92843ece59cb2fb",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 49,
+                "kind": "prose",
+                "excerpt": "Copilot installs the shared Diagram Design skill plus its doctor, export, import, and profile capabilities from the existing repository marketplace."
+              },
+              {
+                "id": "e-4fe9dbd6a2bc127f",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 49,
+                "kind": "prose",
+                "excerpt": "Likewise, uninstall a personal Cowork copy and reinstall Diagram Design from your organization's marketplace."
+              },
+              {
+                "id": "e-dfaf6d0ea09c734c",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 49,
+                "kind": "prose",
+                "excerpt": "LittleMight, Cathryn Lavery's company, publishes the plugin directory listings; a listing under any other name is an unofficial copy."
+              },
+              {
+                "id": "e-41ea59a20d06ff24",
+                "sourceId": "readme",
+                "section": "README 도입부",
+                "line": 1,
+                "kind": "prose",
+                "excerpt": "An agent skill that draws diagrams as one self-contained HTML + SVG file, in your brand."
+              },
+              {
+                "id": "e-25f2ad680fe69e62",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 49,
+                "kind": "prose",
+                "excerpt": "In Claude Code, the plugin marketplace gets you updates and the slash commands:"
+              },
+              {
+                "id": "e-dd3e0df141a28857",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 49,
+                "kind": "prose",
+                "excerpt": "Pull merged updates with npx skills update diagram-design."
+              },
+              {
+                "id": "e-8030cd74b4ba62f6",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 49,
+                "kind": "prose",
+                "excerpt": "> One-time migration: an existing standalone npx skills add copy will not start following the Codex marketplace automatically. Remove that standalone copy, then use the Codex marketplace commands. Likewise, uninstall a personal Cowork copy and reinstall Diagram Design from your organization's marketplace. Future marketplace version bumps then flow through each client's native update path."
+              },
+              {
+                "id": "e-5578708c5e84c928",
+                "sourceId": "readme",
+                "section": "Why I built it",
+                "line": 236,
+                "kind": "prose",
+                "excerpt": "I wanted diagrams I actually liked for my blog posts on littlemight.com. Every time I needed one, whether an architecture sketch, a flowchart, or a pyramid of what matters most, I'd ask Claude and get back a generic rounded-box thing that looked nothing like the rest of the site. I'd either fight with Figma for 30 minutes or skip the diagram."
+              },
+              {
+                "id": "e-713de7d20ae477a8",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 49,
+                "kind": "prose",
+                "excerpt": "Where symlinks are unavailable (Windows without Developer Mode) the CLI falls back to copies and reports which roots it copied."
+              },
+              {
+                "id": "e-efb3fd7dd34f7583",
+                "sourceId": "readme",
+                "section": "Install",
+                "line": 49,
+                "kind": "prose",
+                "excerpt": "Works with any host that reads Agent Skills, including Cursor, Claude Code, Codex, Qoder, GitHub Copilot, Gemini CLI, Cline, Windsurf and Amp:"
+              }
+            ],
+            "source": "https://github.com/cathrynlavery/diagram-design#readme",
+            "classification": {
+              "kind": "interpretation",
+              "evidenceIds": [
+                "e-4fe9dbd6a2bc127f"
+              ],
+              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
+            },
+            "category": "다이어그램 제작",
+            "purpose": "정보의 관계나 구조를 다이어그램으로 표현하는 도구 유형입니다.",
+            "audience": "구조 설명 자료를 만드는 개발자·기획자",
+            "scenario": "시스템 구성이나 작업 흐름 하나를 골라 그림으로 표현하고 문서에 활용해 볼 수 있습니다.",
+            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
+            "start": {
+              "heading": "Quickstart",
+              "steps": [
+                "Semantic patterns and optional motion"
+              ],
+              "command": "# From a cloned checkout, open the gallery to see every diagram\nopen skills/diagram-design/assets/index.html       # macOS\nxdg-open skills/diagram-design/assets/index.html  # Linux",
+              "excerpt": ""
+            },
+            "article": {
+              "title": "cathrynlavery/diagram-design · 프로젝트 분석 노트",
+              "paragraphs": [
+                "문서가 명시한 해결 문제: I wanted diagrams I actually liked for my blog posts on littlemight.com. Every time I needed one, whether an architecture sketch, a flowchart, or a pyramid of what matters most, I'd ask Claude and get back a generic rounded-box thing that looked nothing like the rest of the site. I'd either fight with Figma for 30 minutes or skip the diagram.",
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+              ],
+              "findings": [],
+              "conditions": [
+                {
+                  "title": "운영체제별 실행 경로",
+                  "body": "이 문서 경로의 언급: Where symlinks are unavailable (Windows without Developer Mode) the CLI falls back to copies and reports which roots it copied.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-713de7d20ae477a8"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Install",
+                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "에이전트 클라이언트",
+                  "body": "이 문서 경로의 언급: Works with any host that reads Agent Skills, including Cursor, Claude Code, Codex, Qoder, GitHub Copilot, Gemini CLI, Cline, Windsurf and Amp:",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-efb3fd7dd34f7583"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Install",
+                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                }
+              ],
+              "workflow": [
+                {
+                  "title": "적용할 작업 정하기",
+                  "body": "시스템 구성이나 작업 흐름 하나를 골라 그림으로 표현하고 문서에 활용해 볼 수 있습니다."
+                },
+                {
+                  "title": "문서의 시작 경로 선택하기",
+                  "body": "README의 “Quickstart” 절이 시작 지점입니다. 하위 항목으로 Semantic patterns and optional motion 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                },
+                {
+                  "title": "작은 결과물로 적합성 판단하기",
+                  "body": "설명할 구조 하나를 골라 결과물을 만든 뒤 라벨·연결 관계·수정 가능성을 살펴보세요. 문서에 넣을 형식으로 내보내고 다시 편집하는 흐름까지 확인하면 활용 범위를 판단하기 쉽습니다."
+                }
+              ],
+              "verdict": "해결 문제에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력.",
+              "coverage": {
+                "findings": 0,
+                "conditions": 2,
+                "hasStart": true
+              },
+              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
+              "project": {
+                "problem": {
+                  "title": "해결 문제",
+                  "body": "문서가 명시한 해결 문제: I wanted diagrams I actually liked for my blog posts on littlemight.com. Every time I needed one, whether an architecture sketch, a flowchart, or a pyramid of what matters most, I'd ask Claude and get back a generic rounded-box thing that looked nothing like the rest of the site. I'd either fight with Figma for 30 minutes or skip the diagram.",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-5578708c5e84c928"
+                  ],
+                  "exampleOnly": false
+                },
+                "inputs": [],
+                "outputs": [],
+                "conditions": [
+                  {
+                    "title": "운영체제별 실행 경로",
+                    "body": "이 문서 경로의 언급: Where symlinks are unavailable (Windows without Developer Mode) the CLI falls back to copies and reports which roots it copied.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-713de7d20ae477a8"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Install",
+                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "에이전트 클라이언트",
+                    "body": "이 문서 경로의 언급: Works with any host that reads Agent Skills, including Cursor, Claude Code, Codex, Qoder, GitHub Copilot, Gemini CLI, Cline, Windsurf and Amp:",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-efb3fd7dd34f7583"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Install",
+                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  }
+                ],
+                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
+                "examples": [],
+                "ioScope": null,
+                "setup": null
+              },
+              "verdictEvidenceIds": [
+                "e-5578708c5e84c928"
+              ],
+              "cautions": [],
+              "core": []
+            },
+            "quality": {
+              "setup": null,
+              "status": "partial",
+              "missing": [
+                "핵심 기능 근거",
+                "입력",
+                "출력"
+              ],
+              "io": {
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
+              },
+              "notApplicable": [],
+              "representatives": {
+                "expected": 0,
+                "available": 0,
+                "status": "tracked"
+              },
+              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
+            },
+            "readmeSha": "0095129f4a907e05558f18276d8f11cd70076dba",
+            "analysisReused": false
+          }
+        },
+        {
           "name": "mvanhorn/last30days-skill",
           "url": "https://github.com/mvanhorn/last30days-skill",
           "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
           "language": "Python",
-          "stars": 70300,
-          "periodStars": 1059,
+          "stars": 71015,
+          "periodStars": 954,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -898,1380 +2500,24 @@
             "readmeSha": "8bbc95b4d33646473266edae86a6c8e61ba4aadd",
             "analysisReused": false
           }
-        },
-        {
-          "name": "getarcaneapp/arcane",
-          "url": "https://github.com/getarcaneapp/arcane",
-          "description": "Modern Docker Management, Designed for Everyone",
-          "language": "Go",
-          "stars": 9966,
-          "periodStars": 547,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analysisInputFingerprint": "a0450237a0c936ebf50d58f859ab1a11d1bd6bf7a47234e211274eb666484011",
-            "sourceFingerprint": "fc343c3ad77cdfab9f8d864ae64064c1e26dd066d49a03e060ec7084641d0b6a",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-17T08:08:14.628Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "getarcaneapp/arcane",
-                "path": "README.md",
-                "sha": "94063cc0583ae7b52e1d376c702a9fce852f6284",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
-                "url": "https://github.com/getarcaneapp/arcane/blob/main/README.md"
-              }
-            ],
-            "evidence": [],
-            "source": "https://github.com/getarcaneapp/arcane#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [],
-              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
-            },
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": null,
-            "article": {
-              "title": "getarcaneapp/arcane · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 0,
-                "hasStart": false
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": null,
-                "inputs": [],
-                "outputs": [],
-                "conditions": [],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "용도 분류",
-                "핵심 기능 근거",
-                "시작 경로",
-                "해결 문제",
-                "입력",
-                "출력",
-                "도입 조건"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "94063cc0583ae7b52e1d376c702a9fce852f6284",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "NVIDIA/SkillEvaluator",
-          "url": "https://github.com/NVIDIA/SkillEvaluator",
-          "description": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, security scanning, harness compatibility checks, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior. Ships reusable CI templates that bring every check to any repository.",
-          "language": "Python",
-          "stars": 3903,
-          "periodStars": 312,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analysisInputFingerprint": "f91aa04001ee004f329e0b0d96fa8ad5df0675f67fa52fd3172c13c6b6889e9a",
-            "sourceFingerprint": "d7137c2888085e782656b428ff2e2f8dabd349277ac5e87f8edebc5218d6df19",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
-              "links": [
-                {
-                  "path": "ci/bundles/README.md",
-                  "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
-                },
-                {
-                  "path": "ci/bundles/1.0.1/README.md",
-                  "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
-                }
-              ]
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "NVIDIA/SkillEvaluator",
-                "path": "README.md",
-                "sha": "00ccbe42b38ef21fe811796aa92476a682b90050",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
-                "url": "https://github.com/NVIDIA/SkillEvaluator/blob/main/README.md"
-              },
-              {
-                "id": "doc-00ab1d0912fa",
-                "repository": "NVIDIA/SkillEvaluator",
-                "path": "ci/bundles/README.md",
-                "sha": "1a373f23d8d69d1bd394f8f1524e8640a2c872f1",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
-                "url": "https://github.com/NVIDIA/SkillEvaluator/blob/main/ci/bundles/README.md"
-              },
-              {
-                "id": "doc-30c5b6c60f85",
-                "repository": "NVIDIA/SkillEvaluator",
-                "path": "ci/bundles/1.0.1/README.md",
-                "sha": "3fb6c508bfca0821b5ac81ab11127a8172b885a9",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
-                "url": "https://github.com/NVIDIA/SkillEvaluator/blob/main/ci/bundles/1.0.1/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-c51b586cd4ee1702",
-                "sourceId": "readme",
-                "section": "README 도입부",
-                "line": 3,
-                "kind": "prose",
-                "excerpt": "Evaluate and improve AI agent skills and plugins: quality, security, overlap, compatibility, and real impact across agents"
-              },
-              {
-                "id": "e-16d6f5468e7ab54e",
-                "sourceId": "readme",
-                "section": "Get started",
-                "line": 33,
-                "kind": "prose",
-                "excerpt": "Install the CLI in a Python 3.12–3.14 environment:"
-              },
-              {
-                "id": "e-d3cfb0946b10d011",
-                "sourceId": "readme",
-                "section": "Check your skill without a key",
-                "line": 144,
-                "kind": "prose",
-                "excerpt": "No API key, scanner, GPU or Docker is needed."
-              },
-              {
-                "id": "e-87e16b636587d5ff",
-                "sourceId": "readme",
-                "section": "README 도입부",
-                "line": 3,
-                "kind": "prose",
-                "excerpt": "Agent skills are folders of instructions and supporting files defined by the Agent Skills specification. SkillEvaluator is part of the NVIDIA Verified Skills pipeline."
-              }
-            ],
-            "source": "https://github.com/NVIDIA/SkillEvaluator#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [
-                "e-c51b586cd4ee1702"
-              ],
-              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
-            },
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Get started",
-              "steps": [
-                "⚡ Harness check: will your agent load your skill?"
-              ],
-              "command": "pip install skillevaluator",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "NVIDIA/SkillEvaluator · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 설명한 목적: Evaluate and improve AI agent skills and plugins: quality, security, overlap, compatibility, and real impact across agents",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [
-                {
-                  "title": "스킬의 구성과 로딩",
-                  "body": "문서 설명: Agent skills are folders of instructions and supporting files defined by the Agent Skills specification. SkillEvaluator is part of the NVIDIA Verified Skills pipeline.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-87e16b636587d5ff"
-                  ],
-                  "summaryKo": "작업별 지침·스크립트·자료를 스킬로 묶고 에이전트가 필요할 때 읽도록 합니다."
-                }
-              ],
-              "conditions": [
-                {
-                  "title": "컨테이너 실행",
-                  "body": "이 문서 경로의 언급: No API key, scanner, GPU or Docker is needed.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-d3cfb0946b10d011"
-                  ],
-                  "scope": "mentioned",
-                  "path": " /  / Quickstart / Check your skill without a key",
-                  "summaryKo": "설치·시작 경로에서 컨테이너 실행 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "연산 장치",
-                  "body": "이 문서 경로의 언급: No API key, scanner, GPU or Docker is needed.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-d3cfb0946b10d011"
-                  ],
-                  "scope": "mentioned",
-                  "path": " /  / Quickstart / Check your skill without a key",
-                  "summaryKo": "설치·시작 경로에서 연산 장치 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "서비스 인증",
-                  "body": "필수가 아닌 조건: No API key, scanner, GPU or Docker is needed.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-d3cfb0946b10d011"
-                  ],
-                  "scope": "not-required",
-                  "path": " /  / Quickstart / Check your skill without a key",
-                  "summaryKo": "이 문서 경로에서 서비스 인증 (GPU, Docker) 조건은 필수가 아니라고 설명합니다."
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Get started” 절이 시작 지점입니다. 하위 항목으로 ⚡ Harness check: will your agent load your skill? 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "필요한 작업의 SKILL.md와 부속 자료를 함께 가져와 적용할 수 있는지 확인하세요. 추가 확인: 입력·출력.",
-              "coverage": {
-                "findings": 1,
-                "conditions": 3,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서에서 설명한 목적: Evaluate and improve AI agent skills and plugins: quality, security, overlap, compatibility, and real impact across agents",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-c51b586cd4ee1702"
-                  ]
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [
-                  {
-                    "title": "컨테이너 실행",
-                    "body": "이 문서 경로의 언급: No API key, scanner, GPU or Docker is needed.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-d3cfb0946b10d011"
-                    ],
-                    "scope": "mentioned",
-                    "path": " /  / Quickstart / Check your skill without a key",
-                    "summaryKo": "설치·시작 경로에서 컨테이너 실행 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "연산 장치",
-                    "body": "이 문서 경로의 언급: No API key, scanner, GPU or Docker is needed.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-d3cfb0946b10d011"
-                    ],
-                    "scope": "mentioned",
-                    "path": " /  / Quickstart / Check your skill without a key",
-                    "summaryKo": "설치·시작 경로에서 연산 장치 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "서비스 인증",
-                    "body": "필수가 아닌 조건: No API key, scanner, GPU or Docker is needed.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-d3cfb0946b10d011"
-                    ],
-                    "scope": "not-required",
-                    "path": " /  / Quickstart / Check your skill without a key",
-                    "summaryKo": "이 문서 경로에서 서비스 인증 (GPU, Docker) 조건은 필수가 아니라고 설명합니다."
-                  }
-                ],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-87e16b636587d5ff"
-              ],
-              "cautions": [],
-              "core": [
-                {
-                  "title": "스킬의 구성과 로딩",
-                  "body": "작업별 지침·스크립트·자료를 스킬로 묶고 에이전트가 필요할 때 읽도록 합니다.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-87e16b636587d5ff"
-                  ]
-                }
-              ]
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "입력",
-                "출력"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "00ccbe42b38ef21fe811796aa92476a682b90050",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "nvm-sh/nvm",
-          "url": "https://github.com/nvm-sh/nvm",
-          "description": "Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions.",
-          "language": "Shell",
-          "stars": 96195,
-          "periodStars": 237,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analysisInputFingerprint": "f7b0c86bb980661eb832396dea72f52d0a589a4a56388ba534ed0db1bd206932",
-            "sourceFingerprint": "ceadfbc1ee38fbfc5e2569c793fa4f384a5a4e433b120c1b62140dae9e99e1cf",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "nvm-sh/nvm",
-                "path": "README.md",
-                "sha": "54945dfaf836989a43a1ec4bc20f82321bb51577",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
-                "url": "https://github.com/nvm-sh/nvm/blob/master/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-1ed206eea5d08031",
-                "sourceId": "readme",
-                "section": "Installing in Docker",
-                "line": 143,
-                "kind": "prose",
-                "excerpt": "When invoking bash as a non-interactive shell, like in a Docker container, none of the regular profile files are sourced."
-              },
-              {
-                "id": "e-154353f09e502392",
-                "sourceId": "readme",
-                "section": "Installing in Docker",
-                "line": 143,
-                "kind": "prose",
-                "excerpt": "In order to use nvm, node, and npm like normal, you can instead specify the special BASHENV variable, which bash sources when invoked non-interactively."
-              },
-              {
-                "id": "e-6c4e0f424258b19b",
-                "sourceId": "readme",
-                "section": "Alpine Linux 3.5 - 3.12",
-                "line": 1077,
-                "kind": "prose",
-                "excerpt": "Alpine 3.5 - 3.12 required the package python2 to build NodeJS, as they are older versions to build."
-              },
-              {
-                "id": "e-3f08e04361c33efd",
-                "sourceId": "readme",
-                "section": "Troubleshooting on Linux",
-                "line": 218,
-                "kind": "prose",
-                "excerpt": "On Linux, after running the install script, if you get nvm: command not found or see no feedback from your terminal after you type command -v nvm, simply close your current terminal, open a new terminal, and try verifying again."
-              },
-              {
-                "id": "e-73b13b73e8ae81ce",
-                "sourceId": "readme",
-                "section": "Important Notes",
-                "line": 281,
-                "kind": "prose",
-                "excerpt": "Homebrew installation is not supported."
-              }
-            ],
-            "source": "https://github.com/nvm-sh/nvm#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [],
-              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
-            },
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": {
-              "heading": "Install & Update Script",
-              "steps": [
-                "Additional Notes",
-                "Installing in Docker",
-                "Installing in Docker for CICD-Jobs"
-              ],
-              "command": "curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.41.0/install.sh | bash",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "nvm-sh/nvm · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [
-                {
-                  "title": "Python",
-                  "body": "이 문서 경로의 언급: Alpine 3.5 - 3.12 required the package python2 to build NodeJS, as they are older versions to build.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-6c4e0f424258b19b"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing nvm on Alpine Linux / Alpine Linux 3.5 - 3.12",
-                  "summaryKo": "설치·시작 경로에서 python2 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "Node.js",
-                  "body": "이 문서 경로의 언급: In order to use nvm, node, and npm like normal, you can instead specify the special BASHENV variable, which bash sources when invoked non-interactively.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-154353f09e502392"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing and Updating / Install & Update Script / Installing in Docker",
-                  "summaryKo": "설치·시작 경로에서 node 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "컨테이너 실행",
-                  "body": "이 문서 경로의 언급: When invoking bash as a non-interactive shell, like in a Docker container, none of the regular profile files are sourced.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-1ed206eea5d08031"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing and Updating / Install & Update Script / Installing in Docker",
-                  "summaryKo": "설치·시작 경로에서 컨테이너 실행 (Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "운영체제별 실행 경로",
-                  "body": "이 문서 경로의 언급: On Linux, after running the install script, if you get nvm: command not found or see no feedback from your terminal after you type command -v nvm, simply close your current terminal, open a new terminal, and try verifying again.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-3f08e04361c33efd"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing and Updating / Install & Update Script / Troubleshooting on Linux",
-                  "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Linux) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "런타임·설치 도구",
-                  "body": "이 문서 경로의 언급: Homebrew installation is not supported.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-73b13b73e8ae81ce"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing and Updating / Important Notes",
-                  "summaryKo": "설치·시작 경로에서 런타임·설치 도구 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Install & Update Script” 절이 시작 지점입니다. 하위 항목으로 Additional Notes, Installing in Docker, Installing in Docker for CICD-Jobs 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 5,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": null,
-                "inputs": [],
-                "outputs": [],
-                "conditions": [
-                  {
-                    "title": "Python",
-                    "body": "이 문서 경로의 언급: Alpine 3.5 - 3.12 required the package python2 to build NodeJS, as they are older versions to build.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-6c4e0f424258b19b"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing nvm on Alpine Linux / Alpine Linux 3.5 - 3.12",
-                    "summaryKo": "설치·시작 경로에서 python2 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "Node.js",
-                    "body": "이 문서 경로의 언급: In order to use nvm, node, and npm like normal, you can instead specify the special BASHENV variable, which bash sources when invoked non-interactively.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-154353f09e502392"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing and Updating / Install & Update Script / Installing in Docker",
-                    "summaryKo": "설치·시작 경로에서 node 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "컨테이너 실행",
-                    "body": "이 문서 경로의 언급: When invoking bash as a non-interactive shell, like in a Docker container, none of the regular profile files are sourced.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-1ed206eea5d08031"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing and Updating / Install & Update Script / Installing in Docker",
-                    "summaryKo": "설치·시작 경로에서 컨테이너 실행 (Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "운영체제별 실행 경로",
-                    "body": "이 문서 경로의 언급: On Linux, after running the install script, if you get nvm: command not found or see no feedback from your terminal after you type command -v nvm, simply close your current terminal, open a new terminal, and try verifying again.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-3f08e04361c33efd"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing and Updating / Install & Update Script / Troubleshooting on Linux",
-                    "summaryKo": "설치·시작 경로에서 운영체제별 실행 경로 (Linux) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "런타임·설치 도구",
-                    "body": "이 문서 경로의 언급: Homebrew installation is not supported.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-73b13b73e8ae81ce"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Node Version Manager [][3] [][4] [](https://bestpractices.dev/projects/684) / Installing and Updating / Important Notes",
-                    "summaryKo": "설치·시작 경로에서 런타임·설치 도구 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  }
-                ],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "용도 분류",
-                "핵심 기능 근거",
-                "해결 문제",
-                "입력",
-                "출력"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "54945dfaf836989a43a1ec4bc20f82321bb51577",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "astral-sh/uv",
-          "url": "https://github.com/astral-sh/uv",
-          "description": "An extremely fast Python package and project manager, written in Rust.",
-          "language": "Rust",
-          "stars": 92329,
-          "periodStars": 258,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analysisInputFingerprint": "84f8d3b9c8671429d9d64c47c51a012fbd97e84e0919c920636759c5a35c3978",
-            "sourceFingerprint": "fecdb5c8fb9f699c81af21f10ed443d048f31b072f519075d632c7e1e2fba2b7",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "astral-sh/uv",
-                "path": "README.md",
-                "sha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
-                "url": "https://github.com/astral-sh/uv/blob/main/README.md"
-              }
-            ],
-            "evidence": [],
-            "source": "https://github.com/astral-sh/uv#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [],
-              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
-            },
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": {
-              "heading": "Installation",
-              "steps": [],
-              "command": "# On macOS and Linux.\ncurl -LsSf https://astral.sh/uv/install.sh | sh",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "astral-sh/uv · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Installation” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 0,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": null,
-                "inputs": [],
-                "outputs": [],
-                "conditions": [],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "용도 분류",
-                "핵심 기능 근거",
-                "해결 문제",
-                "입력",
-                "출력",
-                "도입 조건"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "66caaf9ccc62add8c63de8e71184c9b7677377ad",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "google-research/paper-orchestra",
-          "url": "https://github.com/google-research/paper-orchestra",
-          "description": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-          "language": "Python",
-          "stars": 4600,
-          "periodStars": 1524,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analysisInputFingerprint": "afe9583aa1d42bdcf2c99de94a8fb486db8c46e1d1b52317fc2422c9b155c736",
-            "sourceFingerprint": "6a6ccb6fb5ed596aa0d3030243788c771d5b2b5acb4f617c0bc5b07f9e9e11b4",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
-              "links": [
-                {
-                  "path": "frontend/README.md",
-                  "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
-                }
-              ]
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "google-research/paper-orchestra",
-                "path": "README.md",
-                "sha": "c79a45651aaf5f9ff5b9ec977c69ffd0c3e02095",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
-                "url": "https://github.com/google-research/paper-orchestra/blob/main/README.md"
-              },
-              {
-                "id": "doc-35aa98d245b2",
-                "repository": "google-research/paper-orchestra",
-                "path": "frontend/README.md",
-                "sha": "062669c2158b6d94cbbf3536eb639663b49ef8fd",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
-                "url": "https://github.com/google-research/paper-orchestra/blob/main/frontend/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-f46d292068b3943c",
-                "sourceId": "readme",
-                "section": "🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "PaperOrchestra is a multi-agent framework for automated AI research paper writing."
-              },
-              {
-                "id": "e-217cd7bf02a7d307",
-                "sourceId": "readme",
-                "section": "Installation",
-                "line": 21,
-                "kind": "prose",
-                "excerpt": "You can set up a similar environment with Python 3.11 and install the required dependencies."
-              },
-              {
-                "id": "e-762f59a2ebde7694",
-                "sourceId": "readme",
-                "section": "Installation",
-                "line": 21,
-                "kind": "prose",
-                "excerpt": "Environment Variables: Create a .env file in the root of the project and add your API keys:"
-              },
-              {
-                "id": "e-99f7b55f0c6b9952",
-                "sourceId": "readme",
-                "section": "🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "PaperOrchestra is a multi-agent framework for automated AI research paper writing. It flexibly transforms unconstrained pre-writing materials (ideas and experimental logs) into submission-ready LaTeX manuscripts, including comprehensive literature synthesis and generated visuals, such as plots and conceptual diagrams."
-              }
-            ],
-            "source": "https://github.com/google-research/paper-orchestra#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [
-                "e-f46d292068b3943c"
-              ],
-              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
-            },
-            "category": "AI 에이전트 운영",
-            "purpose": "AI 에이전트의 실행과 작업 흐름을 관리하는 도구 유형입니다.",
-            "audience": "여러 AI 작업을 연결하거나 관리하는 개발자",
-            "scenario": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Installation",
-              "steps": [],
-              "command": "conda create -n paper_orchestra python=3.11\n    conda activate paper_orchestra\n    pip install -r requirements.txt",
-              "excerpt": ""
-            },
-            "article": {
-              "title": "google-research/paper-orchestra · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 설명한 목적: PaperOrchestra is a multi-agent framework for automated AI research paper writing. It flexibly transforms unconstrained pre-writing materials (ideas and experimental logs) into submission-ready LaTeX manuscripts, including comprehensive literature synthesis and generated visuals, such as plots and conceptual diagrams.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [
-                {
-                  "title": "여러 에이전트의 작업 조정",
-                  "body": "문서 설명: PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-f46d292068b3943c"
-                  ],
-                  "summaryKo": "여러 에이전트의 역할과 작업 흐름을 조정합니다."
-                }
-              ],
-              "conditions": [
-                {
-                  "title": "Python",
-                  "body": "이 문서 경로의 언급: You can set up a similar environment with Python 3.11 and install the required dependencies.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-217cd7bf02a7d307"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / 🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing / Installation",
-                  "summaryKo": "설치·시작 경로에서 Python 3.11 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                },
-                {
-                  "title": "서비스 인증",
-                  "body": "이 문서 경로의 언급: Environment Variables: Create a .env file in the root of the project and add your API keys:",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-762f59a2ebde7694"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / 🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing / Installation",
-                  "summaryKo": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "작업 하나의 입력·실행·결과 확인 흐름을 구성한 뒤 여러 작업으로 확장해 볼 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Installation” 절이 시작 지점입니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "역할이 하나인 작은 작업부터 시작해 입력·실행·종료 결과를 추적하세요. 역할을 늘릴 때 작업 누락이나 중복 수행을 구분할 수 있는지가 운영 관점의 확인 지점입니다."
-                }
-              ],
-              "verdict": "여러 에이전트의 작업 조정에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력.",
-              "coverage": {
-                "findings": 1,
-                "conditions": 2,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서에서 설명한 목적: PaperOrchestra is a multi-agent framework for automated AI research paper writing. It flexibly transforms unconstrained pre-writing materials (ideas and experimental logs) into submission-ready LaTeX manuscripts, including comprehensive literature synthesis and generated visuals, such as plots and conceptual diagrams.",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-99f7b55f0c6b9952"
-                  ]
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [
-                  {
-                    "title": "Python",
-                    "body": "이 문서 경로의 언급: You can set up a similar environment with Python 3.11 and install the required dependencies.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-217cd7bf02a7d307"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / 🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing / Installation",
-                    "summaryKo": "설치·시작 경로에서 Python 3.11 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  },
-                  {
-                    "title": "서비스 인증",
-                    "body": "이 문서 경로의 언급: Environment Variables: Create a .env file in the root of the project and add your API keys:",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-762f59a2ebde7694"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / 🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing / Installation",
-                    "summaryKo": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  }
-                ],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-f46d292068b3943c"
-              ],
-              "cautions": [],
-              "core": [
-                {
-                  "title": "여러 에이전트의 작업 조정",
-                  "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-f46d292068b3943c"
-                  ]
-                }
-              ]
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "입력",
-                "출력"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "c79a45651aaf5f9ff5b9ec977c69ffd0c3e02095",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "google-labs-code/stitch-skills",
-          "url": "https://github.com/google-labs-code/stitch-skills",
-          "description": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent Skills open standard, for compatibility with coding agents such as Antigravity, Gemini CLI, Claude Code, Cursor.",
-          "language": "TypeScript",
-          "stars": 10513,
-          "periodStars": 365,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-16T06:48:39.424Z",
-            "analyzedAt": "2026-11-16T06:48:39.424Z",
-            "sourceCheckedAt": "2026-11-16T06:48:39.424Z",
-            "analysisInputFingerprint": "61d28a85355963a46db3d5bac09aee4f51f1025b7f0b8837a3fd5be618fbc2d4",
-            "sourceFingerprint": "ee035b3b5f6798041eaa1accead33eab0b610a7c68257f9e04a308c9c38265d4",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-16T06:48:39.424Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "google-labs-code/stitch-skills",
-                "path": "README.md",
-                "sha": "baecaabfa0fc08d596e3d5921479321eaacac02a",
-                "fetchedAt": "2026-11-16T06:48:39.424Z",
-                "url": "https://github.com/google-labs-code/stitch-skills/blob/main/README.md"
-              }
-            ],
-            "evidence": [
-              {
-                "id": "e-fe46f9727db18cf7",
-                "sourceId": "readme",
-                "section": "Stitch Design Skills",
-                "line": 1,
-                "kind": "heading",
-                "excerpt": "Stitch Design Skills"
-              },
-              {
-                "id": "e-d55c13d1f78f80b3",
-                "sourceId": "readme",
-                "section": "Codex",
-                "line": 10,
-                "kind": "prose",
-                "excerpt": "Add the Stitch Skills marketplace, then install the plugins you need."
-              },
-              {
-                "id": "e-67654f5731fa7fff",
-                "sourceId": "readme",
-                "section": "Stitch Design Skills",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard."
-              },
-              {
-                "id": "e-1497ae9a7c3636ee",
-                "sourceId": "readme",
-                "section": "OpenCode",
-                "line": 62,
-                "kind": "prose",
-                "excerpt": "Install skills and the Stitch MCP server manually:"
-              },
-              {
-                "id": "e-263fb93da3ccdd01",
-                "sourceId": "readme",
-                "section": "Build (stitch-build)",
-                "line": 140,
-                "kind": "prose",
-                "excerpt": "| Skill | Description | Prompt Example | |---|---|---| | stitch::react-components | Convert Stitch screens to React component systems with automated validation and design token consistency | · \"Convert all screens in Stitch project projects/123 to React components.\" · \"Sync the app to the last updates of the Stitch project 13039335308618232534.\" | | stitch::react-native | Convert Stitch HTML designs to production-ready React Native components with StyleSheet and platform-specific code | · \"Convert the Stitch design to React Native components with proper"
-              },
-              {
-                "id": "e-7e8e2f09864ed24c",
-                "sourceId": "readme",
-                "section": "Stitch Design Skills",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install)."
-              },
-              {
-                "id": "e-f106cb64576e0d68",
-                "sourceId": "readme",
-                "section": "Codex",
-                "line": 10,
-                "kind": "prose",
-                "excerpt": "Via the Codex UI"
-              }
-            ],
-            "source": "https://github.com/google-labs-code/stitch-skills#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [
-                "e-67654f5731fa7fff"
-              ],
-              "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
-            },
-            "category": "AI 에이전트 스킬",
-            "purpose": "AI 에이전트가 특정 작업을 수행할 때 참고할 절차와 기능을 제공하는 프로젝트 유형입니다.",
-            "audience": "AI 코딩·연구 에이전트를 사용하는 개발자·연구자",
-            "scenario": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다.",
-            "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
-            "start": {
-              "heading": "Quick Start",
-              "steps": [
-                "1. Install Plugins (Recommended)",
-                "Codex",
-                "Claude Code & Cursor"
-              ],
-              "command": "",
-              "excerpt": "The fastest way to set up the full Stitch plugin suite globally."
-            },
-            "article": {
-              "title": "google-labs-code/stitch-skills · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 설명한 목적: A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [
-                {
-                  "title": "에이전트 클라이언트",
-                  "body": "이 문서 경로의 언급: Via the Codex UI",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-f106cb64576e0d68"
-                  ],
-                  "scope": "mentioned",
-                  "path": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex",
-                  "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                }
-              ],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "필요한 작업에 맞는 스킬 하나를 선택하고, 지원 에이전트에 연결해 작은 작업으로 적용 여부를 확인할 수 있습니다."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Quick Start” 절이 시작 지점입니다. 하위 항목으로 1. Install Plugins (Recommended), Codex, Claude Code & Cursor 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "스킬이 없는 경우와 연결한 경우에 같은 작업을 시켜 결과물의 절차와 품질을 비교하세요. 설치 성공과 실제 적용 여부를 나눠 확인하면 필요한 스킬만 선택하는 데 도움이 됩니다."
-                }
-              ],
-              "verdict": "해결 문제에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 입력·출력.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 1,
-                "hasStart": true
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": {
-                  "title": "해결 문제",
-                  "body": "문서에서 설명한 목적: A collection of agent skills and plugins for Google Stitch, following the Agent Skills open standard. Compatible with coding agents such as Codex, Antigravity, Gemini CLI, Claude Code, Cursor, and OpenCode (manual install).",
-                  "kind": "documented",
-                  "evidenceIds": [
-                    "e-7e8e2f09864ed24c"
-                  ]
-                },
-                "inputs": [],
-                "outputs": [],
-                "conditions": [
-                  {
-                    "title": "에이전트 클라이언트",
-                    "body": "이 문서 경로의 언급: Via the Codex UI",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-f106cb64576e0d68"
-                    ],
-                    "scope": "mentioned",
-                    "path": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex",
-                    "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
-                  }
-                ],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [
-                "e-7e8e2f09864ed24c"
-              ],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "핵심 기능 근거",
-                "입력",
-                "출력"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "baecaabfa0fc08d596e3d5921479321eaacac02a",
-            "analysisReused": false
-          }
-        },
-        {
-          "name": "sveltejs/svelte",
-          "url": "https://github.com/sveltejs/svelte",
-          "description": "web development for the rest of us",
-          "language": "JavaScript",
-          "stars": 89707,
-          "periodStars": 692,
-          "usage": {
-            "schemaVersion": 2,
-            "analyzerVersion": 17,
-            "version": 17,
-            "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analysisInputFingerprint": "2cc7ac415e5d99181f55dc9a2c735eda3509c48a39d6357b9f4306848fe490eb",
-            "sourceFingerprint": "84f44b272d8bfe1f4e7ac3db7acdc4bce86213a8486ade7dce084eb1ae5e8596",
-            "document": {
-              "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
-              "links": []
-            },
-            "sources": [
-              {
-                "id": "readme",
-                "repository": "sveltejs/svelte",
-                "path": "README.md",
-                "sha": "7ea71647521ae850fd0933665f94760806ac5b29",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
-                "url": "https://github.com/sveltejs/svelte/blob/main/README.md"
-              }
-            ],
-            "evidence": [],
-            "source": "https://github.com/sveltejs/svelte#readme",
-            "classification": {
-              "kind": "interpretation",
-              "evidenceIds": [],
-              "basis": "README에서 용도를 뒷받침할 표현을 찾지 못했습니다."
-            },
-            "category": "용도 분류 미확정",
-            "purpose": "자동 분류로 용도를 확정하지 못했습니다. 저장소 설명과 README의 사용 예를 확인해 주세요.",
-            "audience": null,
-            "scenario": null,
-            "basis": "자동으로 확인되지 않은 용도나 기능은 추가하지 않았습니다.",
-            "start": null,
-            "article": {
-              "title": "sveltejs/svelte · 프로젝트 분석 노트",
-              "paragraphs": [
-                "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
-                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
-              ],
-              "findings": [],
-              "conditions": [],
-              "workflow": [
-                {
-                  "title": "적용할 작업 정하기",
-                  "body": "공식 문서의 사용 예 중 현재 해결하려는 작업에 가까운 예를 먼저 선택하세요."
-                },
-                {
-                  "title": "문서의 시작 경로 선택하기",
-                  "body": "시작 절을 자동으로 찾지 못했습니다. 저장소의 공식 README에서 설치 문서나 사용 예 링크를 찾아 실행 경로를 확인해야 합니다."
-                },
-                {
-                  "title": "작은 결과물로 적합성 판단하기",
-                  "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
-                }
-              ],
-              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
-              "coverage": {
-                "findings": 0,
-                "conditions": 0,
-                "hasStart": false
-              },
-              "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
-              "project": {
-                "problem": null,
-                "inputs": [],
-                "outputs": [],
-                "conditions": [],
-                "limitations": "입출력은 문서에서 확인한 특정 작업 경로이며 프로젝트 전체의 공통 스키마로 단정하지 않습니다. 사용 예는 실행 검증이 아니며, 미확인 항목은 분류만으로 추정하지 않았습니다.",
-                "examples": [],
-                "ioScope": null,
-                "setup": null
-              },
-              "verdictEvidenceIds": [],
-              "cautions": [],
-              "core": []
-            },
-            "quality": {
-              "setup": null,
-              "status": "partial",
-              "missing": [
-                "용도 분류",
-                "핵심 기능 근거",
-                "시작 경로",
-                "해결 문제",
-                "입력",
-                "출력",
-                "도입 조건"
-              ],
-              "io": {
-                "input": "insufficient-evidence",
-                "output": "insufficient-evidence"
-              },
-              "notApplicable": [],
-              "representatives": {
-                "expected": 0,
-                "available": 0,
-                "status": "tracked"
-              },
-              "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
-            },
-            "readmeSha": "7ea71647521ae850fd0933665f94760806ac5b29",
-            "analysisReused": false
-          }
         }
       ],
       "synthesis": {
         "version": 7,
         "coverage": {
           "total": 10,
-          "classified": 6,
-          "unknown": 4,
+          "classified": 5,
+          "unknown": 5,
           "complete": 0,
           "partial": 10,
           "unavailable": 0,
           "stale": 0,
-          "inputs": 1,
+          "inputs": 2,
           "outputs": 1,
-          "conditions": 6,
+          "conditions": 8,
           "inputsNotApplicable": 0,
           "outputsNotApplicable": 0,
-          "inputEvidenceMissing": 9,
+          "inputEvidenceMissing": 8,
           "outputEvidenceMissing": 9,
           "exampleProjects": 0,
           "examples": 0,
@@ -2289,11 +2535,17 @@
         "categoryGroups": [
           {
             "category": "AI 에이전트 스킬",
-            "count": 3,
+            "count": 2,
             "projects": [
-              "mvanhorn/last30days-skill",
-              "NVIDIA/SkillEvaluator",
-              "google-labs-code/stitch-skills"
+              "elementalsouls/Claude-BugHunter",
+              "mvanhorn/last30days-skill"
+            ]
+          },
+          {
+            "category": "다이어그램 제작",
+            "count": 1,
+            "projects": [
+              "cathrynlavery/diagram-design"
             ]
           },
           {
@@ -2309,13 +2561,6 @@
             "projects": [
               "cursor/plugins"
             ]
-          },
-          {
-            "category": "AI 에이전트 운영",
-            "count": 1,
-            "projects": [
-              "google-research/paper-orchestra"
-            ]
           }
         ],
         "comparisons": [
@@ -2323,6 +2568,61 @@
             "category": "AI 에이전트 스킬",
             "mode": "comparison",
             "projects": [
+              {
+                "name": "elementalsouls/Claude-BugHunter",
+                "state": "ready",
+                "processing": [
+                  {
+                    "title": "작업 절차와 검토 산출물",
+                    "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
+                    "kind": "interpretation",
+                    "evidenceIds": [
+                      "e-922ea1db3cc994a6"
+                    ]
+                  }
+                ],
+                "inputs": {
+                  "status": "documented",
+                  "claims": [
+                    {
+                      "title": "스킬 지침",
+                      "body": "작업별 지침과 관련 자료를 스킬로 읽습니다.",
+                      "kind": "interpretation",
+                      "evidenceIds": [
+                        "e-3f64c266e2d6ea7f"
+                      ]
+                    }
+                  ],
+                  "examples": []
+                },
+                "outputs": {
+                  "status": "insufficient-evidence",
+                  "claims": [],
+                  "examples": []
+                },
+                "conditions": [
+                  {
+                    "title": "Python",
+                    "body": "이 설치 경로에서는 Python 3.9+ 조건을 요구합니다.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-5d6e306d16806e4d"
+                    ],
+                    "scope": "required",
+                    "context": " / Installation Guide / Prerequisites"
+                  },
+                  {
+                    "title": "서비스 인증",
+                    "body": "서비스 인증 관련 경로는 선택 사항입니다.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-e4b6dcc979b87079"
+                    ],
+                    "scope": "optional",
+                    "context": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator"
+                  }
+                ]
+              },
               {
                 "name": "mvanhorn/last30days-skill",
                 "state": "ready",
@@ -2359,55 +2659,15 @@
                     "context": " / /last30days / Install / Claude Desktop"
                   }
                 ]
-              },
+              }
+            ]
+          },
+          {
+            "category": "다이어그램 제작",
+            "mode": "single",
+            "projects": [
               {
-                "name": "NVIDIA/SkillEvaluator",
-                "state": "ready",
-                "processing": [
-                  {
-                    "title": "스킬의 구성과 로딩",
-                    "body": "작업별 지침·스크립트·자료를 스킬로 묶고 에이전트가 필요할 때 읽도록 합니다.",
-                    "kind": "interpretation",
-                    "evidenceIds": [
-                      "e-87e16b636587d5ff"
-                    ]
-                  }
-                ],
-                "inputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "outputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "conditions": [
-                  {
-                    "title": "컨테이너 실행",
-                    "body": "설치·시작 경로에서 컨테이너 실행 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-d3cfb0946b10d011"
-                    ],
-                    "scope": "mentioned",
-                    "context": " /  / Quickstart / Check your skill without a key"
-                  },
-                  {
-                    "title": "연산 장치",
-                    "body": "설치·시작 경로에서 연산 장치 (GPU, Docker) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-d3cfb0946b10d011"
-                    ],
-                    "scope": "mentioned",
-                    "context": " /  / Quickstart / Check your skill without a key"
-                  }
-                ]
-              },
-              {
-                "name": "google-labs-code/stitch-skills",
+                "name": "cathrynlavery/diagram-design",
                 "state": "ready",
                 "processing": [],
                 "inputs": {
@@ -2422,14 +2682,24 @@
                 },
                 "conditions": [
                   {
+                    "title": "운영체제별 실행 경로",
+                    "body": "설치·시작 경로에서 운영체제별 실행 경로 (Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-713de7d20ae477a8"
+                    ],
+                    "scope": "mentioned",
+                    "context": " / Install"
+                  },
+                  {
                     "title": "에이전트 클라이언트",
                     "body": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-f106cb64576e0d68"
+                      "e-efb3fd7dd34f7583"
                     ],
                     "scope": "mentioned",
-                    "context": " / Stitch Design Skills / Quick Start / 1. Install Plugins (Recommended) / Codex"
+                    "context": " / Install"
                   }
                 ]
               }
@@ -2543,167 +2813,49 @@
                 "conditions": []
               }
             ]
-          },
-          {
-            "category": "AI 에이전트 운영",
-            "mode": "single",
-            "projects": [
-              {
-                "name": "google-research/paper-orchestra",
-                "state": "ready",
-                "processing": [
-                  {
-                    "title": "여러 에이전트의 작업 조정",
-                    "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
-                    "kind": "interpretation",
-                    "evidenceIds": [
-                      "e-f46d292068b3943c"
-                    ]
-                  }
-                ],
-                "inputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "outputs": {
-                  "status": "insufficient-evidence",
-                  "claims": [],
-                  "examples": []
-                },
-                "conditions": [
-                  {
-                    "title": "Python",
-                    "body": "설치·시작 경로에서 Python 3.11 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-217cd7bf02a7d307"
-                    ],
-                    "scope": "mentioned",
-                    "context": " / 🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing / Installation"
-                  },
-                  {
-                    "title": "서비스 인증",
-                    "body": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
-                    "kind": "documented",
-                    "evidenceIds": [
-                      "e-762f59a2ebde7694"
-                    ],
-                    "scope": "mentioned",
-                    "context": " / 🎻 PaperOrchestra: A Multi-Agent Framework for Automated AI Research Paper Writing / Installation"
-                  }
-                ]
-              }
-            ]
           }
         ],
         "sharedPatterns": [
           {
             "kind": "condition",
-            "title": "Python",
-            "projects": [
-              {
-                "name": "HKUDS/CLI-Anything",
-                "evidenceIds": [
-                  "e-44ce4deb0da99d85"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "mvanhorn/last30days-skill",
-                "evidenceIds": [
-                  "e-210424b4073cd1a4"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "nvm-sh/nvm",
-                "evidenceIds": [
-                  "e-6c4e0f424258b19b"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "google-research/paper-orchestra",
-                "evidenceIds": [
-                  "e-217cd7bf02a7d307"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              }
-            ]
-          },
-          {
-            "kind": "condition",
-            "title": "서비스 인증",
-            "projects": [
-              {
-                "name": "mvanhorn/last30days-skill",
-                "evidenceIds": [
-                  "e-efa63b06de2ac9b8"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "NVIDIA/SkillEvaluator",
-                "evidenceIds": [
-                  "e-d3cfb0946b10d011"
-                ],
-                "scope": "not-required",
-                "exampleOnly": false
-              },
-              {
-                "name": "google-research/paper-orchestra",
-                "evidenceIds": [
-                  "e-762f59a2ebde7694"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              }
-            ]
-          },
-          {
-            "kind": "condition",
-            "title": "에이전트 클라이언트",
-            "projects": [
-              {
-                "name": "HKUDS/CLI-Anything",
-                "evidenceIds": [
-                  "e-8062dbd7352681ed"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "mvanhorn/last30days-skill",
-                "evidenceIds": [
-                  "e-190f7f4030302841"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "google-labs-code/stitch-skills",
-                "evidenceIds": [
-                  "e-f106cb64576e0d68"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              }
-            ]
-          },
-          {
-            "kind": "condition",
             "title": "운영체제별 실행 경로",
             "projects": [
+              {
+                "name": "elementalsouls/Claude-BugHunter",
+                "evidenceIds": [
+                  "e-ef9b2c963c642825"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "obra/superpowers",
+                "evidenceIds": [
+                  "e-74f3c07fa06d6a45"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
               {
                 "name": "HKUDS/CLI-Anything",
                 "evidenceIds": [
                   "e-a6f4b601b43e29de"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "nginx/nginx",
+                "evidenceIds": [
+                  "e-e172e4941fa822fe"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "cathrynlavery/diagram-design",
+                "evidenceIds": [
+                  "e-713de7d20ae477a8"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2715,11 +2867,109 @@
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
+              }
+            ]
+          },
+          {
+            "kind": "condition",
+            "title": "에이전트 클라이언트",
+            "projects": [
+              {
+                "name": "elementalsouls/Claude-BugHunter",
+                "evidenceIds": [
+                  "e-2d8d39c0db1244f3"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
               },
               {
-                "name": "nvm-sh/nvm",
+                "name": "obra/superpowers",
                 "evidenceIds": [
-                  "e-3f08e04361c33efd"
+                  "e-e537088362ec8cc2"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "HKUDS/CLI-Anything",
+                "evidenceIds": [
+                  "e-8062dbd7352681ed"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "cathrynlavery/diagram-design",
+                "evidenceIds": [
+                  "e-efb3fd7dd34f7583"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "mvanhorn/last30days-skill",
+                "evidenceIds": [
+                  "e-190f7f4030302841"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              }
+            ]
+          },
+          {
+            "kind": "condition",
+            "title": "Python",
+            "projects": [
+              {
+                "name": "elementalsouls/Claude-BugHunter",
+                "evidenceIds": [
+                  "e-5d6e306d16806e4d"
+                ],
+                "scope": "required",
+                "exampleOnly": false
+              },
+              {
+                "name": "HKUDS/CLI-Anything",
+                "evidenceIds": [
+                  "e-44ce4deb0da99d85"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "jingyaogong/minimind",
+                "evidenceIds": [
+                  "e-ee5bc8270b7fe2fb"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "mvanhorn/last30days-skill",
+                "evidenceIds": [
+                  "e-210424b4073cd1a4"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              }
+            ]
+          },
+          {
+            "kind": "condition",
+            "title": "서비스 인증",
+            "projects": [
+              {
+                "name": "elementalsouls/Claude-BugHunter",
+                "evidenceIds": [
+                  "e-e4b6dcc979b87079"
+                ],
+                "scope": "optional",
+                "exampleOnly": false
+              },
+              {
+                "name": "mvanhorn/last30days-skill",
+                "evidenceIds": [
+                  "e-efa63b06de2ac9b8"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2731,13 +2981,20 @@
         "setupReviews": [],
         "references": [
           {
-            "name": "cursor/plugins",
-            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
-            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "name": "elementalsouls/Claude-BugHunter",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-f2ae0df2abe5bcd8"
+              "e-228a63fba4dca9fe"
             ]
+          },
+          {
+            "name": "obra/superpowers",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "stale": false,
+            "classificationEvidenceIds": []
           },
           {
             "name": "HKUDS/CLI-Anything",
@@ -2749,6 +3006,52 @@
             ]
           },
           {
+            "name": "jingyaogong/minimind",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "stale": false,
+            "classificationEvidenceIds": []
+          },
+          {
+            "name": "cursor/plugins",
+            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "stale": false,
+            "classificationEvidenceIds": [
+              "e-f2ae0df2abe5bcd8"
+            ]
+          },
+          {
+            "name": "firecrawl/firecrawl",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "stale": false,
+            "classificationEvidenceIds": []
+          },
+          {
+            "name": "nginx/nginx",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "stale": false,
+            "classificationEvidenceIds": []
+          },
+          {
+            "name": "openvinotoolkit/openvino",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "stale": false,
+            "classificationEvidenceIds": []
+          },
+          {
+            "name": "cathrynlavery/diagram-design",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "stale": false,
+            "classificationEvidenceIds": [
+              "e-4fe9dbd6a2bc127f"
+            ]
+          },
+          {
             "name": "mvanhorn/last30days-skill",
             "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
             "analyzedAt": "2026-11-17T08:08:14.628Z",
@@ -2756,64 +3059,9 @@
             "classificationEvidenceIds": [
               "e-9cce7c2f2908d1e9"
             ]
-          },
-          {
-            "name": "getarcaneapp/arcane",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "stale": false,
-            "classificationEvidenceIds": []
-          },
-          {
-            "name": "NVIDIA/SkillEvaluator",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "stale": false,
-            "classificationEvidenceIds": [
-              "e-c51b586cd4ee1702"
-            ]
-          },
-          {
-            "name": "nvm-sh/nvm",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "stale": false,
-            "classificationEvidenceIds": []
-          },
-          {
-            "name": "astral-sh/uv",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "stale": false,
-            "classificationEvidenceIds": []
-          },
-          {
-            "name": "google-research/paper-orchestra",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "stale": false,
-            "classificationEvidenceIds": [
-              "e-f46d292068b3943c"
-            ]
-          },
-          {
-            "name": "google-labs-code/stitch-skills",
-            "sourceCheckedAt": "2026-11-16T06:48:39.424Z",
-            "analyzedAt": "2026-11-16T06:48:39.424Z",
-            "stale": false,
-            "classificationEvidenceIds": [
-              "e-67654f5731fa7fff"
-            ]
-          },
-          {
-            "name": "sveltejs/svelte",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "stale": false,
-            "classificationEvidenceIds": []
           }
         ],
-        "generatedAt": "2026-11-19T07:39:05.372Z"
+        "generatedAt": "2026-11-20T07:29:44.107Z"
       }
     },
     "weekly": {
@@ -2847,25 +3095,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
-            "sourceFingerprint": "f0fc67ee034db0d3ac2a8df50ab906234b37ecc57d5b9afa5d563836518ea83a",
+            "sourceFingerprint": "a94df862a793cfbb17988d09ffc384306f620f680e65334341725c8b28ff3b22",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-20T07:29:44.107Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-20T07:29:44.107Z"
                 }
               ]
             },
@@ -2875,15 +3123,15 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "d30ee50759fdfb941a9f1a681f13b02910601bb5",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
                 "id": "doc-af0c08d6f291",
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
-                "sha": "ee59ea7753823e440fdaf1ecad709e2c8a96ea42",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
+                "fetchedAt": "2026-11-20T07:29:44.107Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -7349,8 +7597,8 @@
         "references": [
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "analyzedAt": "2026-11-20T07:29:44.107Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-59654a3ac8f5df61"
@@ -7438,7 +7686,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-19T07:39:05.372Z"
+        "generatedAt": "2026-11-20T07:29:44.107Z"
       }
     },
     "monthly": {
@@ -12719,6 +12967,13 @@
       "hash": "39b1f33c4099c4f90db55a5ee267ce79cda78d5ed9f861d1e64817268b4d60b9",
       "status": "published",
       "processedAt": "2026-11-19T07:39:05.372Z"
+    },
+    {
+      "issue": "daily:2026-11-20",
+      "period": "daily",
+      "hash": "e463888eb0b7f53eec8cdc5724ecb916bc84ac456fb400465d4e3868e433614a",
+      "status": "published",
+      "processedAt": "2026-11-20T07:29:44.107Z"
     }
   ]
 }

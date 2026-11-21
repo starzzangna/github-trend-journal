@@ -3,9 +3,9 @@
   "reports": {
     "daily": {
       "period": "daily",
-      "issue": "daily:2026-11-20",
-      "collectedAt": "2026-11-20T07:29:44.107Z",
-      "publishedAt": "2026-11-20T07:29:44.107Z",
+      "issue": "daily:2026-11-21",
+      "collectedAt": "2026-11-21T07:25:06.690Z",
+      "publishedAt": "2026-11-21T07:25:06.690Z",
       "title": "Today · AI 에이전트 스킬·다이어그램 제작 프로젝트 분석",
       "summary": "상위 10개 중 공식 문서 근거로 5개의 용도를 분류했습니다. AI 에이전트 스킬 2개, 다이어그램 제작 1개가 포함됩니다. 분류 미확정은 5개입니다.",
       "analysis": [
@@ -25,8 +25,8 @@
           "url": "https://github.com/elementalsouls/Claude-BugHunter",
           "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
           "language": "Python",
-          "stars": 13000,
-          "periodStars": 1349,
+          "stars": 14737,
+          "periodStars": 1622,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -426,8 +426,8 @@
           "url": "https://github.com/obra/superpowers",
           "description": "An agentic skills framework & software development methodology that works.",
           "language": "Shell",
-          "stars": 322319,
-          "periodStars": 2028,
+          "stars": 323002,
+          "periodStars": 890,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -655,8 +655,8 @@
           "url": "https://github.com/HKUDS/CLI-Anything",
           "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
           "language": "Python",
-          "stars": 60804,
-          "periodStars": 898,
+          "stars": 61575,
+          "periodStars": 773,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1021,8 +1021,8 @@
           "url": "https://github.com/jingyaogong/minimind",
           "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
           "language": "Python",
-          "stars": 67226,
-          "periodStars": 238,
+          "stars": 67830,
+          "periodStars": 847,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1221,8 +1221,8 @@
           "url": "https://github.com/cursor/plugins",
           "description": "Cursor plugin specification and official plugins",
           "language": "TypeScript",
-          "stars": 17645,
-          "periodStars": 384,
+          "stars": 17919,
+          "periodStars": 299,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1417,23 +1417,23 @@
         {
           "name": "firecrawl/firecrawl",
           "url": "https://github.com/firecrawl/firecrawl",
-          "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+          "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
           "language": "TypeScript",
-          "stars": 204551,
-          "periodStars": 825,
+          "stars": 205527,
+          "periodStars": 1241,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-20T07:29:44.107Z",
-            "analyzedAt": "2026-11-20T07:29:44.107Z",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
-            "analysisInputFingerprint": "13967537d40bf16ae3a4f4aa351ffa802e0d411642d2eaecf33f77acf05ae7ac",
+            "checkedAt": "2026-11-21T07:25:06.690Z",
+            "analyzedAt": "2026-11-21T07:25:06.690Z",
+            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
+            "analysisInputFingerprint": "be51993515d6348f16cbc0948ebfa57f9b3611f6628e6aa28dab982d9f845643",
             "sourceFingerprint": "d88d44d454c5a238e80890de389ec6bde4ee5bf6b16182986a9662c1a8d8b1a1",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "checkedAt": "2026-11-21T07:25:06.690Z",
               "links": []
             },
             "sources": [
@@ -1442,7 +1442,7 @@
                 "repository": "firecrawl/firecrawl",
                 "path": "README.md",
                 "sha": "eaecfed6c8a76b16b4e8bcd5d499a473ece1cb11",
-                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "fetchedAt": "2026-11-21T07:25:06.690Z",
                 "url": "https://github.com/firecrawl/firecrawl/blob/main/README.md"
               }
             ],
@@ -1627,8 +1627,8 @@
           "url": "https://github.com/nginx/nginx",
           "description": "The official NGINX Open Source repository.",
           "language": "C",
-          "stars": 32419,
-          "periodStars": 73,
+          "stars": 32623,
+          "periodStars": 246,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1783,8 +1783,8 @@
           "url": "https://github.com/openvinotoolkit/openvino",
           "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
           "language": "C++",
-          "stars": 11625,
-          "periodStars": 246,
+          "stars": 11836,
+          "periodStars": 217,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1919,8 +1919,8 @@
           "url": "https://github.com/cathrynlavery/diagram-design",
           "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
           "language": "HTML",
-          "stars": 68855,
-          "periodStars": 271,
+          "stars": 69443,
+          "periodStars": 636,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -2191,8 +2191,8 @@
           "url": "https://github.com/mvanhorn/last30days-skill",
           "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
           "language": "Python",
-          "stars": 71015,
-          "periodStars": 954,
+          "stars": 71590,
+          "periodStars": 681,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -3023,8 +3023,8 @@
           },
           {
             "name": "firecrawl/firecrawl",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
-            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
+            "analyzedAt": "2026-11-21T07:25:06.690Z",
             "stale": false,
             "classificationEvidenceIds": []
           },
@@ -3061,7 +3061,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-20T07:29:44.107Z"
+        "generatedAt": "2026-11-21T07:25:06.690Z"
       }
     },
     "weekly": {
@@ -3095,25 +3095,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-20T07:29:44.107Z",
-            "analyzedAt": "2026-11-20T07:29:44.107Z",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "checkedAt": "2026-11-21T07:25:06.690Z",
+            "analyzedAt": "2026-11-21T07:25:06.690Z",
+            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "a94df862a793cfbb17988d09ffc384306f620f680e65334341725c8b28ff3b22",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "checkedAt": "2026-11-21T07:25:06.690Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                  "checkedAt": "2026-11-21T07:25:06.690Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                  "checkedAt": "2026-11-21T07:25:06.690Z"
                 }
               ]
             },
@@ -3123,7 +3123,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "d30ee50759fdfb941a9f1a681f13b02910601bb5",
-                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "fetchedAt": "2026-11-21T07:25:06.690Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -3131,7 +3131,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
-                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "fetchedAt": "2026-11-21T07:25:06.690Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -4253,24 +4253,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-14T06:44:06.785Z",
-            "analyzedAt": "2026-11-14T06:44:06.785Z",
-            "sourceCheckedAt": "2026-11-14T06:44:06.785Z",
+            "checkedAt": "2026-11-21T07:25:06.690Z",
+            "analyzedAt": "2026-11-21T07:25:06.690Z",
+            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
             "analysisInputFingerprint": "cfd25387318bbb5b84c2e985e095e2dd3a456bd8ee648764e53458675d2a0785",
-            "sourceFingerprint": "fcf8239340edf6ddb70d4cc38ae2eaf06dc77983f809c764ebcf5d8d1c1e4a57",
+            "sourceFingerprint": "1e9c03404402ec195b91de003b53b67e53963c56d0bcc6c35692fa9566ff11a3",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-14T06:44:06.785Z",
+              "checkedAt": "2026-11-21T07:25:06.690Z",
               "links": [
                 {
                   "path": "apps/amp-plugin/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-14T06:44:06.785Z"
+                  "checkedAt": "2026-11-21T07:25:06.690Z"
                 },
                 {
                   "path": "apps/hook/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-14T06:44:06.785Z"
+                  "checkedAt": "2026-11-21T07:25:06.690Z"
                 }
               ]
             },
@@ -4279,8 +4279,8 @@
                 "id": "readme",
                 "repository": "backnotprop/plannotator",
                 "path": "README.md",
-                "sha": "4667f4c611c15e1af87b0885cdc11b5fbb604cf6",
-                "fetchedAt": "2026-11-14T06:44:06.785Z",
+                "sha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
+                "fetchedAt": "2026-11-21T07:25:06.690Z",
                 "url": "https://github.com/backnotprop/plannotator/blob/main/README.md"
               },
               {
@@ -4288,7 +4288,7 @@
                 "repository": "backnotprop/plannotator",
                 "path": "apps/amp-plugin/README.md",
                 "sha": "1e33c2341a220fa0953ac231a2960e39e180330f",
-                "fetchedAt": "2026-11-14T06:44:06.785Z",
+                "fetchedAt": "2026-11-21T07:25:06.690Z",
                 "url": "https://github.com/backnotprop/plannotator/blob/main/apps/amp-plugin/README.md"
               },
               {
@@ -4296,13 +4296,13 @@
                 "repository": "backnotprop/plannotator",
                 "path": "apps/hook/README.md",
                 "sha": "4bd16da7c2695f0db492394cfc12276ea529b84e",
-                "fetchedAt": "2026-11-14T06:44:06.785Z",
+                "fetchedAt": "2026-11-21T07:25:06.690Z",
                 "url": "https://github.com/backnotprop/plannotator/blob/main/apps/hook/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-ff4fe0dc9fbb8537",
+                "id": "e-13aec46962d7a77b",
                 "sourceId": "readme",
                 "section": "Plannotator",
                 "line": 38,
@@ -4310,31 +4310,31 @@
                 "excerpt": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work."
               },
               {
-                "id": "e-d2fc14113290af9b",
+                "id": "e-4a8740dc5ac2a7f1",
                 "sourceId": "readme",
                 "section": "Install",
-                "line": 222,
+                "line": 226,
                 "kind": "prose",
                 "excerpt": "| README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator."
               },
               {
-                "id": "e-035155ad1b45352a",
+                "id": "e-21bef821a9bcbbf0",
                 "sourceId": "readme",
                 "section": "Plannotator Inbox",
-                "line": 89,
+                "line": 79,
                 "kind": "prose",
                 "excerpt": "Any other agent reaches it over MCP with plannotator inbox mcp, and plannotator inbox --help is the guide an agent reads."
               },
               {
-                "id": "e-9c11b27e2d565f9b",
+                "id": "e-a8efb5ff510a898d",
                 "sourceId": "readme",
                 "section": "Install",
-                "line": 222,
+                "line": 226,
                 "kind": "prose",
-                "excerpt": "A full install can also contact GitHub for release resolution and agent files, Ataraxy-Labs/sem for the optional sem sidecar, and npm for Pi, selected extra skills, or the managed agent-terminal runtime."
+                "excerpt": "A full install can also contact GitHub for release resolution and agent files, and npm for Pi, selected extra skills, or the managed agent-terminal runtime."
               },
               {
-                "id": "e-08d5e0c15a95b170",
+                "id": "e-656e39a7bbe942c2",
                 "sourceId": "readme",
                 "section": "Plannotator",
                 "line": 38,
@@ -4342,10 +4342,10 @@
                 "excerpt": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants."
               },
               {
-                "id": "e-1407d9a590e4a362",
+                "id": "e-b8942e28dc171d58",
                 "sourceId": "readme",
                 "section": "Install",
-                "line": 222,
+                "line": 226,
                 "kind": "prose",
                 "excerpt": "Plan review is enabled automatically via Codex's experimental Stop hook (macOS/Linux/WSL; on native Windows, Codex hooks are experimental and the installer prints manual setup steps)."
               }
@@ -4354,7 +4354,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-ff4fe0dc9fbb8537"
+                "e-13aec46962d7a77b"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -4384,7 +4384,7 @@
                   "body": "문서 설명: ⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-ff4fe0dc9fbb8537"
+                    "e-13aec46962d7a77b"
                   ],
                   "summaryKo": "여러 에이전트의 역할과 작업 흐름을 조정합니다."
                 }
@@ -4395,7 +4395,7 @@
                   "body": "이 문서 경로의 언급: Plan review is enabled automatically via Codex's experimental Stop hook (macOS/Linux/WSL; on native Windows, Codex hooks are experimental and the installer prints manual setup steps).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-1407d9a590e4a362"
+                    "e-b8942e28dc171d58"
                   ],
                   "scope": "mentioned",
                   "path": " / Plannotator / Install",
@@ -4406,7 +4406,7 @@
                   "body": "이 문서 경로의 언급: | README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-d2fc14113290af9b"
+                    "e-4a8740dc5ac2a7f1"
                   ],
                   "scope": "mentioned",
                   "path": " / Plannotator / Install",
@@ -4440,7 +4440,7 @@
                   "body": "문서에서 설명한 목적: ⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-08d5e0c15a95b170"
+                    "e-656e39a7bbe942c2"
                   ]
                 },
                 "inputs": [],
@@ -4451,7 +4451,7 @@
                     "body": "이 문서 경로의 언급: Plan review is enabled automatically via Codex's experimental Stop hook (macOS/Linux/WSL; on native Windows, Codex hooks are experimental and the installer prints manual setup steps).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-1407d9a590e4a362"
+                      "e-b8942e28dc171d58"
                     ],
                     "scope": "mentioned",
                     "path": " / Plannotator / Install",
@@ -4462,7 +4462,7 @@
                     "body": "이 문서 경로의 언급: | README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-d2fc14113290af9b"
+                      "e-4a8740dc5ac2a7f1"
                     ],
                     "scope": "mentioned",
                     "path": " / Plannotator / Install",
@@ -4475,7 +4475,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-ff4fe0dc9fbb8537"
+                "e-13aec46962d7a77b"
               ],
               "cautions": [],
               "core": [
@@ -4484,7 +4484,7 @@
                   "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-ff4fe0dc9fbb8537"
+                    "e-13aec46962d7a77b"
                   ]
                 }
               ]
@@ -4508,7 +4508,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "4667f4c611c15e1af87b0885cdc11b5fbb604cf6",
+            "readmeSha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
             "analysisReused": false
           }
         },
@@ -6821,7 +6821,7 @@
                     "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-ff4fe0dc9fbb8537"
+                      "e-13aec46962d7a77b"
                     ]
                   }
                 ],
@@ -6841,7 +6841,7 @@
                     "body": "설치·시작 경로에서 운영체제별 실행 경로 (macOS, Linux, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-1407d9a590e4a362"
+                      "e-b8942e28dc171d58"
                     ],
                     "scope": "mentioned",
                     "context": " / Plannotator / Install"
@@ -6851,7 +6851,7 @@
                     "body": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-d2fc14113290af9b"
+                      "e-4a8740dc5ac2a7f1"
                     ],
                     "scope": "mentioned",
                     "context": " / Plannotator / Install"
@@ -7316,7 +7316,7 @@
               {
                 "name": "backnotprop/plannotator",
                 "evidenceIds": [
-                  "e-1407d9a590e4a362"
+                  "e-b8942e28dc171d58"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -7597,8 +7597,8 @@
         "references": [
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
-            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
+            "analyzedAt": "2026-11-21T07:25:06.690Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-59654a3ac8f5df61"
@@ -7624,11 +7624,11 @@
           },
           {
             "name": "backnotprop/plannotator",
-            "sourceCheckedAt": "2026-11-14T06:44:06.785Z",
-            "analyzedAt": "2026-11-14T06:44:06.785Z",
+            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
+            "analyzedAt": "2026-11-21T07:25:06.690Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-ff4fe0dc9fbb8537"
+              "e-13aec46962d7a77b"
             ]
           },
           {
@@ -7686,7 +7686,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-20T07:29:44.107Z"
+        "generatedAt": "2026-11-21T07:25:06.690Z"
       }
     },
     "monthly": {
@@ -12974,6 +12974,13 @@
       "hash": "e463888eb0b7f53eec8cdc5724ecb916bc84ac456fb400465d4e3868e433614a",
       "status": "published",
       "processedAt": "2026-11-20T07:29:44.107Z"
+    },
+    {
+      "issue": "daily:2026-11-21",
+      "period": "daily",
+      "hash": "81f8f1f27f9e07ae322b7ac7f8b45d65bbc0ab3298f2970d1869ae5f7998e32a",
+      "status": "published",
+      "processedAt": "2026-11-21T07:25:06.690Z"
     }
   ]
 }

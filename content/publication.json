@@ -3,9 +3,9 @@
   "reports": {
     "daily": {
       "period": "daily",
-      "issue": "daily:2026-11-23",
-      "collectedAt": "2026-11-23T07:53:44.288Z",
-      "publishedAt": "2026-11-23T07:53:44.288Z",
+      "issue": "daily:2026-11-24",
+      "collectedAt": "2026-11-24T10:06:08.470Z",
+      "publishedAt": "2026-11-24T10:06:08.470Z",
       "title": "Today · AI 에이전트 스킬·다이어그램 제작 프로젝트 분석",
       "summary": "상위 10개 중 공식 문서 근거로 5개의 용도를 분류했습니다. AI 에이전트 스킬 2개, 다이어그램 제작 1개가 포함됩니다. 분류 미확정은 5개입니다.",
       "analysis": [
@@ -23,33 +23,33 @@
         {
           "name": "elementalsouls/Claude-BugHunter",
           "url": "https://github.com/elementalsouls/Claude-BugHunter",
-          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 82 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
           "language": "Python",
-          "stars": 18446,
-          "periodStars": 1716,
+          "stars": 20461,
+          "periodStars": 2029,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-20T07:29:44.107Z",
-            "analyzedAt": "2026-11-20T07:29:44.107Z",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
-            "analysisInputFingerprint": "5f2a430f27fff34154ab1fea0d26d652fd4625600869e76495e62c5bb0dc5363",
-            "sourceFingerprint": "3a2f1085d364764913771fe360063922bbe5709a57e396e0a47cf2de00f2ae14",
+            "checkedAt": "2026-11-24T10:06:08.470Z",
+            "analyzedAt": "2026-11-24T10:06:08.470Z",
+            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
+            "analysisInputFingerprint": "da6a89ce2bc41d40e184a320dcb292ffc6a30b36d3c70dd13938c2c0d8eda3f5",
+            "sourceFingerprint": "2d576f74da0097054e5a3f275cd283e6911fd5db9025d36a612fb7cf11b62f87",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "checkedAt": "2026-11-24T10:06:08.470Z",
               "links": [
                 {
                   "path": "INSTALL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                  "checkedAt": "2026-11-24T10:06:08.470Z"
                 },
                 {
                   "path": "USAGE.md",
                   "status": "available",
-                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                  "checkedAt": "2026-11-24T10:06:08.470Z"
                 }
               ]
             },
@@ -58,54 +58,54 @@
                 "id": "readme",
                 "repository": "elementalsouls/Claude-BugHunter",
                 "path": "README.md",
-                "sha": "cd07caf4e92730b808891539a9397f1489f039d6",
-                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "sha": "1ce4a56268c3b5bc505dfd42d86cbbafc68e2800",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/README.md"
               },
               {
                 "id": "doc-09b140a43ebf",
                 "repository": "elementalsouls/Claude-BugHunter",
                 "path": "INSTALL.md",
-                "sha": "0c45c09799a1e176cdff7afec2ce7ae94f0bca4c",
-                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "sha": "c320b37c4f7042b31ac957562ee18c44b28b49ce",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/INSTALL.md"
               },
               {
                 "id": "doc-58a825c70bcc",
                 "repository": "elementalsouls/Claude-BugHunter",
                 "path": "USAGE.md",
-                "sha": "4afa72efa79c4bc48867989ac6cb215a3cd1d093",
-                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "sha": "67be689afd366b3789815a2ea70d109c2a0782e1",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/USAGE.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-228a63fba4dca9fe",
+                "id": "e-8265356dc03094b2",
                 "sourceId": "readme",
                 "section": "Quickstart",
-                "line": 44,
+                "line": 45,
                 "kind": "prose",
-                "excerpt": "All 83 skills + 15 commands load namespaced under claude-bughunter: and update when you bump the plugin version — no files copied into ~/.claude/."
+                "excerpt": "All 84 skills + 15 commands load namespaced under claude-bughunter: and update when you bump the plugin version — no files copied into ~/.claude/."
               },
               {
-                "id": "e-ca4ef9a9c8bb7b16",
+                "id": "e-f683995e38931b50",
                 "sourceId": "readme",
                 "section": "Runs on multiple agent harnesses",
-                "line": 106,
+                "line": 107,
                 "kind": "heading",
                 "excerpt": "Runs on multiple agent harnesses"
               },
               {
-                "id": "e-16cf7c2ae53af62d",
+                "id": "e-8fd2b4f889b46c6d",
                 "sourceId": "readme",
                 "section": "Runs on multiple agent harnesses",
-                "line": 106,
+                "line": 107,
                 "kind": "prose",
                 "excerpt": "The skills are plain Agent Skills — the same SKILL.md format that Claude Code · OpenCode · OpenAI Codex CLI · Hermes Agent · Google AntiGravity all load."
               },
               {
-                "id": "e-ce24465d80498911",
+                "id": "e-8336c3cda5db3230",
                 "sourceId": "doc-09b140a43ebf",
                 "section": "Run on other harnesses (OpenCode · Codex · Hermes · Google AntiGravity)",
                 "line": 67,
@@ -113,15 +113,15 @@
                 "excerpt": "Slash commands, the plugin marketplace, and the /hunt engine are Claude-Code-only; other harnesses get the skill knowledge + Burp MCP."
               },
               {
-                "id": "e-922ea1db3cc994a6",
+                "id": "e-02204e6a174d95cd",
                 "sourceId": "readme",
                 "section": "claude-bughunter",
                 "line": 3,
                 "kind": "prose",
-                "excerpt": "> A self-contained Claude skill bundle for bug hunting and external red-team work · 83 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com)."
+                "excerpt": "> A self-contained Claude skill bundle for bug hunting and external red-team work · 84 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com)."
               },
               {
-                "id": "e-5d6e306d16806e4d",
+                "id": "e-e60915b344a33ef7",
                 "sourceId": "doc-09b140a43ebf",
                 "section": "Prerequisites",
                 "line": 5,
@@ -129,7 +129,7 @@
                 "excerpt": "- Python 3.9+ — for the cbh CLI runner"
               },
               {
-                "id": "e-e4b6dcc979b87079",
+                "id": "e-bc04a59ea4c5d330",
                 "sourceId": "doc-09b140a43ebf",
                 "section": "Step 5 — (Optional) Set up the skill regenerator",
                 "line": 140,
@@ -137,31 +137,31 @@
                 "excerpt": "You need both keys (console.anthropic.com/billing for the API key) to run the generator."
               },
               {
-                "id": "e-003ba69e5d7b6727",
+                "id": "e-4a4bd86410c49560",
                 "sourceId": "readme",
                 "section": "What is this?",
-                "line": 29,
+                "line": 30,
                 "kind": "prose",
                 "excerpt": "claude-bughunter is a drop-in skill bundle for the Claude Code skills system. Install once and Claude Code stops being a chatbot and starts behaving like a senior bug-hunting researcher or red-team operator: it knows the techniques, the chain templates, the VRT mappings, the platform CVE chains, and the hygiene — and it stays in scope."
               },
               {
-                "id": "e-b408e1bbaa02dfa5",
+                "id": "e-a03704b29689d5b4",
                 "sourceId": "readme",
                 "section": "Why your model switched mid-session",
-                "line": 212,
+                "line": 213,
                 "kind": "prose",
                 "excerpt": "Separate from refusals, and easy to miss. On Opus 5, a narrow set of higher-risk cyber requests — Anthropic names exploit generation, binary-based vulnerability scanning and penetration testing — fall back to Opus 4.8 rather than being refused. You get a notice and the response is labelled with the model that answered, but in a long agentic run that is easy to scroll past, so it can look like Opus 5 quietly got worse. See why Claude switched models."
               },
               {
-                "id": "e-ef9b2c963c642825",
+                "id": "e-a38136383d687cb4",
                 "sourceId": "readme",
                 "section": "Quickstart",
-                "line": 44,
+                "line": 45,
                 "kind": "prose",
                 "excerpt": "Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder."
               },
               {
-                "id": "e-c9eb177fcc392036",
+                "id": "e-a4c494c6f154165f",
                 "sourceId": "doc-09b140a43ebf",
                 "section": "Troubleshooting",
                 "line": 229,
@@ -169,15 +169,15 @@
                 "excerpt": "| Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv"
               },
               {
-                "id": "e-2d8d39c0db1244f3",
+                "id": "e-2cf276646c853c0f",
                 "sourceId": "readme",
                 "section": "Quickstart",
-                "line": 44,
+                "line": 45,
                 "kind": "prose",
                 "excerpt": "Option A — install as a Claude Code plugin (recommended)."
               },
               {
-                "id": "e-3f64c266e2d6ea7f",
+                "id": "e-6f87bb50c69d940d",
                 "sourceId": "doc-58a825c70bcc",
                 "section": "8. Limitations and known issues",
                 "line": 424,
@@ -189,7 +189,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-228a63fba4dca9fe"
+                "e-8265356dc03094b2"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -213,10 +213,10 @@
               "findings": [
                 {
                   "title": "작업 절차와 검토 산출물",
-                  "body": "문서 설명: > A self-contained Claude skill bundle for bug hunting and external red-team work · 83 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com).",
+                  "body": "문서 설명: > A self-contained Claude skill bundle for bug hunting and external red-team work · 84 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-922ea1db3cc994a6"
+                    "e-02204e6a174d95cd"
                   ],
                   "summaryKo": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다."
                 }
@@ -227,7 +227,7 @@
                   "body": "이 문서 경로의 요구사항: - Python 3.9+ — for the cbh CLI runner",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-5d6e306d16806e4d"
+                    "e-e60915b344a33ef7"
                   ],
                   "scope": "required",
                   "path": " / Installation Guide / Prerequisites",
@@ -238,7 +238,7 @@
                   "body": "선택 가능한 경로: You need both keys (console.anthropic.com/billing for the API key) to run the generator.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-e4b6dcc979b87079"
+                    "e-bc04a59ea4c5d330"
                   ],
                   "scope": "optional",
                   "path": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator",
@@ -249,7 +249,7 @@
                   "body": "이 문서 경로의 언급: Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-ef9b2c963c642825"
+                    "e-a38136383d687cb4"
                   ],
                   "scope": "mentioned",
                   "path": " / claude-bughunter / Quickstart",
@@ -260,7 +260,7 @@
                   "body": "이 문서 경로의 언급: | Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-c9eb177fcc392036"
+                    "e-a4c494c6f154165f"
                   ],
                   "scope": "mentioned",
                   "path": " / Installation Guide / Troubleshooting",
@@ -271,7 +271,7 @@
                   "body": "이 문서 경로의 언급: Option A — install as a Claude Code plugin (recommended).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-2d8d39c0db1244f3"
+                    "e-2cf276646c853c0f"
                   ],
                   "scope": "mentioned",
                   "path": " / claude-bughunter / Quickstart",
@@ -305,7 +305,7 @@
                   "body": "문서가 명시한 해결 문제: Separate from refusals, and easy to miss. On Opus 5, a narrow set of higher-risk cyber requests — Anthropic names exploit generation, binary-based vulnerability scanning and penetration testing — fall back to Opus 4.8 rather than being refused. You get a notice and the response is labelled with the model that answered, but in a long agentic run that is easy to scroll past, so it can look like Opus 5 quietly got worse. See why Claude switched models.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-b408e1bbaa02dfa5"
+                    "e-a03704b29689d5b4"
                   ],
                   "exampleOnly": false
                 },
@@ -315,7 +315,7 @@
                     "body": "지침·스크립트·자료가 들어 있는 스킬을 읽어 작업에 적용합니다. 원문: “The 15 reference files load on demand, but the SKILL.md still consumes context on every trigger.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-3f64c266e2d6ea7f"
+                      "e-6f87bb50c69d940d"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "작업별 지침과 관련 자료를 스킬로 읽습니다."
@@ -328,7 +328,7 @@
                     "body": "이 문서 경로의 요구사항: - Python 3.9+ — for the cbh CLI runner",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-5d6e306d16806e4d"
+                      "e-e60915b344a33ef7"
                     ],
                     "scope": "required",
                     "path": " / Installation Guide / Prerequisites",
@@ -339,7 +339,7 @@
                     "body": "선택 가능한 경로: You need both keys (console.anthropic.com/billing for the API key) to run the generator.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-e4b6dcc979b87079"
+                      "e-bc04a59ea4c5d330"
                     ],
                     "scope": "optional",
                     "path": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator",
@@ -350,7 +350,7 @@
                     "body": "이 문서 경로의 언급: Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-ef9b2c963c642825"
+                      "e-a38136383d687cb4"
                     ],
                     "scope": "mentioned",
                     "path": " / claude-bughunter / Quickstart",
@@ -361,7 +361,7 @@
                     "body": "이 문서 경로의 언급: | Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-c9eb177fcc392036"
+                      "e-a4c494c6f154165f"
                     ],
                     "scope": "mentioned",
                     "path": " / Installation Guide / Troubleshooting",
@@ -372,7 +372,7 @@
                     "body": "이 문서 경로의 언급: Option A — install as a Claude Code plugin (recommended).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-2d8d39c0db1244f3"
+                      "e-2cf276646c853c0f"
                     ],
                     "scope": "mentioned",
                     "path": " / claude-bughunter / Quickstart",
@@ -385,7 +385,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-922ea1db3cc994a6"
+                "e-02204e6a174d95cd"
               ],
               "cautions": [],
               "core": [
@@ -394,7 +394,7 @@
                   "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-922ea1db3cc994a6"
+                    "e-02204e6a174d95cd"
                   ]
                 }
               ]
@@ -417,7 +417,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "cd07caf4e92730b808891539a9397f1489f039d6",
+            "readmeSha": "1ce4a56268c3b5bc505dfd42d86cbbafc68e2800",
             "analysisReused": false
           }
         },
@@ -426,8 +426,8 @@
           "url": "https://github.com/obra/superpowers",
           "description": "An agentic skills framework & software development methodology that works.",
           "language": "Shell",
-          "stars": 324434,
-          "periodStars": 788,
+          "stars": 325480,
+          "periodStars": 840,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -655,8 +655,8 @@
           "url": "https://github.com/HKUDS/CLI-Anything",
           "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
           "language": "Python",
-          "stars": 63038,
-          "periodStars": 699,
+          "stars": 64146,
+          "periodStars": 790,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1021,8 +1021,8 @@
           "url": "https://github.com/jingyaogong/minimind",
           "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
           "language": "Python",
-          "stars": 69028,
-          "periodStars": 473,
+          "stars": 69849,
+          "periodStars": 828,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1221,8 +1221,8 @@
           "url": "https://github.com/cursor/plugins",
           "description": "Cursor plugin specification and official plugins",
           "language": "TypeScript",
-          "stars": 18582,
-          "periodStars": 294,
+          "stars": 18960,
+          "periodStars": 397,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1419,8 +1419,8 @@
           "url": "https://github.com/firecrawl/firecrawl",
           "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
           "language": "TypeScript",
-          "stars": 207300,
-          "periodStars": 915,
+          "stars": 208323,
+          "periodStars": 924,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1627,8 +1627,8 @@
           "url": "https://github.com/nginx/nginx",
           "description": "The official NGINX Open Source repository.",
           "language": "C",
-          "stars": 32938,
-          "periodStars": 163,
+          "stars": 33111,
+          "periodStars": 174,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1783,8 +1783,8 @@
           "url": "https://github.com/openvinotoolkit/openvino",
           "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
           "language": "C++",
-          "stars": 12161,
-          "periodStars": 158,
+          "stars": 12359,
+          "periodStars": 184,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1919,8 +1919,8 @@
           "url": "https://github.com/cathrynlavery/diagram-design",
           "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
           "language": "HTML",
-          "stars": 70524,
-          "periodStars": 518,
+          "stars": 71352,
+          "periodStars": 620,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -2191,31 +2191,31 @@
           "url": "https://github.com/mvanhorn/last30days-skill",
           "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
           "language": "Python",
-          "stars": 72990,
-          "periodStars": 668,
+          "stars": 73741,
+          "periodStars": 797,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
+            "checkedAt": "2026-11-24T10:06:08.470Z",
+            "analyzedAt": "2026-11-24T10:06:08.470Z",
+            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
             "analysisInputFingerprint": "cb8cc2a0994de4c93d11ff8c10e8aa38aae34e5d205d5d0d12e6b3f62cd4f3ae",
-            "sourceFingerprint": "8e371dbb1205f333765dd5010e1537286f122d953f272f51b3f3c3e648cda7fb",
+            "sourceFingerprint": "04b89bd6a8a3edb7b07e9fef30c7c4d78f4ed33d914ffac29214b71d03dc1613",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-17T08:08:14.628Z",
+              "checkedAt": "2026-11-24T10:06:08.470Z",
               "links": [
                 {
                   "path": "README.fr.md",
                   "status": "available",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
+                  "checkedAt": "2026-11-24T10:06:08.470Z"
                 },
                 {
                   "path": "README.de.md",
                   "status": "available",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
+                  "checkedAt": "2026-11-24T10:06:08.470Z"
                 }
               ]
             },
@@ -2224,30 +2224,30 @@
                 "id": "readme",
                 "repository": "mvanhorn/last30days-skill",
                 "path": "README.md",
-                "sha": "8bbc95b4d33646473266edae86a6c8e61ba4aadd",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/mvanhorn/last30days-skill/blob/main/README.md"
               },
               {
                 "id": "doc-167f176fa7de",
                 "repository": "mvanhorn/last30days-skill",
                 "path": "README.fr.md",
-                "sha": "94ed9ca8e58fb19d60b84fed1b2bba6acf9a109c",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "sha": "3f74af9361ad552a1ae6e85b5a53d4c6b77fb9fb",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/mvanhorn/last30days-skill/blob/main/README.fr.md"
               },
               {
                 "id": "doc-cf91861605ec",
                 "repository": "mvanhorn/last30days-skill",
                 "path": "README.de.md",
-                "sha": "36cc552eeb83d4a42e3179bfe0b1376555351b7e",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "sha": "3aa16583f87e74e6356cac983bde3b3155c84508",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/mvanhorn/last30days-skill/blob/main/README.de.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-9cce7c2f2908d1e9",
+                "id": "e-0978441903fd28e5",
                 "sourceId": "readme",
                 "section": "/last30days",
                 "line": 1,
@@ -2255,7 +2255,7 @@
                 "excerpt": "Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts:"
               },
               {
-                "id": "e-190f7f4030302841",
+                "id": "e-587d80b97121e692",
                 "sourceId": "readme",
                 "section": "Install",
                 "line": 143,
@@ -2263,7 +2263,7 @@
                 "excerpt": "| Surface | Install | Updates | |---------|---------|---------| | Claude Code (recommended) | /plugin marketplace add mvanhorn/last30days-skill | Auto via marketplace, or claude plugin update last30days@last30days-skill | | Grok (xAI Build CLI) | grok plugin marketplace add mvanhorn/last30days-skill then grok plugin install last30days | grok plugin update last30days | | Grok Bot | Add it from the Grok Bot marketplace | Managed by the marketplace | | Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts | npx skills add"
               },
               {
-                "id": "e-84329a7632c4396c",
+                "id": "e-016f4fd1c2fa0207",
                 "sourceId": "readme",
                 "section": "Sources, scored by the people",
                 "line": 67,
@@ -2271,7 +2271,7 @@
                 "excerpt": "Requested explicitly with --search xhs when a logged-in x-mcp browser plugin or xiaohongshu-mcp service is running locally."
               },
               {
-                "id": "e-ba47320d52584525",
+                "id": "e-df8e1dbdae12fbda",
                 "sourceId": "readme",
                 "section": "Install",
                 "line": 143,
@@ -2279,7 +2279,7 @@
                 "excerpt": "it from the Grok Bot marketplace | Managed by the marketplace | | Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts | npx skills add mvanhorn/last30days-skill -g | npx skills update last30days -g | | claude.ai (web) | Download last30days.skill and upload via claude.ai > Customize > Skills > + > Create skill > Upload a skill | Re-download and re-upload | | Claude Desktop | Download the .mcpb for your platform and drag into Settings > Extensions | Re-download and drag the new bundle in | | OpenClaw | clawhub install last30days-official"
               },
               {
-                "id": "e-d587c16d56a21b40",
+                "id": "e-4d23b5e871d5d038",
                 "sourceId": "readme",
                 "section": "Why this exists",
                 "line": 59,
@@ -2287,7 +2287,7 @@
                 "excerpt": "I built it to keep up in AI. Everything changes every day and the Reddit and X nerds are always on top of it first. I needed better prompts, and the training data was always months behind what the community had already figured out."
               },
               {
-                "id": "e-210424b4073cd1a4",
+                "id": "e-22f215f531aa42b2",
                 "sourceId": "readme",
                 "section": "Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills hosts",
                 "line": 192,
@@ -2295,18 +2295,18 @@
                 "excerpt": "To inspect what a run would read and write without starting research, run the bundled scripts/last30days.py --preflight from the loaded skill directory; in a source checkout, the equivalent command is python3 skills/last30days/scripts/last30days.py --preflight."
               },
               {
-                "id": "e-efa63b06de2ac9b8",
+                "id": "e-cb143cde82c610f2",
                 "sourceId": "readme",
                 "section": "Claude Desktop",
-                "line": 235,
+                "line": 239,
                 "kind": "prose",
                 "excerpt": "When prompted, paste API keys for the sources you want to enable."
               },
               {
-                "id": "e-2c5ad9fd402f6312",
+                "id": "e-5e88fda33e47f21f",
                 "sourceId": "readme",
                 "section": "Claude Desktop",
-                "line": 235,
+                "line": 239,
                 "kind": "prose",
                 "excerpt": "- macOS Apple Silicon: last30days-pp-mcp-darwin-arm64.mcpb"
               }
@@ -2315,7 +2315,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-9cce7c2f2908d1e9"
+                "e-0978441903fd28e5"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -2347,7 +2347,7 @@
                   "body": "이 문서 경로의 언급: To inspect what a run would read and write without starting research, run the bundled scripts/last30days.py --preflight from the loaded skill directory; in a source checkout, the equivalent command is python3 skills/last30days/scripts/last30days.py --preflight.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-210424b4073cd1a4"
+                    "e-22f215f531aa42b2"
                   ],
                   "scope": "mentioned",
                   "path": " / /last30days / Install / Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills hosts",
@@ -2358,7 +2358,7 @@
                   "body": "이 문서 경로의 언급: When prompted, paste API keys for the sources you want to enable.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-efa63b06de2ac9b8"
+                    "e-cb143cde82c610f2"
                   ],
                   "scope": "mentioned",
                   "path": " / /last30days / Install / Claude Desktop",
@@ -2369,7 +2369,7 @@
                   "body": "이 문서 경로의 언급: - macOS Apple Silicon: last30days-pp-mcp-darwin-arm64.mcpb",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-2c5ad9fd402f6312"
+                    "e-5e88fda33e47f21f"
                   ],
                   "scope": "mentioned",
                   "path": " / /last30days / Install / Claude Desktop",
@@ -2380,7 +2380,7 @@
                   "body": "이 문서 경로의 언급: | Surface | Install | Updates | |---------|---------|---------| | Claude Code (recommended) | /plugin marketplace add mvanhorn/last30days-skill | Auto via marketplace, or claude plugin update last30days@last30days-skill | | Grok (xAI Build CLI) | grok plugin marketplace add mvanhorn/last30days-skill then grok plugin install last30days | grok plugin update last30days | | Grok Bot | Add it from the Grok Bot marketplace | Managed by the marketplace | | Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts | npx skills add",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-190f7f4030302841"
+                    "e-587d80b97121e692"
                   ],
                   "scope": "mentioned",
                   "path": " / /last30days / Install",
@@ -2414,7 +2414,7 @@
                   "body": "문서가 명시한 해결 문제: I built it to keep up in AI. Everything changes every day and the Reddit and X nerds are always on top of it first. I needed better prompts, and the training data was always months behind what the community had already figured out.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-d587c16d56a21b40"
+                    "e-4d23b5e871d5d038"
                   ],
                   "exampleOnly": false
                 },
@@ -2426,7 +2426,7 @@
                     "body": "이 문서 경로의 언급: To inspect what a run would read and write without starting research, run the bundled scripts/last30days.py --preflight from the loaded skill directory; in a source checkout, the equivalent command is python3 skills/last30days/scripts/last30days.py --preflight.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-210424b4073cd1a4"
+                      "e-22f215f531aa42b2"
                     ],
                     "scope": "mentioned",
                     "path": " / /last30days / Install / Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills hosts",
@@ -2437,7 +2437,7 @@
                     "body": "이 문서 경로의 언급: When prompted, paste API keys for the sources you want to enable.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-efa63b06de2ac9b8"
+                      "e-cb143cde82c610f2"
                     ],
                     "scope": "mentioned",
                     "path": " / /last30days / Install / Claude Desktop",
@@ -2448,7 +2448,7 @@
                     "body": "이 문서 경로의 언급: - macOS Apple Silicon: last30days-pp-mcp-darwin-arm64.mcpb",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-2c5ad9fd402f6312"
+                      "e-5e88fda33e47f21f"
                     ],
                     "scope": "mentioned",
                     "path": " / /last30days / Install / Claude Desktop",
@@ -2459,7 +2459,7 @@
                     "body": "이 문서 경로의 언급: | Surface | Install | Updates | |---------|---------|---------| | Claude Code (recommended) | /plugin marketplace add mvanhorn/last30days-skill | Auto via marketplace, or claude plugin update last30days@last30days-skill | | Grok (xAI Build CLI) | grok plugin marketplace add mvanhorn/last30days-skill then grok plugin install last30days | grok plugin update last30days | | Grok Bot | Add it from the Grok Bot marketplace | Managed by the marketplace | | Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts | npx skills add",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-190f7f4030302841"
+                      "e-587d80b97121e692"
                     ],
                     "scope": "mentioned",
                     "path": " / /last30days / Install",
@@ -2472,7 +2472,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-d587c16d56a21b40"
+                "e-4d23b5e871d5d038"
               ],
               "cautions": [],
               "core": []
@@ -2497,7 +2497,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "8bbc95b4d33646473266edae86a6c8e61ba4aadd",
+            "readmeSha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
             "analysisReused": false
           }
         }
@@ -2577,7 +2577,7 @@
                     "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-922ea1db3cc994a6"
+                      "e-02204e6a174d95cd"
                     ]
                   }
                 ],
@@ -2589,7 +2589,7 @@
                       "body": "작업별 지침과 관련 자료를 스킬로 읽습니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-3f64c266e2d6ea7f"
+                        "e-6f87bb50c69d940d"
                       ]
                     }
                   ],
@@ -2606,7 +2606,7 @@
                     "body": "이 설치 경로에서는 Python 3.9+ 조건을 요구합니다.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-5d6e306d16806e4d"
+                      "e-e60915b344a33ef7"
                     ],
                     "scope": "required",
                     "context": " / Installation Guide / Prerequisites"
@@ -2616,7 +2616,7 @@
                     "body": "서비스 인증 관련 경로는 선택 사항입니다.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-e4b6dcc979b87079"
+                      "e-bc04a59ea4c5d330"
                     ],
                     "scope": "optional",
                     "context": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator"
@@ -2643,7 +2643,7 @@
                     "body": "설치·시작 경로에서 python3 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-210424b4073cd1a4"
+                      "e-22f215f531aa42b2"
                     ],
                     "scope": "mentioned",
                     "context": " / /last30days / Install / Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills hosts"
@@ -2653,7 +2653,7 @@
                     "body": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-efa63b06de2ac9b8"
+                      "e-cb143cde82c610f2"
                     ],
                     "scope": "mentioned",
                     "context": " / /last30days / Install / Claude Desktop"
@@ -2823,7 +2823,7 @@
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
-                  "e-ef9b2c963c642825"
+                  "e-a38136383d687cb4"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2863,7 +2863,7 @@
               {
                 "name": "mvanhorn/last30days-skill",
                 "evidenceIds": [
-                  "e-2c5ad9fd402f6312"
+                  "e-5e88fda33e47f21f"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2877,7 +2877,7 @@
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
-                  "e-2d8d39c0db1244f3"
+                  "e-2cf276646c853c0f"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2909,7 +2909,7 @@
               {
                 "name": "mvanhorn/last30days-skill",
                 "evidenceIds": [
-                  "e-190f7f4030302841"
+                  "e-587d80b97121e692"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2923,7 +2923,7 @@
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
-                  "e-5d6e306d16806e4d"
+                  "e-e60915b344a33ef7"
                 ],
                 "scope": "required",
                 "exampleOnly": false
@@ -2947,7 +2947,7 @@
               {
                 "name": "mvanhorn/last30days-skill",
                 "evidenceIds": [
-                  "e-210424b4073cd1a4"
+                  "e-22f215f531aa42b2"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2961,7 +2961,7 @@
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
-                  "e-e4b6dcc979b87079"
+                  "e-bc04a59ea4c5d330"
                 ],
                 "scope": "optional",
                 "exampleOnly": false
@@ -2969,7 +2969,7 @@
               {
                 "name": "mvanhorn/last30days-skill",
                 "evidenceIds": [
-                  "e-efa63b06de2ac9b8"
+                  "e-cb143cde82c610f2"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2982,11 +2982,11 @@
         "references": [
           {
             "name": "elementalsouls/Claude-BugHunter",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
-            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
+            "analyzedAt": "2026-11-24T10:06:08.470Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-228a63fba4dca9fe"
+              "e-8265356dc03094b2"
             ]
           },
           {
@@ -3053,15 +3053,15 @@
           },
           {
             "name": "mvanhorn/last30days-skill",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
+            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
+            "analyzedAt": "2026-11-24T10:06:08.470Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-9cce7c2f2908d1e9"
+              "e-0978441903fd28e5"
             ]
           }
         ],
-        "generatedAt": "2026-11-23T07:53:44.288Z"
+        "generatedAt": "2026-11-24T10:06:08.470Z"
       }
     },
     "weekly": {
@@ -4205,24 +4205,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
+            "checkedAt": "2026-11-24T10:06:08.470Z",
+            "analyzedAt": "2026-11-24T10:06:08.470Z",
+            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
             "analysisInputFingerprint": "cb8cc2a0994de4c93d11ff8c10e8aa38aae34e5d205d5d0d12e6b3f62cd4f3ae",
-            "sourceFingerprint": "8e371dbb1205f333765dd5010e1537286f122d953f272f51b3f3c3e648cda7fb",
+            "sourceFingerprint": "04b89bd6a8a3edb7b07e9fef30c7c4d78f4ed33d914ffac29214b71d03dc1613",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-17T08:08:14.628Z",
+              "checkedAt": "2026-11-24T10:06:08.470Z",
               "links": [
                 {
                   "path": "README.fr.md",
                   "status": "available",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
+                  "checkedAt": "2026-11-24T10:06:08.470Z"
                 },
                 {
                   "path": "README.de.md",
                   "status": "available",
-                  "checkedAt": "2026-11-17T08:08:14.628Z"
+                  "checkedAt": "2026-11-24T10:06:08.470Z"
                 }
               ]
             },
@@ -4231,30 +4231,30 @@
                 "id": "readme",
                 "repository": "mvanhorn/last30days-skill",
                 "path": "README.md",
-                "sha": "8bbc95b4d33646473266edae86a6c8e61ba4aadd",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "sha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/mvanhorn/last30days-skill/blob/main/README.md"
               },
               {
                 "id": "doc-167f176fa7de",
                 "repository": "mvanhorn/last30days-skill",
                 "path": "README.fr.md",
-                "sha": "94ed9ca8e58fb19d60b84fed1b2bba6acf9a109c",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "sha": "3f74af9361ad552a1ae6e85b5a53d4c6b77fb9fb",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/mvanhorn/last30days-skill/blob/main/README.fr.md"
               },
               {
                 "id": "doc-cf91861605ec",
                 "repository": "mvanhorn/last30days-skill",
                 "path": "README.de.md",
-                "sha": "36cc552eeb83d4a42e3179bfe0b1376555351b7e",
-                "fetchedAt": "2026-11-17T08:08:14.628Z",
+                "sha": "3aa16583f87e74e6356cac983bde3b3155c84508",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/mvanhorn/last30days-skill/blob/main/README.de.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-9cce7c2f2908d1e9",
+                "id": "e-0978441903fd28e5",
                 "sourceId": "readme",
                 "section": "/last30days",
                 "line": 1,
@@ -4262,7 +4262,7 @@
                 "excerpt": "Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts:"
               },
               {
-                "id": "e-190f7f4030302841",
+                "id": "e-587d80b97121e692",
                 "sourceId": "readme",
                 "section": "Install",
                 "line": 143,
@@ -4270,7 +4270,7 @@
                 "excerpt": "| Surface | Install | Updates | |---------|---------|---------| | Claude Code (recommended) | /plugin marketplace add mvanhorn/last30days-skill | Auto via marketplace, or claude plugin update last30days@last30days-skill | | Grok (xAI Build CLI) | grok plugin marketplace add mvanhorn/last30days-skill then grok plugin install last30days | grok plugin update last30days | | Grok Bot | Add it from the Grok Bot marketplace | Managed by the marketplace | | Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts | npx skills add"
               },
               {
-                "id": "e-84329a7632c4396c",
+                "id": "e-016f4fd1c2fa0207",
                 "sourceId": "readme",
                 "section": "Sources, scored by the people",
                 "line": 67,
@@ -4278,7 +4278,7 @@
                 "excerpt": "Requested explicitly with --search xhs when a logged-in x-mcp browser plugin or xiaohongshu-mcp service is running locally."
               },
               {
-                "id": "e-ba47320d52584525",
+                "id": "e-df8e1dbdae12fbda",
                 "sourceId": "readme",
                 "section": "Install",
                 "line": 143,
@@ -4286,7 +4286,7 @@
                 "excerpt": "it from the Grok Bot marketplace | Managed by the marketplace | | Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts | npx skills add mvanhorn/last30days-skill -g | npx skills update last30days -g | | claude.ai (web) | Download last30days.skill and upload via claude.ai > Customize > Skills > + > Create skill > Upload a skill | Re-download and re-upload | | Claude Desktop | Download the .mcpb for your platform and drag into Settings > Extensions | Re-download and drag the new bundle in | | OpenClaw | clawhub install last30days-official"
               },
               {
-                "id": "e-d587c16d56a21b40",
+                "id": "e-4d23b5e871d5d038",
                 "sourceId": "readme",
                 "section": "Why this exists",
                 "line": 59,
@@ -4294,7 +4294,7 @@
                 "excerpt": "I built it to keep up in AI. Everything changes every day and the Reddit and X nerds are always on top of it first. I needed better prompts, and the training data was always months behind what the community had already figured out."
               },
               {
-                "id": "e-210424b4073cd1a4",
+                "id": "e-22f215f531aa42b2",
                 "sourceId": "readme",
                 "section": "Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills hosts",
                 "line": 192,
@@ -4302,18 +4302,18 @@
                 "excerpt": "To inspect what a run would read and write without starting research, run the bundled scripts/last30days.py --preflight from the loaded skill directory; in a source checkout, the equivalent command is python3 skills/last30days/scripts/last30days.py --preflight."
               },
               {
-                "id": "e-efa63b06de2ac9b8",
+                "id": "e-cb143cde82c610f2",
                 "sourceId": "readme",
                 "section": "Claude Desktop",
-                "line": 235,
+                "line": 239,
                 "kind": "prose",
                 "excerpt": "When prompted, paste API keys for the sources you want to enable."
               },
               {
-                "id": "e-2c5ad9fd402f6312",
+                "id": "e-5e88fda33e47f21f",
                 "sourceId": "readme",
                 "section": "Claude Desktop",
-                "line": 235,
+                "line": 239,
                 "kind": "prose",
                 "excerpt": "- macOS Apple Silicon: last30days-pp-mcp-darwin-arm64.mcpb"
               }
@@ -4322,7 +4322,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-9cce7c2f2908d1e9"
+                "e-0978441903fd28e5"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -4354,7 +4354,7 @@
                   "body": "이 문서 경로의 언급: To inspect what a run would read and write without starting research, run the bundled scripts/last30days.py --preflight from the loaded skill directory; in a source checkout, the equivalent command is python3 skills/last30days/scripts/last30days.py --preflight.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-210424b4073cd1a4"
+                    "e-22f215f531aa42b2"
                   ],
                   "scope": "mentioned",
                   "path": " / /last30days / Install / Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills hosts",
@@ -4365,7 +4365,7 @@
                   "body": "이 문서 경로의 언급: When prompted, paste API keys for the sources you want to enable.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-efa63b06de2ac9b8"
+                    "e-cb143cde82c610f2"
                   ],
                   "scope": "mentioned",
                   "path": " / /last30days / Install / Claude Desktop",
@@ -4376,7 +4376,7 @@
                   "body": "이 문서 경로의 언급: - macOS Apple Silicon: last30days-pp-mcp-darwin-arm64.mcpb",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-2c5ad9fd402f6312"
+                    "e-5e88fda33e47f21f"
                   ],
                   "scope": "mentioned",
                   "path": " / /last30days / Install / Claude Desktop",
@@ -4387,7 +4387,7 @@
                   "body": "이 문서 경로의 언급: | Surface | Install | Updates | |---------|---------|---------| | Claude Code (recommended) | /plugin marketplace add mvanhorn/last30days-skill | Auto via marketplace, or claude plugin update last30days@last30days-skill | | Grok (xAI Build CLI) | grok plugin marketplace add mvanhorn/last30days-skill then grok plugin install last30days | grok plugin update last30days | | Grok Bot | Add it from the Grok Bot marketplace | Managed by the marketplace | | Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts | npx skills add",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-190f7f4030302841"
+                    "e-587d80b97121e692"
                   ],
                   "scope": "mentioned",
                   "path": " / /last30days / Install",
@@ -4421,7 +4421,7 @@
                   "body": "문서가 명시한 해결 문제: I built it to keep up in AI. Everything changes every day and the Reddit and X nerds are always on top of it first. I needed better prompts, and the training data was always months behind what the community had already figured out.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-d587c16d56a21b40"
+                    "e-4d23b5e871d5d038"
                   ],
                   "exampleOnly": false
                 },
@@ -4433,7 +4433,7 @@
                     "body": "이 문서 경로의 언급: To inspect what a run would read and write without starting research, run the bundled scripts/last30days.py --preflight from the loaded skill directory; in a source checkout, the equivalent command is python3 skills/last30days/scripts/last30days.py --preflight.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-210424b4073cd1a4"
+                      "e-22f215f531aa42b2"
                     ],
                     "scope": "mentioned",
                     "path": " / /last30days / Install / Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills hosts",
@@ -4444,7 +4444,7 @@
                     "body": "이 문서 경로의 언급: When prompted, paste API keys for the sources you want to enable.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-efa63b06de2ac9b8"
+                      "e-cb143cde82c610f2"
                     ],
                     "scope": "mentioned",
                     "path": " / /last30days / Install / Claude Desktop",
@@ -4455,7 +4455,7 @@
                     "body": "이 문서 경로의 언급: - macOS Apple Silicon: last30days-pp-mcp-darwin-arm64.mcpb",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-2c5ad9fd402f6312"
+                      "e-5e88fda33e47f21f"
                     ],
                     "scope": "mentioned",
                     "path": " / /last30days / Install / Claude Desktop",
@@ -4466,7 +4466,7 @@
                     "body": "이 문서 경로의 언급: | Surface | Install | Updates | |---------|---------|---------| | Claude Code (recommended) | /plugin marketplace add mvanhorn/last30days-skill | Auto via marketplace, or claude plugin update last30days@last30days-skill | | Grok (xAI Build CLI) | grok plugin marketplace add mvanhorn/last30days-skill then grok plugin install last30days | grok plugin update last30days | | Grok Bot | Add it from the Grok Bot marketplace | Managed by the marketplace | | Codex, Cursor, Copilot, Gemini CLI, or any of 50+ Agent Skills hosts | npx skills add",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-190f7f4030302841"
+                      "e-587d80b97121e692"
                     ],
                     "scope": "mentioned",
                     "path": " / /last30days / Install",
@@ -4479,7 +4479,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-d587c16d56a21b40"
+                "e-4d23b5e871d5d038"
               ],
               "cautions": [],
               "core": []
@@ -4504,7 +4504,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "8bbc95b4d33646473266edae86a6c8e61ba4aadd",
+            "readmeSha": "8c3c3e5d82c6159d7cbd6b9611c665416b761f37",
             "analysisReused": false
           }
         },
@@ -5375,25 +5375,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-23T07:53:44.288Z",
-            "analyzedAt": "2026-11-23T07:53:44.288Z",
-            "sourceCheckedAt": "2026-11-23T07:53:44.288Z",
+            "checkedAt": "2026-11-24T10:06:08.470Z",
+            "analyzedAt": "2026-11-24T10:06:08.470Z",
+            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "497ea851c915f09733337c54594f4e8a09096b101e06b3f6176467eb03a7b79b",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-23T07:53:44.288Z",
+              "checkedAt": "2026-11-24T10:06:08.470Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-23T07:53:44.288Z"
+                  "checkedAt": "2026-11-24T10:06:08.470Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-23T07:53:44.288Z"
+                  "checkedAt": "2026-11-24T10:06:08.470Z"
                 }
               ]
             },
@@ -5403,7 +5403,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
-                "fetchedAt": "2026-11-23T07:53:44.288Z",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -5411,7 +5411,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
-                "fetchedAt": "2026-11-23T07:53:44.288Z",
+                "fetchedAt": "2026-11-24T10:06:08.470Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -6012,7 +6012,7 @@
                     "body": "설치·시작 경로에서 python3 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-210424b4073cd1a4"
+                      "e-22f215f531aa42b2"
                     ],
                     "scope": "mentioned",
                     "context": " / /last30days / Install / Codex, Cursor, Copilot, Gemini CLI, and other Agent Skills hosts"
@@ -6022,7 +6022,7 @@
                     "body": "설치·시작 경로에서 서비스 인증 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-efa63b06de2ac9b8"
+                      "e-cb143cde82c610f2"
                     ],
                     "scope": "mentioned",
                     "context": " / /last30days / Install / Claude Desktop"
@@ -6371,7 +6371,7 @@
               {
                 "name": "mvanhorn/last30days-skill",
                 "evidenceIds": [
-                  "e-190f7f4030302841"
+                  "e-587d80b97121e692"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -6417,7 +6417,7 @@
               {
                 "name": "mvanhorn/last30days-skill",
                 "evidenceIds": [
-                  "e-2c5ad9fd402f6312"
+                  "e-5e88fda33e47f21f"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -6455,7 +6455,7 @@
               {
                 "name": "mvanhorn/last30days-skill",
                 "evidenceIds": [
-                  "e-efa63b06de2ac9b8"
+                  "e-cb143cde82c610f2"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -6550,11 +6550,11 @@
           },
           {
             "name": "mvanhorn/last30days-skill",
-            "sourceCheckedAt": "2026-11-17T08:08:14.628Z",
-            "analyzedAt": "2026-11-17T08:08:14.628Z",
+            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
+            "analyzedAt": "2026-11-24T10:06:08.470Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-9cce7c2f2908d1e9"
+              "e-0978441903fd28e5"
             ]
           },
           {
@@ -6586,8 +6586,8 @@
           },
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-23T07:53:44.288Z",
-            "analyzedAt": "2026-11-23T07:53:44.288Z",
+            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
+            "analyzedAt": "2026-11-24T10:06:08.470Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-a0aaaa753c20da6d"
@@ -6601,7 +6601,7 @@
             "classificationEvidenceIds": []
           }
         ],
-        "generatedAt": "2026-11-23T07:53:44.288Z"
+        "generatedAt": "2026-11-24T10:06:08.470Z"
       }
     },
     "monthly": {
@@ -11917,6 +11917,13 @@
       "hash": "a788792f08b89f82e766522c6da81132d295ebf4174d40c78ecd367eff1464eb",
       "status": "published",
       "processedAt": "2026-11-23T07:53:44.288Z"
+    },
+    {
+      "issue": "daily:2026-11-24",
+      "period": "daily",
+      "hash": "598c9e5e9f8357f9ec9a73083db046fc52adcf57821b8e6df6208f890753bff1",
+      "status": "published",
+      "processedAt": "2026-11-24T10:06:08.470Z"
     }
   ]
 }

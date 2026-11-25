@@ -1228,14 +1228,14 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-18T07:42:50.784Z",
-            "analyzedAt": "2026-11-18T07:42:50.784Z",
-            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
+            "checkedAt": "2026-11-25T08:51:06.320Z",
+            "analyzedAt": "2026-11-25T08:51:06.320Z",
+            "sourceCheckedAt": "2026-11-25T08:51:06.320Z",
             "analysisInputFingerprint": "26868314c625f9664cfba427fdcba82657837a867f1e85d4e2705e395fb7cbbd",
-            "sourceFingerprint": "598e37dc3ecb120df188496cd2789c01f2ca2a2250539f4afa4cd656aceffb18",
+            "sourceFingerprint": "4df836daf37e9be47d0c44b9c8af6b6fdcd08f95b2630fc68415eca2341992ec",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-18T07:42:50.784Z",
+              "checkedAt": "2026-11-25T08:51:06.320Z",
               "links": []
             },
             "sources": [
@@ -1243,14 +1243,14 @@
                 "id": "readme",
                 "repository": "cursor/plugins",
                 "path": "README.md",
-                "sha": "ee488e42344cc6ec6bfed86ace1fb64d7f9eae9e",
-                "fetchedAt": "2026-11-18T07:42:50.784Z",
+                "sha": "c36b556df55731603d5b7ae31b08a65974bf55f0",
+                "fetchedAt": "2026-11-25T08:51:06.320Z",
                 "url": "https://github.com/cursor/plugins/blob/main/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-f2ae0df2abe5bcd8",
+                "id": "e-a5faca021cdabb08",
                 "sourceId": "readme",
                 "section": "Plugins",
                 "line": 5,
@@ -1258,15 +1258,23 @@
                 "excerpt": "| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions."
               },
               {
-                "id": "e-99abe13cbc0f8a96",
+                "id": "e-21529dea6603e53c",
                 "sourceId": "readme",
                 "section": "Repository structure",
-                "line": 150,
+                "line": 160,
                 "kind": "prose",
                 "excerpt": "The root .cursor-plugin/marketplace.json lists all plugins, and each plugin has its own manifest:"
               },
               {
-                "id": "e-3a4ccb9bddff90eb",
+                "id": "e-c07b8250475c4aaa",
+                "sourceId": "readme",
+                "section": "Plugins",
+                "line": 5,
+                "kind": "prose",
+                "excerpt": "| | sabre-developer-hub | Sabre Developer Hub | Cursor | Integrations | Search and read Sabre Developer Hub documentation, OpenAPI specs, and Sabre-published agent skills for travel APIs, SDKs, and product collections."
+              },
+              {
+                "id": "e-1d41e1affd7ac83a",
                 "sourceId": "readme",
                 "section": "Plugins",
                 "line": 5,
@@ -1274,15 +1282,15 @@
                 "excerpt": "| | thermos | Thermos | Cursor | Developer Tools | Thermo-nuclear branch review: deep security/correctness audits, harsh code-quality rubrics, parallel subagents, thermos orchestration, and optional merge-ready PR flows."
               },
               {
-                "id": "e-f7a1e12cad5ca17e",
+                "id": "e-fff76f3ec91de7a2",
                 "sourceId": "readme",
                 "section": "Repository structure",
-                "line": 150,
+                "line": 160,
                 "kind": "prose",
                 "excerpt": "This is a multi-plugin marketplace repository."
               },
               {
-                "id": "e-01804b1601081369",
+                "id": "e-d1a15e7de0a8a3fa",
                 "sourceId": "readme",
                 "section": "Plugins",
                 "line": 5,
@@ -1294,7 +1302,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-f2ae0df2abe5bcd8"
+                "e-a5faca021cdabb08"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -1316,7 +1324,7 @@
                   "body": "문서 설명: | | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-f2ae0df2abe5bcd8"
+                    "e-a5faca021cdabb08"
                   ],
                   "summaryKo": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다."
                 }
@@ -1351,7 +1359,7 @@
                     "body": "음성으로 변환할 텍스트를 입력으로 받는 흐름입니다. 원문: “| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-f2ae0df2abe5bcd8"
+                      "e-a5faca021cdabb08"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "음성으로 변환할 텍스트를 입력합니다."
@@ -1363,7 +1371,7 @@
                     "body": "텍스트나 음성 생성 작업의 결과로 음성을 다룹니다. 원문: “| | grok-voice | Grok Voice | Eric Zakariasson | Developer Tools | Add Grok voice to an app: realtime speech-to-speech, speech-to-text dictation, text-to-speech read-aloud, and a log-driven fix loop for voice sessions.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-f2ae0df2abe5bcd8"
+                      "e-a5faca021cdabb08"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "음성을 생성합니다."
@@ -1376,7 +1384,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-f2ae0df2abe5bcd8"
+                "e-a5faca021cdabb08"
               ],
               "cautions": [],
               "core": [
@@ -1385,7 +1393,7 @@
                   "body": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-f2ae0df2abe5bcd8"
+                    "e-a5faca021cdabb08"
                   ]
                 }
               ]
@@ -1410,7 +1418,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "ee488e42344cc6ec6bfed86ace1fb64d7f9eae9e",
+            "readmeSha": "c36b556df55731603d5b7ae31b08a65974bf55f0",
             "analysisReused": false
           }
         },
@@ -2778,7 +2786,7 @@
                     "body": "녹음된 음성을 텍스트로 옮기는 전사 기능을 다룹니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-f2ae0df2abe5bcd8"
+                      "e-a5faca021cdabb08"
                     ]
                   }
                 ],
@@ -2790,7 +2798,7 @@
                       "body": "음성으로 변환할 텍스트를 입력합니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-f2ae0df2abe5bcd8"
+                        "e-a5faca021cdabb08"
                       ]
                     }
                   ],
@@ -2804,7 +2812,7 @@
                       "body": "음성을 생성합니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-f2ae0df2abe5bcd8"
+                        "e-a5faca021cdabb08"
                       ]
                     }
                   ],
@@ -3014,11 +3022,11 @@
           },
           {
             "name": "cursor/plugins",
-            "sourceCheckedAt": "2026-11-18T07:42:50.784Z",
-            "analyzedAt": "2026-11-18T07:42:50.784Z",
+            "sourceCheckedAt": "2026-11-25T08:51:06.320Z",
+            "analyzedAt": "2026-11-25T08:51:06.320Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-f2ae0df2abe5bcd8"
+              "e-a5faca021cdabb08"
             ]
           },
           {
@@ -3061,7 +3069,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-24T10:06:08.470Z"
+        "generatedAt": "2026-11-25T08:51:06.320Z"
       }
     },
     "weekly": {
@@ -5375,25 +5383,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-24T10:06:08.470Z",
-            "analyzedAt": "2026-11-24T10:06:08.470Z",
-            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
+            "checkedAt": "2026-11-25T08:51:06.320Z",
+            "analyzedAt": "2026-11-25T08:51:06.320Z",
+            "sourceCheckedAt": "2026-11-25T08:51:06.320Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
-            "sourceFingerprint": "497ea851c915f09733337c54594f4e8a09096b101e06b3f6176467eb03a7b79b",
+            "sourceFingerprint": "b78c051e4c630fd4510e06b9b0f2f6b33863e0725c9a23e579c829dbb1a2482a",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-24T10:06:08.470Z",
+              "checkedAt": "2026-11-25T08:51:06.320Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-24T10:06:08.470Z"
+                  "checkedAt": "2026-11-25T08:51:06.320Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-24T10:06:08.470Z"
+                  "checkedAt": "2026-11-25T08:51:06.320Z"
                 }
               ]
             },
@@ -5402,8 +5410,8 @@
                 "id": "readme",
                 "repository": "meta/astryx",
                 "path": "README.md",
-                "sha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
-                "fetchedAt": "2026-11-24T10:06:08.470Z",
+                "sha": "8dbd1010e751f17398d4fdbb1139016669937900",
+                "fetchedAt": "2026-11-25T08:51:06.320Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -5411,13 +5419,13 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
-                "fetchedAt": "2026-11-24T10:06:08.470Z",
+                "fetchedAt": "2026-11-25T08:51:06.320Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-a0aaaa753c20da6d",
+                "id": "e-6478ce33cc148892",
                 "sourceId": "readme",
                 "section": "Astryx",
                 "line": 7,
@@ -5425,7 +5433,7 @@
                 "excerpt": "An open source design system that's fully customizable and built for how we build now: by people and the agents working alongside them."
               },
               {
-                "id": "e-58771f2de1baff55",
+                "id": "e-1bc21de7619b8f5f",
                 "sourceId": "readme",
                 "section": "Getting Started",
                 "line": 38,
@@ -5433,7 +5441,7 @@
                 "excerpt": "Then use it as npm run astryx -- component --list."
               },
               {
-                "id": "e-d72ec2cee695db56",
+                "id": "e-dff8217afd661312",
                 "sourceId": "readme",
                 "section": "Getting Started",
                 "line": 38,
@@ -5441,7 +5449,7 @@
                 "excerpt": "Astryx requires React 19 or later (react and react-dom are peer dependencies of @astryxdesign/core)."
               },
               {
-                "id": "e-70d4bac5f2e399ca",
+                "id": "e-09a861fce3779995",
                 "sourceId": "readme",
                 "section": "Overview",
                 "line": 25,
@@ -5449,7 +5457,7 @@
                 "excerpt": "You import pre-built CSS and use typed React components — no build plugin, no styling library to adopt — and both people and AI assistants build with the same tooling."
               },
               {
-                "id": "e-6de0b0c3b94bd8e5",
+                "id": "e-a54ae1f3e6c131dd",
                 "sourceId": "readme",
                 "section": "Overview",
                 "line": 25,
@@ -5457,7 +5465,7 @@
                 "excerpt": "It ships 150+ accessible components, brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive system."
               },
               {
-                "id": "e-fbf0569e9ced93c2",
+                "id": "e-75d20a35006f5c39",
                 "sourceId": "readme",
                 "section": "Overview",
                 "line": 25,
@@ -5465,7 +5473,7 @@
                 "excerpt": "- No styling lock-in. Astryx authors its styles with StyleX, but that's invisible to consumers. Override with className using Tailwind, CSS modules, or plain CSS — whatever your project already uses."
               },
               {
-                "id": "e-eb2929030dd6b287",
+                "id": "e-2171852a880578f5",
                 "sourceId": "readme",
                 "section": "Overview",
                 "line": 25,
@@ -5473,7 +5481,7 @@
                 "excerpt": "- Open internals. Components are built to be composed at any level, not locked behind a closed top-level API. The building blocks you'd reach for are exported directly, and when you need to go deeper, swizzle ejects a component's full source into your project to own."
               },
               {
-                "id": "e-ad22f2002a0d8e75",
+                "id": "e-097a5a1b02a1cf10",
                 "sourceId": "readme",
                 "section": "Overview",
                 "line": 25,
@@ -5481,7 +5489,7 @@
                 "excerpt": "It ships 150+ accessible components, brand-level theming, dark mode, ready-to-ship templates, and a CLI as one cohesive system. You import pre-built CSS and use typed React components — no build plugin, no styling library to adopt — and both people and AI assistants build with the same tooling."
               },
               {
-                "id": "e-a153d17303daa6fc",
+                "id": "e-a0fbe146f6ded4a5",
                 "sourceId": "readme",
                 "section": "Packages",
                 "line": 84,
@@ -5493,7 +5501,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-a0aaaa753c20da6d"
+                "e-6478ce33cc148892"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -5521,7 +5529,7 @@
                   "body": "StyleX로 작성된 내부 스타일을 소비자가 채택할 필요 없이 className으로 Tailwind·CSS modules·일반 CSS를 덮어씁니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-fbf0569e9ced93c2"
+                    "e-75d20a35006f5c39"
                   ],
                   "summaryKo": "StyleX로 작성된 내부 스타일을 소비자가 채택할 필요 없이 className으로 Tailwind·CSS modules·일반 CSS를 덮어씁니다."
                 }
@@ -5532,7 +5540,7 @@
                   "body": "이 문서 경로의 요구사항: Astryx requires React 19 or later (react and react-dom are peer dependencies of @astryxdesign/core).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-d72ec2cee695db56"
+                    "e-dff8217afd661312"
                   ],
                   "scope": "required",
                   "path": " / Astryx / Getting Started",
@@ -5566,7 +5574,7 @@
                   "body": "문서에서 설명한 목적: An open source design system that's fully customizable and built for how we build now: by people and the agents working alongside them.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-a0aaaa753c20da6d"
+                    "e-6478ce33cc148892"
                   ]
                 },
                 "inputs": [
@@ -5576,7 +5584,7 @@
                     "body": "애플리케이션에서 미리 빌드된 CSS를 가져오고 타입이 있는 React 컴포넌트를 사용합니다. 이 사용 경로에는 별도 빌드 플러그인이나 스타일 라이브러리 도입이 필요 없다고 설명합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-ad22f2002a0d8e75"
+                      "e-097a5a1b02a1cf10"
                     ],
                     "summaryKo": "애플리케이션에서 미리 빌드된 CSS를 가져오고 타입이 있는 React 컴포넌트를 사용합니다. 이 사용 경로에는 별도 빌드 플러그인이나 스타일 라이브러리 도입이 필요 없다고 설명합니다."
                   }
@@ -5588,7 +5596,7 @@
                     "body": "접근성 컴포넌트, 브랜드 수준 테마, 다크 모드와 바로 사용할 템플릿을 CLI와 함께 제공하는 구성입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-ad22f2002a0d8e75"
+                      "e-097a5a1b02a1cf10"
                     ],
                     "summaryKo": "접근성 컴포넌트, 브랜드 수준 테마, 다크 모드와 바로 사용할 템플릿을 CLI와 함께 제공하는 구성입니다."
                   }
@@ -5599,7 +5607,7 @@
                     "body": "이 문서 경로의 요구사항: Astryx requires React 19 or later (react and react-dom are peer dependencies of @astryxdesign/core).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-d72ec2cee695db56"
+                      "e-dff8217afd661312"
                     ],
                     "scope": "required",
                     "path": " / Astryx / Getting Started",
@@ -5612,7 +5620,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-fbf0569e9ced93c2"
+                "e-75d20a35006f5c39"
               ],
               "cautions": [
                 {
@@ -5621,7 +5629,7 @@
                   "body": "core의 peer dependency는 react·react-dom이며 React 19 이상이 필요합니다. 기존 React 버전과 맞는지 먼저 확인해야 합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-d72ec2cee695db56"
+                    "e-dff8217afd661312"
                   ]
                 },
                 {
@@ -5630,7 +5638,7 @@
                   "body": "lab은 npm에 배포되지 않습니다. vega·charts는 @canary로만 배포되고 안정 릴리스가 없으므로 core와 같은 안정성을 전제하지 마세요.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-a153d17303daa6fc"
+                    "e-a0fbe146f6ded4a5"
                   ]
                 }
               ],
@@ -5640,7 +5648,7 @@
                   "body": "StyleX로 작성된 내부 스타일을 소비자가 채택할 필요 없이 className으로 Tailwind·CSS modules·일반 CSS를 덮어씁니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-fbf0569e9ced93c2"
+                    "e-75d20a35006f5c39"
                   ]
                 }
               ]
@@ -5661,7 +5669,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "fe27aafebbbea98a593d12332e7bc1a65f488f68",
+            "readmeSha": "8dbd1010e751f17398d4fdbb1139016669937900",
             "analysisReused": false
           }
         },
@@ -6225,7 +6233,7 @@
                     "body": "StyleX로 작성된 내부 스타일을 소비자가 채택할 필요 없이 className으로 Tailwind·CSS modules·일반 CSS를 덮어씁니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-fbf0569e9ced93c2"
+                      "e-75d20a35006f5c39"
                     ]
                   }
                 ],
@@ -6237,7 +6245,7 @@
                       "body": "애플리케이션에서 미리 빌드된 CSS를 가져오고 타입이 있는 React 컴포넌트를 사용합니다. 이 사용 경로에는 별도 빌드 플러그인이나 스타일 라이브러리 도입이 필요 없다고 설명합니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-ad22f2002a0d8e75"
+                        "e-097a5a1b02a1cf10"
                       ]
                     }
                   ],
@@ -6251,7 +6259,7 @@
                       "body": "접근성 컴포넌트, 브랜드 수준 테마, 다크 모드와 바로 사용할 템플릿을 CLI와 함께 제공하는 구성입니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-ad22f2002a0d8e75"
+                        "e-097a5a1b02a1cf10"
                       ]
                     }
                   ],
@@ -6263,7 +6271,7 @@
                     "body": "core의 peer dependency는 react·react-dom이며 React 19 이상이 필요합니다. 기존 React 버전과 맞는지 먼저 확인해야 합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-d72ec2cee695db56"
+                      "e-dff8217afd661312"
                     ],
                     "context": "도입 시 주의점"
                   },
@@ -6272,7 +6280,7 @@
                     "body": "lab은 npm에 배포되지 않습니다. vega·charts는 @canary로만 배포되고 안정 릴리스가 없으므로 core와 같은 안정성을 전제하지 마세요.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-a153d17303daa6fc"
+                      "e-a0fbe146f6ded4a5"
                     ],
                     "context": "도입 시 주의점"
                   }
@@ -6586,11 +6594,11 @@
           },
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
-            "analyzedAt": "2026-11-24T10:06:08.470Z",
+            "sourceCheckedAt": "2026-11-25T08:51:06.320Z",
+            "analyzedAt": "2026-11-25T08:51:06.320Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-a0aaaa753c20da6d"
+              "e-6478ce33cc148892"
             ]
           },
           {
@@ -6601,7 +6609,7 @@
             "classificationEvidenceIds": []
           }
         ],
-        "generatedAt": "2026-11-24T10:06:08.470Z"
+        "generatedAt": "2026-11-25T08:51:06.320Z"
       }
     },
     "monthly": {
@@ -11924,6 +11932,13 @@
       "hash": "598c9e5e9f8357f9ec9a73083db046fc52adcf57821b8e6df6208f890753bff1",
       "status": "published",
       "processedAt": "2026-11-24T10:06:08.470Z"
+    },
+    {
+      "issue": "daily:2026-11-25",
+      "period": "daily",
+      "hash": "598c9e5e9f8357f9ec9a73083db046fc52adcf57821b8e6df6208f890753bff1",
+      "status": "skipped-identical",
+      "processedAt": "2026-11-25T08:51:06.320Z"
     }
   ]
 }

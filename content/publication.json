@@ -3,9 +3,9 @@
   "reports": {
     "daily": {
       "period": "daily",
-      "issue": "daily:2026-11-24",
-      "collectedAt": "2026-11-24T10:06:08.470Z",
-      "publishedAt": "2026-11-24T10:06:08.470Z",
+      "issue": "daily:2026-11-26",
+      "collectedAt": "2026-11-26T08:37:18.991Z",
+      "publishedAt": "2026-11-26T08:37:18.991Z",
       "title": "Today · AI 에이전트 스킬·다이어그램 제작 프로젝트 분석",
       "summary": "상위 10개 중 공식 문서 근거로 5개의 용도를 분류했습니다. AI 에이전트 스킬 2개, 다이어그램 제작 1개가 포함됩니다. 분류 미확정은 5개입니다.",
       "analysis": [
@@ -23,33 +23,33 @@
         {
           "name": "elementalsouls/Claude-BugHunter",
           "url": "https://github.com/elementalsouls/Claude-BugHunter",
-          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 84 skills, 15 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
+          "description": "A Claude Code skill bundle for bug hunting and external red-team work - 85 skills, 16 slash commands, 681 disclosed-report patterns curated across 24 core vulnerability classes, plus enterprise identity + infrastructure attack matrices.",
           "language": "Python",
-          "stars": 20461,
-          "periodStars": 2029,
+          "stars": 23519,
+          "periodStars": 1652,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-24T10:06:08.470Z",
-            "analyzedAt": "2026-11-24T10:06:08.470Z",
-            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
-            "analysisInputFingerprint": "da6a89ce2bc41d40e184a320dcb292ffc6a30b36d3c70dd13938c2c0d8eda3f5",
-            "sourceFingerprint": "2d576f74da0097054e5a3f275cd283e6911fd5db9025d36a612fb7cf11b62f87",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analysisInputFingerprint": "550c29b853a0ebd4d2da4dbb836e4176c595f474ad426aed8e866773c2cdadb4",
+            "sourceFingerprint": "95c9f3006e428298c8bd2c59b7c55d26e7b3e89b09679f695810c311d75cc741",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-24T10:06:08.470Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "INSTALL.md",
                   "status": "available",
-                  "checkedAt": "2026-11-24T10:06:08.470Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 },
                 {
                   "path": "USAGE.md",
                   "status": "available",
-                  "checkedAt": "2026-11-24T10:06:08.470Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -58,38 +58,38 @@
                 "id": "readme",
                 "repository": "elementalsouls/Claude-BugHunter",
                 "path": "README.md",
-                "sha": "1ce4a56268c3b5bc505dfd42d86cbbafc68e2800",
-                "fetchedAt": "2026-11-24T10:06:08.470Z",
+                "sha": "f5c32600baa3e9f56cd4a8bae45d01b8d8978c96",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/README.md"
               },
               {
                 "id": "doc-09b140a43ebf",
                 "repository": "elementalsouls/Claude-BugHunter",
                 "path": "INSTALL.md",
-                "sha": "c320b37c4f7042b31ac957562ee18c44b28b49ce",
-                "fetchedAt": "2026-11-24T10:06:08.470Z",
+                "sha": "82c93c5e5c02cf052f6a993f16c0b5ce3b70c846",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/INSTALL.md"
               },
               {
                 "id": "doc-58a825c70bcc",
                 "repository": "elementalsouls/Claude-BugHunter",
                 "path": "USAGE.md",
-                "sha": "67be689afd366b3789815a2ea70d109c2a0782e1",
-                "fetchedAt": "2026-11-24T10:06:08.470Z",
+                "sha": "63b6642ad1581c035c10ec5ef16198ce5a5b9c6f",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/elementalsouls/Claude-BugHunter/blob/main/USAGE.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-8265356dc03094b2",
+                "id": "e-b03e572752c6d90b",
                 "sourceId": "readme",
                 "section": "Quickstart",
                 "line": 45,
                 "kind": "prose",
-                "excerpt": "All 84 skills + 15 commands load namespaced under claude-bughunter: and update when you bump the plugin version — no files copied into ~/.claude/."
+                "excerpt": "All 85 skills + 16 commands load namespaced under claude-bughunter: and update when you bump the plugin version — no files copied into ~/.claude/."
               },
               {
-                "id": "e-f683995e38931b50",
+                "id": "e-2824e85150794df2",
                 "sourceId": "readme",
                 "section": "Runs on multiple agent harnesses",
                 "line": 107,
@@ -97,7 +97,7 @@
                 "excerpt": "Runs on multiple agent harnesses"
               },
               {
-                "id": "e-8fd2b4f889b46c6d",
+                "id": "e-b8483d2c6f75fe20",
                 "sourceId": "readme",
                 "section": "Runs on multiple agent harnesses",
                 "line": 107,
@@ -105,23 +105,23 @@
                 "excerpt": "The skills are plain Agent Skills — the same SKILL.md format that Claude Code · OpenCode · OpenAI Codex CLI · Hermes Agent · Google AntiGravity all load."
               },
               {
-                "id": "e-8336c3cda5db3230",
+                "id": "e-0f60c90aa1c1e2bb",
                 "sourceId": "doc-09b140a43ebf",
                 "section": "Run on other harnesses (OpenCode · Codex · Hermes · Google AntiGravity)",
-                "line": 67,
+                "line": 70,
                 "kind": "prose",
                 "excerpt": "Slash commands, the plugin marketplace, and the /hunt engine are Claude-Code-only; other harnesses get the skill knowledge + Burp MCP."
               },
               {
-                "id": "e-02204e6a174d95cd",
+                "id": "e-f1c3dbc1c57b57eb",
                 "sourceId": "readme",
                 "section": "claude-bughunter",
                 "line": 3,
                 "kind": "prose",
-                "excerpt": "> A self-contained Claude skill bundle for bug hunting and external red-team work · 84 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com)."
+                "excerpt": "> A self-contained Claude skill bundle for bug hunting and external red-team work · 85 skills · 16 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com)."
               },
               {
-                "id": "e-e60915b344a33ef7",
+                "id": "e-b3aa93c9e56ea9b3",
                 "sourceId": "doc-09b140a43ebf",
                 "section": "Prerequisites",
                 "line": 5,
@@ -129,15 +129,15 @@
                 "excerpt": "- Python 3.9+ — for the cbh CLI runner"
               },
               {
-                "id": "e-bc04a59ea4c5d330",
+                "id": "e-a42583b613ad4369",
                 "sourceId": "doc-09b140a43ebf",
                 "section": "Step 5 — (Optional) Set up the skill regenerator",
-                "line": 140,
+                "line": 143,
                 "kind": "prose",
                 "excerpt": "You need both keys (console.anthropic.com/billing for the API key) to run the generator."
               },
               {
-                "id": "e-4a4bd86410c49560",
+                "id": "e-f74c1918c1a5833a",
                 "sourceId": "readme",
                 "section": "What is this?",
                 "line": 30,
@@ -145,7 +145,7 @@
                 "excerpt": "claude-bughunter is a drop-in skill bundle for the Claude Code skills system. Install once and Claude Code stops being a chatbot and starts behaving like a senior bug-hunting researcher or red-team operator: it knows the techniques, the chain templates, the VRT mappings, the platform CVE chains, and the hygiene — and it stays in scope."
               },
               {
-                "id": "e-a03704b29689d5b4",
+                "id": "e-a18c9f7da2485ea7",
                 "sourceId": "readme",
                 "section": "Why your model switched mid-session",
                 "line": 213,
@@ -153,7 +153,7 @@
                 "excerpt": "Separate from refusals, and easy to miss. On Opus 5, a narrow set of higher-risk cyber requests — Anthropic names exploit generation, binary-based vulnerability scanning and penetration testing — fall back to Opus 4.8 rather than being refused. You get a notice and the response is labelled with the model that answered, but in a long agentic run that is easy to scroll past, so it can look like Opus 5 quietly got worse. See why Claude switched models."
               },
               {
-                "id": "e-a38136383d687cb4",
+                "id": "e-8da3cc095cecfe8f",
                 "sourceId": "readme",
                 "section": "Quickstart",
                 "line": 45,
@@ -161,15 +161,15 @@
                 "excerpt": "Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder."
               },
               {
-                "id": "e-a4c494c6f154165f",
+                "id": "e-25c5fbc009192f67",
                 "sourceId": "doc-09b140a43ebf",
                 "section": "Troubleshooting",
-                "line": 229,
+                "line": 232,
                 "kind": "prose",
                 "excerpt": "| Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv"
               },
               {
-                "id": "e-2cf276646c853c0f",
+                "id": "e-c11113a91db3ab6a",
                 "sourceId": "readme",
                 "section": "Quickstart",
                 "line": 45,
@@ -177,7 +177,7 @@
                 "excerpt": "Option A — install as a Claude Code plugin (recommended)."
               },
               {
-                "id": "e-6f87bb50c69d940d",
+                "id": "e-08556feb649ff71f",
                 "sourceId": "doc-58a825c70bcc",
                 "section": "8. Limitations and known issues",
                 "line": 424,
@@ -189,7 +189,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-8265356dc03094b2"
+                "e-b03e572752c6d90b"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -213,10 +213,10 @@
               "findings": [
                 {
                   "title": "작업 절차와 검토 산출물",
-                  "body": "문서 설명: > A self-contained Claude skill bundle for bug hunting and external red-team work · 84 skills · 15 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com).",
+                  "body": "문서 설명: > A self-contained Claude skill bundle for bug hunting and external red-team work · 85 skills · 16 slash commands · 681 disclosed-report patterns (433 now individually cited & auditable) across 24 core vulnerability classes · enterprise identity + infrastructure attack matrices · engagement-folder scaffolding · Burp MCP integration · battle-tested across authorized red-team and bug-hunting engagements, plus public training platforms (DVWA, OWASP Juice Shop, Hacker101, testphp.vulnweb.com).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-02204e6a174d95cd"
+                    "e-f1c3dbc1c57b57eb"
                   ],
                   "summaryKo": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다."
                 }
@@ -227,7 +227,7 @@
                   "body": "이 문서 경로의 요구사항: - Python 3.9+ — for the cbh CLI runner",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-e60915b344a33ef7"
+                    "e-b3aa93c9e56ea9b3"
                   ],
                   "scope": "required",
                   "path": " / Installation Guide / Prerequisites",
@@ -238,7 +238,7 @@
                   "body": "선택 가능한 경로: You need both keys (console.anthropic.com/billing for the API key) to run the generator.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-bc04a59ea4c5d330"
+                    "e-a42583b613ad4369"
                   ],
                   "scope": "optional",
                   "path": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator",
@@ -249,7 +249,7 @@
                   "body": "이 문서 경로의 언급: Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-a38136383d687cb4"
+                    "e-8da3cc095cecfe8f"
                   ],
                   "scope": "mentioned",
                   "path": " / claude-bughunter / Quickstart",
@@ -260,7 +260,7 @@
                   "body": "이 문서 경로의 언급: | Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-a4c494c6f154165f"
+                    "e-25c5fbc009192f67"
                   ],
                   "scope": "mentioned",
                   "path": " / Installation Guide / Troubleshooting",
@@ -271,7 +271,7 @@
                   "body": "이 문서 경로의 언급: Option A — install as a Claude Code plugin (recommended).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-2cf276646c853c0f"
+                    "e-c11113a91db3ab6a"
                   ],
                   "scope": "mentioned",
                   "path": " / claude-bughunter / Quickstart",
@@ -305,7 +305,7 @@
                   "body": "문서가 명시한 해결 문제: Separate from refusals, and easy to miss. On Opus 5, a narrow set of higher-risk cyber requests — Anthropic names exploit generation, binary-based vulnerability scanning and penetration testing — fall back to Opus 4.8 rather than being refused. You get a notice and the response is labelled with the model that answered, but in a long agentic run that is easy to scroll past, so it can look like Opus 5 quietly got worse. See why Claude switched models.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-a03704b29689d5b4"
+                    "e-a18c9f7da2485ea7"
                   ],
                   "exampleOnly": false
                 },
@@ -315,7 +315,7 @@
                     "body": "지침·스크립트·자료가 들어 있는 스킬을 읽어 작업에 적용합니다. 원문: “The 15 reference files load on demand, but the SKILL.md still consumes context on every trigger.”",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-6f87bb50c69d940d"
+                      "e-08556feb649ff71f"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "작업별 지침과 관련 자료를 스킬로 읽습니다."
@@ -328,7 +328,7 @@
                     "body": "이 문서 경로의 요구사항: - Python 3.9+ — for the cbh CLI runner",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-e60915b344a33ef7"
+                      "e-b3aa93c9e56ea9b3"
                     ],
                     "scope": "required",
                     "path": " / Installation Guide / Prerequisites",
@@ -339,7 +339,7 @@
                     "body": "선택 가능한 경로: You need both keys (console.anthropic.com/billing for the API key) to run the generator.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-bc04a59ea4c5d330"
+                      "e-a42583b613ad4369"
                     ],
                     "scope": "optional",
                     "path": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator",
@@ -350,7 +350,7 @@
                     "body": "이 문서 경로의 언급: Both copy the skills + commands into ~/.claude/ (macOS/Linux) or %USERPROFILE%\\.claude\\ (Windows) and wire the hunt engagement scaffolder.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-a38136383d687cb4"
+                      "e-8da3cc095cecfe8f"
                     ],
                     "scope": "mentioned",
                     "path": " / claude-bughunter / Quickstart",
@@ -361,7 +361,7 @@
                     "body": "이 문서 경로의 언급: | Browse the target through Burp first to populate history | | Python build errors during step 5 | Using system Python 3.9 | macOS: use Homebrew Python 3.12 (/opt/homebrew/bin/python3.12 -m venv .venv); Windows: use the official python.org installer or py -3.12 -m venv .venv",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-a4c494c6f154165f"
+                      "e-25c5fbc009192f67"
                     ],
                     "scope": "mentioned",
                     "path": " / Installation Guide / Troubleshooting",
@@ -372,7 +372,7 @@
                     "body": "이 문서 경로의 언급: Option A — install as a Claude Code plugin (recommended).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-2cf276646c853c0f"
+                      "e-c11113a91db3ab6a"
                     ],
                     "scope": "mentioned",
                     "path": " / claude-bughunter / Quickstart",
@@ -385,7 +385,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-02204e6a174d95cd"
+                "e-f1c3dbc1c57b57eb"
               ],
               "cautions": [],
               "core": [
@@ -394,7 +394,7 @@
                   "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-02204e6a174d95cd"
+                    "e-f1c3dbc1c57b57eb"
                   ]
                 }
               ]
@@ -417,7 +417,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "1ce4a56268c3b5bc505dfd42d86cbbafc68e2800",
+            "readmeSha": "f5c32600baa3e9f56cd4a8bae45d01b8d8978c96",
             "analysisReused": false
           }
         },
@@ -426,8 +426,8 @@
           "url": "https://github.com/obra/superpowers",
           "description": "An agentic skills framework & software development methodology that works.",
           "language": "Shell",
-          "stars": 325480,
-          "periodStars": 840,
+          "stars": 326920,
+          "periodStars": 903,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -655,31 +655,31 @@
           "url": "https://github.com/HKUDS/CLI-Anything",
           "description": "\"CLI-Anything: Making ALL Software Agent-Native\" -- CLI-Hub: https://clianything.cc/",
           "language": "Python",
-          "stars": 64146,
-          "periodStars": 790,
+          "stars": 65942,
+          "periodStars": 1106,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
             "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "fe92a999e528b6e795ed09ed6b202d48984dc805676a596ec9f05022cace3432",
             "sourceFingerprint": "b9a55c7f190e29db2b56bb84c6a42fc91b4f47c58745d639b8df0998f22a767d",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "cli-anything-plugin/QUICKSTART.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 },
                 {
                   "path": "README_CN.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -1013,7 +1013,8 @@
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
             "readmeSha": "8a78b5420911eff5e7cc219bf1ecb2a12b562874",
-            "analysisReused": false
+            "analysisReused": true,
+            "stale": false
           }
         },
         {
@@ -1021,8 +1022,8 @@
           "url": "https://github.com/jingyaogong/minimind",
           "description": "🧠 两小时从 0 训出你的 64M 大模型。Train your own 64M LLM from scratch in 2 hours.",
           "language": "Python",
-          "stars": 69849,
-          "periodStars": 828,
+          "stars": 71284,
+          "periodStars": 826,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1221,8 +1222,8 @@
           "url": "https://github.com/cursor/plugins",
           "description": "Cursor plugin specification and official plugins",
           "language": "TypeScript",
-          "stars": 18960,
-          "periodStars": 397,
+          "stars": 19627,
+          "periodStars": 416,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1427,8 +1428,8 @@
           "url": "https://github.com/firecrawl/firecrawl",
           "description": "Knowledge infrastructure to make your agents smarter. Search, scrape and access 550+ data providers through one API.",
           "language": "TypeScript",
-          "stars": 208323,
-          "periodStars": 924,
+          "stars": 210378,
+          "periodStars": 1135,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1635,8 +1636,8 @@
           "url": "https://github.com/nginx/nginx",
           "description": "The official NGINX Open Source repository.",
           "language": "C",
-          "stars": 33111,
-          "periodStars": 174,
+          "stars": 33428,
+          "periodStars": 176,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1791,8 +1792,8 @@
           "url": "https://github.com/openvinotoolkit/openvino",
           "description": "OpenVINO™ is an open source toolkit for optimizing and deploying AI inference",
           "language": "C++",
-          "stars": 12359,
-          "periodStars": 184,
+          "stars": 12713,
+          "periodStars": 191,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -1927,8 +1928,8 @@
           "url": "https://github.com/cathrynlavery/diagram-design",
           "description": "Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 52 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.",
           "language": "HTML",
-          "stars": 71352,
-          "periodStars": 620,
+          "stars": 73376,
+          "periodStars": 1141,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -2199,8 +2200,8 @@
           "url": "https://github.com/mvanhorn/last30days-skill",
           "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
           "language": "Python",
-          "stars": 73741,
-          "periodStars": 797,
+          "stars": 75359,
+          "periodStars": 945,
           "usage": {
             "schemaVersion": 2,
             "analyzerVersion": 17,
@@ -2585,7 +2586,7 @@
                     "body": "작업 절차와 검토 기준을 지침으로 제공해 에이전트의 수행·검토 흐름을 정리합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-02204e6a174d95cd"
+                      "e-f1c3dbc1c57b57eb"
                     ]
                   }
                 ],
@@ -2597,7 +2598,7 @@
                       "body": "작업별 지침과 관련 자료를 스킬로 읽습니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-6f87bb50c69d940d"
+                        "e-08556feb649ff71f"
                       ]
                     }
                   ],
@@ -2614,7 +2615,7 @@
                     "body": "이 설치 경로에서는 Python 3.9+ 조건을 요구합니다.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-e60915b344a33ef7"
+                      "e-b3aa93c9e56ea9b3"
                     ],
                     "scope": "required",
                     "context": " / Installation Guide / Prerequisites"
@@ -2624,7 +2625,7 @@
                     "body": "서비스 인증 관련 경로는 선택 사항입니다.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-bc04a59ea4c5d330"
+                      "e-a42583b613ad4369"
                     ],
                     "scope": "optional",
                     "context": " / Installation Guide / Step 5 — (Optional) Set up the skill regenerator"
@@ -2831,7 +2832,7 @@
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
-                  "e-a38136383d687cb4"
+                  "e-8da3cc095cecfe8f"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2885,7 +2886,7 @@
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
-                  "e-2cf276646c853c0f"
+                  "e-c11113a91db3ab6a"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -2931,7 +2932,7 @@
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
-                  "e-e60915b344a33ef7"
+                  "e-b3aa93c9e56ea9b3"
                 ],
                 "scope": "required",
                 "exampleOnly": false
@@ -2969,7 +2970,7 @@
               {
                 "name": "elementalsouls/Claude-BugHunter",
                 "evidenceIds": [
-                  "e-bc04a59ea4c5d330"
+                  "e-a42583b613ad4369"
                 ],
                 "scope": "optional",
                 "exampleOnly": false
@@ -2990,11 +2991,11 @@
         "references": [
           {
             "name": "elementalsouls/Claude-BugHunter",
-            "sourceCheckedAt": "2026-11-24T10:06:08.470Z",
-            "analyzedAt": "2026-11-24T10:06:08.470Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-8265356dc03094b2"
+              "e-b03e572752c6d90b"
             ]
           },
           {
@@ -3006,7 +3007,7 @@
           },
           {
             "name": "HKUDS/CLI-Anything",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analyzedAt": "2026-11-19T07:39:05.372Z",
             "stale": false,
             "classificationEvidenceIds": [
@@ -3069,7 +3070,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-25T08:51:06.320Z"
+        "generatedAt": "2026-11-26T08:37:18.991Z"
       }
     },
     "weekly": {
@@ -5383,25 +5384,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-25T08:51:06.320Z",
-            "analyzedAt": "2026-11-25T08:51:06.320Z",
-            "sourceCheckedAt": "2026-11-25T08:51:06.320Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "b78c051e4c630fd4510e06b9b0f2f6b33863e0725c9a23e579c829dbb1a2482a",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-25T08:51:06.320Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-25T08:51:06.320Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-25T08:51:06.320Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -5411,7 +5412,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "8dbd1010e751f17398d4fdbb1139016669937900",
-                "fetchedAt": "2026-11-25T08:51:06.320Z",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -5419,7 +5420,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
-                "fetchedAt": "2026-11-25T08:51:06.320Z",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -6594,8 +6595,8 @@
           },
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-25T08:51:06.320Z",
-            "analyzedAt": "2026-11-25T08:51:06.320Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-6478ce33cc148892"
@@ -6609,7 +6610,7 @@
             "classificationEvidenceIds": []
           }
         ],
-        "generatedAt": "2026-11-25T08:51:06.320Z"
+        "generatedAt": "2026-11-26T08:37:18.991Z"
       }
     },
     "monthly": {
@@ -6619,13 +6620,13 @@
       "title": "Month · 디자인 에이전트 스킬·역공학·프로그램 분석 프로젝트 분석",
       "summary": "상위 10개 중 공식 문서 근거로 9개의 용도를 분류했습니다. 디자인 에이전트 스킬 2개, 역공학·프로그램 분석 1개가 포함됩니다. 분류 미확정은 1개입니다.",
       "analysis": [
-        "입력을 설명할 근거가 있는 프로젝트는 9개, 출력은 8개, 도입 조건은 9개입니다. 공통 입력 해당 없음 1개, 출력 해당 없음 2개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 9개·출력 8개입니다. 근거 부족은 입력 0개·출력 0개이며 분석 자료 없음 0개는 별도입니다.",
+        "입력을 설명할 근거가 있는 프로젝트는 8개, 출력은 6개, 도입 조건은 9개입니다. 공통 입력 해당 없음 1개, 출력 해당 없음 2개는 각각 평가 대상에서 제외합니다. 문서를 읽고 입출력을 평가할 대상은 입력 9개·출력 8개입니다. 근거 부족은 입력 1개·출력 2개이며 분석 자료 없음 0개는 별도입니다.",
         "대표 항목 사용 예는 2개 프로젝트에서 4개를 확인했습니다. 대표 항목 근거 부족은 0개이며 대표 항목 자동 분석 미지원 모음은 0개입니다. 공통 입출력 확인 수에 합산하지 않으며 실행 검증은 포함하지 않습니다.",
         "설치·실행 조건을 별도 분석한 프로젝트 0개 중 공통 설치 경로는 0개 프로젝트에서, 공통 빌드·테스트 경로는 0개 프로젝트에서 확인했습니다. 대표 항목 실행 조건은 0개 항목에서 확인했고 0개 항목은 근거가 부족합니다. 확인한 실행 조건 0개를 모음 전체의 필수 조건으로 합산하지 않습니다.",
         "계획 작성·실행 위임 등 작업 단계의 조건은 0개 단계에서 확인했고 0개 단계는 근거가 부족합니다. 확인한 작업 조건 0개를 설치 호환성이나 대표 항목 실행 조건과 합산하지 않습니다.",
         "같은 용도의 비교는 1개 분야에서 제공합니다. 단독 항목 7개 분야도 처리 방식·입력·결과물·도입 조건을 요약합니다. 같은 발행호 안의 문서 설명을 비교하며 성능·우열·상호 대체 가능성을 판정하지 않습니다.",
-        "공통으로 확인한 항목은 에이전트 클라이언트(6개), Node.js(6개), 운영체제별 실행 경로(4개), Python(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
-        "기본 항목 충족 7개 · 부분 분석 3개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
+        "공통으로 확인한 항목은 Node.js(7개), 에이전트 클라이언트(6개), 운영체제별 실행 경로(4개), Python(4개)입니다. 아래에서 프로젝트별 근거와 적용 범위를 확인하세요.",
+        "기본 항목 충족 6개 · 부분 분석 4개 · 분석 불가 0개. 이 중 최신 문서 확인 실패로 이전 분석을 표시하는 항목은 0개입니다.",
         "발행호에 포함된 목록과 문서 분석의 종합입니다. 스타 수를 성능이나 도입 추천으로 해석하지 않으며 성장 원인·과거 대비 변화는 추정하지 않습니다."
       ],
       "source": "https://github.com/trending?since=monthly",
@@ -6642,14 +6643,14 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
             "analyzedAt": "2026-11-12T00:55:40.643Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "2e3bf6910658e831d746571b73e9952cb33ab25992580a2d284bcb9250f5ddc1",
             "sourceFingerprint": "3c0e27f9ebbb589c935a9cf71c3742109f1aff36e47d679e5053db527536f7f9",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": []
             },
             "sources": [
@@ -6924,14 +6925,14 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-12T00:55:40.643Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "5c31fd23bf9c7fa5c6a28fb91545698ec5d3fd4747d4159b054077ef07b12882",
-            "sourceFingerprint": "1a9e9eb00c55150f6764b346dcb58a2d5b3beb9255d658195dde918f5bf5444e",
+            "sourceFingerprint": "0e579729047ee0ca78b3730d5e33c810f4adc76322a51b188c95972331dac0dd",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": []
             },
             "sources": [
@@ -6939,14 +6940,30 @@
                 "id": "readme",
                 "repository": "heygen-com/hyperframes",
                 "path": "README.md",
-                "sha": "8e6fb677459ff95bd4d43007095d31f8171b70de",
-                "fetchedAt": "2026-11-12T00:55:40.643Z",
+                "sha": "f56f244cda088cac4a3a9d7888ceb893ffe443e2",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/heygen-com/hyperframes/blob/main/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-7e57f835ae4884f6",
+                "id": "e-85cab2cd4e9b64df",
+                "sourceId": "readme",
+                "section": "README 도입부",
+                "line": 1,
+                "kind": "prose",
+                "excerpt": "The open-source AI video editor: create, edit, remake."
+              },
+              {
+                "id": "e-e9ce31af54ae219c",
+                "sourceId": "readme",
+                "section": "Three ways to use it",
+                "line": 40,
+                "kind": "prose",
+                "excerpt": "| npx skills add heygen-com/hyperframes | | Claude, ChatGPT or Grok (beta) | Making a video in a chat, nothing to install."
+              },
+              {
+                "id": "e-18bd629b3eb1e197",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
@@ -6954,47 +6971,47 @@
                 "excerpt": "Render video."
               },
               {
-                "id": "e-bd8af3cfa9dcc98d",
-                "sourceId": "readme",
-                "section": "With an AI coding agent",
-                "line": 50,
-                "kind": "prose",
-                "excerpt": "The six repo-internal skills under .claude/skills / .agents/skills are excluded by default."
-              },
-              {
-                "id": "e-c9bbc65a75919ca0",
+                "id": "e-534724caffdd969f",
                 "sourceId": "readme",
                 "section": "HyperFrames Stack",
-                "line": 254,
+                "line": 288,
                 "kind": "prose",
-                "excerpt": "and mix audio | | Catalog | Available | Reusable blocks and components for transitions, overlays, captions, charts, maps, and effects | | Agent skills | Available | Teach coding agents the video-production patterns that generic web docs miss | | Studio | Available, evolving | Browser surface for previewing and editing compositions | | AWS Lambda rendering | Available | Deploy a distributed render stack and drive renders from your laptop or CI | | hyperframes.studio | Available | Community playground for previewing, iterating, sharing, and rendering"
+                "excerpt": "and mix audio | | Catalog | Available | Reusable blocks and components for transitions, overlays, captions, charts, maps, and effects | | Agent skills | Available | Teach coding agents the video-production patterns that generic web docs miss | | Browser editor (hyperframes preview) | Available, evolving | Preview and edit compositions in the browser: canvas, timeline, keyframes | | AWS Lambda rendering | Available | Deploy a distributed render stack and drive renders from your laptop or CI | | hyperframes.studio | Available | The HyperFrames Studio app"
               },
               {
-                "id": "e-5a0ae31db4be0c98",
+                "id": "e-86d953dc84ca2bd7",
                 "sourceId": "readme",
-                "section": "README 도입부",
-                "line": 1,
+                "section": "What you can make",
+                "line": 60,
                 "kind": "prose",
-                "excerpt": "Write HTML. Render video. Built for agents."
+                "excerpt": "By job: AI video editor · animated captions · add text to video · AI motion graphics · HTML to MP4 · Lottie to MP4 · SVG to MP4"
               },
               {
-                "id": "e-6996d4cda4a5676f",
+                "id": "e-8e25a0083368d7c2",
                 "sourceId": "readme",
                 "section": "Why HyperFrames?",
-                "line": 281,
+                "line": 252,
                 "kind": "prose",
-                "excerpt": "- HTML-native: compositions are HTML files with data attributes. No React requirement, no proprietary timeline format."
+                "excerpt": "- HTML-native: make videos programmatically with HTML, CSS and JavaScript; compositions are HTML files with data attributes. No React requirement, no proprietary timeline format."
               },
               {
-                "id": "e-190b0a6c928dbed9",
+                "id": "e-036b74d5d62956cd",
                 "sourceId": "readme",
-                "section": "With an AI coding agent",
-                "line": 50,
+                "section": "By hand, with the CLI",
+                "line": 107,
                 "kind": "prose",
-                "excerpt": "For Claude Code, install the versioned plugin:"
+                "excerpt": "Requirements: Node.js 22+ and FFmpeg."
               },
               {
-                "id": "e-0e3db85b1383e2ec",
+                "id": "e-c6876d9175a40a63",
+                "sourceId": "readme",
+                "section": "Quick start for developers",
+                "line": 82,
+                "kind": "prose",
+                "excerpt": "Using Claude Code, Codex, Cursor, or another coding agent?"
+              },
+              {
+                "id": "e-351a13f2b057cddf",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
@@ -7002,51 +7019,35 @@
                 "excerpt": "Write HTML."
               },
               {
-                "id": "e-1382ec4fb4d9dbe4",
-                "sourceId": "readme",
-                "section": "How It Works",
-                "line": 216,
-                "kind": "prose",
-                "excerpt": "Preview instantly in the browser. Render locally or in Docker. The renderer seeks each frame in headless Chrome and encodes the result with FFmpeg, so the same input produces the same video."
-              },
-              {
-                "id": "e-052597812eb0744d",
-                "sourceId": "readme",
-                "section": "How It Works",
-                "line": 216,
-                "kind": "prose",
-                "excerpt": "Define a video as HTML. Add data attributes for timing and tracks. Use GSAP, CSS, Lottie, Three.js, Anime.js, WAAPI, or your own frame adapter for seekable animation."
-              },
-              {
-                "id": "e-da19b1a5df877d40",
+                "id": "e-e4b6baf77fe243bb",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
                 "kind": "prose",
-                "excerpt": "HyperFrames is a free, open-source framework for turning HTML, CSS, media, and seekable animations into deterministic MP4 videos. Use it locally with the CLI, from AI coding agents with skills, or as the rendering core behind hosted authoring workflows."
+                "excerpt": "Write HTML. Render video. Built for agents."
               },
               {
-                "id": "e-b4808a81720bc2a3",
+                "id": "e-4a049aa897ae89c7",
                 "sourceId": "readme",
-                "section": "Manually with the CLI",
-                "line": 131,
+                "section": "How It Works",
+                "line": 214,
                 "kind": "prose",
-                "excerpt": "Requirements: Node.js 22+, FFmpeg"
+                "excerpt": "Preview instantly in the browser. Render locally or in Docker. The renderer seeks each frame in headless Chrome and encodes the result with FFmpeg, so the same input produces the same video."
               },
               {
-                "id": "e-205cd02761180484",
+                "id": "e-17bb857332cf4c9c",
                 "sourceId": "readme",
-                "section": "Skills",
-                "line": 86,
+                "section": "How It Works",
+                "line": 214,
                 "kind": "prose",
-                "excerpt": "For standalone installation, default to the core set (/hyperframes, /hyperframes-cli, /hyperframes-registry, /media-use, /reverse-any-video, /style-sampling). npx hyperframes skills update installs exactly that from anywhere; the interactive picker (npx skills add heygen-com/hyperframes) lists it as the \"Core Skills\" group, nothing pre-selected. The picker is interactive-only — a non-interactive or agent run without --skill installs all 9. Use npx skills add heygen-com/hyperframes --all to install the complete published set deliberately (skips the"
+                "excerpt": "Define a video as HTML. Add data attributes for timing and tracks. Use GSAP, CSS, Lottie, Three.js, Anime.js, WAAPI, or your own frame adapter for seekable animation."
               }
             ],
             "source": "https://github.com/heygen-com/hyperframes#readme",
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-7e57f835ae4884f6"
+                "e-85cab2cd4e9b64df"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -7056,18 +7057,20 @@
             "scenario": "짧은 영상 한 편을 샘플로 구성한 뒤 렌더링 결과와 반복 제작 과정을 확인해 볼 수 있습니다.",
             "basis": "저장소 설명·README의 키워드를 바탕으로 한 규칙 기반 해석입니다. 활용 예는 실제 사용 사례를 확인한 결과가 아닌 제안입니다.",
             "start": {
-              "heading": "Quick Start",
+              "heading": "Quick start for developers",
               "steps": [
-                "With an AI coding agent"
+                "Give your coding agent the skills (recommended)",
+                "Claude Code plugin",
+                "Codex, Cursor, Gemini CLI, Copilot"
               ],
-              "command": "claude plugin marketplace add heygen-com/hyperframes\nclaude plugin install hyperframes@hyperframes",
+              "command": "npx skills add heygen-com/hyperframes     # pick \"Core Skills\" in the picker\n# or, with no picker (scripts, CI):\nnpx hyperframes skills update",
               "excerpt": ""
             },
             "article": {
               "title": "heygen-com/hyperframes · 프로젝트 분석 노트",
               "paragraphs": [
-                "문서가 명시한 해결 문제: - HTML-native: compositions are HTML files with data attributes. No React requirement, no proprietary timeline format.",
-                "문서에서 확인한 입력: 타이밍·트랙을 붙인 HTML과 탐색 가능한 애니메이션. 출력: HTML·CSS·미디어 구성으로 만든 MP4. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+                "문서가 명시한 해결 문제: - HTML-native: make videos programmatically with HTML, CSS and JavaScript; compositions are HTML files with data attributes. No React requirement, no proprietary timeline format.",
+                "문서에서 확인한 입력: 타이밍·트랙을 붙인 HTML과 탐색 가능한 애니메이션. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
               ],
               "findings": [
                 {
@@ -7076,21 +7079,32 @@
                   "body": "브라우저에서 미리 본 HTML 구성을 headless Chrome이 프레임별로 탐색하고 FFmpeg가 영상으로 인코딩합니다. 같은 입력으로 같은 영상을 만드는 렌더링 경로라고 설명합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-1382ec4fb4d9dbe4"
+                    "e-4a049aa897ae89c7"
                   ],
                   "summaryKo": "브라우저에서 미리 본 HTML 구성을 headless Chrome이 프레임별로 탐색하고 FFmpeg가 영상으로 인코딩합니다. 같은 입력으로 같은 영상을 만드는 렌더링 경로라고 설명합니다."
                 }
               ],
               "conditions": [
                 {
-                  "title": "에이전트 클라이언트",
-                  "body": "이 문서 경로의 언급: For Claude Code, install the versioned plugin:",
+                  "title": "Node.js",
+                  "body": "이 문서 경로의 언급: Requirements: Node.js 22+ and FFmpeg.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-190b0a6c928dbed9"
+                    "e-036b74d5d62956cd"
                   ],
                   "scope": "mentioned",
-                  "path": " / Quick Start / With an AI coding agent",
+                  "path": " / Quick start for developers / By hand, with the CLI",
+                  "summaryKo": "설치·시작 경로에서 Node.js 22+ 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                },
+                {
+                  "title": "에이전트 클라이언트",
+                  "body": "이 문서 경로의 언급: Using Claude Code, Codex, Cursor, or another coding agent?",
+                  "kind": "documented",
+                  "evidenceIds": [
+                    "e-c6876d9175a40a63"
+                  ],
+                  "scope": "mentioned",
+                  "path": " / Quick start for developers",
                   "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                 }
               ],
@@ -7101,27 +7115,27 @@
                 },
                 {
                   "title": "문서의 시작 경로 선택하기",
-                  "body": "README의 “Quick Start” 절이 시작 지점입니다. 하위 항목으로 With an AI coding agent 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
+                  "body": "README의 “Quick start for developers” 절이 시작 지점입니다. 하위 항목으로 Give your coding agent the skills (recommended), Claude Code plugin, Codex, Cursor, Gemini CLI, Copilot 등이 있습니다. 이 목록을 필수 실행 순서로 가정하지 말고, 자신의 도구와 환경에 맞는 경로를 선택해 전체 절차를 확인하세요."
                 },
                 {
                   "title": "작은 결과물로 적합성 판단하기",
                   "body": "짧은 장면으로 렌더링 시간, 출력 형식, 화면과 소리의 타이밍을 확인하세요. 반복 제작에서 수정한 내용이 결과물에 재현되는지도 검토할 수 있습니다."
                 }
               ],
-              "verdict": "Chrome에서 프레임을 탐색하고 FFmpeg로 인코딩에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다.",
+              "verdict": "Chrome에서 프레임을 탐색하고 FFmpeg로 인코딩에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다. 추가 확인: 출력.",
               "coverage": {
                 "findings": 1,
-                "conditions": 1,
+                "conditions": 2,
                 "hasStart": true
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
               "project": {
                 "problem": {
                   "title": "해결 문제",
-                  "body": "문서가 명시한 해결 문제: - HTML-native: compositions are HTML files with data attributes. No React requirement, no proprietary timeline format.",
+                  "body": "문서가 명시한 해결 문제: - HTML-native: make videos programmatically with HTML, CSS and JavaScript; compositions are HTML files with data attributes. No React requirement, no proprietary timeline format.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-6996d4cda4a5676f"
+                    "e-8e25a0083368d7c2"
                   ],
                   "exampleOnly": false
                 },
@@ -7132,33 +7146,33 @@
                     "body": "HTML에 타이밍·트랙 data 속성을 붙입니다. GSAP·CSS·Lottie·Three.js·Anime.js·WAAPI 또는 별도 frame adapter로 탐색 가능한 애니메이션을 구성합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-052597812eb0744d"
+                      "e-17bb857332cf4c9c"
                     ],
                     "summaryKo": "HTML에 타이밍·트랙 data 속성을 붙입니다. GSAP·CSS·Lottie·Three.js·Anime.js·WAAPI 또는 별도 frame adapter로 탐색 가능한 애니메이션을 구성합니다."
                   }
                 ],
-                "outputs": [
-                  {
-                    "id": "detail:outputs:0",
-                    "title": "HTML·CSS·미디어 구성으로 만든 MP4",
-                    "body": "HTML·CSS·미디어와 탐색 가능한 애니메이션을 MP4 영상으로 변환합니다. 인터랙티브 슬라이드 같은 다른 스킬의 결과와 구분되는 영상 렌더링 경로입니다.",
-                    "kind": "interpretation",
-                    "evidenceIds": [
-                      "e-da19b1a5df877d40"
-                    ],
-                    "summaryKo": "HTML·CSS·미디어와 탐색 가능한 애니메이션을 MP4 영상으로 변환합니다. 인터랙티브 슬라이드 같은 다른 스킬의 결과와 구분되는 영상 렌더링 경로입니다."
-                  }
-                ],
+                "outputs": [],
                 "conditions": [
                   {
-                    "title": "에이전트 클라이언트",
-                    "body": "이 문서 경로의 언급: For Claude Code, install the versioned plugin:",
+                    "title": "Node.js",
+                    "body": "이 문서 경로의 언급: Requirements: Node.js 22+ and FFmpeg.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-190b0a6c928dbed9"
+                      "e-036b74d5d62956cd"
                     ],
                     "scope": "mentioned",
-                    "path": " / Quick Start / With an AI coding agent",
+                    "path": " / Quick start for developers / By hand, with the CLI",
+                    "summaryKo": "설치·시작 경로에서 Node.js 22+ 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  },
+                  {
+                    "title": "에이전트 클라이언트",
+                    "body": "이 문서 경로의 언급: Using Claude Code, Codex, Cursor, or another coding agent?",
+                    "kind": "documented",
+                    "evidenceIds": [
+                      "e-c6876d9175a40a63"
+                    ],
+                    "scope": "mentioned",
+                    "path": " / Quick start for developers",
                     "summaryKo": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
                   }
                 ],
@@ -7168,46 +7182,29 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-1382ec4fb4d9dbe4"
+                "e-4a049aa897ae89c7"
               ],
-              "cautions": [
-                {
-                  "id": "cli",
-                  "title": "수동 CLI 렌더링 환경",
-                  "body": "수동 CLI 경로는 Node.js 22 이상과 FFmpeg를 요구합니다. HTML을 브라우저에서 미리 보는 것과 영상으로 인코딩할 실행 환경을 구분하세요.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-b4808a81720bc2a3"
-                  ]
-                },
-                {
-                  "id": "skills",
-                  "title": "비대화형 설치의 범위",
-                  "body": "스킬 선택기는 대화형 전용입니다. 비대화형 실행에서 --skill을 생략하면 9개 전체가 설치되므로 일부만 필요할 때는 설치 범위를 명시해야 합니다.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-205cd02761180484"
-                  ]
-                }
-              ],
+              "cautions": [],
               "core": [
                 {
                   "title": "Chrome에서 프레임을 탐색하고 FFmpeg로 인코딩",
                   "body": "브라우저에서 미리 본 HTML 구성을 headless Chrome이 프레임별로 탐색하고 FFmpeg가 영상으로 인코딩합니다. 같은 입력으로 같은 영상을 만드는 렌더링 경로라고 설명합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-1382ec4fb4d9dbe4"
+                    "e-4a049aa897ae89c7"
                   ]
                 }
               ]
             },
             "quality": {
               "setup": null,
-              "status": "complete",
-              "missing": [],
+              "status": "partial",
+              "missing": [
+                "출력"
+              ],
               "io": {
                 "input": "documented",
-                "output": "documented"
+                "output": "insufficient-evidence"
               },
               "notApplicable": [],
               "representatives": {
@@ -7217,9 +7214,8 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "8e6fb677459ff95bd4d43007095d31f8171b70de",
-            "analysisReused": true,
-            "stale": false
+            "readmeSha": "f56f244cda088cac4a3a9d7888ceb893ffe443e2",
+            "analysisReused": false
           }
         },
         {
@@ -7234,19 +7230,19 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
             "analyzedAt": "2026-11-12T00:55:40.643Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "9d18862707baac072bbda399afcacd7f622617a1dcae93a2c303d72c3284fe7d",
             "sourceFingerprint": "742c12240758bb74e93ec1b11714d18b66cae1d62f82c5517b266f3187270c60",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "skills/hallmark/references/direction.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -7561,24 +7557,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
             "analyzedAt": "2026-11-12T00:55:40.643Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "ff2b433632a76a9da043674fd346e4415c32b816b9addb53a5bbc0866f5a0676",
             "sourceFingerprint": "4ea046f8972b93daf14f50c93fefa2892edc7d307db4385f6f4e709c5e078cab",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "product-management/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 },
                 {
                   "path": "sales/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -7975,24 +7971,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "3bcaa24a372d9e3e95889abb2148c51b23b7994b1495dc22382faff640d07c74",
-            "sourceFingerprint": "99731b88d3301b17855eb15505d98d8d2be159b5ddb8346e95673a58e58a266a",
+            "sourceFingerprint": "303a1536308213b4d43fddb7f317c3ce869d4c45cb550e5489071b26e98cb0d2",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "docs/install/windows-rocm.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 },
                 {
                   "path": "docs/install/macos.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -8001,8 +7997,8 @@
                 "id": "readme",
                 "repository": "debpalash/VoiceStudio",
                 "path": "README.md",
-                "sha": "5b336fbac18c4c3400089956d2cb2307ade2fb6d",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "c528f3e802d8518350fc64a1e71793b0152f87be",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/README.md"
               },
               {
@@ -8010,7 +8006,7 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "docs/install/windows-rocm.md",
                 "sha": "8b2fac8ead92f5b73cc966b0291e66a3192801a2",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/windows-rocm.md"
               },
               {
@@ -8018,64 +8014,64 @@
                 "repository": "debpalash/VoiceStudio",
                 "path": "docs/install/macos.md",
                 "sha": "b8dfdb0eb7d7cea43e7b7593a1c3072d98bd8bb6",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/debpalash/VoiceStudio/blob/main/docs/install/macos.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-12c82ccaa38a3fa2",
+                "id": "e-a82eacbc0f900799",
                 "sourceId": "readme",
                 "section": "What you can do",
-                "line": 61,
+                "line": 62,
                 "kind": "prose",
                 "excerpt": "Voice cloning Turn a clean reference recording into speech in a familiar voice."
               },
               {
-                "id": "e-a71f9b7b5e4cda01",
+                "id": "e-901a24840ba1fad0",
                 "sourceId": "readme",
                 "section": "What you can do",
-                "line": 61,
+                "line": 62,
                 "kind": "prose",
                 "excerpt": "Video dubbing Translate and dub videos with speech timed to the original."
               },
               {
-                "id": "e-67da9e9205bd788d",
+                "id": "e-3e86aaf027e97137",
                 "sourceId": "readme",
                 "section": "What you can do",
-                "line": 61,
+                "line": 62,
                 "kind": "prose",
                 "excerpt": "- Dictate & transcribe — A floating dictation widget and local transcription"
               },
               {
-                "id": "e-896154a6573fb6bb",
+                "id": "e-e6c3f95788dc3bbb",
                 "sourceId": "readme",
                 "section": "What you can do",
-                "line": 61,
+                "line": 62,
                 "kind": "prose",
                 "excerpt": "- Narrate & batch — Stories, audiobooks and queued jobs"
               },
               {
-                "id": "e-a70fce94c2257f94",
+                "id": "e-e0010bd6208df60c",
                 "sourceId": "readme",
                 "section": "Platforms",
-                "line": 143,
+                "line": 144,
                 "kind": "prose",
                 "excerpt": "Docker · GHCR · Docker Hub"
               },
               {
-                "id": "e-8ac53d290095e974",
+                "id": "e-f0fe8824d982f29d",
                 "sourceId": "readme",
                 "section": "Platforms",
-                "line": 143,
+                "line": 144,
                 "kind": "prose",
                 "excerpt": "Native app UI; the x64 Python backend runs under emulation on the CPU."
               },
               {
-                "id": "e-0f2b128c1d049bef",
+                "id": "e-d46985e53153edb8",
                 "sourceId": "readme",
                 "section": "Platforms",
-                "line": 143,
+                "line": 144,
                 "kind": "prose",
                 "excerpt": "GPU transcription uses a CTranslate2 build with native gfx1031 kernels that this repository builds from upstream source and pins by hash, and setup checks actual GPU kernel execution."
               },
@@ -8088,34 +8084,34 @@
                 "excerpt": "- Node.js 22.12.0 or newer and Rust / Cargo (brew install rust, or rustup — reopen the terminal or source \"$HOME/.cargo/env\" afterwards) for the Electron native helper."
               },
               {
-                "id": "e-f3bfb5c713554790",
+                "id": "e-83eaef5e6d062cd9",
                 "sourceId": "readme",
                 "section": "Platforms",
-                "line": 143,
+                "line": 144,
                 "kind": "prose",
                 "excerpt": "Open http://localhost:3900 and use the API key printed below."
               },
               {
-                "id": "e-78407454126fd913",
+                "id": "e-b566ccddf60ff719",
                 "sourceId": "readme",
                 "section": "Platforms",
-                "line": 143,
+                "line": 144,
                 "kind": "prose",
                 "excerpt": "Experimental Windows ROCm setup supports selected RDNA 2 RX 6000 GPUs with targets gfx1030, gfx1031 or gfx1032; RX 6500 XT (gfx1034) is excluded."
               },
               {
-                "id": "e-d46c011fd7ab13c1",
+                "id": "e-7db5345bc68064b1",
                 "sourceId": "readme",
                 "section": "Platforms",
-                "line": 143,
+                "line": 144,
                 "kind": "prose",
                 "excerpt": "macOS · Homebrew · DMG · installer"
               },
               {
-                "id": "e-33eb83d1ec435597",
+                "id": "e-cb9d3219046ddebd",
                 "sourceId": "readme",
                 "section": "What you can do",
-                "line": 61,
+                "line": 62,
                 "kind": "prose",
                 "excerpt": "Local models Choose your engines and download only the models you need."
               },
@@ -8132,7 +8128,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-12c82ccaa38a3fa2"
+                "e-a82eacbc0f900799"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -8160,7 +8156,7 @@
                   "body": "깨끗한 참고 녹음을 익숙한 목소리의 음성으로 바꾸는 voice cloning 경로입니다. 영상 번역·더빙과 구분해 제공하는 기능입니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-12c82ccaa38a3fa2"
+                    "e-a82eacbc0f900799"
                   ],
                   "summaryKo": "깨끗한 참고 녹음을 익숙한 목소리의 음성으로 바꾸는 voice cloning 경로입니다. 영상 번역·더빙과 구분해 제공하는 기능입니다."
                 },
@@ -8170,7 +8166,7 @@
                   "body": "영상 더빙은 번역한 음성을 원본 영상의 타이밍에 맞추는 별도의 작업 경로입니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-a71f9b7b5e4cda01"
+                    "e-901a24840ba1fad0"
                   ],
                   "summaryKo": "영상 더빙은 번역한 음성을 원본 영상의 타이밍에 맞추는 별도의 작업 경로입니다."
                 }
@@ -8181,7 +8177,7 @@
                   "body": "이 문서 경로의 언급: Native app UI; the x64 Python backend runs under emulation on the CPU.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-8ac53d290095e974"
+                    "e-f0fe8824d982f29d"
                   ],
                   "scope": "mentioned",
                   "path": " / Platforms",
@@ -8203,7 +8199,7 @@
                   "body": "이 문서 경로의 언급: Docker · GHCR · Docker Hub",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-a70fce94c2257f94"
+                    "e-e0010bd6208df60c"
                   ],
                   "scope": "mentioned",
                   "path": " / Platforms",
@@ -8214,7 +8210,7 @@
                   "body": "이 문서 경로의 언급: GPU transcription uses a CTranslate2 build with native gfx1031 kernels that this repository builds from upstream source and pins by hash, and setup checks actual GPU kernel execution.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-0f2b128c1d049bef"
+                    "e-d46985e53153edb8"
                   ],
                   "scope": "mentioned",
                   "path": " / Platforms",
@@ -8225,7 +8221,7 @@
                   "body": "이 문서 경로의 언급: Open http://localhost:3900 and use the API key printed below.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-f3bfb5c713554790"
+                    "e-83eaef5e6d062cd9"
                   ],
                   "scope": "mentioned",
                   "path": " / Platforms",
@@ -8236,7 +8232,7 @@
                   "body": "이 문서 경로의 언급: Experimental Windows ROCm setup supports selected RDNA 2 RX 6000 GPUs with targets gfx1030, gfx1031 or gfx1032; RX 6500 XT (gfx1034) is excluded.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-78407454126fd913"
+                    "e-b566ccddf60ff719"
                   ],
                   "scope": "mentioned",
                   "path": " / Platforms",
@@ -8270,7 +8266,7 @@
                   "body": "문서에서 설명한 목적: Voice cloning Turn a clean reference recording into speech in a familiar voice.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-12c82ccaa38a3fa2"
+                    "e-a82eacbc0f900799"
                   ]
                 },
                 "inputs": [
@@ -8280,7 +8276,7 @@
                     "body": "목소리 복제 경로에는 깨끗한 참고 녹음을 사용합니다. 이 근거만으로 허용 파일 형식이나 최소 길이를 정하지 않습니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-12c82ccaa38a3fa2"
+                      "e-a82eacbc0f900799"
                     ],
                     "summaryKo": "목소리 복제 경로에는 깨끗한 참고 녹음을 사용합니다. 이 근거만으로 허용 파일 형식이나 최소 길이를 정하지 않습니다."
                   },
@@ -8290,7 +8286,7 @@
                     "body": "영상 더빙 경로의 대상은 번역·더빙할 영상입니다. 참고 녹음 하나로 영상 더빙까지 수행한다는 설명이 아닙니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-a71f9b7b5e4cda01"
+                      "e-901a24840ba1fad0"
                     ],
                     "summaryKo": "영상 더빙 경로의 대상은 번역·더빙할 영상입니다. 참고 녹음 하나로 영상 더빙까지 수행한다는 설명이 아닙니다."
                   }
@@ -8302,7 +8298,7 @@
                     "body": "voice cloning 경로는 깨끗한 참고 녹음에서 해당 목소리의 음성을 만듭니다. 문서의 이 설명만으로 결과 파일 확장자를 정하지 않습니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-12c82ccaa38a3fa2"
+                      "e-a82eacbc0f900799"
                     ],
                     "summaryKo": "voice cloning 경로는 깨끗한 참고 녹음에서 해당 목소리의 음성을 만듭니다. 문서의 이 설명만으로 결과 파일 확장자를 정하지 않습니다."
                   },
@@ -8312,7 +8308,7 @@
                     "body": "영상 더빙 경로는 영상을 번역하고 원본 영상의 타이밍에 맞는 음성을 만듭니다. 참고 녹음으로 만드는 voice cloning과 다른 사용 경로입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-a71f9b7b5e4cda01"
+                      "e-901a24840ba1fad0"
                     ],
                     "summaryKo": "영상 더빙 경로는 영상을 번역하고 원본 영상의 타이밍에 맞는 음성을 만듭니다. 참고 녹음으로 만드는 voice cloning과 다른 사용 경로입니다."
                   }
@@ -8323,7 +8319,7 @@
                     "body": "이 문서 경로의 언급: Native app UI; the x64 Python backend runs under emulation on the CPU.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-8ac53d290095e974"
+                      "e-f0fe8824d982f29d"
                     ],
                     "scope": "mentioned",
                     "path": " / Platforms",
@@ -8345,7 +8341,7 @@
                     "body": "이 문서 경로의 언급: Docker · GHCR · Docker Hub",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-a70fce94c2257f94"
+                      "e-e0010bd6208df60c"
                     ],
                     "scope": "mentioned",
                     "path": " / Platforms",
@@ -8356,7 +8352,7 @@
                     "body": "이 문서 경로의 언급: GPU transcription uses a CTranslate2 build with native gfx1031 kernels that this repository builds from upstream source and pins by hash, and setup checks actual GPU kernel execution.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-0f2b128c1d049bef"
+                      "e-d46985e53153edb8"
                     ],
                     "scope": "mentioned",
                     "path": " / Platforms",
@@ -8367,7 +8363,7 @@
                     "body": "이 문서 경로의 언급: Open http://localhost:3900 and use the API key printed below.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-f3bfb5c713554790"
+                      "e-83eaef5e6d062cd9"
                     ],
                     "scope": "mentioned",
                     "path": " / Platforms",
@@ -8378,7 +8374,7 @@
                     "body": "이 문서 경로의 언급: Experimental Windows ROCm setup supports selected RDNA 2 RX 6000 GPUs with targets gfx1030, gfx1031 or gfx1032; RX 6500 XT (gfx1034) is excluded.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-78407454126fd913"
+                      "e-b566ccddf60ff719"
                     ],
                     "scope": "mentioned",
                     "path": " / Platforms",
@@ -8391,7 +8387,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-12c82ccaa38a3fa2"
+                "e-a82eacbc0f900799"
               ],
               "cautions": [
                 {
@@ -8410,7 +8406,7 @@
                   "body": "깨끗한 참고 녹음을 익숙한 목소리의 음성으로 바꾸는 voice cloning 경로입니다. 영상 번역·더빙과 구분해 제공하는 기능입니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-12c82ccaa38a3fa2"
+                    "e-a82eacbc0f900799"
                   ]
                 },
                 {
@@ -8418,7 +8414,7 @@
                   "body": "영상 더빙은 번역한 음성을 원본 영상의 타이밍에 맞추는 별도의 작업 경로입니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-a71f9b7b5e4cda01"
+                    "e-901a24840ba1fad0"
                   ]
                 }
               ]
@@ -8439,7 +8435,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "5b336fbac18c4c3400089956d2cb2307ade2fb6d",
+            "readmeSha": "c528f3e802d8518350fc64a1e71793b0152f87be",
             "analysisReused": false
           }
         },
@@ -8455,24 +8451,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "596bb4235bacd567ea0f3f04999470a4c0ae03c186a494d1fb74a68863704269",
-            "sourceFingerprint": "cf34d26e70cf9b7175dbe74ec3d7466b16d33de70596c62c8ec92b917eff41c3",
+            "sourceFingerprint": "f764d9032b4c56557fed18401402243dbafd74fcf4f42da337bfb3cfd1f5ca76",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "skill/reference/audit.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 },
                 {
                   "path": "skill/reference/critique.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -8481,16 +8477,16 @@
                 "id": "readme",
                 "repository": "pbakaus/impeccable",
                 "path": "README.md",
-                "sha": "dedd4ef31619e9fc3fa04006f2280d12abb3cefc",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "62b92c92681152ef9c6ba9aee980bfe15e325aba",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/README.md"
               },
               {
                 "id": "doc-5adc41f13dba",
                 "repository": "pbakaus/impeccable",
                 "path": "skill/reference/audit.md",
-                "sha": "02cb81d9ad0e05f88867bb4d0a8169dc7850e451",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "ff9b7c11d77c9502bf5dd87e4940367afaa4aeb3",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/audit.md",
                 "representativeId": "skill-ui-audit"
               },
@@ -8498,15 +8494,15 @@
                 "id": "doc-bbe523437e8f",
                 "repository": "pbakaus/impeccable",
                 "path": "skill/reference/critique.md",
-                "sha": "41a595d0d1c6f54638e3f9d7524555cc188e0664",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "0327dc457576c211f27295376433ef86e9d12752",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/pbakaus/impeccable/blob/main/skill/reference/critique.md",
                 "representativeId": "skill-ui-critique"
               }
             ],
             "evidence": [
               {
-                "id": "e-10945c3163327feb",
+                "id": "e-5588e8984832ec96",
                 "sourceId": "readme",
                 "section": "Impeccable",
                 "line": 1,
@@ -8514,7 +8510,7 @@
                 "excerpt": "The design vocabulary for your coding agent."
               },
               {
-                "id": "e-177503090845bf74",
+                "id": "e-c3da1f954adb5add",
                 "sourceId": "readme",
                 "section": "Installation",
                 "line": 113,
@@ -8522,7 +8518,7 @@
                 "excerpt": "Claude Code: /plugin marketplace add pbakaus/impeccable, then open /plugin and install Impeccable."
               },
               {
-                "id": "e-3d377433be890241",
+                "id": "e-25bf095d3e1fcde0",
                 "sourceId": "readme",
                 "section": "Installation",
                 "line": 113,
@@ -8530,7 +8526,7 @@
                 "excerpt": "- Cursor and Gemini CLI may need Agent Skills enabled in settings."
               },
               {
-                "id": "e-1c46c780e97c1a4e",
+                "id": "e-eadf79b10bb3cde4",
                 "sourceId": "readme",
                 "section": "Installation",
                 "line": 113,
@@ -8538,7 +8534,7 @@
                 "excerpt": "npx impeccable update refreshes an existing install."
               },
               {
-                "id": "e-93c3985bbcacda9c",
+                "id": "e-07c1f24c0ba404d8",
                 "sourceId": "readme",
                 "section": "Impeccable",
                 "line": 1,
@@ -8546,7 +8542,7 @@
                 "excerpt": "The design vocabulary for your coding agent. Steer with polish and bolder, review with critique and audit, and catch AI slop before it ships."
               },
               {
-                "id": "e-7200dca626735558",
+                "id": "e-2f7ad8e42a3b4ab0",
                 "sourceId": "readme",
                 "section": "Why",
                 "line": 23,
@@ -8554,7 +8550,7 @@
                 "excerpt": "Inter for everything. Purple-to-blue gradients. Cards nested in cards, gray text on colored backgrounds, a rounded-square icon tile above every heading. Ask an agent for a page with no other guidance and these show up again and again, across models and projects."
               },
               {
-                "id": "e-3131ad78caeb8bd4",
+                "id": "e-1f6336cff6fe4594",
                 "sourceId": "readme",
                 "section": "Installation",
                 "line": 113,
@@ -8562,7 +8558,7 @@
                 "excerpt": "Node is only needed for npx."
               },
               {
-                "id": "e-06dda2151953f3a4",
+                "id": "e-d2fcf68bc98a35ff",
                 "sourceId": "readme",
                 "section": "Installation",
                 "line": 113,
@@ -8570,7 +8566,7 @@
                 "excerpt": "For scripts, pass --providers=claude,codex,cursor and --scope=project|global."
               },
               {
-                "id": "e-6156a777dfe86d31",
+                "id": "e-d034e87c3678f20c",
                 "sourceId": "readme",
                 "section": "Why",
                 "line": 23,
@@ -8578,7 +8574,7 @@
                 "excerpt": "Impeccable is strongest on interfaces that already exist: point it at a page or a component and iterate."
               },
               {
-                "id": "e-16fbd8b9978eee96",
+                "id": "e-69292e0c3d0ccb78",
                 "sourceId": "readme",
                 "section": "How it works",
                 "line": 37,
@@ -8586,7 +8582,7 @@
                 "excerpt": "Run /impeccable document to capture your existing visual system in DESIGN.md, so changes stay on-brand."
               },
               {
-                "id": "e-2f9e8a6065b92f0a",
+                "id": "e-87bfc600bfa67e7a",
                 "sourceId": "doc-5adc41f13dba",
                 "section": "README 도입부",
                 "line": 1,
@@ -8594,7 +8590,7 @@
                 "excerpt": "Run systematic technical quality checks and generate a comprehensive report. Don't fix issues; document them for other commands to address."
               },
               {
-                "id": "e-1323fe9d906be7a2",
+                "id": "e-bff5f2689094805e",
                 "sourceId": "doc-5adc41f13dba",
                 "section": "README 도입부",
                 "line": 1,
@@ -8602,7 +8598,7 @@
                 "excerpt": "This is a code-level audit, not a design critique. Check what's measurable and verifiable in the implementation."
               },
               {
-                "id": "e-d0addd3d33b92722",
+                "id": "e-48cf6c29376c3814",
                 "sourceId": "doc-5adc41f13dba",
                 "section": "Audit Health Score",
                 "line": 75,
@@ -8610,7 +8606,7 @@
                 "excerpt": "Audit Health Score"
               },
               {
-                "id": "e-b9c613d5198fb27a",
+                "id": "e-18a6b9c5435a55b1",
                 "sourceId": "doc-5adc41f13dba",
                 "section": "Executive Summary",
                 "line": 91,
@@ -8618,7 +8614,7 @@
                 "excerpt": "- Total issues found (count by severity: P0/P1/P2/P3)"
               },
               {
-                "id": "e-745cdd135272be29",
+                "id": "e-d42cf4317401f08a",
                 "sourceId": "doc-5adc41f13dba",
                 "section": "README 도입부",
                 "line": 1,
@@ -8626,7 +8622,7 @@
                 "excerpt": "Web only. Native platforms (ios / android / adaptive) route to audit.native.md instead; if the project is native, switch to it now."
               },
               {
-                "id": "e-9268df5dba696ea8",
+                "id": "e-83b8c0aa5aa2a5bd",
                 "sourceId": "doc-bbe523437e8f",
                 "section": "Purpose",
                 "line": 1,
@@ -8634,7 +8630,7 @@
                 "excerpt": "Resolve one stable target, run two independent assessments, synthesize a design critique, persist a snapshot, and ask the user what to improve next. The chat response is the primary deliverable; the snapshot is an archive of that run."
               },
               {
-                "id": "e-219044e42cd3f40c",
+                "id": "e-eea7c4bd3dd5484b",
                 "sourceId": "doc-bbe523437e8f",
                 "section": "Setup",
                 "line": 18,
@@ -8642,7 +8638,7 @@
                 "excerpt": "1. Resolve the target to a concrete file path or URL. Prefer a source path over a dev-server URL when both identify the same surface; ports drift, paths do not."
               },
               {
-                "id": "e-cf62f571bbeddbc1",
+                "id": "e-c107dea0a0118370",
                 "sourceId": "doc-bbe523437e8f",
                 "section": "Hard Invariants",
                 "line": 5,
@@ -8650,7 +8646,7 @@
                 "excerpt": "- If you degrade for any reason, the report's first line MUST be a banner: ⚠️ DEGRADED: single-context ( ). A silent degraded critique is a failed critique."
               },
               {
-                "id": "e-623e507311db38ab",
+                "id": "e-be35ed1089f05875",
                 "sourceId": "readme",
                 "section": "Why",
                 "line": 23,
@@ -8658,7 +8654,7 @@
                 "excerpt": "- A reviewer. critique scores the design against usability heuristics and ranks what to fix first. audit checks accessibility, performance, theming, and responsive behavior, with findings ranked P0 (blocking) to P3 (polish)."
               },
               {
-                "id": "e-90893e52535dd227",
+                "id": "e-c8c7946573bd1d90",
                 "sourceId": "readme",
                 "section": "How it works",
                 "line": 37,
@@ -8666,7 +8662,7 @@
                 "excerpt": "Then name a command and a target:"
               },
               {
-                "id": "e-1b31b6d60cfb2b0a",
+                "id": "e-4ba41fb3c5d8bb17",
                 "sourceId": "readme",
                 "section": "Live mode",
                 "line": 66,
@@ -8674,7 +8670,7 @@
                 "excerpt": "Live mode edits a local checkout only; don't inject it into a deployed site or weaken a production CSP to make it work. Applying copy edits runs your package.json's optional impeccable:manual-edit-validate script with your permissions, so review it before using live mode in an unfamiliar repo."
               },
               {
-                "id": "e-b383b8eb4b5bef48",
+                "id": "e-dfd60e06546d9131",
                 "sourceId": "readme",
                 "section": "Live mode",
                 "line": 66,
@@ -8686,7 +8682,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-10945c3163327feb"
+                "e-5588e8984832ec96"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -8714,7 +8710,7 @@
                   "body": "critique는 사용성 기준으로 디자인을 평가하고 수정 순위를 매깁니다. audit는 접근성·성능·테마·반응형 문제를 P0부터 P3까지 나누는 별도 검사입니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-623e507311db38ab"
+                    "e-be35ed1089f05875"
                   ],
                   "summaryKo": "critique는 사용성 기준으로 디자인을 평가하고 수정 순위를 매깁니다. audit는 접근성·성능·테마·반응형 문제를 P0부터 P3까지 나누는 별도 검사입니다."
                 }
@@ -8725,7 +8721,7 @@
                   "body": "이 문서 경로의 언급: Node is only needed for npx.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-3131ad78caeb8bd4"
+                    "e-1f6336cff6fe4594"
                   ],
                   "scope": "mentioned",
                   "path": " / Impeccable / Installation",
@@ -8736,7 +8732,7 @@
                   "body": "이 문서 경로의 언급: For scripts, pass --providers=claude,codex,cursor and --scope=project|global.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-06dda2151953f3a4"
+                    "e-d2fcf68bc98a35ff"
                   ],
                   "scope": "mentioned",
                   "path": " / Impeccable / Installation",
@@ -8770,7 +8766,7 @@
                   "body": "문서가 명시한 해결 문제: Inter for everything. Purple-to-blue gradients. Cards nested in cards, gray text on colored backgrounds, a rounded-square icon tile above every heading. Ask an agent for a page with no other guidance and these show up again and again, across models and projects.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-7200dca626735558"
+                    "e-2f7ad8e42a3b4ab0"
                   ],
                   "exampleOnly": false
                 },
@@ -8780,7 +8776,7 @@
                     "body": "모음 전체에 적용되는 계약의 문서 근거를 확인했습니다. 자료 형식과 적용 범위는 원문 근거를 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-90893e52535dd227"
+                      "e-c8c7946573bd1d90"
                     ],
                     "summaryKo": "명령 이름과 적용할 대상 영역을 지정합니다."
                   }
@@ -8791,7 +8787,7 @@
                     "body": "프로젝트의 제품·디자인 기준을 문서로 기록하는 경로입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-16fbd8b9978eee96"
+                      "e-69292e0c3d0ccb78"
                     ],
                     "exampleOnly": false,
                     "summaryKo": "프로젝트의 제품·디자인 기준을 문서로 기록하는 경로입니다."
@@ -8803,7 +8799,7 @@
                     "body": "이 문서 경로의 언급: Node is only needed for npx.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-3131ad78caeb8bd4"
+                      "e-1f6336cff6fe4594"
                     ],
                     "scope": "mentioned",
                     "path": " / Impeccable / Installation",
@@ -8814,7 +8810,7 @@
                     "body": "이 문서 경로의 언급: For scripts, pass --providers=claude,codex,cursor and --scope=project|global.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-06dda2151953f3a4"
+                      "e-d2fcf68bc98a35ff"
                     ],
                     "scope": "mentioned",
                     "path": " / Impeccable / Installation",
@@ -8833,7 +8829,7 @@
                       "kind": "interpretation",
                       "exampleOnly": true,
                       "evidenceIds": [
-                        "e-2f9e8a6065b92f0a"
+                        "e-87bfc600bfa67e7a"
                       ]
                     },
                     "input": {
@@ -8842,7 +8838,7 @@
                       "kind": "interpretation",
                       "exampleOnly": true,
                       "evidenceIds": [
-                        "e-1323fe9d906be7a2"
+                        "e-bff5f2689094805e"
                       ]
                     },
                     "output": {
@@ -8851,8 +8847,8 @@
                       "kind": "interpretation",
                       "exampleOnly": true,
                       "evidenceIds": [
-                        "e-d0addd3d33b92722",
-                        "e-b9c613d5198fb27a"
+                        "e-48cf6c29376c3814",
+                        "e-18a6b9c5435a55b1"
                       ]
                     },
                     "caution": {
@@ -8861,8 +8857,8 @@
                       "kind": "interpretation",
                       "exampleOnly": true,
                       "evidenceIds": [
-                        "e-745cdd135272be29",
-                        "e-2f9e8a6065b92f0a"
+                        "e-d42cf4317401f08a",
+                        "e-87bfc600bfa67e7a"
                       ]
                     }
                   },
@@ -8876,7 +8872,7 @@
                       "kind": "interpretation",
                       "exampleOnly": true,
                       "evidenceIds": [
-                        "e-9268df5dba696ea8"
+                        "e-83b8c0aa5aa2a5bd"
                       ]
                     },
                     "input": {
@@ -8885,7 +8881,7 @@
                       "kind": "interpretation",
                       "exampleOnly": true,
                       "evidenceIds": [
-                        "e-219044e42cd3f40c"
+                        "e-eea7c4bd3dd5484b"
                       ]
                     },
                     "output": {
@@ -8894,7 +8890,7 @@
                       "kind": "interpretation",
                       "exampleOnly": true,
                       "evidenceIds": [
-                        "e-9268df5dba696ea8"
+                        "e-83b8c0aa5aa2a5bd"
                       ]
                     },
                     "caution": {
@@ -8903,7 +8899,7 @@
                       "kind": "interpretation",
                       "exampleOnly": true,
                       "evidenceIds": [
-                        "e-cf62f571bbeddbc1"
+                        "e-c107dea0a0118370"
                       ]
                     }
                   }
@@ -8913,28 +8909,28 @@
                   "body": "항목마다 입출력 계약이 다른 모음입니다. 공통 계약이 확인되거나 의심되는 항목은 계속 평가하고, 항목별 계약만 확인한 범위만 해당 없음으로 구분합니다.",
                   "ruleId": "design-commands",
                   "evidenceIds": [
-                    "e-93c3985bbcacda9c",
-                    "e-623e507311db38ab",
-                    "e-90893e52535dd227"
+                    "e-07c1f24c0ba404d8",
+                    "e-be35ed1089f05875",
+                    "e-c8c7946573bd1d90"
                   ],
                   "exempt": [
                     "output"
                   ],
                   "contracts": {
                     "input": [
-                      "e-90893e52535dd227"
+                      "e-c8c7946573bd1d90"
                     ]
                   },
                   "hints": {
                     "input": [
-                      "e-90893e52535dd227"
+                      "e-c8c7946573bd1d90"
                     ]
                   }
                 },
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-623e507311db38ab"
+                "e-be35ed1089f05875"
               ],
               "cautions": [
                 {
@@ -8943,7 +8939,7 @@
                   "body": "live mode는 로컬 checkout 수정용이며 배포 사이트에 주입하거나 동작을 위해 운영 CSP를 약화하지 않도록 안내합니다. 낯선 저장소에서는 복사 편집 시 실행되는 선택적 검증 스크립트도 먼저 검토해야 합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-1b31b6d60cfb2b0a"
+                    "e-4ba41fb3c5d8bb17"
                   ]
                 },
                 {
@@ -8952,7 +8948,7 @@
                   "body": "최근 1분 동안 chat agent가 응답하지 않으면 Apply가 PATH의 codex 또는 claude CLI를 승인·샌드박스 제한 없이 실행하고 환경을 상속한다고 설명합니다. 편집 요청을 적용하기 전에 실제 실행 주체와 권한 범위를 확인해야 합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-b383b8eb4b5bef48"
+                    "e-dfd60e06546d9131"
                   ]
                 }
               ],
@@ -8962,7 +8958,7 @@
                   "body": "critique는 사용성 기준으로 디자인을 평가하고 수정 순위를 매깁니다. audit는 접근성·성능·테마·반응형 문제를 P0부터 P3까지 나누는 별도 검사입니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-623e507311db38ab"
+                    "e-be35ed1089f05875"
                   ]
                 }
               ]
@@ -8985,7 +8981,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "dedd4ef31619e9fc3fa04006f2280d12abb3cefc",
+            "readmeSha": "62b92c92681152ef9c6ba9aee980bfe15e325aba",
             "analysisReused": false
           }
         },
@@ -9001,19 +8997,19 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "f5be476f3817c232c60374417e7709c9c143418cf4855586e1bdc27cbaf7c802",
-            "sourceFingerprint": "e7d45daf9e9b26088eabae74c8f3489944a9247da4434faabc4c515eb9cf8611",
+            "sourceFingerprint": "d27eec0c1ca2110117d94c5e731cf9f8edf1bdba0803f781e517c4f943ebd525",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "docs/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -9022,22 +9018,22 @@
                 "id": "readme",
                 "repository": "earthtojake/text-to-cad",
                 "path": "README.md",
-                "sha": "288b365e735db7d03f658654195f902ec333b46c",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "665d7ec6ab781baa776df09617ae1b1c2d22a034",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/earthtojake/text-to-cad/blob/main/README.md"
               },
               {
                 "id": "doc-162b45a313f5",
                 "repository": "earthtojake/text-to-cad",
                 "path": "docs/install.md",
-                "sha": "abc51d5d0b7d640f2ff3bf460cb10595f1011a03",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "e0f0f46fc82010911d185f9357607002e70f0bfe",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/earthtojake/text-to-cad/blob/main/docs/install.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-a16c37848122ec30",
+                "id": "e-683c58de951f1b19",
                 "sourceId": "readme",
                 "section": "🚀 Quickstart",
                 "line": 21,
@@ -9045,15 +9041,15 @@
                 "excerpt": "It installs uv if it is missing, then cad, the command text-to-cad runs on, then the plugin in each agent app it finds on your computer, with that app's own command (Kimi Code you install by hand), and turns on automatic updates."
               },
               {
-                "id": "e-50e822f26c5b0e0f",
+                "id": "e-ff310853ef773c26",
                 "sourceId": "doc-162b45a313f5",
                 "section": "Codex app",
-                "line": 90,
+                "line": 158,
                 "kind": "prose",
                 "excerpt": "text-to-cad is in the official Codex plugin directory."
               },
               {
-                "id": "e-197f9fdade5599c5",
+                "id": "e-d59283c3a85f49f2",
                 "sourceId": "readme",
                 "section": "text-to-cad",
                 "line": 19,
@@ -9061,7 +9057,7 @@
                 "excerpt": "text-to-cad"
               },
               {
-                "id": "e-33bf93a6bb09f5e4",
+                "id": "e-d413f83bfab2d6a7",
                 "sourceId": "readme",
                 "section": "🚀 Quickstart",
                 "line": 21,
@@ -9069,7 +9065,7 @@
                 "excerpt": "Then ask your agent for a part or an assembly: it writes the model as a Python script, runs it to build the model and shows it in the viewer."
               },
               {
-                "id": "e-419a772ee3d7ed2a",
+                "id": "e-1cee01b93056d495",
                 "sourceId": "readme",
                 "section": "🚀 Quickstart",
                 "line": 21,
@@ -9077,7 +9073,7 @@
                 "excerpt": "macOS and Linux:"
               },
               {
-                "id": "e-22f7bb7ebf82cac8",
+                "id": "e-d88a77013763bebf",
                 "sourceId": "readme",
                 "section": "🚀 Quickstart",
                 "line": 21,
@@ -9085,7 +9081,7 @@
                 "excerpt": "It works in Claude Code, Codex, Cursor, Gemini CLI, Grok Build, Antigravity, Devin CLI, Factory Droid, GitHub Copilot CLI, Kimi Code, Muse, Pi, Qwen Code, Amp, Cline, Goose, Hermes Agent, Kilo Code, Kiro CLI, OpenClaw, OpenCode, Roo Code, Trae and Windsurf."
               },
               {
-                "id": "e-2884284f823c3bcd",
+                "id": "e-3d5b0d2f3e60cb8e",
                 "sourceId": "readme",
                 "section": "✨ Features",
                 "line": 49,
@@ -9093,7 +9089,7 @@
                 "excerpt": "The text-to-cad plugin gives your agent local workflows to generate 3D models as STEP, GLB, STL or 3MF files, check them for manufacturing, draw them, and connect to 3D printing, sheet metal and CNC services."
               },
               {
-                "id": "e-ffe6d149f2b5def2",
+                "id": "e-1e8272c220791f66",
                 "sourceId": "readme",
                 "section": "✨ Features",
                 "line": 49,
@@ -9101,7 +9097,7 @@
                 "excerpt": "- Manufacturing checks: Whether a part can be machined, cut and bent, molded or 3D printed, measured against the process's rules, and what to change where it cannot."
               },
               {
-                "id": "e-fee52ac100953826",
+                "id": "e-b0a121d9c1f205c8",
                 "sourceId": "readme",
                 "section": "✨ Features",
                 "line": 49,
@@ -9113,7 +9109,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-a16c37848122ec30"
+                "e-683c58de951f1b19"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -9141,7 +9137,7 @@
                   "body": "이 문서 경로의 언급: Then ask your agent for a part or an assembly: it writes the model as a Python script, runs it to build the model and shows it in the viewer.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-33bf93a6bb09f5e4"
+                    "e-d413f83bfab2d6a7"
                   ],
                   "scope": "mentioned",
                   "path": " / text-to-cad / 🚀 Quickstart",
@@ -9152,7 +9148,7 @@
                   "body": "이 문서 경로의 언급: macOS and Linux:",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-419a772ee3d7ed2a"
+                    "e-1cee01b93056d495"
                   ],
                   "scope": "mentioned",
                   "path": " / text-to-cad / 🚀 Quickstart",
@@ -9163,7 +9159,7 @@
                   "body": "이 문서 경로의 언급: It works in Claude Code, Codex, Cursor, Gemini CLI, Grok Build, Antigravity, Devin CLI, Factory Droid, GitHub Copilot CLI, Kimi Code, Muse, Pi, Qwen Code, Amp, Cline, Goose, Hermes Agent, Kilo Code, Kiro CLI, OpenClaw, OpenCode, Roo Code, Trae and Windsurf.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-22f7bb7ebf82cac8"
+                    "e-d88a77013763bebf"
                   ],
                   "scope": "mentioned",
                   "path": " / text-to-cad / 🚀 Quickstart",
@@ -9197,7 +9193,7 @@
                   "body": "문서에서 설명한 목적: It installs uv if it is missing, then cad, the command text-to-cad runs on, then the plugin in each agent app it finds on your computer, with that app's own command (Kimi Code you install by hand), and turns on automatic updates.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-a16c37848122ec30"
+                    "e-683c58de951f1b19"
                   ]
                 },
                 "inputs": [
@@ -9207,7 +9203,7 @@
                     "body": "만들 부품이나 조립체를 에이전트에 설명하는 모델 작성 요청입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-33bf93a6bb09f5e4"
+                      "e-d413f83bfab2d6a7"
                     ],
                     "summaryKo": "만들 부품이나 조립체를 에이전트에 설명하는 모델 작성 요청입니다."
                   }
@@ -9219,7 +9215,7 @@
                     "body": "로컬 워크플로에서 3D 모델을 STEP·GLB·STL·3MF 파일로 생성합니다. 형상 생성과 제조 가능성 검사·외부 제조 서비스 연결은 각각 구분되는 작업입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-fee52ac100953826"
+                      "e-b0a121d9c1f205c8"
                     ],
                     "summaryKo": "로컬 워크플로에서 3D 모델을 STEP·GLB·STL·3MF 파일로 생성합니다. 형상 생성과 제조 가능성 검사·외부 제조 서비스 연결은 각각 구분되는 작업입니다."
                   }
@@ -9230,7 +9226,7 @@
                     "body": "이 문서 경로의 언급: Then ask your agent for a part or an assembly: it writes the model as a Python script, runs it to build the model and shows it in the viewer.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-33bf93a6bb09f5e4"
+                      "e-d413f83bfab2d6a7"
                     ],
                     "scope": "mentioned",
                     "path": " / text-to-cad / 🚀 Quickstart",
@@ -9241,7 +9237,7 @@
                     "body": "이 문서 경로의 언급: macOS and Linux:",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-419a772ee3d7ed2a"
+                      "e-1cee01b93056d495"
                     ],
                     "scope": "mentioned",
                     "path": " / text-to-cad / 🚀 Quickstart",
@@ -9252,7 +9248,7 @@
                     "body": "이 문서 경로의 언급: It works in Claude Code, Codex, Cursor, Gemini CLI, Grok Build, Antigravity, Devin CLI, Factory Droid, GitHub Copilot CLI, Kimi Code, Muse, Pi, Qwen Code, Amp, Cline, Goose, Hermes Agent, Kilo Code, Kiro CLI, OpenClaw, OpenCode, Roo Code, Trae and Windsurf.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-22f7bb7ebf82cac8"
+                      "e-d88a77013763bebf"
                     ],
                     "scope": "mentioned",
                     "path": " / text-to-cad / 🚀 Quickstart",
@@ -9265,7 +9261,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-a16c37848122ec30"
+                "e-683c58de951f1b19"
               ],
               "cautions": [
                 {
@@ -9274,7 +9270,7 @@
                   "body": "설계 요청은 Python 스크립트로 작성되고 그 스크립트를 실행해 모델을 만듭니다. 뷰어에 표시된 형상만 확인하지 말고 생성된 모델 코드도 검토하는 흐름으로 사용하세요.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-33bf93a6bb09f5e4"
+                    "e-d413f83bfab2d6a7"
                   ]
                 }
               ],
@@ -9298,7 +9294,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "288b365e735db7d03f658654195f902ec333b46c",
+            "readmeSha": "665d7ec6ab781baa776df09617ae1b1c2d22a034",
             "analysisReused": false
           }
         },
@@ -9314,24 +9310,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-12T00:55:40.643Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "8d87ef7bf2e142ea653b61246010bc819da1b45b344369c7b0f9da5377d47908",
-            "sourceFingerprint": "f4651aad7098c09877f52a988c3b940d574236e16cb91dd6f6d4bb0a3f9fb762",
+            "sourceFingerprint": "6c42722fef010bafd3df6bccb84cb1dfa26ddd140d32a0087e6efb079e5eb10e",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "DevGuide.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 },
                 {
                   "path": "Ghidra/Features/PyGhidra/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -9341,15 +9337,15 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "README.md",
                 "sha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
-                "fetchedAt": "2026-11-12T00:55:40.643Z",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/README.md"
               },
               {
                 "id": "doc-889fd4f38fb4",
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "DevGuide.md",
-                "sha": "7cf682836fea723a3875dfa2a2ecdc22414f9745",
-                "fetchedAt": "2026-11-12T00:55:40.643Z",
+                "sha": "8bd48b2603e907e7d66a79448bf7a00d78275f32",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/DevGuide.md"
               },
               {
@@ -9357,7 +9353,7 @@
                 "repository": "NationalSecurityAgency/ghidra",
                 "path": "Ghidra/Features/PyGhidra/README.md",
                 "sha": "3485a6048d65b34979373983396324fe2eeae13c",
-                "fetchedAt": "2026-11-12T00:55:40.643Z",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/NationalSecurityAgency/ghidra/blob/master/Ghidra/Features/PyGhidra/README.md"
               }
             ],
@@ -9379,7 +9375,7 @@
                 "excerpt": "Capabilities include disassembly, assembly, decompilation, graphing, and scripting, along with hundreds of other features."
               },
               {
-                "id": "e-7f5873ea5e59aa21",
+                "id": "e-14d476fb694c3e92",
                 "sourceId": "doc-889fd4f38fb4",
                 "section": "Setup build in CI",
                 "line": 169,
@@ -9387,7 +9383,7 @@
                 "excerpt": "For running tests in headless mode on Linux, in a CI environment, or in Docker, first do:"
               },
               {
-                "id": "e-2ca9cab2c7437a6c",
+                "id": "e-381661352ea5f065",
                 "sourceId": "doc-889fd4f38fb4",
                 "section": "Environment",
                 "line": 3,
@@ -9489,7 +9485,7 @@
                   "body": "이 문서 경로의 언급: For running tests in headless mode on Linux, in a CI environment, or in Docker, first do:",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-7f5873ea5e59aa21"
+                    "e-14d476fb694c3e92"
                   ],
                   "scope": "mentioned",
                   "path": " / Developer's Guide / Setup build in CI",
@@ -9589,7 +9585,7 @@
                     "body": "이 문서 경로의 언급: For running tests in headless mode on Linux, in a CI environment, or in Docker, first do:",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-7f5873ea5e59aa21"
+                      "e-14d476fb694c3e92"
                     ],
                     "scope": "mentioned",
                     "path": " / Developer's Guide / Setup build in CI",
@@ -9674,8 +9670,7 @@
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
             "readmeSha": "3f1eea7b35d8551f2433f3074f68ba736d72673f",
-            "analysisReused": true,
-            "stale": false
+            "analysisReused": false
           }
         },
         {
@@ -9690,24 +9685,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "8499ad335d4d2abd71bb1678b81c8b7c1176a6c012a7c554a7f22a22167a308d",
-            "sourceFingerprint": "e3111ed39ec1c43e2fead1ce86eeb9f566a523d67de53ecd5d134d3c37d81ca6",
+            "sourceFingerprint": "2cbc57af8053c5d8224c124d75f12ed65a7b77922f2a50659449872c539b2413",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": [
                 {
                   "path": "docs/user/install.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 },
                 {
                   "path": "docs/user/outside-agents.md",
                   "status": "available",
-                  "checkedAt": "2026-11-19T07:39:05.372Z"
+                  "checkedAt": "2026-11-26T08:37:18.991Z"
                 }
               ]
             },
@@ -9716,30 +9711,30 @@
                 "id": "readme",
                 "repository": "pingdotgg/t3code",
                 "path": "README.md",
-                "sha": "24dc0f8f7f6669ee439bc13f496e0451239f0e31",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "b3ad8bae49b70ae2043b2e274ac8b8b7923e02b8",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/README.md"
               },
               {
                 "id": "doc-5445c9485dbf",
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/install.md",
-                "sha": "91e3237d1d5c64f347d5ef4e0db8285cd8d75207",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "19fc9de9c81e09a5495492bd63a96e9c6225c0d8",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/install.md"
               },
               {
                 "id": "doc-3a99448d97e0",
                 "repository": "pingdotgg/t3code",
                 "path": "docs/user/outside-agents.md",
-                "sha": "97bc0d385a3d74fdd0c8ace49b197fb24d9247d9",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "40807925171960ea6cd0ccd76bc4b44c91e78c9c",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/outside-agents.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-af185cd073bdbeae",
+                "id": "e-e09b8a1c0254aa62",
                 "sourceId": "readme",
                 "section": "Documentation",
                 "line": 86,
@@ -9747,23 +9742,31 @@
                 "excerpt": "- Connect outside agents over MCP"
               },
               {
-                "id": "e-8454c52f3b138587",
+                "id": "e-407fd1fef8672f24",
+                "sourceId": "doc-3a99448d97e0",
+                "section": "Available tools and limits",
+                "line": 35,
+                "kind": "prose",
+                "excerpt": "Tools that act as a running T3 thread (delegatetask, createthreads, requestsecret, htmlrender, preview, device, t3worktreehandoff) only work for agents running inside T3 Code."
+              },
+              {
+                "id": "e-855de2b190c11dd4",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Command line",
-                "line": 11,
+                "line": 9,
                 "kind": "prose",
-                "excerpt": "To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx)."
+                "excerpt": "To try once without installing, run npx t3@latest (requires Node.js; always runs the latest stable release)."
               },
               {
-                "id": "e-e09f0240b5b54ddf",
+                "id": "e-0278162ff71d5eff",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Providers",
-                "line": 191,
+                "line": 79,
                 "kind": "prose",
-                "excerpt": "Each instance can have its own environment variables, such as API keys or a custom base URL."
+                "excerpt": "- Multiple instances: Add extra provider instances for separate accounts, API keys, or custom endpoints (mark secret env vars as sensitive)."
               },
               {
-                "id": "e-1e51477fca0d5c4a",
+                "id": "e-e32397613cbfabb6",
                 "sourceId": "readme",
                 "section": "Desktop app",
                 "line": 42,
@@ -9771,44 +9774,20 @@
                 "excerpt": "Download T3 Code for macOS, Windows, or Linux."
               },
               {
-                "id": "e-a7793790eb12e5de",
+                "id": "e-d7494fe9a45fa8e7",
                 "sourceId": "doc-5445c9485dbf",
                 "section": "Providers",
-                "line": 191,
+                "line": 79,
                 "kind": "prose",
-                "excerpt": "Update now runs the installer that owns the CLI (Homebrew, mise, or a global npm, pnpm, Yarn, Bun, Volta, or Vite+ install), or the CLI's own update command when T3 Code cannot tell."
+                "excerpt": "- Updates: Click Update now on outdated provider cards (supports Homebrew, mise latest, npm/pnpm/Yarn/Bun/Volta/Vite+, or the CLI's own updater; update Nix, Chocolatey, or pinned mise installs manually)."
               },
               {
-                "id": "e-2194e09854c4a10d",
+                "id": "e-833d6f26f969be24",
                 "sourceId": "readme",
                 "section": "Sign in to an agent",
                 "line": 74,
                 "kind": "prose",
                 "excerpt": "For example, install Claude Code and run claude auth login, or install Codex CLI and run codex login."
-              },
-              {
-                "id": "e-a7aa0451894b40fa",
-                "sourceId": "doc-3a99448d97e0",
-                "section": "Outside agents",
-                "line": 1,
-                "kind": "prose",
-                "excerpt": "Agents that T3 Code did not start can work with an environment through its MCP server. They can read projects and threads, start and message threads, and check which providers and models are available. This covers Claude Code or Codex in your own terminal, ChatGPT, and bots that support MCP. Each agent signs in once, and you choose what it may do."
-              },
-              {
-                "id": "e-57aab388dab7d2a2",
-                "sourceId": "doc-3a99448d97e0",
-                "section": "Approve a sign-in",
-                "line": 53,
-                "kind": "prose",
-                "excerpt": "- Read only lets the agent read projects and threads and see the available providers and models. It cannot change anything."
-              },
-              {
-                "id": "e-21b1db64f9392c1e",
-                "sourceId": "doc-5445c9485dbf",
-                "section": "Command line",
-                "line": 11,
-                "kind": "prose",
-                "excerpt": "To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx). It offers to install the t3 command first. If you say no, it asks again at the next minor release, and npx t3 install installs it later. npx t3 always runs the version npm picked, even when a t3 is installed. On the nightly train, run your installed t3 (for example t3 connect), not npx t3, which runs the latest stable release."
               }
             ],
             "source": "https://github.com/pingdotgg/t3code#readme",
@@ -9836,38 +9815,27 @@
               "title": "pingdotgg/t3code · 프로젝트 분석 노트",
               "paragraphs": [
                 "문서에서 해결하려는 문제를 충분히 확인하지 못했습니다.",
-                "문서에서 확인한 입력: 허용 권한 안에서 스레드 시작·메시지 요청. 출력: 읽기 전용 연결의 프로젝트·스레드·모델 목록. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
+                "문서에서 확인한 입력: 미확인. 출력: 미확인. 아래 설명은 원문 근거와 사용 예를 바탕으로 합니다."
               ],
-              "findings": [
-                {
-                  "id": "detail:core:0",
-                  "title": "외부 에이전트가 MCP로 프로젝트·스레드 작업",
-                  "body": "T3가 직접 시작하지 않은 에이전트도 MCP 서버로 프로젝트·스레드를 읽고 스레드를 시작하거나 메시지를 보낼 수 있습니다. 로그인한 에이전트마다 사용자가 허용 범위를 고릅니다.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-a7aa0451894b40fa"
-                  ],
-                  "summaryKo": "T3가 직접 시작하지 않은 에이전트도 MCP 서버로 프로젝트·스레드를 읽고 스레드를 시작하거나 메시지를 보낼 수 있습니다. 로그인한 에이전트마다 사용자가 허용 범위를 고릅니다."
-                }
-              ],
+              "findings": [],
               "conditions": [
                 {
                   "title": "Node.js",
-                  "body": "이 문서 경로의 언급: To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx).",
+                  "body": "이 문서 경로의 요구사항: To try once without installing, run npx t3@latest (requires Node.js; always runs the latest stable release).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-8454c52f3b138587"
+                    "e-855de2b190c11dd4"
                   ],
-                  "scope": "mentioned",
+                  "scope": "required",
                   "path": " / Install T3 Code / Command line",
-                  "summaryKo": "설치·시작 경로에서 Node.js 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                  "summaryKo": "이 설치 경로에서는 Node.js 조건을 요구합니다."
                 },
                 {
                   "title": "서비스 인증",
-                  "body": "이 문서 경로의 언급: Each instance can have its own environment variables, such as API keys or a custom base URL.",
+                  "body": "이 문서 경로의 언급: - Multiple instances: Add extra provider instances for separate accounts, API keys, or custom endpoints (mark secret env vars as sensitive).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-e09f0240b5b54ddf"
+                    "e-0278162ff71d5eff"
                   ],
                   "scope": "mentioned",
                   "path": " / Install T3 Code / Providers",
@@ -9878,7 +9846,7 @@
                   "body": "이 문서 경로의 언급: Download T3 Code for macOS, Windows, or Linux.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-1e51477fca0d5c4a"
+                    "e-e32397613cbfabb6"
                   ],
                   "scope": "mentioned",
                   "path": " / Install / Desktop app",
@@ -9886,10 +9854,10 @@
                 },
                 {
                   "title": "런타임·설치 도구",
-                  "body": "이 문서 경로의 언급: Update now runs the installer that owns the CLI (Homebrew, mise, or a global npm, pnpm, Yarn, Bun, Volta, or Vite+ install), or the CLI's own update command when T3 Code cannot tell.",
+                  "body": "이 문서 경로의 언급: - Updates: Click Update now on outdated provider cards (supports Homebrew, mise latest, npm/pnpm/Yarn/Bun/Volta/Vite+, or the CLI's own updater; update Nix, Chocolatey, or pinned mise installs manually).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-a7793790eb12e5de"
+                    "e-d7494fe9a45fa8e7"
                   ],
                   "scope": "mentioned",
                   "path": " / Install T3 Code / Providers",
@@ -9900,7 +9868,7 @@
                   "body": "이 문서 경로의 언급: For example, install Claude Code and run claude auth login, or install Codex CLI and run codex login.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-2194e09854c4a10d"
+                    "e-833d6f26f969be24"
                   ],
                   "scope": "mentioned",
                   "path": " / Install / Sign in to an agent",
@@ -9921,57 +9889,35 @@
                   "body": "입력과 기대 결과를 명확하게 정한 작은 예제로 확인하세요. 문서에 나오는 실행 경로가 현재 환경에서도 재현되는지를 기준으로 도입 범위를 판단할 수 있습니다."
                 }
               ],
-              "verdict": "외부 에이전트가 MCP로 프로젝트·스레드 작업에 관한 원문 범위를 현재 작업과 대조하세요. 지원 기능이나 실행 결과를 추가로 단정하지 않았습니다.",
+              "verdict": "구체적인 동작을 뒷받침하는 문서 근거가 부족해 도입 판단을 보류했습니다.",
               "coverage": {
-                "findings": 1,
+                "findings": 0,
                 "conditions": 5,
                 "hasStart": true
               },
               "limitations": "README의 표현과 절 구조를 이용한 자동 정리입니다. 외부 연결 문서 전체를 읽거나 프로젝트를 실행한 검증은 포함하지 않습니다. 기능·조건의 언급이 현재 버전의 지원 또는 필수 요구사항이라는 뜻은 아닙니다.",
               "project": {
                 "problem": null,
-                "inputs": [
-                  {
-                    "id": "detail:inputs:0",
-                    "title": "허용 권한 안에서 스레드 시작·메시지 요청",
-                    "body": "외부 에이전트가 한 번 로그인한 뒤, 사용자가 허용한 범위에서 MCP로 스레드 시작·메시지 전송을 요청하는 경로입니다.",
-                    "kind": "interpretation",
-                    "evidenceIds": [
-                      "e-a7aa0451894b40fa"
-                    ],
-                    "summaryKo": "외부 에이전트가 한 번 로그인한 뒤, 사용자가 허용한 범위에서 MCP로 스레드 시작·메시지 전송을 요청하는 경로입니다."
-                  }
-                ],
-                "outputs": [
-                  {
-                    "id": "detail:outputs:0",
-                    "title": "읽기 전용 연결의 프로젝트·스레드·모델 목록",
-                    "body": "Read only 권한에서는 프로젝트·스레드와 사용 가능한 provider·model을 읽으며 변경은 할 수 없습니다. 쓰기 작업이 가능한 연결과 결과 범위를 구분합니다.",
-                    "kind": "interpretation",
-                    "evidenceIds": [
-                      "e-57aab388dab7d2a2"
-                    ],
-                    "summaryKo": "Read only 권한에서는 프로젝트·스레드와 사용 가능한 provider·model을 읽으며 변경은 할 수 없습니다. 쓰기 작업이 가능한 연결과 결과 범위를 구분합니다."
-                  }
-                ],
+                "inputs": [],
+                "outputs": [],
                 "conditions": [
                   {
                     "title": "Node.js",
-                    "body": "이 문서 경로의 언급: To try T3 Code once without installing it, run npx t3@latest instead (needs Node.js for npx).",
+                    "body": "이 문서 경로의 요구사항: To try once without installing, run npx t3@latest (requires Node.js; always runs the latest stable release).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-8454c52f3b138587"
+                      "e-855de2b190c11dd4"
                     ],
-                    "scope": "mentioned",
+                    "scope": "required",
                     "path": " / Install T3 Code / Command line",
-                    "summaryKo": "설치·시작 경로에서 Node.js 항목을 다룹니다. 필수 여부는 원문에서 확인하세요."
+                    "summaryKo": "이 설치 경로에서는 Node.js 조건을 요구합니다."
                   },
                   {
                     "title": "서비스 인증",
-                    "body": "이 문서 경로의 언급: Each instance can have its own environment variables, such as API keys or a custom base URL.",
+                    "body": "이 문서 경로의 언급: - Multiple instances: Add extra provider instances for separate accounts, API keys, or custom endpoints (mark secret env vars as sensitive).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-e09f0240b5b54ddf"
+                      "e-0278162ff71d5eff"
                     ],
                     "scope": "mentioned",
                     "path": " / Install T3 Code / Providers",
@@ -9982,7 +9928,7 @@
                     "body": "이 문서 경로의 언급: Download T3 Code for macOS, Windows, or Linux.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-1e51477fca0d5c4a"
+                      "e-e32397613cbfabb6"
                     ],
                     "scope": "mentioned",
                     "path": " / Install / Desktop app",
@@ -9990,10 +9936,10 @@
                   },
                   {
                     "title": "런타임·설치 도구",
-                    "body": "이 문서 경로의 언급: Update now runs the installer that owns the CLI (Homebrew, mise, or a global npm, pnpm, Yarn, Bun, Volta, or Vite+ install), or the CLI's own update command when T3 Code cannot tell.",
+                    "body": "이 문서 경로의 언급: - Updates: Click Update now on outdated provider cards (supports Homebrew, mise latest, npm/pnpm/Yarn/Bun/Volta/Vite+, or the CLI's own updater; update Nix, Chocolatey, or pinned mise installs manually).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-a7793790eb12e5de"
+                      "e-d7494fe9a45fa8e7"
                     ],
                     "scope": "mentioned",
                     "path": " / Install T3 Code / Providers",
@@ -10004,7 +9950,7 @@
                     "body": "이 문서 경로의 언급: For example, install Claude Code and run claude auth login, or install Codex CLI and run codex login.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-2194e09854c4a10d"
+                      "e-833d6f26f969be24"
                     ],
                     "scope": "mentioned",
                     "path": " / Install / Sign in to an agent",
@@ -10016,41 +9962,23 @@
                 "ioScope": null,
                 "setup": null
               },
-              "verdictEvidenceIds": [
-                "e-a7aa0451894b40fa"
-              ],
-              "cautions": [
-                {
-                  "id": "npx",
-                  "title": "일회 실행 경로에도 Node.js가 필요",
-                  "body": "설치 없이 시험하는 npx t3@latest 경로도 npx 실행용 Node.js는 필요합니다. 데스크톱 앱 설치와 이 CLI 시험 경로의 환경을 구분하세요.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-21b1db64f9392c1e"
-                  ]
-                }
-              ],
-              "core": [
-                {
-                  "title": "외부 에이전트가 MCP로 프로젝트·스레드 작업",
-                  "body": "T3가 직접 시작하지 않은 에이전트도 MCP 서버로 프로젝트·스레드를 읽고 스레드를 시작하거나 메시지를 보낼 수 있습니다. 로그인한 에이전트마다 사용자가 허용 범위를 고릅니다.",
-                  "kind": "interpretation",
-                  "evidenceIds": [
-                    "e-a7aa0451894b40fa"
-                  ]
-                }
-              ]
+              "verdictEvidenceIds": [],
+              "cautions": [],
+              "core": []
             },
             "quality": {
               "setup": null,
               "status": "partial",
               "missing": [
                 "용도 분류",
-                "해결 문제"
+                "핵심 기능 근거",
+                "해결 문제",
+                "입력",
+                "출력"
               ],
               "io": {
-                "input": "documented",
-                "output": "documented"
+                "input": "insufficient-evidence",
+                "output": "insufficient-evidence"
               },
               "notApplicable": [],
               "representatives": {
@@ -10060,7 +9988,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "24dc0f8f7f6669ee439bc13f496e0451239f0e31",
+            "readmeSha": "b3ad8bae49b70ae2043b2e274ac8b8b7923e02b8",
             "analysisReused": false
           }
         },
@@ -10076,14 +10004,14 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "checkedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analysisInputFingerprint": "28fed759e0c2f94deeaae77304e4e53eeaddcf39586f6e3ea1243ccdacea6f92",
-            "sourceFingerprint": "7d971f1fd5c1b1ead9086b08d0208e03a90588dfef6342262e9a0b809ec7277b",
+            "sourceFingerprint": "1662b578a074e6e837614b339b7db8c5ed73492b5f533bf656629e515cf2b134",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-19T07:39:05.372Z",
+              "checkedAt": "2026-11-26T08:37:18.991Z",
               "links": []
             },
             "sources": [
@@ -10091,14 +10019,14 @@
                 "id": "readme",
                 "repository": "thedotmack/claude-mem",
                 "path": "README.md",
-                "sha": "3d7a90f7257c6e52a023e982e16cf5be503a6dc3",
-                "fetchedAt": "2026-11-19T07:39:05.372Z",
+                "sha": "0c19eb60ec5e391f49b3f659dc7c1e6f3fb3afa4",
+                "fetchedAt": "2026-11-26T08:37:18.991Z",
                 "url": "https://github.com/thedotmack/claude-mem/blob/main/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-92f261e1db2709b6",
+                "id": "e-265c6ab9777e55b4",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
@@ -10106,47 +10034,47 @@
                 "excerpt": "Your coding agent forgets everything between sessions."
               },
               {
-                "id": "e-776add09bb6427c9",
+                "id": "e-0906e3ca13703cce",
                 "sourceId": "readme",
                 "section": "🦞 OpenClaw Gateway",
-                "line": 212,
+                "line": 218,
                 "kind": "prose",
                 "excerpt": "Install claude-mem as a persistent memory plugin on OpenClaw gateways with a single command:"
               },
               {
-                "id": "e-b859cd64f9d3257a",
+                "id": "e-e6862b7e42ef57d1",
                 "sourceId": "readme",
                 "section": "Quick Start",
-                "line": 135,
+                "line": 141,
                 "kind": "prose",
                 "excerpt": "Or install from the plugin marketplace inside Claude Code:"
               },
               {
-                "id": "e-115b5f462317c65b",
+                "id": "e-83faf819f5f7fdd3",
                 "sourceId": "readme",
                 "section": "How it fits together",
-                "line": 281,
+                "line": 287,
                 "kind": "prose",
                 "excerpt": "- Search (src/servers/mcp-server.ts, plugin/skills/mem-search/): the MCP tools and the mem-search skill that drives them."
               },
               {
-                "id": "e-d7afdde8cc9ac614",
+                "id": "e-eeca7e18c2044ee5",
                 "sourceId": "readme",
                 "section": "System Requirements",
-                "line": 338,
+                "line": 344,
                 "kind": "prose",
                 "excerpt": "- uv: Python package manager for vector search (auto-installed if missing)"
               },
               {
-                "id": "e-d32e08571b5d86a8",
+                "id": "e-1c6849e3b013a554",
                 "sourceId": "readme",
                 "section": "Quick Start",
-                "line": 135,
+                "line": 141,
                 "kind": "prose",
                 "excerpt": "If the user is available, run npx claude-mem install --setup browser on their computer and keep it running."
               },
               {
-                "id": "e-06f20324798f9cf0",
+                "id": "e-de7f831e0a2fdb89",
                 "sourceId": "readme",
                 "section": "README 도입부",
                 "line": 1,
@@ -10154,58 +10082,58 @@
                 "excerpt": "Your coding agent forgets everything between sessions. Claude-Mem remembers for it."
               },
               {
-                "id": "e-2ef83ec161d17080",
+                "id": "e-22e316a6fb7e2874",
                 "sourceId": "readme",
                 "section": "System Requirements",
-                "line": 338,
+                "line": 344,
                 "kind": "prose",
                 "excerpt": "- Node.js: 20.19 or later in the 20.x line, or 22.12 or later"
               },
               {
-                "id": "e-b535c2d602f8a369",
+                "id": "e-e5b200ee269bcc51",
                 "sourceId": "readme",
                 "section": "Quick Start",
-                "line": 135,
+                "line": 141,
                 "kind": "prose",
                 "excerpt": "Then just start working: observations stream in from your first prompt, and your second session in a project opens with memory from the first."
               },
               {
-                "id": "e-2055d8d557dc0834",
+                "id": "e-d282527f754dc983",
                 "sourceId": "readme",
                 "section": "What You Get",
-                "line": 222,
+                "line": 228,
                 "kind": "prose",
                 "excerpt": "Each session opens with a compact index of past observations, layered so the agent opens full details only when it needs them, and the header can show what each layer costs in tokens."
               },
               {
-                "id": "e-fc2c33b621928cac",
+                "id": "e-4fca692fa8f6a615",
                 "sourceId": "readme",
                 "section": "What You Get",
-                "line": 222,
+                "line": 228,
                 "kind": "prose",
                 "excerpt": "- ⚙️ Choose what gets injected. Fine-grained settings for what context a new session starts with."
               },
               {
-                "id": "e-c2600bb1221cc55a",
+                "id": "e-0566879df3bb15f6",
                 "sourceId": "readme",
                 "section": "Best Practices",
-                "line": 248,
+                "line": 254,
                 "kind": "prose",
                 "excerpt": "- Progressive Disclosure - Philosophy behind Claude-Mem's context priming strategy"
               },
               {
-                "id": "e-c0bc327a10024939",
+                "id": "e-636427559909b70e",
                 "sourceId": "readme",
                 "section": "How It Works",
-                "line": 271,
+                "line": 277,
                 "kind": "prose",
                 "excerpt": "1. Your agent works. Hooks in your agent hand each tool call (what it reads, edits and runs) to a small local worker."
               },
               {
-                "id": "e-11064ab3e8d1ce7e",
+                "id": "e-7045abcc0164ce52",
                 "sourceId": "readme",
                 "section": "How It Works",
-                "line": 271,
+                "line": 277,
                 "kind": "prose",
                 "excerpt": "2. The observer takes notes. A second agent turns that activity into short observations, and writes a summary when the session ends."
               }
@@ -10214,7 +10142,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-92f261e1db2709b6"
+                "e-265c6ab9777e55b4"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -10246,8 +10174,8 @@
                   "body": "호스트 hook이 읽기·편집·실행 등의 도구 호출을 작은 로컬 worker로 전달합니다. 이 수집 단계와 별도 observer가 관측 기록을 작성하는 단계는 구분됩니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-c0bc327a10024939",
-                    "e-11064ab3e8d1ce7e"
+                    "e-636427559909b70e",
+                    "e-7045abcc0164ce52"
                   ],
                   "summaryKo": "호스트 hook이 읽기·편집·실행 등의 도구 호출을 작은 로컬 worker로 전달합니다. 이 수집 단계와 별도 observer가 관측 기록을 작성하는 단계는 구분됩니다."
                 }
@@ -10258,7 +10186,7 @@
                   "body": "이 문서 경로의 요구사항: - uv: Python package manager for vector search (auto-installed if missing)",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-d7afdde8cc9ac614"
+                    "e-eeca7e18c2044ee5"
                   ],
                   "scope": "required",
                   "path": " / System Requirements",
@@ -10269,7 +10197,7 @@
                   "body": "이 문서 경로의 요구사항: - Node.js: 20.19 or later in the 20.x line, or 22.12 or later",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-2ef83ec161d17080"
+                    "e-22e316a6fb7e2874"
                   ],
                   "scope": "required",
                   "path": " / System Requirements",
@@ -10280,7 +10208,7 @@
                   "body": "이 문서 경로의 언급: Or install from the plugin marketplace inside Claude Code:",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-b859cd64f9d3257a"
+                    "e-e6862b7e42ef57d1"
                   ],
                   "scope": "mentioned",
                   "path": " / Quick Start",
@@ -10314,7 +10242,7 @@
                   "body": "문서에서 설명한 목적: Your coding agent forgets everything between sessions. Claude-Mem remembers for it.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-06f20324798f9cf0"
+                    "e-de7f831e0a2fdb89"
                   ]
                 },
                 "inputs": [
@@ -10324,7 +10252,7 @@
                     "body": "에이전트 hook이 도구 호출의 읽기·편집·실행 활동을 worker로 넘기는 경로입니다. 호스트에 hook이 없는 경우까지 같은 수집을 보장하지 않습니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-c0bc327a10024939"
+                      "e-636427559909b70e"
                     ],
                     "summaryKo": "에이전트 hook이 도구 호출의 읽기·편집·실행 활동을 worker로 넘기는 경로입니다. 호스트에 hook이 없는 경우까지 같은 수집을 보장하지 않습니다."
                   }
@@ -10336,7 +10264,7 @@
                     "body": "별도 observer가 수집 활동을 짧은 관측 기록으로 만들고 세션이 끝날 때 요약을 씁니다. 전체 대화를 그대로 출력하는 설명과 구분됩니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-11064ab3e8d1ce7e"
+                      "e-7045abcc0164ce52"
                     ],
                     "summaryKo": "별도 observer가 수집 활동을 짧은 관측 기록으로 만들고 세션이 끝날 때 요약을 씁니다. 전체 대화를 그대로 출력하는 설명과 구분됩니다."
                   }
@@ -10347,7 +10275,7 @@
                     "body": "이 문서 경로의 요구사항: - uv: Python package manager for vector search (auto-installed if missing)",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-d7afdde8cc9ac614"
+                      "e-eeca7e18c2044ee5"
                     ],
                     "scope": "required",
                     "path": " / System Requirements",
@@ -10358,7 +10286,7 @@
                     "body": "이 문서 경로의 요구사항: - Node.js: 20.19 or later in the 20.x line, or 22.12 or later",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-2ef83ec161d17080"
+                      "e-22e316a6fb7e2874"
                     ],
                     "scope": "required",
                     "path": " / System Requirements",
@@ -10369,7 +10297,7 @@
                     "body": "이 문서 경로의 언급: Or install from the plugin marketplace inside Claude Code:",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-b859cd64f9d3257a"
+                      "e-e6862b7e42ef57d1"
                     ],
                     "scope": "mentioned",
                     "path": " / Quick Start",
@@ -10382,8 +10310,8 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-c0bc327a10024939",
-                "e-11064ab3e8d1ce7e"
+                "e-636427559909b70e",
+                "e-7045abcc0164ce52"
               ],
               "cautions": [],
               "core": [
@@ -10392,8 +10320,8 @@
                   "body": "호스트 hook이 읽기·편집·실행 등의 도구 호출을 작은 로컬 worker로 전달합니다. 이 수집 단계와 별도 observer가 관측 기록을 작성하는 단계는 구분됩니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-c0bc327a10024939",
-                    "e-11064ab3e8d1ce7e"
+                    "e-636427559909b70e",
+                    "e-7045abcc0164ce52"
                   ]
                 }
               ]
@@ -10414,7 +10342,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "3d7a90f7257c6e52a023e982e16cf5be503a6dc3",
+            "readmeSha": "0c19eb60ec5e391f49b3f659dc7c1e6f3fb3afa4",
             "analysisReused": false
           }
         }
@@ -10425,17 +10353,17 @@
           "total": 10,
           "classified": 9,
           "unknown": 1,
-          "complete": 7,
-          "partial": 3,
+          "complete": 6,
+          "partial": 4,
           "unavailable": 0,
           "stale": 0,
-          "inputs": 9,
-          "outputs": 8,
+          "inputs": 8,
+          "outputs": 6,
           "conditions": 9,
           "inputsNotApplicable": 1,
           "outputsNotApplicable": 2,
-          "inputEvidenceMissing": 0,
-          "outputEvidenceMissing": 0,
+          "inputEvidenceMissing": 1,
+          "outputEvidenceMissing": 2,
           "exampleProjects": 2,
           "examples": 4,
           "exampleMissing": 0,
@@ -10584,7 +10512,7 @@
                     "body": "critique는 사용성 기준으로 디자인을 평가하고 수정 순위를 매깁니다. audit는 접근성·성능·테마·반응형 문제를 P0부터 P3까지 나누는 별도 검사입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-623e507311db38ab"
+                      "e-be35ed1089f05875"
                     ]
                   }
                 ],
@@ -10596,7 +10524,7 @@
                       "body": "명령 이름과 적용할 대상 영역을 지정합니다.",
                       "kind": "documented",
                       "evidenceIds": [
-                        "e-90893e52535dd227"
+                        "e-c8c7946573bd1d90"
                       ]
                     }
                   ],
@@ -10611,8 +10539,8 @@
                       "body": "기술 품질 점수와 P0~P3 심각도별 발견 사항을 담은 감사 보고서를 만듭니다. 이 저널이 대상 UI의 점수를 측정한 결과는 아닙니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-d0addd3d33b92722",
-                        "e-b9c613d5198fb27a"
+                        "e-48cf6c29376c3814",
+                        "e-18a6b9c5435a55b1"
                       ],
                       "exampleOnly": true,
                       "context": "audit · UI 기술 감사 · 대표 항목"
@@ -10622,7 +10550,7 @@
                       "body": "대화로 제공하는 비평 보고서가 주된 결과이며, 스냅샷은 해당 실행을 보관한 자료입니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-9268df5dba696ea8"
+                        "e-83b8c0aa5aa2a5bd"
                       ],
                       "exampleOnly": true,
                       "context": "critique · UX 비평 · 대표 항목"
@@ -10635,7 +10563,7 @@
                     "body": "live mode는 로컬 checkout 수정용이며 배포 사이트에 주입하거나 동작을 위해 운영 CSP를 약화하지 않도록 안내합니다. 낯선 저장소에서는 복사 편집 시 실행되는 선택적 검증 스크립트도 먼저 검토해야 합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-1b31b6d60cfb2b0a"
+                      "e-4ba41fb3c5d8bb17"
                     ],
                     "context": "도입 시 주의점"
                   },
@@ -10644,7 +10572,7 @@
                     "body": "최근 1분 동안 chat agent가 응답하지 않으면 Apply가 PATH의 codex 또는 claude CLI를 승인·샌드박스 제한 없이 실행하고 환경을 상속한다고 설명합니다. 편집 요청을 적용하기 전에 실제 실행 주체와 권한 범위를 확인해야 합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-b383b8eb4b5bef48"
+                      "e-dfd60e06546d9131"
                     ],
                     "context": "도입 시 주의점"
                   }
@@ -10733,7 +10661,7 @@
                     "body": "브라우저에서 미리 본 HTML 구성을 headless Chrome이 프레임별로 탐색하고 FFmpeg가 영상으로 인코딩합니다. 같은 입력으로 같은 영상을 만드는 렌더링 경로라고 설명합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-1382ec4fb4d9dbe4"
+                      "e-4a049aa897ae89c7"
                     ]
                   }
                 ],
@@ -10745,44 +10673,37 @@
                       "body": "HTML에 타이밍·트랙 data 속성을 붙입니다. GSAP·CSS·Lottie·Three.js·Anime.js·WAAPI 또는 별도 frame adapter로 탐색 가능한 애니메이션을 구성합니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-052597812eb0744d"
+                        "e-17bb857332cf4c9c"
                       ]
                     }
                   ],
                   "examples": []
                 },
                 "outputs": {
-                  "status": "documented",
-                  "claims": [
-                    {
-                      "title": "HTML·CSS·미디어 구성으로 만든 MP4",
-                      "body": "HTML·CSS·미디어와 탐색 가능한 애니메이션을 MP4 영상으로 변환합니다. 인터랙티브 슬라이드 같은 다른 스킬의 결과와 구분되는 영상 렌더링 경로입니다.",
-                      "kind": "interpretation",
-                      "evidenceIds": [
-                        "e-da19b1a5df877d40"
-                      ]
-                    }
-                  ],
+                  "status": "insufficient-evidence",
+                  "claims": [],
                   "examples": []
                 },
                 "conditions": [
                   {
-                    "title": "수동 CLI 렌더링 환경",
-                    "body": "수동 CLI 경로는 Node.js 22 이상과 FFmpeg를 요구합니다. HTML을 브라우저에서 미리 보는 것과 영상으로 인코딩할 실행 환경을 구분하세요.",
-                    "kind": "interpretation",
+                    "title": "Node.js",
+                    "body": "설치·시작 경로에서 Node.js 22+ 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
+                    "kind": "documented",
                     "evidenceIds": [
-                      "e-b4808a81720bc2a3"
+                      "e-036b74d5d62956cd"
                     ],
-                    "context": "도입 시 주의점"
+                    "scope": "mentioned",
+                    "context": " / Quick start for developers / By hand, with the CLI"
                   },
                   {
-                    "title": "비대화형 설치의 범위",
-                    "body": "스킬 선택기는 대화형 전용입니다. 비대화형 실행에서 --skill을 생략하면 9개 전체가 설치되므로 일부만 필요할 때는 설치 범위를 명시해야 합니다.",
-                    "kind": "interpretation",
+                    "title": "에이전트 클라이언트",
+                    "body": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
+                    "kind": "documented",
                     "evidenceIds": [
-                      "e-205cd02761180484"
+                      "e-c6876d9175a40a63"
                     ],
-                    "context": "도입 시 주의점"
+                    "scope": "mentioned",
+                    "context": " / Quick start for developers"
                   }
                 ]
               }
@@ -10801,7 +10722,7 @@
                     "body": "깨끗한 참고 녹음을 익숙한 목소리의 음성으로 바꾸는 voice cloning 경로입니다. 영상 번역·더빙과 구분해 제공하는 기능입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-12c82ccaa38a3fa2"
+                      "e-a82eacbc0f900799"
                     ]
                   },
                   {
@@ -10809,7 +10730,7 @@
                     "body": "영상 더빙은 번역한 음성을 원본 영상의 타이밍에 맞추는 별도의 작업 경로입니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-a71f9b7b5e4cda01"
+                      "e-901a24840ba1fad0"
                     ]
                   }
                 ],
@@ -10821,7 +10742,7 @@
                       "body": "목소리 복제 경로에는 깨끗한 참고 녹음을 사용합니다. 이 근거만으로 허용 파일 형식이나 최소 길이를 정하지 않습니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-12c82ccaa38a3fa2"
+                        "e-a82eacbc0f900799"
                       ]
                     },
                     {
@@ -10829,7 +10750,7 @@
                       "body": "영상 더빙 경로의 대상은 번역·더빙할 영상입니다. 참고 녹음 하나로 영상 더빙까지 수행한다는 설명이 아닙니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-a71f9b7b5e4cda01"
+                        "e-901a24840ba1fad0"
                       ]
                     }
                   ],
@@ -10843,7 +10764,7 @@
                       "body": "voice cloning 경로는 깨끗한 참고 녹음에서 해당 목소리의 음성을 만듭니다. 문서의 이 설명만으로 결과 파일 확장자를 정하지 않습니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-12c82ccaa38a3fa2"
+                        "e-a82eacbc0f900799"
                       ]
                     },
                     {
@@ -10851,7 +10772,7 @@
                       "body": "영상 더빙 경로는 영상을 번역하고 원본 영상의 타이밍에 맞는 음성을 만듭니다. 참고 녹음으로 만드는 voice cloning과 다른 사용 경로입니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-a71f9b7b5e4cda01"
+                        "e-901a24840ba1fad0"
                       ]
                     }
                   ],
@@ -10967,8 +10888,8 @@
                     "body": "호스트 hook이 읽기·편집·실행 등의 도구 호출을 작은 로컬 worker로 전달합니다. 이 수집 단계와 별도 observer가 관측 기록을 작성하는 단계는 구분됩니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-c0bc327a10024939",
-                      "e-11064ab3e8d1ce7e"
+                      "e-636427559909b70e",
+                      "e-7045abcc0164ce52"
                     ]
                   }
                 ],
@@ -10980,7 +10901,7 @@
                       "body": "에이전트 hook이 도구 호출의 읽기·편집·실행 활동을 worker로 넘기는 경로입니다. 호스트에 hook이 없는 경우까지 같은 수집을 보장하지 않습니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-c0bc327a10024939"
+                        "e-636427559909b70e"
                       ]
                     }
                   ],
@@ -10994,7 +10915,7 @@
                       "body": "별도 observer가 수집 활동을 짧은 관측 기록으로 만들고 세션이 끝날 때 요약을 씁니다. 전체 대화를 그대로 출력하는 설명과 구분됩니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-11064ab3e8d1ce7e"
+                        "e-7045abcc0164ce52"
                       ]
                     }
                   ],
@@ -11006,7 +10927,7 @@
                     "body": "이 설치 경로에서는 Python 조건을 요구합니다.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-d7afdde8cc9ac614"
+                      "e-eeca7e18c2044ee5"
                     ],
                     "scope": "required",
                     "context": " / System Requirements"
@@ -11016,7 +10937,7 @@
                     "body": "Node.js의 허용 버전대가 따로 명시돼 있습니다. 버전 조합과 추가 요구사항은 원문 근거에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-2ef83ec161d17080"
+                      "e-22e316a6fb7e2874"
                     ],
                     "scope": "required",
                     "context": " / System Requirements"
@@ -11100,7 +11021,7 @@
                       "body": "만들 부품이나 조립체를 에이전트에 설명하는 모델 작성 요청입니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-33bf93a6bb09f5e4"
+                        "e-d413f83bfab2d6a7"
                       ]
                     }
                   ],
@@ -11114,7 +11035,7 @@
                       "body": "로컬 워크플로에서 3D 모델을 STEP·GLB·STL·3MF 파일로 생성합니다. 형상 생성과 제조 가능성 검사·외부 제조 서비스 연결은 각각 구분되는 작업입니다.",
                       "kind": "interpretation",
                       "evidenceIds": [
-                        "e-fee52ac100953826"
+                        "e-b0a121d9c1f205c8"
                       ]
                     }
                   ],
@@ -11126,7 +11047,7 @@
                     "body": "설계 요청은 Python 스크립트로 작성되고 그 스크립트를 실행해 모델을 만듭니다. 뷰어에 표시된 형상만 확인하지 말고 생성된 모델 코드도 검토하는 흐름으로 사용하세요.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-33bf93a6bb09f5e4"
+                      "e-d413f83bfab2d6a7"
                     ],
                     "context": "도입 시 주의점"
                   }
@@ -11138,60 +11059,6 @@
         "sharedPatterns": [
           {
             "kind": "condition",
-            "title": "에이전트 클라이언트",
-            "projects": [
-              {
-                "name": "heygen-com/hyperframes",
-                "evidenceIds": [
-                  "e-190b0a6c928dbed9"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "Nutlope/hallmark",
-                "evidenceIds": [
-                  "e-4c6a0e21c9a6b788"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "pbakaus/impeccable",
-                "evidenceIds": [
-                  "e-06dda2151953f3a4"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "earthtojake/text-to-cad",
-                "evidenceIds": [
-                  "e-22f7bb7ebf82cac8"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "pingdotgg/t3code",
-                "evidenceIds": [
-                  "e-2194e09854c4a10d"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              },
-              {
-                "name": "thedotmack/claude-mem",
-                "evidenceIds": [
-                  "e-b859cd64f9d3257a"
-                ],
-                "scope": "mentioned",
-                "exampleOnly": false
-              }
-            ]
-          },
-          {
-            "kind": "condition",
             "title": "Node.js",
             "projects": [
               {
@@ -11200,6 +11067,14 @@
                   "e-9a68ee9bb7e22541"
                 ],
                 "scope": "required",
+                "exampleOnly": false
+              },
+              {
+                "name": "heygen-com/hyperframes",
+                "evidenceIds": [
+                  "e-036b74d5d62956cd"
+                ],
+                "scope": "mentioned",
                 "exampleOnly": false
               },
               {
@@ -11221,7 +11096,7 @@
               {
                 "name": "pbakaus/impeccable",
                 "evidenceIds": [
-                  "e-3131ad78caeb8bd4"
+                  "e-1f6336cff6fe4594"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -11229,7 +11104,61 @@
               {
                 "name": "pingdotgg/t3code",
                 "evidenceIds": [
-                  "e-8454c52f3b138587"
+                  "e-855de2b190c11dd4"
+                ],
+                "scope": "required",
+                "exampleOnly": false
+              },
+              {
+                "name": "thedotmack/claude-mem",
+                "evidenceIds": [
+                  "e-22e316a6fb7e2874"
+                ],
+                "scope": "required",
+                "exampleOnly": false
+              }
+            ]
+          },
+          {
+            "kind": "condition",
+            "title": "에이전트 클라이언트",
+            "projects": [
+              {
+                "name": "heygen-com/hyperframes",
+                "evidenceIds": [
+                  "e-c6876d9175a40a63"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "Nutlope/hallmark",
+                "evidenceIds": [
+                  "e-4c6a0e21c9a6b788"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "pbakaus/impeccable",
+                "evidenceIds": [
+                  "e-d2fcf68bc98a35ff"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "earthtojake/text-to-cad",
+                "evidenceIds": [
+                  "e-d88a77013763bebf"
+                ],
+                "scope": "mentioned",
+                "exampleOnly": false
+              },
+              {
+                "name": "pingdotgg/t3code",
+                "evidenceIds": [
+                  "e-833d6f26f969be24"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -11237,9 +11166,9 @@
               {
                 "name": "thedotmack/claude-mem",
                 "evidenceIds": [
-                  "e-2ef83ec161d17080"
+                  "e-e6862b7e42ef57d1"
                 ],
-                "scope": "required",
+                "scope": "mentioned",
                 "exampleOnly": false
               }
             ]
@@ -11251,7 +11180,7 @@
               {
                 "name": "debpalash/VoiceStudio",
                 "evidenceIds": [
-                  "e-78407454126fd913"
+                  "e-b566ccddf60ff719"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -11259,7 +11188,7 @@
               {
                 "name": "earthtojake/text-to-cad",
                 "evidenceIds": [
-                  "e-419a772ee3d7ed2a"
+                  "e-1cee01b93056d495"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -11275,7 +11204,7 @@
               {
                 "name": "pingdotgg/t3code",
                 "evidenceIds": [
-                  "e-1e51477fca0d5c4a"
+                  "e-e32397613cbfabb6"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -11289,7 +11218,7 @@
               {
                 "name": "debpalash/VoiceStudio",
                 "evidenceIds": [
-                  "e-8ac53d290095e974"
+                  "e-f0fe8824d982f29d"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -11297,7 +11226,7 @@
               {
                 "name": "earthtojake/text-to-cad",
                 "evidenceIds": [
-                  "e-33bf93a6bb09f5e4"
+                  "e-d413f83bfab2d6a7"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -11313,7 +11242,7 @@
               {
                 "name": "thedotmack/claude-mem",
                 "evidenceIds": [
-                  "e-d7afdde8cc9ac614"
+                  "e-eeca7e18c2044ee5"
                 ],
                 "scope": "required",
                 "exampleOnly": false
@@ -11417,7 +11346,7 @@
               "kind": "interpretation",
               "exampleOnly": true,
               "evidenceIds": [
-                "e-2f9e8a6065b92f0a"
+                "e-87bfc600bfa67e7a"
               ]
             },
             "input": {
@@ -11426,7 +11355,7 @@
               "kind": "interpretation",
               "exampleOnly": true,
               "evidenceIds": [
-                "e-1323fe9d906be7a2"
+                "e-bff5f2689094805e"
               ]
             },
             "output": {
@@ -11435,8 +11364,8 @@
               "kind": "interpretation",
               "exampleOnly": true,
               "evidenceIds": [
-                "e-d0addd3d33b92722",
-                "e-b9c613d5198fb27a"
+                "e-48cf6c29376c3814",
+                "e-18a6b9c5435a55b1"
               ]
             },
             "caution": {
@@ -11445,8 +11374,8 @@
               "kind": "interpretation",
               "exampleOnly": true,
               "evidenceIds": [
-                "e-745cdd135272be29",
-                "e-2f9e8a6065b92f0a"
+                "e-d42cf4317401f08a",
+                "e-87bfc600bfa67e7a"
               ]
             },
             "name": "pbakaus/impeccable"
@@ -11461,7 +11390,7 @@
               "kind": "interpretation",
               "exampleOnly": true,
               "evidenceIds": [
-                "e-9268df5dba696ea8"
+                "e-83b8c0aa5aa2a5bd"
               ]
             },
             "input": {
@@ -11470,7 +11399,7 @@
               "kind": "interpretation",
               "exampleOnly": true,
               "evidenceIds": [
-                "e-219044e42cd3f40c"
+                "e-eea7c4bd3dd5484b"
               ]
             },
             "output": {
@@ -11479,7 +11408,7 @@
               "kind": "interpretation",
               "exampleOnly": true,
               "evidenceIds": [
-                "e-9268df5dba696ea8"
+                "e-83b8c0aa5aa2a5bd"
               ]
             },
             "caution": {
@@ -11488,7 +11417,7 @@
               "kind": "interpretation",
               "exampleOnly": true,
               "evidenceIds": [
-                "e-cf62f571bbeddbc1"
+                "e-c107dea0a0118370"
               ]
             },
             "name": "pbakaus/impeccable"
@@ -11498,7 +11427,7 @@
         "references": [
           {
             "name": "cloudflare/security-audit-skill",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analyzedAt": "2026-11-12T00:55:40.643Z",
             "stale": false,
             "classificationEvidenceIds": [
@@ -11507,16 +11436,16 @@
           },
           {
             "name": "heygen-com/hyperframes",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-12T00:55:40.643Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-7e57f835ae4884f6"
+              "e-85cab2cd4e9b64df"
             ]
           },
           {
             "name": "Nutlope/hallmark",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analyzedAt": "2026-11-12T00:55:40.643Z",
             "stale": false,
             "classificationEvidenceIds": [
@@ -11525,7 +11454,7 @@
           },
           {
             "name": "anthropics/knowledge-work-plugins",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
             "analyzedAt": "2026-11-12T00:55:40.643Z",
             "stale": false,
             "classificationEvidenceIds": [
@@ -11534,35 +11463,35 @@
           },
           {
             "name": "debpalash/VoiceStudio",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-12c82ccaa38a3fa2"
+              "e-a82eacbc0f900799"
             ]
           },
           {
             "name": "pbakaus/impeccable",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-10945c3163327feb"
+              "e-5588e8984832ec96"
             ]
           },
           {
             "name": "earthtojake/text-to-cad",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-a16c37848122ec30"
+              "e-683c58de951f1b19"
             ]
           },
           {
             "name": "NationalSecurityAgency/ghidra",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-12T00:55:40.643Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-1d13ea76374e633d"
@@ -11570,22 +11499,22 @@
           },
           {
             "name": "pingdotgg/t3code",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": []
           },
           {
             "name": "thedotmack/claude-mem",
-            "sourceCheckedAt": "2026-11-19T07:39:05.372Z",
-            "analyzedAt": "2026-11-19T07:39:05.372Z",
+            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "analyzedAt": "2026-11-26T08:37:18.991Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-92f261e1db2709b6"
+              "e-265c6ab9777e55b4"
             ]
           }
         ],
-        "generatedAt": "2026-11-19T07:39:05.372Z"
+        "generatedAt": "2026-11-26T08:37:18.991Z"
       }
     }
   },
@@ -11939,6 +11868,13 @@
       "hash": "598c9e5e9f8357f9ec9a73083db046fc52adcf57821b8e6df6208f890753bff1",
       "status": "skipped-identical",
       "processedAt": "2026-11-25T08:51:06.320Z"
+    },
+    {
+      "issue": "daily:2026-11-26",
+      "period": "daily",
+      "hash": "a5ae3d74ec39b705a1d8f35179ec9a067e35c42c0c3821e311f5b53009de8581",
+      "status": "published",
+      "processedAt": "2026-11-26T08:37:18.991Z"
     }
   ]
 }

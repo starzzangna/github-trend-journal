@@ -433,24 +433,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "checkedAt": "2026-11-27T08:48:36.506Z",
             "analyzedAt": "2026-11-20T07:29:44.107Z",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
             "analysisInputFingerprint": "73527a5a45c3ce87311f2f97dbd49eb377286905edd2e8aa5e3b9e3893fe8a5e",
             "sourceFingerprint": "1b16af646be35cba8111924870dd28e6a9b70b3db659770901e972d1f8bfa9ac",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "checkedAt": "2026-11-27T08:48:36.506Z",
               "links": [
                 {
                   "path": "docs/README.kimi.md",
                   "status": "available",
-                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                  "checkedAt": "2026-11-27T08:48:36.506Z"
                 },
                 {
                   "path": "docs/README.opencode.md",
                   "status": "available",
-                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                  "checkedAt": "2026-11-27T08:48:36.506Z"
                 }
               ]
             },
@@ -647,7 +647,8 @@
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
             "readmeSha": "c5bb59fdaf17ba154e803c549cd71a73ef36c24b",
-            "analysisReused": false
+            "analysisReused": true,
+            "stale": false
           }
         },
         {
@@ -1029,19 +1030,19 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-20T07:29:44.107Z",
-            "analyzedAt": "2026-11-20T07:29:44.107Z",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "checkedAt": "2026-11-27T08:48:36.506Z",
+            "analyzedAt": "2026-11-27T08:48:36.506Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
             "analysisInputFingerprint": "4da8bd1e26e4178f570eded0f246259503195d3aa33ea9eb626233a60d16f40c",
-            "sourceFingerprint": "970955cdcc87519694c4850e488d6bd69118b8b46aab3f626c629350c80eee27",
+            "sourceFingerprint": "73061bf5476ab33f442cb3cabf30caec0fc711cac142bcc83f7f778fb2a54452",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "checkedAt": "2026-11-27T08:48:36.506Z",
               "links": [
                 {
                   "path": "README_en.md",
                   "status": "available",
-                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                  "checkedAt": "2026-11-27T08:48:36.506Z"
                 }
               ]
             },
@@ -1050,33 +1051,33 @@
                 "id": "readme",
                 "repository": "jingyaogong/minimind",
                 "path": "README.md",
-                "sha": "1b11a450c0e50ba81f7072103020c859cb90ac0e",
-                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "sha": "4855c40573426b85162b32f0652c427f8f237440",
+                "fetchedAt": "2026-11-27T08:48:36.506Z",
                 "url": "https://github.com/jingyaogong/minimind/blob/master/README.md"
               },
               {
                 "id": "doc-4f212053d7c5",
                 "repository": "jingyaogong/minimind",
                 "path": "README_en.md",
-                "sha": "215d5ce6b87f7ac306e8bdadc472e19653488de0",
-                "fetchedAt": "2026-11-20T07:29:44.107Z",
+                "sha": "a693ab9da7b5b700e92b7a504d60bb601f45745f",
+                "fetchedAt": "2026-11-27T08:48:36.506Z",
                 "url": "https://github.com/jingyaogong/minimind/blob/master/README_en.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-3e71c515af7e83d4",
+                "id": "e-542ff6e4263db575",
                 "sourceId": "doc-4f212053d7c5",
                 "section": "7.4 Agentic RL 🔥",
-                "line": 1176,
+                "line": 1209,
                 "kind": "prose",
                 "excerpt": "The concept of \"Agentic\" is broad, and here it is used in a narrower sense: the goal is to let small models like MiniMind (~100M) learn basic calling, observation, and re-planning capabilities on a limited tool set, rather than covering the full scope of state management, long-term memory, and complex workflow orchestration in a complete Agent system."
               },
               {
-                "id": "e-ee5bc8270b7fe2fb",
+                "id": "e-0258bdb928edc6b8",
                 "sourceId": "doc-4f212053d7c5",
                 "section": "📌 Quick Start",
-                "line": 211,
+                "line": 244,
                 "kind": "prose",
                 "excerpt": "CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt"
               }
@@ -1115,7 +1116,7 @@
                   "body": "이 문서 경로의 언급: CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-ee5bc8270b7fe2fb"
+                    "e-0258bdb928edc6b8"
                   ],
                   "scope": "mentioned",
                   "path": " / 📌 Quick Start",
@@ -1126,7 +1127,7 @@
                   "body": "이 문서 경로의 언급: CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-ee5bc8270b7fe2fb"
+                    "e-0258bdb928edc6b8"
                   ],
                   "scope": "mentioned",
                   "path": " / 📌 Quick Start",
@@ -1164,7 +1165,7 @@
                     "body": "이 문서 경로의 언급: CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-ee5bc8270b7fe2fb"
+                      "e-0258bdb928edc6b8"
                     ],
                     "scope": "mentioned",
                     "path": " / 📌 Quick Start",
@@ -1175,7 +1176,7 @@
                     "body": "이 문서 경로의 언급: CPU: Intel(R) Core(TM) i9-10980XE CPU @ 3.00GHz RAM: 128 GB GPU: NVIDIA GeForce RTX 3090 (24GB) 8 Ubuntu==20.04 CUDA==12.2 Python==3.10.16 requirements.txt",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-ee5bc8270b7fe2fb"
+                      "e-0258bdb928edc6b8"
                     ],
                     "scope": "mentioned",
                     "path": " / 📌 Quick Start",
@@ -1213,7 +1214,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "1b11a450c0e50ba81f7072103020c859cb90ac0e",
+            "readmeSha": "4855c40573426b85162b32f0652c427f8f237440",
             "analysisReused": false
           }
         },
@@ -1643,14 +1644,14 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "checkedAt": "2026-11-27T08:48:36.506Z",
             "analyzedAt": "2026-11-20T07:29:44.107Z",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
             "analysisInputFingerprint": "1aee3b5d2b9a7046e8e17c31953bb5086e2d84264354f23d7b2ae46cfa3a336c",
             "sourceFingerprint": "5482551cc1bae267057af7f8b40cddc30723ab5f3e9cbb2a0ebbe26d187455ed",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "checkedAt": "2026-11-27T08:48:36.506Z",
               "links": []
             },
             "sources": [
@@ -1784,7 +1785,8 @@
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
             "readmeSha": "d6761842c97dc151ae951f86e9738e0300f9db05",
-            "analysisReused": false
+            "analysisReused": true,
+            "stale": false
           }
         },
         {
@@ -1799,19 +1801,19 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-20T07:29:44.107Z",
+            "checkedAt": "2026-11-27T08:48:36.506Z",
             "analyzedAt": "2026-11-20T07:29:44.107Z",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
             "analysisInputFingerprint": "b7982ab88f93d06fb7618246af218e41b255da3e3a61e91a88b5f0ec71aa1ac3",
             "sourceFingerprint": "6544e63a9c6b9fbf92fceaa1a347beb5b0d8db4fbb23278d7515c4859b8fa314",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-20T07:29:44.107Z",
+              "checkedAt": "2026-11-27T08:48:36.506Z",
               "links": [
                 {
                   "path": "docs/dev/index.md",
                   "status": "available",
-                  "checkedAt": "2026-11-20T07:29:44.107Z"
+                  "checkedAt": "2026-11-27T08:48:36.506Z"
                 }
               ]
             },
@@ -1920,7 +1922,8 @@
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
             "readmeSha": "7fa8d27f1e8f8e7d675aebc7a0a7c718c5b26d32",
-            "analysisReused": false
+            "analysisReused": true,
+            "stale": false
           }
         },
         {
@@ -2948,7 +2951,7 @@
               {
                 "name": "jingyaogong/minimind",
                 "evidenceIds": [
-                  "e-ee5bc8270b7fe2fb"
+                  "e-0258bdb928edc6b8"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -3000,7 +3003,7 @@
           },
           {
             "name": "obra/superpowers",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
             "analyzedAt": "2026-11-20T07:29:44.107Z",
             "stale": false,
             "classificationEvidenceIds": []
@@ -3016,8 +3019,8 @@
           },
           {
             "name": "jingyaogong/minimind",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
-            "analyzedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
+            "analyzedAt": "2026-11-27T08:48:36.506Z",
             "stale": false,
             "classificationEvidenceIds": []
           },
@@ -3039,14 +3042,14 @@
           },
           {
             "name": "nginx/nginx",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
             "analyzedAt": "2026-11-20T07:29:44.107Z",
             "stale": false,
             "classificationEvidenceIds": []
           },
           {
             "name": "openvinotoolkit/openvino",
-            "sourceCheckedAt": "2026-11-20T07:29:44.107Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
             "analyzedAt": "2026-11-20T07:29:44.107Z",
             "stale": false,
             "classificationEvidenceIds": []
@@ -3070,7 +3073,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-26T08:37:18.991Z"
+        "generatedAt": "2026-11-27T08:48:36.506Z"
       }
     },
     "weekly": {
@@ -5384,25 +5387,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-26T08:37:18.991Z",
-            "analyzedAt": "2026-11-26T08:37:18.991Z",
-            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
+            "checkedAt": "2026-11-27T08:48:36.506Z",
+            "analyzedAt": "2026-11-27T08:48:36.506Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "b78c051e4c630fd4510e06b9b0f2f6b33863e0725c9a23e579c829dbb1a2482a",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-26T08:37:18.991Z",
+              "checkedAt": "2026-11-27T08:48:36.506Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-26T08:37:18.991Z"
+                  "checkedAt": "2026-11-27T08:48:36.506Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-26T08:37:18.991Z"
+                  "checkedAt": "2026-11-27T08:48:36.506Z"
                 }
               ]
             },
@@ -5412,7 +5415,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "8dbd1010e751f17398d4fdbb1139016669937900",
-                "fetchedAt": "2026-11-26T08:37:18.991Z",
+                "fetchedAt": "2026-11-27T08:48:36.506Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -5420,7 +5423,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
-                "fetchedAt": "2026-11-26T08:37:18.991Z",
+                "fetchedAt": "2026-11-27T08:48:36.506Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -6595,8 +6598,8 @@
           },
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-26T08:37:18.991Z",
-            "analyzedAt": "2026-11-26T08:37:18.991Z",
+            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
+            "analyzedAt": "2026-11-27T08:48:36.506Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-6478ce33cc148892"
@@ -6610,7 +6613,7 @@
             "classificationEvidenceIds": []
           }
         ],
-        "generatedAt": "2026-11-26T08:37:18.991Z"
+        "generatedAt": "2026-11-27T08:48:36.506Z"
       }
     },
     "monthly": {
@@ -11875,6 +11878,13 @@
       "hash": "a5ae3d74ec39b705a1d8f35179ec9a067e35c42c0c3821e311f5b53009de8581",
       "status": "published",
       "processedAt": "2026-11-26T08:37:18.991Z"
+    },
+    {
+      "issue": "daily:2026-11-27",
+      "period": "daily",
+      "hash": "a5ae3d74ec39b705a1d8f35179ec9a067e35c42c0c3821e311f5b53009de8581",
+      "status": "skipped-identical",
+      "processedAt": "2026-11-27T08:48:36.506Z"
     }
   ]
 }

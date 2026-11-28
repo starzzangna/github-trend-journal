@@ -1436,14 +1436,14 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-21T07:25:06.690Z",
+            "checkedAt": "2026-11-28T08:05:07.264Z",
             "analyzedAt": "2026-11-21T07:25:06.690Z",
-            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
+            "sourceCheckedAt": "2026-11-28T08:05:07.264Z",
             "analysisInputFingerprint": "be51993515d6348f16cbc0948ebfa57f9b3611f6628e6aa28dab982d9f845643",
             "sourceFingerprint": "d88d44d454c5a238e80890de389ec6bde4ee5bf6b16182986a9662c1a8d8b1a1",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-21T07:25:06.690Z",
+              "checkedAt": "2026-11-28T08:05:07.264Z",
               "links": []
             },
             "sources": [
@@ -1629,7 +1629,8 @@
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
             "readmeSha": "eaecfed6c8a76b16b4e8bcd5d499a473ece1cb11",
-            "analysisReused": false
+            "analysisReused": true,
+            "stale": false
           }
         },
         {
@@ -3035,7 +3036,7 @@
           },
           {
             "name": "firecrawl/firecrawl",
-            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
+            "sourceCheckedAt": "2026-11-28T08:05:07.264Z",
             "analyzedAt": "2026-11-21T07:25:06.690Z",
             "stale": false,
             "classificationEvidenceIds": []
@@ -3073,7 +3074,7 @@
             ]
           }
         ],
-        "generatedAt": "2026-11-27T08:48:36.506Z"
+        "generatedAt": "2026-11-28T08:05:07.264Z"
       }
     },
     "weekly": {
@@ -3107,24 +3108,24 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-21T07:25:06.690Z",
-            "analyzedAt": "2026-11-21T07:25:06.690Z",
-            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
+            "checkedAt": "2026-11-28T08:05:07.264Z",
+            "analyzedAt": "2026-11-28T08:05:07.264Z",
+            "sourceCheckedAt": "2026-11-28T08:05:07.264Z",
             "analysisInputFingerprint": "cfd25387318bbb5b84c2e985e095e2dd3a456bd8ee648764e53458675d2a0785",
-            "sourceFingerprint": "1e9c03404402ec195b91de003b53b67e53963c56d0bcc6c35692fa9566ff11a3",
+            "sourceFingerprint": "40c204b29df5807d5d737e6f9f314460c49c3e70c2883eba22b38f7c13306cf7",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-21T07:25:06.690Z",
+              "checkedAt": "2026-11-28T08:05:07.264Z",
               "links": [
                 {
                   "path": "apps/amp-plugin/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-21T07:25:06.690Z"
+                  "checkedAt": "2026-11-28T08:05:07.264Z"
                 },
                 {
                   "path": "apps/hook/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-21T07:25:06.690Z"
+                  "checkedAt": "2026-11-28T08:05:07.264Z"
                 }
               ]
             },
@@ -3133,8 +3134,8 @@
                 "id": "readme",
                 "repository": "backnotprop/plannotator",
                 "path": "README.md",
-                "sha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
-                "fetchedAt": "2026-11-21T07:25:06.690Z",
+                "sha": "05e2dc5607f7d6e3926c1f3807f928535eac3234",
+                "fetchedAt": "2026-11-28T08:05:07.264Z",
                 "url": "https://github.com/backnotprop/plannotator/blob/main/README.md"
               },
               {
@@ -3142,7 +3143,7 @@
                 "repository": "backnotprop/plannotator",
                 "path": "apps/amp-plugin/README.md",
                 "sha": "1e33c2341a220fa0953ac231a2960e39e180330f",
-                "fetchedAt": "2026-11-21T07:25:06.690Z",
+                "fetchedAt": "2026-11-28T08:05:07.264Z",
                 "url": "https://github.com/backnotprop/plannotator/blob/main/apps/amp-plugin/README.md"
               },
               {
@@ -3150,13 +3151,13 @@
                 "repository": "backnotprop/plannotator",
                 "path": "apps/hook/README.md",
                 "sha": "4bd16da7c2695f0db492394cfc12276ea529b84e",
-                "fetchedAt": "2026-11-21T07:25:06.690Z",
+                "fetchedAt": "2026-11-28T08:05:07.264Z",
                 "url": "https://github.com/backnotprop/plannotator/blob/main/apps/hook/README.md"
               }
             ],
             "evidence": [
               {
-                "id": "e-13aec46962d7a77b",
+                "id": "e-29beeef144f65b94",
                 "sourceId": "readme",
                 "section": "Plannotator",
                 "line": 38,
@@ -3164,7 +3165,7 @@
                 "excerpt": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work."
               },
               {
-                "id": "e-4a8740dc5ac2a7f1",
+                "id": "e-3716ecfe840f4447",
                 "sourceId": "readme",
                 "section": "Install",
                 "line": 226,
@@ -3172,7 +3173,7 @@
                 "excerpt": "| README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator."
               },
               {
-                "id": "e-21bef821a9bcbbf0",
+                "id": "e-7ed9be35adc9fb0b",
                 "sourceId": "readme",
                 "section": "Plannotator Inbox",
                 "line": 79,
@@ -3180,7 +3181,7 @@
                 "excerpt": "Any other agent reaches it over MCP with plannotator inbox mcp, and plannotator inbox --help is the guide an agent reads."
               },
               {
-                "id": "e-a8efb5ff510a898d",
+                "id": "e-a08d74da4d4b8925",
                 "sourceId": "readme",
                 "section": "Install",
                 "line": 226,
@@ -3188,7 +3189,7 @@
                 "excerpt": "A full install can also contact GitHub for release resolution and agent files, and npm for Pi, selected extra skills, or the managed agent-terminal runtime."
               },
               {
-                "id": "e-656e39a7bbe942c2",
+                "id": "e-b35c6e583598c7c3",
                 "sourceId": "readme",
                 "section": "Plannotator",
                 "line": 38,
@@ -3196,7 +3197,7 @@
                 "excerpt": "⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants."
               },
               {
-                "id": "e-b8942e28dc171d58",
+                "id": "e-49c5e3ebca9b09b0",
                 "sourceId": "readme",
                 "section": "Install",
                 "line": 226,
@@ -3208,7 +3209,7 @@
             "classification": {
               "kind": "interpretation",
               "evidenceIds": [
-                "e-13aec46962d7a77b"
+                "e-29beeef144f65b94"
               ],
               "basis": "README 도입부의 용도 표현을 확인하고 저장소 설명은 후보 우선순위에만 사용했습니다."
             },
@@ -3238,7 +3239,7 @@
                   "body": "문서 설명: ⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-13aec46962d7a77b"
+                    "e-29beeef144f65b94"
                   ],
                   "summaryKo": "여러 에이전트의 역할과 작업 흐름을 조정합니다."
                 }
@@ -3249,7 +3250,7 @@
                   "body": "이 문서 경로의 언급: Plan review is enabled automatically via Codex's experimental Stop hook (macOS/Linux/WSL; on native Windows, Codex hooks are experimental and the installer prints manual setup steps).",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-b8942e28dc171d58"
+                    "e-49c5e3ebca9b09b0"
                   ],
                   "scope": "mentioned",
                   "path": " / Plannotator / Install",
@@ -3260,7 +3261,7 @@
                   "body": "이 문서 경로의 언급: | README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-4a8740dc5ac2a7f1"
+                    "e-3716ecfe840f4447"
                   ],
                   "scope": "mentioned",
                   "path": " / Plannotator / Install",
@@ -3294,7 +3295,7 @@
                   "body": "문서에서 설명한 목적: ⭐️ NEW: Plannotator Inbox is the missing review layer between you and multi-agent work. It surfaces decisions, prototypes, variations, plans, and everything you need to stay in the loop. Works with all coding agents and personal assistants.",
                   "kind": "documented",
                   "evidenceIds": [
-                    "e-656e39a7bbe942c2"
+                    "e-b35c6e583598c7c3"
                   ]
                 },
                 "inputs": [],
@@ -3305,7 +3306,7 @@
                     "body": "이 문서 경로의 언급: Plan review is enabled automatically via Codex's experimental Stop hook (macOS/Linux/WSL; on native Windows, Codex hooks are experimental and the installer prints manual setup steps).",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-b8942e28dc171d58"
+                      "e-49c5e3ebca9b09b0"
                     ],
                     "scope": "mentioned",
                     "path": " / Plannotator / Install",
@@ -3316,7 +3317,7 @@
                     "body": "이 문서 경로의 언급: | README | | Claude Code | /plugin marketplace add backnotprop/plannotator, then /plugin install plannotator@plannotator.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-4a8740dc5ac2a7f1"
+                      "e-3716ecfe840f4447"
                     ],
                     "scope": "mentioned",
                     "path": " / Plannotator / Install",
@@ -3329,7 +3330,7 @@
                 "setup": null
               },
               "verdictEvidenceIds": [
-                "e-13aec46962d7a77b"
+                "e-29beeef144f65b94"
               ],
               "cautions": [],
               "core": [
@@ -3338,7 +3339,7 @@
                   "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
                   "kind": "interpretation",
                   "evidenceIds": [
-                    "e-13aec46962d7a77b"
+                    "e-29beeef144f65b94"
                   ]
                 }
               ]
@@ -3362,7 +3363,7 @@
               },
               "basis": "문서에서 설명 항목을 추출한 범위이며 성능이나 분석 깊이를 평가한 점수가 아닙니다."
             },
-            "readmeSha": "b8de95afdf52a703d9013c6ee51bbb5d22f44b18",
+            "readmeSha": "05e2dc5607f7d6e3926c1f3807f928535eac3234",
             "analysisReused": false
           }
         },
@@ -5387,25 +5388,25 @@
             "analyzerVersion": 17,
             "version": 17,
             "status": "ready",
-            "checkedAt": "2026-11-27T08:48:36.506Z",
-            "analyzedAt": "2026-11-27T08:48:36.506Z",
-            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
+            "checkedAt": "2026-11-28T08:05:07.264Z",
+            "analyzedAt": "2026-11-28T08:05:07.264Z",
+            "sourceCheckedAt": "2026-11-28T08:05:07.264Z",
             "analysisInputFingerprint": "9c9a7e4f5b74a69415cdd589f2c5a204dcea12dcc3613958f1c1eac8ab393ac4",
             "sourceFingerprint": "b78c051e4c630fd4510e06b9b0f2f6b33863e0725c9a23e579c829dbb1a2482a",
             "document": {
               "status": "available",
-              "checkedAt": "2026-11-27T08:48:36.506Z",
+              "checkedAt": "2026-11-28T08:05:07.264Z",
               "links": [
                 {
                   "path": "packages/core/README.md",
                   "status": "available",
-                  "checkedAt": "2026-11-27T08:48:36.506Z"
+                  "checkedAt": "2026-11-28T08:05:07.264Z"
                 },
                 {
                   "path": "packages/cli/README.md",
                   "status": "unavailable",
                   "reason": "timeout",
-                  "checkedAt": "2026-11-27T08:48:36.506Z"
+                  "checkedAt": "2026-11-28T08:05:07.264Z"
                 }
               ]
             },
@@ -5415,7 +5416,7 @@
                 "repository": "meta/astryx",
                 "path": "README.md",
                 "sha": "8dbd1010e751f17398d4fdbb1139016669937900",
-                "fetchedAt": "2026-11-27T08:48:36.506Z",
+                "fetchedAt": "2026-11-28T08:05:07.264Z",
                 "url": "https://github.com/meta/astryx/blob/main/README.md"
               },
               {
@@ -5423,7 +5424,7 @@
                 "repository": "meta/astryx",
                 "path": "packages/core/README.md",
                 "sha": "6c83e15268ec000274d9cd5ed7086314d8227947",
-                "fetchedAt": "2026-11-27T08:48:36.506Z",
+                "fetchedAt": "2026-11-28T08:05:07.264Z",
                 "url": "https://github.com/meta/astryx/blob/main/packages/core/README.md"
               }
             ],
@@ -6139,7 +6140,7 @@
                     "body": "여러 에이전트의 역할과 작업 흐름을 조정합니다.",
                     "kind": "interpretation",
                     "evidenceIds": [
-                      "e-13aec46962d7a77b"
+                      "e-29beeef144f65b94"
                     ]
                   }
                 ],
@@ -6159,7 +6160,7 @@
                     "body": "설치·시작 경로에서 운영체제별 실행 경로 (macOS, Linux, Windows) 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-b8942e28dc171d58"
+                      "e-49c5e3ebca9b09b0"
                     ],
                     "scope": "mentioned",
                     "context": " / Plannotator / Install"
@@ -6169,7 +6170,7 @@
                     "body": "설치·시작 경로에서 에이전트 클라이언트 항목을 다룹니다. 필수 여부는 원문에서 확인하세요.",
                     "kind": "documented",
                     "evidenceIds": [
-                      "e-4a8740dc5ac2a7f1"
+                      "e-3716ecfe840f4447"
                     ],
                     "scope": "mentioned",
                     "context": " / Plannotator / Install"
@@ -6351,7 +6352,7 @@
               {
                 "name": "backnotprop/plannotator",
                 "evidenceIds": [
-                  "e-4a8740dc5ac2a7f1"
+                  "e-3716ecfe840f4447"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -6413,7 +6414,7 @@
               {
                 "name": "backnotprop/plannotator",
                 "evidenceIds": [
-                  "e-b8942e28dc171d58"
+                  "e-49c5e3ebca9b09b0"
                 ],
                 "scope": "mentioned",
                 "exampleOnly": false
@@ -6526,11 +6527,11 @@
         "references": [
           {
             "name": "backnotprop/plannotator",
-            "sourceCheckedAt": "2026-11-21T07:25:06.690Z",
-            "analyzedAt": "2026-11-21T07:25:06.690Z",
+            "sourceCheckedAt": "2026-11-28T08:05:07.264Z",
+            "analyzedAt": "2026-11-28T08:05:07.264Z",
             "stale": false,
             "classificationEvidenceIds": [
-              "e-13aec46962d7a77b"
+              "e-29beeef144f65b94"
             ]
           },
           {
@@ -6598,8 +6599,8 @@
           },
           {
             "name": "meta/astryx",
-            "sourceCheckedAt": "2026-11-27T08:48:36.506Z",
-            "analyzedAt": "2026-11-27T08:48:36.506Z",
+            "sourceCheckedAt": "2026-11-28T08:05:07.264Z",
+            "analyzedAt": "2026-11-28T08:05:07.264Z",
             "stale": false,
             "classificationEvidenceIds": [
               "e-6478ce33cc148892"
@@ -6613,7 +6614,7 @@
             "classificationEvidenceIds": []
           }
         ],
-        "generatedAt": "2026-11-27T08:48:36.506Z"
+        "generatedAt": "2026-11-28T08:05:07.264Z"
       }
     },
     "monthly": {
@@ -11885,6 +11886,13 @@
       "hash": "a5ae3d74ec39b705a1d8f35179ec9a067e35c42c0c3821e311f5b53009de8581",
       "status": "skipped-identical",
       "processedAt": "2026-11-27T08:48:36.506Z"
+    },
+    {
+      "issue": "daily:2026-11-28",
+      "period": "daily",
+      "hash": "a5ae3d74ec39b705a1d8f35179ec9a067e35c42c0c3821e311f5b53009de8581",
+      "status": "skipped-identical",
+      "processedAt": "2026-11-28T08:05:07.264Z"
     }
   ]
 }
